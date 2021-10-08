@@ -32,15 +32,15 @@ jobs:
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("index.Rmd")'
       - name: Commit results
-        if: github.repository == 'ropensci-org/blog-guidance'
+        if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'
         run: |
-          cp ghpagescname docs/CNAME
-          cp -r favicon/ docs/
-          cp images/logo.png docs/logo.png
+          # cp ghpagescname docs/CNAME
+          # cp -r favicon/ docs/
+          # cp images/logo.png docs/logo.png
           cd docs
           git config --global user.email "actions@github.com"
           git config --global user.name "gh-pages committer"
           git init
           git add .
-          git commit -m 'update book'
+          git commit -m 'update book on GitHub Actions'
           git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:gh-pages --force

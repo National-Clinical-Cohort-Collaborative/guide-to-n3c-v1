@@ -9,11 +9,16 @@ name: Render-Book-from-main
 jobs:
   bookdown:
     name: Render-Book
+
     runs-on: macOS-latest
+
     steps:
       - uses: actions/checkout@v1
+
       - uses: r-lib/actions/setup-r@v1
+
       - uses: r-lib/actions/setup-pandoc@v1
+
       - name: Query dependencies
         run:
           Rscript -e "install.packages('remotes')" -e "saveRDS(remotes::dev_package_deps(dependencies = TRUE), 'depends.Rds', version = 2)"
@@ -31,12 +36,13 @@ jobs:
 
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("index.Rmd")'
+
       - name: Commit results
         if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'
         run: |
           # cp ghpagescname docs/CNAME
           # cp -r favicon/ docs/
-          # cp images/logo.png docs/logo.png
+          cp images/logo.png docs/logo.png
           cd docs
           git config --global user.email "actions@github.com"
           git config --global user.name "gh-pages committer"

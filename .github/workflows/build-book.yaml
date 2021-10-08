@@ -41,6 +41,7 @@ jobs:
         if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'
         run: |
           # cp ghpagescname docs/CNAME
+          mkdir -p docs/
           # cp -r favicon/ docs/
           cp images/logo.png docs/logo.png
           cd docs

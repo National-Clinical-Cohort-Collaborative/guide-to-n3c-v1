@@ -1,52 +1,47 @@
+# Adapted from 
+#  * https://github.com/OuhscBbmc/data-science-practices-1/blob/main/.github/workflows/bookdown.yaml on 2021-10-08
+#  * https://ropensci.org/blog/2020/04/07/bookdown-learnings/ on 2021-10-08
 on:
   push:
     branches:
       - main
       - master
 
-name: bookdown
+name: Render-Book-from-main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  bookdown:
+    name: Render-Book
+
+    runs-on: macOS-latest
+
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-r@v1
 
-      - name: Install pandoc
-        run: |
-          brew install pandoc
+      - uses: r-lib/actions/setup-pandoc@v1
 
-      - name: Cache Renv packages
-        uses: actions/cache@v2
+      - name: Query dependencies
+        run:
+          Rscript -e "install.packages('remotes')" -e "saveRDS(remotes::dev_package_deps(dependencies = TRUE), 'depends.Rds', version = 2)"
+
+      - name: Cache R packages
+        uses: actions/cache@v1
         with:
-          path: $HOME/.local/share/renv
-          key: r-${{ hashFiles('renv.lock') }}
-          restore-keys: r-
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('depends.Rds') }}
+          restore-keys: ${{ runner.os }}-r-
 
-      - name: Cache bookdown results
-        uses: actions/cache@v2
-        with:
-          path: _bookdown_files
-          key: bookdown-${{ hashFiles('**/*Rmd') }}
-          restore-keys: bookdown-
+      - name: Install dependencies
+        run:
+          Rscript -e "library(remotes)" -e "deps <- readRDS('depends.Rds')" -e "deps[['installed']] <- vapply(deps[['package']], remotes:::local_sha, character(1))" -e "update(deps)"
 
-      - name: Install bookdown
-        run: |
-          R -e 'install.packages("bookdown")'
-
-      - name: Install packages
-        run: |
-          R -e 'install.packages("renv")'
-          R -e 'renv::restore()'
-
-      - name: Build site
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+      - name: Render Book
+        run: Rscript -e 'bookdown::render_book("index.Rmd")'
 
       - name: Deploy to GitHub pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
@@ -54,15 +49,18 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: .        # The folder the action should deploy.
           # clean: true    # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
-          
-      # - name: Install npm
-      #   uses: actions/setup-node@v1
 
-      # - name: Deploy to Netlify
-      #   # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
-      #   env:
-      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      # - name: Commit results
+      #   if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'
       #   run: |
-      #     npm install netlify-cli -g
-      #     netlify deploy --prod --dir _book
+      #     # cp ghpagescname docs/CNAME
+      #     mkdir -p docs/
+      #     # cp -r favicon/ docs/
+      #     cp images/logo.png docs/logo.png
+      #     cd docs
+      #     git config --global user.email "actions@github.com"
+      #     git config --global user.name "gh-pages committer"
+      #     git init
+      #     git add .
+      #     git commit -m 'update book on GitHub Actions'
+      #     git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:gh-pages --force

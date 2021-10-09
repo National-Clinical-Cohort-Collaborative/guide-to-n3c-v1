@@ -2,6 +2,12 @@ Type: Book
 Package: bookofn3c
 Title: Book of N3C
 Version: 1.0.1
+Authors@R: c(
+    person(given = "N3C Educational Committee",
+             role = c("cph", "fnd")),
+    person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006"))
+    )
 Imports: 
     bookdown,
     remotes,    
@@ -52,3 +58,4 @@ Imports:
 Suggests:
     rsconnect
 Encoding: UTF-8
+Language: en-US

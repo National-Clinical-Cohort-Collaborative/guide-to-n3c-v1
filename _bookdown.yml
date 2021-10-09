@@ -2,6 +2,7 @@ book_filename: "book-of-n3c-v1"
 new_session: true
 before_chapter_script: _common.R
 delete_merged_file: true
+output_dir: "docs"
 language:
   ui:
     chapter_name: "Chapter "

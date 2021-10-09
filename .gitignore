@@ -1,3 +1,11 @@
+# bookdown temp files & directories
+#   from https://github.com/rstudio/bookdown/blob/main/inst/examples/.gitignore
+_bookdown_files
+_book
+_doc
+packages.bib
+images/dedication.lyx
+
 # History files
 .Rhistory
 .Rapp.history

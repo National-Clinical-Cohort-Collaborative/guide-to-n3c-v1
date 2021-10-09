@@ -7,7 +7,7 @@ on:
       - main
       - master
 
-name: Render-Book-from-main
+name: build-book
 
 jobs:
   bookdown:

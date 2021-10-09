@@ -3,6 +3,20 @@ new_session: true
 before_chapter_script: _common.R
 delete_merged_file: true
 output_dir: "docs"
+view: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1/blob/main/%s
+edit: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1/edit/main/%s
+history: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1/commits/main/%s
 language:
   ui:
     chapter_name: "Chapter "
+rmd_files:
+  [
+    "index.Rmd",
+    "01-intro.Rmd",
+    "02-cross-refs.Rmd",
+    "03-parts.Rmd",
+    "04-citations.Rmd",
+    "05-blocks.Rmd",
+    "06-share.Rmd",
+    "07-references.Rmd"
+  ]

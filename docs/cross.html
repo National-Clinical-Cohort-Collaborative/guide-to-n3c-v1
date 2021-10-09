@@ -86,72 +86,11 @@
 <span class="header-section-number">3.2</span> Captioned figures and tables<a class="anchor" aria-label="anchor" href="#captioned-figures-and-tables"><i class="fas fa-link"></i></a>
 </h2>
 <p>Figures and tables <em>with captions</em> can also be cross-referenced from elsewhere in your book using <code>\@ref(fig:chunk-label)</code> and <code>\@ref(tab:chunk-label)</code>, respectively.</p>
-<p>See Figure <a href="cross.html#fig:nice-fig">3.1</a>.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">pressure</span>, type <span class="op">=</span> <span class="st">'b'</span>, pch <span class="op">=</span> <span class="fl">19</span><span class="op">)</span></code></pre></div>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:nice-fig"></span>
-<img src="02-cross-refs_files/figure-html/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="80%"><p class="caption">
-Figure 3.1: Here is a nice figure!
-</p>
-</div>
-<p>Don’t miss Table <a href="cross.html#tab:nice-tab">3.1</a>.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span>
-  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">pressure</span>, <span class="fl">10</span><span class="op">)</span>, caption <span class="op">=</span> <span class="st">'Here is a nice table!'</span>,
-  booktabs <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
-<div class="inline-table"><table class="table table-sm">
-<caption>
-<span id="tab:nice-tab">Table 3.1: </span>Here is a nice table!</caption>
-<thead><tr class="header">
-<th align="right">temperature</th>
-<th align="right">pressure</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">0.0002</td>
-</tr>
-<tr class="even">
-<td align="right">20</td>
-<td align="right">0.0012</td>
-</tr>
-<tr class="odd">
-<td align="right">40</td>
-<td align="right">0.0060</td>
-</tr>
-<tr class="even">
-<td align="right">60</td>
-<td align="right">0.0300</td>
-</tr>
-<tr class="odd">
-<td align="right">80</td>
-<td align="right">0.0900</td>
-</tr>
-<tr class="even">
-<td align="right">100</td>
-<td align="right">0.2700</td>
-</tr>
-<tr class="odd">
-<td align="right">120</td>
-<td align="right">0.7500</td>
-</tr>
-<tr class="even">
-<td align="right">140</td>
-<td align="right">1.8500</td>
-</tr>
-<tr class="odd">
-<td align="right">160</td>
-<td align="right">4.2000</td>
-</tr>
-<tr class="even">
-<td align="right">180</td>
-<td align="right">8.8000</td>
-</tr>
-</tbody>
-</table></div>
+<p>See Figure <a href="#fig:nice-fig"><strong>??</strong></a>.</p>
+<p><code>{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'} par(mar = c(4, 4, .1, .1)) plot(pressure, type = 'b', pch = 19)</code></p>
+<p>Don’t miss Table <a href="#tab:nice-tab"><strong>??</strong></a>.</p>
+<p><code>{r nice-tab, tidy=FALSE} knitr::kable(   head(pressure, 10), caption = 'Here is a nice table!',   booktabs = TRUE )</code></p>
+
 </div>
 </div>
   <div class="chapter-nav">
@@ -167,8 +106,8 @@ Figure 3.1: Here is a nice figure!
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/blob/master/02-cross-refs.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/edit/master/02-cross-refs.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/blob/master/ch-cross-refs.md">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/edit/master/ch-cross-refs.md">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

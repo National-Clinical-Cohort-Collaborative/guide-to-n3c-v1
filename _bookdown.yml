@@ -12,11 +12,11 @@ language:
 rmd_files:
   [
     "index.Rmd",
-    "01-intro.Rmd",
-    "02-cross-refs.Rmd",
-    "03-parts.Rmd",
-    "04-citations.Rmd",
-    "05-blocks.Rmd",
-    "06-share.Rmd",
-    "07-references.Rmd"
+    "ch-intro.md",
+    "ch-cross-refs.md",
+    "ch-parts.md",
+    "ch-citations.md",
+    "ch-blocks.md",
+    "ch-share.md",
+    "ch-references.Rmd"
   ]

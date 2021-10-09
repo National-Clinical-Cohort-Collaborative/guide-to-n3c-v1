@@ -2,7 +2,7 @@ bookdown::bs4_book:
   css: bs4_style.css
   theme:
     primary: "#096B72"
-  repo: https://github.com/rstudio/bookdown-demo
+  repo: https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

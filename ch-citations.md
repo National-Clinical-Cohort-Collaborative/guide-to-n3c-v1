@@ -1,4 +1,4 @@
-# Sample - Footnotes and citations
+# Sample - Footnotes and citations {#sample-footnotes-and-citations}
 
 (*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 

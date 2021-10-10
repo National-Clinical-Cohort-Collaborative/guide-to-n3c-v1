@@ -1,4 +1,4 @@
-# Sample - Cross-references {#cross}
+# Sample - Cross-references {#sample-cross}
 
 (*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 

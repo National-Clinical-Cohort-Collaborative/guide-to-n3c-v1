@@ -1,4 +1,4 @@
-# Sample - Parts
+# Sample - Parts {#sample-parts}
 
 (*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 

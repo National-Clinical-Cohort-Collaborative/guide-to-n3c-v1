@@ -1,4 +1,4 @@
-# Sample - Blocks
+# Sample - Blocks {#sample-blocks}
 
 (*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 

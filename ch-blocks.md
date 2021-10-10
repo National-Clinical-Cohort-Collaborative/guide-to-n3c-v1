@@ -1,13 +1,15 @@
-# Blocks
+# Sample - Blocks
+
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 
 ## Equations
 
 Here is an equation.
 
-\begin{equation} 
+\begin{equation}
   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
   (\#eq:binom)
-\end{equation} 
+\end{equation}
 
 You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
 
@@ -38,7 +40,7 @@ head(beaver1, n = 5)
 
 :::
 
-It is up to the user to define the appearance of these blocks for LaTeX output. 
+It is up to the user to define the appearance of these blocks for LaTeX output.
 
 You may also use: `.rmdcaution`, `.rmdimportant`, `.rmdtip`, or `.rmdwarning` as the block name.
 

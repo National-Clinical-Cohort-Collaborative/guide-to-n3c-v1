@@ -1,3 +1,5 @@
 `r if (knitr::is_html_output()) '
-# References {-}
+# Sample - References {-}
+
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 '`

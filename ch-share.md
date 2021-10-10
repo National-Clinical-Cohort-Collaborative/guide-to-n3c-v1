@@ -1,4 +1,6 @@
-# Sharing your book
+# Sample - Sharing your book
+
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 
 ## Publishing
 
@@ -24,6 +26,3 @@ Or use:
 ```{r eval=FALSE}
 ?bookdown::bs4_book
 ```
-
-
-

@@ -48,7 +48,7 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: .        # The folder the action should deploy.
-          # clean: true    # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
+          clean: true      # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
 
       # - name: Commit results
       #   if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'

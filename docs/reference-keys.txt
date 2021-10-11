@@ -8,6 +8,9 @@ about
 usage
 render-book
 preview-book
+starting
+registration
+data-use-request
 hello-bookdown
 a-section
 cross

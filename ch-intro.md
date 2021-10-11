@@ -1,4 +1,4 @@
-# Sample - Hello bookdown {#sample-intro}
+# Hello bookdown
 
 (*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
 

@@ -1,4 +1,4 @@
-# Adapted from 
+# Adapted from
 #  * https://github.com/OuhscBbmc/data-science-practices-1/blob/main/.github/workflows/bookdown.yaml on 2021-10-08
 #  * https://ropensci.org/blog/2020/04/07/bookdown-learnings/ on 2021-10-08
 on:
@@ -13,7 +13,7 @@ jobs:
   bookdown:
     name: Render-Book
 
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

@@ -1,10 +1,12 @@
-Getting Started {#starting}
+Getting Started w/ N3C {#starting}
 =============================================
+
+{*This chapter is copied from a quick document we used internally when talking to new investigators.  The quality needs to be improved for this audience.  Please add/improve anything.*}
 
 Registration
 ---------------------------------------------
 
-1. For new investigators who want to access the Enclave, the first step is to register at <https://labs.cd2h.org/registration/> and log in using your institution's authentication information.  If your institution does not appear, please verify that your institution's data use agreement (DUA) is in place.  Email <NCATSPartnerships@mail.nih.gov> with questions.
+1. For new investigators who want to access the [N3C Enclave](https://covid.cd2h.org/enclave), the first step is to register at <https://labs.cd2h.org/registration/> and log in using your institution's authentication information.  If your institution does not appear, please verify that your institution's data use agreement (DUA) is in place.  Email <NCATSPartnerships@mail.nih.gov> with questions.
 
 1. Check the boxes for Enclave access and workstream access.
 
@@ -19,6 +21,6 @@ Registration
 Data Use Request
 ---------------------------------------------
 
-Once you are able to log in to the enclave, to access data, you can request to be a collaborator on a current project or fill out a Data Use Request at <https://unite.nih.gov/workspace/slate/documents/data-use-request/latest>.
+Once you are able to log in to the Enclave, to access data, you can request to be a collaborator on a current project or fill out a Data Use Request at <https://unite.nih.gov/workspace/slate/documents/data-use-request/latest>.
 
 If your project requires zip codes or partial zip codes, you will be required to complete an IRB application and provide an approval letter.

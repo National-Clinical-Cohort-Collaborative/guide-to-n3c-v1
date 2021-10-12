@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 url: https://national-covid-cohort-collaborative.github.io/
-cover-image: images/logo.png # path to the social sharing image
+cover-image: images/logo.png  # path to the social sharing image
 description: |
   This is a minimal example of using the bookdown package to write a book.
   The HTML output format for this example is bookdown::bs4_book,

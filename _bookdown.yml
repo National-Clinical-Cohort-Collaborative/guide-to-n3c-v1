@@ -9,8 +9,8 @@ language:
 rmd_files:
   [
     "index.Rmd",
-    "ch-about.Rmd",
     "ch-starting.md",
+    "ch-about.Rmd",
     "ch-intro.md",
     "ch-cross-refs.md",
     "ch-parts.md",

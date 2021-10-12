@@ -4,13 +4,13 @@ welcome
 contributing-content
 platform
 funding
+starting
+registration
+data-use-request
 about
 usage
 render-book
 preview-book
-starting
-registration
-data-use-request
 hello-bookdown
 a-section
 cross

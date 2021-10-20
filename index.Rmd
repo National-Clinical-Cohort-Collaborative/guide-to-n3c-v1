@@ -1,6 +1,6 @@
 ---
 title: "The Book of N3C"
-author: "N3C Educational Committee"
+author: "The N3C Educational Committee"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book

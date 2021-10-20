@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 url: https://national-covid-cohort-collaborative.github.io/
-cover-image: images/logo.png # path to the social sharing image
+cover-image: images/logo.png  # path to the social sharing image
 description: |
   This is a minimal example of using the bookdown package to write a book.
   The HTML output format for this example is bookdown::bs4_book,
@@ -34,7 +34,7 @@ If you have an idea for something more substantial such as a chapter or section,
 Platform
 ------------------
 
-To make small changes like spelling corrections, we recommend editing the source directly in GitHub.  It handles the details without your knowledge (like starting a fork and prompting your pull request).  From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/), click on the "Edit this page <span class="fab fa-github" aria-hidden="true"></i>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
+To make small changes like spelling corrections, we recommend editing the source directly in GitHub.  It handles the details without your knowledge (like starting a fork and prompting your pull request).  From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/), click on the "Edit this page <span class="fab fa-github" aria-hidden="true"></span>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.  We suggest [RStudio](https://www.rstudio.com/products/rstudio/) or [Visual Studio Code](https://code.visualstudio.com/).
 

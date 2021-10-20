@@ -6,6 +6,10 @@ on:
     branches:
       - main
       - master
+  pull_request:
+    branches:
+      - main
+      - master
 
 name: build-book
 
@@ -41,14 +45,15 @@ jobs:
           Rscript -e "library(remotes)" -e "deps <- readRDS('depends.Rds')" -e "deps[['installed']] <- vapply(deps[['package']], remotes:::local_sha, character(1))" -e "update(deps)"
 
       - name: Render Book
-        run: Rscript -e 'bookdown::render_book("index.Rmd")'
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_dir = "docs")' 
+        # This overrides the 'output_dir' value in _bookdown.yaml.  It blocks local contributions but allows GitHub Actions to deliver html files where GitHub Pages can serve it.
 
       - name: Deploy to GitHub pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: .        # The folder the action should deploy.
-          # clean: true    # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
+          clean: true      # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
 
       # - name: Commit results
       #   if: github.repository == 'National-COVID-Cohort-Collaborative/book-of-n3c-v1'

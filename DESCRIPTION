@@ -10,7 +10,6 @@ Authors@R: c(
     )
 Imports:
     bookdown,
-    remotes,
     kableExtra,
     knitcitations,
     pagedown,
@@ -22,9 +21,6 @@ Imports:
     revealjs,
     rgl,
     rmarkdown,
-    rmdformats,
-    roxygen2,
-    rticles,
     spelling,
     styler,
     svglite,

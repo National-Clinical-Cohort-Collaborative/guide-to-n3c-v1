@@ -29,7 +29,5 @@ Imports:
     webshot,
     workflowr,
     yaml
-Suggests:
-    rsconnect
 Encoding: UTF-8
 Language: en-US

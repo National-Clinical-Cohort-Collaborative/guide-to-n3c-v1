@@ -13,15 +13,12 @@ Imports:
     remotes,
     kableExtra,
     knitcitations,
-    knitr,
-    magick,
     pagedown,
     pander,
     pdftools,
     pkgdown,
     printr,
     reactable,
-    reticulate,
     revealjs,
     rgl,
     rmarkdown,
@@ -37,8 +34,6 @@ Imports:
     usethis,
     webshot,
     workflowr,
-    xfun,
-    xtable,
     yaml
 Suggests:
     rsconnect

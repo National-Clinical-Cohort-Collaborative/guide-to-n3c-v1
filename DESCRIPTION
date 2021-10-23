@@ -8,21 +8,17 @@ Authors@R: c(
     person("Will", "Beasley", role = c("aut", "cre"), email =
     "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006"))
     )
-Imports: 
+Imports:
     bookdown,
-    remotes,    
+    remotes,
     kableExtra,
     knitcitations,
     knitr,
     learnr,
     magick,
-    nomnoml,
-    officedown,
-    officer,
     pagedown,
     pander,
     pdftools,
-    pixiedust,
     pkgdown,
     printr,
     r2d3,
@@ -30,15 +26,12 @@ Imports:
     reticulate,
     revealjs,
     rgl,
-    rhandsontable,
     rmarkdown,
     rmdformats,
     roxygen2,
     rsconnect,
     rticles,
-    sass,
     spelling,
-    stargazer,
     styler,
     svglite,
     tables,
@@ -46,15 +39,12 @@ Imports:
     tikzDevice,
     tinytex,
     trackdown,
-    tufte,
     usethis,
     webshot,
     workflowr,
-    xaringan,
     xfun,
     xtable,
-    yaml,
-    ztable
+    yaml
 Suggests:
     rsconnect
 Encoding: UTF-8

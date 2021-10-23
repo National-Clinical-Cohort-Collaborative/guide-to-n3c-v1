@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
+        "Anzalone",
         "apalike",
         "biblio",
         "bookdown",
+        "bookofn3c",
         "CNAME",
         "deps",
         "documentclass",
@@ -18,6 +20,7 @@
         "mkdir",
         "natbib",
         "NCATS",
+        "orcid",
         "pagedown",
         "pandoc",
         "pdftools",

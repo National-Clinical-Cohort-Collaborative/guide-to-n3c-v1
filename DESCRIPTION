@@ -19,7 +19,6 @@ Imports:
     reactable,
     rgl,
     rmarkdown,
-    spelling,
     styler,
     svglite,
     tikzDevice,

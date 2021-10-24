@@ -21,12 +21,9 @@ Imports:
     reactable,
     rmarkdown,
     styler,
-    svglite,
     tikzDevice,
     tinytex,
     trackdown,
-    usethis,
-    workflowr,
-    yaml
+    usethis
 Encoding: UTF-8
 Language: en-US

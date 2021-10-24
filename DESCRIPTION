@@ -19,7 +19,6 @@ Imports:
     pdftools,
     printr,
     reactable,
-    rgl,
     rmarkdown,
     styler,
     svglite,

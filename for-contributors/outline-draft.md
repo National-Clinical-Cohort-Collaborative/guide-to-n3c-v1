@@ -22,27 +22,29 @@
 
 ### Section: Domain Teams
 
-## Chapter: Personnel
-
-> Each section in this chapter has two goals: (a) describe the roles needed for a typical N3C investigation and (b) help Site PIs understand and hire the appropriate skills and experience.
->
-> Each role is described how they fit into a project.  Then an example description is provided that can be customized by an institution hiring for the position.
-
-## Section: Personnel Columns
-
-### Subsection: Lead Investigator
-
-### Subsection: Subject Matter Expert
-
-### Subsection: Project Manager
-
-### Subsection: Statistician
-
-### Subsection: Administrator
-
 ## Chapter: For Institutions
 
 ### Subsection: Data Use Agreement
+
+# Part: Personnel
+
+> Each section in this chapter/part has two goals: (a) describe the roles needed for a typical N3C investigation and (b) help Site PIs understand and hire the appropriate skills and experience.
+>
+> Each role is described how they fit into a project.  Then an example description is provided that can be customized by an institution hiring for the position.
+
+## Chapter: Personnel Verticals
+
+### Section: Lead Investigator
+
+### Section: Subject Matter Expert
+
+### Section: Project Manager
+
+### Section: Statistician
+
+### Section: Administrator
+
+## Chapter: Expertise Levels
 
 # Part: Data Structure
 
@@ -56,7 +58,7 @@
 
 > An EMR does not store data in an OMOP-compliant format.  Transaction vs Warehouse architecture.  Translated to OMOP from EMR or PCoreNet or...
 
-### Section: Common Gotchas
+### Section: Common N3C-OMOP Gotchas
 
 ## Chapter: Codesets
 

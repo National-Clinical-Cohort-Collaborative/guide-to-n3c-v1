@@ -8,6 +8,10 @@
 
 ### Section: Data Use Request
 
+#### Subsection: Privacy Level
+
+> Level 0, 1, & 2 ...
+
 ### Section: Domain Teams
 
 ## Chapter: Personnel
@@ -18,13 +22,15 @@
 
 ## Section: Personnel Columns
 
-### Subsection: Lead Investigators
+### Subsection: Lead Investigator
 
-### Subsection: Clinicians and Subject Matter Experts
+### Subsection: Subject Matter Expert
 
-### Subsection: Project Managers
+### Subsection: Project Manager
 
-### Subsection: Statisticians
+### Subsection: Statistician
+
+### Subsection: Administrator
 
 ## Chapter: For Institutions
 
@@ -34,6 +40,10 @@
 
 ## Chapter: OMOP
 
+> The OMOP Common Data Model is developed and maintained by OHDSI
+
+### Section: Need for a Common Data Model
+
 ## Chapter: Codesets
 
 ## Chapter: N3C-Specific Tables
@@ -42,8 +52,42 @@
 
 ## Chapter: Palintir Enclave
 
+### Code Workbook
+
+### Code Repository
+
+## Chapter: Strategy
+
+### Section: Choosing the Right Tool for each part of the Project
+
+> We recommend that typical projects use SQL Transforms for the data manipulation and use Python or Spark Transforms for the analysis.  
+>
+>For the past 30 years, SQL has been the defacto language for large datasets like the N3C. It is well-suited for efficiently (a) selecting patients following exacting selection criteria, (b) joining a variety of predictor and outcome variables from multiple tables, and (c) producing a cache
+
+consequently many people
+
+### Section: Dataset Caching
+
+### Section: Dataset Visibility
+
+### Section: Template
+
 ## Chapter: SQL Transforms
 
 ## Chapter: Python Transforms
 
 ## Chapter: R Transforms
+
+## Chapter: Spark Transforms
+
+## Chapter: Misc Tools
+
+### Section: Site Selection
+
+## Chapter: Reproducibility
+
+> Like most empirical investigations using patient data, tradeoffs must be considered tha balance the competing priorities of transparency of the researcher vs protection of the patient.
+
+### Section: Permission to Download
+
+## Chapter: Publication Process

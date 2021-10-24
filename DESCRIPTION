@@ -27,7 +27,6 @@ Imports:
     tinytex,
     trackdown,
     usethis,
-    webshot,
     workflowr,
     yaml
 Encoding: UTF-8

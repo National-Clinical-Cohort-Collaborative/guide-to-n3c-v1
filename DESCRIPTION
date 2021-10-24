@@ -14,11 +14,9 @@ Imports:
     bookdown,
     kableExtra,
     pagedown,
-    pander,
     pdftools,
     printr,
     rmarkdown,
-    styler,
     tikzDevice,
     tinytex
 Encoding: UTF-8

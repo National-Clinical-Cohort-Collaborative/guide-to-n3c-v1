@@ -2,7 +2,7 @@
 
 ## Chapter: Welcome
 
-### Chapter: N3C Patients
+## Chapter: N3C Patients
 
 > The 1.5 million patients are collected from 60 US institutions
 
@@ -46,6 +46,10 @@
 
 ## Chapter: Expertise Levels
 
+### Section: Grad Students
+
+### Section: Site PI
+
 # Part: Data Structure
 
 ## Chapter: OMOP
@@ -64,13 +68,19 @@
 
 ## Chapter: N3C-Specific Tables
 
-# Part: Analysis
+# Part: N3C Ecosystem
 
 ## Chapter: Palintir Enclave
 
-### Code Workbook
+### Section: Code Workbook
 
-### Code Repository
+### Section: Code Repository
+
+### Section: Fusion
+
+### Section: Other Enclave Applications
+
+> Quick overview of the less-important & less-frequent parts of the Enclave.
 
 ## Chapter: Architecture
 
@@ -88,6 +98,8 @@ consequently many people
 
 ### Section: Template
 
+# Part: Enclave Transforms
+
 ## Chapter: SQL Transforms
 
 ## Chapter: Python Transforms
@@ -97,6 +109,8 @@ consequently many people
 > This a rich library of {SQL|Python|R} books for all experience levels.  This chapter doesn't try to reproduce that body of work.  It first introduces the basics of {SQL|Python|R} needed to complete a basic example.  It then provides a list of references to further your {SQL|Python|R} education.  Finally, we emphasize the differences between using {SQL|Python|R} in Enclave vs in more conventional environments.
 
 ## Chapter: Spark Transforms
+
+# Part: Analysis III
 
 ## Chapter: Tool Grab Bag
 

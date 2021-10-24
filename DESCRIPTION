@@ -13,12 +13,10 @@ Authors@R: c(
 Imports:
     bookdown,
     kableExtra,
-    knitcitations,
     pagedown,
     pander,
     pdftools,
     printr,
-    reactable,
     rmarkdown,
     styler,
     tikzDevice,

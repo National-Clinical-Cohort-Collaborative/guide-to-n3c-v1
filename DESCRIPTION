@@ -6,56 +6,18 @@ Authors@R: c(
     person(given = "N3C Educational Committee",
              role = c("cph", "fnd")),
     person("Will", "Beasley", role = c("aut", "cre"), email =
-    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006"))
+    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006")),
+    person("Alfred", "Anzalone", role = c("aut"), email =
+    "alfred.anzalone@unmc.edu", comment = c(ORCID = "0000-0002-3212-7845"))
     )
-Imports: 
+Imports:
     bookdown,
-    remotes,    
     kableExtra,
-    knitcitations,
-    knitr,
-    learnr,
-    magick,
-    nomnoml,
-    officedown,
-    officer,
     pagedown,
-    pander,
     pdftools,
-    pixiedust,
-    pkgdown,
     printr,
-    r2d3,
-    reactable,
-    reticulate,
-    revealjs,
-    rgl,
-    rhandsontable,
     rmarkdown,
-    rmdformats,
-    roxygen2,
-    rsconnect,
-    rticles,
-    sass,
-    spelling,
-    stargazer,
-    styler,
-    svglite,
-    tables,
-    tangram,
     tikzDevice,
-    tinytex,
-    trackdown,
-    tufte,
-    usethis,
-    webshot,
-    workflowr,
-    xaringan,
-    xfun,
-    xtable,
-    yaml,
-    ztable
-Suggests:
-    rsconnect
+    tinytex
 Encoding: UTF-8
 Language: en-US

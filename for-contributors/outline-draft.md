@@ -2,6 +2,14 @@
 
 ## Chapter: Welcome
 
+### Chapter: N3C Patients
+
+> The 1.5 million patients are collected from 60 US institutions
+
+### Section: Covid-Positive Patients
+
+### Section: Covid-Negative Patients
+
 ## Chapter: For Individual Researchers
 
 ### Section: User Registration
@@ -44,6 +52,12 @@
 
 ### Section: Need for a Common Data Model
 
+### Section: Upstream Sources
+
+> An EMR does not store data in an OMOP-compliant format.  Transaction vs Warehouse architecture.  Translated to OMOP from EMR or PCoreNet or...
+
+### Section: Common Gotchas
+
 ## Chapter: Codesets
 
 ## Chapter: N3C-Specific Tables
@@ -56,7 +70,7 @@
 
 ### Code Repository
 
-## Chapter: Strategy
+## Chapter: Architecture
 
 ### Section: Choosing the Right Tool for each part of the Project
 
@@ -78,11 +92,19 @@ consequently many people
 
 ## Chapter: R Transforms
 
+> This a rich library of {SQL|Python|R} books for all experience levels.  This chapter doesn't try to reproduce that body of work.  It first introduces the basics of {SQL|Python|R} needed to complete a basic example.  It then provides a list of references to further your {SQL|Python|R} education.  Finally, we emphasize the differences between using {SQL|Python|R} in Enclave vs in more conventional environments.
+
 ## Chapter: Spark Transforms
 
-## Chapter: Misc Tools
+## Chapter: Tool Grab Bag
 
 ### Section: Site Selection
+
+### Section: Parallel Collaboration
+
+### Section: Incorporating External Datasets
+
+> The N3C patients are collected
 
 ## Chapter: Reproducibility
 
@@ -91,3 +113,34 @@ consequently many people
 ### Section: Permission to Download
 
 ## Chapter: Publication Process
+
+# Part: Style Guide
+
+> Using a consistent style across your projects can decrease the overhead as your data science team discusses options, decides on a good choice, and develops in compliant code. But like in most themes in this document, the cost is worth the effort. Unforced code errors are reduced when code is consistent, because mistake-prone styles are more apparent.
+>
+> {Copied from <https://ouhscbbmc.github.io/data-science-practices-1/style.html>}
+
+## Chapter: Naming
+
+## Chapter: Sandbox to Production Code
+
+# Part Start-to-Finish Examples
+
+## Chapter: Investigation - Rural Health Disparities
+
+Pieces:
+
+1. Primary Goals
+2. DUR
+3. Funding
+4. Personnel
+5. Coding
+6. Analysis
+7. Manuscript Development
+8. Biggest Challenges
+9. What we'd do differently if starting from scratch
+
+## Chapter: Graduate School Summer Course - Simpson's Paradox
+
+> An N3C project has many appealing characteristics to instructors developing a two-month course: (a) the data are already collected, documented, and available, (b) the hardware requirements are negligible because the NIH Spark Cluster...
+

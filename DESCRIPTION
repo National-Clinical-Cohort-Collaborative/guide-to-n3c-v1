@@ -20,8 +20,6 @@ Imports:
     rmarkdown,
     styler,
     tikzDevice,
-    tinytex,
-    trackdown,
-    usethis
+    tinytex
 Encoding: UTF-8
 Language: en-US

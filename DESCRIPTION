@@ -8,7 +8,9 @@ Authors@R: c(
     person("Will", "Beasley", role = c("aut", "cre"), email =
     "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006")),
     person("Alfred", "Anzalone", role = c("aut"), email =
-    "alfred.anzalone@unmc.edu", comment = c(ORCID = "0000-0002-3212-7845"))
+    "alfred.anzalone@unmc.edu", comment = c(ORCID = "0000-0002-3212-7845")),
+    person("Shawn", "O'Neil", role = c("aut"), email =
+    "oneilsh@gmail.com", comment = c(ORCID = "0000-0001-6220-7080"))
     )
 Imports:
     bookdown,

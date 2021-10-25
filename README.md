@@ -27,7 +27,7 @@ You don't have to understand the rest to contribute, but for those interested:
 
 * After your change is pushed to GitHub, a [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) spawns a small VM that (a) collects all the markdown documents, (b) calls bookdown to convert them to html, and (c) moves the compiled products to the "gh-pages" branch.
 
-* GitHub Pages serves the contents of the "docs/" directory to anyone with a browser.
+* GitHub Pages serves the contents of the ["docs/" directory](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/tree/gh-pages/docs) (in the "gh-pages" branch) to anyone with a browser.
 
 <!-- badges: start -->
 [![Build Book](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml/badge.svg)](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml)

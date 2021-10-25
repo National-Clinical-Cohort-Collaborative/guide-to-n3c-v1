@@ -12,6 +12,8 @@ Authors@R: c(
     )
 Imports:
     bookdown,
+    bslib,
+    downlit,
     kableExtra,
     pagedown,
     pdftools,

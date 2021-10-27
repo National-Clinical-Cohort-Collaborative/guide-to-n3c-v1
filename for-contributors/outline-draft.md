@@ -112,6 +112,8 @@
 
 ### Section: Template
 
+## Chapter: Study Design for Secondary Use of Electronic Health Data
+
 <!-- ---- Enclave Transforms ------------------------------------------------------ -->
 
 # Part: Enclave Transforms

@@ -1,7 +1,7 @@
 Type: Book
 Package: bookofn3c
 Title: Book of N3C
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person(given = "N3C Educational Committee",
              role = c("cph", "fnd")),

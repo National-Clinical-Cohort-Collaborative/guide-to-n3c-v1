@@ -1,7 +1,9 @@
 Book of N3C
 ==================
 
- *[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
+*[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
+
+The draft of the [draft outline](for-contributors/outline-draft.md) is available for viewing and editing.
 
 Contributing Content
 ------------------

@@ -1,3 +1,5 @@
+<!-- ---- Getting Started ------------------------------------------------------ -->
+
 # Part: Getting Started
 
 ## Chapter: Welcome
@@ -26,6 +28,8 @@
 
 ### Subsection: Data Use Agreement
 
+<!-- ---- Personnel ------------------------------------------------------ -->
+
 # Part: Personnel
 
 > Each section in this chapter/part has two goals: (a) describe the roles needed for a typical N3C investigation and (b) help Site PIs understand and hire the appropriate skills and experience.
@@ -50,6 +54,8 @@
 
 ### Section: Site PI
 
+<!-- ---- Data Structure ------------------------------------------------------ -->
+
 # Part: Data Structure
 
 ## Chapter: OMOP
@@ -68,9 +74,11 @@
 
 ## Chapter: N3C-Specific Tables
 
+<!-- ---- N3C Ecosystem ------------------------------------------------------ -->
+
 # Part: N3C Ecosystem
 
-## Chapter: Palintir Enclave
+## Chapter: Palantir Enclave
 
 ### Section: Code Workbook
 
@@ -86,17 +94,27 @@
 
 ### Section: Choosing the Right Tool for each part of the Project
 
-> We recommend that typical projects use SQL Transforms for the data manipulation and use Python or Spark Transforms for the analysis.  
+> As described in the N3C Ecosystem chapter, a single pipeline can easily integrate SQL, Python, and R code.  This flexibility allows your team to mix and match the tools to best suit the team's needs and abilities.
 >
->For the past 30 years, SQL has been the defacto language for large datasets like the N3C. It is well-suited for efficiently (a) selecting patients following exacting selection criteria, (b) joining a variety of predictor and outcome variables from multiple tables, and (c) producing a cache
-
-consequently many people
+> We recommend that typical projects use SQL Transforms for the data manipulation and use Python or Spark Transforms for the analysis.
+>
+> For the past 30 years, SQL has been the de facto language for large datasets like the N3C. It is well-suited for efficiently (a) selecting patients following exacting selection criteria, (b) joining a variety of predictor and outcome variables from multiple tables, and (c) producing a dataset better suited for analyses.  Consequently it is a common ability for people in data science and IT.
+>
+> To capitalize on the well-established SQL base, Spark and other data-centric applications expose a SQL-like API.  Spark stores and manipulates data very differently than traditional relational database engines, however Hive and Spark SQL allow developers to transform data following familiar concepts and syntax.
+>
+> Our rule of thumb is to transform it in SQL if SQL can comfortable transform it.  Otherwise use R or Python to transform it.
+>
+> When decided whether to
 
 ### Section: Dataset Caching
 
 ### Section: Dataset Visibility
 
 ### Section: Template
+
+## Chapter: Study Design for Secondary Use of Electronic Health Data
+
+<!-- ---- Enclave Transforms ------------------------------------------------------ -->
 
 # Part: Enclave Transforms
 
@@ -106,9 +124,13 @@ consequently many people
 
 ## Chapter: R Transforms
 
-> This a rich library of {SQL|Python|R} books for all experience levels.  This chapter doesn't try to reproduce that body of work.  It first introduces the basics of {SQL|Python|R} needed to complete a basic example.  It then provides a list of references to further your {SQL|Python|R} education.  Finally, we emphasize the differences between using {SQL|Python|R} in Enclave vs in more conventional environments.
+> {SQL|Python|R} has many books for all levels of experience.  This chapter doesn't try to reproduce that body of work.  We first introduce the basics of {SQL|Python|R} needed to complete a basic N3C example.  We then emphasize the differences between using {SQL|Python|R} in Enclave vs in a more conventional environment.  Finally we suggest sources to further your {SQL|Python|R} education.
 
 ## Chapter: Spark Transforms
+
+> Compared to SQL, Python, and R,
+
+<!-- ---- Analysis III ------------------------------------------------------ -->
 
 # Part: Analysis III
 
@@ -130,6 +152,8 @@ consequently many people
 
 ## Chapter: Publication Process
 
+<!-- ---- Style Guide ------------------------------------------------------ -->
+
 # Part: Style Guide
 
 > Using a consistent style across your projects can decrease the overhead as your data science team discusses options, decides on a good choice, and develops in compliant code. But like in most themes in this document, the cost is worth the effort. Unforced code errors are reduced when code is consistent, because mistake-prone styles are more apparent.
@@ -140,7 +164,9 @@ consequently many people
 
 ## Chapter: Sandbox to Production Code
 
-# Part Start-to-Finish Examples
+<!-- ---- Start-to-Finish Examples ------------------------------------------------------ -->
+
+# Part: Start-to-Finish Examples
 
 ## Chapter: Investigation - Rural Health Disparities
 
@@ -161,4 +187,3 @@ Pieces:
 ## Chapter: Graduate School Summer Course - Simpson's Paradox
 
 > An N3C project has many appealing characteristics to instructors developing a two-month course: (a) the data are already collected, documented, and available, (b) the hardware requirements are negligible because the NIH Spark Cluster...
-

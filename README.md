@@ -3,7 +3,8 @@ Book of N3C
 
 *[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
-The draft of the [draft outline](for-contributors/outline-draft.md) is available for viewing and editing.
+The [draft outline](for-contributors/outline-draft.md) is available publicly for viewing and editing. Some private staging material can be found on the N3C google drive at "/WORKSTREAMS & SUBGROUPS/Collaborative Analytics/Clinical Scenarios & Data Analytics subgroup/Clinical Domain Teams/Education and Training DT/Projects/Book of N3C".
+
 
 Contributing Content
 ------------------

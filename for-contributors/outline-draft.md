@@ -189,5 +189,5 @@ Pieces:
 
 ## Chapter: Peter Robinson's ML Pipeline Group
 
-{They already have existing examples that David Sahn thinks would be a great fit for the book.}
+{They already have existing examples that David Sahner thinks would be a great fit for the book.}
 

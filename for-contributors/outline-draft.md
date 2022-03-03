@@ -185,3 +185,9 @@ Pieces:
 ## Chapter: Graduate School Summer Course - Simpson's Paradox
 
 > An N3C project has many appealing characteristics to instructors developing a two-month course: (a) the data are already collected, documented, and available, (b) the hardware requirements are negligible because the NIH Spark Cluster...
+
+
+## Chapter: Peter Robinson's ML Pipeline Group
+
+{They already have existing examples that David Sahn thinks would be a great fit for the book.}
+

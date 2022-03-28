@@ -10,7 +10,7 @@ Registration
 
 1. Check the boxes for Enclave access and workstream access.
 
-1. You will need to enter an ORCiD ID (if you don't have one, you must create one).
+1. You will need to enter an ORCiD ID (if you don't have one, you must create one)..
 
 1. Enter google info if you want to join the slack channels, access google drive resources, etc. (Slack and Google drive accounts are utilized frequently for info sharing on a national level, and we highly recommend providing this info if available.)
 

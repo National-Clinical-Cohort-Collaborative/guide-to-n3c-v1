@@ -74,6 +74,15 @@
 
 ## Chapter: N3C-Specific Tables
 
+## Chapter: Checklist for Analysis/Submission
+
+Curated list of recommendations that should be considered before taking an analysis too seriously. Similar to R's [Checklist for CRAN submissions](https://cran.r-project.org/web/packages/submission_checklist.html).  David Sahner suggested to organize it by OMOP domain (or maybe source table).  Maybe there's a priority icon that identicates if this is potentially a huge problem if ignored (*eg*, the hypothesis direction could be flipped) or a minor problem (*eg*, the coefficients might be a little off).
+
+* List of open issues to be addressed:
+
+* List of "Persistent Data Issues": https://unite.nih.gov/workspace/documentation/product/n3c-info/data-issues
+
+
 <!-- ---- N3C Ecosystem ------------------------------------------------------ -->
 
 # Part: N3C Ecosystem

@@ -48,9 +48,11 @@ Funding
 
 The N3C is supported by [NIH](https://www.nih.gov/) National Center for Advancing Translational Sciences ([NCATS](https://ncats.nih.gov/)).
 
-Build Status
+Versioning and Build Status
 ------------------
 
+Zenodo releases: [![DOI](https://zenodo.org/badge/415068439.svg)](https://zenodo.org/badge/latestdoi/415068439)
+
 <!-- badges: start -->
-[![Build Book](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml/badge.svg)](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml)
+GitHub Actions: [![Build Book](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml/badge.svg)](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/actions/workflows/build-book.yaml)
 <!-- badges: end -->

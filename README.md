@@ -34,7 +34,7 @@ Assets
 
 * [Directory on N3C Google Drive ](https://drive.google.com/drive/u/0/folders/1ZFxcvLvJUqMF_RbnQLo8rW7DTMTtahfY):
 
-    ```
+    ```sh
     //N3C allhands National COVID Cohort Collaborative (n3c-allhands@ctsa.io)/WORKSTREAMS & SUBGROUPS/Collaborative Analytics/Clinical Scenarios & Data Analytics subgroup/Clinical Domain Teams/Education and Training DT/Projects/Book of N3C/
     ```
 

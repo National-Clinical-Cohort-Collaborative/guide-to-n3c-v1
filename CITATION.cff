@@ -5,7 +5,7 @@ cff-version: 1.2.0
 title: Book of N3C
 message: 'If you use this software, please cite it as below'
 type: software
-editors:
+authors:
   - given-names: Shawn
     family-names: O'Neil
     affiliation: University of Colorado Anschutz Medical Campus

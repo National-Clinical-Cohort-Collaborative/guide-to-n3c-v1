@@ -40,6 +40,23 @@ head(beaver1, n = 5)
 
 :::
 
+A python transform:
+```python
+def my_transform(input1, input2):
+    result = input1.head(6)
+    print("this is a logged output")
+    
+    return result
+```
+
+The output in the Logs tab:
+```
+this is a logged output
+```
+
+
+
+
 It is up to the user to define the appearance of these blocks for LaTeX output.
 
 You may also use: `.rmdcaution`, `.rmdimportant`, `.rmdtip`, or `.rmdwarning` as the block name.

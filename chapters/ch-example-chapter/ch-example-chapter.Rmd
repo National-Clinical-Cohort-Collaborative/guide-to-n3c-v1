@@ -1,0 +1,208 @@
+# Example Chapter
+
+This chapter is to exemplify various kinds of content for the book of N3C, and serve as a style guide.
+
+## Subheadings
+
+Chapter titles should use a level-1 heading, topics and sub-topics should use level-2 and level-3 headings, but level-4 headings and beyond are discouraged. 
+
+
+
+## Code Blocks
+
+Code blocks may be formatted for Python, R, or SQL. Make ample use of code comments. Example python block:
+
+```{python eval=FALSE}
+import pandas as pd
+
+# Both pneumonia_concept_set and condition_occurrence_sample are input as pandas dataframes in this example
+def pneumonia_conditions2(pneumonia_concept_set, condition_occurrence):
+
+    # Use an inner join to pull condition_occurrence entries matching concepts in the pneumonia_concept_set
+    result = pd.merge(pneumonia_concept_set, condition_occurrence, how = "inner", left_on = "concept_id", right_on = "condition_concept_id")
+    
+    # Calling print() results in output being logged to the "logs" tab
+    print(result.describe())
+
+    # Basic transforms should return a data frame (either pandas or spark)
+    return result
+```
+
+Example R block:
+
+```{r eval=FALSE}
+# Both pneumonia_concept_set and condition_occurrence_sample are input as R dataframes in this example
+pneumonia_conditions_result <- function(pneumonia_concept_set, condition_occurrence) {
+  
+    # Use an inner join to pull condition_occurrence entries matching concepts in the pneumonia_concept_set
+    result <- pneumonia_concept_set %>% 
+      inner_join(condition_occurrence, by = c("concept_id" = "condition_concept_id")) %>%
+      # we also convert the condition_source_value to an integer, since the 
+      # conversion from spark's long type results in an R integer64 type, incompatible with
+      # many functions
+      mutate(condition_source_value = as.integer(condition_source_value))
+  
+    p <- ggplot(result) + 
+      geom_histogram(aes(x = condition_end_date - condition_start_date))
+    
+    # an explicit call to plot() is needed to display the resulting ggplot
+    plot(p)
+    
+    # the str() function is useful for identifying data contents and types
+    print(str(result))
+    
+    return(result)
+}
+```
+
+And an example SQL block:
+
+```{sql eval=FALSE}
+-- filter the concept_set_members table input to select a single concept set version
+SELECT *
+FROM concept_set_members
+WHERE codeset_id = 761347708
+```
+
+Output blocks (demonstrating logged output) should be uncolored:
+
+```
+'data.frame':	19502 obs. of  27 variables:
+ $ codeset_id                   : int  761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 ...
+ $ concept_id                   : int  255848 255848 255848 255848 255848 255848 255848 255848 255848 255848 ...
+ $ concept_set_name             : chr  "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" ...
+ $ is_most_recent_version       : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
+ $ version                      : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ concept_name                 : chr  "Pneumonia" "Pneumonia" "Pneumonia" "Pneumonia" ...
+ $ archived                     : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ person_id                    : int  148 833 1088 1238 1829 2142 2659 3749 8086 9465 ...
+...
+```
+
+## Bullets and Lists
+
+Unordered and ordered lists may be used, but they should be used sparingly and not a replacement for reader-friendly prose.
+
+* Item 1
+    * Subitem 1.1
+    * Subitem 1.2
+* Item 2
+* Item 3
+
+Ordered bullet list:
+
+1. Item 1
+    1. Subitem 1.1
+    2. Subitem 1.2
+2. Item 2
+3. Item 3
+
+## Equations
+
+We don't anticipate much need for equations, but just in case here's an example:
+
+\begin{equation}
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation}
+
+
+## Callouts
+
+Callout blocks may be used to emphasize certain points, provide additional information, or other uses. 
+
+
+::: {.rmdnote}
+This is a Note callout.
+
+### Markdown in callouts
+
+Markdown formatting can be used in callouts. Here's an example code block:
+
+```{sql eval=FALSE}
+-- filter the concept_set_members table input to select a single concept set version
+SELECT *
+FROM concept_set_members
+WHERE codeset_id = 761347708
+```
+:::
+
+Other callout types include `.rmdcaution`: 
+
+::: {.rmdcaution}
+This is a Caution callout.
+:::
+
+`.rmdimportant`:
+
+::: {.rmdimportant}
+This is an Important callout.
+:::
+
+
+`.rmdtip`:
+
+::: {.rmdtip}
+This is a Tip callout.
+:::
+
+
+and `.rmdwarning`:
+
+::: {.rmdwarning}
+This is a Warning callout.
+:::
+
+## Screenshots and Images
+
+**REMEMBER: DO NOT INCLUDE ANY DATA, FIGURES, OR RESULTS THAT ARE PROTECTED BY A DATA USE REQUEST.**
+
+The Book of N3C will very likely contain a multitude of high-detail screenshots. To produce these we recommend:
+
+* including only the enclave interface: not browser tabs, the URL bar, etc.
+* include the entire enclave interface where possible (minimizing the left menu bar if desired)
+* taking screenshots on a high-DPI monitor
+* annotating screenshots with red arrows or boxes to highlight sections
+* use captions
+
+
+Screenshots will be zoomable in the final output; here's an example of a centered screenshot scaled to 40% of the main content width, with text before and after.
+
+<div class="fig center" style="width: 40%">
+  <img class="zoom" src="chapters/ch-example-chapter/assets/screenshot_example.png" />
+  <p class="caption">An example screenshot.</p>
+</div>
+
+A single figure with caption may contain multiple screenshots:
+
+<div class="fig center" style="width: 90%">
+  <img class="zoom" src="chapters/ch-example-chapter/assets/screenshot_example.png" style="width: 45%"/>
+  <img class="zoom" src="chapters/ch-example-chapter/assets/screenshot_example.png" style="width: 45%"/>
+  <p class="caption">An example of two screenshots with a single caption.</p>
+</div>
+
+Figures can also be 'floated' left and write with text wraparound:
+
+
+<div class="fig right" style="width: 50%">
+  <img class="zoom" src="chapters/ch-example-chapter/assets/screenshot_example.png" />
+  <p class="caption">An example screenshot.</p>
+</div>
+
+In magna lacus, elementum eget sem at, mollis pellentesque lacus. Sed placerat ipsum magna, et efficitur nisl pharetra non. Maecenas eget ultrices est, quis dignissim velit. Suspendisse iaculis turpis sed nibh molestie tristique ut sit amet velit. Morbi ut varius nisi, commodo placerat ipsum. Quisque volutpat enim lectus, nec fermentum risus molestie sed. Morbi gravida vulputate diam dapibus posuere. Pellentesque placerat vulputate lectus eget auctor. Mauris vitae tincidunt eros. Nulla quam enim, aliquam in varius at, vulputate non ante.
+
+Sed iaculis consequat sapien, maximus ornare nibh elementum quis. Pellentesque semper orci arcu, dapibus blandit elit aliquet non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vel massa tincidunt, elementum ipsum quis, imperdiet odio. In fringilla mauris nisl. Donec sit amet ipsum orci. Maecenas auctor turpis et nisl semper, et pretium libero interdum.
+<div class="fig left" style="width: 40%">
+  <img class="zoom" src="chapters/ch-example-chapter/assets/screenshot_example.png" />
+  <p class="caption">An example screenshot.</p>
+</div>
+Etiam tempor lectus nec metus ornare pharetra. Vivamus ut justo ipsum. Nullam nec luctus justo. Vivamus tincidunt justo in varius ultricies. Fusce facilisis arcu at turpis placerat, eget tincidunt lectus semper. Aenean quam magna, scelerisque et nunc in, porta dictum velit. Cras sit amet massa non diam posuere gravida aliquet vitae ligula. Vivamus placerat tortor nisl, et auctor ex commodo at. Fusce nisi ex, egestas in mauris a, hendrerit vestibulum ligula. Sed et ipsum in metus dapibus aliquam. Donec a semper justo, in tempor nisl.
+
+## Footnotes and Citations
+
+Feel free to use footnotes,^[Who doesn't like a good footnote?] but don't go overboard. Citations are also possible.[@xie2015] For GitHub, citations should be in Bibtex format in each chapters' `assets/citations.bib` file. 
+
+
+
+
+

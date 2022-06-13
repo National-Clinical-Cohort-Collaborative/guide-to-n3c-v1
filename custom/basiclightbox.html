@@ -1,0 +1,135 @@
+<style>
+
+/*A little space before, a little more space after*/
+.fig {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.fig.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.fig.left {
+  display: inline-block;
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 0em;
+}
+
+.fig.right {
+  display: inline-block;
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 0em;
+}
+
+.fig>p.caption {
+  color: #AAAAAA;
+  text-align: center;
+}
+
+/* zoom subelements (mostly images) get scaled to the container and a tasteful shadow (to help white images stand out from white background)*/
+.fig .zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 0 0 5px 1px #AAAAAA;
+}
+
+/* zoom subelements that are in sequence get a little spacing*/
+.zoom + .zoom {
+  margin-left: 10px;
+}
+
+</style>
+
+<!-- >
+  Shamelessly from https://code-boxx.com/image-zoom-css-javascript/ with modifications
+</-->
+<style>
+/* (A) LIGHTBOX BACKGROUND */
+#lightbox {
+  /* (A1) COVERS FULLSCREEN */
+  position: fixed; z-index: 999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+
+  /* (A2) BACKGROUND */
+  background: rgba(0, 0, 0, 0.5);
+
+  /* (A3) CENTER IMAGE ON SCREEN */
+  display: flex;
+  align-items: center;
+
+  /* (A4) HIDDEN BY DEFAULT */
+  visibility: hidden;
+  opacity: 0;
+
+  /* (A5) SHOW/HIDE ANIMATION */
+}
+
+/* (A6) TOGGLE VISIBILITY */
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity ease 0.4s;
+}
+
+#lightbox.hide {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0s 0.4s ease, opacity 0.4s ease;
+}
+
+
+/* (B) LIGHTBOX IMAGE */
+#lightbox img {
+  /* (B1) DIMENSIONS */
+  width: 90% !important;
+  height: auto;
+  margin: auto;
+  /* (B2) IMAGE FIT */
+  /* contain | cover | fill | scale-down */
+  object-fit: cover;
+}
+
+/* (C) LIGHTBOX IMAGE - FULLSCREEN ALTERNATIVE *
+#lightbox img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+</style>
+
+<script>
+  window.onload = () => {
+  // (A) GET LIGHTBOX & ALL .zoom IMAGES
+  let all = document.getElementsByClassName("zoom"),
+  lightbox = document.getElementById("lightbox");
+
+  // (B) CLICK TO SHOW IMAGE IN LIGHTBOX
+  // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+  if (all.length>0) { for (let i of all) {
+    i.onclick = () => {
+      let clone = i.cloneNode();
+      clone.className = "";
+      lightbox.innerHTML = "";
+      lightbox.appendChild(clone);
+      lightbox.className = "show";
+    };
+  }}
+
+  // (C) CLICK TO CLOSE LIGHTBOX
+  lightbox.onclick = () => {
+    lightbox.className = "hide";
+  };
+};
+</script>
+
+<div id="lightbox"></div>
+

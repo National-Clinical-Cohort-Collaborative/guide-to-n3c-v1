@@ -9,6 +9,11 @@ bookdown::bs4_book:
     search:
       engine: fuse # lunr is the default
       options: null # can override, see: https://fusejs.io/api/options.html
+  includes:
+#    in_header:
+#      - custom/basiclightbox.html
+    before_body:
+      - custom/basiclightbox.html
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

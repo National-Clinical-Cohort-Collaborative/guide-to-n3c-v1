@@ -1,0 +1,88 @@
+# Example Chapter
+
+This chapter is to exemplify the kinds of content you may use in the book of N3C. Lorem Ipsum text is included 
+to make it look more like a final product. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed turpis eu erat placerat placerat in ac risus. Etiam bibendum et felis varius iaculis. Vestibulum ac orci dignissim, pellentesque augue a, malesuada orci. Mauris et libero id turpis bibendum luctus non id dolor. Duis rutrum, enim commodo tincidunt posuere, velit ligula mattis enim, porta scelerisque urna enim a mauris. Donec lacinia nibh in purus scelerisque, elementum consectetur sapien efficitur. Fusce et pretium velit. Ut non nisl orci. Aliquam ornare nisi nec tortor euismod congue. Proin cursus lacus odio, vel dapibus magna porta sed. Nunc in ullamcorper tortor. Duis id finibus elit, ac vehicula nibh.
+
+Pellentesque sed accumsan tortor. Fusce fringilla augue magna, in gravida purus pellentesque sit amet. Nunc elementum urna nulla, a blandit metus pulvinar vel. Duis faucibus magna vitae sem viverra, vel tincidunt ex consectetur. Praesent pharetra mauris vitae dolor consequat volutpat. Curabitur a nisl interdum, volutpat magna eu, pellentesque sem. Nunc sollicitudin quis nisi eu vehicula. Aliquam erat volutpat. Donec ex quam, fermentum et consequat sed, condimentum ut quam. Vestibulum placerat nisl eu leo mollis, in mattis nunc luctus. Nam et dictum mauris. Sed elementum imperdiet dolor ac imperdiet. Curabitur ultricies accumsan urna sit amet viverra.
+
+## Subheadings
+
+Chapter titles should use a level-1 heading, topics and sub-topics should use level-2 and level-3 headings, but level-4 headings and beyond are discouraged. 
+
+Praesent id gravida erat. Aliquam volutpat leo vel orci blandit iaculis. Proin ornare ut libero eu euismod. Vivamus in tellus imperdiet, ullamcorper nibh in, facilisis ex. Proin tempus ligula sed enim hendrerit fringilla. Proin nec libero purus. Aliquam eget vestibulum ante, et volutpat lectus. Pellentesque placerat justo et dui porttitor posuere. Ut sit amet tellus in massa maximus tincidunt.
+
+Cras lobortis tellus suscipit odio fringilla molestie. Praesent tellus ante, lacinia quis pulvinar eu, mollis eu mi. Donec quis tincidunt nunc. Nulla facilisi. Quisque sed nisi est. Aliquam erat volutpat. Phasellus venenatis tellus sit amet consectetur congue. Proin eu vestibulum ex. Fusce sit amet neque sapien.
+
+## Code Blocks
+
+Code blocks may be formatted for Python, R, or SQL. Make ample use of code comments. Example python block:
+
+```{python eval=FALSE}
+import pandas as pd
+
+# Both pneumonia_concept_set and condition_occurrence_sample are input as pandas dataframes in this example
+def pneumonia_conditions2(pneumonia_concept_set, condition_occurrence):
+
+    # Use an inner join to pull condition_occurrence entries matching concepts in the pneumonia_concept_set
+    result = pd.merge(pneumonia_concept_set, condition_occurrence, how = "inner", left_on = "concept_id", right_on = "condition_concept_id")
+    
+    # Calling print() results in output being logged to the "logs" tab
+    print(result.describe())
+
+    # Basic transforms should return a data frame (either pandas or spark)
+    return result
+```
+
+Example R block:
+
+```{r eval=FALSE}
+# Both pneumonia_concept_set and condition_occurrence_sample are input as R dataframes in this example
+pneumonia_conditions_result <- function(pneumonia_concept_set, condition_occurrence) {
+  
+    # Use an inner join to pull condition_occurrence entries matching concepts in the pneumonia_concept_set
+    result <- pneumonia_concept_set %>% 
+      inner_join(condition_occurrence, by = c("concept_id" = "condition_concept_id")) %>%
+      # we also convert the condition_source_value to an integer, since the 
+      # conversion from spark's long type results in an R integer64 type, incompatible with
+      # many functions
+      mutate(condition_source_value = as.integer(condition_source_value))
+  
+    p <- ggplot(result) + 
+      geom_histogram(aes(x = condition_end_date - condition_start_date))
+    
+    # an explicit call to plot() is needed to display the resulting ggplot
+    plot(p)
+    
+    # the str() function is useful for identifying data contents and types
+    print(str(result))
+    
+    return(result)
+}
+```
+
+And an example SQL block:
+
+```{sql eval=FALSE}
+-- filter the concept_set_members table input to select a single concept set version
+SELECT *
+FROM concept_set_members
+WHERE codeset_id = 761347708
+```
+
+Output blocks (demonstrating logged output) should be uncolored:
+
+```
+'data.frame':	19502 obs. of  27 variables:
+ $ codeset_id                   : int  761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 761347708 ...
+ $ concept_id                   : int  255848 255848 255848 255848 255848 255848 255848 255848 255848 255848 ...
+ $ concept_set_name             : chr  "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" "Non-influenza pneumonia [training]" ...
+ $ is_most_recent_version       : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
+ $ version                      : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ concept_name                 : chr  "Pneumonia" "Pneumonia" "Pneumonia" "Pneumonia" ...
+ $ archived                     : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ person_id                    : int  148 833 1088 1238 1829 2142 2659 3749 8086 9465 ...
+...
+```
+

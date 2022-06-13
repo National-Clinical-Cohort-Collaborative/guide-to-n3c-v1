@@ -1,7 +1,7 @@
 # bookdown temp files & directories
 #   from https://github.com/rstudio/bookdown/blob/main/inst/examples/.gitignore
 _bookdown_files
-_book
+#_book
 # docs
 book-of-n3c-v1.log
 packages.bib

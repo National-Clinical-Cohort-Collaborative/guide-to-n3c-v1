@@ -50,7 +50,7 @@ jobs:
         # This overrides the 'output_dir' value in _bookdown.yaml.  It blocks local contributions but allows GitHub Actions to deliver html files where GitHub Pages can serve it.
 
       - name: Deploy to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: .        # The folder the action should deploy.

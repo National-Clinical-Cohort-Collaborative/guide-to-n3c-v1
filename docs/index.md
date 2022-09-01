@@ -1,7 +1,7 @@
 ---
 title: "The Book of N3C"
 author: "The N3C Educational Committee"
-date: "2022-06-22"
+date: "2022-09-01"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

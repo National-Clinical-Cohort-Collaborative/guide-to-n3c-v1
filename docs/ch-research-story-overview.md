@@ -10,17 +10,9 @@ If you are starting a project by yourself, you'll likely be able to recruit a se
 Onboarding {#story-person}
 ----------------------------------------------
 
-{A person's paperwork.  Include ORCiD}
-
-DUA coverage {#story-institution}
-----------------------------------------------
-
-{An institution's paperwork.}
-
-DUR
-----------------------------------------------
-
-{A project's paperwork.}
+* {A person's paperwork.  Include ORCiD}
+* {DUA coverage & An institution's paperwork.}
+* {DUR & a project's paperwork.}
 
 Team building & collaborating
 ----------------------------------------------
@@ -30,22 +22,28 @@ Team building & collaborating
 Protocol, variables, & definitions
 ----------------------------------------------
 
-This aspect of the scientific process is probably the most familiar to you, but is also the most vague and difficult to explain.  Several years of graduate-level courses and real-world experience are
+This aspect of the scientific process is probably the most familiar to you, but is also the most vague and difficult to explain.  Several years of graduate-level courses and real-world experience are required...
+
+{Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
 
 Learning and using OMOP (e.g. concept sets)
 ----------------------------------------------
 
+{3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
+
 Creating an analysis-ready dataset
 ----------------------------------------------
 
-Preliminary Analysis
+{Conventional data engineer role.  Dataset is created with input from the analyst.}
+
+Analyses
 ----------------------------------------------
 
-Pinning to a release, finalizing analysis, & figures
-----------------------------------------------
-
-Download request
-----------------------------------------------
+* Developing the Analyses
+* finalizing analysis
+  * Pinning to a release
+  * DRR
+  * figures
 
 Draft paper, pub committee
 ----------------------------------------------

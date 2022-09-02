@@ -191,8 +191,6 @@ Pieces:
 8. Biggest Challenges
 9. What we'd do differently if starting from scratch
 
-{Should there be an example for a (a) domain team investivation vs (b) non domain team investigation?}
-
 ## Chapter: Graduate School Summer Course - Simpson's Paradox
 
 > An N3C project has many appealing characteristics to instructors developing a two-month course: (a) the data are already collected, documented, and available, (b) the hardware requirements are negligible because the NIH Spark Cluster...

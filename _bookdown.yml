@@ -10,6 +10,7 @@ rmd_files:
   [
     "index.Rmd",
     "ch-starting.md",
+    "ch-research-story-overview.md",
     "ch-about.Rmd",
     "ch-intro.md",
     "ch-cross-refs.md",

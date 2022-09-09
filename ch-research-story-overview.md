@@ -14,27 +14,43 @@ Onboarding {#story-person}
 * {DUA coverage & An institution's paperwork.}
 * {DUR & a project's paperwork.}
 
+In a prototypical (non-N3C) single-site investigation with retrospective medical records, (a) a project manager and principle investigator interact with a single IRB, (b) a single person extracts the desired dataset from the EMR/warehouse, (c) a statistician models the predictors and outcomes, and (d) the principle investigator writes and submits the manuscript.
+
 Team building & collaborating
 ----------------------------------------------
+
+N3C research teams resemble most contemporary research teams in some ways, and differ in others.  The similarities include:
+
+* Heterogenous skills are required, including subject matter experts, data scientists, statisticians, and navigators.
+
+* Retrospective medical records are extracted from a larger data
+
+The differences include:
+
+* Most teams have researchers from at least three institutions.  In the experience of the chapter authors and the editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from the same institution/lab are sometimes are more reluctant to express contrary views.
+
+* The startup costs are more expensive, but the qqq costs are cheaper.
+
+* The role of "navigator" is more important.
 
 {Identifying & approaching potential collaborators}
 
 Protocol, variables, & definitions
 ----------------------------------------------
 
-This aspect of the scientific process is probably the most familiar to you, but is also the most vague and difficult to explain.  Several years of graduate-level courses and real-world experience are required...
+This aspect of the scientific process is probably both the most familiar and most vague.  Most researchers have several years of graduate-level courses and real-world experience.
 
 {Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
-
-Learning and using OMOP (e.g. concept sets)
-----------------------------------------------
-
-{3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
 
 Creating an analysis-ready dataset
 ----------------------------------------------
 
 {Conventional data engineer role.  Dataset is created with input from the analyst.}
+
+Learning and using OMOP (e.g. concept sets)
+----------------------------------------------
+
+{3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
 
 Analyses
 ----------------------------------------------

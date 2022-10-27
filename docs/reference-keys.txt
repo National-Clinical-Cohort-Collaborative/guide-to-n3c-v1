@@ -11,8 +11,8 @@ story
 story-person
 team-building-collaborating
 protocol-variables-definitions
-learning-and-using-omop-e.g.-concept-sets
 creating-an-analysis-ready-dataset
+learning-and-using-omop-e.g.-concept-sets
 analyses
 draft-paper-pub-committee
 about

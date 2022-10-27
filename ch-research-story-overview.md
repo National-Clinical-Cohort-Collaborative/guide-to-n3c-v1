@@ -50,6 +50,11 @@ Creating an analysis-ready dataset
 Learning and using OMOP (e.g. concept sets)
 ----------------------------------------------
 
+OMOP originated around 20qq to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database. [Add footnote to Book of OHDSI]().  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
+
+* It has evolved from 10? years and accommodates a wide range of data sources
+* It has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.
+
 {3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
 
 Analyses

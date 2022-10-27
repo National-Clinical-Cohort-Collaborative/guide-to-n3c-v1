@@ -5,7 +5,7 @@ A Research Story {#story}
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
-If you are starting a project by yourself, you'll likely be able to recruit a set of collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours]()).  If you would like to join an existing project, there are likely [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that will fit your interests and benefit from your abilities.
+If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours]()).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 Onboarding {#story-person}
 ----------------------------------------------
@@ -23,15 +23,15 @@ N3C research teams resemble most contemporary research teams in some ways, and d
 
 * Heterogenous skills are required, including subject matter experts, data scientists, statisticians, and navigators.
 
-* Retrospective medical records are extracted from a larger data
+* Retrospective medical records are extracted from a larger dataset
 
 The differences include:
 
+* The startup costs are more expensive, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
+
 * Most teams have researchers from at least three institutions.  In the experience of the chapter authors and the editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from the same institution/lab are sometimes are more reluctant to express contrary views.
 
-* The startup costs are more expensive, but the qqq costs are cheaper.
-
-* The role of "navigator" is more important.
+* The role of "navigator" is even more important.  Your local EMR investigations are likely guided by someone with years experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and likely younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 {Identifying & approaching potential collaborators}
 

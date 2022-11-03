@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://national-covid-cohort-collaborative.github.io/images/logo.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.1/transition.js"></script><script src="libs/bs3compat-0.4.1/tabs.js"></script><script src="libs/bs3compat-0.4.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -100,29 +100,30 @@
 <h2>
 <span class="header-section-number">3.1</span> Onboarding<a class="anchor" aria-label="anchor" href="#story-person"><i class="fas fa-link"></i></a>
 </h2>
+<p>Before the first data point is viewed, three things should be established by you and your institution:</p>
 <ul>
 <li>{A person’s paperwork. Include ORCiD}</li>
 <li>{DUA coverage &amp; An institution’s paperwork.}</li>
 <li>{DUR &amp; a project’s paperwork.}</li>
 </ul>
-<p>In a prototypical (non-N3C) single-site investigation with retrospective medical records, (a) a project manager and principle investigator interact with a single IRB, (b) a single person extracts the desired dataset from the EMR/warehouse, (c) a statistician models the predictors and outcomes, and (d) the principle investigator writes and submits the manuscript.</p>
+<p>The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper. Even with strong institutional support, the DUA will take several months in legal and administrative channels. Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff. That’s a remarkably short time for scale of available data. It’s likely quicker than initiating a project based on a single EMR from your site –much less EMRs from 70+ sites.</p>
 </div>
 <div id="team-building-collaborating" class="section level2" number="3.2">
 <h2>
 <span class="header-section-number">3.2</span> Team building &amp; collaborating<a class="anchor" aria-label="anchor" href="#team-building-collaborating"><i class="fas fa-link"></i></a>
 </h2>
-<p>N3C research teams resemble most contemporary research teams in some ways, and differ in others. The similarities include:</p>
+<p>The next step is to build a team. In a prototypical (non-N3C) single-site investigation with retrospective medical records, (a) a project manager and principle investigator interact with a single IRB, (b) a single person extracts the desired dataset from the EMR/warehouse, (c) a statistician models the predictors and outcomes, and (d) the principle investigator writes and submits the manuscript.</p>
+<p>Personnel decisions with N3C research resembles most contemporary medical research in some ways, and differ in others. The similarities include:</p>
 <ul>
-<li><p>Heterogenous skills are required, including subject matter experts, data scientists, statisticians, and navigators.</p></li>
-<li><p>Retrospective medical records are extracted from a larger dataset</p></li>
+<li><p>Heterogenous skills are required. Ideally team has (a) a subject matter expert who knows the literature and is able to form testable hypotheses, (b) a data engineer who understands the challenges of EMRs and is able to extract and transform OMOP tables, (c) a statistician who understands the limitations of observational data and is able to model retrospective data, and (d) a navigator who has learned the administrative requirements and is able to facilitate the investigation.</p></li>
+<li><p>Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involve to include only the relevant variables among the qualifying patients.</p></li>
 </ul>
 <p>The differences include:</p>
 <ul>
-<li><p>The startup costs are more expensive, but the incremental costs are cheaper. Even with strong institutional support, the DUA will take several months in legal and administrative channels. Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff. That’s a remarkably short time for scale of available data. It’s likely quicker than initiating a project based on a single EMR from your site –much less EMRs from 70+ sites.</p></li>
 <li><p>Most teams have researchers from at least three institutions. In the experience of the chapter authors and the editors, this encourages more diverse opinions and more willingness to express constructive criticism. Researchers from the same institution/lab are sometimes are more reluctant to express contrary views.</p></li>
 <li><p>The role of “navigator” is even more important. Your local EMR investigations are likely guided by someone with years experience with the institutional safeguards and the personnel who can help when something stalls. N3C is bigger and likely younger than your site’s EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.</p></li>
 </ul>
-<p>{Identifying &amp; approaching potential collaborators}</p>
+<p>If your team needs someone, consider asking a relevant <a href="https://covid.cd2h.org/domain-teams">domain team</a> for helping identifying and approaching a potential collaborator.</p>
 </div>
 <div id="protocol-variables-definitions" class="section level2" number="3.3">
 <h2>
@@ -204,7 +205,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Book of N3C</strong>" was written by The N3C Educational Committee. It was last built on 2022-10-30.</p>
+    <p>"<strong>The Book of N3C</strong>" was written by The N3C Educational Committee. It was last built on 2022-11-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -10,30 +10,32 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 Onboarding {#story-person}
 ----------------------------------------------
 
+Before the first data point is viewed, three things should be established by you and your institution:
+
 * {A person's paperwork.  Include ORCiD}
 * {DUA coverage & An institution's paperwork.}
 * {DUR & a project's paperwork.}
 
-In a prototypical (non-N3C) single-site investigation with retrospective medical records, (a) a project manager and principle investigator interact with a single IRB, (b) a single person extracts the desired dataset from the EMR/warehouse, (c) a statistician models the predictors and outcomes, and (d) the principle investigator writes and submits the manuscript.
+The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
 
 Team building & collaborating
 ----------------------------------------------
 
-N3C research teams resemble most contemporary research teams in some ways, and differ in others.  The similarities include:
+The next step is to build a team.  In a prototypical (non-N3C) single-site investigation with retrospective medical records, (a) a project manager and principle investigator interact with a single IRB, (b) a single person extracts the desired dataset from the EMR/warehouse, (c) a statistician models the predictors and outcomes, and (d) the principle investigator writes and submits the manuscript.
 
-* Heterogenous skills are required, including subject matter experts, data scientists, statisticians, and navigators.
+Personnel decisions with N3C research resembles most contemporary medical research in some ways, and differ in others.  The similarities include:
 
-* Retrospective medical records are extracted from a larger dataset
+* Heterogenous skills are required.  Ideally team has (a) a subject matter expert who knows the literature and is able to form testable hypotheses, (b) a data engineer who understands the challenges of EMRs and is able to extract and transform OMOP tables, (c) a statistician who understands the limitations of observational data and is able to model retrospective data, and (d) a navigator who has learned the administrative requirements and is able to facilitate the investigation.
+
+* Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
 
 The differences include:
-
-* The startup costs are more expensive, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
 
 * Most teams have researchers from at least three institutions.  In the experience of the chapter authors and the editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from the same institution/lab are sometimes are more reluctant to express contrary views.
 
 * The role of "navigator" is even more important.  Your local EMR investigations are likely guided by someone with years experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and likely younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-{Identifying & approaching potential collaborators}
+If your team needs someone, consider asking a relevant [domain team](https://covid.cd2h.org/domain-teams) for helping identifying and approaching a potential collaborator.
 
 Protocol, variables, & definitions
 ----------------------------------------------

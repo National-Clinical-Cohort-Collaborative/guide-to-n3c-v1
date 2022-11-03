@@ -5,7 +5,7 @@ A Research Story {#story}
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
-If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours]()).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours](https://covid.cd2h.org/support)).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 Onboarding {#story-person}
 ----------------------------------------------
@@ -52,7 +52,7 @@ Creating an analysis-ready dataset
 Learning and using OMOP (e.g. concept sets)
 ----------------------------------------------
 
-OMOP originated around 20qq to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database. [Add footnote to Book of OHDSI]().  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
+OMOP originated around 20qq to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi2019].  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
 
 * It has evolved from 10? years and accommodates a wide range of data sources
 * It has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.

@@ -42,25 +42,35 @@ Common Discussion at the Team's First Meeting
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:
 
-* *Investigator*: Overall, we'd like to know if Drug A or Drug B is associated with better outcomes.
-* *Statistician*: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake.
-* *Data Engineer*: Hmmm.  I'm happy to produce a dataset with the `dose` and `frequency` column, but you won't like it.  Those two columns are sparsely populated and they look inconsistent across sites.
+* *Investigator*: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
+* *Statistician*: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.
+* *Data Engineer*: Hmmm.  I'm happy to produce a dataset with the [`dose` and `frequency` columns](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE), but you may not find it useful.  Those two columns are sparsely populated and they look inconsistent across sites.
 * *I*: Bummer.  Then what's realistic or feasible?
-* *Subject Matter Expert*: Maybe this will help simplify the picture...  In my clinical experience, patients rarely switch between Drugs A & B.  Based on the initial presentation, the providers will pick A *or* B, and not switch unless something rare and unexpected happens.
-* *S*: In that case, my initial models will have three levels for treatment: A, B, and A+B.
-* *I*: Among N3C patients, how frequently is someone given both during the same visit?
-* *DE after a few minutes*: 40% of patients are Drug A only, 52% are Drug B only, and 8% have at least one administration of both Drug A & B in the same visit.
-* *SME*: Weird. 8% is more than I expected.
-* *DE after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 2% of patients have both Drug A & B.
-* *S*: I was already planning to model the time period --maybe an interaction with treatment will be significant.
-* *I*: I like that as a starting point.  Circling back to the question about dose and frequency...
-* *SME*: I suggest we start simply?  Let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
-* *S*: Phew.  I didn't want to admit it before but I read the dosing guidelines the SME emailed yesterday.  I wasn't sure if I could model it adequately.
-* *I*: Ok, that's everything I wanted to cover today. See you in two weeks.  Wait.  I can't believe I forgot to mention this.  I want to see what other drugs the patients were taking before and after their initial hospitalization for covid.
-* *DE*: Similar to before, I can include those rows in the dataset, but the inconsistent population may introduce more problems.  If their primary care uses a different EMR than the hospital, we won't know what's prescribed.
-* *S*: Oh, I see that Drug A has 15 different brand names.  I don't recognize half of them.  How do I classify them
-* *DE*: It's worse than that.  Drug A has 15 brand names, but 200 different RxNorm codes; each package is uniquely identified.  SME and I were working on a [concept set]() Thursday.  We were going to operationalize the drug classes by the [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.  Their are five ingredients that are conceptualized as Drug A and three ingredients conceptualized as Drug B.  A friend showed me how she derived this with the OMOP [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table for a different project.  I'll have that simplified in the patient-level dataset I give you.  It will have a integer for the number of times they were given a medication with a Drug A ingredient and another integer for Drug B ingredients.
-* *All together*: and knowing is half the battle.
+* *Subject Matter Expert*: Maybe this simplifies the picture...  In my clinical experience, a patient rarely switches between Drugs A & B.  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
+* *S*: In that case, should my initial model have three levels for treatment: A, B, and A+B?
+* *I*: Probably.  In the N3C database, can someone tell me how many patients get both during the same visit?
+* *DE*: I'm already logged into the [Enclave]().  Give me 2 minutes.
+* *I*: Oh my goodness, is that your cat?  What a cutie!
+* [Brief discussion of SME's cat.]
+* *DE after a few minutes*: Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
+* *SME*: Weird. 8% is a lot more than I expected.  I was thinking around 1%.
+* *DE*: Hmm, let me check.  Give me another minute.
+* [Brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
+* *DE after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.
+* *S*: I was already planning to model the phase of the pandemic.  I'll test if there's a significant interaction between time and treatment.
+* *I*: I like that as a starting point.  Regarding the question about dose and frequency...
+  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
+* *S*: Phew.  I didn't want to admit this.  But I skimmed the dosing guidelines you emailed yesterday.  It looked complicated.  I wasn't sure if I could appropriately incorporate those variables in the model.
+* *I*: Well, that's everything I wanted to cover today.  See you in two weeks.  Wait.  I can't believe I forgot.  Sorry -our Navigator is sick this week and I'm almost worthless in her absence.  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
+* *DE*: This is kinda like the `dose` and `frequency` situation. The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.  But the quality of the historical records really depends on the site.  Some places like Delaware leverage their state's [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) to populate their N3C dataset.  However other places are not as well connected.  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.
+* *I*: Ugh. Good point.
+* *DE*: But I've got good news.  All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.  Furthermore the diagnosis codes are standardized really well across sites.  That's because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP's [standard concepts]().
+* *I*: Well, that's fine for this paper.  Maybe our next manuscript will follow up once with N3C's upcoming [death records]().
+* *SME*: Sorry everybody, I have clinic this week, and they're calling me.  I need to drop.
+* *S*: Can I go back and ask a question about medications?  I see that Drug A has 15 different brand names.  I don't recognize half of them.  How should I classify them?
+* *DE*: It's actually worse than that.  Sorry I'm a downer today.  Can you see my screen?  Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH's NLM.  SME and I started on a [concept set]() Thursday.  We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.  There are five ingredients that are conceptualized as Drug A.  A friend showed me how she used the OMOP [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table in a different project.  I'll roll up the meds into the patient-level dataset.  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records.  You'll probably want to transform the two counts into two booleans.
+* *S*: And if I change my mind and decide to use the counts, then at least I'll know.
+* *Shoreleave*: and knowing is half the battle.
 
 Protocol, variables, & definitions
 ----------------------------------------------
@@ -68,7 +78,6 @@ Protocol, variables, & definitions
 This aspect of the scientific process is probably both the most familiar and most vague.  Most researchers have several years of graduate-level courses and real-world experience.
 
 1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
-
 
 1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
 

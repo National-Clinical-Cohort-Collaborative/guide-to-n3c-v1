@@ -1,6 +1,6 @@
 # Blocks
 
-(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed as the real chapters are populated.*)
 
 ## Equations
 
@@ -45,7 +45,7 @@ A python transform:
 def my_transform(input1, input2):
     result = input1.head(6)
     print("this is a logged output")
-    
+
     return result
 ```
 

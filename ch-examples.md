@@ -1,4 +1,4 @@
-Special Topic: Start to finish examples or worked examples
+Special Topic: Start to finish examples or worked examples {#example}
 ==========================
 
 This chapter is being drafted in Google Docs at

@@ -1,6 +1,6 @@
 # Sharing your book
 
-(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed as the real chapters are populated.*)
 
 ## Publishing
 

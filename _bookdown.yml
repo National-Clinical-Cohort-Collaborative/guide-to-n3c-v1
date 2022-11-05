@@ -24,8 +24,6 @@ rmd_files:
     "ch-enclave-advanced.md",
     "ch-examples.md",
 
-
-
     "ch-about.Rmd",
     "ch-intro.md",
     "ch-cross-refs.md",

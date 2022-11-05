@@ -1,7 +1,7 @@
 ---
 title: "The Book of N3C"
 author: "The N3C Educational Committee"
-date: "2022-11-03"
+date: "2022-11-05"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -15,10 +15,10 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-Welcome
+Welcome {-}
 ==================
 
- *[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
+*[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
 Contributing Content
 ------------------

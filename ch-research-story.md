@@ -49,9 +49,9 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * *Subject Matter Expert*: Maybe this simplifies the picture...  In my clinical experience, a patient rarely switches between Drugs A & B.  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
 * *S*: In that case, should my initial model have three levels for treatment: A, B, and A+B?
 * *I*: Probably.  In the N3C database, can someone tell me how many patients get both during the same visit?
-* *DE*: I'm already logged into the Enclave^[See Chapter \@ref(data-access) for accessing the N3C Enclave.].  Give me 2 minutes.
+* *DE*: I'm already logged into the Enclave^[See Chapter \@ref(data-access) for accessing the N3C Enclave.].  Give me 2 minutes to whip up something in SQL.^[Read about SQL, Python, and R transforms in Code Workbooks in Chapter \@ref(data-analysis).]
 * *I*: Oh my goodness, is that your cat?  What a cutie! ^[There is a brief discussion of SME's cat.]
-* *DE after a few minutes*: Ok, I got it.^[Read about SQL transforms in Code Workbooks in Chapter \@ref(data-analysis).]  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
+* *DE after a few minutes*: Ok, I got it.  [Unmutes himself.]  Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
 * *SME*: Weird. 8% is a lot more than I expected.  I was thinking around 1%.
 * *DE*: Hmm, let me check.  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
 * *DE after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.

@@ -1,4 +1,4 @@
-Special Topic: Help and Support
+Special Topic: Help and Support {#support}
 ==========================
 
 This chapter is being drafted in Google Docs at

@@ -9,51 +9,9 @@ https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/
 
 ------------------------
 
-
 **Chapter Leads: Amy Olex, Andrea Zhou**
 
 **Chapter Contributors: Johanna Loomba, Evan French, etc…**
-
-
-
-* Overview of tools and skills required
-* Brief discussion of importance of research protocols and best practices (ref Best Practices chapter below)
-* Identifying Concept Sets
-    * Overview of Concepts and Concept Sets
-    * Bundles - Set of Concept Sets often used in group
-    * N3C Recommended Concept Sets - Pre-defined Concept Set Commonly used
-* Authoring Concept Sets
-    * Concept Set Editor
-    * Importing from ATLAS
-        * Implications of ATLAS and provenance and OMOP vocab versions
-    * Concept set reviews and validation
-* Using Concept Sets
-    * Concept set members table
-        * By version
-        * By name (latest version)
-* Using the Knowledge Store
-    * Important Templates
-* Enclave Applications
-    * Contour
-        * [Palantir Contour Documentation](https://unite.nih.gov/workspace/documentation/product/contour/overview)
-    * Code Workbooks
-        * How they work (inputs/outputs, git, auto-generated pipeline diagram)
-        * SQL, R, Python
-        * Apache Spark / pyspark, sparkR, sql
-        * Environments & packages
-            * Requesting packages to be added via tickets
-        * Generating Figures, adding to Reports
-    * Fusion
-    * Reports
-    * Object Explorer
-    * Dataset Lineage
-    * Code repositories
-        * How they work (code assist, pull requests, debugger, etc)
-        * SQL, Python
-        * Writing a python library
-        * Writing a transform
-    * Protocol pad \
-
 
 
 ## Identifying Concept Sets

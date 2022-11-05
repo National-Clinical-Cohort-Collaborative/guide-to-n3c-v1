@@ -1,4 +1,4 @@
-Publishing and Sharing Your Work
+Publishing and Sharing Your Work {#publishing}
 ==========================
 
 This chapter is being drafted in Google Docs at

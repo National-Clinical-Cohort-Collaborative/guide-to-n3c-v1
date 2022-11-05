@@ -2,7 +2,7 @@
 
 # About
 
-(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed as the real chapters are populated.*)
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 

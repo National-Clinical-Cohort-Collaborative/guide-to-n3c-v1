@@ -1,6 +1,6 @@
 # Cross-references {#cross}
 
-(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed as the real chapters are populated.*)
 
 Cross-references make it easier for your readers to find and link to elements in your book.
 

@@ -1,6 +1,6 @@
 # Hello bookdown
 
-(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed shortly.)
+(*This sample bookdown bs4 chapter is helping configure the settings.  It will be removed as the real chapters are populated.*)
 
 All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
 

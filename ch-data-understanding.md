@@ -1,5 +1,4 @@
-Understanding the Data {#data-understanding}
-==========================
+# Understanding the Data {#data-understanding}
 
 This chapter is being drafted in Google Docs at
 https://drive.google.com/drive/u/0/folders/1OHv1P2DKGucKBpSNEiQp8lGfR2xYHPAW

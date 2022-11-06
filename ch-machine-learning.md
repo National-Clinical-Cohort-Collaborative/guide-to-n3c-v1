@@ -1,5 +1,4 @@
-Special Topic: Machine Learning {#machine-learning}
-==========================
+# Special Topic: Machine Learning {#machine-learning}
 
 This chapter is being drafted in Google Docs at
 https://drive.google.com/drive/u/0/folders/1HZ3IGv17zUl9t8RxZSl4uOq_FRzrgTp_

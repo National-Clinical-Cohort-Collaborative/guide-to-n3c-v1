@@ -1,5 +1,4 @@
-Getting & Managing Data Access {#data-access}
-==========================
+# Getting & Managing Data Access {#data-access}
 
 This chapter is being drafted in Google Docs at
 https://drive.google.com/drive/u/0/folders/1rrYYjSm5cWni1wyvs__-ByPl9Q6uRy10

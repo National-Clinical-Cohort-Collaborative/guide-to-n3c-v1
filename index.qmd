@@ -1,22 +1,4 @@
----
-title: "The Book of N3C"
-author: "The N3C Educational Committee"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-documentclass: book
-bibliography: [book.bib, packages.bib]
-url: https://national-covid-cohort-collaborative.github.io/
-cover-image: images/logo.png  # path to the social sharing image
-description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
-biblio-style: apalike
-csl: chicago-fullnote-bibliography.csl
----
-
-Welcome {.unnumbered}
-==================
+# Welcome {.unnumbered}
 
 *[The Book of N3C](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 

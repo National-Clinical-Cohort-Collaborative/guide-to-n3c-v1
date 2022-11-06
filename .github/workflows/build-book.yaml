@@ -1,39 +1,48 @@
 # Adapted from
-#  * https://github.com/OuhscBbmc/data-science-practices-1/blob/main/.github/workflows/bookdown.yaml on 2021-10-08
-#  * https://ropensci.org/blog/2020/04/07/bookdown-learnings/ on 2021-10-08
+#  * https://github.com/quarto-dev/quarto-actions/blob/main/examples/quarto-publish-example.yml on 2022-11-06
+
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: main
 
-name: build-book
+name: Render and Publish
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out repository
+        uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
         with:
-          python-version: '3.x'
+          # To install LaTeX to build PDF book
+          tinytex: true
+          # uncomment below and fill to pin a version
+          # version: 0.9.600
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install jupyter-book altair vega_datasets
+      # add software dependencies here
 
-      - name: Build the book
-        run: jb build .
+      # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
+      # the appropriate block below
 
-      - name: Deploy to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+      # - name: Publish to Netlify (and render)
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     target: netlify
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      # - name: Publish to RStudio Connect (and render)
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     target: connect
+      #     CONNECT_SERVER: enter-the-server-url-here
+      #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
+
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: .        # The folder the action should deploy.
-          clean: true      # Default is to "delete files from your deployment destination that no longer exist in your deployment source".
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions

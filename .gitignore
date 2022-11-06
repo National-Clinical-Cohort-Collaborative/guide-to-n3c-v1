@@ -2,10 +2,12 @@
 #   from https://github.com/rstudio/bookdown/blob/main/inst/examples/.gitignore
 _bookdown_files
 _book
-# docs
+docs
 book-of-n3c-v1.log
 images/dedication.lyx
 book-of-n3c-v1.rds
+
+/.quarto/
 
 # History files
 .Rhistory

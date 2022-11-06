@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: Guide to N3C
+  author: "The N3C Educational Committee"
+  logo: images/logo.png
+  repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
+  repo-branch: main
+  repo-actions: [issue]
+  sharing: [twitter, facebook]
+  chapters:
+    - index.qmd
+
+    - part: Curriculum
+      chapters:
+        - ch-intro.md
+        - ch-research-story.md
+        - ch-lifecycle.md
+        - ch-governance.md
+        - ch-onboarding.md
+        - ch-data-access.md
+        - ch-data-understanding.md
+        - ch-data-analysis.md
+        - ch-practices.md
+        - ch-publishing.md
+
+    - part: Special Topics
+      chapters:
+        - ch-support.md
+        - ch-machine-learning.md
+        - ch-enclave-advanced.md
+        - ch-examples.md
+
+    # - part: Curriculum
+    #   chapters:
+    #     - ch-about.Rmd
+    #     - ch-cross-refs.md
+    #     - ch-parts.md
+    #     - ch-citations.md
+    #     - ch-blocks.md
+    #     - ch-share.md
+    #     - ch-references.Rmd
+
+format:
+  html:
+    theme: cosmo

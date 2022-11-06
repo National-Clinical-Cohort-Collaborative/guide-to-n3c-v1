@@ -1,4 +1,4 @@
-# Special Topic: Advanced Enclave Coding Techniques {#enclave-advanced}
+# Special Topic: Advanced Enclave Coding Techniques {#sec-enclave-advanced}
 
 This chapter is being drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1K660Qn7m1z4TswwepM06CKgAPTojjt7q>

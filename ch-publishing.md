@@ -1,4 +1,4 @@
-# Publishing and Sharing Your Work {#publishing}
+# Publishing and Sharing Your Work {#sec-publishing}
 
 This chapter is being drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1kmrjxsdrwbspPucPTU3hiOHMXJRQQpPp>

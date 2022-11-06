@@ -13,21 +13,33 @@ book:
   sharing: [twitter, facebook]
 
   chapters:
-    - index.qmd
+  - index.qmd
+
+  - part: Getting Started
+    chapters:
     - ch-intro.md
     - ch-research-story.md
     - ch-lifecycle.md
     - ch-governance.md
     - ch-onboarding.md
+
+  - part: Investigating
+    chapters:
     - ch-data-access.md
     - ch-data-understanding.md
     - ch-data-analysis.md
     - ch-practices.md
     - ch-publishing.md
+
+  - part: Special Topics
+    chapters:
     - ch-support.md
     - ch-machine-learning.md
     - ch-enclave-advanced.md
     - ch-examples.md
+
+  - part: Back Matter
+    chapters:
     - references.qmd
 
 bibliography: references.bib

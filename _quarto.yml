@@ -6,6 +6,12 @@ book:
   author: N3C Education Committee
   logo: images/logo.png
   # date: "11/6/2022"
+
+  repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
+  repo-branch: main
+  repo-actions: [issue]
+  sharing: [twitter, facebook]
+
   chapters:
     - index.qmd
     - ch-intro.md

@@ -9,7 +9,7 @@ language:
 rmd_files:
   [
     "index.Rmd",
-    "ch-starting.md",
+    "ch-intro.md",
     "ch-research-story.md",
     "ch-lifecycle.md",
     "ch-governance.md",
@@ -25,7 +25,6 @@ rmd_files:
     "ch-examples.md",
 
     "ch-about.Rmd",
-    "ch-intro.md",
     "ch-cross-refs.md",
     "ch-parts.md",
     "ch-citations.md",

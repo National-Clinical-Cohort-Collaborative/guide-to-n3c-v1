@@ -25,7 +25,7 @@ Faced with the COVID-19 pandemic, the issue addressed by N3C is clear and direct
 
 In recent years, the common solution to these issues have been the creation of _Common Data Models_ (CDMs). A Common Data Model is an agreed-upon structure and format for databases containing clinical information, into which diverse organizational EHR databases can be standardized for research purposes. Even so, healthcare organizations are reluctant to share their data directly, because these risks associated with data breaches for protected health information (PHI) defined by HIPAA are high. As a result, several groups of healthcare and research organizations have formed _federated _research networks, where each organization in a
 
-<img src="images/ch-intro/figure-1-1.png"/>
+![disparate](images/ch-intro/figure-1-1.png){width=100%}
 
 *A visual representation of disparate, non-compatible EHR databases across the United States.*
 
@@ -41,7 +41,7 @@ Like federated research networks, N3C also uses a common data model, known as OM
 
 Once harmonized and stored in the secure Enclave, the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
 
-<img src="images/ch-intro/figure-1-2.png"/>
+![harmonization](images/ch-intro/figure-1-2.png){width=100%}
 
 *A visual representation of N3C’s data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave.*
 
@@ -49,18 +49,15 @@ Mere access to the Enclave, however, doesn’t automatically provide access to a
 
 Because effective analysis of EHR data requires a diverse set of skills–especially clinical and data science/statistical expertise–N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well. As of December 2021, dozens of these “Domain Teams” support nearly 300 ongoing research projects, contributed to by over 2500 researchers hailing from 250+ different institutions and organizations. Sixty-nine data partners provide EHR data for 10 million patients (⅓ of whom have had COVID-19), representing 5.5 billion lab results, 1.6 billion medication records, 1 billion clinical observations, and 500 million clinical visits. For up-to-date information on these numbers and more, visit our dashboard at [https://covid.cd2h.org/dashboard](https://covid.cd2h.org/dashboard).
 
-<img src="images/ch-intro/figure-1-3.png"/>
+![summary-stats](images/ch-intro/figure-1-3.png){width=100%}
 
 *Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology.*
-
 
 ### Benefits of Participation
 
 For researchers, N3C provides a unique opportunity to participate in next-generation, distributed team science. Investigators with expertise in multiple domains come together across organizational boundaries to answer questions critical to the understanding and management of COVID-19 and its impact on the health of individuals and communities across the United States. Clinical, health informatics, data science, epidemiology, biostatistics, and public health experts join forces in true team science manner to …. and form Domain Teams to support and encourage….
 
 For researchers:
-
-
 
 * Participate in next-generation distributed team science
 * Build connections and collaborations

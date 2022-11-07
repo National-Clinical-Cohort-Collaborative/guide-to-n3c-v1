@@ -306,13 +306,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="platform" class="level2">
 <h2 class="anchored" data-anchor-id="platform">Platform</h2>
-<p>To make small changes like spelling corrections, we recommend editing the source directly in GitHub. It handles the details without your knowledge (like starting a fork and prompting your pull request). From the appropriate page of <a href="https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/">the book</a>, click on the “Edit this page <span class="fab fa-github" aria-hidden="true"></span>” button and type your change in the <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files">GitHub editor</a>.</p>
-<p>Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type. We suggest <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> or <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
+<p>&lt;– The section is manually duplicated between index.qmd and README.md. –&gt;</p>
+<p>As the chapters are being written, talk to the chapter’s Lead Author to learn if it’s being written in GitHub or Google Docs. Eventually all Google Docs chapters will be translated to Markdown. Once a chapter has been finally converted to Markdown…</p>
+<p>To make small changes like spelling corrections, we recommend editing the source directly in GitHub. It handles the details without your knowledge (like starting a fork and prompting your pull request). From the appropriate page of <a href="https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/">the book</a>, click on the “Edit this page <i class="fab fa-github" aria-hidden="true"></i>” button and type your change in the <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files">GitHub editor</a>.</p>
+<p>Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type. We suggest <a href="https://code.visualstudio.com/">Visual Studio Code</a> or <a href="https://www.rstudio.com/products/rstudio/">RStudio</a>.</p>
 <p>You don’t have to understand the rest to contribute, but for those interested:</p>
 <ul>
-<li><p>The majority of this book is written in a collection of <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> documents and assembled by the <a href="https://bookdown.org/">bookdown</a> package. See <a href="https://bookdown.org/yihui/bookdown/">Yihui’s book</a> for the authoritative details.</p></li>
-<li><p>After your change is pushed to GitHub, a <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Action</a> spawns a small VM that (a) collects all the markdown documents, (b) calls bookdown to convert them to html, and (c) moves the compiled products to the “gh-pages” branch.</p></li>
-<li><p>GitHub Pages serves the contents of the “docs/” directory to anyone with a browser.</p></li>
+<li><p>The majority of this book is written in a collection of <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> documents and assembled by the <a href="https://quarto.org/">Quarto</a>.</p></li>
+<li><p>After your change is pushed to GitHub, a <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Action</a> spawns a small VM that (a) collects all the Markdown documents, (b) calls <a href="https://quarto.org/">Quarto</a>/<a href="https://pandoc.org/">Pandoc</a> to convert them to html, and (c) moves the rendered html files to the “gh-pages” branch.</p></li>
+<li><p>GitHub Pages serves the contents of the <a href="https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/tree/gh-pages"><code>gh-pages</code> branch</a> to anyone with a browser.</p></li>
 </ul>
 </section>
 <section id="funding" class="level2">

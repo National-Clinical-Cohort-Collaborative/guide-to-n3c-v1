@@ -357,11 +357,11 @@ div.csl-indent {
 <h2 data-number="2.2" class="anchored" data-anchor-id="team-building-collaborating"><span class="header-section-number">2.2</span> Team building &amp; collaborating</h2>
 <p>The next step is to build a team to leverage retrospective medical records. Like most contemporary research teams, heterogenous skills are important. Ideally a team has at least:</p>
 <ol type="1">
-<li>a navigator who has learned the administrative and IRB requirements and is able to facilitate the investigation,</li>
-<li>a data engineer who understands the challenges of EMRs and is able to extract and transform information,</li>
-<li>a statistician who understands the limitations of observational collection and is able to model retrospective data,</li>
-<li>a subject matter expert who has clinical experience with the disease of interest and is able to inform decisions with EMR variables, and</li>
-<li>a principal investigator who knows the literature and is able form testable hypotheses and write the manuscript.</li>
+<li>a <strong>navigator</strong> who has learned the administrative and IRB requirements and is able to facilitate the investigation,</li>
+<li>a <strong>data engineer</strong> who understands the challenges of EMRs and is able to extract and transform information,</li>
+<li>a <strong>statistician</strong> who understands the limitations of observational collection and is able to model retrospective data,</li>
+<li>a <strong>subject matter expert</strong> (SME) who has clinical experience with the disease of interest and is able to inform decisions with EMR variables, and</li>
+<li>a <strong>principal investigator</strong> who knows the literature and is able form testable hypotheses and write the manuscript.</li>
 </ol>
 <p>N3C teams have some differences from conventional research teams at single sites. Some trends we have noticed are:</p>
 <ul>
@@ -373,33 +373,43 @@ div.csl-indent {
 <section id="common-discussion-at-the-teams-first-meeting" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="common-discussion-at-the-teams-first-meeting"><span class="header-section-number">2.3</span> Common Discussion at the Team’s First Meeting</h2>
 <p>Once the team is assembled, the first discussion is usually a variation of this exchange:</p>
+<div class="callout-note callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Hover over a footnote to see the popup, without jumping to the bottom of the page.</p>
+</div>
+</div>
+</div>
 <ul>
-<li><em>Investigator</em>: Welcome everyone. We’d like to know if Drug A or Drug B is associated with better outcomes.</li>
-<li><em>Statistician</em>: No problem. I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.</li>
-<li><em>Data Engineer</em>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but you may not find it useful. Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
-<li><em>I</em>: Bummer. Then what’s realistic or feasible?</li>
-<li><em>Subject Matter Expert</em>: Maybe this simplifies the picture… In my clinical experience, a patient rarely switches between Drugs A &amp; B. Based on the initial presentation, their provider will pick A <em>or</em> B, and complete the regimen unless there’s an adverse event.</li>
-<li><em>S</em>: In that case, should my initial model have three levels for treatment: A, B, and A+B?</li>
-<li><em>I</em>: Probably. In the N3C database, can someone tell me how many patients get both during the same visit?</li>
-<li><em>DE</em>: I’m already logged into the Enclave<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Give me 2 minutes to whip up something in SQL.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
-<li><em>I</em>: Oh my goodness, is that your cat? What a cutie! <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
-<li><em>DE after a few minutes</em>: Ok, I got it. [Unmutes himself.] Ok, I got it. 40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A &amp; B in the same visit.</li>
-<li><em>SME</em>: Weird. 8% is a lot more than I expected. I was thinking around 1%.</li>
-<li><em>DE</em>: Hmm, let me check. Give me another minute.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
-<li><em>DE after a few minutes</em>: I see what you mean. It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A &amp; B.</li>
-<li><em>S</em>: I was already planning to model the phase of the pandemic. I’ll test if there’s a significant interaction between time and treatment.</li>
-<li><em>I</em>: I like that as a starting point. Regarding the question about dose and frequency… For now let’s assume the providers were following the current dosing guidelines. Therefore the <code>dose</code> and <code>frequency</code> variables can be dropped from the analyses.</li>
-<li><em>S</em>: Phew. I didn’t want to admit this. But I skimmed the dosing guidelines you emailed yesterday. It looked complicated. I wasn’t sure if I could appropriately incorporate those variables in the model.</li>
-<li><em>I</em>: Well, that’s everything I wanted to cover today. See you in two weeks. Wait. I can’t believe I forgot. Sorry -our Navigator is sick this week and I’m almost worthless in her absence. Is everyone still on the call? For our secondary hypothesis, we want everything to connect to a patient’s diagnoses. …before, during, and after their covid hospitalization.</li>
-<li><em>DE</em>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Delaware leverage their state’s HIE<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
-<li><em>I</em>: Ugh. Good point.</li>
-<li><em>DE</em>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
-<li><em>I</em>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
-<li><em>SME</em>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
-<li><em>S</em>: Can I go back and ask a question about medications? I see that Drug A has 15 different brand names. I don’t recognize half of them. How should I classify them?</li>
-<li><em>DE</em>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH’s NLM. SME and I started on a concept set Thursday. We’re operationalizing the drug classes by their <a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html">RxNorm</a> ingredient. There are five ingredients that are conceptualized as Drug A. A friend showed me how she used the OMOP tables in a different project.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> I’ll roll up the meds into the patient-level dataset. It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. You’ll probably want to transform the two counts into two booleans.</li>
-<li><em>S</em>: And if I change my mind and decide to use the counts, then at least I’ll know.</li>
-<li><em>Shoreleave</em>: and knowing is half the battle.</li>
+<li><strong>Investigator</strong>: Welcome everyone. We’d like to know if Drug A or Drug B is associated with better outcomes.</li>
+<li><strong>Statistician</strong>: No problem. I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.</li>
+<li><strong>Data Engineer</strong>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but you may not find it useful. Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li><strong>I</strong>: Bummer. Then what’s realistic or feasible?</li>
+<li><strong>Subject Matter Expert</strong>: Maybe this simplifies the picture… In my clinical experience, a patient rarely switches between Drugs A &amp; B. Based on the initial presentation, their provider will pick A <em>or</em> B, and complete the regimen unless there’s an adverse event.</li>
+<li><strong>S</strong>: In that case, should my initial model have three levels for treatment: A, B, and A+B?</li>
+<li><strong>I</strong>: Probably. In the N3C database, can someone tell me how many patients get both during the same visit?</li>
+<li><strong>DE</strong>: I’m already logged into the Enclave<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Give me 2 minutes to whip up something in SQL.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li><strong>I</strong>: Oh my goodness, is that your cat? What a cutie! <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
+<li><strong>DE</strong> <em>after a few minutes</em>: Ok, I got it. [Unmutes himself.] Ok, I got it. 40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A &amp; B in the same visit.</li>
+<li><strong>SME</strong>: Weird. 8% is a lot more than I expected. I was thinking around 1%.</li>
+<li><strong>DE</strong>: Hmm, let me check. Give me another minute.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+<li><strong>DE</strong> <em>after a few minutes</em>: I see what you mean. It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A &amp; B.</li>
+<li><strong>S</strong>: I was already planning to model the phase of the pandemic. I’ll test if there’s a significant interaction between time and treatment.</li>
+<li><strong>I</strong>: I like that as a starting point. Regarding the question about dose and frequency… For now let’s assume the providers were following the current dosing guidelines. Therefore the <code>dose</code> and <code>frequency</code> variables can be dropped from the analyses.</li>
+<li><strong>S</strong>: Phew. I didn’t want to admit this. But I skimmed the dosing guidelines you emailed yesterday. It looked complicated. I wasn’t sure if I could appropriately incorporate those variables in the model.</li>
+<li><strong>I</strong>: Well, that’s everything I wanted to cover today. See you in two weeks. Wait. I can’t believe I forgot. Sorry -our Navigator is sick this week and I’m almost worthless in her absence. Is everyone still on the call? For our secondary hypothesis, we want everything to connect to a patient’s diagnoses. …before, during, and after their covid hospitalization.</li>
+<li><strong>DE</strong>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Delaware leverage their state’s HIE<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
+<li><strong>I</strong>: Ugh. Good point.</li>
+<li><strong>DE</strong>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
+<li><strong>I</strong>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
+<li><strong>SME</strong>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
+<li><strong>S</strong>: Can I go back and ask a question about medications? I see that Drug A has 15 different brand names. I don’t recognize half of them. How should I classify them?</li>
+<li><strong>DE</strong>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH’s NLM. SME and I started on a concept set Thursday. We’re operationalizing the drug classes by their <a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html">RxNorm</a> ingredient. There are five ingredients that are conceptualized as Drug A. A friend showed me how she used the OMOP tables in a different project.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> I’ll roll up the meds into the patient-level dataset. It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. You’ll probably want to transform the two counts into two booleans.</li>
+<li><strong>S</strong>: And if I change my mind and decide to use the counts, then at least I’ll know.</li>
+<li><strong>Shoreleave</strong>: and knowing is half the battle.</li>
 </ul>
 </section>
 <section id="protocol-variables-definitions" class="level2" data-number="2.4">
@@ -438,6 +448,48 @@ div.csl-indent {
 </section>
 <section id="draft-paper-pub-committee" class="level2" data-number="2.8">
 <h2 data-number="2.8" class="anchored" data-anchor-id="draft-paper-pub-committee"><span class="header-section-number">2.8</span> Draft paper, pub committee</h2>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip With Caption
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is an example of a callout with a caption.</p>
+</div>
+</div>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand To Learn About Collapse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is an example of a ‘folded’ caution callout that can be expanded by the user. You can use <code>collapse="true"</code> to collapse it by default or <code>collapse="false"</code> to make a collapsible callout that is expanded by default.</p>
+</div>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">

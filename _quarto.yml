@@ -5,7 +5,7 @@ book:
   title: Guide to N3C
   date: last-modified
 
-  editors:
+  editor:
 
     - name: William H Beasley
       affiliation: University of Oklahoma Health Sciences Center
@@ -20,8 +20,10 @@ book:
       orcid: 0000-0001-6220-7080
 
   # logo: images/n3c-logo-circle-large-0.png
-  logo: images/logo.png
+  # logo: images/logo.png
   # favicon: images/logo.png
+  cover-image: images/logo.png
+  cover-image-alt: images/n3c-logo-circle-large-0.png
   favicon: images/n3c-logo-circle-large-0.png
 
   page-footer:

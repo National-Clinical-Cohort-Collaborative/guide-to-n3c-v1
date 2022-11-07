@@ -3,10 +3,31 @@ project:
 
 book:
   title: Guide to N3C
-  author: N3C Education Committee
-  logo: images/logo.png
+  date: last-modified
+  # date: "`r Sys.Date()`"
   # date: "11/6/2022"
 
+  editors:
+
+    - name: William H Beasley
+      affiliation: University of Oklahoma Health Sciences Center
+      affiliation-url: https://ouhsc.edu/bbmc/
+      email: wibeasley@hotmail.com
+      orcid: 0000-0002-5613-5006
+
+    - name: Shawn O'Neil
+      affiliation: University of Colorado, Anschutz
+      affiliation-url: https://oneilsh.github.io/
+      email: oneilsh@gmail.com
+      orcid: 0000-0001-6220-7080
+
+  logo: images/logo.png
+
+  page-footer:
+    left: |
+      <a href="https://ncats.nih.gov/n3c/">N3C</a>
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
   repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
   repo-branch: main
   repo-actions: [edit, issue]
@@ -49,3 +70,5 @@ format:
     theme: cosmo
   # pdf:
   #   documentclass: scrreprt
+
+google-scholar: true

@@ -1,3 +1,20 @@
+---
+abstract: __
+
+author:
+  - name: Karen Crowley
+    affiliation: Brown University
+    affiliation-url: https://bcbi.brown.edu/
+    attributes:
+      corresponding: true
+
+  - name: Shawn O'Neil
+    affiliation: University of Colorado, Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: oneilsh@gmail.com
+    orcid: 0000-0001-6220-7080
+---
+
 # Introduction {#sec-intro}
 
 This chapter is being drafted in Google Docs at
@@ -9,9 +26,7 @@ See a draft of the chapter outline at
 
 ------------------------
 
-**Chapter Leads: Karen Crowley, Shawn O’Neil**
-
-**Chapter Contributors: **
+**Chapter Contributors:**
 
 
 ### Mission

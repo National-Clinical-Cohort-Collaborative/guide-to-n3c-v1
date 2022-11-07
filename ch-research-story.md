@@ -1,6 +1,23 @@
-# A Research Story {#sec-story}
+---
+abstract: 40,000-foot view of a research project, from onboarding to publishing
 
-> 40,000-foot view of a research project, from onboarding to publishing
+author:
+  - name: William H Beasley
+    affiliation: University of Oklahoma Health Sciences Center
+    affiliation-url: https://ouhsc.edu/bbmc/
+    email: wibeasley@hotmail.com
+    orcid: 0000-0002-5613-5006
+    attributes:
+      corresponding: true
+
+  - name: Alfred H Anzalone
+    affiliation: University of Nebraska Medical Center
+    affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
+    email: alfred.anzalone@unmc.edu
+    orcid: 0000-0002-3212-7845
+---
+
+# A Research Story {#sec-story}
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 

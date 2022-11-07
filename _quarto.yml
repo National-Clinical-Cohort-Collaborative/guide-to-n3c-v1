@@ -38,26 +38,26 @@ book:
 
   - part: Getting Started
     chapters:
-    - ch-intro.md
-    - ch-research-story.md
-    - ch-lifecycle.md
-    - ch-governance.md
-    - ch-onboarding.md
+    - chapters/intro.md
+    - chapters/research-story.md
+    - chapters/lifecycle.md
+    - chapters/governance.md
+    - chapters/onboarding.md
 
   - part: Investigating
     chapters:
-    - ch-data-access.md
-    - ch-data-understanding.md
-    - ch-data-analysis.md
-    - ch-practices.md
-    - ch-publishing.md
+    - chapters/data-access.md
+    - chapters/data-understanding.md
+    - chapters/data-analysis.md
+    - chapters/practices.md
+    - chapters/publishing.md
 
   - part: Special Topics
     chapters:
-    - ch-support.md
-    - ch-machine-learning.md
-    - ch-enclave-advanced.md
-    - ch-examples.md
+    - chapters/support.md
+    - chapters/machine-learning.md
+    - chapters/enclave-advanced.md
+    - chapters/examples.md
 
   - part: Back Matter
     chapters:

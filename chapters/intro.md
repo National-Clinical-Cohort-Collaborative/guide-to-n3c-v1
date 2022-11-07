@@ -15,6 +15,8 @@ author:
     orcid: 0000-0001-6220-7080
 ---
 
+<link rel="shortcut icon" href="images/n3c_logo_circle_large_0.png" type="image/png" />
+
 # Introduction {#sec-intro}
 
 This chapter is being drafted in Google Docs at

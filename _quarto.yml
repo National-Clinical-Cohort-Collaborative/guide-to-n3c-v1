@@ -4,8 +4,6 @@ project:
 book:
   title: Guide to N3C
   date: last-modified
-  # date: "`r Sys.Date()`"
-  # date: "11/6/2022"
 
   editors:
 
@@ -21,13 +19,16 @@ book:
       email: oneilsh@gmail.com
       orcid: 0000-0001-6220-7080
 
+  # logo: images/n3c-logo-circle-large-0.png
   logo: images/logo.png
+  # favicon: images/logo.png
+  favicon: images/n3c-logo-circle-large-0.png
 
   page-footer:
     left: |
-      <a href="https://ncats.nih.gov/n3c/">N3C</a>
+      <a href="https://ncats.nih.gov/n3c/">N3C</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>
     right: |
-      This book was built with <a href="https://quarto.org/">Quarto</a>.
+      Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.
   repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
   repo-branch: main
   repo-actions: [edit, issue]

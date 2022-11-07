@@ -60,6 +60,12 @@ Common Discussion at the Team's First Meeting
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:
 
+::: {.callout-note appearance="simple" icon=false}
+
+Hover over a footnote to see the popup, without jumping to the bottom of the page.
+
+:::
+
 * *Investigator*: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
 * *Statistician*: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.
 * *Data Engineer*: Hmmm.  I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-data-understanding, specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.], but you may not find it useful.  Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-lifecycle.]

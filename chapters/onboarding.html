@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Guide to N3C - 5&nbsp; Onboarding, Enclave Access, N3C Team Science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/data-access.html" rel="next">
+<link href="../chapters/governance.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<meta name="citation_title" content="[[5]{.chapter-number}&nbsp; [Onboarding, Enclave Access, N3C Team Science]{.chapter-title}]{#sec-onboarding .quarto-section-identifier}">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Informatic playbook;,citation_author=undefined CD2H;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://playbook.cd2h.org/;">
+<meta name="citation_reference" content="citation_title=Regression and other stories;,citation_author=undefined Andrew Gelman;,citation_author=Aki Vehtari;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=http://www.cambridge.org/9781107676510;">
+<meta name="citation_reference" content="citation_title=Literate programming;,citation_author=Donald E. Knuth;,citation_publication_date=1984-05;,citation_cover_date=1984-05;,citation_year=1984;,citation_fulltext_html_url=https://doi.org/10.1093/comjnl/27.2.97;,citation_issue=2;,citation_doi=10.1093/comjnl/27.2.97;,citation_issn=0010-4620;,citation_volume=27;,citation_journal_title=Comput. J.;,citation_publisher=Oxford University Press, Inc.;">
+<meta name="citation_reference" content="citation_title=The book of OHDSI: Observational health data sciences and informatics;,citation_author=Observational Health Data Sciences;,citation_author=undefined Informatics;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=https://ohdsi.github.io/TheBookOfOhdsi/;">
+<meta name="citation_reference" content="citation_title=R for data science;,citation_author=undefined Hadley Wickham;,citation_author=Garrett Grolemund;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://r4ds.hadley.nz/;">
+<meta name="citation_reference" content="citation_title=Knitr: A comprehensive tool for reproducible research in R;,citation_author=Yihui Xie;,citation_editor=Victoria Stodden;,citation_editor=Friedrich Leisch;,citation_editor=Roger D. Peng;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_fulltext_html_url=http://www.crcpress.com/product/isbn/9781466561595;,citation_inbook_title=Implementing reproducible computational research;">
+<meta name="citation_reference" content="citation_title=Dynamic documents with R and knitr;,citation_author=Yihui Xie;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_fulltext_html_url=http://yihui.org/knitr/;">
+<meta name="citation_reference" content="citation_title=Bookdown: Authoring books and technical documents with R markdown;,citation_author=Yihui Xie;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_fulltext_html_url=https://bookdown.org/yihui/bookdown;">
+<meta name="citation_reference" content="citation_title=R markdown: The definitive guide;,citation_author=Yihui Xie;,citation_author=J. J. Allaire;,citation_author=Garrett Grolemund;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_fulltext_html_url=https://bookdown.org/yihui/rmarkdown;">
+<meta name="citation_reference" content="citation_title=R markdown cookbook;,citation_author=Yihui Xie;,citation_author=Christophe Dervieux;,citation_author=Emily Riederer;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://bookdown.org/yihui/rmarkdown-cookbook;">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Guide to N3C</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Getting Started</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/research-story.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Lifecycle - From Patients to N3C Researchers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/governance.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/onboarding.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Investigating</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-understanding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analyzing the Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/practices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Best Practices and Important Data Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/publishing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Special Topics</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/support.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Special Topic: Help and Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/machine-learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Special Topic: Machine Learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/enclave-advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Special Topic: Advanced Enclave Coding Techniques</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/examples.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Start to finish examples or worked examples</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Back Matter</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#researcher-eligibility" id="toc-researcher-eligibility" class="nav-link active" data-scroll-target="#researcher-eligibility"><span class="toc-section-number">5.1</span>  Researcher Eligibility</a></li>
+  <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration"><span class="toc-section-number">5.2</span>  Registration</a>
+  <ul class="collapse">
+  <li><a href="#orcid-incommon-vs-login.gov" id="toc-orcid-incommon-vs-login.gov" class="nav-link" data-scroll-target="#orcid-incommon-vs-login.gov"><span class="toc-section-number">5.2.1</span>  ORCiD; InCommon vs Login.gov</a></li>
+  <li><a href="#nih-it-security-training" id="toc-nih-it-security-training" class="nav-link" data-scroll-target="#nih-it-security-training"><span class="toc-section-number">5.2.2</span>  NIH IT security training</a></li>
+  <li><a href="#human-subjects-training" id="toc-human-subjects-training" class="nav-link" data-scroll-target="#human-subjects-training"><span class="toc-section-number">5.2.3</span>  Human Subjects Training</a></li>
+  </ul></li>
+  <li><a href="#data-use-agreements" id="toc-data-use-agreements" class="nav-link" data-scroll-target="#data-use-agreements"><span class="toc-section-number">5.3</span>  Data Use Agreements</a></li>
+  <li><a href="#enclave-access" id="toc-enclave-access" class="nav-link" data-scroll-target="#enclave-access"><span class="toc-section-number">5.4</span>  Enclave Access</a></li>
+  <li><a href="#research-project-teams" id="toc-research-project-teams" class="nav-link" data-scroll-target="#research-project-teams"><span class="toc-section-number">5.5</span>  Research Project Teams</a>
+  <ul class="collapse">
+  <li><a href="#project-lead-vs-collaborations" id="toc-project-lead-vs-collaborations" class="nav-link" data-scroll-target="#project-lead-vs-collaborations"><span class="toc-section-number">5.5.1</span>  Project Lead vs COllaborations</a></li>
+  <li><a href="#common-roles-and-expectations-pis-pms-smes-analysts" id="toc-common-roles-and-expectations-pis-pms-smes-analysts" class="nav-link" data-scroll-target="#common-roles-and-expectations-pis-pms-smes-analysts"><span class="toc-section-number">5.5.2</span>  Common roles and expectations (PIs, PMs, SMEs, Analysts, …)</a></li>
+  </ul></li>
+  <li><a href="#domain-teams" id="toc-domain-teams" class="nav-link" data-scroll-target="#domain-teams"><span class="toc-section-number">5.6</span>  Domain Teams</a></li>
+  <li><a href="#browsing-researchersprojectsinstitutions" id="toc-browsing-researchersprojectsinstitutions" class="nav-link" data-scroll-target="#browsing-researchersprojectsinstitutions"><span class="toc-section-number">5.7</span>  Browsing Researchers/Projects/Institutions</a>
+  <ul class="collapse">
+  <li><a href="#object-explorer-public-dashboard" id="toc-object-explorer-public-dashboard" class="nav-link" data-scroll-target="#object-explorer-public-dashboard"><span class="toc-section-number">5.7.1</span>  Object Explorer, Public Dashboard</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1/edit/main/chapters/onboarding.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-onboarding" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>This chapter is being drafted in Google Docs at <a href="https://drive.google.com/drive/u/0/folders/1zOGR2rGGgr1lxP8mV5XmtkuxEZI_R7II" class="uri">https://drive.google.com/drive/u/0/folders/1zOGR2rGGgr1lxP8mV5XmtkuxEZI_R7II</a></p>
+<p>See a draft of the chapter outline at <a href="https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/" class="uri">https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/</a></p>
+<hr>
+<p><strong>Chapter Leads: Sharon Patrick, Jonathan Emery, Suzanne McCahan, Mary Helen Mays</strong></p>
+<p><strong>Chapter Contributors:</strong></p>
+<p>The N3C has an extensive secure onboarding process due to the sensitivity of the data within the enclave. There are several steps that need to be completed in order for a researcher or N3C user to gain access to the enclave.</p>
+<section id="researcher-eligibility" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="researcher-eligibility"><span class="header-section-number">5.1</span> Researcher Eligibility</h2>
+<p>Citizen scientists, researchers from foreign institutions and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave. Everyone with an N3C Data Enclave account has access to the tools and public datasets that are available in the Enclave.</p>
+<p>There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave. (For more information about the levels of data, see the section ‘Description of Levels 1, 2, 3’ in the ‘Getting &amp; Managing Data Access’ chapter. LINK NEEDS TO BE ADDED HERE)</p>
+<p>Citizen scientists are only eligible to access synthetic data (Level 1). This data is artificial but statistically-comparable to, and computationally derived from, the original EHR data.</p>
+<p>Researchers from foreign institutions are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removal of protected health information (PHI) (Level 2). (PHI includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA).)</p>
+<p>Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2) and patient data that includes dates of service and patient zip code (Level 3). (The latter data set is referred to as a limited dataset because it contains only 2 or the 18 PHI elements.)</p>
+</section>
+<section id="registration" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="registration"><span class="header-section-number">5.2</span> Registration</h2>
+<section id="orcid-incommon-vs-login.gov" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="orcid-incommon-vs-login.gov"><span class="header-section-number">5.2.1</span> ORCiD; InCommon vs Login.gov</h3>
+</section>
+<section id="nih-it-security-training" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="nih-it-security-training"><span class="header-section-number">5.2.2</span> NIH IT security training</h3>
+</section>
+<section id="human-subjects-training" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="human-subjects-training"><span class="header-section-number">5.2.3</span> Human Subjects Training</h3>
+<p>Due to the secure nature of the data that is available in the N3C Enclave registration of users is key. There are two options in which users can log in and create an account, InCOmmon or Login.gov. The InCommon pathway is available to select institutions that participate in that identity management service. You can clock of the link to confirm if your organization participates. If your institution does not participate with InCOmmon, you will need to create a login.gov account. Use the link to Login.gov and complete the required fields to create an account. Once you know which pathway you will use to create an enclave account there are other security measures that are put in place, you will need to have a ORCiD, complete NIH security Trainingn, and also human subjects tratining.</p>
+<p>ORCiD, which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.</p>
+<p>The N3C Data enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the “Informational Securty, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Prepardeness Refresher” course. The course can be accessed at <a href="https://irtsectraining.nih.gov/public.aspx">https://irtsectraining.nih.gov/public.aspx</a>. The course take approximately 60-90 minutes to complete and you should print your certificate of completion. Users need to complete Human Subjects training that aligns with their institution’s guidelines. You will need to provide the date of completion as part of enclave creation.</p>
+<p>Overall, users will need to confirm if they use the InCOmmon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects training.</p>
+</section>
+</section>
+<section id="data-use-agreements" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="data-use-agreements"><span class="header-section-number">5.3</span> Data Use Agreements</h2>
+<p>The data use agreement (DUA) establishes the permitted uses of the data in the N3C Data Enclave. By signing the agreement, an institutional official is assuring that users from their institution will abide by the terms defined in the agreement.</p>
+<p>A DUA must be executed by National Center for Advancing Translational Science (NCATS) and a research institution. The DUA must be signed by authorized institutional officials who have the authority to bind all users at their institution to the terms of the DUA. (A citizen scientist who is not affiliated with an institution must execute a data use agreement with NCATS.) A DUA will be in effect for five years from the DUA Effective Date.</p>
+<p>Every individual who has access to the N3C Data Enclave must be covered by a DUA. This DUA must be in place before an account for the N3C Enclave is requested. If your institution has an active DUA, there is no additional action required with regards to the DUA. A list of institutions with DUAs in place can be found at List of DUA Signatories: (https://covid.cd2h.org/duas).</p>
+<p>The Institutional Data Use Agreement form is available at:</p>
+<p>https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf</p>
+<p>For more information see:</p>
+<p>https://ncats.nih.gov/n3c/resources/data-access</p>
+</section>
+<section id="enclave-access" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="enclave-access"><span class="header-section-number">5.4</span> Enclave Access</h2>
+</section>
+<section id="research-project-teams" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="research-project-teams"><span class="header-section-number">5.5</span> Research Project Teams</h2>
+<section id="project-lead-vs-collaborations" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="project-lead-vs-collaborations"><span class="header-section-number">5.5.1</span> Project Lead vs COllaborations</h3>
+</section>
+<section id="common-roles-and-expectations-pis-pms-smes-analysts" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="common-roles-and-expectations-pis-pms-smes-analysts"><span class="header-section-number">5.5.2</span> Common roles and expectations (PIs, PMs, SMEs, Analysts, …)</h3>
+<section id="expertise-needed" class="level4" data-number="5.5.2.1">
+<h4 data-number="5.5.2.1" class="anchored" data-anchor-id="expertise-needed"><span class="header-section-number">5.5.2.1</span> Expertise needed</h4>
+</section>
+</section>
+</section>
+<section id="domain-teams" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="domain-teams"><span class="header-section-number">5.6</span> Domain Teams</h2>
+<p>The N3C Data enclave is built for multi-site collaboration, and aims to bring together researchers of different backgrounds with similar questions using domain teams. Because N3C is multi-site, it can be difficult to collaborate with researchers of different backgrounds from different sites. Domain Teams exist to alleviate this difficulty. Some collaboration examples could be collecting pilot data for grant submission, sharing methodology and cohort logic, or learning how to use tools for large-scale data like machine learning.</p>
+<p>For example, let’s say your institution just signed the DUA and you have some questions about the relationship between rurality and COVID treatments. You can look at the list of domain teams to see rural health. Then you can get in contact and go to the next upcoming meeting. At the meeting you can find out whether your questions are already part of an existing project within the domain team, or if a new project should be created.</p>
+<p>If you don’t see your type of questions belonging to any existing domain teams you can create a new one here:</p>
+<p>https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58</p>
+<p>See here for a list of existing domain teams:</p>
+<p>https://covid.cd2h.org/domain-teams</p>
+</section>
+<section id="browsing-researchersprojectsinstitutions" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="browsing-researchersprojectsinstitutions"><span class="header-section-number">5.7</span> Browsing Researchers/Projects/Institutions</h2>
+<section id="object-explorer-public-dashboard" class="level3" data-number="5.7.1">
+<h3 data-number="5.7.1" class="anchored" data-anchor-id="object-explorer-public-dashboard"><span class="header-section-number">5.7.1</span> Object Explorer, Public Dashboard</h3>
+<p>Once you have an enclave account you can log in and use the object explorer to browse researchers and research projects. The object explorer can be found on the left hand side of your view on the enclave homepage. Click on Object Explorer and there are several object-type groups, to search researchers and projects, click on N3C Admin, from there are you can search Data Use Requests, N3C Researchers, and Research Projects. If you are looking for a particular N3C researcher, you can click on that box and in the search bar type in their name and hit enter. A new box will be displayed and you can clock on that researcher’s name and from there you can see the research projects that are lead of or a collabotaro on. You can go back to the Object Explorer, object type groups, click N3C Admin again, and search research projects by clicking that box. Using the search bar at the top of the page you can search by key word. Type in the key word and click enter and a results box will be displayed. You can view all results to find the project in which you are interested in joining. From that screen, you can select the title of the project that you are interested in joining or reading about. There is a public-facing version of searching projects in addition to using the enclave as a search method. Users can search <a href="https://covid.cd2h.org/projects">https://covid.cd2h.org/projects</a> or <a href="https://covid.cd2h.org/dashboard/exploration#projects">https://covid.cd2h.org/dashboard/exploration#projects</a> and search for title, lead investigator name and also the institution. There are many features that are available to search using the public-facing dashboard. There are four categories of.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/governance.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/data-access.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a></div>   
+    <div class="nav-footer-right">This book was built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

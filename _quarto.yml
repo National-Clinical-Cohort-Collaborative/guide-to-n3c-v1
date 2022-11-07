@@ -1,0 +1,75 @@
+project:
+  type: book
+
+book:
+  title: Guide to N3C
+  date: last-modified
+
+  editors:
+
+    - name: William H Beasley
+      affiliation: University of Oklahoma Health Sciences Center
+      affiliation-url: https://ouhsc.edu/bbmc/
+      email: wibeasley@hotmail.com
+      orcid: 0000-0002-5613-5006
+
+    - name: Shawn O'Neil
+      affiliation: University of Colorado, Anschutz
+      affiliation-url: https://oneilsh.github.io/
+      email: oneilsh@gmail.com
+      orcid: 0000-0001-6220-7080
+
+  # logo: images/n3c-logo-circle-large-0.png
+  logo: images/logo.png
+  # favicon: images/logo.png
+  favicon: images/n3c-logo-circle-large-0.png
+
+  page-footer:
+    left: |
+      <a href="https://ncats.nih.gov/n3c/">N3C</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>
+    right: |
+      Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.
+  repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
+  repo-branch: main
+  repo-actions: [edit, issue]
+  sharing: [twitter, facebook]
+
+  chapters:
+  - index.qmd
+
+  - part: Getting Started
+    chapters:
+    - chapters/intro.md
+    - chapters/research-story.md
+    - chapters/lifecycle.md
+    - chapters/governance.md
+    - chapters/onboarding.md
+
+  - part: Investigating
+    chapters:
+    - chapters/data-access.md
+    - chapters/data-understanding.md
+    - chapters/data-analysis.md
+    - chapters/practices.md
+    - chapters/publishing.md
+
+  - part: Special Topics
+    chapters:
+    - chapters/support.md
+    - chapters/machine-learning.md
+    - chapters/enclave-advanced.md
+    - chapters/examples.md
+
+  - part: Back Matter
+    chapters:
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  # pdf:
+  #   documentclass: scrreprt
+
+google-scholar: true

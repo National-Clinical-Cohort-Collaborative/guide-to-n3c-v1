@@ -23,16 +23,16 @@ Substantial edits and writing are better accommodated by a text editor on your l
 
 You don't have to understand the rest to contribute, but for those interested:
 
-* The majority of this book is written in a collection of [markdown](https://guides.github.com/features/mastering-markdown/) documents and assembled by the [bookdown](https://bookdown.org/) package.  See [Yihui's book](https://bookdown.org/yihui/bookdown/) for the authoritative details.
+* The majority of this book is written in a collection of [markdown](https://guides.github.com/features/mastering-markdown/) documents and assembled by the [Quarto](https://quarto.org/).
 
 * After your change is pushed to GitHub, a [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) spawns a small VM that (a) collects all the markdown documents, (b) calls bookdown to convert them to html, and (c) moves the compiled products to the "gh-pages" branch.
 
-* GitHub Pages serves the contents of the ["docs/" directory](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/tree/gh-pages/docs) (in the "gh-pages" branch) to anyone with a browser.
+* GitHub Pages serves the contents of the [`gh-pages` branch](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/tree/gh-pages) to anyone with a browser.
 
 Assets
 ------------------
 
-* [Directory on N3C Google Drive ](<https://drive.google.com/drive/u/0/folders/1ZFxcvLvJUqMF_RbnQLo8rW7DTMTtahfY):>
+* [Directory on N3C Google Drive ](https://drive.google.com/drive/u/0/folders/1ZFxcvLvJUqMF_RbnQLo8rW7DTMTtahfY)
 
     ```sh
     //N3C allhands National COVID Cohort Collaborative (n3c-allhands@ctsa.io)/WORKSTREAMS & SUBGROUPS/Collaborative Analytics/Clinical Scenarios & Data Analytics subgroup/Clinical Domain Teams/Education and Training DT/Projects/Book of N3C/
@@ -42,7 +42,7 @@ Assets
 
 * [Ed Committee Notes](https://docs.google.com/document/d/1CmAKLcMQcVV_M1OV0zcIxfjiu0xiEWrfKkMMw8zRp6w/edit)
 * [Topics Brainstorm](https://docs.google.com/drawings/d/1Z2k0UaukCNsmc8lcxB2lp9ZmOCqrszCWdtntwS4MpQE/edit)
-* [Outline (current)](<https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/>edit)
+* [Outline (current)](https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/edit)
 * [Outline (old)](for-contributors/outline-draft.md)
 
 Funding

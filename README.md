@@ -17,15 +17,19 @@ If you have an idea for something more substantial such as a chapter or section,
 Platform
 ------------------
 
+<-- The section is manually duplicated between index.qmd and README.md. -->
+
+As the chapters are being written, talk to the chapter's Lead Author to learn if it's being written in GitHub or Google Docs.  Eventually all Google Docs chapters will be translated to Markdown.  Once a chapter has been finally converted to Markdown...
+
 To make small changes like spelling corrections, we recommend editing the source directly in GitHub.  It handles the details without your knowledge (like starting a fork and prompting your pull request).  From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/book-of-n3c-v1/), click on the "Edit this page <i class="fab fa-github" aria-hidden="true"></i>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
-Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.  We suggest [RStudio](https://www.rstudio.com/products/rstudio/) or [Visual Studio Code](https://code.visualstudio.com/).
+Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.  We suggest [Visual Studio Code](https://code.visualstudio.com/) or [RStudio](https://www.rstudio.com/products/rstudio/).
 
 You don't have to understand the rest to contribute, but for those interested:
 
-* The majority of this book is written in a collection of [markdown](https://guides.github.com/features/mastering-markdown/) documents and assembled by the [Quarto](https://quarto.org/).
+* The majority of this book is written in a collection of [Markdown](https://guides.github.com/features/mastering-markdown/) documents and assembled by the [Quarto](https://quarto.org/).
 
-* After your change is pushed to GitHub, a [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) spawns a small VM that (a) collects all the markdown documents, (b) calls bookdown to convert them to html, and (c) moves the compiled products to the "gh-pages" branch.
+* After your change is pushed to GitHub, a [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) spawns a small VM that (a) collects all the Markdown documents, (b) calls [Quarto](https://quarto.org/)/[Pandoc](https://pandoc.org/) to convert them to html, and (c) moves the rendered html files to the "gh-pages" branch.
 
 * GitHub Pages serves the contents of the [`gh-pages` branch](https://github.com/National-COVID-Cohort-Collaborative/book-of-n3c-v1/tree/gh-pages) to anyone with a browser.
 

@@ -1,4 +1,6 @@
 ---
+# reference-location: margin
+
 abstract: 40,000-foot view of a research project, from onboarding to publishing
 
 author:
@@ -124,3 +126,21 @@ Analyses
 
 Draft paper, pub committee
 ----------------------------------------------
+
+
+:::{.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+:::{.callout-tip}
+## Tip With Caption
+
+This is an example of a callout with a caption.
+:::
+
+:::{.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::

@@ -30,8 +30,6 @@ At this point, any edits to this chapter should be made in Google Docs.  The cur
 :::
 
 
-------------------------
-
 **Chapter Contributors:**
 
 

@@ -16,7 +16,7 @@ If you have an idea for something more substantial such as a chapter or section,
 Platform
 ------------------
 
-<-- The section is manually duplicated between index.qmd and README.md. -->
+<!-- The section is manually duplicated between index.qmd and README.md. -->
 
 As the chapters are being written, talk to the chapter's Lead Author to learn if it's being written in GitHub or Google Docs.  Eventually all Google Docs chapters will be translated to Markdown.  Once a chapter has been finally converted to Markdown...
 

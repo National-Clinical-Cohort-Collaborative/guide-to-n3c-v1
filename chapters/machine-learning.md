@@ -1,4 +1,4 @@
-# Special Topic: Machine Learning {#sec-machine-learning}
+# Machine Learning {#sec-machine-learning}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

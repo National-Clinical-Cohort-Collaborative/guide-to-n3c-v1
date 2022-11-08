@@ -1,4 +1,4 @@
-# Special Topic: Start to finish examples or worked examples {#sec-example}
+# Start to finish examples or worked examples {#sec-example}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

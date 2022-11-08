@@ -1,4 +1,4 @@
-# Special Topic: Advanced Enclave Coding Techniques {#sec-enclave-advanced}
+# Advanced Enclave Coding Techniques {#sec-enclave-advanced}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

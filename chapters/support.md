@@ -1,4 +1,4 @@
-# Special Topic: Help and Support {#sec-support}
+# Help and Support {#sec-support}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

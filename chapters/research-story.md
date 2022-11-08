@@ -28,6 +28,8 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 Onboarding {#story-person}
 ----------------------------------------------
 
+> Our story begins in your office.  As the researcher of gout, you have inevitably wondered about their relationships with covid such as, "Are the newer gout medications associated with more favorable covid outcomes?".  Yesterday you attended a presentation about N3C and become interested in potentially using its massive national dataset to address this population of patients that is too small in any single institution's EMR.
+
 Before the first data point is viewed, three things should be established by you and your institution:
 
 * {A person's paperwork.  Include ORCiD}
@@ -55,7 +57,7 @@ N3C teams have some differences from conventional research teams at single sites
 
 If your team needs someone, consider asking a relevant [domain team](https://covid.cd2h.org/domain-teams) for helping identifying and approaching a potential collaborator.
 
-Common Discussion at the Team's First Meeting
+Research Team's First Meeting
 ----------------------------------------------
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:

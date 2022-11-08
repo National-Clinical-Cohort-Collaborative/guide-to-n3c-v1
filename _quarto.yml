@@ -33,8 +33,9 @@ book:
       Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.
   repo-url: https://github.com/national-covid-cohort-collaborative/book-of-n3c-v1
   repo-branch: main
-  repo-actions: [edit, issue]
+  repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]
+  downloads: [pdf, epub]
 
   chapters:
   - index.qmd

@@ -21,14 +21,25 @@ author:
 
 # A Research Story {#sec-story}
 
-Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
+Now that we have introduced N3C and described its motivation and importance, we'll walk through sthe lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
 If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours](https://covid.cd2h.org/support)).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+
+:::{.callout-note icon=false}
+## Voice of Morgan Freeman
+
+Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest scurvy medications have more favorable covid outcomes than patients receiving the previous generation of gout medication?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough for your specific question.
+
+Yesterday you attended a local N3C presentation and became interested because it likely has enough covid patients with scurvy to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists.
+:::
+
 
 Onboarding {#story-person}
 ----------------------------------------------
 
-> Our story begins in your office.  As the researcher of gout, you have inevitably wondered about its relationship with covid such as, "Are the newer gout medications associated with more favorable covid outcomes?".  Yesterday you attended a local N3C presentation and became interested in leveraging its massive national dataset to address this population of patients that is too small in any single institution's EMR.
+:::{.callout-note icon=false}
+## Voice of Bill Kurtis
+:::
 
 Before the first data point is viewed, three things should be established by you and your institution:
 
@@ -40,6 +51,13 @@ The startup costs are more expensive for an N3C investigation compared to most, 
 
 Team building & collaborating
 ----------------------------------------------
+
+:::{.callout-note icon=false}
+## Voice of Jamie Foxx
+
+Recruiting your crew
+:::
+
 
 The next step is to build a team to leverage retrospective medical records.  Like most contemporary research teams, heterogenous skills are important.  Ideally a team has at least:
 
@@ -62,7 +80,7 @@ Research Team's First Meeting
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:
 
-::: {.callout-note appearance="simple" icon=false}
+::: {.callout-tip appearance="simple" icon=true}
 Hover over a footnote to see the popup, without jumping to the bottom of the page.
 :::
 
@@ -135,20 +153,8 @@ Analyses
 Draft paper, pub committee
 ----------------------------------------------
 
+:::{.callout-note icon=false}
+## Voice of Sam Elliot
 
-:::{.callout-note}
-Note that there are five types of callouts, including:
-`note`, `warning`, `important`, `tip`, and `caution`.
-:::
-
-:::{.callout-tip}
-## Tip With Caption
-
-This is an example of a callout with a caption.
-:::
-
-:::{.callout-caution collapse="true"}
-## Expand To Learn About Collapse
-
-This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+Nearing the trail head...
 :::

@@ -30,9 +30,10 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 
 Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest scurvy medications have more favorable covid outcomes than patients receiving the previous generation of gout medication?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough for your specific question.
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=mc_Jmor6bzU" target="_blank"> <img src="http://img.youtube.com/vi/mc_Jmor6bzU/0.jpg" alt="Watch the video" width="33%" border="10px #fffff00" align="right"/> </a>
+
 Yesterday you attended a local N3C presentation and became interested because it likely has enough covid patients with scurvy to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists.
 :::
-
 
 Onboarding {#story-person}
 ----------------------------------------------
@@ -158,3 +159,5 @@ Draft paper, pub committee
 
 Nearing the trail head...
 :::
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0JPjw1_iRKY" target="_blank"> <img src="http://img.youtube.com/vi/0JPjw1_iRKY/maxresdefault.jpg" alt="Watch the video" width="75%" border="0"/> </a>

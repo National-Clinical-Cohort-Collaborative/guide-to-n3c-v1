@@ -28,7 +28,7 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 Onboarding {#story-person}
 ----------------------------------------------
 
-> Our story begins in your office.  As the researcher of gout, you have inevitably wondered about their relationships with covid such as, "Are the newer gout medications associated with more favorable covid outcomes?".  Yesterday you attended a presentation about N3C and become interested in potentially using its massive national dataset to address this population of patients that is too small in any single institution's EMR.
+> Our story begins in your office.  As the researcher of gout, you have inevitably wondered about its relationship with covid such as, "Are the newer gout medications associated with more favorable covid outcomes?".  Yesterday you attended a local N3C presentation and became interested in leveraging its massive national dataset to address this population of patients that is too small in any single institution's EMR.
 
 Before the first data point is viewed, three things should be established by you and your institution:
 

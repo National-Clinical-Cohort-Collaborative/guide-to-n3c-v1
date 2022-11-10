@@ -28,27 +28,26 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 :::{.callout-note icon=false}
 ## Voice of Morgan Freeman
 
-Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest scurvy medications have more favorable covid outcomes than patients receiving the previous generation of gout medication?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough for your specific question.
+Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But in order to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=mc_Jmor6bzU" target="_blank"> <img src="http://img.youtube.com/vi/mc_Jmor6bzU/0.jpg" alt="Watch the video" width="33%" border="10px #fffff00" align="right"/> </a>
-
-Yesterday you attended a local N3C presentation and became interested because it likely has enough covid patients with scurvy to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists.
+Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
 :::
+
+{Should we use 2nd person or 3rd person?}
 
 Onboarding {#story-person}
 ----------------------------------------------
 
+The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
+
 :::{.callout-note icon=false}
-## Voice of Bill Kurtis
+## Voice of ~~Bill Kurtis~~
+
+The next day you are chatting with your institution's Navigator.  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
-Before the first data point is viewed, three things should be established by you and your institution:
+* **Navigator**: I'm glad you think the N3C might help your research.  As I wrote in this morning's email, our university's agreement was established last year. ^[Read about the institutional-level DUA in @sec-onboarding.]  There are two remaining steps.  First, complete your personal paperwork.^[See @sec-onboarding.]  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
 
-* {A person's paperwork.  Include ORCiD}
-* {DUA coverage & An institution's paperwork.}
-* {DUR & a project's paperwork.}
-
-The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
 
 Team building & collaborating
 ----------------------------------------------
@@ -159,5 +158,3 @@ Draft paper, pub committee
 
 Nearing the trail head...
 :::
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=0JPjw1_iRKY" target="_blank"> <img src="http://img.youtube.com/vi/0JPjw1_iRKY/maxresdefault.jpg" alt="Watch the video" width="75%" border="0"/> </a>

@@ -70,8 +70,8 @@ book:
 format:
   html:
     theme:
-      light: simplex # sketchy
-      dark: slate
+      light: zephyr # spacelab # materia #lumen # simplex # sketchy
+      dark: [slate, ../assets/dark-theme.scss]
   pdf:
     documentclass: scrreprt
   epub:

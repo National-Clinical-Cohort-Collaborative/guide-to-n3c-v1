@@ -19,6 +19,8 @@ author:
     orcid: 0000-0002-3212-7845
 ---
 
+**Chapter Contributors**: Sharon Patrick, Shawn O'Neil
+
 # A Research Story {#sec-story}
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
@@ -35,15 +37,15 @@ Yesterday you attended a local N3C presentation and became interested because it
 
 {Should we use 2nd person or 3rd person?}
 
-Onboarding {#story-person}
+Onboarding {#sec-story-onboarding}
 ----------------------------------------------
 
-The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
+The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
-## Voice of ~~Bill Kurtis~~
+## Voice of someone liek Bill Kurtis, but without the connotation of murder
 
-The next afternoon you are chatting with your institution's Navigator.  She organized the local N3C presentation and invited any interested attendees to contact her.
+The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
 ::: {.callout-tip appearance="simple" icon=true}
@@ -54,14 +56,14 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Investigator**: Remind me what a DUR is?
 
-* **N**: Oh right.  A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-data-analysis.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --your grant them permission to join yours.^[DURs are the topic of @sec-data-analysis.]
+* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-data-analysis.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --your grant them permission to join yours.^[DURs are the topic of @sec-data-analysis.]
 
 * **I**: Umm, I think I got it.
 
-* **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this link/worksheet? .  Get as far as you can, and then I'll help with the rest.  If there's something I can't help with, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
+* **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
 
-Team building & collaborating
+Team building & collaborating {#sec-story-team}
 ----------------------------------------------
 
 :::{.callout-note icon=false}

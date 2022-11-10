@@ -19,9 +19,9 @@ author:
     orcid: 0000-0002-3212-7845
 ---
 
-**Chapter Contributors**: Sharon Patrick, Shawn O'Neil
-
 # A Research Story {#sec-story}
+
+**Chapter Contributors**: Sharon Patrick, Shawn O'Neil
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 

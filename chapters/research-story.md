@@ -21,7 +21,7 @@ author:
 
 # A Research Story {#sec-story}
 
-Now that we have introduced N3C and described its motivation and importance, we'll walk through sthe lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
+Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
 If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours](https://covid.cd2h.org/support)).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
@@ -43,10 +43,22 @@ The startup costs are more expensive for an N3C investigation compared to most, 
 :::{.callout-note icon=false}
 ## Voice of ~~Bill Kurtis~~
 
-The next day you are chatting with your institution's Navigator.  She organized the local N3C presentation and invited any interested attendees to contact her.
+The next afternoon you are chatting with your institution's Navigator.  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
-* **Navigator**: I'm glad you think the N3C might help your research.  As I wrote in this morning's email, our university's agreement was established last year. ^[Read about the institutional-level DUA in @sec-onboarding.]  There are two remaining steps.  First, complete your personal paperwork.^[See @sec-onboarding.]  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
+::: {.callout-tip appearance="simple" icon=true}
+Hover over a footnote to see the popup, without jumping to the bottom of the page.
+:::
+
+* **Navigator**: I'm glad you think the N3C might help your research.  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]  There are two remaining steps.  First, complete your personal paperwork.^[See @sec-onboarding.]  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
+
+* **Investigator**: Remind me what a DUR is?
+
+* **N**: Oh right.  A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-data-analysis.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --your grant them permission to join yours.^[DURs are the topic of @sec-data-analysis.]
+
+* **I**: Umm, I think I got it.
+
+* **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this link/worksheet? .  Get as far as you can, and then I'll help with the rest.  If there's something I can't help with, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
 
 Team building & collaborating
@@ -79,10 +91,6 @@ Research Team's First Meeting
 ----------------------------------------------
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:
-
-::: {.callout-tip appearance="simple" icon=true}
-Hover over a footnote to see the popup, without jumping to the bottom of the page.
-:::
 
 * **Investigator**: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
 * **Statistician**: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.

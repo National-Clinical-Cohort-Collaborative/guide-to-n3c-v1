@@ -10,7 +10,7 @@ author:
 
   - name: Saad Ljazouli
     affiliation: Palantir Technologies
-    affiliation-url: https://www.owlhealthworks.com
+    affiliation-url: https://www.palantir.com/
     # email: sljazouli@palantir.com
     # orcid:
 ---

@@ -59,10 +59,12 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -153,6 +155,7 @@ div.csl-indent {
           </a>
         </li>
     </ul>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -292,8 +295,8 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#story-person" id="toc-story-person" class="nav-link active" data-scroll-target="#story-person"><span class="toc-section-number">2.1</span>  Onboarding</a></li>
-  <li><a href="#team-building-collaborating" id="toc-team-building-collaborating" class="nav-link" data-scroll-target="#team-building-collaborating"><span class="toc-section-number">2.2</span>  Team building &amp; collaborating</a></li>
+  <li><a href="#sec-story-onboarding" id="toc-sec-story-onboarding" class="nav-link active" data-scroll-target="#sec-story-onboarding"><span class="toc-section-number">2.1</span>  Onboarding</a></li>
+  <li><a href="#sec-story-team" id="toc-sec-story-team" class="nav-link" data-scroll-target="#sec-story-team"><span class="toc-section-number">2.2</span>  Team building &amp; collaborating</a></li>
   <li><a href="#research-teams-first-meeting" id="toc-research-teams-first-meeting" class="nav-link" data-scroll-target="#research-teams-first-meeting"><span class="toc-section-number">2.3</span>  Research Team’s First Meeting</a></li>
   <li><a href="#protocol-variables-definitions" id="toc-protocol-variables-definitions" class="nav-link" data-scroll-target="#protocol-variables-definitions"><span class="toc-section-number">2.4</span>  Protocol, variables, &amp; definitions</a></li>
   <li><a href="#creating-an-analysis-ready-dataset" id="toc-creating-an-analysis-ready-dataset" class="nav-link" data-scroll-target="#creating-an-analysis-ready-dataset"><span class="toc-section-number">2.5</span>  Creating an analysis-ready dataset</a></li>
@@ -353,7 +356,8 @@ div.csl-indent {
 
 </header>
 
-<p>Now that we have introduced N3C and described its motivation and importance, we’ll walk through sthe lifecycle of an example project from onboarding to publishing. This path typically takes at least 6 months and 6 collaborators. It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.</p>
+<p><strong>Additional Contributors</strong>: <em>Sharon Patrick, Shawn O’Neil</em></p>
+<p>Now that we have introduced N3C and described its motivation and importance, we’ll walk through the lifecycle of an example project from onboarding to publishing. This path typically takes at least 6 months and 6 collaborators. It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.</p>
 <p>If you are starting a project by yourself, you’ll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as <a href="">instructional material</a> and <a href="https://covid.cd2h.org/support">office hours</a>). If you would like to join an existing project, there are <a href="https://covid.cd2h.org/domain-teams">domain teams</a> and ongoing projects that likely will fit your interests and benefit from your abilities.</p>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -365,35 +369,47 @@ Voice of Morgan Freeman
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Our story begins in your office. Your own piece of heaven. As a researcher of scurvy, you have wondered, “do patients receiving the newest scurvy medications have more favorable covid outcomes than patients receiving the previous generation of gout medication?”. Based on the meds’ relationships with other diseases, you expect there is a modest improvement. But to detect a modest effect size, many patients are required, and your local institution’s EMR doesn’t have enough meeting the inclusion criteria. In fact, no single institution’s EMR has enough for your specific question.</p>
-<p>Yesterday you attended a local N3C presentation and became interested because it likely has enough covid patients with scurvy to detect even small signals. Your mind wanders as you get a little greedy; additional hypotheses enter your daydream. <em>Does the relationship attenuate as you move inland?</em> You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions. <em>Is the relationship more pronounced in other racial/ethnic groups?</em> The stream persists.</p>
+<p>Our story begins in your office. Your own piece of heaven. As a researcher of scurvy, you have wondered, “do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?”. Based on the meds’ relationships with other diseases, you expect there is a modest improvement. But in order to detect a modest effect size, many patients are required, and your local institution’s EMR doesn’t have enough meeting the inclusion criteria. In fact, no single institution’s EMR has enough.</p>
+<p>Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals. Your mind wanders as you get a little greedy; additional hypotheses enter your daydream. <em>Does the relationship attenuate as you move inland?</em> You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions. <em>Is the relationship more pronounced in other racial/ethnic groups?</em> The stream persists throughout the night.</p>
 </div>
 </div>
-<section id="story-person" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="story-person"><span class="header-section-number">2.1</span> Onboarding</h2>
+<p>{Should we use 2nd person or 3rd person?}</p>
+<section id="sec-story-onboarding" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-story-onboarding"><span class="header-section-number">2.1</span> Onboarding</h2>
+<p>The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper. Even with strong institutional support, the university’s agreement with the NIH takes several months in legal and administrative channels. Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff. That’s a remarkably short time considering the scale of available data. It’s likely quicker than initiating a project based on a single EMR from your site –much quicker than EMRs from 70+ sites.</p>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Voice of Bill Kurtis
+Voice of someone like Bill Kurtis, but without the connotation of murder
 </div>
 </div>
 <div class="callout-body-container callout-body">
-
+<p>The next afternoon you are chatting with your institution’s Navigator.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> She organized the local N3C presentation and invited any interested attendees to contact her.</p>
 </div>
 </div>
-<p>Before the first data point is viewed, three things should be established by you and your institution:</p>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Hover over a footnote to see the popup, without jumping to the bottom of the page.</p>
+</div>
+</div>
+</div>
 <ul>
-<li>{A person’s paperwork. Include ORCiD}</li>
-<li>{DUA coverage &amp; An institution’s paperwork.}</li>
-<li>{DUR &amp; a project’s paperwork.}</li>
+<li><p><strong>Navigator</strong>: I’m glad you think the N3C might help your research. As I wrote in this morning’s email, the agreement between the university and the NIH was established last year, so don’t worry about that.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> There are two remaining steps. First, complete your personal paperwork.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Second, submit a DUR tailored to your hypotheses.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
+<li><p><strong>Investigator</strong>: Remind me what a DUR is?</p></li>
+<li><p><strong>N</strong>: A <em>d</em>ata <em>u</em>se <em>r</em>equest describes your upcoming project. Once a committee approves your proposal, your project’s code and data are protected in this workspace allotted on the NIH cloud.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Everyone on your project uses this dedicated workspace too. But they don’t have to submit additional DURs –your grant them permission to join yours.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p></li>
+<li><p><strong>I</strong>: Umm, I think I got it.</p></li>
+<li><p><strong>N</strong>: It will make sense once you get it into it. Skim the example DUR proposals I’m sending now. Then start filling out this online form. Get as far as you can, and then I’ll help with the rest. If there’s something I don’t know, I’ll ask a friend. The DUR application process will take about an hour. Then the proposal will likely be approved within a week or two. In the meantime, we can talk about potential collaborators.</p></li>
 </ul>
-<p>The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper. Even with strong institutional support, the DUA will take several months in legal and administrative channels. Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff. That’s a remarkably short time for scale of available data. It’s likely quicker than initiating a project based on a single EMR from your site –much less EMRs from 70+ sites.</p>
 </section>
-<section id="team-building-collaborating" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="team-building-collaborating"><span class="header-section-number">2.2</span> Team building &amp; collaborating</h2>
+<section id="sec-story-team" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-story-team"><span class="header-section-number">2.2</span> Team building &amp; collaborating</h2>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -425,41 +441,31 @@ Voice of Jamie Foxx
 <section id="research-teams-first-meeting" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="research-teams-first-meeting"><span class="header-section-number">2.3</span> Research Team’s First Meeting</h2>
 <p>Once the team is assembled, the first discussion is usually a variation of this exchange:</p>
-<div class="callout-tip callout callout-style-simple">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Hover over a footnote to see the popup, without jumping to the bottom of the page.</p>
-</div>
-</div>
-</div>
 <ul>
 <li><strong>Investigator</strong>: Welcome everyone. We’d like to know if Drug A or Drug B is associated with better outcomes.</li>
 <li><strong>Statistician</strong>: No problem. I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.</li>
-<li><strong>Data Engineer</strong>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but you may not find it useful. Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li><strong>Data Engineer</strong>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, but you may not find it useful. Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
 <li><strong>I</strong>: Bummer. Then what’s realistic or feasible?</li>
 <li><strong>Subject Matter Expert</strong>: Maybe this simplifies the picture… In my clinical experience, a patient rarely switches between Drugs A &amp; B. Based on the initial presentation, their provider will pick A <em>or</em> B, and complete the regimen unless there’s an adverse event.</li>
 <li><strong>S</strong>: In that case, should my initial model have three levels for treatment: A, B, and A+B?</li>
 <li><strong>I</strong>: Probably. In the N3C database, can someone tell me how many patients get both during the same visit?</li>
-<li><strong>DE</strong>: I’m already logged into the Enclave<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Give me 2 minutes to whip up something in SQL.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
-<li><strong>I</strong>: Oh my goodness, is that your cat? What a cutie! <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
+<li><strong>DE</strong>: I’m already logged into the Enclave<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. Give me 2 minutes to whip up something in SQL.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
+<li><strong>I</strong>: Oh my goodness, is that your cat? What a cutie! <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
 <li><strong>DE</strong> <em>after a few minutes</em>: Ok, I got it. [Unmutes himself.] Ok, I got it. 40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A &amp; B in the same visit.</li>
 <li><strong>SME</strong>: Weird. 8% is a lot more than I expected. I was thinking around 1%.</li>
-<li><strong>DE</strong>: Hmm, let me check. Give me another minute.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+<li><strong>DE</strong>: Hmm, let me check. Give me another minute.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></li>
 <li><strong>DE</strong> <em>after a few minutes</em>: I see what you mean. It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A &amp; B.</li>
 <li><strong>S</strong>: I was already planning to model the phase of the pandemic. I’ll test if there’s a significant interaction between time and treatment.</li>
 <li><strong>I</strong>: I like that as a starting point. Regarding the question about dose and frequency… For now let’s assume the providers were following the current dosing guidelines. Therefore the <code>dose</code> and <code>frequency</code> variables can be dropped from the analyses.</li>
 <li><strong>S</strong>: Phew. I didn’t want to admit this. But I skimmed the dosing guidelines you emailed yesterday. It looked complicated. I wasn’t sure if I could appropriately incorporate those variables in the model.</li>
 <li><strong>I</strong>: Well, that’s everything I wanted to cover today. See you in two weeks. Wait. I can’t believe I forgot. Sorry -our Navigator is sick this week and I’m almost worthless in her absence. Is everyone still on the call? For our secondary hypothesis, we want everything to connect to a patient’s diagnoses. …before, during, and after their covid hospitalization.</li>
-<li><strong>DE</strong>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Delaware leverage their state’s HIE<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
+<li><strong>DE</strong>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Delaware leverage their state’s HIE<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></li>
 <li><strong>I</strong>: Ugh. Good point.</li>
-<li><strong>DE</strong>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
-<li><strong>I</strong>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
-<li><strong>SME</strong>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
+<li><strong>DE</strong>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a></li>
+<li><strong>I</strong>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
+<li><strong>SME</strong>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
 <li><strong>S</strong>: Can I go back and ask a question about medications? I see that Drug A has 15 different brand names. I don’t recognize half of them. How should I classify them?</li>
-<li><strong>DE</strong>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH’s NLM. SME and I started on a concept set Thursday. We’re operationalizing the drug classes by their <a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html">RxNorm</a> ingredient. There are five ingredients that are conceptualized as Drug A. A friend showed me how she used the OMOP tables in a different project.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> I’ll roll up the meds into the patient-level dataset. It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. You’ll probably want to transform the two counts into two booleans.</li>
+<li><strong>DE</strong>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH’s NLM. SME and I started on a concept set Thursday. We’re operationalizing the drug classes by their <a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html">RxNorm</a> ingredient. There are five ingredients that are conceptualized as Drug A. A friend showed me how she used the OMOP tables in a different project.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> I’ll roll up the meds into the patient-level dataset. It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. You’ll probably want to transform the two counts into two booleans.</li>
 <li><strong>S</strong>: And if I change my mind and decide to use the counts, then at least I’ll know.</li>
 <li><strong>Shoreleave</strong>: and knowing is half the battle.</li>
 </ul>
@@ -528,18 +534,24 @@ Wu, Chunlei, and C2DH. 2022. <span>“<span>Informatics Playbook</span>.”</spa
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>Read about the OMOP Standard Tables in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>, specifically the medications are in the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE"><code>drug_exposure</code></a> table.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Conformance is a topic in <a href="lifecycle.html"><span>Chapter&nbsp;3</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>See <a href="data-access.html"><span>Chapter&nbsp;6</span></a> for accessing the N3C Enclave.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>There is a brief discussion of SME’s cat.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>There is a brief discussion of S’s daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>An <a href="https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange">HIE</a> is a health information exchange.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html"><span>Chapter&nbsp;9</span></a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Authoring and using concept sets are described in <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>TODO: is the book planning to have a section on the CMS &amp; death records?<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>Everyone says goodbye to the cat.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>The <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP"><code>concept_relationship</code></a> table is discussed with the OMOP concept hierarchy in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>This role may be called something differently at your Institution; the roles are defined below in <a href="#sec-story-team"><span>Section&nbsp;2.2</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Read about the institutional-level DUA in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>See <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Project-level paperwork are discussed in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The NIH “Enclave” is detailed in <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>DURs are the topic of <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Read about the OMOP Standard Tables in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>, specifically the medications are in the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE"><code>drug_exposure</code></a> table.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Conformance is a topic in <a href="lifecycle.html"><span>Chapter&nbsp;3</span></a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>See <a href="data-access.html"><span>Chapter&nbsp;6</span></a> for accessing the N3C Enclave.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>There is a brief discussion of SME’s cat.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>There is a brief discussion of S’s daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>An <a href="https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange">HIE</a> is a health information exchange.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html"><span>Chapter&nbsp;9</span></a>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Authoring and using concept sets are described in <a href="data-analysis.html"><span>Chapter&nbsp;8</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>TODO: is the book planning to have a section on the CMS &amp; death records?<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Everyone says goodbye to the cat.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>The <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP"><code>concept_relationship</code></a> table is discussed with the OMOP concept hierarchy in <a href="data-understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -564,6 +576,119 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

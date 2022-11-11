@@ -1,3 +1,14 @@
+---
+author:
+  - name: Christine Suver
+    affiliation: Sage Bionetworks
+    affiliation-url: https://sagebionetworks.org/
+    # email: christine.suver@sagebase.org
+    # orcid:
+    attributes:
+      corresponding: true
+---
+
 # Governance, Leadership, and Operations Structures {#sec-governance}
 
 :::{.callout-note}

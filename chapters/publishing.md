@@ -1,3 +1,20 @@
+---
+author:
+  - name: Julie McMurry
+    affiliation: TISLab
+    affiliation-url: https://tislab.org/
+    # email: julie@tislab.org
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Jeremy Harper
+    affiliation: Owl Health Works
+    affiliation-url: www.owlhealthworks.com
+    # email: jeremy6@gmail.com
+    # orcid:
+---
+
 # Publishing and Sharing Your Work {#sec-publishing}
 
 :::{.callout-note}

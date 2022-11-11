@@ -1,3 +1,20 @@
+---
+author:
+  - name: Peter Robinson
+    affiliation: The Jackson Laboratory
+    affiliation-url: https://robinsongroup.github.io/
+    # email: Peter.Robinson@jax.org
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Justin Reese
+    affiliation: Lawrence Berkeley National Lab
+    affiliation-url: https://www.lbl.gov/
+    # email: justaddcoffee@gmail.com
+    # orcid:
+---
+
 # Machine Learning {#sec-machine-learning}
 
 :::{.callout-note}

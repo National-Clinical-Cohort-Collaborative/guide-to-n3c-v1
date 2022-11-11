@@ -1,3 +1,20 @@
+---
+author:
+  - name: Shawn O'Neil
+    affiliation: University of Colorado, Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: oneilsh@gmail.com
+    orcid: 0000-0001-6220-7080
+    attributes:
+      corresponding: true
+
+  - name: Saad Ljazouli
+    affiliation: Palantir Technologies
+    affiliation-url: https://www.owlhealthworks.com
+    # email: sljazouli@palantir.com
+    # orcid:
+---
+
 # Help and Support {#sec-support}
 
 :::{.callout-note}

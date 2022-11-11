@@ -21,7 +21,7 @@ author:
 
 # A Research Story {#sec-story}
 
-**Chapter Contributors**: Sharon Patrick, Shawn O'Neil
+**Additional Contributors**: *Sharon Patrick, Shawn O'Neil*
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
@@ -43,7 +43,7 @@ Onboarding {#sec-story-onboarding}
 The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
-## Voice of someone liek Bill Kurtis, but without the connotation of murder
+## Voice of someone like Bill Kurtis, but without the connotation of murder
 
 The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::

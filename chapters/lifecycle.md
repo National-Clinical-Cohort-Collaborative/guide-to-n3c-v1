@@ -1,3 +1,20 @@
+---
+author:
+  - name: Stephanie Hong
+    affiliation: Johns Hopkins University School of Medicine
+    affiliation-url: https://www.hopkinsmedicine.org/som/
+    # email: shong59@jh.edu
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Bryan Laraway
+    affiliation: TISLab
+    affiliation-url: https://tislab.org/
+    # email: bryan@tislab.org
+    # orcid:
+---
+
 # Data Lifecycle - From Patients to N3C Researchers {#sec-lifecycle}
 
 :::{.callout-note}

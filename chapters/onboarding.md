@@ -1,13 +1,9 @@
 ---
-# reference-location: margin
-
-abstract: 40,000-foot view of a research project, from onboarding to publishing
-
 author:
   - name: Sharon Patrick
     affiliation: University of West Virginia Health Sciences Center
     affiliation-url: https://directory.hsc.wvu.edu/Department/2109
-    # email:
+    # email: sharon.patrick@hsc.wvu.edu
     # orcid:
     attributes:
       corresponding: true
@@ -15,13 +11,13 @@ author:
   - name: Jonathan Emery
     affiliation: University of Vermont
     affiliation-url: https://www.uvm.edu/biostatistics
-    # email:
+    # email: Jonathan.F.Emery@uvm.edu
     # orcid:
 
   - name: Suzanne McCahan
     affiliation: Nemours Children's Health
     affiliation-url: https://www.nemours.org/pediatric-research/labservices/core/biomedical-research-informatics.html
-    # email:
+    # email: suzanne.mccahan@nemours.org
     # orcid:
 
   - name: Mary Helen Mays
@@ -33,7 +29,7 @@ author:
 
 # Onboarding, Enclave Access, N3C Team Science {#sec-onboarding}
 
-**Chapter Contributors:**
+**Additional Contributors:**
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

@@ -21,35 +21,49 @@ author:
 
 # A Research Story {#sec-story}
 
-Now that we have introduced N3C and described its motivation and importance, we'll walk through sthe lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
+**Additional Contributors**: *Sharon Patrick, Shawn O'Neil*
+
+Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
 If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours](https://covid.cd2h.org/support)).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 :::{.callout-note icon=false}
 ## Voice of Morgan Freeman
 
-Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest scurvy medications have more favorable covid outcomes than patients receiving the previous generation of gout medication?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough for your specific question.
+Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But in order to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough.
 
-Yesterday you attended a local N3C presentation and became interested because it likely has enough covid patients with scurvy to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists.
+Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
 :::
 
+{Should we use 2nd person or 3rd person?}
 
-Onboarding {#story-person}
+Onboarding {#sec-story-onboarding}
 ----------------------------------------------
 
+The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
+
 :::{.callout-note icon=false}
-## Voice of Bill Kurtis
+## Voice of someone like Bill Kurtis, but without the connotation of murder
+
+The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
-Before the first data point is viewed, three things should be established by you and your institution:
+::: {.callout-tip appearance="simple" icon=true}
+Hover over a footnote to see the popup, without jumping to the bottom of the page.
+:::
 
-* {A person's paperwork.  Include ORCiD}
-* {DUA coverage & An institution's paperwork.}
-* {DUR & a project's paperwork.}
+* **Navigator**: I'm glad you think the N3C might help your research.  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]  There are two remaining steps.  First, complete your personal paperwork.^[See @sec-onboarding.]  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
 
-The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the DUA will take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a few days to be processed by the N3C staff.  That's a remarkably short time for scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much less EMRs from 70+ sites.
+* **Investigator**: Remind me what a DUR is?
 
-Team building & collaborating
+* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-data-analysis.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --your grant them permission to join yours.^[DURs are the topic of @sec-data-analysis.]
+
+* **I**: Umm, I think I got it.
+
+* **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
+
+
+Team building & collaborating {#sec-story-team}
 ----------------------------------------------
 
 :::{.callout-note icon=false}
@@ -79,10 +93,6 @@ Research Team's First Meeting
 ----------------------------------------------
 
 Once the team is assembled, the first discussion is usually a variation of this exchange:
-
-::: {.callout-tip appearance="simple" icon=true}
-Hover over a footnote to see the popup, without jumping to the bottom of the page.
-:::
 
 * **Investigator**: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
 * **Statistician**: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.

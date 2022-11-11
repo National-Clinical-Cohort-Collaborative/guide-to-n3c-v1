@@ -1,4 +1,35 @@
+---
+author:
+  - name: Sharon Patrick
+    affiliation: University of West Virginia Health Sciences Center
+    affiliation-url: https://directory.hsc.wvu.edu/Department/2109
+    # email: sharon.patrick@hsc.wvu.edu
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Jonathan Emery
+    affiliation: University of Vermont
+    affiliation-url: https://www.uvm.edu/biostatistics
+    # email: Jonathan.F.Emery@uvm.edu
+    # orcid:
+
+  - name: Suzanne McCahan
+    affiliation: Nemours Children's Health
+    affiliation-url: https://www.nemours.org/pediatric-research/labservices/core/biomedical-research-informatics.html
+    # email: suzanne.mccahan@nemours.org
+    # orcid:
+
+  - name: Mary Helen Mays
+    affiliation: Universidad de Puerto Rico
+    affiliation-url: https://alliance.rcm.upr.edu/cores/biomedical-informatics-core
+    # email:
+    # orcid:
+---
+
 # Onboarding, Enclave Access, N3C Team Science {#sec-onboarding}
+
+**Additional Contributors:**
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at
@@ -11,11 +42,6 @@ See a draft of the chapter outline at
 :::{.callout-warning}
 At this point, any edits to this chapter should be made in Google Docs.  The current Markdown is for testing only.  It is NOT the source of truth (yet).
 :::
-
-
-**Chapter Leads: Sharon Patrick, Jonathan Emery, Suzanne McCahan, Mary Helen Mays**
-
-**Chapter Contributors:**
 
 The N3C has an extensive secure onboarding process due to the sensitivity of the data within the enclave.  There are several steps that need to be completed in order for a researcher or N3C user to gain access to the enclave.
 

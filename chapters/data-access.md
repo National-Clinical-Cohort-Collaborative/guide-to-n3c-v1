@@ -1,3 +1,20 @@
+---
+author:
+  - name: Shawn O'Neil
+    affiliation: University of Colorado, Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: oneilsh@gmail.com
+    orcid: 0000-0001-6220-7080
+    attributes:
+      corresponding: true
+
+  - name: Mariam Deacy
+    affiliation: NIH NCATS
+    affiliation-url: https://ncats.nih.gov/
+    # email: mariam.deacy@nih.gov
+    # orcid:
+---
+
 # Getting & Managing Data Access {#sec-data-access}
 
 :::{.callout-note}

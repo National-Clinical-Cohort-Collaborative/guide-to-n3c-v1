@@ -1,3 +1,20 @@
+---
+author:
+  - name: Ken Wilkins
+    affiliation: National Institutes of Health
+    affiliation-url: https://www.nih.gov/
+    # email: kenneth.wilkins@nih.gov
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Harold Lehmann
+    affiliation: Johns Hopkins University School of Medicine
+    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
+    # email: lehmann@jhmi.edu
+    # orcid:
+---
+
 # Best Practices and Important Data Considerations {#sec-practices}
 
 :::{.callout-note}

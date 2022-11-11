@@ -1,10 +1,10 @@
 ---
-abstract: __
-
 author:
   - name: Karen Crowley
     affiliation: Brown University
     affiliation-url: https://bcbi.brown.edu/
+    # email: karen_crowley@brown.edu
+    # orcid:
     attributes:
       corresponding: true
 
@@ -30,7 +30,7 @@ At this point, any edits to this chapter should be made in Google Docs.  The cur
 :::
 
 
-**Chapter Contributors:**
+**Additional Contributors:**
 
 
 ### Mission

@@ -1,3 +1,20 @@
+---
+author:
+  - name: Lisa Eskenazi
+    affiliation: Johns Hopkins University
+    affiliation-url: https://www.jhu.edu/
+    # email: leskena2@jh.edu
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Harold Lehmann
+    affiliation: Johns Hopkins University School of Medicine
+    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
+    # email: lehmann@jhmi.edu
+    # orcid:
+---
+
 # Understanding the Data {#sec-data-understanding}
 
 :::{.callout-note}

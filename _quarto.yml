@@ -67,14 +67,15 @@ book:
     chapters:
     - references.qmd
 
-bibliography: references.bib
-
 format:
   html:
-    theme: cosmo
+    theme:
+      light: zephyr # spacelab # materia #lumen # simplex # sketchy
+      dark: [slate, ../assets/dark-theme.scss]
   pdf:
     documentclass: scrreprt
   epub:
     cover-image: images/logo.png
 
+bibliography: references.bib
 google-scholar: true

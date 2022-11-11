@@ -1,4 +1,23 @@
+---
+author:
+  - name: Amy Olex
+    affiliation: Virginia Commonwealth University
+    affiliation-url: https://cctr.vcu.edu/
+    # email: alolex@vcu.edu
+    # orcid:
+    attributes:
+      corresponding: true
+
+  - name: Andrea Zhou
+    affiliation: University of Virginia Health
+    affiliation-url: https://uvahealth.com/
+    # email: agz5de@uvahealth.org
+    # orcid:
+---
+
 # Analyzing the Data {#sec-data-analysis}
+
+**Additional Contributors**: Johanna Loomba, Evan French, etc...
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at
@@ -11,11 +30,6 @@ See a draft of the chapter outline at
 :::{.callout-warning}
 At this point, any edits to this chapter should be made in Google Docs.  The current Markdown is for testing only.  It is NOT the source of truth (yet).
 :::
-
-**Chapter Leads: Amy Olex, Andrea Zhou**
-
-**Chapter Contributors: Johanna Loomba, Evan French, etc…**
-
 
 ## Identifying Concept Sets
 

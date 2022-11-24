@@ -112,15 +112,15 @@ Next, we’ll open the `condition_era `table which displays a preview in the Dat
 
 To submit a ticket about the currently opened dataset, we’ll open the Help menu near the top, and select “Report Issue.”
 
-![Report Issue](images/support/image-03-report-issue.png)
+![New Issue](images/support/image-03-issue-report.png)
 
 This opens a dialog requisition information about the ticket. Notice that the RESOURCE is identified as the `condition_era` table we had opened. Since we are asking a question about the data, we’ll select “Data quality.”
 
-![What kind of help do you need?](images/support/image-04-kind-of-help.png){width=50%}
+![New Issue: What kind of help do you need?](images/support/image-04-issue-kind-of-help.png){width=50%}
 
 Once we click Next, we’ll be prompted to change the resource of interest or application being used (if desired). Since we are reporting an issue on a dataset, we even have the option of selecting the specific column we are interested in. We’ll just click Next here.
 
-![Share some details](images/support/image-05-share-details.png){width=50%}
+![Share some details](images/support/image-05-issue-share-details.png){width=50%}
 
 :::{.callout-tip}
 
@@ -131,14 +131,15 @@ Using “Report Issue” from the Help menu of an enclave application is the pre
 
 Finally, we are prompted to submit our issue, including a title and description with pre-filled questions depending on the issue type selected. Answering all of these is not required, but any information you can add that speaks to them is helpful. This section also allows you to upload a screenshot if desired. Even though these issues are protected in enclave, you should not screenshot any data (or results like summary tables or figures), as that would result in your local computer storing, even if temporarily, unapproved patient-level information. Nevertheless, when excluding patient data is possible, a screenshot may help diagnose the problem, and the support personnel who respond to the issue may request a screenshot during follow up.
 
-![More details](images/support/image-06-more-details.png){width=50%}
+![More details](images/support/image-06-issue-more-details.png){width=50%}
 
 We can scroll down in this panel to see more advanced information pertaining to the ticket. Priority should generally be left to “Medium,” since “High” priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users. The default assignee is the “N3C: Issues Triage Team,” who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow up from support may take longer). Followers allow you to specify other users who will receive alerts about this issue. Adding labels to the ticket is optional as well, since the triage team usually applies relevant labels for tracking purposes.
 
-![Submit](images/support/image-07-submit.png){width=50%}
+![Submit](images/support/image-07-issue-submit.png){width=50%}
 
 Once we click Submit and refresh the browser page, we’ll see that a new “warning” icon has been added to the interface indicating that the resource now has one or more open issues relating to it, and it can be clicked on to open a menu with details. This warning will also show for other users who open the resource, and it will show in the file browser for this dataset. Reporting issues about datasets from the datasets themselves is thus a mechanism for alerting support teams and other N3C researchers about potential data quality issues. The same principle applies to other resource types like Code Workbooks, in cases where multiple researchers are working with them.
 
+![Recent Issues](images/support/image-08-issue-recent.png)
 
 #### Issue followup
 
@@ -158,7 +159,6 @@ Each of the options are described, and range from enclave access support (common
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request. The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
 
 Once submitted, you will receive an email with a link to the ticket. You can use this link to make further comments, or do so by replying to the email directly.
-
 
 ### Office Hours
 

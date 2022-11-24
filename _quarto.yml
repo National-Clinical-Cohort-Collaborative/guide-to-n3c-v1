@@ -62,6 +62,7 @@ book:
     - chapters/machine-learning.md
     - chapters/enclave-advanced.md
     - chapters/examples.md
+    # - chapters/lightbox.qmd
 
   - part: Back Matter
     chapters:

@@ -21,7 +21,7 @@ author:
 
 # A Research Story {#sec-story}
 
-**Additional Contributors**: *Sharon Patrick, Shawn O'Neil*
+**Additional Contributors**: Sharon Patrick, Shawn O'Neil<a href="https://orcid.org/0000-0001-6220-7080"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
@@ -66,13 +66,6 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 Team building & collaborating {#sec-story-team}
 ----------------------------------------------
 
-:::{.callout-note icon=false}
-## Voice of Jamie Foxx
-
-Recruiting your crew
-:::
-
-
 The next step is to build a team to leverage retrospective medical records.  Like most contemporary research teams, heterogenous skills are important.  Ideally a team has at least:
 
 1. a **navigator** who has learned the administrative and IRB requirements and is able to facilitate the investigation,
@@ -83,16 +76,30 @@ The next step is to build a team to leverage retrospective medical records.  Lik
 
 N3C teams have some differences from conventional research teams at single sites.  Some trends we have noticed are:
 
-* Most N3C teams have researchers from at least three institutions.  In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from a single institution/lab are sometimes are more reluctant to generate contrary views.
+1. Most N3C teams have researchers from at least three institutions.  In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from a single institution/lab are sometimes are more reluctant to generate contrary views.
 
-* The role of navigator is even more important.  Your local EMR investigations are likely guided by someone with years of experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
+1. The role of navigator is even more important.  Your local EMR investigations are likely guided by someone with years of experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 If your team needs someone, consider asking a relevant [domain team](https://covid.cd2h.org/domain-teams) for helping identifying and approaching a potential collaborator.
+
+
+:::{.callout-note icon=false}
+## Voice of Jamie Foxx
+
+Recruiting your crew...
+:::
 
 Research Team's First Meeting
 ----------------------------------------------
 
+
+:::{.callout-note icon=false}
+## Voice of ...
+
+Three weeks later...
+
 Once the team is assembled, the first discussion is usually a variation of this exchange:
+:::
 
 * **Investigator**: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
 * **Statistician**: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.

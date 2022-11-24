@@ -10,7 +10,7 @@ author:
 
   - name: Jeremy Harper
     affiliation: Owl Health Works
-    affiliation-url: www.owlhealthworks.com
+    affiliation-url: https://www.owlhealthworks.com
     # email: jeremy6@gmail.com
     # orcid:
 ---

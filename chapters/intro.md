@@ -13,6 +13,11 @@ author:
     affiliation-url: https://oneilsh.github.io/
     email: oneilsh@gmail.com
     orcid: 0000-0001-6220-7080
+
+filters:
+   - lightbox
+
+lightbox: auto
 ---
 
 # Introduction {#sec-intro}

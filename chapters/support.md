@@ -13,6 +13,11 @@ author:
     affiliation-url: https://www.palantir.com/
     # email: sljazouli@palantir.com
     # orcid:
+
+filters:
+   - lightbox
+
+lightbox: auto
 ---
 
 # Help and Support {#sec-support}
@@ -97,33 +102,40 @@ While live-support options are available, submitting questions via “tickets”
 
 The within-enclave support ticket system is also a good avenue for technical questions, including about platform features, performance, permissions, and tooling. In fact, when submitting a ticket in the enclave, the ticket itself will automatically track the resource being viewed when the ticket is submitted.
 
-To illustrate an example, we first navigate to the Synthea Notional Data entry in the Data Catalog (under “Projects & files” in the left navigation menu). Next, we’ll open the `condition_era `table which displays a preview in the Dataset Preview application. Let’s suppose we have a question about this data, or perhaps have discovered a potential data quality issue.
+To illustrate an example, we first navigate to the Synthea Notional Data entry in the Data Catalog (under “Projects & files” in the left navigation menu).
+
+![Navigating to Synthea](images/support/image-01-synthea-folder.png){width=50%}
+
+Next, we’ll open the `condition_era `table which displays a preview in the Dataset Preview application. Let’s suppose we have a question about this data, or perhaps have discovered a potential data quality issue.
+
+![Synthea Preview](images/support/image-02-synthea-preview.png){width=50%}
 
 To submit a ticket about the currently opened dataset, we’ll open the Help menu near the top, and select “Report Issue.”
 
+![Report Issue](images/support/image-03-report-issue.png)
 
+This opens a dialog requisition information about the ticket. Notice that the RESOURCE is identified as the `condition_era` table we had opened. Since we are asking a question about the data, we’ll select “Data quality.”
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![What kind of help do you need?](images/support/image-04-kind-of-help.png){width=50%}
 
+Once we click Next, we’ll be prompted to change the resource of interest or application being used (if desired). Since we are reporting an issue on a dataset, we even have the option of selecting the specific column we are interested in. We’ll just click Next here.
 
-![alt_text](images/support/image1.png "image_tooltip")
+![Share some details](images/support/image-05-share-details.png){width=50%}
 
+:::{.callout-tip}
 
-This opens a dialog requisition information about the ticket. Notice that the RESOURCE is identified as the `condition_era` table we had opened. Since we are asking a question about the data, we’ll select “Data quality.” Once we click Next, we’ll be prompted to change the resource of interest or application being used (if desired). Since we are reporting an issue on a dataset, we even have the option of selecting the specific column we are interested in. We’ll just click Next here.
-
-INFO BOX: Reporting Issues via Help Center
-
----
-
+## Reporting Issues via Help Center
 
 Using “Report Issue” from the Help menu of an enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from. While most enclave applications have a Help menu near the top left, not all do. In these cases you can alternatively submit an issue by finding the “Help & support” option in the lower part of the left navigation bar and choosing the “Help Center”. This will open a sidebar to the right, with a large blue button at the bottom for “Report an Issue.”
-
-
----
+:::
 
 Finally, we are prompted to submit our issue, including a title and description with pre-filled questions depending on the issue type selected. Answering all of these is not required, but any information you can add that speaks to them is helpful. This section also allows you to upload a screenshot if desired. Even though these issues are protected in enclave, you should not screenshot any data (or results like summary tables or figures), as that would result in your local computer storing, even if temporarily, unapproved patient-level information. Nevertheless, when excluding patient data is possible, a screenshot may help diagnose the problem, and the support personnel who respond to the issue may request a screenshot during follow up.
 
+![More details](images/support/image-06-more-details.png){width=50%}
+
 We can scroll down in this panel to see more advanced information pertaining to the ticket. Priority should generally be left to “Medium,” since “High” priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users. The default assignee is the “N3C: Issues Triage Team,” who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow up from support may take longer). Followers allow you to specify other users who will receive alerts about this issue. Adding labels to the ticket is optional as well, since the triage team usually applies relevant labels for tracking purposes.
+
+![Submit](images/support/image-07-submit.png){width=50%}
 
 Once we click Submit and refresh the browser page, we’ll see that a new “warning” icon has been added to the interface indicating that the resource now has one or more open issues relating to it, and it can be clicked on to open a menu with details. This warning will also show for other users who open the resource, and it will show in the file browser for this dataset. Reporting issues about datasets from the datasets themselves is thus a mechanism for alerting support teams and other N3C researchers about potential data quality issues. The same principle applies to other resource types like Code Workbooks, in cases where multiple researchers are working with them.
 

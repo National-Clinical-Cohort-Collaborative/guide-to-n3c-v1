@@ -152,7 +152,11 @@ When activity occurs on your ticket you will see a small orange dot appear on th
 
 While the enclave-internal ticket system is a good avenue for more technical questions about data analysis or the data itself, most other questions should be directed to an enclave-external ticket system (sometimes called the “support desk”). At the very least, if your issue is you cannot login to the enclave, that cannot be reported via the enclave-internal ticketing system!
 
-The external helpdesk can be found at [https://covid.cd2h.org/support](https://covid.cd2h.org/support). Here you will find a link to “Submit a Support Request” that directs you to select the kind of support you need.
+![Starting a ticket](images/support/image-09-ticket-start.png){width=50%}
+
+The external help desk can be found at [https://covid.cd2h.org/support](https://covid.cd2h.org/support). Here you will find a link to “Submit a Support Request” that directs you to select the kind of support you need.
+
+![Ticket details](images/support/image-10-ticket-details.png){width=50%}
 
 Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](#domain-teams) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and “everything else.” In general, this helpdesk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
@@ -169,13 +173,7 @@ N3C hosts office hours on Tuesdays and Thursdays of most weeks, at 10a PT/1p ET.
 
 Many training and educational resources are available within the enclave where we can readily organize and link them to relevant resources. The “Training Material” button on the enclave homepage displays several categories of training materials:
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image2.png "image_tooltip")
-
+![Training Material](images/support/image-11-training-material.png)
 
 While the documentation and self-guided tours provide information about the cloud-based enclave platform, they don’t provide any information specific to N3C. The Training Portal is the primary location for N3C-related training materials, while N3C Community Notes allow researchers to post short articles/guides for others to use. The Support option will redirect to a page linking to the two ticket systems described above.
 
@@ -187,32 +185,15 @@ The N3C Training Portal hosts training “modules.” The list of training modul
 Modules are searchable by keyword (from their title and description), and a brief list of Suggested Modules can be found in the orange button in the upper-right, though browsing through the full list is recommended.
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image3.png "image_tooltip")
-
+![Training Modules](images/support/image-12-training-modules.png)
 
 The Training Portal also has a Paths View, which shows potential learning paths of interest. These links are not formally assigned, and act more like a recommendation system to help navigate and find modules and resources of interest. This interface is limited in the number of items it can display, so you may want to filter using the “Starting Module Category” dropdown.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image4.png "image_tooltip")
-
+![Learning Paths](images/support/image-13-training-paths.png)
 
 Opening a module from the main list view reveals an overview of the module, including title, description, topics, learning objectives, suggested background, and estimated time to complete. Immediately below the title is a link whose URL points at this specific module in the portal for sharing.
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image5.png "image_tooltip")
-
+![Overview of a Training Module](images/support/image-14-training-module-overview.png)
 
 To the right is a list of resources comprising the materials of the module; these may be videos or documents, example enclave resources like code workbooks, or in some cases links to relevant external resources. The small search box allows you to filter the list, and is especially useful for modules with many resources such as our Enclave Users’ Group series discussed below.
 

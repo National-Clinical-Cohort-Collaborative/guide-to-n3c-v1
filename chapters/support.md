@@ -204,40 +204,19 @@ N3C community members are welcome to suggest or develop new training modules for
 
 This platform feature provides step-by-step walkthroughs of individual tools like [Contour](#contour) and [Code Workbooks](#code-workbooks). The Foundry 10X and 20X series are recommended and cover the basic tools researchers will encounter. Along the right individual steps walk you through an example workflow or analysis. Note that because these tours are not developed by N3C, the example analyses and data will not be N3C-relevant. You may also be prompted to create files or work in a “home folder” (which N3C has disabled) or a [project workspace](#project-workspaces) you don’t have write permissions to. Instead, you can utilize the N3C Training Area (see below).
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image6.png "image_tooltip")
-
-
+![Academy walk-through](images/support/image-15-academy.png){width=75%}
 
 #### N3C Community Notes
 
 N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items. The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](#knowledge-objects), and [concept sets](#concept-sets). The note overview contains a link whose URL points at this specific note in the application for sharing.
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image7.png "image_tooltip")
-
-
+![Academy walk-through](images/support/image-16-community-notes.png){width=75%}
 
 #### Documentation
 
 The official platform documentation is a rich resource for details on applications, and includes many guides and how-tos. If you don’t desire to read all of the documentation in detail, you should at least skim sections relevant to applications you use. The search function can find articles relevant to specific application features or techniques.
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image8.png "image_tooltip")
-
-
+![Palantir Documentation](images/support/image-17-palantir-documentation.png){width=75%}
 
 #### Having Trouble? (Support)
 
@@ -248,28 +227,15 @@ This last entry in the Training Resources page simply redirects to a page descri
 
 The N3C Training Area is a [project workspace](#project-workspaces) where all N3C users can practice and learn using notional datasets (described below). This workspace is also used to organize other training resources (like the Training Portal).
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image9.png "image_tooltip")
-
+![Training Area](images/support/image-18-training-area.png){width=75%}
 
 If you wish to create a practice folder, you are free to do so inside the “Practice Area - Public and Example Data.” Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g. “oneils”). Within this folder you will be able to create new analyses, and these will have access to the notional datasets described next.
-
 
 ### Notional Datasets
 
 OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR. The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access. They are both available via the [data catalog](#data-catalog) under “Synpuf Synthetic Data” and “Synthea Notional Data.”[^1] The data they contain differ in some important ways, described next.
 
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
+![Two sets of synthetic data](images/support/image-19-synethic-datasets.png){width=75%}
 
 #### SynPuf Synthetic Data
 
@@ -289,14 +255,7 @@ The Synthea data have an additional benefit of being slightly more aligned with 
 
 N3C relies heavily on the OMOP common data model, developed by an international group of researchers comprising the Observational Health Data Sciences and Informatics consortium, or [OHDSI](https://ohdsi.org). OHDSI provides a wealth of training and support resources, the most significant of which are the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) (the inspiration for this book), [EHDEN Academy](https://academy.ehden.eu/) (online video-based courses and lectures), and the [OHDSI forums](https://forums.ohdsi.org/). These cover basic and advanced usage of OMOP data as well as techniques and good practices for working with observational EHR data.
 
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image10.png "image_tooltip")
-
-
+![*The Book of OHDSI* is a great starting place for learning OMOP](images/support/image-20-ohdsi.png){width=12.5%}
 
 ### Community Resources
 
@@ -307,36 +266,25 @@ In addition to Community Notes mentioned above, several venues are available to 
 
 The Enclave Users Group (EUG) is a community-focused forum where analysts can share practical information on techniques, tips, and methods in the N3C Data Enclave. Each session one or more presenters share a topic, emphasizing live Q&A, discussions, and meeting new people. Topics range from statistical techniques like propensity score matching, scaling machine learning algorithms for use on billion-row datasets, tips for scientific software development, and introductions of new N3C resources and initiatives. EUG sessions do not present protected data, so sessions are recorded and example resources are available in the N3C Training Area. For more information and an index of recorded sessions see the [Enclave Users’ Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19) in the Training Portal.
 
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/support/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/support/image11.png "image_tooltip")
-
-
+![Enclave Users' Group](images/support/image-21-eug.png){width=75%}
 
 #### Slack
 
 Slack is commonly used for team communication in N3C, and several widely-subscribed channels are great support resources. These include #n3c-analytics where researchers ask general questions about methods or data (with 390+ members), #n3c-training where training-related announcements are posted, and a variety of topic-focused channels such as #n3c-ml for machine-learning. N3C uses the Slack organization of the [National Center for Data To Health](https://cd2h.org) at [https://cd2h.slack.com](https://cd2h.slack.com). Access however is managed via the N3C [onboarding process](#onboarding), where Slack-preferred emails are collected.
 
-
 #### Domain Teams
 
 Domain Teams, covered in more detail in [other parts](#domain-teams) of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.[^3]
 
-
 ### Data and Logic Liaisons
 
 Logic and Data Liaisons are teams contributing to the N3C mission through software development and user support, prioritizing the needs of [domain teams](#domain-teams) and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
-
 
 #### Data Liaison Services
 
 EHR data are complex, more so when they cover data contributed by 75+ sites. The Data Liaisons group consist of those most familiar N3C data, including members of the [phenotype](#phenotype) and [ingestion and harmonization](#ingestion-and-harmonization) teams. Data Liaisons are subject matter experts in biomedical, translational, clinical data standards and Real-World data utilization to support program investigator analyses. Data Liaisons curate and review N3C-recommended [concept sets](#recommended-concept-set) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system. Potential data quality issues should also be submitted via enclave-internal ticket system for routing to the Data Liaisons for review.
 
 For basic questions about the OMOP common data model, refer to the OHDSI resources, and training portal modules for getting started with OMOP. Personalized assistance is provided during N3C Office Hours. Support for Concept Set consultation can be received by submitting a help desk technical support ticket in the N3C enclave. The Data Liaisons team will send a representative to your domain team meetings on an as needed basis for general consultation.
-
 
 #### Logic Liaison Services
 

@@ -62,7 +62,6 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
-
 Team building & collaborating {#sec-story-team}
 ----------------------------------------------
 
@@ -82,7 +81,6 @@ N3C teams have some differences from conventional research teams at single sites
 
 If your team needs someone, consider asking a relevant [domain team](https://covid.cd2h.org/domain-teams) for helping identifying and approaching a potential collaborator.
 
-
 :::{.callout-note icon=false}
 ## Voice of Jamie Foxx
 
@@ -91,7 +89,6 @@ Recruiting your crew...
 
 Research Team's First Meeting
 ----------------------------------------------
-
 
 :::{.callout-note icon=false}
 ## Voice of ...
@@ -115,8 +112,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **DE**: Hmm, let me check.  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
 * **DE** *after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.
 * **S**: I was already planning to model the phase of the pandemic.  I'll test if there's a significant interaction between time and treatment.
-* **I**: I like that as a starting point.  Regarding the question about dose and frequency...
-  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
+* **I**: I like that as a starting point.  Regarding the question about dose and frequency...  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
 * **S**: Phew.  I didn't want to admit this.  But I skimmed the dosing guidelines you emailed yesterday.  It looked complicated.  I wasn't sure if I could appropriately incorporate those variables in the model.
 * **I**: Well, that's everything I wanted to cover today.  See you in two weeks.  Wait.  I can't believe I forgot.  Sorry -our Navigator is sick this week and I'm almost worthless in her absence.  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
 * **DE**: Bad news.  This is kinda like the `dose` and `frequency` situation a few minutes ago. The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.  But the quality of the historical records really depends on the site.  Some places like Delaware leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) is a health information exchange.] to populate their N3C dataset.  However other places are not as well connected.  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in @sec-practices.]
@@ -136,8 +132,7 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
 
-2. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
-
+1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
 
 {Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
 

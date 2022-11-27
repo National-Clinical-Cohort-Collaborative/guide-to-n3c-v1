@@ -98,7 +98,7 @@ While the enclave-internal ticket system is a good avenue for more technical que
 
 ![Starting a ticket](images/support/image-09-ticket-start.png){width=50%}
 
-The external help desk can be found at [https://covid.cd2h.org/support](https://covid.cd2h.org/support). Here you will find a link to “Submit a Support Request” that directs you to select the kind of support you need.
+The external help desk can be found at <https://covid.cd2h.org/support>. Here you will find a link to “Submit a Support Request” that directs you to select the kind of support you need.
 
 ![Ticket details](images/support/image-10-ticket-details.png){width=50%}
 
@@ -173,7 +173,7 @@ If you wish to create a practice folder, you are free to do so inside the “Pra
 
 ## Notional Datasets
 
-OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR. The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access. They are both available via the [data catalog](#data-catalog) under “Synpuf Synthetic Data” and “Synthea Notional Data.”[^1] The data they contain differ in some important ways, described next.
+OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR. The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access. They are both available via the [data catalog](#data-catalog) under “Synpuf Synthetic Data” and “Synthea Notional Data”.^[Note that these should not be confused with the [Level 1 Synthetic Data](#level-one-data), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
 ![Two sets of synthetic data](images/support/image-19-synethic-datasets.png){width=75%}
 
@@ -185,7 +185,7 @@ Compared to the Synthea data however, SynPuf data better represent real EHR data
 
 ### Synthea Notional Data
 
-In contrast to the SynPuf data, the Synthea notional data are derived from a probabilistic model of early-pandemic COVID-19 patient trajectories published by Walonski et al.[^2] converted to OMOP. These data include COVID-19 diagnoses and lab tests for a subset of patients. The main limitation of this notional data is its model-generated cleanliness. Pneumonia in the Synthea dataset, for example, is always represented with the same concept ID, while in real data a variety of pneumonia sub-type concept IDs are represented. Real EHR data also contain missing, erroneous, or inconsistent information. With regard to COVID-19, N3C has modified the original data published by Walonski et al. to include more diversity and realism in COVID-19 diagnoses and lab tests; a README file in the data catalog describes the modifications in detail.
+In contrast to the SynPuf data, the Synthea notional data are derived from a probabilistic model of early-pandemic COVID-19 patient trajectories published by [Walonski et al.](https://www.sciencedirect.com/science/article/pii/S2666521220300077) converted to OMOP. These data include COVID-19 diagnoses and lab tests for a subset of patients. The main limitation of this notional data is its model-generated cleanliness. Pneumonia in the Synthea dataset, for example, is always represented with the same concept ID, while in real data a variety of pneumonia sub-type concept IDs are represented. Real EHR data also contain missing, erroneous, or inconsistent information. With regard to COVID-19, N3C has modified the original data published by Walonski et al. to include more diversity and realism in COVID-19 diagnoses and lab tests; a README file in the data catalog describes the modifications in detail.
 
 The Synthea data have an additional benefit of being slightly more aligned with real N3C data for additions beyond the OMOP standard. For example, while SynPuf data tables include data partner IDs, Synthea also includes a `manifest` table with mock data partner metadata. The Synthea data also include constructed [macrovisit](#macrovisits) information.
 
@@ -211,7 +211,7 @@ Slack is commonly used for team communication in N3C, and several widely-subscri
 
 ### Domain Teams
 
-Domain Teams, covered in more detail in [other parts](#domain-teams) of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.[^3]
+Domain Teams, covered in more detail in [other parts](#domain-teams) of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.^[This is not as trivial as it sounds!]
 
 ## Data and Logic Liaisons
 
@@ -230,16 +230,3 @@ Logic Liaisons consist of analysts with significant technical expertise for rese
 Logic Liaisons support N3C researchers who are learning to use and adapt the Logic Liaison code fact tables and templates.  They also help researchers assess the feasibility of the project design with regards to data availability and data limitations. This team helps researchers assess and clean their project-specific fact tables using Logic Liaison Data Quality templates, which help research teams decide which sites to include in the analysis.
 
 Logic Liaison Code Fact Tables and Templates can be accessed by searching the Knowledge Store for “Logic Liaison Template”.  Recorded trainings are provided in the “Logic Liaison Templates” module of the N3C Training Portal.  Personalized help is provided during N3C Office Hours.  Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the enclave.  Team members are also active in the #n3c-analytics Slack channel.  The Logic Liaison team will send a representative to your domain team meetings on an as needed basis for general consultation.
-
-
-<!-- Footnotes themselves at the bottom. -->
-## Notes
-
-[^1]:
-     Note that these should not be confused with the [Level 1 Synthetic Data](#level-one-data), which are derived from N3C patient data and protected by a Data Use Request.
-
-[^2]:
-     [https://www.sciencedirect.com/science/article/pii/S2666521220300077](https://www.sciencedirect.com/science/article/pii/S2666521220300077)
-
-[^3]:
-     This is not as trivial as it sounds!

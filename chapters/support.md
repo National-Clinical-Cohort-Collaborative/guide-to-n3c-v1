@@ -102,7 +102,7 @@ The external help desk can be found at <https://covid.cd2h.org/support>. Here yo
 
 ![Ticket details](images/support/image-10-ticket-details.png){width=50%}
 
-Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](#domain-teams) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and “everything else.” In general, this helpdesk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](#domain-teams) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and “everything else.” In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request. The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
 
@@ -161,7 +161,6 @@ The official platform documentation is a rich resource for details on applicatio
 ### Having Trouble? (Support)
 
 This last entry in the Training Resources page simply redirects to a page describing, and linking to, the two ticket systems described earlier in this chapter.
-
 
 ## N3C Training Area
 

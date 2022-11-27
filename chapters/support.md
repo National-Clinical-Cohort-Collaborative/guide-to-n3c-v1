@@ -1,4 +1,6 @@
 ---
+abstract: There’s a lot to know about N3C! Fortunately there exist a number of support avenues and training materials to help researchers make the most of their projects. Several of these are developed and maintained by researchers in the N3C community.
+
 author:
   - name: Shawn O'Neil
     affiliation: University of Colorado, Anschutz
@@ -38,9 +40,7 @@ At this point, any edits to this chapter should be made in Google Docs.  The cur
 
 **Chapter Contributors: Johanna Loomba, Lisa Eskenazi**
 
-There’s a lot to know about N3C! Fortunately there exist a number of support avenues and training materials to help researchers make the most of their projects. Several of these are developed and maintained by researchers in the N3C community.
-
-## Support Tickets: Enclave-Internal
+## Support Tickets: Enclave-Internal {#sec-support-internal}
 
 While live-support options are available, submitting questions via “tickets” (also known as “issues” in the enclave) helps ensure they reach the right person and that questions are logged and tracked. Given the sensitive nature of N3C data, questions that pertain to patients or data partners should be asked within the enclave itself.
 
@@ -68,7 +68,7 @@ Once we click Next, we’ll be prompted to change the resource of interest or ap
 
 :::{.callout-tip}
 
-## Reporting Issues via Help Center
+## Reporting Issues via Help Center {#sec-support-internal-reporting}
 
 Using “Report Issue” from the Help menu of an enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from. While most enclave applications have a Help menu near the top left, not all do. In these cases you can alternatively submit an issue by finding the “Help & support” option in the lower part of the left navigation bar and choosing the “Help Center”. This will open a sidebar to the right, with a large blue button at the bottom for “Report an Issue.”
 :::
@@ -85,14 +85,13 @@ Once we click Submit and refresh the browser page, we’ll see that a new “war
 
 ![Recent Issues](images/support/image-08-issue-recent.png)
 
-### Issue followup
+### Issue followup {#sec-support-internal-followup}
 
 After your ticket is submitted, it will be routed to a triage team who will decide which support group is best able to address it. These include groups with admin-level access and general knowledge of the enclave (at least one of which is familiar N3C-specific tools or workflows), experts in N3C data ingestion and harmonization processes, as well as individuals with expertise in OMOP and other N3C technologies.
 
 When activity occurs on your ticket you will see a small orange dot appear on the Notifications navigation menu item indicating you have a new notification, clicking this will show this notification (and any others you may have received). By default, you will also receive email notifications for ticket activity. This can be configured under your account preferences (the Account item in the left navigation menu). Finally, you can review and respond to tickets via the Issues application (which may be hidden for you in the left navigation bar under “View all apps”).
 
-
-## Support Tickets: Enclave-External
+## Support Tickets: Enclave-External {#sec-support-external}
 
 While the enclave-internal ticket system is a good avenue for more technical questions about data analysis or the data itself, most other questions should be directed to an enclave-external ticket system (sometimes called the “support desk”). At the very least, if your issue is you cannot login to the enclave, that cannot be reported via the enclave-internal ticketing system!
 
@@ -108,11 +107,11 @@ After selecting a support area, you will be given the option to select sub-categ
 
 Once submitted, you will receive an email with a link to the ticket. You can use this link to make further comments, or do so by replying to the email directly.
 
-## Office Hours
+## Office Hours {#sec-support-office}
 
 N3C hosts office hours on Tuesdays and Thursdays of most weeks, at 10a PT/1p ET. The join link can be found at [https://covid.cd2h.org/support](https://covid.cd2h.org/support). All are welcome to join, from experienced N3C analysts looking for help with complex machine learning implementations, to brand new researchers needing help finding their project workspace. Experienced N3C volunteers are on hand and able to help with most questions. They can also refer you to external resources, or suggest submitting a ticket when appropriate. Some researchers join just to watch and learn. To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](#data-levels) of access.
 
-## Training Resources
+## Training Resources {#sec-support-training}
 
 Many training and educational resources are available within the enclave where we can readily organize and link them to relevant resources. The “Training Material” button on the enclave homepage displays several categories of training materials:
 
@@ -120,7 +119,7 @@ Many training and educational resources are available within the enclave where w
 
 While the documentation and self-guided tours provide information about the cloud-based enclave platform, they don’t provide any information specific to N3C. The Training Portal is the primary location for N3C-related training materials, while N3C Community Notes allow researchers to post short articles/guides for others to use. The Support option will redirect to a page linking to the two ticket systems described above.
 
-### Training (Training Portal)
+### Training (Training Portal) {#sec-support-training-portal}
 
 The N3C Training Portal hosts training “modules.” The list of training modules is roughly sorted by researchers’ N3C journey–those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
 
@@ -140,29 +139,29 @@ To the right is a list of resources comprising the materials of the module; thes
 
 N3C community members are welcome to suggest or develop new training modules for inclusion in the portal. Several have been developed this way, and each module tracks authorship information. To contribute to the training portal or other N3C-related education and training efforts, just contact the Education & Training Domain Team at [https://covid.cd2h.org/ET-DT](https://covid.cd2h.org/ET-DT).
 
-### Self Guided Tours (Academy)
+### Self Guided Tours (Academy) {#sec-support-training-academy}
 
 This platform feature provides step-by-step walkthroughs of individual tools like [Contour](#contour) and [Code Workbooks](#code-workbooks). The Foundry 10X and 20X series are recommended and cover the basic tools researchers will encounter. Along the right individual steps walk you through an example workflow or analysis. Note that because these tours are not developed by N3C, the example analyses and data will not be N3C-relevant. You may also be prompted to create files or work in a “home folder” (which N3C has disabled) or a [project workspace](#project-workspaces) you don’t have write permissions to. Instead, you can utilize the N3C Training Area (see below).
 
 ![Academy walk-through](images/support/image-15-academy.png){width=75%}
 
-### N3C Community Notes
+### N3C Community Notes {#sec-support-training-community}
 
 N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items. The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](#knowledge-objects), and [concept sets](#concept-sets). The note overview contains a link whose URL points at this specific note in the application for sharing.
 
 ![Academy walk-through](images/support/image-16-community-notes.png){width=75%}
 
-### Documentation
+### Documentation {#sec-support-training-documentation}
 
 The official platform documentation is a rich resource for details on applications, and includes many guides and how-tos. If you don’t desire to read all of the documentation in detail, you should at least skim sections relevant to applications you use. The search function can find articles relevant to specific application features or techniques.
 
 ![Palantir Documentation](images/support/image-17-palantir-documentation.png){width=75%}
 
-### Having Trouble? (Support)
+### Having Trouble? (Support) {#sec-support-training-trouble}
 
 This last entry in the Training Resources page simply redirects to a page describing, and linking to, the two ticket systems described earlier in this chapter.
 
-## N3C Training Area
+## N3C Training Area {#sec-support-area}
 
 The N3C Training Area is a [project workspace](#project-workspaces) where all N3C users can practice and learn using notional datasets (described below). This workspace is also used to organize other training resources (like the Training Portal).
 
@@ -170,59 +169,59 @@ The N3C Training Area is a [project workspace](#project-workspaces) where all N3
 
 If you wish to create a practice folder, you are free to do so inside the “Practice Area - Public and Example Data.” Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g. “oneils”). Within this folder you will be able to create new analyses, and these will have access to the notional datasets described next.
 
-## Notional Datasets
+## Notional Datasets {#sec-support-notional}
 
 OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR. The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access. They are both available via the [data catalog](#data-catalog) under “Synpuf Synthetic Data” and “Synthea Notional Data”.^[Note that these should not be confused with the [Level 1 Synthetic Data](#level-one-data), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
 ![Two sets of synthetic data](images/support/image-19-synethic-datasets.png){width=75%}
 
-### SynPuf Synthetic Data
+### SynPuf Synthetic Data {#sec-support-notional-synpuf}
 
 SynPuf is short for “Synthetic Public Use Files,” or EHR records that have been scrubbed of personally identifiable information and released for public educational use. These SynPuf files originate from [SynPuf Medicare Claims data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs) and have been [converted to OMOP format](https://forums.ohdsi.org/t/synpuf/4936) by the OHDSI community. The content of these data differ from N3C data in many ways (e.g. records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients. Lastly, the data are not recent, and so contain no COVID-19 related records such as diagnoses, lab tests, or vaccine records. The SynPuf data do not contain some N3C customizations to the OMOP data model, for example the `manifest` table used in N3C data to describe metadata about contributing data partners.
 
 Compared to the Synthea data however, SynPuf data better represent real EHR data, including the potential for data entry errors, diversity in medical codes used, and missing data. We thus recommend that researchers interested in trying statistical or machine learning models (or other applications better suited for realistic data) use the SynPuf notional data.
 
-### Synthea Notional Data
+### Synthea Notional Data {#sec-support-notional-synthea}
 
 In contrast to the SynPuf data, the Synthea notional data are derived from a probabilistic model of early-pandemic COVID-19 patient trajectories published by [Walonski et al.](https://www.sciencedirect.com/science/article/pii/S2666521220300077) converted to OMOP. These data include COVID-19 diagnoses and lab tests for a subset of patients. The main limitation of this notional data is its model-generated cleanliness. Pneumonia in the Synthea dataset, for example, is always represented with the same concept ID, while in real data a variety of pneumonia sub-type concept IDs are represented. Real EHR data also contain missing, erroneous, or inconsistent information. With regard to COVID-19, N3C has modified the original data published by Walonski et al. to include more diversity and realism in COVID-19 diagnoses and lab tests; a README file in the data catalog describes the modifications in detail.
 
 The Synthea data have an additional benefit of being slightly more aligned with real N3C data for additions beyond the OMOP standard. For example, while SynPuf data tables include data partner IDs, Synthea also includes a `manifest` table with mock data partner metadata. The Synthea data also include constructed [macrovisit](#macrovisits) information.
 
-## OHDSI Resources
+## OHDSI Resources {#sec-support-ohdsi}
 
 N3C relies heavily on the OMOP common data model, developed by an international group of researchers comprising the Observational Health Data Sciences and Informatics consortium, or [OHDSI](https://ohdsi.org). OHDSI provides a wealth of training and support resources, the most significant of which are the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) (the inspiration for this book), [EHDEN Academy](https://academy.ehden.eu/) (online video-based courses and lectures), and the [OHDSI forums](https://forums.ohdsi.org/). These cover basic and advanced usage of OMOP data as well as techniques and good practices for working with observational EHR data.
 
 ![*The Book of OHDSI* is a great starting place for learning OMOP](images/support/image-20-ohdsi.png){width=12.5%}
 
-## Community Resources
+## Community Resources {#sec-support-community}
 
 In addition to Community Notes mentioned above, several venues are available to get help and support from the broad community. N3C researchers include statisticians and data scientists of all stripes, clinicians, and even industry and government representatives. More than a few new collaborations have resulted from peer-to-peer support in N3C!
 
-### Enclave Users’ Group
+### Enclave Users’ Group {#sec-support-community-eug}
 
 The Enclave Users Group (EUG) is a community-focused forum where analysts can share practical information on techniques, tips, and methods in the N3C Data Enclave. Each session one or more presenters share a topic, emphasizing live Q&A, discussions, and meeting new people. Topics range from statistical techniques like propensity score matching, scaling machine learning algorithms for use on billion-row datasets, tips for scientific software development, and introductions of new N3C resources and initiatives. EUG sessions do not present protected data, so sessions are recorded and example resources are available in the N3C Training Area. For more information and an index of recorded sessions see the [Enclave Users’ Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19) in the Training Portal.
 
 ![Enclave Users' Group](images/support/image-21-eug.png){width=75%}
 
-### Slack
+### Slack {#sec-support-community-slack}
 
 Slack is commonly used for team communication in N3C, and several widely-subscribed channels are great support resources. These include #n3c-analytics where researchers ask general questions about methods or data (with 390+ members), #n3c-training where training-related announcements are posted, and a variety of topic-focused channels such as #n3c-ml for machine-learning. N3C uses the Slack organization of the [National Center for Data To Health](https://cd2h.org) at [https://cd2h.slack.com](https://cd2h.slack.com). Access however is managed via the N3C [onboarding process](#onboarding), where Slack-preferred emails are collected.
 
-### Domain Teams
+### Domain Teams {#sec-support-community-dt}
 
 Domain Teams, covered in more detail in [other parts](#domain-teams) of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.^[This is not as trivial as it sounds!]
 
-## Data and Logic Liaisons
+## Data and Logic Liaisons {#sec-support-liaisons}
 
 Logic and Data Liaisons are teams contributing to the N3C mission through software development and user support, prioritizing the needs of [domain teams](#domain-teams) and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
 
-### Data Liaison Services
+### Data Liaison Services {#sec-support-liaisons-data}
 
 EHR data are complex, more so when they cover data contributed by 75+ sites. The Data Liaisons group consist of those most familiar N3C data, including members of the [phenotype](#phenotype) and [ingestion and harmonization](#ingestion-and-harmonization) teams. Data Liaisons are subject matter experts in biomedical, translational, clinical data standards and Real-World data utilization to support program investigator analyses. Data Liaisons curate and review N3C-recommended [concept sets](#recommended-concept-set) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system. Potential data quality issues should also be submitted via enclave-internal ticket system for routing to the Data Liaisons for review.
 
 For basic questions about the OMOP common data model, refer to the OHDSI resources, and training portal modules for getting started with OMOP. Personalized assistance is provided during N3C Office Hours. Support for Concept Set consultation can be received by submitting a help desk technical support ticket in the N3C enclave. The Data Liaisons team will send a representative to your domain team meetings on an as needed basis for general consultation.
 
-### Logic Liaison Services
+### Logic Liaison Services {#sec-support-liaisons-logic}
 
 Logic Liaisons consist of analysts with significant technical expertise for research with N3C data. Although they do not develop project-specific research code as a service, they do create [Knowledge Objects](#knowledge-objects) such as reusable code templates and convenient derived datasets. Logic Liaison members provide technical support at office hours, and many are active in the #n3c-analytics Slack channel.
 

@@ -24,7 +24,7 @@ lightbox: auto
 
 # Help and Support {#sec-support}
 
-**Additional Contributors: Johanna Loomba, Lisa Eskenazi**
+**Additional Contributors**: Johanna Loomba, Lisa Eskenazi
 
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 
@@ -185,7 +185,7 @@ In addition to Community Notes mentioned above, several venues are available to 
 
 ### Enclave Users' Group {#sec-support-community-eug}
 
-The Enclave Users Group (EUG) is a community-focused forum where analysts can share practical information on techniques, tips, and methods in the N3C Data Enclave. Each session one or more presenters share a topic, emphasizing live Q&A, discussions, and meeting new people. Topics range from statistical techniques like propensity score matching, scaling machine learning algorithms for use on billion-row datasets, tips for scientific software development, and introductions of new N3C resources and initiatives. EUG sessions do not present protected data, so sessions are recorded and example resources are available in the N3C Training Area. For more information and an index of recorded sessions see the [Enclave Users' Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19) in the Training Portal.
+The Enclave Users Group (EUG) is a community-focused forum where analysts can share practical information on techniques, tips, and methods in the N3C Data Enclave. Each session one or more presenters share a topic, emphasizing live Q&A, discussions, and meeting new people. Topics range from statistical techniques like propensity score matching, scaling machine learning algorithms for use on billion-row datasets, tips for scientific software development, and introductions of new N3C resources and initiatives. EUG sessions do not present protected data, so sessions are recorded and example resources are available in the N3C Training Area. For more information and an index of recorded sessions see the [Enclave Users' Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} in the Training Portal.
 
 ![Enclave Users' Group](images/support/image-21-eug.png){width=75%}
 

@@ -75,9 +75,7 @@ Foundry's Contour application is a programming-free interface to the N3C Enclave
 
 ### Fusion
 
-Palantir Documentation: [Fusion Sheet Overview](https://unite.nih.gov/docs/foundry/fusion/overview/)
-
-
+Palantir Documentation: [Fusion Sheet Overview](https://unite.nih.gov/docs/foundry/fusion/overview/){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
 * Useful for writing back datasets for use within the Enclave
 * Leverage cell references and spreadsheet functions
@@ -88,7 +86,7 @@ Palantir Documentation: [Fusion Sheet Overview](https://unite.nih.gov/docs/found
 * Allows customization and flexibility
 *
 
-Fusion is a spreadsheet application within the Enclave analogous to Excel or Google Sheets. Palantir has curated [extensive documentation](https://unite.nih.gov/docs/foundry/fusion/overview/usion/overview) describing its core functionality as well as providing select how-to tutorials. The primary utility of Fusion is to allow users to sync specific cell ranges of values within a spreadsheet to datasets, which can subsequently be [imported]#Importing-and-Viewing-Data into any other Enclave application. This tool is an excellent option for use cases which require manual data entry, such as curating lists of [concept sets]#Concept-Set-Section to configure the [Logic Liaison Fact Templates]#LL-Fact-Templates. Unlike many other Enclave applications, Fusion is not suitable for large datasets; it has a maximum size restriction of 50 MB per document. Similar to Google Sheets, Fusion allows users to simultaneously edit the same document and view other users' changes in real time.
+Fusion is a spreadsheet application within the Enclave analogous to Excel or Google Sheets. Palantir has curated [extensive documentation](https://unite.nih.gov/docs/foundry/fusion/overview/usion/overview){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} describing its core functionality as well as providing select how-to tutorials. The primary utility of Fusion is to allow users to sync specific cell ranges of values within a spreadsheet to datasets, which can subsequently be [imported]#Importing-and-Viewing-Data into any other Enclave application. This tool is an excellent option for use cases which require manual data entry, such as curating lists of [concept sets]#Concept-Set-Section to configure the [Logic Liaison Fact Templates]#LL-Fact-Templates. Unlike many other Enclave applications, Fusion is not suitable for large datasets; it has a maximum size restriction of 50 MB per document. Similar to Google Sheets, Fusion allows users to simultaneously edit the same document and view other users' changes in real time.
 
 As any Excel super user knows, a spreadsheet is not merely a mechanism for storing data, but also a powerful tool for analyzing, visualizing, and applying complex logical operations on data in its own right. Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few. External .xls/.xlsx formatted files (up to 4 MB) can be directly imported into the Enclave as Fusion sheets with all cell references, formulas, and formatting preserved. [caveat].
 
@@ -97,11 +95,9 @@ In addition to standard spreadsheet functionality, Fusion has additional feature
 
 ### Code Workbooks
 
-Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22)
+Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
-Palantir Documentation: [Code Workbook Overview](https://unite.nih.gov/workspace/documentation/product/code-workbook/overview)
-
-
+Palantir Documentation: [Code Workbook Overview](https://unite.nih.gov/workspace/documentation/product/code-workbook/overview){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
 * graphical organization of logic
 * Simplification of code
@@ -133,12 +129,12 @@ Many Python and R transforms rely on external libraries and packages which can b
 
 Following best practices for collaborative software development, Code Workbook allows for branching of the logic within a workbook. As with other popular source control technologies (i.e. git), branching allows users to make copies of a workbook which they can develop independently of the source workbook. Once the development in a particular branch is deemed complete, it can be merged back into the originating branch. Prior to the merge, users can preview both line-level differences within each node, as well as node-level differences of nodes that have been added/removed. Good practice dictates that individual users perform all development on individual branches, which are then merged back into a common _master_ branch. Because the _master_ branch can change in the interval between a user cutting a branch and merging it back in, previewing merge changes is an important step for ensuring that the individual's changes are both correct and compatible with the current state of the _master_ branch. Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, teams can create a code branch in which all input datasets are set to the same version release to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User generated datasets are set to the same branch as the Code Workbook in which they were created.
 
-Palantir has created extensive [documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/overview) of the Code Workbook application including tutorials. N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22).
+Palantir has created extensive [documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/overview){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} of the Code Workbook application including tutorials. N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}.
 
 
 ### Reports
 
-Palantir Documentation: [Reports Overview](https://unite.nih.gov/workspace/documentation/product/reports/overview)
+Palantir Documentation: [Reports Overview](https://unite.nih.gov/workspace/documentation/product/reports/overview){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
 
 
@@ -150,14 +146,14 @@ Palantir Documentation: [Reports Overview](https://unite.nih.gov/workspace/docum
 
 Many research projects in the Enclave are complex, involving multiple summary datasets, statistical analyses, and visualizations scattered across multiple applications and documents. Reports is a tool for consolidating various research artifacts from multiple sources within the Enclave into a single coherent document. Formatted [Fusion]#Fusion tables, [Contour]#Contour charts, Python/R-generated images from [Code Workbooks]#Code-Workbooks, and more are all embeddable in a Reports document, with the option to add a title and/or caption for each embedded artifact. Users can also create sections and provide narrative structure to their documents using MarkDown blocks. All components of a Reports document can be arranged and configured using a point-and-click interface.
 
-All embedded objects can be configured to refresh automatically when the underlying data sources update, allowing Reports to function effectively as dashboards. Reports are also useful for presenting an executive summary of results for internal stakeholders as well as external presentations. [Logic Liaison Templates]#LL-Templates in the [Knowledge Store]#Knowledge-Store generally includes a README which is created using Reports. Reports can be requested for download using the Download Request Form. Palantir has curated [documentation](https://unite.nih.gov/workspace/documentation/product/reports) for creating and editing Reports.
+All embedded objects can be configured to refresh automatically when the underlying data sources update, allowing Reports to function effectively as dashboards. Reports are also useful for presenting an executive summary of results for internal stakeholders as well as external presentations. [Logic Liaison Templates]#LL-Templates in the [Knowledge Store]#Knowledge-Store generally includes a README which is created using Reports. Reports can be requested for download using the Download Request Form. Palantir has curated [documentation](https://unite.nih.gov/workspace/documentation/product/reports){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} for creating and editing Reports.
 
 
 ### Object Explorer
 
-Palantir Documentation: [Object Explorer](https://unite.nih.gov/workspace/documentation/product/object-explorer/overview)
+Palantir Documentation: [Object Explorer](https://unite.nih.gov/workspace/documentation/product/object-explorer/overview){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
-Tutorial: [Exploring N3C Projects and Collaborators with Object Explorer](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=27)
+Tutorial: [Exploring N3C Projects and Collaborators with Object Explorer](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=27){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
 
 
@@ -169,7 +165,7 @@ A step upstream of the Knowledge Store is Palantir's Object Explorer which allow
 
 ### Data Lineage (aka Monocle)
 
-Whether you're creating a pipeline for data analysis specific to your research project or investigating one you came across in the Knowledge Store to determine if it will be useful to your study, you'll likely want the capability to holistically assess how that dataset came about. The Data Lineage tool within the Foundry platform allows users to do just that - easily explore data pipelines from start to finish. With upstream on the left and downstream on the right, this tool makes for an intuitive way to visualize the relationships between datasets and their ancestors or descendants with enhanced views made possible through color-coding and grouping based on a dataset's details. This application is particularly useful if a researcher needs to schedule a build for a dataset to update with the weekly refresh of data in the enclave. Palantir Documentation provides [a short tutorial](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/tutorial-data-lineage-basics) and [additional descriptions](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/introduction-to-data-lineage) of this tool's functionality.
+Whether you're creating a pipeline for data analysis specific to your research project or investigating one you came across in the Knowledge Store to determine if it will be useful to your study, you'll likely want the capability to holistically assess how that dataset came about. The Data Lineage tool within the Foundry platform allows users to do just that - easily explore data pipelines from start to finish. With upstream on the left and downstream on the right, this tool makes for an intuitive way to visualize the relationships between datasets and their ancestors or descendants with enhanced views made possible through color-coding and grouping based on a dataset's details. This application is particularly useful if a researcher needs to schedule a build for a dataset to update with the weekly refresh of data in the enclave. Palantir Documentation provides [a short tutorial](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/tutorial-data-lineage-basics){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} and [additional descriptions](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/introduction-to-data-lineage){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}} of this tool's functionality.
 
 
 ### Code Repositories
@@ -177,9 +173,9 @@ Whether you're creating a pipeline for data analysis specific to your research p
 
 ### Protocol Pad
 
-[Quick Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26)
+[Quick Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
-[Detailed Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37)
+[Detailed Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37){{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
 
 Research studies can span many months and pass through the hands of many team members before reaching a stage where the researcher may want to share the results through publication or other approved means. The Protocol Pad serves as an electronic lab notebook to help organize tasks, track progress, and document results in a cohesive format throughout the process of reaching a study's final state.
 

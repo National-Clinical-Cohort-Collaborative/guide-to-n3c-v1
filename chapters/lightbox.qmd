@@ -1,9 +1,0 @@
----
-title: Simple Lightbox Example
-filters:
-   - lightbox
-
-lightbox: auto
----
-
-![A Lovely Image](images/intro/figure-1-2.png)

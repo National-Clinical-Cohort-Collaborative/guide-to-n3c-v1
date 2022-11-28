@@ -21,6 +21,6 @@ Registration
 Data Use Request
 ---------------------------------------------
 
-Once you are able to log in to the Enclave, to access data, you can request to be a collaborator on a current project or fill out a Data Use Request at <https://unite.nih.gov/workspace/slate/documents/data-use-request/latest>.
+Once you are able to log in to the Enclave, to access data, you can request to be a collaborator on a current project or fill out a Data Use Request at <https://unite.nih.gov/workspace/slate/documents/data-use-request/latest>{{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}.
 
 If your project requires zip codes or partial zip codes, you will be required to complete an IRB application and provide an approval letter.

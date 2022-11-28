@@ -1,6 +1,4 @@
 ---
-# reference-location: margin
-
 abstract: 40,000-foot view of a research project, from onboarding to publishing
 
 author:
@@ -17,6 +15,8 @@ author:
     affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
     email: alfred.anzalone@unmc.edu
     orcid: 0000-0002-3212-7845
+
+# reference-location: margin
 ---
 
 # A Research Story {#sec-story}
@@ -25,7 +25,7 @@ author:
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
-If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material]() and [office hours](https://covid.cd2h.org/support)).  If you would like to join an existing project, there are [domain teams](https://covid.cd2h.org/domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 :::{.callout-note icon=false}
 ## Voice of Morgan Freeman
@@ -62,7 +62,6 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
-
 Team building & collaborating {#sec-story-team}
 ----------------------------------------------
 
@@ -80,8 +79,7 @@ N3C teams have some differences from conventional research teams at single sites
 
 1. The role of navigator is even more important.  Your local EMR investigations are likely guided by someone with years of experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-If your team needs someone, consider asking a relevant [domain team](https://covid.cd2h.org/domain-teams) for helping identifying and approaching a potential collaborator.
-
+If your team needs someone, consider asking a relevant [domain team](onboarding.html#domain-teams) for helping identifying and approaching a potential collaborator.
 
 :::{.callout-note icon=false}
 ## Voice of Jamie Foxx
@@ -91,7 +89,6 @@ Recruiting your crew...
 
 Research Team's First Meeting
 ----------------------------------------------
-
 
 :::{.callout-note icon=false}
 ## Voice of ...
@@ -115,8 +112,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **DE**: Hmm, let me check.  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
 * **DE** *after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.
 * **S**: I was already planning to model the phase of the pandemic.  I'll test if there's a significant interaction between time and treatment.
-* **I**: I like that as a starting point.  Regarding the question about dose and frequency...
-  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
+* **I**: I like that as a starting point.  Regarding the question about dose and frequency...  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
 * **S**: Phew.  I didn't want to admit this.  But I skimmed the dosing guidelines you emailed yesterday.  It looked complicated.  I wasn't sure if I could appropriately incorporate those variables in the model.
 * **I**: Well, that's everything I wanted to cover today.  See you in two weeks.  Wait.  I can't believe I forgot.  Sorry -our Navigator is sick this week and I'm almost worthless in her absence.  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
 * **DE**: Bad news.  This is kinda like the `dose` and `frequency` situation a few minutes ago. The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.  But the quality of the historical records really depends on the site.  Some places like Delaware leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) is a health information exchange.] to populate their N3C dataset.  However other places are not as well connected.  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in @sec-practices.]
@@ -136,8 +132,7 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
 
-2. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
-
+1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
 
 {Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
 

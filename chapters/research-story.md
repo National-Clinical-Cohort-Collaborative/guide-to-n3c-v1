@@ -1,6 +1,4 @@
 ---
-# reference-location: margin
-
 abstract: 40,000-foot view of a research project, from onboarding to publishing
 
 author:
@@ -17,6 +15,8 @@ author:
     affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
     email: alfred.anzalone@unmc.edu
     orcid: 0000-0002-3212-7845
+
+# reference-location: margin
 ---
 
 # A Research Story {#sec-story}

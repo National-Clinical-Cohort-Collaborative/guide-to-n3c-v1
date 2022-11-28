@@ -73,7 +73,7 @@ Due to the secure nature of the data that is available in the N3C Enclave regist
 
 ORCiD, which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
-The N3C Data enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the “Informational Securty, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Prepardeness Refresher” course.  The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).  The course take approximately 60-90 minutes to complete and you should print your certificate of completion.  Users need to complete Human Subjects training that aligns with their institution's guidelines.  You will need to provide the date of completion as part of enclave creation.
+The N3C Data enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the "Informational Securty, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Prepardeness Refresher" course.  The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).  The course take approximately 60-90 minutes to complete and you should print your certificate of completion.  Users need to complete Human Subjects training that aligns with their institution's guidelines.  You will need to provide the date of completion as part of enclave creation.
 
 Overall, users will need to confirm if they use the InCOmmon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects training.
 
@@ -114,9 +114,9 @@ https://ncats.nih.gov/n3c/resources/data-access
 
 The N3C Data enclave is built for multi-site collaboration, and aims to bring together researchers of different backgrounds with similar questions using domain teams. Because N3C is multi-site, it can be difficult to collaborate with researchers of different backgrounds from different sites. Domain Teams exist to alleviate this difficulty. Some collaboration examples could be collecting pilot data for grant submission, sharing methodology and cohort logic, or learning how to use tools for large-scale data like machine learning.
 
-For example, let’s say your institution just signed the DUA and you have some questions about the relationship between rurality and COVID treatments. You can look at the list of domain teams to see rural health. Then you can get in contact and go to the next upcoming meeting. At the meeting you can find out whether your questions are already part of an existing project within the domain team, or if a new project should be created.
+For example, let's say your institution just signed the DUA and you have some questions about the relationship between rurality and COVID treatments. You can look at the list of domain teams to see rural health. Then you can get in contact and go to the next upcoming meeting. At the meeting you can find out whether your questions are already part of an existing project within the domain team, or if a new project should be created.
 
-If you don’t see your type of questions belonging to any existing domain teams you can create a new one here:
+If you don't see your type of questions belonging to any existing domain teams you can create a new one here:
 
 https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58
 

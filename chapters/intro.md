@@ -44,7 +44,7 @@ Faced with the COVID-19 pandemic, the issue addressed by N3C is clear and direct
 
 ## Common Data Models and N3C
 
-In recent years, the common solution to these issues have been the creation of _Common Data Models_ (CDMs). A Common Data Model is an agreed-upon structure and format for databases containing clinical information, into which diverse organizational EHR databases can be standardized for research purposes. Even so, healthcare organizations are reluctant to share their data directly, because these risks associated with data breaches for protected health information (PHI) defined by HIPAA are high. As a result, several groups of healthcare and research organizations have formed _federated _research networks, where each organization in a
+In recent years, the common solution to these issues have been the creation of _Common Data Models_ (CDMs). A Common Data Model is an agreed-upon structure and format for databases containing clinical information, into which diverse organizational EHR databases can be standardized for research purposes. Even so, healthcare organizations are reluctant to share their data directly, because these risks associated with data breaches for protected health information (PHI) defined by HIPAA are high. As a result, several groups of healthcare and research organizations have formed _federated_research networks, where each organization in a
 
 ![A visual representation of disparate, non-compatible EHR databases across the United States.](images/intro/image-01-siloed.png){#fig-intro-siloed width=100% fil-alt="A visual representation of disparate, non-compatible EHR databases across the United States."}
 
@@ -77,11 +77,12 @@ For researchers:
 * Support from fellow researchers and domain experts (computational, clinical, etc)
 * See chapter "Onboarding, Enclave Access, N3C Team Science"
 * "N3C Clinical Domain Teams enable researchers with shared interests to analyze data within the N3C Data Enclave more efficiently and to collaborate on multi-site research. The Clinical Domain Teams, developed within the Clinical Scenarios subgroup, focus on specific clinical questions surrounding COVID-19's impact on health conditions. Clinical Domain Teams are enabled by Slack channels for discussion, meetings, and document management, and are supported by N3C workstreams and administration. N3C encourages researchers of all levels to join a Domain Team that represents their interests, or to suggest new clinical areas to explore."
-    * "N3C Domain Teams enable researchers with shared interests analyze data within the N3C Data Enclave and collaborate more efficiently in a team science environment. These teams provide an opportunity to collect pilot data for grant submissions, train algorithms on larger datasets, inform clinical trial design, learn how to use tools for large scale COVID-19 data, and validate results. Domain Teams are enabled by Slack channels for discussion, meetings, and document management and are supported by N3C workstreams. N3C encourages researchers of all levels to join a Domain Team that represents their interests, or to suggest new clinical areas to explore. A Domain Team can submit one or more research projects, but collaboration is encouraged for similar concepts."
-    * "Multi-discipline Clinical Domain Teams focus on clinical questions surrounding COVID-19's impact on health conditions and consist of clinical and subject matter experts, statisticians, informaticists, and machine learning specialists. Cross-Cutting Domain Teams have a varied focus that applies to multiple domains."
+
+  * "N3C Domain Teams enable researchers with shared interests analyze data within the N3C Data Enclave and collaborate more efficiently in a team science environment. These teams provide an opportunity to collect pilot data for grant submissions, train algorithms on larger datasets, inform clinical trial design, learn how to use tools for large scale COVID-19 data, and validate results. Domain Teams are enabled by Slack channels for discussion, meetings, and document management and are supported by N3C workstreams. N3C encourages researchers of all levels to join a Domain Team that represents their interests, or to suggest new clinical areas to explore. A Domain Team can submit one or more research projects, but collaboration is encouraged for similar concepts."
+  * "Multi-discipline Clinical Domain Teams focus on clinical questions surrounding COVID-19's impact on health conditions and consist of clinical and subject matter experts, statisticians, informaticists, and machine learning specialists. Cross-Cutting Domain Teams have a varied focus that applies to multiple domains."
 
 * Largest database of de-identified EHR data in the US
-    * "one of the largest, most secure clinical data resources for accelerating and collaborating on COVID-19 research" from N3C website
+  * "one of the largest, most secure clinical data resources for accelerating and collaborating on COVID-19 research" from N3C website
 * Big-data capabilities and powerful tools (R, python, packages, sql)
 * Accessible - no compute infrastructure needed other than a browser
 
@@ -99,17 +100,17 @@ For data partners (why contribute data):
 
 * Raise institutional research profile
 * Get feedback on local data quality and completeness in comparison to peers
-    * Compare your local research results to results on data from partners across the US to assess generalizability
+  * Compare your local research results to results on data from partners across the US to assess generalizability
 * Place your data in a secure enclave that supports broad access and reproducibility
 * Grow the userbase of researchers utilizing your data, including at your own institution
 
-**News articles about N3C**
+## News articles about N3C
 
 VOX one
 
 MIT press article
 
-**Exemplars of great projects**
+## Exemplars of great projects
 
 Query the community to see who wants to be featured :)
 

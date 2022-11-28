@@ -135,7 +135,7 @@ This platform feature provides step-by-step walkthroughs of individual tools lik
 
 N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items. The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](#knowledge-objects), and [concept sets](#concept-sets). The note overview contains a link whose URL points at this specific note in the application for sharing.
 
-![Academy walk-through](images/support/image-16-community-notes.png){width=75%}
+![N3C Community Notes](images/support/image-16-community-notes.png){width=75%}
 
 ### Documentation {#sec-support-training-documentation}
 

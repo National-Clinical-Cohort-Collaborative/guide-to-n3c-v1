@@ -57,15 +57,11 @@ Researchers from foreign institutions are eligible to access synthetic data (Lev
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2) and patient data that includes dates of service and patient zip code (Level 3).  (The latter data set is referred to as a limited dataset because it contains only 2 or the 18 PHI elements.)
 
-
 ## Registration
-
 
 ### ORCiD; InCommon vs Login.gov
 
-
 ### NIH IT security training
-
 
 ### Human Subjects Training
 
@@ -77,38 +73,31 @@ The N3C Data enclave is hosted by National Center for Advancing Translational Sc
 
 Overall, users will need to confirm if they use the InCOmmon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects training.
 
-
 ## Data Use Agreements
 
 The data use agreement (DUA) establishes the permitted uses of the data in the N3C Data Enclave.  By signing the agreement, an institutional official is assuring that users from their institution will abide by the terms defined in the agreement.
 
 A DUA must be executed by National Center for Advancing Translational Science (NCATS) and a research institution.  The DUA must be signed by authorized institutional officials who have the authority to bind all users at their institution to the terms of the DUA.  (A citizen scientist who is not affiliated with an institution must execute a data use agreement with NCATS.)  A DUA will be in effect for five years from the DUA Effective Date.
 
-Every individual who has access to the N3C Data Enclave must be covered by a DUA.  This DUA must be in place before an account for the N3C Enclave is requested.  If your institution has an active DUA, there is no additional action required with regards to the DUA.  A list of institutions with DUAs in place can be found at List of DUA Signatories: (https://covid.cd2h.org/duas).
+Every individual who has access to the N3C Data Enclave must be covered by a DUA.  This DUA must be in place before an account for the N3C Enclave is requested.  If your institution has an active DUA, there is no additional action required with regards to the DUA.  A list of institutions with DUAs in place can be found at List of DUA Signatories: (<https://covid.cd2h.org/duas>).
 
 The Institutional Data Use Agreement form is available at:
 
-https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf
+<https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf>
 
 For more information see:
 
-https://ncats.nih.gov/n3c/resources/data-access
-
+<https://ncats.nih.gov/n3c/resources/data-access>
 
 ## Enclave Access
 
-
 ## Research Project Teams
-
 
 ### Project Lead vs COllaborations
 
-
 ### Common roles and expectations (PIs, PMs, SMEs, Analysts, ...)
 
-
 #### Expertise needed
-
 
 ## Domain Teams
 
@@ -118,15 +107,13 @@ For example, let's say your institution just signed the DUA and you have some qu
 
 If you don't see your type of questions belonging to any existing domain teams you can create a new one here:
 
-https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58
+<https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58>
 
 See here for a list of existing domain teams:
 
-https://covid.cd2h.org/domain-teams
-
+<https://covid.cd2h.org/domain-teams>
 
 ## Browsing Researchers/Projects/Institutions
-
 
 ### Object Explorer, Public Dashboard
 

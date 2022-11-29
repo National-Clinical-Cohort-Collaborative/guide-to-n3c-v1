@@ -2,6 +2,6 @@
     "default": false,
     "header-style": { "style": "consistent" },
     "no-inline-html": {
-        "allowed_elements": [ "details", "br", "span", "i" ]
+        "allowed_elements": [ "br", "details", "i", "span" ]
     }
 }

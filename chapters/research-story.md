@@ -23,11 +23,14 @@ author:
 
 **Additional Contributors**: Sharon Patrick, Shawn O'Neil<a href="https://orcid.org/0000-0001-6220-7080"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
 
+<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/>
+
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
 If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 :::{.callout-note icon=false}
+
 ## Voice of Morgan Freeman
 
 Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But in order to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough.
@@ -37,12 +40,12 @@ Yesterday you attended a local N3C presentation and became interested because it
 
 {Should we use 2nd person or 3rd person?}
 
-Onboarding {#sec-story-onboarding}
-----------------------------------------------
+## Onboarding {#sec-story-onboarding}
 
 The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
+
 ## Voice of someone like Bill Kurtis, but without the connotation of murder
 
 The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
@@ -62,8 +65,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
-Team building & collaborating {#sec-story-team}
-----------------------------------------------
+## Team building & collaborating {#sec-story-team}
 
 The next step is to build a team to leverage retrospective medical records.  Like most contemporary research teams, heterogenous skills are important.  Ideally a team has at least:
 
@@ -82,15 +84,16 @@ N3C teams have some differences from conventional research teams at single sites
 If your team needs someone, consider asking a relevant [domain team](onboarding.html#domain-teams) for helping identifying and approaching a potential collaborator.
 
 :::{.callout-note icon=false}
+
 ## Voice of Jamie Foxx
 
 Recruiting your crew...
 :::
 
-Research Team's First Meeting
-----------------------------------------------
+## Research Team's First Meeting
 
 :::{.callout-note icon=false}
+
 ## Voice of ...
 
 Three weeks later...
@@ -125,8 +128,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **S**: And if I change my mind and decide to use the counts, then at least I'll know.
 * **Shoreleave**: and knowing is half the battle.
 
-Protocol, variables, & definitions
-----------------------------------------------
+## Protocol, variables, & definitions
 
 This aspect of the scientific process is probably both the most familiar and most vague.  Most researchers have several years of graduate-level courses and real-world experience.
 
@@ -138,13 +140,11 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 [@cd2h1, Chapter 1]
 
-Creating an analysis-ready dataset
-----------------------------------------------
+## Creating an analysis-ready dataset
 
 {Conventional data engineer role.  Dataset is created with input from the analyst.}
 
-Learning and using OMOP (e.g. concept sets)
-----------------------------------------------
+## Learning and using OMOP (e.g. concept sets)
 
 OMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi2019, Chapter 1].  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
 
@@ -153,8 +153,7 @@ OMOP originated in 2014 to facilitate the detection of small but significant sid
 
 {3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
 
-Analyses
-----------------------------------------------
+## Analyses
 
 * Developing the Analyses
 * finalizing analysis
@@ -162,10 +161,10 @@ Analyses
   * DRR
   * figures
 
-Draft paper, pub committee
-----------------------------------------------
+## Draft paper, pub committee
 
 :::{.callout-note icon=false}
+
 ## Voice of Sam Elliot
 
 Nearing the trail head...

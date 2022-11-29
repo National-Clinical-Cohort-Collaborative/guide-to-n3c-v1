@@ -3,16 +3,16 @@ author:
   - name: Sharon Patrick
     affiliation: University of West Virginia Health Sciences Center
     affiliation-url: https://directory.hsc.wvu.edu/Department/2109
-    # email: sharon.patrick@hsc.wvu.edu
-    # orcid:
+    email: patricks@hsc.wvu.edu
+    orcid: 0000-0001-6535-2013
     attributes:
       corresponding: true
 
-  - name: Jonathan Emery
+  - name: Jonathan Freixas Emery
     affiliation: University of Vermont
     affiliation-url: https://www.uvm.edu/biostatistics
-    # email: Jonathan.F.Emery@uvm.edu
-    # orcid:
+    email: jonathan.f.emery@uvm.edu
+    orcid: 0000-0002-3353-3570
 
   - name: Suzanne McCahan
     affiliation: Nemours Children's Health

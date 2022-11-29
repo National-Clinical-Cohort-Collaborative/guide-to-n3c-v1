@@ -21,9 +21,7 @@ author:
 
 # A Research Story {#sec-story}
 
-**Additional Contributors**: Sharon Patrick, Shawn O'Neil<a href="https://orcid.org/0000-0001-6220-7080"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>
-
-<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/>
+**Additional Contributors**: Sharon Patrick, Shawn O'Neil[{{< fa brands orcid size=xs >}}](https://orcid.org/0000-0001-6220-7080)
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 

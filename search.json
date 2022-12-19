@@ -21,11 +21,11 @@
     "text": "Platform\n\nAs the chapters are being written, talk to the chapter’s Lead Author to learn if it’s being written in GitHub or Google Docs. Eventually all Google Docs chapters will be translated to Markdown. Once a chapter has been finally converted to Markdown…\nTo make small changes like spelling corrections, we recommend editing the source directly in GitHub. It handles the details without your knowledge (like starting a fork and prompting your pull request). From the appropriate page of the book, click on the “Edit this page ” button and type your change in the GitHub editor.\nSubstantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type. We suggest Visual Studio Code or RStudio.\nYou don’t have to understand the rest to contribute, but for those interested:\n\nThe majority of this book is written in a collection of Markdown documents and assembled by the Quarto.\nAfter your change is pushed to GitHub, a GitHub Action spawns a small VM that (a) collects all the Markdown documents, (b) calls Quarto/Pandoc to convert them to html, and (c) moves the rendered html files to the “gh-pages” branch.\nGitHub Pages serves the contents of the gh-pages branch to anyone with a browser."
   },
   {
-    "objectID": "index.html#funding",
-    "href": "index.html#funding",
+    "objectID": "index.html#funding-and-licensing",
+    "href": "index.html#funding-and-licensing",
     "title": "Guide to N3C",
-    "section": "Funding",
-    "text": "Funding\nThe N3C is supported by NIH National Center for Advancing Translational Sciences (NCATS)."
+    "section": "Funding and Licensing",
+    "text": "Funding and Licensing\nThe N3C is supported by NIH National Center for Advancing Translational Sciences (NCATS).\nThis book is licensed under the Creative Commons Attribution-NoDerivatives 4.0."
   },
   {
     "objectID": "chapters/intro.html#mission",

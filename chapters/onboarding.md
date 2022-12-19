@@ -1,8 +1,8 @@
 ---
 author:
   - name: Sharon Patrick
-    affiliation: University of West Virginia Health Sciences Center
-    affiliation-url: https://directory.hsc.wvu.edu/Department/2109
+    affiliation: West Virginia Clinical and Translational Science Institute
+    affiliation-url: https://www.wvctsi.org/
     email: patricks@hsc.wvu.edu
     orcid: 0000-0001-6535-2013
     attributes:

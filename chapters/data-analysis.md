@@ -1,18 +1,45 @@
 ---
+abstract: Introduces the tools to analyze data, view results, track project progress, and obtain shared data and code.
+
 author:
   - name: Amy Olex
     affiliation: Virginia Commonwealth University
-    affiliation-url: https://cctr.vcu.edu/
-    # email: alolex@vcu.edu
-    # orcid:
+    affiliation-url: https://www.linkedin.com/in/amy-olex-9228bb23/
+    email: alolex@vcu.edu
+    orcid: 0000-0001-8064-521X
     attributes:
       corresponding: true
 
   - name: Andrea Zhou
     affiliation: University of Virginia Health
-    affiliation-url: https://uvahealth.com/
-    # email: agz5de@uvahealth.org
-    # orcid:
+    affiliation-url: https://www.ithriv.org/directory
+    email: agz5de@uvahealth.org
+    orcid: 0000-0003-1845-5620
+
+  - name: Johanna Loomba
+    affiliation: --
+    affiliation-url: --
+    email: --
+    orcid: 0000-0003-3673-5423
+
+  - name: Evan French
+    affiliation: --
+    affiliation-url: --
+    email: --
+    orcid: 0000-0002-5809-5810
+
+  - name: Shawn O’Neil
+    affiliation: --
+    affiliation-url: --
+    email: --
+    orcid: 0000-0001-6220-7080
+
+  - name: Steven G. Johnson
+    affiliation: --
+    affiliation-url: --
+    email: --
+    orcid: 0000-0002-2983-6384
+
 ---
 
 # Analyzing the Data {#sec-data-analysis}

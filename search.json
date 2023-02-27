@@ -109,7 +109,7 @@
     "href": "chapters/research-story.html#learning-and-using-omop-e.g.-concept-sets",
     "title": "2  A Research Story",
     "section": "2.6 Learning and using OMOP (e.g. concept sets)",
-    "text": "2.6 Learning and using OMOP (e.g. concept sets)\nOMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals. Detecting a small signal requires a large datasets –larger than any single health care database (Observational Health Data Sciences and Informatics 2019, chap. 1). Since then, the foundation has supported many other research goals. It is well-suited for N3C because:\n\nIt has evolved from 10? years and accommodates a wide range of data sources\nIt has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.\n\n{3-4 sentence description of the original OMOP motivation. It standardizes (a) tables & columns and (b) vocabulary. Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}"
+    "text": "2.6 Learning and using OMOP (e.g. concept sets)\nOMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals. Detecting a small signal requires a large datasets –larger than any single health care database (Sciences and Informatics 2019, chap. 1). Since then, the foundation has supported many other research goals. It is well-suited for N3C because:\n\nIt has evolved from 10? years and accommodates a wide range of data sources\nIt has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.\n\n{3-4 sentence description of the original OMOP motivation. It standardizes (a) tables & columns and (b) vocabulary. Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}"
   },
   {
     "objectID": "chapters/research-story.html#analyses",
@@ -123,7 +123,7 @@
     "href": "chapters/research-story.html#draft-paper-pub-committee",
     "title": "2  A Research Story",
     "section": "2.8 Draft paper, pub committee",
-    "text": "2.8 Draft paper, pub committee\n\n\n\n\n\n\nVoice of Sam Elliot\n\n\n\nNearing the trail head…\n\n\n\n\n\n\nObservational Health Data Sciences and Informatics. 2019. The Book of OHDSI: Observational Health Data Sciences and Informatics. United States: Independent. https://ohdsi.github.io/TheBookOfOhdsi/.\n\n\nWu, Chunlei, and C2DH. 2022. “Informatics Playbook.” https://playbook.cd2h.org/."
+    "text": "2.8 Draft paper, pub committee\n\n\n\n\n\n\nVoice of Sam Elliot\n\n\n\nNearing the trail head…\n\n\n\n\n\n\nSciences, Observational Health Data, and Informatics. 2019. The Book of OHDSI: Observational Health Data Sciences and Informatics. United States: Independent. https://ohdsi.github.io/TheBookOfOhdsi/.\n\n\nWu, Chunlei, and C2DH. 2022. “Informatics Playbook.” https://playbook.cd2h.org/."
   },
   {
     "objectID": "chapters/lifecycle.html",
@@ -340,6 +340,6 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Observational Health Data Sciences and Informatics. 2019. The Book\nof OHDSI: Observational Health Data Sciences and Informatics.\nUnited States: Independent. https://ohdsi.github.io/TheBookOfOhdsi/.\n\n\nWu, Chunlei, and C2DH. 2022. “Informatics\nPlaybook.” https://playbook.cd2h.org/."
+    "text": "Sciences, Observational Health Data, and Informatics. 2019. The Book\nof OHDSI: Observational Health Data Sciences and Informatics.\nUnited States: Independent. https://ohdsi.github.io/TheBookOfOhdsi/.\n\n\nWu, Chunlei, and C2DH. 2022. “Informatics Playbook.” https://playbook.cd2h.org/."
   }
 ]

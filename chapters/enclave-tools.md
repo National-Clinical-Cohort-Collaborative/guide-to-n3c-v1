@@ -59,28 +59,13 @@ Be sure to read the [Notes for Contributors](https://docs.google.com/document/d/
 
 ## 7 - Introducing Enclave Analysis Tools
 
-**Chapter Leads: Amy Olex, Andrea Zhou**
-
-
-
-**Table of Contents**
-
-
-[TOC]
-
-
+Chapter Leads: Amy Olex, Andrea Zhou
 
 ## Introduction
 
 This chapter introduces tools in the N3C Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community.  The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward.  It is expected that you know how data are organized in the N3C Enclave, including the OMOP data model, vocabulary, and concept sets (see Chapter [X](#Understanding-the-Data) for details).
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-01-intro-to-tools.svg "image_tooltip")
 
 Figure 1: High-level overview of an N3C project.
 
@@ -98,18 +83,11 @@ Once you obtain results that you wish to share with others, all tables, figures,
 
 The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Palantir documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.  This chapter is best utilized along side the information provided in the next chapter, Best Practices and Important Data Considerations (see Chapter [X](#Best-Practices-and-Important-Data-Considerations)), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
 
-
 ## Using Concept Sets
 
 As discussed in the previous chapter Understanding the Data (see Chapter [X](#Understanding-the-Data)), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model. By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-02-consept-home.png "image_tooltip")
 
 Figure 2: Concept Set Browser Homepage
 
@@ -117,43 +95,31 @@ The Concept Set Browser shown in [Figure 2]#Figure2_csetbrowser_homepage.png is 
 
 Once concept sets have been identified for use in your analysis through the Concept Set Browser, the concept set members table becomes the link between concepts and the encompassing concept set as shown by [Figure 3]#Figure3_csetmembers_table.png. You then have to “point” the code to the concept set members table to access this linkage. Once this has been accomplished, the choice becomes using the most recent version of a concept set (concept_set_members.concept_set_name where most_recent_version = TRUE) or using a specific version of the concept set (concept_set_members.codeset_id = {codeset id value}). While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-03-concept-table.png "image_tooltip")
 
 Figure 3: concept_set_members table
 
-Referring to a concept set by name and using the most recent version is often the preferred method for concept sets marked as N3C Recommended since these concept sets can only be updated by N3C core contributors after they have gone through a validation process which has been described in the previous chapter Understanding the Data (see Chapter [X](#Understanding-the-Data)). For concept sets that have not undergone the validation process and have not been marked as N3C Recommended by the N3C core contributors, it is recommended that the research team performs their own validation on an existing concept set or creates a new concept set with the input of a clinician. The concept set should then be referenced using its codeset ID when you are performing your data analysis. This will allow your team to perform their analysis from start to finish without worry about unvalidated modifications to the concept set. However, the codeset id being referenced in the code may need to be updated if the team chooses to modify the concept set once starting the analysis. In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python code workbook (see Section [X](#Code-Workbook)) transforms with the use of the [Logic Liaison’s Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) or in code repositories (see Section [X](#Code-Repositories)).
+Referring to a concept set by name and using the most recent version is often the preferred method for concept sets marked as N3C Recommended since these concept sets can only be updated by N3C core contributors after they have gone through a validation process which has been described in the previous chapter Understanding the Data (see Chapter [X](#Understanding-the-Data)).
 
+For concept sets that have not undergone the validation process and have not been marked as N3C Recommended by the N3C core contributors, it is recommended that the research team performs their own validation on an existing concept set or creates a new concept set with the input of a clinician. The concept set should then be referenced using its codeset ID when you are performing your data analysis. This will allow your team to perform their analysis from start to finish without worry about unvalidated modifications to the concept set. However, the codeset id being referenced in the code may need to be updated if the team chooses to modify the concept set once starting the analysis.
+
+In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python code workbook (see Section [X](#Code-Workbook)) transforms with the use of the [Logic Liaison’s Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) or in code repositories (see Section [X](#Code-Repositories)).
 
 ## N3C Knowledge Store
 
 The N3C Knowledge Store is an application where you, as an Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated. Most Knowledge Store (KS) objects come about as core contributors and researchers alike develop resources they believe may be useful for others either within or outside of their research project team and wish to share them with the broader community. If you find yourself in this situation, you can easily create, submit, and share a KS resource by following this [Code Workbook Template Quick Start Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.1d9ad825-30d1-475c-b77b-88836af5ea2c). Otherwise, more specifics on how to navigate the KS can be found in this [Knowledge Store Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.7ac7904d-bbc3-4678-a224-8b8b7c12d40e) within the Enclave.
 
-
 ### Datasets
 
 Of the many types of Knowledge Objects, the most common are datasets and code templates. Datasets in the Knowledge Store can be internal or external. Internal datasets are generated from data inside the enclave, typically by researchers as part of their project, and are often of patient or row level granularity. As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person level data at various levels of granularity (see Section [X](#Public/External-Datasets) in Chapter [X](#Understanding-the-Data)). Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.
-
 
 ### Code Templates
 
 Depending on the author’s intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset. The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding. Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts. A few helpful starter templates are those produced by the [Logic Liaisons](https://covid.cd2h.org/liaisons), some of which can be seen in [Figure 4]#Figure4_knowledgestore_homepage.png.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-04-knowledge-store-homepage.png "image_tooltip")
 
 Figure 4: N3C Knowledge Store Homepage
-
 
 #### Logic Liaison Fact Tables and Templates
 
@@ -161,31 +127,17 @@ The Logic Liaison Fact Tables and Templates are specifically designed to provide
 
 The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by [Figure 5]#Figure5_knowledgestore_exampleKO.png. It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project specific version of the fact tables. The [SDoH Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&view=focus) template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient. Because joining this data requires a valid five digit zip code, these fields are only available for patients with a five digit zip code in Level 3 (LDS) data.
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-05-knowledge-store-example.png "image_tooltip")
 
 Figure 5: Example Logic Liaison Fact Table Template Knowledge Object
 
 The [Logic Liaisons](https://covid.cd2h.org/liaisons) have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. [Figure 6]#Figure6_LLtemplate_application.png depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-06-ll-template-1.png "image_tooltip")
 
 Figure 6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates
 
 The data quality templates provide a variety of data tables and visualizations. The first two of which provide a method for evaluating overall quality of the harmonized data ingested from sites.
-
-
 
 * [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus)
     * Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the number of unique patient/concept/days for each of the major OMOP tables (i.e. condition_occurrence, drug_exposure, etc) and uses them to create a heatmap displaying how many MADs each site is from the median for each OMOP table. The template also scores the site's date shifting practices.
@@ -193,7 +145,6 @@ The data quality templates provide a variety of data tables and visualizations. 
     * Creates a bar plot showing whitelisted data partners that have, at minimum, a certain percentage of COVID patients associated with a specified measurement, condition, drug, procedure, etc. Sites not meeting the minimum requirement are removed from the whitelist. These tables can be used in downstream filtering to keep only sites meeting the user-defined minimum data quality.
 
 Once the main fact table templates mentioned earlier this section have been applied to generate the base fact tables, the ancillary fact templates utilize the day-level and person-level datasets of the base fact templates to efficiently generate additional derived variables based on broadly requested and applicable logic such as:
-
 
 
 * [Vaccine Fact](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-4BE516B&view=focus)
@@ -209,19 +160,11 @@ Once the main fact table templates mentioned earlier this section have been appl
 
 [Figure 7]#Figure7_LLtemplate_application2.png is a continuation of Figure 3 to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-07-ll-template-2.png "image_tooltip")
 
 Figure 7: Example Application of Logic Liaison Ancillary Quality Templates
 
 The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question specific facts by site.
-
-
 
 * [Systematic Missingness by Site and Study Variable](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus)
     * Produces a final visualization that has a binary indicator for whether or not a site is systematically missing meaningful data for the study variables in the input dataset
@@ -232,29 +175,19 @@ Once you obtain results you wish to share outside of the Enclave for a project, 
 
 While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jumpstart on gathering and understanding the data by avoiding effort duplication and providing a general starting point. You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks. The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site. Further explanation as to why these Knowledge Store objects are highly applicable can be found in the Best Practices and Important Data Considerations chapter (see Chapter [X](#Best-Practices-and-Important-Data-Considerations)).
 
-
 ## N3C Enclave Applications
 
 This section will cover the usage of various applications made available in the N3C Enclave, including Protocol Pad, Contour, Code Workbooks, and more ([a complete list of Foundry applications can be found here](https://www.palantir.com/docs/foundry/getting-started/application-reference/)). Before designing and running an analysis utilizing data in the Enclave, it helps to understand the concepts of a “[data pipeline](https://www.palantir.com/docs/foundry/data-integration/data-pipeline/)” and a “[data transform](https://www.palantir.com/docs/foundry/pipeline-builder/core-concepts/)” as well as how the data are stored and accessed via Apache Spark on a distributed file system.  For those unfamiliar with these concepts a high-level overview, along with links to documentation on code optimization in the N3C Enclave, can be found in Section [X] of Chapter [X](#???).
-
 
 ### N3C Protocol Pad
 
 N3C Documentation: [Quick Start Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) and [Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37)
 
-
-
 * Electronic lab notebook
 * Promote collaboration, organize work, and translation to final manuscript
 * Methodology checklist
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-08-protocol-pad.png "image_tooltip")
 
 Figure 8: N3C Protocol Pad Homepage
 
@@ -262,12 +195,9 @@ Before diving into an analysis, it is highly recommended that you use N3C’s Pr
 
 Protocol Pad is the foundation for performing reproducible and repeatable science within the N3C Enclave. The templates, checklists, and links to key resources provided within the tool guide you along the path of well structured division of labor and use of best practices when performing research using the observational data in the Enclave. The tool also assists your team in keeping the work in alignment with the project. A more in depth explanation of how Protocol Pad can facilitate research can be found in the Best Practices and Important Data Considerations chapter (see Chapter [X](#Best Practices-and-Important-Data-Considerations)). Documentation on the tool’s functionality can be found in this [Quick Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) as well as this more [Detailed Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).
 
-
 ### Contour
 
 Palantir Documentation: [Contour Overview](https://www.palantir.com/docs/foundry/contour/overview/)
-
-
 
 * Programming-free analysis interface
 * Point-and-Click data analysis pipeline development
@@ -275,13 +205,7 @@ Palantir Documentation: [Contour Overview](https://www.palantir.com/docs/foundry
 * Allows customization with Contour’s expression language
 * Dashboard development
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-09-contour.png "image_tooltip")
 
 Figure 9: Example Contour Analysis
 
@@ -289,14 +213,11 @@ The Contour application is a programming-free interface to the N3C Enclave that 
 
 Figures or summary tables created in Contour can be exported to a dashboard within Contour.  Contour Dashboards allows chart-to-chart filtering, and an easy drag-and-drop interface to build the dashboard while iterating on an analysis.  A dashboard is dynamic and interactive, allowing the reader to adjust the graphs to better explore analysis results in a guided and structured way. Figures generated in a Contour analysis can also be exported to other Enclave applications like Notepad for reporting out results.  The main difference between Notepad (see Section [X](#Notepad)) and a Contour Dashboard is that Notepad provides a static report with figures that cannot be dynamically changed by the reader. A detailed orientation to Contour can be found in the Foundry Documentation [here](https://www.palantir.com/docs/foundry/contour/overview/).
 
-
 ### Code Workbooks
 
 Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22)
 
 Palantir Documentation: [Code Workbook Overview](https://www.palantir.com/docs/foundry/code-workbook/overview/)
-
-
 
 * Graphical organization of logic
 * Simplification of code
@@ -310,30 +231,15 @@ Palantir Documentation: [Code Workbook Overview](https://www.palantir.com/docs/f
 
 Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. [Figure 10]#Figure10_EnclaveApplications.png shows an abstract version of a Code Workbook, while [Figure 11]#Figure11_codeworkbook_example.png is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation _<span style="text-decoration:underline;">one or more tables are specified as the input</span>_ and are transformed into a single output table (Figure 10A). Multiple transformations can also be strung together (Figure 10B) to create an analysis pipeline (see Palantir’s [Anatomy of a Data Pipeline](https://www.palantir.com/docs/foundry/building-pipelines/overview/) module for more detailed information, as well as Chapter [X](#Best-Practices-and-Important-Data-Considerations)). In Code Workbook, _<span style="text-decoration:underline;">the primary and required output of a transformation is always a single table</span>_; however, visualizations such as graphs and charts can also be generated and saved along the way.  Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.
 
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-10-transforms-abstract.png "image_tooltip")
 
 Figure 10: Abstracted view of data transforms
 
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-11-transforms-example.png "image_tooltip")
 
 Figure 11: Example Data Transformation Pipeline in Code Workbook
 
-
 #### Types of Transforms
-
-
 
 * **Manual Entry** transforms allow you to manually populate a custom dataset directly in the specific Code Workbook you are currently working in as a “quick and dirty” alternative to manually populating importable or referenceable datasets with Fusion (see Section [X](#Fusion)).
 * **Python/PySpark Code** transforms contain a Python function that takes one or more datasets as input parameters and returns a single dataset as output.
@@ -354,36 +260,21 @@ Following best practices for collaborative software development, Code Workbook a
 
 Because the _master_ branch can change in the interval between you creating a branch and merging it back in, it is important to preview merge changes to ensure that the branch’s contributions are both correct and compatible with the current state of the _master_ branch. However, note that your branch will be automatically deleted after it is merged, which is an important difference from the normal Git behavior.  Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, you can create a code branch in which all input datasets are set to the same version release (as shown in [Figure 12]#Figure12_codeworkbook_pinningrelease.png) to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User-generated datasets are set to the same branch as the Code Workbook in which they were created. Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.
 
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-12-release-pin.png "image_tooltip")
 
 Figure 12: Pinning to an input dataset’s release version
 
 Palantir has created extensive [documentation](https://www.palantir.com/docs/foundry/code-workbook/overview/) of the Code Workbook application including tutorials. N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22).
 
-
 ### Code Repositories
 
 Palantir Documentation: [Code Repository Overview](https://www.palantir.com/docs/foundry/code-repositories/overview/)
-
-
 
 * Production pipelines
 * Code reuse across projects
 * Built in version control
 
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-13-code-repo.png "image_tooltip")
 
 Figure 13: Example Code Repository
 
@@ -393,20 +284,15 @@ For any large analytic project, there are many pieces of code and other artifact
 
 Underlying the Code Repository is the Git version control system.  You can edit and maintain code using all of the capabilities of Git including comparing versions, branching and pull requests. Versions that are tagged in Git will be automatically published in the Enclave as a shared library, which allows you and others that have access to your project space to import that code into other Code Workbooks (note this requires you to create a customized environment that imports your code specifically, which may increase workbook initialization time). If you want to make your repository public so others outside of your project workspace can use it you can do one of the following:
 
-
-
 * Package your code into a properly structured python package. This allows other researchers from different project spaces to run it from their Code Workbooks or Repositories.
 * Submit the Code Repository to the Knowledge Store where it will then be visible to anyone who has Enclave access.
 * Publish the Code Repository to a public Github where the code will then become accessible to anyone outside the Enclave.
 
 More information on Code Repositories can be found in the [Palantir Documentation](https://www.palantir.com/docs/foundry/code-repositories/overview/).
 
-
 ### Fusion
 
 Palantir Documentation: [Fusion Sheet Overview](https://www.palantir.com/docs/foundry/fusion/overview/)
-
-
 
 * Useful for writing back datasets for use within the Enclave
 * Leverage cell references and spreadsheet functions
@@ -414,12 +300,7 @@ Palantir Documentation: [Fusion Sheet Overview](https://www.palantir.com/docs/fo
 * Create charts
 * Allow customization and flexibility
 
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/enclave-tools/fig-14-fusion.png "image_tooltip")
 
 
 Figure 14: Example Fusion Sheet
@@ -428,12 +309,9 @@ Fusion, shown in [Figure 14]#Figure14_fusion_example.png, is a spreadsheet appli
 
 Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few.  While you cannot directly import external .xls/.xlsx formatted files into the Enclave, you can copy/paste external dataset values into Fusion. For example, you can copy and paste concept IDs from [ATLAS](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas) to use in an analysis or metadata manually curated for a dataset. To import larger external datasets into the N3C Enclave see Chapter [X](#Chapter on external datasets), and [N3C procedures and protocols around importing large external datasets](https://zenodo.org/record/4574608#.Y6IeG-zMJTZ). In addition to standard spreadsheet functionality, Fusion has additional features which allow it to integrate with the rest of your Enclave environment. Objects created within Fusion, such as formatted tables, can be embedded in Notepad (see Section [X](#Notepad)). Finally, Fusion sheets can be templatized to facilitate replication of similar functionality.
 
-
 ### Notepad
 
 Palantir Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry/notepad/overview/)
-
-
 
 * Note taking with ability to add embeds of the workflow
 * Documentation of pipelines or datasets
@@ -441,13 +319,7 @@ Palantir Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry
 * Monthly status reports using template function
 * Unable to create dashboard or complex page-based text editing
 
-
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-15-notepad.png "image_tooltip")
 
 Figure 15: Example Notepad Document
 
@@ -455,25 +327,16 @@ Many research projects in the Enclave are complex, involving multiple summary da
 
 All embedded objects can be configured to remain static or refresh automatically when the underlying data sources update. Notepad is also useful for annotating documents, presenting an executive summary of results for internal stakeholders, or external presentations after being approved for download request and export as PDF. Logic Liaison Templates (see Section [X](#Logic-Liaison-Fact-Tables-and-Templates)) in the Knowledge Store generally includes a README which is created using Notepad. The tool does have limitations in that it cannot be used to create dashboards that include chart-to-chart filtering; however, [Contour Dashboards](https://www.palantir.com/docs/foundry/contour/dashboards-overview/) can provide this feature for tabular data and [Quiver Dashboards](https://www.palantir.com/docs/foundry/quiver/dashboards-overview/) can provide this feature for object or time series data. Palantir has curated documentation for creating and editing [Notepad](https://www.palantir.com/docs/foundry/notepad/overview/) documents. Palantir also has documentation for their application known as [Reports](https://www.palantir.com/docs/foundry/reports/overview/) that was previously used in a similar fashion though with less functionality compared to Notepad.
 
-
 ### Data Lineage (aka Monocle)
 
 Palantir Documentation: [Data Lineage Overview](https://www.palantir.com/docs/foundry/data-lineage/overview/)
-
-
 
 * Find datasets
 * Expand or hide a dataset’s ancestors and descendants
 * Visualize a data pipeline and its details
 * Facilitate dataset build scheduling
 
-
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.gif "image_tooltip")
-
+![alt_text](images/enclave-tools/fig-16-data-lineage.gif "image_tooltip")
 
 Figure 16: Example Data Lineage Visualization
 

@@ -1,18 +1,42 @@
 ---
 author:
   - name: Amy Olex
-    affiliation: Virginia Commonwealth University
+    affiliation: Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
     affiliation-url: https://cctr.vcu.edu/
-    # email: alolex@vcu.edu
-    # orcid:
+    email: alolex@vcu.edu
+    orcid: 0000-0001-8064-521X
     attributes:
       corresponding: true
 
-  - name: Andrea Zhou
-    affiliation: University of Virginia Health
-    affiliation-url: https://uvahealth.com/
-    # email: agz5de@uvahealth.org
-    # orcid:
+  - name: Andrea G. Zhou
+    affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
+    affiliation-url: https://www.ithriv.org/directory
+    email: agz5de@virginia.edu
+    orcid: 0000-0003-1845-5620
+
+  - name: Johanna Loomba
+    affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
+    affiliation-url: https://www.ithriv.org/directory
+    email: jjl4d@uvahealth.org
+    orcid: 0000-0003-3673-5423
+
+  - name: Evan French
+    affiliation: Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
+    affiliation-url: https://cctr.vcu.edu/
+    email: etfrench@vcu.edu
+    orcid: 0000-0002-5809-5810
+
+  - name: Shawn O’Neil
+    affiliation: University of Colorado Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: shawn@tislab.org
+    orcid: 0000-0001-6220-7080
+
+  - name: Steven G. Johnson
+    affiliation: University of Minnesota, Institute of Informatics
+    affiliation-url: https://healthinformatics.umn.edu/staff/steven-johnson
+    email: joh06288@umn.edu
+    orcid: 0000-0002-2983-6384
 ---
 
 # Introducing Enclave Analysis Tools {#sec-enclave-tools}
@@ -31,115 +55,13 @@ See a draft of the chapter outline at
 At this point, any edits to this chapter should be made in Google Docs.  The current Markdown is for testing only.  It is NOT the source of truth (yet).
 :::
 
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 16.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-<a href="#gdcalert14">alert14</a>
-<a href="#gdcalert15">alert15</a>
-<a href="#gdcalert16">alert16</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 Be sure to read the [Notes for Contributors](https://docs.google.com/document/d/1mrZD8oHHp5Xw4lNjmkagvdb1UZsfbuxsVZ3c_MBbUZM)!
-
-[Images folder](https://drive.google.com/drive/u/0/folders/1-VpZzQhN8iW9Rpo2UfvD2PdCDVGy95Au)
-
 
 ## 7 - Introducing Enclave Analysis Tools
 
 **Chapter Leads: Amy Olex, Andrea Zhou**
 
-**Chapter Contributors: Evan French, Johanna Loomba, Steve Johnson, Shawn O’Neil**
 
-Amy's formal/publishing name: Amy L. Olex
-
-Amy's preferred public email to be listed: alolex@vcu.edu
-
-Amy's ORCiD: 0000-0001-8064-521X
-
-Amy's affiliation: Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
-
-Amy's affiliation’s url: https://cctr.vcu.edu/
-
-Andrea's formal/publishing name: Andrea G. Zhou
-
-Andrea's preferred public email to be listed: agz5de@virginia.edu
-
-Andrea's ORCiD: 0000-0003-1845-5620
-
-Andrea's affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
-
-Andrea's affiliation’s url: https://www.ithriv.org/directory
-
-Johanna’s formal/publishing name: Johanna Loomba
-
-Johanna’s preferred public email to be listed: jjl4d@uvahealth.org
-
-Johanna’s ORCiD: 0000-0003-3673-5423
-
-Johanna’s affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
-
-Johanna’s affiliation’s url: https://www.ithriv.org/directory
-
-Evan’s formal/publishing name: Evan French
-
-Evan’s preferred public email to be listed: etfrench@vcu.edu
-
-Evan’s ORCiD: 0000-0002-5809-5810
-
-Evan’s affiliation: Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
-
-Evan’s affiliation’s url: https://cctr.vcu.edu/
-
-Shawn’s formal/publishing name: Shawn O’Neil
-
-Shawn’s preferred public email to be listed: shawn@tislab.org
-
-Shawn’s ORCiD: 0000-0001-6220-7080
-
-Shawn’s affiliation: University of Colorado Anschutz
-
-Shawn’s affiliation’s url: https://oneilsh.github.io/
-
-Steve's formal/publishing name: Steven G. Johnson
-
-Steve's preferred public email to be listed: joh06288@umn.edu
-
-Steve's ORCiD: 0000-0002-2983-6384
-
-Steve's affiliation: University of Minnesota, Institute of Informatics
-
-Steve's affiliation’s url: https://healthinformatics.umn.edu/staff/steven-johnson
-
-Contributor's formal/publishing name: {please enter a value here}
-
-Contributor's preferred public email to be listed: {please enter a value here}
-
-Contributor's ORCiD: 0000-0000-0000-0000 {please replace the zeroes with your ID}
-
-Contributor's affiliation: {please enter a value here}
-
-Contributor's affiliation’s url: {please enter a value here}
-
-
-
-
-## Chapter 7: Introducing Enclave Analysis Tools
 
 **Table of Contents**
 

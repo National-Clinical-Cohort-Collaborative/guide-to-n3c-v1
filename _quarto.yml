@@ -73,6 +73,7 @@ format:
     theme:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
+    link-external-newwindow: true
 
 
   pdf:

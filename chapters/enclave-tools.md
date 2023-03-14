@@ -15,7 +15,7 @@ author:
     # orcid:
 ---
 
-# Analyzing the Data {#sec-data-analysis}
+# Introducing Enclave Analysis Tools {#sec-enclave-tools}
 
 **Additional Contributors**: Johanna Loomba, Evan French, etc...
 

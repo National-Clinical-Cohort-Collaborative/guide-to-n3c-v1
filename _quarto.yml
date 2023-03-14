@@ -52,7 +52,7 @@ book:
     chapters:
     - chapters/data-access.md
     - chapters/data-understanding.md
-    - chapters/data-analysis.md
+    - chapters/enclave-tools.md
     - chapters/practices.md
     - chapters/publishing.md
 

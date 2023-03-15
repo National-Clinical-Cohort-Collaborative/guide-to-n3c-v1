@@ -3,10 +3,16 @@ author:
   - name: Christine Suver
     affiliation: Sage Bionetworks
     affiliation-url: https://sagebionetworks.org/
-    # email: christine.suver@sagebase.org
-    # orcid:
+    email: christine.suver@sagebase.org
+    orcid: 0000-0002-2986-385X
     attributes:
       corresponding: true
+
+  - name: Johanna Loomba
+    affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
+    affiliation-url: https://www.ithriv.org/directory
+    email: jjl4d@uvahealth.org
+    orcid: 0000-0003-3673-5423
 ---
 
 # Governance, Leadership, and Operations Structures {#sec-governance}

@@ -39,7 +39,7 @@ author:
     orcid: 0000-0002-2983-6384
 
 filters:
-   - lightbox
+  - lightbox
 
 lightbox:
   match: auto

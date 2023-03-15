@@ -15,7 +15,7 @@ author:
     orcid: 0000-0001-6220-7080
 
 filters:
-   - lightbox
+  - lightbox
 
 lightbox: auto
 ---

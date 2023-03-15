@@ -55,7 +55,7 @@ Because effective analysis of EHR data requires a diverse set of skills–especi
 
 ### For Researchers {#sec-intro-next-researchers}
 
-So, why should you get involved with N3C? First and foremost, N3C provides an opportunity to participate in impactful team science. Investigators with expertise in multiple domains come together across organizational boundaries to understand and address the impact of COVID-19 across the United States. Dozens of N3C-supported publications span the gamut of research: [@pfaff_2022] applied machine-learning methods to understand important predictive factors for Long-COVID , and [@sharafeldin_2021] identified demographic and clinical factors contributing to mortality risk in cancer patients. Sun et al. studied breakthrough infections after vaccination,<sup><a href="https://paperpile.com/c/ezAC9X/JSeI">4</a></sup> Yang et al. evaluated COVID-19 outcomes in HIV patients,<sup><a href="https://paperpile.com/c/ezAC9X/eFk3">5</a></sup> Reese et al. clustered patients to reveal sub-types of Long-COVID,<sup><a href="https://paperpile.com/c/ezAC9X/uehG">6</a></sup> and Anzalone et al. found higher hospitalization and mortality in rural communities.<sup><a href="https://paperpile.com/c/ezAC9X/oxxQ">7</a></sup> These are but a small sample of work produced by researchers participating in N3C.
+So, why should you get involved with N3C? First and foremost, N3C provides an opportunity to participate in impactful team science. Investigators with expertise in multiple domains come together across organizational boundaries to understand and address the impact of COVID-19 across the United States. Dozens of N3C-supported publications span the gamut of research: @pfaff_2022 applied machine-learning methods to understand important predictive factors for Long-COVID, and @sharafeldin_2021 identified demographic and clinical factors contributing to mortality risk in cancer patients. @sun_2022 studied breakthrough infections after vaccination, Yang et al. evaluated COVID-19 outcomes in HIV patients,<sup><a href="https://paperpile.com/c/ezAC9X/eFk3">5</a></sup> Reese et al. clustered patients to reveal sub-types of Long-COVID,<sup><a href="https://paperpile.com/c/ezAC9X/uehG">6</a></sup> and Anzalone et al. found higher hospitalization and mortality in rural communities.<sup><a href="https://paperpile.com/c/ezAC9X/oxxQ">7</a></sup> These are but a small sample of work produced by researchers participating in N3C.
 
 This range of work is only possible by the diversity of interests and expertise researchers bring. Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure data enclave. N3C supports team science in a variety of ways. Domain Teams, for example, serve to connect groups with similar interests for peer support, research coordination, and collaboration building. While most Domain Teams are clinically oriented (e.g. the Pregnancy Domain Team), others are more general (e.g. the Machine Learning Domain Team). Chapter [X](#onboarding-enclave-access-team-science) covers Domain Teams in more detail. N3C provides a number of training and support venues, including regular office hours, training modules, and of course this book. See Chapter [X](#help-and-support) for more information on these topics.
 
@@ -78,16 +78,7 @@ Finally, N3C’s governance structures may be of interest to other organizations
 Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external helpdesk, or just stopping by office hours. More information on these latter two options may be found in Chapter [](#help-and-support).
 
 
-    1.	[Pfaff, E. R. et al. Identifying who has long COVID in the USA: a machine learning approach using N3C data. Lancet Digit Health 4, e532–e541 (2022).](http://paperpile.com/b/ezAC9X/eDkS)
-
-
-    2.	[Sharafeldin, N. et al. Outcomes of COVID-19 in Patients With Cancer: Report From the National COVID Cohort Collaborative (N3C). J. Clin. Oncol. 39, 2232–2246 (2021).](http://paperpile.com/b/ezAC9X/eU12)
-
-
     3.	[Mehta, H. B. et al. Use of Hydroxychloroquine, Remdesivir, and Dexamethasone Among Adults Hospitalized With COVID-19 in the United States : A Retrospective Cohort Study. Ann. Intern. Med. 174, 1395–1403 (2021).](http://paperpile.com/b/ezAC9X/KiaL)
-
-
-    4.	[Sun, J. et al. Association Between Immune Dysfunction and COVID-19 Breakthrough Infection After SARS-CoV-2 Vaccination in the US. JAMA Intern. Med. 182, 153–162 (2022).](http://paperpile.com/b/ezAC9X/JSeI)
 
 
     5.	[Yang, X. et al. Associations between HIV infection and clinical spectrum of COVID-19: a population level analysis based on US National COVID Cohort Collaborative (N3C) data. Lancet HIV 8, e690–e700 (2021).](http://paperpile.com/b/ezAC9X/eFk3)

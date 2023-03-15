@@ -144,7 +144,7 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 ## Learning and using OMOP (e.g. concept sets)
 
-OMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi2019, Chapter 1].  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
+OMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
 
 * It has evolved from 10? years and accommodates a wide range of data sources
 * It has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.

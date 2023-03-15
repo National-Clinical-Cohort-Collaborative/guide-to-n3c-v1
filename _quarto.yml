@@ -24,6 +24,8 @@ book:
   cover-image-alt: images/n3c-logo-circle-large-0.png
   favicon: images/n3c-logo-circle-large-0.png
 
+  google-analytics: G-5F685V8M7X
+
   page-footer:
     left: |
       <a href="https://ncats.nih.gov/n3c/">N3C</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>

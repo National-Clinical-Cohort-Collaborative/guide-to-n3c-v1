@@ -6,13 +6,11 @@ book:
   date: last-modified
 
   editor:
-
     - name: William H Beasley
       affiliation: University of Oklahoma Health Sciences Center
       affiliation-url: https://ouhsc.edu/bbmc/
       email: wibeasley@hotmail.com
       orcid: 0000-0002-5613-5006
-
     - name: Shawn O'Neil
       affiliation: University of Colorado, Anschutz
       affiliation-url: https://oneilsh.github.io/
@@ -74,8 +72,6 @@ format:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
     link-external-newwindow: true
-
-
   pdf:
     documentclass: scrreprt
   epub:

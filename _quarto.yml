@@ -52,7 +52,7 @@ book:
     chapters:
     - chapters/data-access.md
     - chapters/data-understanding.md
-    - chapters/data-analysis.md
+    - chapters/enclave-tools.md
     - chapters/practices.md
     - chapters/publishing.md
 
@@ -73,6 +73,7 @@ format:
     theme:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
+    link-external-newwindow: true
 
 
   pdf:

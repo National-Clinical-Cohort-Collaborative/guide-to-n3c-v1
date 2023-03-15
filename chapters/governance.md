@@ -22,17 +22,17 @@ lightbox: auto
 
 # Governance, Leadership, and Operations Structures {#sec-governance}
 
-## Preamble
+## Preamble {#sec-governance-preamble}
 
 N3C is more than simply a data enclave. It is a research community dedicated to facilitating collaborations and the rapid generation and dissemination of knowledge to help combat COVID-19. There were numerous innovations along the pathway to N3C. The novel governance procedures and structures described here may benefit other collaborative research efforts beyond the pandemic emergency response.
 
-## N3C Leadership
+## N3C Leadership {#sec-governance-leadership}
 
 N3C is a public-private-government partnership among the Clinical and Translational Science Awards (CTSA) Program hubs supported by the National Center for Advancing Translational Sciences (NCATS) as the overall data steward; the National Center for Data to Health (CD2H); the Institutional Development Award Networks for Clinical and Translational Research (IdeA-CTR); data contributing organizations (e.g., public health Health Information Exchanges, hospitals/health systems, academic medicine, and clinical research); distributed clinical data networks (PCORnet, OHDSI, Act, TriNetX); multiple commercial partners; and a large community of researchers.
 
 Four [co-leads](https://covid.cd2h.org/team) (two from the researcher community and two from NCATS) developed the vision for N3C and led its implementation with extensive community consultation. Their vision was to bridge the traditional siloes of biomedical research to rapidly enable team science while respecting the rights of data subjects, institutions, and researchers. To accomplish this at record speed, the N3C leadership established five community [workstreams](https://covid.cd2h.org/n3c)^[Five Community workstreams were rapidly organized: Data Partnership & Governance, Phenotype & Data Acquisition, Data Ingestion & Harmonization, Collaborative Analytics, and Synthetic Data.] focusing on specific N3C components. The workstreams are supported by dedicated administrative staff, with virtual workspaces and communication channels (Slack) to share materials and reduce barriers to participation. The workstreams meet regularly, and meetings are open to anyone interested in participating or monitoring activities. Early on, the N3C conducted [general webinars](https://www.youtube.com/watch?v=O8dZAl9nSds&list=PLE4bNBEGV4OW6UBwCaJzurbQNFhz48TKn&index=7OW6UBwCaJzurbQNFhz48TKn) and Questions and Answers sessions to inform potential partners and created a Welcome Partnership Packet to help initiate participation.
 
-## Establishing a collaborative governance culture- The Partnership and Governance Workstream
+## Establishing a collaborative governance culture- The Partnership and Governance Workstream {#sec-governance-culture}
 
 Achieving the goals of a shared data resource involves deciding how the resource may be produced, operated, used, and sustained. Critical considerations for establishing a data sharing governance framework include:
 
@@ -48,7 +48,7 @@ At the start, the Partnership and Governance workstream met twice weekly to rapi
 
 The workstream split into a smaller subgroup to draft the supporting governance documents while continuing to meet with the whole Workstream for ideation, context, and feedback weekly. Onward, the workstream adjusted the frequency of the meetings to the work cadence.
 
-### N3C Governance Bridges Individual Oversight Responsibilities
+### N3C Governance Bridges Individual Oversight Responsibilities {#sec-governance-bridges}
 
 The N3C Governance is a set of behavioral norms, policies, and procedures supported by technology/security measures and oversight mechanisms. The N3C Governance structure relies on a variety of collaborative approaches, from hierarchical to consultative to consensus-based. The Data Partnership and Governance Workstream advocates a partnership approach that builds on collective competencies where governance aligns with community values, and final sign-off is obtained according to leadership roles and responsibilities. This governance approach values input from stakeholders and helps develop a shared understanding while recognizing the different risks and obligations of the scientific community and NCATS. Governance policies are posted on Zenodo to promote transparency and elicit community feedback. This also provides a resource for other researchers facing similar governance needs.
 
@@ -68,13 +68,13 @@ Seven principles summarize the Community Guiding Principles:
 
 ![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-01-shared.png){#fig-01-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 
-## Ethical oversight
+## Ethical oversight {#sec-governance-ethics}
 
 The ethical oversight of N3C is two-fold. First, the IRB at John Hopkins University (JHU's IRB) approved the N3C protocol and methodologies employed to create N3C data resources. Institutions must obtain relevant authorizations, including applicable IRB approvals or waivers, before contributing data to N3C. Institutions can select their own IRB or rely on JHU's IRB as the Central IRB for N3C. Relying institutions must use the [SMART-IRB online reliance system](https://smartirb.org/reliance/) and execute a Master Reliance Agreement to delegate IRB oversight to JHU's IRB for their contribution to N3C. While it is not necessary to use JHU's IRB, the reliance process is simple and efficient, and relying on a single IRB reduces the burden associated with contributing data and speeds up IRB review.
 
 Second, NCATS obtained IRB approval for the Data Enclave from the NIH IRB since NIH houses the Enclave under NCATS oversight. NCATS also received a Certificate of Confidentiality to resist legal requests to disclose identifying information from the people represented in N3C data.
 
-## Contractual Agreements: Separating Data Transfer and Data Use
+## Contractual Agreements: Separating Data Transfer and Data Use {#sec-governance-contractual}
 
 The N3C Community contributed to the two types of contractual agreements: ones that delineate data contribution (or data transfer) and others that define data access (or data use) conditions. Both types of agreements clarify confidentiality, intellectual property, warranties and liabilities, conflict resolution, and expiration or termination. The data transfer and use agreements are intentionally separated since contributing data is not required to be eligible to access the data. All contractual agreements are made between NCATS and signing officials from home institutions
 
@@ -84,11 +84,11 @@ N3C leaders saw the value of enhancing the N3C research capability and developin
 
 A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) (DUA) must be executed between NCATS and signing officials from an institution whose investigators wish to access N3C data. To improve efficiency, instead of executing a traditional pair-wise agreement each time a researcher needs access to N3C, a single DUA is executed between NCATS and an organization to render individual researchers eligible to request access to N3C content.
 
-### Data Access by Researchers
+### Data Access by Researchers {#sec-governance-access}
 
 First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the Community Guiding Principles (described below) and complete a designated [NIH Information Security and Information Management TrainingNIH data management and security training](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-data-access for details.)
 
-There are three levels of data access commensurate with the sensitivity of the data. See @sec-data-access) for more details about these levels.
+There are three levels of data access commensurate with the sensitivity of the data. See @sec-data-access for more details about these levels.
 
 ![Data Tiers](images/governance/fig-02-tiers.png){#fig-02-tiers fig-alt="Data Tiers"}
 
@@ -98,7 +98,7 @@ N3C governance includes considerations for protecting special populations and co
 
 ![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-03-process.png){#fig-03-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
 
-## Incident Notification and Escalation procedure
+## Incident Notification and Escalation procedure {#sec-governance-incident}
 
 It is essential to create an Incident Notification Policy to ensure that the right people are notified about incidents at the right time and that problems can be addressed rapidly.  Incidents include interpersonal interactions or disputes, suspected terms/policies violations, technical issues such as systems interruption or process delays, a potential data breach, and attribution or publication situations. For each incident type, an escalation path clarifies the first line of response and any further process or action for escalating it based on severity.
 

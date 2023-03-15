@@ -58,50 +58,13 @@ The scientific community representatives in the Participation and Governance Wor
 
 Seven principles summarize the Community Guiding Principles:
 
-<table>
-  <tr>
-   <td><strong>Partnership</strong>
-   </td>
-   <td>N3C community members are trusted partners committed to honoring the N3C community guiding principles and Code of Conduct
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Inclusivity</strong>
-   </td>
-   <td>N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19 related research, including citizen/community scientists
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Transparency</strong>
-   </td>
-   <td>Open processes and reproducible research is the hallmark of N3C and good scientific practice. Access to data is project-based and focused on COVID-19 research questions. Descriptions of projects are posted publicly and are searchable to promote collaborations.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Reciprocity</strong>
-   </td>
-   <td>Contributions are acknowledged and results from analyses, including provenance and attribution, are expected to be shared with the N3C community.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Accountability</strong>
-   </td>
-   <td>N3C community members take responsibility for their activities and hold each other accountable for achieving the N3C objectives and acting through good scientific practices.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Security</strong>
-   </td>
-   <td>All activities are conducted in a secure, controlled access cloud-based environment and are recorded for auditing and attribution purposes.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Mutual respect</strong>
-   </td>
-   <td>Communications should be professional, concise, clear, and relevant. Follow proper communication etiquette articulated below. Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.
-   </td>
-  </tr>
-</table>
+1. **Partnership**: N3C community members are trusted partners committed to honoring the N3C community guiding principles and Code of Conduct
+1. **Inclusivity**: N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19 related research, including citizen/community scientists
+1. **Transparency**: Open processes and reproducible research is the hallmark of N3C and good scientific practice. Access to data is project-based and focused on COVID-19 research questions. Descriptions of projects are posted publicly and are searchable to promote collaborations.
+1. **Reciprocity**: Contributions are acknowledged and results from analyses, including provenance and attribution, are expected to be shared with the N3C community.
+1. **Accountability**: N3C community members take responsibility for their activities and hold each other accountable for achieving the N3C objectives and acting through good scientific practices.
+1. **Security**: All activities are conducted in a secure, controlled access cloud-based environment and are recorded for auditing and attribution purposes.
+1. **Mutual respect**: Communications should be professional, concise, clear, and relevant. Follow proper communication etiquette articulated below. Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.
 
 ![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-01-shared.png){#fig-01-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 

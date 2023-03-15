@@ -60,6 +60,7 @@ Investigators with expertise in multiple domains come together across organizati
 Dozens of N3C-supported publications span the gamut of research:
 @pfaff_2022 applied machine-learning methods to understand important predictive factors for Long-COVID, and
 @sharafeldin_2021 identified demographic and clinical factors contributing to mortality risk in cancer patients.
+@mehta_2021 studied the use of hydroxychloroquine, remdesivir, and dexamethasone over time at multiple sites, revealing how treatment guidelines evolve in response to updated information over time.
 @sun_2022 studied breakthrough infections after vaccination, Yang et al. evaluated COVID-19 outcomes in HIV patients,<sup><a href="https://paperpile.com/c/ezAC9X/eFk3">5</a></sup>
 Reese et al. clustered patients to reveal sub-types of Long-COVID,<sup><a href="https://paperpile.com/c/ezAC9X/uehG">6</a></sup> and
 Anzalone et al. found higher hospitalization and mortality in rural communities.<sup><a href="https://paperpile.com/c/ezAC9X/oxxQ">7</a></sup> These are but a small sample of work produced by researchers participating in N3C.
@@ -83,10 +84,6 @@ Institutions that contribute data to N3C gain more than recognition–contributi
 Finally, N3C’s governance structures may be of interest to other organizations embarking on large-scale, team-science efforts. Chapter [X](#governance-leadership-operations-structures) introduces these perspectives.
 
 Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external helpdesk, or just stopping by office hours. More information on these latter two options may be found in Chapter [](#help-and-support).
-
-
-    3.	[Mehta, H. B. et al. Use of Hydroxychloroquine, Remdesivir, and Dexamethasone Among Adults Hospitalized With COVID-19 in the United States : A Retrospective Cohort Study. Ann. Intern. Med. 174, 1395–1403 (2021).](http://paperpile.com/b/ezAC9X/KiaL)
-
 
     5.	[Yang, X. et al. Associations between HIV infection and clinical spectrum of COVID-19: a population level analysis based on US National COVID Cohort Collaborative (N3C) data. Lancet HIV 8, e690–e700 (2021).](http://paperpile.com/b/ezAC9X/eFk3)
 

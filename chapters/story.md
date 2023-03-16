@@ -10,18 +10,29 @@ author:
     attributes:
       corresponding: true
 
+  - name: Sharon Patrick
+    affiliation: West Virginia Clinical and Translational Science Institute
+    affiliation-url: https://www.wvctsi.org/
+    email: patricks@hsc.wvu.edu
+    orcid: 0000-0001-6535-2013
+
   - name: Alfred H Anzalone
     affiliation: University of Nebraska Medical Center
     affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
     email: alfred.anzalone@unmc.edu
     orcid: 0000-0002-3212-7845
 
+  - name: Shawn O'Neil
+    affiliation: University of Colorado Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: shawn@tislab.org
+    orcid: 0000-0001-6220-7080
 # reference-location: margin
 ---
 
 # A Research Story {#sec-story}
 
-**Additional Contributors**: Sharon Patrick[{{< fa brands orcid size=xs >}}](https://orcid.org/0000-0001-6535-2013), Shawn O'Neil[{{< fa brands orcid size=xs >}}](https://orcid.org/0000-0001-6220-7080)
+**Chapter Leads**: Will Beasley, Jerrod Anzalone
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 

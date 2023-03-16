@@ -38,7 +38,7 @@ lightbox: auto
 
 # Help and Support {#sec-support}
 
-**Chapter Leads**: Shawn O'Neil & Saad Ljazouli
+**Chapter Leads**: Shawn O'Neil, Saad Ljazouli
 
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 

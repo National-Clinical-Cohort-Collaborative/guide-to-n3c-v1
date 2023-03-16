@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/research-story.html" rel="next">
+<link href="../chapters/story.html" rel="next">
 <link href="../index.html" rel="prev">
 <link href="../images/n3c-logo-circle-large-0.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -98,6 +98,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </script>
 
 
+<link rel="stylesheet" href="../assets/font-awesome.css">
 <meta name="citation_title" content="[[1]{.chapter-number}&nbsp; [Introduction]{.chapter-title}]{#sec-intro .quarto-section-identifier}">
 <meta name="citation_author" content="Karen Crowley">
 <meta name="citation_author" content="Shawn O&amp;amp;#039;Neil">
@@ -209,7 +210,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/research-story.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a>
+  <a href="../chapters/story.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -239,17 +240,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a>
+  <a href="../chapters/access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/data-understanding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></a>
+  <a href="../chapters/understanding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/enclave-tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a>
+  <a href="../chapters/tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -279,12 +280,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/machine-learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Machine Learning</span></a>
+  <a href="../chapters/ml.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Machine Learning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/enclave-advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Advanced Enclave Coding Techniques</span></a>
+  <a href="../chapters/advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Advanced Enclave Coding Techniques</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -374,6 +375,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 </header>
 
+<p><strong>Chapter Leads</strong>: Karen Crowley, Shawn O’Neil</p>
 <section id="sec-intro-mission" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="sec-intro-mission"><span class="header-section-number">1.1</span> Mission</h2>
 <p>The National COVID Cohort Collaborative, or N3C, is an open-science community stewarded by the National Center for Data To Health (CD2H) and the NIH National Center for Advancing Translational Sciences (NCATS), with significant contributions from many partners including the Clinical and Translational Science Awards (CTSA) program, Centers for Translational Research (CTRs), and thousands of researchers from hundreds of participating institutions in the US and abroad.</p>
@@ -382,29 +384,29 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-intro-cdm" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="sec-intro-cdm"><span class="header-section-number">1.2</span> Common Data Models and N3C</h2>
 <p>In recent years, the common solution to these issues have been the creation of <em>Common Data Models</em> (CDMs). A Common Data Model is an agreed-upon structure and format for databases containing clinical information, into which diverse organizational EHR databases can be standardized for research purposes. Even so, healthcare organizations are reluctant to share their data directly, because the risks associated with data breaches for protected health information (PHI) defined by Health Information Portability and Accountability Act (HIPAA) are high. As a result, several groups of healthcare and research organizations have formed <em>federated</em> research networks, where each organization in a network translates some subset of its data into an agreed-upon common data model, and affiliated researchers can then write queries intended for data in that format. Examples of such federated networks include PCORNet, i2b2, and OHDSI, each of which utilize their own common data model. In a federated model, data queries are generated by researchers, but executed locally by the data owners and only summarized or specifically requested results are sent back to researchers. This ensures protection for the patient data (which never leaves the boundaries of any individual organization), but prevents exploratory data investigation and other techniques (like many machine-learning methods) which require direct access to the totality of the data.</p>
-<div id="fig-intro-siloed" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-intro-010-siloed" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/intro/fig-01-siloed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A visual representation of disparate, non-compatible EHR databases across the United States."><img src="images/intro/fig-01-siloed.png" class="img-fluid figure-img" alt="A visual representation of disparate, non-compatible EHR databases across the United States."></a></p>
+<p><a href="images/intro/fig-intro-010-siloed.png" class="lightbox" title="A visual representation of disparate, non-compatible EHR databases across the United States." data-gallery="quarto-lightbox-gallery-1"><img src="images/intro/fig-intro-010-siloed.png" class="img-fluid figure-img" alt="A visual representation of disparate, non-compatible EHR databases across the United States."></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1.1: A visual representation of disparate, non-compatible EHR databases across the United States.</figcaption><p></p>
 </figure>
 </div>
 <p>Driven by the imperative of addressing COVID-19, in concert with the use of a FedRAMP-certified cloud-based analysis ecosystem we call the N3C Data Enclave,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> N3C is partnering with EHR data providers across the nation to collect billions of EHR data points for millions of patients with and without COVID-19 in a single, secure, accessible database for research use. In this centralized model, researchers have direct access to the entirety of the data to support complex analyses including AI and other machine learning techniques. N3C simultaneously moderates controlled access to these data by research teams from across the country (and beyond), including from private companies, community colleges, universities, medical schools, and government entities. While data cannot be exported from the Enclave, published results can be after an export review (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a>).</p>
-<p>Like federated research networks, N3C also uses a common data model, known as OMOP, chosen for its strong community support and open nature, support of scientific use cases, and availability of tools for translating and working with data (<a href="data-understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="enclave-tools.html"><span>Chapter&nbsp;8</span></a> discuss OMOP in more detail).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> To rapidly collect data from around the country, N3C leverages the existing work data owners have already done to convert their organization-unique data to one of a handful of N3C-supported “source” common data models: PCORNet, i2b2, TriNetX, ACT, and OMOP. A potential data partner with data in PCORNet format, for example, will locally run a set of N3C-generated “PCORNet to OMOP” translation scripts prior to transferring the result to N3C via a secure channel. The process of coalescing multiple such data payloads into a unified whole is known as <em>harmonization</em>, and is a complex task even after everything has been mapped to OMOP initially. Two overlapping teams of EHR data experts participate in this process: one works closely with data partners to make it as easy as possible to contribute data to N3C, and another handles the post-ingestion harmonization and comprehensive quality checks of the incoming data.</p>
+<p>Like federated research networks, N3C also uses a common data model, known as OMOP, chosen for its strong community support and open nature, support of scientific use cases, and availability of tools for translating and working with data (<a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a> discuss OMOP in more detail).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> To rapidly collect data from around the country, N3C leverages the existing work data owners have already done to convert their organization-unique data to one of a handful of N3C-supported “source” common data models: PCORNet, i2b2, TriNetX, ACT, and OMOP. A potential data partner with data in PCORNet format, for example, will locally run a set of N3C-generated “PCORNet to OMOP” translation scripts prior to transferring the result to N3C via a secure channel. The process of coalescing multiple such data payloads into a unified whole is known as <em>harmonization</em>, and is a complex task even after everything has been mapped to OMOP initially. Two overlapping teams of EHR data experts participate in this process: one works closely with data partners to make it as easy as possible to contribute data to N3C, and another handles the post-ingestion harmonization and comprehensive quality checks of the incoming data.</p>
 </section>
 <section id="sec-intro-enclave" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="sec-intro-enclave"><span class="header-section-number">1.3</span> The N3C “Enclave” and Data Access</h2>
 <p>Once harmonized and stored in the secure Enclave, the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.</p>
-<div id="fig-intro-harmonized" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-intro-intro-harmonized" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/intro/fig-02-harmonized.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A visual representation of N3C’s data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave."><img src="images/intro/fig-02-harmonized.png" class="img-fluid figure-img" alt="A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave."></a></p>
+<p><a href="images/intro/fig-intro-020-harmonized.png" class="lightbox" title="A visual representation of N3C’s data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave." data-gallery="quarto-lightbox-gallery-2"><img src="images/intro/fig-intro-020-harmonized.png" class="img-fluid figure-img" alt="A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave."></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1.2: A visual representation of N3C’s data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave.</figcaption><p></p>
 </figure>
 </div>
 <p>Mere access to the Enclave, however, doesn’t automatically provide access to any of the protected data itself (although we do make other, publicly-available datasets available with minimal restriction for practice and learning purposes). Multiple “levels” of the data are available with different anonymization techniques applied, facilitating “just enough” access to research teams depending on their needs and ability to access protected health information. Accessing the most secure level, for example, requires obtaining approval by an Institutional Review Board (IRB) who validates the appropriateness of human subjects research, while the lowest level is heavily anonymized and accessible by private individuals (citizen scientists) with only certain legal and training requirements.</p>
 <p>Because effective analysis of EHR data requires a diverse set of skills–especially clinical and data science/statistical expertise–N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well. As of February 2023, dozens of these “<a href="https://covid.cd2h.org/domain-teams">Domain Teams</a>” have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations. Over seventy data partners provide EHR data for 17 million patients (a third of whom have had COVID-19), representing 10.5 billion lab results, 3.5 billion medication records, 2 billion clinical observations, and 1 billion clinical visits. For up-to-date information on these numbers and more, visit our dashboard at <a href="https://covid.cd2h.org/dashboard" class="uri">https://covid.cd2h.org/dashboard</a>.</p>
-<div id="fig-intro-summary-stats" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-intro-030-summary-stats" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/intro/fig-03-summary-stats.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology."><img src="images/intro/fig-03-summary-stats.png" class="img-fluid figure-img" alt="Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology."></a></p>
+<p><a href="images/intro/fig-intro-030-summary-stats.png" class="lightbox" title="Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology." data-gallery="quarto-lightbox-gallery-3"><img src="images/intro/fig-intro-030-summary-stats.png" class="img-fluid figure-img" alt="Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology."></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1.3: Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology.</figcaption><p></p>
 </figure>
 </div>
@@ -415,9 +417,9 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <h3 data-number="1.4.1" class="anchored" data-anchor-id="sec-intro-next-researchers"><span class="header-section-number">1.4.1</span> For Researchers</h3>
 <p>So, why should you get involved with N3C? First and foremost, N3C provides an opportunity to participate in impactful team science. Investigators with expertise in multiple domains come together across organizational boundaries to understand and address the impact of COVID-19 across the United States. Dozens of N3C-supported publications span the gamut of research: <span class="citation" data-cites="pfaff_2022a">E. R. Pfaff et al. (<a href="../references.html#ref-pfaff_2022a" role="doc-biblioref">2022</a>)</span> applied machine-learning methods to understand important predictive factors for Long-COVID, and <span class="citation" data-cites="sharafeldin_2021">Sharafeldin et al. (<a href="../references.html#ref-sharafeldin_2021" role="doc-biblioref">2021</a>)</span> identified demographic and clinical factors contributing to mortality risk in cancer patients. <span class="citation" data-cites="mehta_2021">Mehta et al. (<a href="../references.html#ref-mehta_2021" role="doc-biblioref">2021</a>)</span> studied the use of hydroxychloroquine, remdesivir, and dexamethasone over time at multiple sites, revealing how treatment guidelines evolve in response to updated information over time. <span class="citation" data-cites="sun_2022">Sun et al. (<a href="../references.html#ref-sun_2022" role="doc-biblioref">2022</a>)</span> studied breakthrough infections after vaccination, <span class="citation" data-cites="yang_2021">Yang et al. (<a href="../references.html#ref-yang_2021" role="doc-biblioref">2021</a>)</span> evaluated COVID-19 outcomes in HIV patients, <span class="citation" data-cites="reese_2023">Reese et al. (<a href="../references.html#ref-reese_2023" role="doc-biblioref">2023</a>)</span> clustered patients to reveal sub-types of Long-COVID, and <span class="citation" data-cites="anzalone_2023">Anzalone et al. (<a href="../references.html#ref-anzalone_2023" role="doc-biblioref">2023</a>)</span> found higher hospitalization and mortality in rural communities. These are but a small sample of work produced by researchers participating in N3C.</p>
 <p>This range of work is only possible by the diversity of interests and expertise researchers bring. Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure data enclave. N3C supports team science in a variety of ways. Domain Teams, for example, serve to connect groups with similar interests for peer support, research coordination, and collaboration building. While most Domain Teams are clinically oriented (e.g.&nbsp;the Pregnancy Domain Team), others are more general (e.g.&nbsp;the Machine Learning Domain Team). <a href="onboarding.html"><span>Chapter&nbsp;5</span></a> covers Domain Teams in more detail. N3C provides a number of training and support venues, including regular office hours, training modules, and of course this book. See <a href="support.html"><span>Chapter&nbsp;11</span></a> for more information on these topics.</p>
-<p>Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information. Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see <a href="lifecycle.html"><span>Chapter&nbsp;3</span></a>), which supports sophisticated filtering and querying (<a href="data-understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="enclave-tools.html"><span>Chapter&nbsp;8</span></a>). Other data are available as well, including publicly-available datasets (e.g.&nbsp;from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (Chapter <a href="not-sure">QQQ</a>).</p>
-<p>Big data is of little value without powerful analysis tools. Fortunately, N3C’s enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two. Backed by the high-performance distributed-computing framework Apache Spark, researchers can include billions of rows of data in a single analysis. Graphical tools are also available for those without coding expertise, and the N3C community generates reusable code and datasets to pave the way for others. All of these tools are cloud-hosted, so researchers only need to bring a web browser. For information on these topics, see <a href="enclave-tools.html"><span>Chapter&nbsp;8</span></a>.</p>
-<p>Finally, N3C has worked hard to make these resources secure <em>and</em> accessible. Enclave access requires coverage by a Data Use Agreement, which hundreds of institutions across the US and beyond have signed on behalf of all their employees and students. Data itself is accessed via a guided Data Use Request form in the enclave, and researchers can invite others to their projects at any time. See <a href="onboarding.html"><span>Chapter&nbsp;5</span></a> and <a href="data-access.html"><span>Chapter&nbsp;6</span></a> for details.</p>
+<p>Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information. Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see <a href="lifecycle.html"><span>Chapter&nbsp;3</span></a>), which supports sophisticated filtering and querying (<a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a>). Other data are available as well, including publicly-available datasets (e.g.&nbsp;from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (Chapter <a href="not-sure">QQQ</a>).</p>
+<p>Big data is of little value without powerful analysis tools. Fortunately, N3C’s enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two. Backed by the high-performance distributed-computing framework Apache Spark, researchers can include billions of rows of data in a single analysis. Graphical tools are also available for those without coding expertise, and the N3C community generates reusable code and datasets to pave the way for others. All of these tools are cloud-hosted, so researchers only need to bring a web browser. For information on these topics, see <a href="tools.html"><span>Chapter&nbsp;8</span></a>.</p>
+<p>Finally, N3C has worked hard to make these resources secure <em>and</em> accessible. Enclave access requires coverage by a Data Use Agreement, which hundreds of institutions across the US and beyond have signed on behalf of all their employees and students. Data itself is accessed via a guided Data Use Request form in the enclave, and researchers can invite others to their projects at any time. See <a href="onboarding.html"><span>Chapter&nbsp;5</span></a> and <a href="access.html"><span>Chapter&nbsp;6</span></a> for details.</p>
 </section>
 <section id="sec-intro-next-institutions" class="level3" data-number="1.4.2">
 <h3 data-number="1.4.2" class="anchored" data-anchor-id="sec-intro-next-institutions"><span class="header-section-number">1.4.2</span> For Institutions</h3>
@@ -735,7 +737,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/research-story.html" class="pagination-link">
+      <a href="../chapters/story.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -744,10 +746,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.</div>
+    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":true,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":true});</script>
 
 
 

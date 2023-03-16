@@ -16,6 +16,20 @@ author:
     # email: sljazouli@palantir.com
     # orcid:
 
+  - name: Johanna Loomba
+    affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
+    affiliation-url: https://www.ithriv.org/directory
+    email: jjl4d@uvahealth.org
+    orcid: 0000-0003-3673-5423
+
+  - name: Lisa Eskenazi
+    affiliation: Johns Hopkins University
+    affiliation-url: https://www.jhu.edu/
+    # email: leskena2@jh.edu
+    # orcid:
+    attributes:
+      corresponding: true
+
 filters:
   - lightbox
 
@@ -24,7 +38,7 @@ lightbox: auto
 
 # Help and Support {#sec-support}
 
-**Additional Contributors**: Johanna Loomba, Lisa Eskenazi
+**Chapter Leads**: Shawn O'Neil & Saad Ljazouli
 
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 

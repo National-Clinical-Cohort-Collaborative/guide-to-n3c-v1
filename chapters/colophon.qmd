@@ -1,0 +1,15 @@
+# Colophon {.unnumbered}
+
+R Info
+------------------
+
+```{r}
+sessionInfo()
+```
+
+Quarto Info
+------------------
+
+```{r}
+quarto::quarto_inspect()
+```

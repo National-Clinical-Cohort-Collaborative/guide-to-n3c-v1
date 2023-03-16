@@ -15,7 +15,7 @@ author:
     orcid: 0000-0003-3673-5423
 
 filters:
-   - lightbox
+  - lightbox
 
 lightbox: auto
 ---

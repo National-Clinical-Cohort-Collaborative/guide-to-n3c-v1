@@ -1,72 +1,8 @@
 project:
   type: book
 
-book:
-  title: Guide to N3C
-  date: last-modified
-
-  editor:
-
-    - name: William H Beasley
-      affiliation: University of Oklahoma Health Sciences Center
-      affiliation-url: https://ouhsc.edu/bbmc/
-      email: wibeasley@hotmail.com
-      orcid: 0000-0002-5613-5006
-
-    - name: Shawn O'Neil
-      affiliation: University of Colorado, Anschutz
-      affiliation-url: https://oneilsh.github.io/
-      email: oneilsh@gmail.com
-      orcid: 0000-0001-6220-7080
-
-  # logo: images/n3c-logo-circle-large-0.png
-  # logo: images/logo.png
-  # favicon: images/logo.png
-  cover-image: images/logo.png
-  cover-image-alt: images/n3c-logo-circle-large-0.png
-  favicon: images/n3c-logo-circle-large-0.png
-
-  page-footer:
-    left: |
-      <a href="https://ncats.nih.gov/n3c/">N3C</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>
-    right: |
-      Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.
-  repo-url: https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1
-  repo-branch: main
-  repo-actions: [edit, issue, source]
-  sharing: [twitter, facebook]
-  downloads: [pdf, epub]
-
-  chapters:
-  - index.qmd
-
-  - part: Getting Started
-    chapters:
-    - chapters/intro.md
-    - chapters/research-story.md
-    - chapters/lifecycle.md
-    - chapters/governance.md
-    - chapters/onboarding.md
-
-  - part: Investigating
-    chapters:
-    - chapters/data-access.md
-    - chapters/data-understanding.md
-    - chapters/enclave-tools.md
-    - chapters/practices.md
-    - chapters/publishing.md
-
-  - part: Special Topics
-    chapters:
-    - chapters/support.md
-    - chapters/machine-learning.md
-    - chapters/enclave-advanced.md
-    - chapters/examples.md
-    # - chapters/lightbox.qmd
-
-  - part: Back Matter
-    chapters:
-    - references.qmd
+bibliography: references.bib
+google-scholar: true
 
 format:
   html:
@@ -74,12 +10,69 @@ format:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
     link-external-newwindow: true
-
-
   pdf:
     documentclass: scrreprt
   epub:
     cover-image: images/logo.png
 
-bibliography: references.bib
-google-scholar: true
+book:
+  title: Guide to N3C
+  date: last-modified
+
+  # logo: images/n3c-logo-circle-large-0.png
+  # logo: images/logo.png
+  # favicon: images/logo.png
+  cover-image: images/logo.png
+  cover-image-alt: images/n3c-logo-circle-large-0.png
+  favicon: images/n3c-logo-circle-large-0.png
+  repo-url: https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  sharing: [twitter, facebook]
+  downloads: [pdf, epub]
+  google-analytics: G-5F685V8M7X
+
+  page-footer:
+    left: |
+      <a href="https://ncats.nih.gov/n3c/">N3C</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>
+    right: |
+      Part of <a href="https://covid.cd2h.org//">NIH NCATS</a>.
+
+  editor:
+    - name: William H Beasley
+      affiliation: University of Oklahoma Health Sciences Center
+      affiliation-url: https://ouhsc.edu/bbmc/
+      email: wibeasley@hotmail.com
+      orcid: 0000-0002-5613-5006
+    - name: Shawn O'Neil
+      affiliation: University of Colorado, Anschutz
+      affiliation-url: https://oneilsh.github.io/
+      email: oneilsh@gmail.com
+      orcid: 0000-0001-6220-7080
+
+  chapters:
+  - index.qmd
+  - part: Getting Started
+    chapters:
+    - chapters/intro.md
+    - chapters/research-story.md
+    - chapters/lifecycle.md
+    - chapters/governance.md
+    - chapters/onboarding.md
+  - part: Investigating
+    chapters:
+    - chapters/data-access.md
+    - chapters/data-understanding.md
+    - chapters/enclave-tools.md
+    - chapters/practices.md
+    - chapters/publishing.md
+  - part: Special Topics
+    chapters:
+    - chapters/support.md
+    - chapters/machine-learning.md
+    - chapters/enclave-advanced.md
+    - chapters/examples.md
+    # - chapters/lightbox.qmd
+  - part: Back Matter
+    chapters:
+    - references.qmd

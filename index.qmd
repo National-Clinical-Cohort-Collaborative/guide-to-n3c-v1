@@ -20,9 +20,15 @@ Platform
 
 As the chapters are being written, talk to the chapter's Lead Author to learn if it's being written in GitHub or Google Docs.  Eventually all Google Docs chapters will be translated to Markdown.  Once a chapter has been finally converted to Markdown...
 
+### Minor Changes
+
 To make small changes like spelling corrections, we recommend editing the source directly in GitHub.  It handles the details without your knowledge (like starting a fork and prompting your pull request).  From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/), click on the "Edit this page <i class="fab fa-github" aria-hidden="true"></i>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
+### Larger Changes and Additions
+
 Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.  We suggest [Visual Studio Code](https://code.visualstudio.com/) or [RStudio](https://www.rstudio.com/products/rstudio/).
+
+### Details
 
 You don't have to understand the rest to contribute, but for those interested:
 

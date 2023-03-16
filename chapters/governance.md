@@ -66,7 +66,7 @@ Seven principles summarize the Community Guiding Principles:
 1. **Security**: All activities are conducted in a secure, controlled access cloud-based environment and are recorded for auditing and attribution purposes.
 1. **Mutual respect**: Communications should be professional, concise, clear, and relevant. Follow proper communication etiquette articulated below. Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.
 
-![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-governance-01-shared.png){#fig-governance-01-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
+![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-governance-010-shared.png){#fig-governance-010-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 
 ## Ethical oversight {#sec-governance-ethics}
 
@@ -90,13 +90,13 @@ First-time users wishing to access N3C must verify that their institution has ex
 
 There are three levels of data access commensurate with the sensitivity of the data. See @sec-access for more details about these levels.
 
-![Data Tiers](images/governance/fig-governance-02-tiers.png){#fig-governance-02-tiers fig-alt="Data Tiers"}
+![Data Tiers](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
 
 Access to each data level requires approval from the Data Access Committee. In addition, investigators requesting access to level 3 data must submit proof of IRB approval from their institution or an independent accredited IRB for their intended use. Note that PPRL data is only available by special request in level 3 projects with appropriate additional IRB approval.
 
 N3C governance includes considerations for protecting special populations and communities and respect for tribal sovereignty. N3C contains no Tribal affiliation. Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.
 
-![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-03-process.png){#fig-governance-03-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
+![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

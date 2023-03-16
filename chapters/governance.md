@@ -22,6 +22,8 @@ lightbox: auto
 
 # Governance, Leadership, and Operations Structures {#sec-governance}
 
+**Chapter Leads**: Christine Suver, Johanna Loomba
+
 ## Preamble {#sec-governance-preamble}
 
 N3C is more than simply a data enclave. It is a research community dedicated to facilitating collaborations and the rapid generation and dissemination of knowledge to help combat COVID-19. There were numerous innovations along the pathway to N3C. The novel governance procedures and structures described here may benefit other collaborative research efforts beyond the pandemic emergency response.

@@ -66,22 +66,22 @@ book:
   - part: Getting Started
     chapters:
     - chapters/intro.md
-    - chapters/research-story.md
+    - chapters/story.md
     - chapters/lifecycle.md
     - chapters/governance.md
     - chapters/onboarding.md
   - part: Investigating
     chapters:
-    - chapters/data-access.md
-    - chapters/data-understanding.md
-    - chapters/enclave-tools.md
+    - chapters/access.md
+    - chapters/understanding.md
+    - chapters/tools.md
     - chapters/practices.md
     - chapters/publishing.md
   - part: Special Topics
     chapters:
     - chapters/support.md
-    - chapters/machine-learning.md
-    - chapters/enclave-advanced.md
+    - chapters/ml.md
+    - chapters/advanced.md
     - chapters/examples.md
     # - chapters/lightbox.qmd
   - part: Back Matter

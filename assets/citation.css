@@ -1,0 +1,10 @@
+/* div.abstract-title {
+    visibility: hidden;
+  }
+
+  div.abstract-title:before {
+    content: "How to cite";
+    visibility: visible;
+  } */
+
+/* https://stackoverflow.com/a/75067754/1082435 */

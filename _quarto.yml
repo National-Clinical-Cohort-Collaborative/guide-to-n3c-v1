@@ -2,14 +2,21 @@ project:
   type: book
 
 bibliography: references.bib
+
 google-scholar: true
+
+# This is hack to make the
+# abstract: "Eder, Franz. 2022. *Politikwissenschaftliches Arbeiten: Eine Einführung*. Innsbruck: Institut für Politikwissenschaft, Universität Innsbruck. [https://doi.org/10.25651/4.2022.0001](https://doi.org/10.25651/4.2022.0001)."
 
 format:
   html:
     theme:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
+    # css: assets/citation.css
     link-external-newwindow: true
+    template-partials:
+      - title-block.html
   pdf:
     documentclass: scrreprt
   epub:
@@ -18,6 +25,8 @@ format:
 book:
   title: Guide to N3C
   date: last-modified
+  doi: 10.5281/zenodo.7306581
+  # subtitle: aaaaaaaaaaaaaaa
 
   # logo: images/n3c-logo-circle-large-0.png
   # logo: images/logo.png
@@ -31,6 +40,8 @@ book:
   sharing: [twitter, facebook]
   downloads: [pdf, epub]
   google-analytics: G-5F685V8M7X
+
+  # abstract: "Eder, Franz. 2022. *Politikwissenschaftliches Arbeiten: Eine Einführung*. Innsbruck: Institut für Politikwissenschaft, Universität Innsbruck. [https://doi.org/10.25651/4.2022.0001](https://doi.org/10.25651/4.2022.0001)."
 
   page-footer:
     left: |
@@ -76,3 +87,4 @@ book:
   - part: Back Matter
     chapters:
     - references.qmd
+    # - chapters/colophon.qmd

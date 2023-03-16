@@ -22,6 +22,8 @@ lightbox: auto
 
 # Governance, Leadership, and Operations Structures {#sec-governance}
 
+**Chapter Leads**: Christine Suver, Johanna Loomba
+
 ## Preamble {#sec-governance-preamble}
 
 N3C is more than simply a data enclave. It is a research community dedicated to facilitating collaborations and the rapid generation and dissemination of knowledge to help combat COVID-19. There were numerous innovations along the pathway to N3C. The novel governance procedures and structures described here may benefit other collaborative research efforts beyond the pandemic emergency response.
@@ -66,7 +68,7 @@ Seven principles summarize the Community Guiding Principles:
 1. **Security**: All activities are conducted in a secure, controlled access cloud-based environment and are recorded for auditing and attribution purposes.
 1. **Mutual respect**: Communications should be professional, concise, clear, and relevant. Follow proper communication etiquette articulated below. Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.
 
-![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-01-shared.png){#fig-01-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
+![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-governance-010-shared.png){#fig-governance-010-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 
 ## Ethical oversight {#sec-governance-ethics}
 
@@ -86,17 +88,17 @@ A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_A
 
 ### Data Access by Researchers {#sec-governance-access}
 
-First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the Community Guiding Principles (described below) and complete a designated [NIH Information Security and Information Management TrainingNIH data management and security training](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-data-access for details.)
+First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the Community Guiding Principles (described below) and complete a designated [NIH Information Security and Information Management TrainingNIH data management and security training](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-access for details.)
 
-There are three levels of data access commensurate with the sensitivity of the data. See @sec-data-access for more details about these levels.
+There are three levels of data access commensurate with the sensitivity of the data. See @sec-access for more details about these levels.
 
-![Data Tiers](images/governance/fig-02-tiers.png){#fig-02-tiers fig-alt="Data Tiers"}
+![Data Tiers](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
 
 Access to each data level requires approval from the Data Access Committee. In addition, investigators requesting access to level 3 data must submit proof of IRB approval from their institution or an independent accredited IRB for their intended use. Note that PPRL data is only available by special request in level 3 projects with appropriate additional IRB approval.
 
 N3C governance includes considerations for protecting special populations and communities and respect for tribal sovereignty. N3C contains no Tribal affiliation. Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.
 
-![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-03-process.png){#fig-03-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
+![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

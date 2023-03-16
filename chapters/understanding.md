@@ -15,7 +15,7 @@ author:
     # orcid:
 ---
 
-# Understanding the Data {#sec-data-understanding}
+# Understanding the Data {#sec-understanding}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

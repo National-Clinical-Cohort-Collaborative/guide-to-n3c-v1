@@ -29,7 +29,7 @@ author:
 
 # Onboarding, Enclave Access, N3C Team Science {#sec-onboarding}
 
-**Additional Contributors:**
+**Chapter Leads**: Sharon Patrick, Suzanne McCahan, & Jonathan Emery
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

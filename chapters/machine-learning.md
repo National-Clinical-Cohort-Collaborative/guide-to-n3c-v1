@@ -15,7 +15,7 @@ author:
     # orcid:
 ---
 
-# Machine Learning {#sec-machine-learning}
+# Machine Learning {#sec-ml}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

@@ -86,9 +86,9 @@ A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_A
 
 ### Data Access by Researchers {#sec-governance-access}
 
-First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the Community Guiding Principles (described below) and complete a designated [NIH Information Security and Information Management TrainingNIH data management and security training](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-data-access for details.)
+First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the Community Guiding Principles (described below) and complete a designated [NIH Information Security and Information Management TrainingNIH data management and security training](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-access for details.)
 
-There are three levels of data access commensurate with the sensitivity of the data. See @sec-data-access for more details about these levels.
+There are three levels of data access commensurate with the sensitivity of the data. See @sec-access for more details about these levels.
 
 ![Data Tiers](images/governance/fig-02-tiers.png){#fig-02-tiers fig-alt="Data Tiers"}
 

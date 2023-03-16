@@ -15,7 +15,7 @@ author:
     # orcid:
 ---
 
-# Getting & Managing Data Access {#sec-data-access}
+# Getting & Managing Data Access {#sec-access}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at

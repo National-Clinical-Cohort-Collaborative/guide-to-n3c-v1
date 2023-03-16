@@ -76,4 +76,3 @@ book:
   - part: Back Matter
     chapters:
     - references.qmd
-    - chapters/colophon.qmd

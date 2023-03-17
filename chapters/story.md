@@ -10,7 +10,7 @@ author:
     attributes:
       corresponding: true
 
-  - name: Alfred H Anzalone
+  - name: A Jerrod Anzalone
     affiliation: University of Nebraska Medical Center
     affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
     email: alfred.anzalone@unmc.edu

@@ -10,17 +10,17 @@ author:
     attributes:
       corresponding: true
 
-  - name: Sharon Patrick
-    affiliation: West Virginia Clinical and Translational Science Institute
-    affiliation-url: https://www.wvctsi.org/
-    email: patricks@hsc.wvu.edu
-    orcid: 0000-0001-6535-2013
-
   - name: Alfred H Anzalone
     affiliation: University of Nebraska Medical Center
     affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
     email: alfred.anzalone@unmc.edu
     orcid: 0000-0002-3212-7845
+
+  - name: Sharon Patrick
+    affiliation: West Virginia Clinical and Translational Science Institute
+    affiliation-url: https://www.wvctsi.org/
+    email: patricks@hsc.wvu.edu
+    orcid: 0000-0001-6535-2013
 
   - name: Shawn O'Neil
     affiliation: University of Colorado Anschutz
@@ -36,7 +36,7 @@ author:
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
 
-If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
 
 :::{.callout-note icon=false}
 
@@ -68,7 +68,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Investigator**: Remind me what a DUR is?
 
-* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --your grant them permission to join yours.^[DURs are the topic of @sec-access.]
+* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
 
 * **I**: Umm, I think I got it.
 
@@ -143,7 +143,7 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
 
-1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involve to include only the relevant variables among the qualifying patients.
+1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involved to include only the relevant variables among the qualifying patients.
 
 {Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
 

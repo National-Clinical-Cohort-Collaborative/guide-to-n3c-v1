@@ -18,6 +18,11 @@ format:
     link-external-newwindow: true
     template-partials:
       - title-block.html
+    filters:
+    - lightbox
+    lightbox:
+      match: auto
+      effect: zoom
   pdf:
     documentclass: scrreprt
   epub:

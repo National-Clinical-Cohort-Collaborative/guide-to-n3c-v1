@@ -40,7 +40,7 @@ If you are starting a project by yourself, you'll likely be able to recruit coll
 
 :::{.callout-note icon=false}
 
-## Voice of Morgan Freeman
+## Voice of Narrator
 
 Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?".  Based on the meds' relationships with other diseases, you expect there is a modest improvement.  But in order to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough meeting the inclusion criteria.  In fact, no single institution's EMR has enough.
 
@@ -49,13 +49,15 @@ Yesterday you attended a local N3C presentation and became interested because it
 
 {Should we use 2nd person or 3rd person?}
 
+![Path of a typical N3C project](images/story/fig-story-010-path.png){#fig-story-010-path fig-alt="Path of a typical N3C"}
+
 ## Onboarding {#sec-story-onboarding}
 
 The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
 
-## Voice of someone like Bill Kurtis, but without the connotation of murder
+## Voice of Narrator
 
 The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
@@ -94,7 +96,7 @@ If your team needs someone, consider asking a relevant [domain team](onboarding.
 
 :::{.callout-note icon=false}
 
-## Voice of Jamie Foxx
+## Voice of Narrator
 
 Recruiting your crew...
 :::
@@ -103,7 +105,7 @@ Recruiting your crew...
 
 :::{.callout-note icon=false}
 
-## Voice of ...
+## Voice of Narrator
 
 Three weeks later...
 
@@ -174,7 +176,7 @@ OMOP originated in 2014 to facilitate the detection of small but significant sid
 
 :::{.callout-note icon=false}
 
-## Voice of Sam Elliot
+## Voice of Narrator
 
 Nearing the trail head...
 :::

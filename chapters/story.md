@@ -49,6 +49,8 @@ Yesterday you attended a local N3C presentation and became interested because it
 
 {Should we use 2nd person or 3rd person?}
 
+![Path of a typical N3C project](images/story/fig-story-010-path.png){#fig-story-010-path fig-alt="Path of a typical N3C"}
+
 ## Onboarding {#sec-story-onboarding}
 
 The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.

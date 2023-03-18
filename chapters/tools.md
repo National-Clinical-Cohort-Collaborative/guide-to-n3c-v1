@@ -278,8 +278,12 @@ Palantir Documentation: [Data Lineage Overview](https://www.palantir.com/docs/fo
 * Visualize a data pipeline and its details
 * Facilitate dataset build scheduling
 
-<!-- ![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.gif){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"} -->
+::: {.content-visible unless-format="pdf"}
+![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.gif){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
+:::
 
-TODO: Figure for  Example Data Lineage Visualization  I can't get the gif to work when rendering to pdf.
+::: {.content-visible when-format="pdf"}
+![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.png){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
+:::
 
 Whether you're creating a data pipeline for your research project or investigating one from the Knowledge Store, you'll likely want to holistically assess the dataset's origins with the Data Lineage tool shown in @fig-tools-160-data-lineage. The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants.  Views are enhanced with color-coding and grouping.  The Data Lineage tool allows you to view details such as a dataset's schema, last build datetime, and the code that generated the dataset. You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis. The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules. Palantir Documentation provides [additional instructions and descriptions](https://www.palantir.com/docs/foundry/data-lineage/overview/) of Data Lineage.

@@ -29,11 +29,6 @@ author:
     # orcid:
     attributes:
       corresponding: true
-
-filters:
-  - lightbox
-
-lightbox: auto
 ---
 
 # Help and Support {#sec-support}

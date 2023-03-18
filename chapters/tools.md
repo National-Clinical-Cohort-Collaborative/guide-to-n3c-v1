@@ -37,13 +37,6 @@ author:
     affiliation-url: https://healthinformatics.umn.edu/staff/steven-johnson
     email: joh06288@umn.edu
     orcid: 0000-0002-2983-6384
-
-filters:
-  - lightbox
-
-lightbox:
-  match: auto
-  effect: zoom
 ---
 
 # Introducing Enclave Analysis Tools {#sec-tools}

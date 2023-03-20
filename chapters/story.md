@@ -12,7 +12,7 @@ author:
 
   - name: A Jerrod Anzalone
     affiliation: University of Nebraska Medical Center
-    affiliation-url: https://gpctr.unmc.edu/cores/biostatistics-epidemiology-research-design/
+    affiliation-url: https://gpctr.unmc.edu/
     email: alfred.anzalone@unmc.edu
     orcid: 0000-0002-3212-7845
 
@@ -27,6 +27,7 @@ author:
     affiliation-url: https://oneilsh.github.io/
     email: shawn@tislab.org
     orcid: 0000-0001-6220-7080
+
 # reference-location: margin
 ---
 
@@ -34,9 +35,11 @@ author:
 
 **Chapter Leads**: Will Beasley, Jerrod Anzalone
 
-Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.  This path typically takes at least 6 months and 6 collaborators.  It is difficult to do by yourself, but fortunately the N3C has attracted a large and diverse set of researchers.  Coupled with a large and diverse set of patients, it is possible to complete a research project within a year.
+Now that we have introduced N3C and described its motivation and importance, we’ll walk through the lifecycle of an example project from onboarding to publishing. This path typically takes at least 6 months and 6 collaborators. It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.
 
-If you are starting a project by yourself, you'll likely be able to recruit collaborators with a complementary set of skills (in addition to the resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You’ll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities.
+
+![Anatomy of an N3C project](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Anatomy of an N3C Project"}
 
 :::{.callout-note icon=false}
 

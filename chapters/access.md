@@ -66,7 +66,7 @@ Notice in particular the columns for `data_partner_id` (a pseudo-random identifi
 
 Some other tables available with Level 3 data are specific to N3C; here's a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
 
-![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether th.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether th"}
+![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see [date shifting](#date-shifting)), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see [date shifting](#date-shifting)), and when their last submission was."}
 
 ### PPRL Data {#sec-access-background-pprl}
 

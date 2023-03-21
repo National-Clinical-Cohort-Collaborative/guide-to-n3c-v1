@@ -90,7 +90,7 @@ The N3C Data Enclave uses a fine-grained permissions model to manage researcher 
 
 Data management in the Enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
 
-![Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.'}
+![Project workspace browser. Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser. Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.'}
 
 Workspaces are used for multiple purposes. Some store the Level 1/2/3 data; the "LDS Release" workspace for example stores the tables for the Level 3 LDS data. (The Data Catalog provides a more efficient way to access these tables however, more on that below.) Some are used to store "external" datasets such as publicly-available US Census data (see @sec-understanding). The "N3C Training Area" workspace can be accessed by anyone as a place to practice on notional data (see @sec-publishing). Most, however, house research projects, and these are indicated with an `RP-XXXXXX` prefix.
 

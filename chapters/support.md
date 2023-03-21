@@ -150,7 +150,7 @@ N3C Community Notes is a within-enclave application where researchers can author
 
 The official platform documentation is a rich resource for details on applications, and includes many guides and how-tos. If you don't desire to read all of the documentation in detail, you should at least skim sections relevant to applications you use. The search function can find articles relevant to specific application features or techniques.
 
-![Palantir Documentation](images/support/fig-support-170-palantir-documentation.png){#fig-support-170-palantir-documentation width=75% fig-alt="Palantir Documentation"}
+![Foundry Documentation](images/support/fig-support-170-palantir-documentation.png){#fig-support-170-palantir-documentation width=75% fig-alt="Foundry Documentation"}
 
 ### Having Trouble? (Support) {#sec-support-training-trouble}
 
@@ -208,7 +208,7 @@ Domain Teams, covered in more detail in [other parts](#domain-teams) of this boo
 
 ## Data and Logic Liaisons {#sec-support-liaisons}
 
-Logic and Data Liaisons are teams contributing to the N3C mission through software development and user support, prioritizing the needs of [domain teams](#domain-teams) and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
+[Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of [Domain Teams](onboarding.md#domain-teams) and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
 
 ### Data Liaison Services {#sec-support-liaisons-data}
 

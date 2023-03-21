@@ -58,11 +58,11 @@ The generation of a computational phenotype overlaps with the generation of conc
 
 Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e. datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment.  Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions.  Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc.  Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C vetted concept sets and peer-reviewed code as a starter table.  You can then append this base fact table to include project-specific facts needed for analyses.  @fig-tools-060-ll-template-1 and @fig-tools-070-ll-template-2 in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation.  The generation of the original fact tables from raw OMOP tables can be done using Code Workbooks (@sec-tools-apps-workbook) or Code Repositories (@sec-tools-apps-repo).
 
-Data scientists and statisticians can then analyze the extracted and formatted fact tables.  This includes statistical tests, summary tables, visualizations, and reports for the team to discuss.  Data analysis is also a cyclical process with all team members engaged in assessing results and circling back to further refine the computational phenotype and concept sets if needed.  Depending on the type of analysis needed, [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Contour](tools.md#sec-tools-apps-contour) can be utilized at this step, followed by [Foundry's Notepad](tools.md#sec-tools-apps-notepad) for reporting out results for secure team dissemination within the Enclave environment.
+Data scientists and statisticians can then analyze the extracted and formatted fact tables.  This includes statistical tests, summary tables, visualizations, and reports for the team to discuss.  Data analysis is also a cyclical process with all team members engaged in assessing results and circling back to further refine the computational phenotype and concept sets if needed.  Depending on the type of analysis needed, [Code Workbooks](@sec-tools-apps-workbook) or [Contour](@sec-tools-apps-contour) can be utilized at this step, followed by [Foundry's Notepad](@sec-tools-apps-notepad) for reporting out results for secure team dissemination within the Enclave environment.
 
 Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the N3C Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see @sec-publishing).  The download request is meant to ensure no prohibited data is being downloaded as per the [N3C Data Download Policy](https://covid.cd2h.org/download) summarized in the Publishing and Sharing Your Work chapter. After approval, your results can be included in research outputs, such as publications, and then submitted to the Publication Review Committee (see @sec-publishing).  This step is necessary to ensure data are being reported properly in the context of the research project and that proper attribution is being given to all those who contributed to the success of the research, either directly or indirectly.  Upon approval, you are free to submit to the venue of choice and freely present the approved data to anyone at any time.  Data download requests are performed within the Enclave environment, followed by submitting a [Google Form to the Publication Review Committee](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&sa=D&source=docs&ust=1677168810532504&usg=AOvVaw12T-1ZD5cVj92DGadpr1IN).
 
-The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Palantir documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.  This chapter is best utilized along side the information provided in the next chapter, Best Practices and Important Data Considerations (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
+The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.  This chapter is best utilized along side the information provided in the next chapter, Best Practices and Important Data Considerations (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
 
 ## Using Concept Sets {#sec-tools-concepts}
 
@@ -154,7 +154,7 @@ Protocol Pad is the foundation for performing reproducible and repeatable scienc
 
 ### Contour {#sec-tools-apps-contour}
 
-Palantir Documentation: [Contour Overview](https://www.palantir.com/docs/foundry/contour/overview/)
+Foundry Documentation: [Contour Overview](https://www.palantir.com/docs/foundry/contour/overview/)
 
 * Programming-free analysis interface
 * Point-and-Click data analysis pipeline development
@@ -172,7 +172,7 @@ Figures or summary tables created in Contour can be exported to a dashboard with
 
 Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Enclave account" >}}
 
-Palantir Documentation: [Code Workbook Overview](https://www.palantir.com/docs/foundry/code-workbook/overview/)
+Foundry Documentation: [Code Workbook Overview](https://www.palantir.com/docs/foundry/code-workbook/overview/)
 
 * Graphical organization of logic
 * Simplification of code
@@ -184,7 +184,7 @@ Palantir Documentation: [Code Workbook Overview](https://www.palantir.com/docs/f
 * Workspace to reuse templatized logic
 * Exporting code to GitHub
 
-Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. @fig-tools-100-transforms-abstract shows an abstract version of a Code Workbook, while @fig-tools-110-transforms-example is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation _one or more tables are specified as the input_ and are transformed into a single output table (@fig-tools-100-transforms-abstract). Multiple transformations can also be strung together (@fig-tools-110-transforms-example) to create an analysis pipeline (see Palantir's [Anatomy of a Data Pipeline](https://www.palantir.com/docs/foundry/building-pipelines/overview/) module for more detailed information, as well as @sec-practices). In Code Workbook, _the primary and required output of a transformation is always a single table_; however, visualizations such as graphs and charts can also be generated and saved along the way.  Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.
+Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. @fig-tools-100-transforms-abstract shows an abstract version of a Code Workbook, while @fig-tools-110-transforms-example is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation _one or more tables are specified as the input_ and are transformed into a single output table (@fig-tools-100-transforms-abstract). Multiple transformations can also be strung together (@fig-tools-110-transforms-example) to create an analysis pipeline (see Foundry's [Anatomy of a Data Pipeline](https://www.palantir.com/docs/foundry/building-pipelines/overview/) module for more detailed information, as well as @sec-practices). In Code Workbook, _the primary and required output of a transformation is always a single table_; however, visualizations such as graphs and charts can also be generated and saved along the way.  Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.
 
 ![Abstracted view of data transforms](images/tools/fig-tools-100-transforms-abstract.png "image_tooltip"){#fig-tools-100-transforms-abstract fig-alt="Abstracted view of data transforms"}
 
@@ -217,7 +217,7 @@ Palantir has created extensive [documentation](https://www.palantir.com/docs/fou
 
 ### Code Repositories {#sec-tools-apps-repo}
 
-Palantir Documentation: [Code Repository Overview](https://www.palantir.com/docs/foundry/code-repositories/overview/)
+Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/foundry/code-repositories/overview/)
 
 * Production pipelines
 * Code reuse across projects
@@ -225,7 +225,7 @@ Palantir Documentation: [Code Repository Overview](https://www.palantir.com/docs
 
 ![Example Code Repository](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
 
-Code Repositories shown in @fig-tools-130-code-repo are available within the N3C enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline. Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates. Additional [differences between Code Repositories and Code Workbooks](https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/) can be found in the Palantir Documentation. Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an N3C Enclave account" >}}.
+Code Repositories shown in @fig-tools-130-code-repo are available within the N3C enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline. Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates. Additional [differences between Code Repositories and Code Workbooks](https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/) can be found in the Foundry Documentation. Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
 For any large analytic project, there are many pieces of code and other artifacts that should be shared between different components within the project.  Some code is useful enough that it should be shared across projects.  Code Repositories provide a standard mechanism for encapsulating reusable components and allowing them to be reused within projects.
 
@@ -235,11 +235,11 @@ Underlying the Code Repository is the Git version control system.  You can edit 
 * Submit the Code Repository to the Knowledge Store where it will then be visible to anyone who has Enclave access.
 * Publish the Code Repository to a public Github where the code will then become accessible to anyone outside the Enclave.
 
-More information on Code Repositories can be found in the [Palantir Documentation](https://www.palantir.com/docs/foundry/code-repositories/overview/) [@palantir_2023].
+More information on Code Repositories can be found in the [Foundry Documentation](https://www.palantir.com/docs/foundry/code-repositories/overview/) [@palantir_2023].
 
 ### Fusion {#sec-tools-apps-fusion}
 
-Palantir Documentation: [Fusion Sheet Overview](https://www.palantir.com/docs/foundry/fusion/overview/)
+Foundry Documentation: [Fusion Sheet Overview](https://www.palantir.com/docs/foundry/fusion/overview/)
 
 * Useful for writing back datasets for use within the Enclave
 * Leverage cell references and spreadsheet functions
@@ -255,7 +255,7 @@ Fusion provides many features familiar to other spreadsheet applications such as
 
 ### Notepad {#sec-tools-apps-notepad}
 
-Palantir Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry/notepad/overview/)
+Foundry Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry/notepad/overview/)
 
 * Note taking with ability to add embeds of the workflow
 * Documentation of pipelines or datasets
@@ -271,7 +271,7 @@ All embedded objects can be configured to remain static or refresh automatically
 
 ### Data Lineage (aka Monocle) {#sec-tools-apps-lineage}
 
-Palantir Documentation: [Data Lineage Overview](https://www.palantir.com/docs/foundry/data-lineage/overview/)
+Foundry Documentation: [Data Lineage Overview](https://www.palantir.com/docs/foundry/data-lineage/overview/)
 
 * Find datasets
 * Expand or hide a dataset's ancestors and descendants
@@ -286,4 +286,4 @@ Palantir Documentation: [Data Lineage Overview](https://www.palantir.com/docs/fo
 ![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.png){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
 :::
 
-Whether you're creating a data pipeline for your research project or investigating one from the Knowledge Store, you'll likely want to holistically assess the dataset's origins with the Data Lineage tool shown in @fig-tools-160-data-lineage. The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants.  Views are enhanced with color-coding and grouping.  The Data Lineage tool allows you to view details such as a dataset's schema, last build datetime, and the code that generated the dataset. You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis. The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules. Palantir Documentation provides [additional instructions and descriptions](https://www.palantir.com/docs/foundry/data-lineage/overview/) of Data Lineage.
+Whether you're creating a data pipeline for your research project or investigating one from the Knowledge Store, you'll likely want to holistically assess the dataset's origins with the Data Lineage tool shown in @fig-tools-160-data-lineage. The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants.  Views are enhanced with color-coding and grouping.  The Data Lineage tool allows you to view details such as a dataset's schema, last build datetime, and the code that generated the dataset. You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis. The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules. Foundry Documentation provides [additional instructions and descriptions](https://www.palantir.com/docs/foundry/data-lineage/overview/) of Data Lineage.

@@ -150,7 +150,7 @@ N3C Community Notes is a within-enclave application where researchers can author
 
 The official platform documentation is a rich resource for details on applications, and includes many guides and how-tos. If you don't desire to read all of the documentation in detail, you should at least skim sections relevant to applications you use. The search function can find articles relevant to specific application features or techniques.
 
-![Palantir Documentation](images/support/fig-support-170-palantir-documentation.png){#fig-support-170-palantir-documentation width=75% fig-alt="Palantir Documentation"}
+![Foundry Documentation](images/support/fig-support-170-palantir-documentation.png){#fig-support-170-palantir-documentation width=75% fig-alt="Foundry Documentation"}
 
 ### Having Trouble? (Support) {#sec-support-training-trouble}
 

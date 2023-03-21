@@ -3,7 +3,7 @@ author:
   - name: Shawn O'Neil
     affiliation: University of Colorado, Anschutz
     affiliation-url: https://oneilsh.github.io/
-    email: oneilsh@gmail.com
+    email: shawn@tislab.org
     orcid: 0000-0001-6220-7080
     attributes:
       corresponding: true
@@ -74,7 +74,7 @@ PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic d
 
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
-Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board, so this level of data is also available to other US-based organizations with the ability to work with an IRB (e.g., pharmaceutical companies).
+Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board, so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
 
 Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-lifecycle).
 
@@ -172,7 +172,7 @@ Requesting access to Level 2, De-Identified data requires additional information
 
 ![DUR Human Subjects Research Protection (HSRP) training attestation. HSPR training must have been completed within the last three years.](images/access/fig-access-120-dur-hsrp.png){#fig-access-120-dur-hsrp fig-alt="DUR Human Subjects Research Protection (HSRP) training attestation. HSPR training must have been completed within the last three years."}
 
-In addition to human subjects research protection training, you will need to consider whether your institution requires a letter of determination from your local IRB (Institutional Review Board) when using De-Identified data. If so, you'll be prompted to upload the letter as a PDF before you can submit the DUR.
+In addition to human subjects research protection training, you will need to consider whether your institution requires a letter of determination from your local IRB when using De-Identified data. If so, you'll be prompted to upload the letter as a PDF before you can submit the DUR.
 
 ![DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access.](images/access/fig-access-130-dur-level2-irb.png){#fig-access-130-dur-level2-irb fig-alt="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access."}
 

@@ -74,7 +74,7 @@ PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic d
 
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
-Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board (), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
+Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
 
 Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-lifecycle).
 

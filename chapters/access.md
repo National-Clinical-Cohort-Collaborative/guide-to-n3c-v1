@@ -86,9 +86,9 @@ PPRL data can be accessed alongside only Level 3 (LDS) data, and as such has the
 
 ## Workspaces, Permissions, and the Data Catalog {#sec-access-workspaces}
 
-The N3C data enclave uses a fine-grained permissions model to manage researcher access to protected data. While researchers are not able to modify these permissions themselves, understanding them will help in navigating the DUR process and subsequent work.
+The N3C Data Enclave uses a fine-grained permissions model to manage researcher access to protected data. While researchers are not able to modify these permissions themselves, understanding them will help in navigating the DUR process and subsequent work.
 
-Data management in the enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
+Data management in the Enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
 
 ![Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.'}
 
@@ -118,7 +118,7 @@ Theoretically a single researcher may have multiple outstanding DURs for the sam
 
 ## DUR Dashboards {#sec-access-dashboards}
 
-There are three primary dashboards used to create and manage DURs; all three are linked from the enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
+There are three primary dashboards used to create and manage DURs; all three are linked from the Enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
 
 ![Enclave homepage. Highlighted are the three DUR-related dashboards.](images/access/fig-access-050-dur-dashboards-home.png){#fig-access-050-dur-dashboards-home fig-alt="Enclave homepage. Highlighted are the three DUR-related dashboards."}
 
@@ -136,13 +136,13 @@ This first dashboard is really just the DUR form itself, and is used to request 
 
 ![New Data Use Request (DUR) form.](images/access/fig-access-060-new-dur.png){#fig-access-060-new-dur fig-alt="New Data Use Request (DUR) form."}
 
-Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
+Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the Enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
 
 The Research Project Rationale deserves special attention. This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request. The project rationale should describe for the DAC why data access is being requested in light of the goals of the research project. The rationale should include a justification for the level of data being requested, especially if requesting the Level 3 Limited Data Set (LDS). If your project doesn't require the accurate dates or full patient zip codes provided by Level 3 data, it will be rejected, or approved for the Level 2 data even though Level 3 was requested. Similarly, if requesting access to any [PPRL](#pprl) datasets the rationale should include why. (You will also need to have the PPRL data mentioned in your IRB letter of determination - see below.)
 
 ![DUR metadata fields.](images/access/fig-access-070-dur-metadata.png){#fig-access-070-dur-metadata fig-alt="DUR metadata fields."}
 
-The next questions pertain to potential collaborations. The "Please associate your project with an existing N3C Domain Team" prompts you to select a [domain team](#domain-teams) that best fits your project. Domain Teams are N3C working groups encompassing multiple research projects and are used to facilitate collaboration. Linking your project to a domain team this way in the enclave allows others to navigate domain teams and browse linked projects dynamically. It is possible to modify this linkage later, so if you aren't sure feel free to check the "need help choosing" check box.
+The next questions pertain to potential collaborations. The "Please associate your project with an existing N3C Domain Team" prompts you to select a [domain team](#domain-teams) that best fits your project. Domain Teams are N3C working groups encompassing multiple research projects and are used to facilitate collaboration. Linking your project to a domain team this way in the Enclave allows others to navigate domain teams and browse linked projects dynamically. It is possible to modify this linkage later, so if you aren't sure feel free to check the "need help choosing" check box.
 
 ![DUR Domain Teams and collaborator fields.](images/access/fig-access-080-dur-collaborators.png){#fig-access-080-dur-collaborators fig-alt="DUR Domain Teams and collaborator fields."}
 
@@ -194,11 +194,11 @@ Note that when requesting access to PPRL datasets, _both the Research Project Ra
 
 The Data Access Committee reviews all DURs. After a new project DUR is approved, a workspace is created inside the enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](#workspaces-permissions-data-catalog) above), and the submitting lead is given access to this project workspace. An email is also sent to the submitting lead with links to useful learning resources.
 
-The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks. The status of your DUR will be shown in the My Projects dashboard (below). If a submitted DUR has not received any update for longer than two weeks, you should submit a request for followup to the [enclave-external](#tickets-enclave-external) ticket support system.
+The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks. The status of your DUR will be shown in the My Projects dashboard (below). If a submitted DUR has not received any update for longer than two weeks, you should submit a request for followup to the [Enclave-external](#tickets-enclave-external) ticket support system.
 
 ## Explore Projects (DURs): Browse and Join Projects {#sec-access-explore}
 
-Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the enclave allows researchers to request to join projects that allow for it as collaborators.
+Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the Enclave allows researchers to request to join projects that allow for it as collaborators.
 
 First, let's explore the dashboard. The initial list of projects shown are "Projects to join" - these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration. Below this list are two expandable sections, "Projects to Explore" listing projects that do not allow requests to join, and "Operational Projects (N3C Technical Development)" listing DURs used by the [data ingestion and harmonization](#ingestion) teams and others.
 
@@ -216,7 +216,7 @@ As with new project DURs, the status of your submitted collaborator DURs can be 
 
 ## My Projects (DURs): DUR Invitations, Status, and Management for Leads {#sec-access-my}
 
-The My Projects dashboard, linked from the enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
+The My Projects dashboard, linked from the Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
 
 ![The My Projects dashboard.](images/access/fig-access-180-my-projects.png){#fig-access-180-my-projects fig-alt="The My Projects dashboard."}
 

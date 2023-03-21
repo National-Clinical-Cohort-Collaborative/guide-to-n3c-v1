@@ -29,7 +29,8 @@ format:
     cover-image: images/logo.png
 
 book:
-  title: "The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data"
+  title: "The Researcher's Guide to N3C"
+  subtitle: "A National Resource for Analyzing Real-World Health Data"
   date: last-modified
   doi: 10.5281/zenodo.7306581
   # subtitle: aaaaaaaaaaaaaaa

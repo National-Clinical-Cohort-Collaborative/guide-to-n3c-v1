@@ -80,7 +80,7 @@ Curated list of recommendations that should be considered before taking an analy
 
 * List of open issues to be addressed:
 
-* List of "Persistent Data Issues": <https://unite.nih.gov/workspace/documentation/product/n3c-info/data-issues>{{< fa lock size=2xs title="Link requires an N3C Enclave account" >}}
+* List of "Persistent Data Issues": <https://unite.nih.gov/workspace/documentation/product/n3c-info/data-issues>{{< fa lock title="Link requires an N3C Enclave account" >}}
 
 
 <!-- ---- N3C Ecosystem ------------------------------------------------------ -->

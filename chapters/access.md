@@ -21,7 +21,7 @@ N3C is strongly committed to patient privacy. After all, N3C is the steward for 
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter. The DUR form is only available inside the enclave, so enclave access is required to request data access. N3C registration and enclave access are covered in @sec-onboarding, so we won't cover those topics here.
 
-## Background: N3C Protected Data Levels
+## Background: N3C Protected Data Levels {#sec-access-background}
 
 Not all data in the enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g. US census data) are accessible by everyone with enclave access. These low-risk data are covered more in Chapters [6](#external-datasets) and @sec-publishing.
 
@@ -29,20 +29,20 @@ The harmonized EHR data that _do_ require an approved DUR to access are made ava
 
 In addition to the primary level 1, 2, and 3 datasets is "PPRL" data. PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information. These are only available alongside level 3 data as an optional add-on; we'll discuss PPRL in more detail below.
 
-### Level 3, Limited Data Set (LDS)
+### Level 3, Limited Data Set (LDS) {#sec-access-background-l3}
 
 Level 3, or LDS data is the most complete and protected (the term "limited data set" is defined by HIPAA and may contain a limited set of potentially identifying information).
 This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,^[There are some exceptions where five digit zip codes are not visible in level 3 data: zip codes represented by fewer than 20,000 patients are removed altogether; sometimes only the first three digits of the zip code are displayed (such as zips with a predominantly American Indian/Alaskan Native population and zip codes from participating institutions who only send the first three digits).] and accurate dates of events and services (except for dates of birth which are limited to month and year).
 ^[In actuality, a few data partners also perform small amounts of date shifting–randomly shifting all dates on a per-patient basis to further protect patient privacy–prior to sending their data to N3C. The manifest information (described below) indicates which data partners do so and the range of potential shift so researchers can remove data from these partners if they need highly-accurate date information.] Level 3 data are in the OMOP common data model, with some N3C-specific additions and conveniences, and are versioned as releases as described above.
 (OMOP and N3C-specific additions are covered in Chapter [6](#understanding-the-data).)
 
-### Level 2, De-Identified
+### Level 2, De-Identified {#sec-access-background-l2}
 
 Level 2 data, also known as De-Identified data, contains nearly the same information as the Level 3 data, but the two PHI-containing fields are further anonymized. Zip codes available in level 3 are truncated to just the first 3 digits, and all recorded dates are shifted randomly, where the range of the random shift is +/- 180 days. This is not as dramatic a research limitation as it may seem, because the random shift amount is determined _per patient_: all dates for a given patient are shifted by the same (unknown, random) amount, allowing identifying sets of patients who had, for example, a positive COVID-19 PCR test and within 14 days received a given drug treatment.^[Like Level 3 data, birth dates are only available at the year and month level, and these are similarly shifted along with other patient-associated dates. In Level 2 data birth date information is removed entirely for patients who are more than 90 years old, and a separate `is_age_90_or_older` column identifies these individuals as a group.] Level 2 data would not be appropriate for studies considering absolute timing, such as whether a patients' primary COVID infection occurred during the Delta wave. Such questions are best answered by the LDS data.
 
 The Level 2 data are also in OMOP format and versioned as releases. We'll forgo examples of notional data because the format is exactly the same as for Level 3, LDS data.
 
-### Level 1, Synthetic
+### Level 1, Synthetic {#sec-access-background-l1}
 
 Level 1, or Synthetic,^[The Synthetic data discussed here should not be confused with the notional (fake) datasets described in @sec-publishing]. These happen to have similar sounding names: SynPuf and Synthea.] data provide the most anonymous view of the harmonized data, and are quite different from the Level 2 and 3 datasets in both format and content. Rather, Level 1 data were _generated_ from a statistical model of a _researcher-defined subset_ of the Level 3 data. This means Level 1 data contain no real patient records at all, but only a synthetic derivative designed to be statistically similar. The generation process is handled by a private company, MDClone, whose proprietary algorithms also look for resulting information that are too similar to real patient information, potentially resulting in a loss of patient privacy. Such records are masked with "censored" values in the resulting dataset.
 
@@ -54,7 +54,7 @@ Level 1 datasets are generated from the most recent Level 3 release at the time 
 Update: As of mid-2022, N3C is no longer able to generate new synthetic datasets at researcher request. The previously-generated datasets are still available for use however, and gaining access to level 1 data provides access to all generated synthetic datasets.
 :::
 
-#### Example N3C OMOP Data Format
+#### Example N3C OMOP Data Format {#sec-access-background-l1-example}
 
 To give a sneak preview of the primary N3C data format, here's a snapshot of a few columns of notional (_fake_) data in OMOP format from the `condition_occurrence` table:
 
@@ -68,11 +68,11 @@ Some other tables available with Level 3 data are specific to N3C; here's a few 
 
 ![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether th.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether th"}
 
-### PPRL Data
+### PPRL Data {#sec-access-background-pprl}
 
 PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, _without_ revealing to any party except the data sources themselves any identifying information about the individual. While we won't describe how the process works here, researchers with enclave access can read more about it in Chapter @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the [Training Portal](#training-portal).
 
-## Level 1/2/3 (and PPRL) Availability
+## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
 Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board, so this level of data is also available to other US-based organizations with the ability to work with an IRB (e.g. pharmaceutical companies).
 
@@ -84,13 +84,13 @@ Since the registration process is non-trivial for those not affiliated with a re
 
 PPRL data can only be accessed alongside Level 3 (LDS) data, and as such has the same access availability. As we'll discuss below, there are special procedures for gaining access to PPRL data as part of a Level 3 access request.
 
-## Workspaces, Permissions, and the Data Catalog
+## Workspaces, Permissions, and the Data Catalog {#sec-access-workspaces}
 
 The N3C data enclave uses a fine-grained permissions model to manage researcher access to protected data. While researchers are not able to modify these permissions themselves, understanding them will help in navigating the DUR process and subsequent work.
 
 Data management in the enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
 
-![Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt="Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below."}
+![Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser. Note that the "Request access" buttons are not active and will suggest visiting the DUR dashboards described below.'}
 
 Workspaces are used for multiple purposes. Some store the Level 1/2/3 data; the "LDS Release" workspace for example stores the tables for the Level 3 LDS data. (The Data Catalog provides a more efficient way to access these tables however, more on that below.) Some are used to store "external" datasets such as publicly-available US Census data (see Chapter [X](#external-data)). The "N3C Training Area" workspace can be accessed by anyone as a place to practice on notional data (see @sec-publishing). Most, however, house research projects, and these are indicated with an `RP-XXXXXX` prefix.
 
@@ -98,9 +98,9 @@ Work in one project workspace can only access data or files from another project
 
 This reference-based permission scheme supports a number of useful features for N3C. Naturally, restricting workspace access to a subset of data affords the possibility of different levels of data access with correspondingly different access requirements. A single researcher may be involved with multiple research projects of different levels, but cannot share data or files across them–thus it is impossible for a researcher with access to Level 3 data to share it with their colleagues in another project with Level 2 data.
 
-## The DUR - Data Use Request
+## The DUR - Data Use Request {#sec-access-dur}
 
-### Project Roles and DUR Types
+### Project Roles and DUR Types {#sec-access-dur-roles}
 
 In the simplest view, each research project is associated with a single 'DUR' listing the project title and abstract, and governing the level of data accessible to the project workspace (and thus also to all researchers with access to that workspace). DURs are reviewed by the N3C Data Access Committee (DAC), and when approved administrators configure the workspace and researcher access to it.
 
@@ -116,7 +116,7 @@ Note that while we've described these different types of DURs, they all use the 
 
 Theoretically a single researcher may have multiple outstanding DURs for the same project. For example, the lead for a project nearing its expiry may submit a renewal DUR, and while that renewal is pending DAC approval the lead may also decide to submit a revision DUR to access a higher level of data. Most likely the renewal will be approved first, followed by the revision. If it so happens that the revision is approved before the renewal, the renewal request will then be moot as revision also resets the expiry date. Such cases may require intervention by administrative support, so it is wise to be judicious about DUR submissions to expedite the process.
 
-## DUR Dashboards
+## DUR Dashboards {#sec-access-dashboards}
 
 There are three primary dashboards used to create and manage DURs; all three are linked from the enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
 
@@ -130,7 +130,7 @@ Although there is some functionality overlap, the primary uses for these three d
 
 * **Explore Projects (DURs)** lists all N3C research projects, and for those that allow it, provides a link to request to join a project by submitting a collaborator DUR.
 
-## Data Use Request (DUR): Initiate a New Research Project
+## Data Use Request (DUR): Initiate a New Research Project {#sec-access-request}
 
 This first dashboard is really just the DUR form itself, and is used to request the creation of, and access to, a brand new research project with access to one of the levels of protected N3C data. The form has a number of sections, and some of these are dynamic, depending on choices to earlier questions. The left side of the DUR form provides quick links to other dashboards or actions; "Create a New Project" simply refreshes the page (since we are already creating a new project DUR), "Request to become a collaborator on an existing project" opens the Explore Projects dashboard (discussed below), and Public Health Proposal opens the application form for the [N3C PHASTR](https://covid.cd2h.org/phastr) initiative (which utilizes a specialized variant of the DUR process discussed here).
 
@@ -154,7 +154,7 @@ Next is the choice of data level to request. Levels 2 and 3 require additional i
 
 ![DUR data level request.](images/access/fig-access-090-dur-data-level.png){#fig-access-090-dur-data-level fig-alt="DUR data level request."}
 
-### Level 1 DUR Requirements
+### Level 1 DUR Requirements {#sec-access-request-l1}
 
 For level 1 access, the first requirements are that you have read and attested to the [Data Use Agreement](#dua), and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of the [onboarding](#onboarding), so we won't cover them here.
 
@@ -166,7 +166,7 @@ Finally, you will need to attest to having read the N3C Code of Conduct (with th
 
 With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.
 
-### Level 2 DUR Requirements
+### Level 2 DUR Requirements {#sec-access-request-l2}
 
 Requesting access to Level 2, De-Identified data requires additional information. First, when selecting the Level 2 request option, you will be asked to confirm that you have taken Human Subjects Research Protection training within the last three years and provide the date of completion. Most research institutions provide specific training courses to satisfy this requirement, for example via the [CITI Program](https://citiprogram.org). The specific courses required vary from institution to institution, so check with your research office or equivalent authority for guidance. If your institution does not offer or recommend specific courses, you can utilize the [free course](https://www.hhs.gov/ohrp/education-and-outreach/human-research-protection-training/human-research-protection-foundational-training) provided by Health and Human Services.
 
@@ -176,7 +176,7 @@ In addition to human subjects research protection training, you will need to con
 
 ![DUR IRB letter upload. For a Level 2 DUR, this is only required if your local institution requires IRB approval for de-identified data access.](images/access/fig-access-130-dur-level2-irb.png){#fig-access-130-dur-level2-irb fig-alt="DUR IRB letter upload. For a Level 2 DUR, this is only required if your local institution requires IRB approval for de-identified data access."}
 
-### Level 3 DUR Requirements
+### Level 3 DUR Requirements {#sec-access-request-l3}
 
 The Level 3, Limited Data Set (LDS) offers the most complete view of N3C data. Unlike Level 2 De-Identified data, dates are not shifted (for most contributing data partners, see [date shifting](#date-shifting) for more details), and full 5-digit patient zip codes are available (for most zip codes, see [zip codes](#zip codes) for more information).
 
@@ -190,13 +190,13 @@ A Level 3 DUR additionally requires a letter of determination from the submitter
 
 Note that when requesting access to PPRL datasets, _both the Research Project Rationale (reviewed by the DAC) and the IRB letter of determination should address the need for the PPRL datasets requested._ Failure to adequately justify the use of PPRL datasets may result in denial of the DUR, or approval with lack of PPRL dataset access.
 
-### Project Workspace Creation and Data Access
+### Project Workspace Creation and Data Access {#sec-access-request-creation}
 
 The Data Access Committee reviews all DURs. After a new project DUR is approved, a workspace is created inside the enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](#workspaces-permissions-data-catalog) above), and the submitting lead is given access to this project workspace. An email is also sent to the submitting lead with links to useful learning resources.
 
 The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks. The status of your DUR will be shown in the My Projects dashboard (below). If a submitted DUR has not received any update for longer than two weeks, you should submit a request for followup to the [enclave-external](#tickets-enclave-external) ticket support system.
 
-## Explore Projects (DURs): Browse and Join Projects
+## Explore Projects (DURs): Browse and Join Projects {#sec-access-explore}
 
 Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the enclave allows researchers to request to join projects that allow for it as collaborators.
 
@@ -214,7 +214,7 @@ Collaborator DURs must first be approved by the project lead (via their My Proje
 
 As with new project DURs, the status of your submitted collaborator DURs can be found in the My Projects dashboard.
 
-## My Projects (DURs): DUR Invitations, Status, and Management for Leads
+## My Projects (DURs): DUR Invitations, Status, and Management for Leads {#sec-access-my}
 
 The My Projects dashboard, linked from the enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
 
@@ -234,7 +234,7 @@ N3C DURs are valid for one year–continued access to the project workspace requ
 
 If you are the lead for the project you will have the option to "Appeal" the DUR under the Action column. This can be used both to appeal a DUR rejected by the DAC, and to request a significant change to an approved DUR requiring DAC review, such as updating a project to a higher level of data access. The appeal DUR is a copy of the submitted DUR, but all fields are editable, including Title, Abstract, data access level, and research project rationale. If submitting an appeal for a rejected DUR, you will likely want to update at least the research project rationale.
 
-### Project Management for Leads
+### Project Management for Leads {#sec-access-my-leads}
 
 The My Projects dashboard provides some additional functionality for project leads not available to collaborators in addition to the Appeal link. First is the dashboard accessed via the "Review Collaborator Requests for My Projects" button. The projects for which you are a lead are listed along the left, and the requests to access that project are listed along the right. You can choose to approve or deny each request by selecting it and clicking the large blue "Approve Selected Collaborator Request" button. Collaborator access cannot be revoked this way, however.
 

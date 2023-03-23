@@ -82,4 +82,4 @@ Institutions that contribute data to N3C gain more than recognition–contributi
 
 Finally, N3C's governance structures may be of interest to other organizations embarking on large-scale, team-science efforts. @sec-governance introduces these perspectives.
 
-Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external helpdesk, or just stopping by office hours. More information on these latter two options may be found in @sec-support.
+Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external help desk, or just stopping by office hours. More information on these latter two options may be found in @sec-support.

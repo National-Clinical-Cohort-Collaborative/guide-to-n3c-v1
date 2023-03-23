@@ -23,7 +23,7 @@ This last protection, known as a Data Use Request or DUR, will be the main focus
 
 ## Background: N3C Protected Data Levels {#sec-access-background}
 
-Not all data in the enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g. US census data) are accessible by everyone with enclave access. These low-risk data are covered more in @sec-understanding and @sec-publishing.
+Not all data in the enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g. US census data) are accessible by everyone with enclave access. These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements. Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data. On the other hand, there are some studies that can be accomplished only with Level 3 data. Note that if you start with a lower level of data, it is possible to "upgrade" a project's access level, though all participants in the project will need to complete another DUR for the new level.
 
@@ -65,7 +65,7 @@ Notice in particular the columns for `data_partner_id` (a pseudo-random identifi
 
 Some other tables available with Level 3 data are specific to N3C; here's a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
 
-![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was."}
+![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was."}
 
 ### PPRL Data {#sec-access-background-pprl}
 
@@ -159,9 +159,9 @@ Next is the choice of data level to request. Levels 2 and 3 require additional i
 For Level 1 access, the first requirements are that you have read and attested to the [Data Use Agreement](onboarding.md#data-use-agreements), and that you have completed the required NIH IT Security training course within the past year.
 Both of these are also required as part of onboarding, so we won't cover them here (see @sec-onboarding).
 
-![DUR attestations.](images/access/fig-access-100-dur-attestions.png){#fig-access-100-dur-attestions fig-alt="DUR attestations."}
+![DUR attestations.](images/access/fig-access-100-dur-attestations.png){#fig-access-100-dur-attestations fig-alt="DUR attestations."}
 
-Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the [N3C download policy](@sec-publishing) (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions' policies around doing so.
+Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the [N3C download policy](publishing.md) (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions' policies around doing so.
 (Some institutions restrict how and when EHR data can be linked to other datasets, including [publicly available](understanding.md) data ingested for use by N3C researchers.)
 <!-- TODO: like the last section of the "Understanding the Data" chapter -->
 

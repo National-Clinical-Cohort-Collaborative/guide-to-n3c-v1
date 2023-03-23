@@ -39,7 +39,7 @@ Now that we have introduced N3C and described its motivation and importance, we'
 
 ![Path of a typical N3C project](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Path of a typical N3C project"}
 
-Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
+Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
 
 
 :::{.callout-note icon=false}

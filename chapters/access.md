@@ -17,7 +17,7 @@ author:
 
 # Getting & Managing Data Access {#sec-access}
 
-N3C is strongly committed to patient privacy. After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it. Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the @onboarding.md#data-use-agreements), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
+N3C is strongly committed to patient privacy. After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it. Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter. The DUR form is available only inside the enclave, so enclave access is required to request data access. N3C registration and enclave access are covered in @sec-onboarding, so we won't cover those topics here.
 
@@ -125,7 +125,7 @@ Although there is some functionality overlap, the primary uses for these three d
 
 * **Data Use Request (DUR)** is used to submit a new Data Use Request for a **new** project. The submitter provides the project abstract and title and selects the data level needed, and will become the lead for the project.
 
-* **My Projects (DURs)** shows the status of your submitted requests and projects. This interface also provides some project management functionality for leads, such as linking a project to an N3C [domain team](onboarding.md#domain-teams), reviewing requests from potential collaborators to join the project, appealing rejected DUR submissions, and accessing the [download request dashboard](publishing.md).
+* **My Projects (DURs)** shows the status of your submitted requests and projects. This interface also provides some project management functionality for leads, such as linking a project to an N3C [domain team](onboarding.md#dt), reviewing requests from potential collaborators to join the project, appealing rejected DUR submissions, and accessing the [download request dashboard](publishing.md).
 <!-- TODO: for DRR, add link to section w/n chapter -->
 
 * **Explore Projects (DURs)** lists all N3C research projects, and for those that allow it, provides a link to request to join a project by submitting a collaborator DUR.

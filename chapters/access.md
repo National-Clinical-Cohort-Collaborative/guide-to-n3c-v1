@@ -242,7 +242,7 @@ If you are the lead for the project you will have the option to "Appeal" the DUR
 
 The My Projects dashboard provides some additional functionality for project leads not available to collaborators in addition to the Appeal link. First is the dashboard accessed via the "Review Collaborator Requests for My Projects" button. The projects for which you are a lead are listed along the left, and the requests to access that project are listed along the right. You can choose to approve or deny each request by selecting it and clicking the large blue "Approve Selected Collaborator Request" button. Collaborator access cannot be revoked this way, however.
 
-![Reviewing collaborator requests to join my projects.](images/access/fig-access-200-review-collab-requests.png){#fig-access-200-review-collab-requests fig-alt="Reviewing collaborator requests to join my projects."}
+![Reviewing collaborator requests to join my projects.](images/access/fig-access-200-review-collaborator-requests.png){#fig-access-200-review-collaborator-requests fig-alt="Reviewing collaborator requests to join my projects."}
 
 Back in the My Projects dashboard, we can select the "Manage My Projects" button to see more project configuration options. The main configuration options are "Configure N3C Domain Teams" to modify the listed linkage between the project and domain teams, "Review Collaborator Requests for this Project" which opens the collaborator approval dashboard above, and "Allow or Disallow Collaborator Requests." This last option enables or disables the "Request to Join" link for the project in the Explore Projects dashboard.
 

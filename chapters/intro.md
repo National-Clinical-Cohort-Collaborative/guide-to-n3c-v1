@@ -3,8 +3,8 @@ author:
   - name: Karen Crowley
     affiliation: Brown University
     affiliation-url: https://bcbi.brown.edu/
-    # email: karen_crowley@brown.edu
-    # orcid:
+    email: karen_crowley@brown.edu
+    orcid: 0000-0002-1995-6358
     attributes:
       corresponding: true
 
@@ -13,6 +13,8 @@ author:
     affiliation-url: https://oneilsh.github.io/
     email: shawn@tislab.org
     orcid: 0000-0001-6220-7080
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Introduction {#sec-intro}
@@ -44,7 +46,7 @@ Once harmonized and stored in the secure Enclave, the data are made available vi
 
 Mere access to the Enclave, however, doesn't automatically provide access to any of the protected data itself (although we do make other, publicly-available datasets available with minimal restriction for practice and learning purposes). Multiple "levels" of the data are available with different anonymization techniques applied, facilitating "just enough" access to research teams depending on their needs and ability to access protected health information. Accessing the most secure level, for example, requires obtaining approval by an Institutional Review Board (IRB) who validates the appropriateness of human subjects research, while the lowest level is heavily anonymized and accessible by private individuals (citizen scientists) with only certain legal and training requirements.
 
-Because effective analysis of EHR data requires a diverse set of skills–especially clinical and data science/statistical expertise–N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well. As of February 2023, dozens of these "[Domain Teams](https://covid.cd2h.org/domain-teams)" have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations. Over seventy data partners provide EHR data for 17 million patients (a third of whom have had COVID-19), representing 10.5 billion lab results, 3.5 billion medication records, 2 billion clinical observations, and 1 billion clinical visits. For up-to-date information on these numbers and more, visit our dashboard at <https://covid.cd2h.org/dashboard>.
+Because effective analysis of EHR data requires a diverse set of skills–especially clinical and data science/statistical expertise–N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well. As of February 2023, dozens of these "[Domain Teams](onboarding.md#sec-onboarding-dt)" have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations. Over seventy data partners provide EHR data for 17 million patients (a third of whom have had COVID-19), representing 10.5 billion lab results, 3.5 billion medication records, 2 billion clinical observations, and 1 billion clinical visits. For up-to-date information on these numbers and more, visit our dashboard at <https://covid.cd2h.org/dashboard>.
 
 ![Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology.](images/intro/fig-intro-030-summary-stats.png){#fig-intro-030-summary-stats fig-alt="Summary statistics for N3C patients as of Aug, 2022. Confirmed COVID-19 patients are those with a known positive PCR or Antigen lab test, possible patients are those with likely symptomatology."}
 
@@ -66,11 +68,11 @@ These are but a small sample of work produced by researchers participating in N3
 
 This range of work is only possible by the diversity of interests and expertise researchers bring. Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure data enclave. N3C supports team science in a variety of ways. Domain Teams, for example, serve to connect groups with similar interests for peer support, research coordination, and collaboration building. While most Domain Teams are clinically oriented (e.g. the Pregnancy Domain Team), others are more general (e.g. the Machine Learning Domain Team). @sec-onboarding covers Domain Teams in more detail. N3C provides a number of training and support venues, including regular office hours, training modules, and of course this book. See @sec-support for more information on these topics.
 
-Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information. Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see @sec-lifecycle), which supports sophisticated filtering and querying (@sec-understanding and @sec-tools). Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (Chapter [QQQ](not-sure)).
+Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information. Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see @sec-lifecycle), which supports sophisticated filtering and querying (Chapters [-@sec-understanding] and [-@sec-tools]). Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-lifecycle).
 
 Big data is of little value without powerful analysis tools. Fortunately, N3C's enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two. Backed by the high-performance distributed-computing framework Apache Spark, researchers can include billions of rows of data in a single analysis. Graphical tools are also available for those without coding expertise, and the N3C community generates reusable code and datasets to pave the way for others. All of these tools are cloud-hosted, so researchers only need to bring a web browser. For information on these topics, see @sec-tools.
 
-Finally, N3C has worked hard to make these resources secure _and_ accessible. Enclave access requires coverage by a Data Use Agreement, which hundreds of institutions across the US and beyond have signed on behalf of all their employees and students. Data itself is accessed via a guided Data Use Request form in the enclave, and researchers can invite others to their projects at any time. See @sec-onboarding and @sec-access for details.
+Finally, N3C has worked hard to make these resources secure _and_ accessible. Enclave access requires coverage by a Data Use Agreement, which hundreds of institutions across the US and beyond have signed on behalf of all their employees and students. Data itself is accessed via a guided Data Use Request form in the enclave, and researchers can invite others to their projects at any time. See Chapters [-@sec-onboarding] and [-@sec-access] for details.
 
 ### For Institutions {#sec-intro-next-institutions}
 
@@ -82,4 +84,4 @@ Institutions that contribute data to N3C gain more than recognition–contributi
 
 Finally, N3C's governance structures may be of interest to other organizations embarking on large-scale, team-science efforts. @sec-governance introduces these perspectives.
 
-Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external helpdesk, or just stopping by office hours. More information on these latter two options may be found in @sec-support.
+Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external help desk, or just stopping by office hours. More information on these latter two options may be found in @sec-support.

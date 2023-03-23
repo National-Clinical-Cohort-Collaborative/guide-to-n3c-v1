@@ -29,6 +29,8 @@ author:
     orcid: 0000-0001-6220-7080
 
 # reference-location: margin
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # A Research Story {#sec-story}
@@ -39,8 +41,7 @@ Now that we have introduced N3C and described its motivation and importance, we'
 
 ![Path of a typical N3C project](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Path of a typical N3C project"}
 
-Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#domain-teams) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
-
+Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
 
 :::{.callout-note icon=false}
 
@@ -92,7 +93,7 @@ N3C teams have some differences from conventional research teams at single sites
 
 1. The role of navigator is even more important.  Your local EMR investigations are likely guided by someone with years of experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-If your team needs someone, consider asking a relevant [domain team](onboarding.html#domain-teams) for helping identifying and approaching a potential collaborator.
+If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for helping identifying and approaching a potential collaborator.
 
 :::{.callout-note icon=false}
 

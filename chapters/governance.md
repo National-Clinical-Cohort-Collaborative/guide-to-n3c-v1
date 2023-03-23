@@ -13,6 +13,8 @@ author:
     affiliation-url: https://www.ithriv.org/directory
     email: jjl4d@uvahealth.org
     orcid: 0000-0003-3673-5423
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Governance, Leadership, and Operations Structures {#sec-governance}
@@ -55,7 +57,7 @@ Additionally, the scientific community representatives in the Participation and 
 
 Seven principles summarize the Community Guiding Principles:
 
-1. **Partnership**: N3C community members are trusted partners committed to honoring the [N3C community guiding principles]((https://zenodo.org/record/3979610) and [N3C User Code of Conduct](https://ncats.nih.gov/n3c/resources/data-user-code-of-conduct)
+1. **Partnership**: N3C community members are trusted partners committed to honoring the [N3C community guiding principles](https://zenodo.org/record/3979610) and [N3C User Code of Conduct](https://ncats.nih.gov/n3c/resources/data-user-code-of-conduct)
 1. **Inclusivity**: N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19 related research, including citizen/community scientists
 1. **Transparency**: Open processes and reproducible research is the hallmark of N3C and good scientific practice. Access to data is project-based and focused on COVID-19 research questions. Descriptions of projects are posted publicly and are searchable to promote collaborations.
 1. **Reciprocity**: Contributions are acknowledged and results from analyses, including provenance and attribution, are expected to be shared with the N3C community.
@@ -83,7 +85,7 @@ A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_A
 
 ## Data Access by Researchers {#sec-governance-access}
 
-First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the [Community Guiding Principles]((https://zenodo.org/record/3979610) and complete the Information Security and Management Refresher course of the [NIH Information Security and Information Management Training series](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See @sec-onboarding and @sec-access for details.)
+First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the [Community Guiding Principles](https://zenodo.org/record/3979610) and complete the Information Security and Management Refresher course of the [NIH Information Security and Information Management Training series](https://irtsectraining.nih.gov/FYR/00_005.aspx). Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See Chapters [-@sec-onboarding] and [-@sec-access] for details.)
 
 There are three levels of data access commensurate with the sensitivity of the data. See @sec-access for more details about these levels.
 

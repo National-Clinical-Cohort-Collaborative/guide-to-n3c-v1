@@ -27,8 +27,8 @@ author:
     affiliation-url: https://www.jhu.edu/
     # email: leskena2@jh.edu
     # orcid:
-    attributes:
-      corresponding: true
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Help and Support {#sec-support}
@@ -96,7 +96,7 @@ The external help desk can be found at <https://covid.cd2h.org/support>. Here yo
 
 ![Ticket details](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](#domain-teams) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request. The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
 
@@ -168,7 +168,7 @@ If you wish to create a practice folder, you are free to do so inside the "Pract
 
 OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR. The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access. They are both available via the [data catalog](#data-catalog) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](#level-one-data), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
-![Two sets of synthetic data](images/support/fig-support-190-synethic-datasets.png){#fig-support-190-synethic-datasets width=75% fig-alt="Two sets of synthetic data"}
+![Two sets of synthetic data](images/support/fig-support-190-synthetic-datasets.png){#fig-support-190-synthetic-datasets width=75% fig-alt="Two sets of synthetic data"}
 
 ### SynPuf Synthetic Data {#sec-support-notional-synpuf}
 
@@ -204,11 +204,11 @@ Slack is commonly used for team communication in N3C, and several widely-subscri
 
 ### Domain Teams {#sec-support-community-dt}
 
-Domain Teams, covered in more detail in [other parts](#domain-teams) of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.^[This is not as trivial as it sounds!]
+[Domain Teams](onboarding.md#sec-onboarding-dt), covered in more detail in other parts of this book, are excellent support and training resources for their members. Not only can Domain Teams answer common questions of new N3C researchers, they can answer questions that pertain to their area of expertise. The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is the best source of knowledge for locating pregnancy-related records in EHR data.^[This is not as trivial as it sounds!]
 
 ## Data and Logic Liaisons {#sec-support-liaisons}
 
-[Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of [Domain Teams](onboarding.md#domain-teams) and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
+[Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of Domain Teams and their members.  In order to perform research, users need to identify key variables for analysis. These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions. Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams. They also provide support services as described below.
 
 ### Data Liaison Services {#sec-support-liaisons-data}
 

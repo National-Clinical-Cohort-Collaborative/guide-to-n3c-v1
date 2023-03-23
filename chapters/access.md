@@ -69,7 +69,7 @@ Some other tables available with Level 3 data are specific to N3C; here's a few 
 
 ### PPRL Data {#sec-access-background-pprl}
 
-PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, _without_ revealing to any party except the data sources themselves any identifying information about the individual. While we won't describe how the process works here, researchers with enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal (see @support.md#sec-support-training).
+PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, _without_ revealing to any party except the data sources themselves any identifying information about the individual. While we won't describe how the process works here, researchers with enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal (see @sec-support-training).
 
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 

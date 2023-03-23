@@ -25,6 +25,8 @@ author:
     affiliation-url: https://alliance.rcm.upr.edu/cores/biomedical-informatics-core
     # email:
     # orcid:
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Onboarding, Enclave Access, N3C Team Science {#sec-onboarding}

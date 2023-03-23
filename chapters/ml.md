@@ -13,6 +13,8 @@ author:
     affiliation-url: https://www.lbl.gov/
     # email: justaddcoffee@gmail.com
     # orcid:
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Machine Learning {#sec-ml}

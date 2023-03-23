@@ -13,6 +13,8 @@ author:
     affiliation-url: https://www.ithriv.org/directory
     email: jjl4d@uvahealth.org
     orcid: 0000-0003-3673-5423
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Governance, Leadership, and Operations Structures {#sec-governance}

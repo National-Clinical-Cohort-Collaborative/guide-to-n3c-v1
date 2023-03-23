@@ -27,8 +27,8 @@ author:
     affiliation-url: https://www.jhu.edu/
     # email: leskena2@jh.edu
     # orcid:
-    attributes:
-      corresponding: true
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Help and Support {#sec-support}

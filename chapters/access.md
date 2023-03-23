@@ -13,6 +13,8 @@ author:
     affiliation-url: https://ncats.nih.gov/
     # email: mariam.deacy@nih.gov
     # orcid:
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Getting & Managing Data Access {#sec-access}

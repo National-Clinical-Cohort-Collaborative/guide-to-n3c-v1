@@ -13,6 +13,8 @@ author:
     affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
     # email: lehmann@jhmi.edu
     # orcid:
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Best Practices and Important Data Considerations {#sec-practices}

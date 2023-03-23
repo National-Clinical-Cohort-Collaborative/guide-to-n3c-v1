@@ -13,6 +13,8 @@ author:
     affiliation-url: https://www.owlhealthworks.com
     # email: jeremy6@gmail.com
     # orcid:
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Publishing and Sharing Your Work {#sec-publishing}

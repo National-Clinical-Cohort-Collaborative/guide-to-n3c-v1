@@ -29,6 +29,8 @@ author:
     orcid: 0000-0001-6220-7080
 
 # reference-location: margin
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # A Research Story {#sec-story}

@@ -13,6 +13,8 @@ author:
     affiliation-url: https://oneilsh.github.io/
     email: shawn@tislab.org
     orcid: 0000-0001-6220-7080
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Introduction {#sec-intro}

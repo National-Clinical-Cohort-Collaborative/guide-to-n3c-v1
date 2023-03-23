@@ -13,6 +13,8 @@ author:
     affiliation-url: https://tislab.org/
     email: bryan@tislab.org
     orcid: 0000-0002-0450-7074
+
+csl: ../assets/csl/apa-7e.csl
 ---
 
 # Data Lifecycle - From Patients to N3C Researchers {#sec-lifecycle}

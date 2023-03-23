@@ -3,8 +3,8 @@ author:
   - name: Karen Crowley
     affiliation: Brown University
     affiliation-url: https://bcbi.brown.edu/
-    # email: karen_crowley@brown.edu
-    # orcid:
+    email: karen_crowley@brown.edu
+    orcid: 0000-0002-1995-6358
     attributes:
       corresponding: true
 

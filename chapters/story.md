@@ -91,7 +91,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 After some thought, the investigator puts together a research protocol and submits a DUR in N3C. They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
 
-![Submitted Data Use Request](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
+![Submitted Data Use Request](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request" width=70%}
 
 ## Team building & collaborating {#sec-story-team}
 
@@ -104,7 +104,7 @@ The next step is to build a team to leverage retrospective medical records. Like
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
 
-![Typical N3C Team Composition](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
+![Typical N3C Team Composition](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition" width=60%}
 
 N3C teams have some differences from conventional research teams at single sites.  Some trends we have noticed are:
 

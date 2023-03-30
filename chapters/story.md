@@ -43,11 +43,13 @@ Now that we have introduced N3C and described its motivation and importance, we'
 
 Suppose you are starting a project by yourself. In that case, the N3C ecosystem of researchers and resources is at your fingertips. You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).  If you would like to join an existing project, there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
 
+Electronic Health Record (EHR) research has become an increasingly important tool to evaluate real-world evidence (RWE) to understand insights into treatment effectiveness, the impact of healthcare interventions, and our understanding of rare diseases. EHRs provide access to large, diverse patient populations and longitudinal data that allows observations of health changes over time or in cross-section. The strength of the EHR is that it reflects real-world care and is often a better representation of clinical care than the controlled settings of a traditional clinical trial. However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient’s lived experience relative their health outcomes.
+
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-Our story begins in your office.  Your own piece of heaven.  As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?".  Based on the meds' relationships with other diseases, you expect there to be a modest improvement.  But in order to detect a modest effect size, many patients are required, and your local institution's EMR doesn't have enough to meet the inclusion criteria.  In fact, no single institution's EMR has enough.
+Our story begins in your office. Your own piece of heaven. As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
 :::
@@ -77,23 +79,40 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**: It will make sense once you get it into it.  Skim the example DUR proposals I'm sending now.  Then start filling out this online form.  Get as far as you can, and then I'll help with the rest.  If there's something I don't know, I'll ask a friend.  The DUR application process will take about an hour.  Then the proposal will likely be approved within a week or two.  In the meantime, we can talk about potential collaborators.
 
+* **I**: Is there anything else I need to know?
+
+* **N**: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Your institution requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
+
+* **I**: Ok, that’s very helpful. I may need real dates as I anticipate differences in treatment deliveries based on real-world availability. Am I stuck with Level 2 data if I start there?
+
+* **N**: No. If needed, you can request a workspace to be updated from Level 2 to Level 3 and receive IRB approval.
+
+* **I**: That’s great. I think we’ll start with Level 2 and go from there. I’ll work on the research protocol.
+
+After some thought, the investigator puts together a research protocol and submits a DUR in N3C. They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
+
+![Submitted Data Use Request](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
+
 ## Team building & collaborating {#sec-story-team}
 
-The next step is to build a team to leverage retrospective medical records.  Like most contemporary research teams, heterogenous skills are important.  Ideally a team has at least:
+The next step is to build a team to leverage retrospective medical records. Like most contemporary research teams, heterogenous skills are important. Ideally a team has at least, as shown in @fig-story-030-team-formation, members who can fill the roles below:
 
-1. a **navigator** who has learned the administrative and IRB requirements and is able to facilitate the investigation,
-1. a **data engineer** who understands the challenges of EMRs and is able to extract and transform information,
-1. a **statistician** who understands the limitations of observational collection and is able to model retrospective data,
-1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and is able to inform decisions with EMR variables, and
-1. a **principal investigator** who knows the literature and is able form testable hypotheses and write the manuscript.
+1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
+1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
+1. a **statistician or data scientist** who understands the limitations of observational collection and can model retrospective data,
+1. a **logic liaison or informatician** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
+1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
+1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
+
+![Typical N3C Team Composition](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
 
 N3C teams have some differences from conventional research teams at single sites.  Some trends we have noticed are:
 
-1. Most N3C teams have researchers from at least three institutions.  In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism.  Researchers from a single institution/lab are sometimes are more reluctant to generate contrary views.
+1. Most N3C teams have researchers from multiple institutions. In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism. Researchers from a single institution/lab are sometimes more reluctant to generate contrary views.
 
-1. The role of navigator is even more important.  Your local EMR investigations are likely guided by someone with years of experience with the institutional safeguards and the personnel who can help when something stalls.  N3C is bigger and younger than your site's EMR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
+1. The role of the navigator is often the most important member of a successful team. Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls. N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for helping identifying and approaching a potential collaborator.
+If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 
 :::{.callout-note icon=false}
 
@@ -110,33 +129,33 @@ Recruiting your crew...
 
 Three weeks later...
 
-Once the team is assembled, the first discussion is usually a variation of this exchange:
+Once the team is assembled, the first discussion is usually a variation of this exchange, with the goal to move toward competition of a research protocol:
 :::
 
 * **Investigator**: Welcome everyone.  We'd like to know if Drug A or Drug B is associated with better outcomes.
 * **Statistician**: No problem.  I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.
-* **Data Engineer**: Hmmm.  I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-understanding, specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.], but you may not find it useful.  Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-lifecycle.]
+* **Logic Liaison**: Hmmm.  I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-understanding, specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.], but you may not find it useful.  Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-lifecycle.]
 * **I**: Bummer.  Then what's realistic or feasible?
 * **Subject Matter Expert**: Maybe this simplifies the picture...  In my clinical experience, a patient rarely switches between Drugs A & B.  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
 * **St**: In that case, should my initial model have three levels for treatment: A, B, and A+B?
 * **I**: Probably.  In the N3C database, can someone tell me how many patients get both during the same visit?
-* **DE**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to whip up something in SQL.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+* **LL**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to whip up something in SQL.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**: Oh my goodness, is that your cat?  What a cutie! ^[There is a brief discussion of SME's cat.]
-* **DE** *after a few minutes*: Ok, I got it.  [Unmutes himself.]  Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
+* **LL** *after a few minutes*: Ok, I got it.  [Unmutes himself.]  Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
 * **SME**: Weird. 8% is a lot more than I expected.  I was thinking around 1%.
-* **DE**: Hmm, let me check.  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
-* **DE** *after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.
+* **LL**: Hmm, let me check.  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
+* **LL** *after a few minutes*: I see what you mean.  It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A & B.
 * **St**: I was already planning to model the phase of the pandemic.  I'll test if there's a significant interaction between time and treatment.
 * **I**: I like that as a starting point.  Regarding the question about dose and frequency...  For now let's assume the providers were following the current dosing guidelines.  Therefore the `dose` and `frequency` variables can be dropped from the analyses.
 * **St**: Phew.  I didn't want to admit this.  But I skimmed the dosing guidelines you emailed yesterday.  It looked complicated.  I wasn't sure if I could appropriately incorporate those variables in the model.
 * **I**: Well, that's everything I wanted to cover today.  See you in two weeks.  Wait.  I can't believe I forgot.  Sorry -our Navigator is sick this week and I'm almost worthless in her absence.  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
-* **DE**: Bad news.  This is kinda like the `dose` and `frequency` situation a few minutes ago. The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.  But the quality of the historical records really depends on the site.  Some places like Delaware leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) is a health information exchange.] to populate their N3C dataset.  However other places are not as well connected.  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in @sec-practices.]
+* **LL**: Bad news.  This is kinda like the `dose` and `frequency` situation a few minutes ago. The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.  But the quality of the historical records really depends on the site.  Some places like Rhode Island leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) is a health information exchange.] to populate their N3C dataset.  However other places are not as well connected.  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in @sec-practices.]
 * **I**: Ugh.  Good point.
-* **DE**: But I've got good news.  All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.  Furthermore the diagnosis codes are standardized really well across sites.  That's because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.  Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
+* **LL**: But I've got good news.  All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.  Furthermore the diagnosis codes are standardized really well across sites.  That's because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.  Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**: Well, that's fine for this paper.  Maybe our next manuscript will follow up with N3C's death records.^[TODO: is the book planning to have a section on the CMS & death records?]
 * **SME**: Sorry everybody, I have clinic this week, and they're calling me.  I need to drop.^[Everyone says goodbye to the cat.]
 * **St**: Can I go back and ask a question about medications?  I see that Drug A has 15 different brand names.  I don't recognize half of them.  How should I classify them?
-* **DE**: It's actually worse than that.  Sorry I'm a downer today.  Can you see my screen?  Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH's NLM.  SME and I started on a concept set Thursday.  We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.  There are five ingredients that are conceptualized as Drug A.  A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table is discussed with the OMOP concept hierarchy in @sec-understanding.]  I'll roll up the meds into the patient-level dataset.  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records.  You'll probably want to transform the two counts into two booleans.
+* **LL**: It's actually worse than that.  Sorry I'm a downer today.  Can you see my screen?  Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH's NLM.  SME and I started on a concept set Thursday.  We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.  There are five ingredients that are conceptualized as Drug A.  A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table is discussed with the OMOP concept hierarchy in @sec-understanding.]  I'll roll up the meds into the patient-level dataset.  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records.  You'll probably want to transform the two counts into two booleans.
 * **St**: And if I change my mind and decide to use the counts, then at least I'll know.
 * **Shoreleave**: and knowing is half the battle.
 
@@ -146,7 +165,7 @@ This aspect of the scientific process is probably both the most familiar and mos
 
 1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
 
-1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EMR.  Many decisions are involved to include only the relevant variables among the qualifying patients.
+1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EHR.  Many decisions are involved to include only the relevant variables among the qualifying patients.
 
 {Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
 

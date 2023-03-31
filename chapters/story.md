@@ -189,9 +189,10 @@ The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohd
 
 3. The [N3C Concept Set Browser](@sec-tools) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 
-Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research quesiton. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
+Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research question. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
 
 In general, the overall process involved in developing concepts is as follows:
+
 1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
 2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.
 3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.
@@ -212,9 +213,9 @@ After determining the need for a concept set defining anemia, which is a common 
 
 * **SME**: Hmm...this isn't quite right. We need anemia caused by blood loss. A lot of these are unrelated.
 
-* **DL**: Gotcha. Let's take a look at the hiearchy and see if we can refine it. We can look at the descendants and go from there.
+* **DL**: Gotcha. Let's take a look at the hierarchy and see if we can refine it. We can look at the descendants and go from there.
 
-* **Three hours later**
+* *Three hours later*
 
 * **DL**: Ok, great. I think we have a working example. I'm going to extract all of these into a spreadsheet. Please go through this one more time and then I'll share with the group to review.
 

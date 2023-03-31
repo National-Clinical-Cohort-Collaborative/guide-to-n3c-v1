@@ -314,8 +314,8 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-story-team" id="toc-sec-story-team" class="nav-link" data-scroll-target="#sec-story-team"><span class="toc-section-number">2.2</span>  Team building &amp; collaborating</a></li>
   <li><a href="#research-teams-first-meeting" id="toc-research-teams-first-meeting" class="nav-link" data-scroll-target="#research-teams-first-meeting"><span class="toc-section-number">2.3</span>  Research Team’s First Meeting</a></li>
   <li><a href="#protocol-variables-definitions" id="toc-protocol-variables-definitions" class="nav-link" data-scroll-target="#protocol-variables-definitions"><span class="toc-section-number">2.4</span>  Protocol, variables, &amp; definitions</a></li>
-  <li><a href="#creating-an-analysis-ready-dataset" id="toc-creating-an-analysis-ready-dataset" class="nav-link" data-scroll-target="#creating-an-analysis-ready-dataset"><span class="toc-section-number">2.5</span>  Creating an analysis-ready dataset</a></li>
-  <li><a href="#learning-and-using-omop-e.g.-concept-sets" id="toc-learning-and-using-omop-e.g.-concept-sets" class="nav-link" data-scroll-target="#learning-and-using-omop-e.g.-concept-sets"><span class="toc-section-number">2.6</span>  Learning and using OMOP (e.g.&nbsp;concept sets)</a></li>
+  <li><a href="#learning-and-using-omop-e.g.-concept-sets" id="toc-learning-and-using-omop-e.g.-concept-sets" class="nav-link" data-scroll-target="#learning-and-using-omop-e.g.-concept-sets"><span class="toc-section-number">2.5</span>  Learning and using OMOP (e.g.&nbsp;concept sets)</a></li>
+  <li><a href="#creating-an-analysis-ready-dataset" id="toc-creating-an-analysis-ready-dataset" class="nav-link" data-scroll-target="#creating-an-analysis-ready-dataset"><span class="toc-section-number">2.6</span>  Creating an analysis-ready dataset</a></li>
   <li><a href="#analyses" id="toc-analyses" class="nav-link" data-scroll-target="#analyses"><span class="toc-section-number">2.7</span>  Analyses</a></li>
   <li><a href="#draft-paper-pub-committee" id="toc-draft-paper-pub-committee" class="nav-link" data-scroll-target="#draft-paper-pub-committee"><span class="toc-section-number">2.8</span>  Draft paper, pub committee</a></li>
   </ul>
@@ -396,7 +396,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Now that we have introduced N3C and described its motivation and importance, we’ll walk through the lifecycle of an example project from onboarding to publishing. This path typically takes at least 6 months and 6 collaborators. It isn’t easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.</p>
 <div id="fig-story-010-intro-to-story" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Path of a typical N3C project"><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a></p>
+<p><a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" title="Path of a typical N3C project" data-gallery="quarto-lightbox-gallery-1"><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Path of a typical N3C project</figcaption><p></p>
 </figure>
 </div>
@@ -457,7 +457,7 @@ Voice of Narrator
 <p>After some thought, the investigator puts together a research protocol and submits a DUR in N3C. They submit the <a href="../chapters/access.html#sec-access-dur">DUR</a>, shown in <a href="#fig-story-020-dur">Figure&nbsp;<span>2.2</span></a>.</p>
 <div id="fig-story-020-dur" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/story/fig-story-020-dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Submitted Data Use Request"><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a></p>
+<p><a href="images/story/fig-story-020-dur.png" class="lightbox" title="Submitted Data Use Request" data-gallery="quarto-lightbox-gallery-2"><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2.2: Submitted Data Use Request</figcaption><p></p>
 </figure>
 </div>
@@ -475,7 +475,7 @@ Voice of Narrator
 </ol>
 <div id="fig-story-030-team-formation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/story/fig-story-030-team-formation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Typical N3C Team Composition"><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a></p>
+<p><a href="images/story/fig-story-030-team-formation.png" class="lightbox" title="Typical N3C Team Composition" data-gallery="quarto-lightbox-gallery-3"><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2.3: Typical N3C Team Composition</figcaption><p></p>
 </figure>
 </div>
@@ -546,26 +546,55 @@ Voice of Narrator
 </section>
 <section id="protocol-variables-definitions" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="protocol-variables-definitions"><span class="header-section-number">2.4</span> Protocol, variables, &amp; definitions</h2>
-<p>This aspect of the scientific process is probably both the most familiar and most vague. Most researchers have several years of graduate-level courses and real-world experience.</p>
+<p>Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies. Most researchers have several years of graduate-level courses and real-world experience.</p>
 <ol type="1">
 <li><p>Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.</p></li>
-<li><p>Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EHR. Many decisions are involved to include only the relevant variables among the qualifying patients.</p></li>
+<li><p>Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.</p></li>
 </ol>
-<p>{Mention CD2H’s <a href="https://playbook.cd2h.org/en/latest/index.html">Informatics Playbook</a>}</p>
-<p><span class="citation" data-cites="cd2h1">(<a href="../references.html#ref-cd2h1" role="doc-biblioref">Wu &amp; C2DH, 2022, Chapter 1</a>)</span></p>
+<p>While there are different approaches to developing a Research Protocol, the general steps involved include: 1. Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.</p>
+<ol start="2" type="1">
+<li><p>Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.</p></li>
+<li><p>Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.</p></li>
+<li><p>Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocl Pad that supports the development and documentation of detailed study protocols.</p></li>
+</ol>
+<p>After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.</p>
 </section>
-<section id="creating-an-analysis-ready-dataset" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="creating-an-analysis-ready-dataset"><span class="header-section-number">2.5</span> Creating an analysis-ready dataset</h2>
-<p>{Conventional data engineer role. Dataset is created with input from the analyst.}</p>
-</section>
-<section id="learning-and-using-omop-e.g.-concept-sets" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="learning-and-using-omop-e.g.-concept-sets"><span class="header-section-number">2.6</span> Learning and using OMOP (e.g.&nbsp;concept sets)</h2>
-<p>OMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals. Detecting a small signal requires a large datasets –larger than any single health care database <span class="citation" data-cites="ohdsi_2019">(<a href="../references.html#ref-ohdsi_2019" role="doc-biblioref">Sciences &amp; Informatics, 2019, Chapter 1</a>)</span>. Since then, the foundation has supported many other research goals. It is well-suited for N3C because:</p>
+<section id="learning-and-using-omop-e.g.-concept-sets" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="learning-and-using-omop-e.g.-concept-sets"><span class="header-section-number">2.5</span> Learning and using OMOP (e.g.&nbsp;concept sets)</h2>
+<p>The <a href="https://www.ohdsi.org/">Observational Health Data Sciences and Informatics (OHDSI)</a> Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM. Detecting a small signal requires a large datasets –larger than any single health care database <span class="citation" data-cites="ohdsi_2019">(<a href="../references.html#ref-ohdsi_2019" role="doc-biblioref">Sciences &amp; Informatics, 2019, Chapter 1</a>)</span>. Given its ubiquity and active research community, OMOP is well suited for N3C. OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:</p>
+<ol type="1">
+<li><p><a href="https://github.com/OHDSI/Atlas/wiki">Atlas</a> provides a user-friendly interface for querying and analyzing data in the OMOP CDM. In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.</p></li>
+<li><p><a href="https://athena.ohdsi.org/">Athena</a> is a centralized repository of standardized clinical vocabularies.</p></li>
+<li><p>The <a href="@sec-tools">N3C Concept Set Browser</a> is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.</p></li>
+</ol>
+<p>Concept sets, described in detail in <a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a>, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research quesiton. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).</p>
+<p>In general, the overall process involved in developing concepts is as follows: 1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts. 2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts. 3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts. 4. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.</p>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Voice of Narrator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After determining the need for a concept set defining anemia, which is a common symptom of scurvy, the subject matter expert and data liaison meet to refine the concept set.</p>
+</div>
+</div>
 <ul>
-<li>It has evolved from 10? years and accommodates a wide range of data sources</li>
-<li>It has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.</li>
+<li><p><strong>Data Liaison</strong>: Good morning! I’ve started digging into existing concept sets for anemia and found one potential option.</p></li>
+<li><p><strong>Subject Matter Expert</strong>: Good morning! That’s great. Let’s take a look at it.</p></li>
+<li><p><strong>DL</strong> <em>pulls up concept set for anemia</em>: This is one that’s out there. It uses the parent SNOMED CT Code <a href="https://athena.ohdsi.org/search-terms/terms/439777">271737000</a>.</p></li>
+<li><p><strong>SME</strong>: Hmm…this isn’t quite right. We need anemia caused by blood loss. A lot of these are unrelated.</p></li>
+<li><p><strong>DL</strong>: Gotcha. Let’s take a look at the hiearchy and see if we can refine it. We can look at the descendants and go from there.</p></li>
+<li><p><strong>Three hours later</strong></p></li>
+<li><p><strong>DL</strong>: Ok, great. I think we have a working example. I’m going to extract all of these into a spreadsheet. Please go through this one more time and then I’ll share with the group to review.</p></li>
 </ul>
-<p>{3-4 sentence description of the original OMOP motivation. It standardizes (a) tables &amp; columns and (b) vocabulary. Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}</p>
+</section>
+<section id="creating-an-analysis-ready-dataset" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="creating-an-analysis-ready-dataset"><span class="header-section-number">2.6</span> Creating an analysis-ready dataset</h2>
+<p>{Conventional data engineer role. Dataset is created with input from the analyst.}</p>
 </section>
 <section id="analyses" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="analyses"><span class="header-section-number">2.7</span> Analyses</h2>
@@ -599,9 +628,6 @@ Voice of Narrator
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography" style="display: none">
 <div id="ref-ohdsi_2019" class="csl-entry" role="doc-biblioentry">
 Sciences, O. H. D., &amp; Informatics. (2019). <em>The book of OHDSI: Observational health data sciences and informatics</em>. Independent. <a href="https://ohdsi.github.io/TheBookOfOhdsi/">https://ohdsi.github.io/TheBookOfOhdsi/</a>
-</div>
-<div id="ref-cd2h1" class="csl-entry" role="doc-biblioentry">
-Wu, C., &amp; C2DH. (2022). <em>Informatics playbook</em>. <a href="https://playbook.cd2h.org/" class="uri">https://playbook.cd2h.org/</a>.
 </div>
 </div>
 </section>
@@ -911,7 +937,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
 
 
 

@@ -551,11 +551,12 @@ Voice of Narrator
 <li><p>Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.</p></li>
 <li><p>Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.</p></li>
 </ol>
-<p>While there are different approaches to developing a Research Protocol, the general steps involved include: 1. Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.</p>
-<ol start="2" type="1">
+<p>While there are different approaches to developing a Research Protocol, the general steps involved include:</p>
+<ol type="1">
+<li><p>Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.</p></li>
 <li><p>Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.</p></li>
 <li><p>Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.</p></li>
-<li><p>Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocl Pad that supports the development and documentation of detailed study protocols.</p></li>
+<li><p>Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.</p></li>
 </ol>
 <p>After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.</p>
 </section>
@@ -567,8 +568,14 @@ Voice of Narrator
 <li><p><a href="https://athena.ohdsi.org/">Athena</a> is a centralized repository of standardized clinical vocabularies.</p></li>
 <li><p>The <a href="@sec-tools">N3C Concept Set Browser</a> is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.</p></li>
 </ol>
-<p>Concept sets, described in detail in <a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a>, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research quesiton. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).</p>
-<p>In general, the overall process involved in developing concepts is as follows: 1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts. 2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts. 3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts. 4. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.</p>
+<p>Concept sets, described in detail in <a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a>, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research question. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).</p>
+<p>In general, the overall process involved in developing concepts is as follows:</p>
+<ol type="1">
+<li>Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.</li>
+<li>Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.</li>
+<li>Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.</li>
+<li>Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.</li>
+</ol>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -583,13 +590,13 @@ Voice of Narrator
 </div>
 </div>
 <ul>
-<li><p><strong>Data Liaison</strong>: Good morning! I’ve started digging into existing concept sets for anemia and found one potential option.</p></li>
-<li><p><strong>Subject Matter Expert</strong>: Good morning! That’s great. Let’s take a look at it.</p></li>
-<li><p><strong>DL</strong> <em>pulls up concept set for anemia</em>: This is one that’s out there. It uses the parent SNOMED CT Code <a href="https://athena.ohdsi.org/search-terms/terms/439777">271737000</a>.</p></li>
-<li><p><strong>SME</strong>: Hmm…this isn’t quite right. We need anemia caused by blood loss. A lot of these are unrelated.</p></li>
-<li><p><strong>DL</strong>: Gotcha. Let’s take a look at the hiearchy and see if we can refine it. We can look at the descendants and go from there.</p></li>
-<li><p><strong>Three hours later</strong></p></li>
-<li><p><strong>DL</strong>: Ok, great. I think we have a working example. I’m going to extract all of these into a spreadsheet. Please go through this one more time and then I’ll share with the group to review.</p></li>
+<li><strong>Data Liaison</strong>: Good morning! I’ve started digging into existing concept sets for anemia and found one potential option.</li>
+<li><strong>Subject Matter Expert</strong>: Good morning! That’s great. Let’s take a look at it.</li>
+<li><strong>DL</strong> <em>pulls up concept set for anemia</em>: This is one that’s out there. It uses the parent SNOMED CT Code <a href="https://athena.ohdsi.org/search-terms/terms/439777">271737000</a>.</li>
+<li><strong>SME</strong>: Hmm…this isn’t quite right. We need anemia caused by blood loss. A lot of these are unrelated.</li>
+<li><strong>DL</strong>: Gotcha. Let’s take a look at the hierarchy and see if we can refine it. We can look at the descendants and go from there.</li>
+<li><em>Three hours later</em></li>
+<li><strong>DL</strong>: Ok, great. I think we have a working example. I’m going to extract all of these into a spreadsheet. Please go through this one more time and then I’ll share with the group to review.</li>
 </ul>
 </section>
 <section id="creating-an-analysis-ready-dataset" class="level2" data-number="2.6">
@@ -937,7 +944,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":true});</script>
 
 
 

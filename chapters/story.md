@@ -161,28 +161,65 @@ Once the team is assembled, the first discussion is usually a variation of this 
 
 ## Protocol, variables, & definitions
 
-This aspect of the scientific process is probably both the most familiar and most vague.  Most researchers have several years of graduate-level courses and real-world experience.
+Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies. Most researchers have several years of graduate-level courses and real-world experience. 
 
-1. Tradeoffs are inevitable when selecting variables.  Rarely will an investigator's first choice be available.
+1.	Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.
 
-1. Retrospective medical records are extracted from a larger dataset.  An investigation can use only a fraction of the terabytes in an EHR.  Many decisions are involved to include only the relevant variables among the qualifying patients.
+1.	Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.
 
-{Mention CD2H's [Informatics Playbook](https://playbook.cd2h.org/en/latest/index.html)}
+While there are different approaches to developing a Research Protocol, the general steps involved include: 
+1. Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.
 
-[@cd2h1, Chapter 1]
+2. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
+
+3. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
+
+4. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocl Pad that supports the development and documentation of detailed study protocols. 
+
+After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
+
+## Learning and using OMOP (e.g. concept sets)
+
+The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/) Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM. Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1]. Given its ubiquity and active research community, OMOP is well suited for N3C. OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
+
+1. [Atlas](https://github.com/OHDSI/Atlas/wiki) provides a user-friendly interface for querying and analyzing data in the OMOP CDM. In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.
+
+2. [Athena](https://athena.ohdsi.org/) is a centralized repository of standardized clinical vocabularies.
+
+3. The [N3C Concept Set Browser](@sec-tools) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
+
+Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research quesiton. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
+
+In general, the overall process involved in developing concepts is as follows: 
+1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
+2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts. 
+3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts. 
+4. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community. 
+
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
+After determining the need for a concept set defining anemia, which is a common symptom of scurvy, the subject matter expert and data liaison meet to refine the concept set. 
+:::
+
+* **Data Liaison**: Good morning! I've started digging into existing concept sets for anemia and found one potential option. 
+
+* **Subject Matter Expert**: Good morning! That's great. Let's take a look at it. 
+
+* **DL** *pulls up concept set for anemia*: This is one that's out there. It uses the parent SNOMED CT Code [271737000](https://athena.ohdsi.org/search-terms/terms/439777).
+
+* **SME**: Hmm...this isn't quite right. We need anemia caused by blood loss. A lot of these are unrelated.
+
+* **DL**: Gotcha. Let's take a look at the hiearchy and see if we can refine it. We can look at the descendants and go from there.  
+
+* **Three hours later**
+
+* **DL**: Ok, great. I think we have a working example. I'm going to extract all of these into a spreadsheet. Please go through this one more time and then I'll share with the group to review.  
 
 ## Creating an analysis-ready dataset
 
 {Conventional data engineer role.  Dataset is created with input from the analyst.}
-
-## Learning and using OMOP (e.g. concept sets)
-
-OMOP originated in 2014 to facilitate the detection of small but significant side effects from new pharmaceuticals.  Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].  Since then, the foundation has supported many other research goals.  It is well-suited for N3C because:
-
-* It has evolved from 10? years and accommodates a wide range of data sources
-* It has an established community and documentation to help institutions convert their EMR to OMOP and to help researchers analyze their hypotheses.
-
-{3-4 sentence description of the original OMOP motivation.  It standardizes (a) tables & columns and (b) vocabulary.  Spend 1-2 paragraphs on concept set, focusing more on motivations than the mechanics.}
 
 ## Analyses
 

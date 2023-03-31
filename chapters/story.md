@@ -161,20 +161,21 @@ Once the team is assembled, the first discussion is usually a variation of this 
 
 ## Protocol, variables, & definitions
 
-Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies. Most researchers have several years of graduate-level courses and real-world experience. 
+Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies. Most researchers have several years of graduate-level courses and real-world experience.
 
-1.	Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.
+1. Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.
 
-1.	Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.
+1. Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.
 
-While there are different approaches to developing a Research Protocol, the general steps involved include: 
+While there are different approaches to developing a Research Protocol, the general steps involved include:
+
 1. Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.
 
-2. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
+1. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
 
-3. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
+1. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
 
-4. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocl Pad that supports the development and documentation of detailed study protocols. 
+1. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.
 
 After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
 
@@ -188,34 +189,29 @@ The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohd
 
 3. The [N3C Concept Set Browser](@sec-tools) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 
-Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research quesiton. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
+Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset. The contain lists of medical codes, usually restricted to very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research question. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
 
-In general, the overall process involved in developing concepts is as follows: 
+In general, the overall process involved in developing concepts is as follows:
+
 1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
-2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts. 
-3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts. 
-4. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community. 
+2. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.
+3. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.
+4. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-After determining the need for a concept set defining anemia, which is a common symptom of scurvy, the subject matter expert and data liaison meet to refine the concept set. 
+After determining the need for a concept set defining anemia, which is a common symptom of scurvy, the subject matter expert and data liaison meet to refine the concept set.
 :::
 
-* **Data Liaison**: Good morning! I've started digging into existing concept sets for anemia and found one potential option. 
-
-* **Subject Matter Expert**: Good morning! That's great. Let's take a look at it. 
-
+* **Data Liaison**: Good morning! I've started digging into existing concept sets for anemia and found one potential option.
+* **Subject Matter Expert**: Good morning! That's great. Let's take a look at it.
 * **DL** *pulls up concept set for anemia*: This is one that's out there. It uses the parent SNOMED CT Code [271737000](https://athena.ohdsi.org/search-terms/terms/439777).
-
 * **SME**: Hmm...this isn't quite right. We need anemia caused by blood loss. A lot of these are unrelated.
-
-* **DL**: Gotcha. Let's take a look at the hiearchy and see if we can refine it. We can look at the descendants and go from there.  
-
-* **Three hours later**
-
-* **DL**: Ok, great. I think we have a working example. I'm going to extract all of these into a spreadsheet. Please go through this one more time and then I'll share with the group to review.  
+* **DL**: Gotcha. Let's take a look at the hierarchy and see if we can refine it. We can look at the descendants and go from there.
+* *Three hours later*
+* **DL**: Ok, great. I think we have a working example. I'm going to extract all of these into a spreadsheet. Please go through this one more time and then I'll share with the group to review.
 
 ## Creating an analysis-ready dataset
 

@@ -206,17 +206,11 @@ After determining the need for a concept set defining anemia, which is a common 
 :::
 
 * **Data Liaison**: Good morning! I've started digging into existing concept sets for anemia and found one potential option.
-
 * **Subject Matter Expert**: Good morning! That's great. Let's take a look at it.
-
 * **DL** *pulls up concept set for anemia*: This is one that's out there. It uses the parent SNOMED CT Code [271737000](https://athena.ohdsi.org/search-terms/terms/439777).
-
 * **SME**: Hmm...this isn't quite right. We need anemia caused by blood loss. A lot of these are unrelated.
-
 * **DL**: Gotcha. Let's take a look at the hierarchy and see if we can refine it. We can look at the descendants and go from there.
-
 * *Three hours later*
-
 * **DL**: Ok, great. I think we have a working example. I'm going to extract all of these into a spreadsheet. Please go through this one more time and then I'll share with the group to review.
 
 ## Creating an analysis-ready dataset

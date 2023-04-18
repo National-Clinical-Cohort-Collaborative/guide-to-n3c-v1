@@ -51,14 +51,14 @@ Electronic Health Record (EHR) research has become an increasingly important too
 
 ## Voice of Narrator
 
-Our story begins in your office. Your own piece of heaven. As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
+Our story begins in your own piece of heaven: your office. As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
 :::
 
 ## Onboarding {#sec-story-onboarding}
 
-The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
+As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place.  Even with strong institutional support, execution of the university's Data Use Agreement with the NIH may take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
 
@@ -75,7 +75,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Investigator**: Remind me what a DUR is?
 
-* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
+* **N**: A *D*ata *U*se *R*equest describes your upcoming project.  Once an NIH committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.] 
 
 * **I**: Umm, I think I got it.
 
@@ -83,7 +83,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **I**: Is there anything else I need to know?
 
-* **N**: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Your institution requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
+* **N**: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind. Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
 
 * **I**: Ok, that’s very helpful. I may need real dates as I anticipate differences in treatment deliveries based on real-world availability. Am I stuck with Level 2 data if I start there?
 
@@ -114,7 +114,7 @@ N3C teams have some differences from conventional research teams at single sites
 
 1. The role of the navigator is often the most important member of a successful team. Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls. N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
+If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.  Note that community-wide data and logic liaisons are available for consultation during regular office hours.
 
 :::{.callout-note icon=false}
 
@@ -141,7 +141,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **Subject Matter Expert**: Maybe this simplifies the picture...  In my clinical experience, a patient rarely switches between Drugs A & B.  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
 * **St**: In that case, should my initial model have three levels for treatment: A, B, and A+B?
 * **I**: Probably.  In the N3C database, can someone tell me how many patients get both during the same visit?
-* **LL**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to whip up something in SQL.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+* **LL**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to add this drug to our templated fact tables which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**: Oh my goodness, is that your cat?  What a cutie! ^[There is a brief discussion of SME's cat.]
 * **LL** *after a few minutes*: Ok, I got it.  [Unmutes himself.]  Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
 * **SME**: Weird. 8% is a lot more than I expected.  I was thinking around 1%.
@@ -226,7 +226,7 @@ Once the project team has outlined the study protocol, key definitions, and timi
 
 After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset. Depending on the study design, this can be organized in multiple ways. In general, analytic datasets are organized at either the person or encounter level. This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter. This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters. 
 
-Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
+Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.  They also provide tempaltes to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
 
 <style>
 table {

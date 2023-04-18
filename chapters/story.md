@@ -30,7 +30,9 @@ author:
 
 # reference-location: margin
 
+
 csl: ../assets/csl/apa-7e.csl
+
 ---
 
 # A Research Story {#sec-story}
@@ -179,7 +181,7 @@ While there are different approaches to developing a Research Protocol, the gene
 
 After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
 
-## Learning and using OMOP (e.g. concept sets)
+## Learning and using OMOP and OHDSI Tooling
 
 The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/) Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM. Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1]. Given its ubiquity and active research community, OMOP is well suited for N3C. OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
 
@@ -215,16 +217,257 @@ After determining the need for a concept set defining anemia, which is a common 
 
 ## Creating an analysis-ready dataset
 
-{Conventional data engineer role.  Dataset is created with input from the analyst.}
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
+Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analyis. This is typically within the purview of the team informaticist or logic liaison. Let's take a peak into the process...
+:::
+
+After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset. Depending on the study design, this can be organized in multiple ways. In general, analytic datasets are organized at either the person or encounter level. This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter. This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters. 
+
+Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
+
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+
+<strong>Table 1: Scurvy Analytic Dataset</strong>
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Race_Ethnicity</th>
+        <th>Quarter_of_COVID_Diagnosis</th>
+        <th>Smoking_Status</th>
+        <th>Scurvy_Indicator_Before_COVID</th>
+        <th>Medication_A</th>
+        <th>Medication_B</th>
+        <th>Diabetes_Indicator_Before_COVID</th>
+        <th>COPD_Indicator_Before_COVID</th>
+        <th>Liver_Disease_Indicator_Before_COVID</th>
+        <th>Cancer_Indicator_Before_COVID</th>
+        <th>Renal_Disease_Indicator_Before_COVID</th>
+        <th>COVID_Hospitalization</th>
+        <th>ECMO_IMV</th>
+        <th>Time_to_ECMO_IMV</th>
+        <th>Death</th>
+        <th>Time_to_Death</th>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>M</td>
+        <td>Non-Hispanic White</td>
+        <td>Q2 2022</td>
+        <td>Current or Former Smoker</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>28</td>
+        <td>0</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>75</td>
+        <td>F</td>
+        <td>Hispanic or Latinx</td>
+        <td>Q1 2021</td>
+        <td>No Documented History of Smoking</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>28</td>
+        <td>0</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td>M</td>
+        <td>Non-Hispanic Black or African American</td>
+        <td>Q4 2020</td>
+        <td>No Documented History of Smoking</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>F</td>
+        <td>Non-Hispanic White</td>
+        <td>Q1 2023</td>
+        <td>Current or Former Smoker</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+    </tr>
+</table>
+</div>
 
 ## Analyses
 
-* Developing the Analyses
-* finalizing analysis
-  * Pinning to a release
-  * DRR
-  * figures
+:::{.callout-note icon=false}
 
+## Voice of Narrator
+
+Once the analytic dataset is finalized, the handoff between the informaticist and statistician takes place. This often requires a discussion or ongoing dialogue to understand the data structure and definitions. 
+:::
+
+* **Navigator**: Welcome everyone. Today we'd like to review the analytic dataset and next steps in moving the analysis forward. 
+* **Informaticist**: Yep. I've made a new code workbook in your folder in the project workspace. Can you pull it up and we can take a look.
+* **Statistician**: Sure. Did you send me the dataset? I don't remember seeing an email. 
+* **N** Remember, everything has to be done within the secure N3C platform. So you won't be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?
+* **S** ...remind me. 
+* *A few minutes later after a refresher.*
+* **S** Ok, great. I think I get it. So it's not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?
+* **N** You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.
+* **S** Gotcha. I'll reach out if I have any questions once I get to that point in the process. Thanks!
+
+From here, the statistician can work directly in N3C using R or Python for data analysis. After some work figuring out the platform, the statistician has some simple summary statistics to add to a report. Within a code workbook, they develop the following code and output to add to a report. 
+
+```
+  descriptive_statistics <- function(analytic_dataset) {
+  library(gtsummary)
+  library(dplyr)
+
+  patient_characteristics <-
+    analytic_dataset %>%
+    select(Scurvy_Indicator_Before_COVID, Age, Race_Ethnicity, Medication_A, Medication_B) %>%
+    tbl_summary(by = Scurvy_Indicator_Before_COVID)  
+
+  table1 <- patient_characteristics <- as_tibble(table1, col_labels = FALSE)
+
+  return(table1)
+  }
+```
+
+Which produces the following table. 
+
+<strong>Table 2: Characteristics of Patients with and without Scurvy, January 2020 - December 2022 </strong>
+<table>
+    <tr>
+        <th><strong>Characteristic</strong></th>
+        <td><strong>No History of Scurvy,</strong> <br>N = 19,871</td>
+        <td><strong>History of Scurvy,</strong> <br>N = 2,199</td>
+    </tr>
+    <tr>
+        <th>Age, Median (IQR)</th>
+        <td>50 (25, 75)</td>
+        <td>51 (27, 75)</td>
+    </tr>
+    <tr>
+        <th>Race/Ethnicity</th>
+        <td>NA</td>
+        <td>NA</td>
+    </tr>
+    <tr>
+        <th>Non-Hispanic White</th>
+        <td>7,834 (39%)</td>
+        <td>883 (40%)</td>
+    </tr>
+    <tr>
+        <th>Non-Hispanic Black or African American</th>
+        <td>3,970 (20%)</td>
+        <td>431 (20%)</td>
+    </tr>
+    <tr>
+        <th>Hispanic or Latinx</th>
+        <td>3,986 (20%)</td>
+        <td>430 (20%)</td>
+    </tr>
+    <tr>
+        <th>Missing/Other</th>
+        <td>4,081 (21%)</td>
+        <td>455 (21%)</td>
+    </tr>
+    <tr>
+        <th>Medication A</th>
+        <td>3,017 (15%)</td>
+        <td>318 (14%)</td>
+    </tr>
+    <tr>
+        <th>Medication B</th>
+        <td>1,661 (8.4%)</td>
+        <td>173 (7.9%)</td>
+    </tr>
+</table>
+
+After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
+
+* **Statistician**: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now? 
+* **Navigator**: That's great! Now that it's been approved, you can go into the Download Review Dashboard and there's an area where you can safely download the results. The review comes with a DRR #, which is required to download the associated results. 
+* **S** Ok. And then I can send it out to the rest of the team? 
+* **N** Yep! Once it's been reviewed, you can share it with the rest of the team outside of the Enclave. 
+* **S** Great. Thank you! I'll set up a time to review the results with the team next week. 
+  
 ## Draft paper, pub committee
 
 :::{.callout-note icon=false}
@@ -233,3 +476,34 @@ After determining the need for a concept set defining anemia, which is a common 
 
 Nearing the trail head...
 :::
+
+* **Investigator**: Thanks everyone for making this meeting. I hope you've had a chance to review the results that were circulated last week. 
+* **Subject Matter Expert**: They looked great. Very unexpected, but intruiging results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A. 
+* *Team reviews the results in detail. Manuscript write-up divided amongst the study team.*
+* **I** Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal? 
+* **Navigator** Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it's compliant with N3C policies and adheres to the original research question proposed by us. 
+* **I** Ok, that makes sense. How long does it usually take?
+* **N** In my experience, it's a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review. 
+* **I** Awesome. I hope you'll be able to help us when we get to the step. Thank you!
+* **N** Of course. Let's plan on meeting after the draft is closer to being finished. 
+* **I** Sounds great. See you all in two weeks!
+
+At this point, the team divides up the remaining work and gets to writing. After completing a draft that's almost ready to be submitted for publication, they submit their draft to the [N3C Publication Committee](publishing.md). After a week, they hear back from the N3C Publication Committee.
+
+### Sample Email from N3C Publication Comittee
+>
+> Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19 
+> Dear Investigator,
+>
+>
+>
+> The publication committee has reviewed and conditionally approved your manuscript for submission. The following must be addressed:
+> Please add "on behalf of the N3C consortium" to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.
+>
+>
+> Sincerely, 
+>
+>
+> The N3C Publication Committee
+>
+> 

@@ -232,10 +232,10 @@ Using the previously defined protocol, the informaticist will use the [concept s
 
 | Age | Sex | Race Ethnicity                         | Quarter of COVID dx  | Smoking Status                   | Scurvy pre-COVID | Med A | Med B | Diabetes pre-COVID | COPD pre-COVID | Liver Disease pre-COVID | Cancer pre-COVID | Renal Disease pre-COVID | COVID Hospitalization | ECMO IMV | Time to ECMO IMV | Death | Time to Death |
 | --- | --- | :------------------------------------- | :------------------- | :------------------------------- | :--------------: | :---: | :---: | :----------------: | :------------: | :---------------------: | :--------------: | :---------------------: | :-------------------: | :------: | :--------------: | :---: | ------------: |
-| 27  | M   | Non-Hispanic White                     | Q2 2022              | Current or Former Smoker         | 0                | 0     | 0     | 0                  | 1              | 0                       | 0                | 0                       | 1                     | 0        | 28               | 0     | 28            |
-| 75  | F   | Hispanic or Latinx                     | Q1 2021              | No Documented History of Smoking | 0                | 0     | 0     | 0                  | 0              | 0                       | 1                | 0                       | 0                     | 0        | 28               | 0     | 28            |
-| 54  | M   | Non-Hispanic Black or African American | Q4 2020              | No Documented History of Smoking | 1                | 1     | 0     | 1                  | 0              | 0                       | 1                | 0                       | 1                     | 0        | 1                | 1     | 1             |
-| 34  | F   | Non-Hispanic White                     | Q1 2023              | Current or Former Smoker         | 1                | 0     | 1     | 1                  | 0              | 1                       | 0                | 0                       | 1                     | 1        | 3                | 1     | 5             |
+| 27  | M   | Non-Hispanic White                     | 2022<br>Q2           | Current or Former Smoker         | 0                | 0     | 0     | 0                  | 1              | 0                       | 0                | 0                       | 1                     | 0        | 28               | 0     | 28            |
+| 75  | F   | Hispanic or Latinx                     | 2021<br>Q1           | No Documented History of Smoking | 0                | 0     | 0     | 0                  | 0              | 0                       | 1                | 0                       | 0                     | 0        | 28               | 0     | 28            |
+| 54  | M   | Non-Hispanic Black or African American | 2020<br>Q4           | No Documented History of Smoking | 1                | 1     | 0     | 1                  | 0              | 0                       | 1                | 0                       | 1                     | 0        | 1                | 1     | 1             |
+| 34  | F   | Non-Hispanic White                     | 2023<br>Q1           | Current or Former Smoker         | 1                | 0     | 1     | 1                  | 0              | 1                       | 0                | 0                       | 1                     | 1        | 3                | 1     | 5             |
 | …   | …   | …                                      | …                    | …                                | …                | …     | …     | …                  | …              | …                       | …                | …                       | …                     | …        | …                | …     | …             |
 
 : Scurvy Analytic Dataset {#tbl-story-analytic}
@@ -288,19 +288,21 @@ descriptive_statistics <- function(analytic_dataset) {
 
 Which produces the following @tbl-story-demographics.
 
-| Characteristic                             | No History of Scurvy | History of Scurvy |
-| :----------------------------------------- | -----------: | ----------: |
-| Patient Count                              | 19,871       | 2,199       |
-| Age, Median (IQR)                          | 50 (25, 75)  | 51 (27, 75) |
-| Race/Ethnicity                             | NA           | NA          |
-| Non-Hispanic<br>White                      | 7,834 (39%)  | 883 (40%)   |
-| Non-Hispanic<br>Black or African American  | 3,970 (20%)  | 431 (20%)   |
-| Hispanic or Latinx                         | 3,986 (20%)  | 430 (20%)   |
-| Missing/Other                              | 4,081 (21%)  | 455 (21%)   |
-| Medication A                               | 3,017 (15%)  | 318 (14%)   |
-| Medication B                               | 1,661 (8%)   | 173 (8%)    |
+| Characteristic                             | No History&nbsp;of&nbsp;Scurvy | History&nbsp;of&nbsp;Scurvy |
+| :----------------------------------------- | ------------------: | ------------------: |
+| Patient Count                              | 19,871              | 2,199               |
+| Age, Median<br>(IQR)                       | 50<br>(25,&nbsp;75) | 51<br>(27,&nbsp;75) |
+| Race/Ethnicity                             | NA                  | NA                  |
+| Non-Hispanic<br>White                      | 7,834<br>(39%)      | 883<br>(40%)        |
+| Non-Hispanic<br>Black or African American  | 3,970<br>(20%)      | 431<br>(20%)        |
+| Hispanic or Latinx                         | 3,986<br>(20%)      | 430<br>(20%)        |
+| Missing/Other                              | 4,081<br>(21%)      | 455<br>(21%)        |
+| Medication A                               | 3,017<br>(15%)      | 318<br>(14%)        |
+| Medication B                               | 1,661<br>(8%)       | 173<br>(8%)         |
 
-: Characteristics of Patients with and without Scurvy,<br>January 2020 - December 2022 {#tbl-story-demographics}
+: Characteristics of Patients with and without Scurvy {#tbl-story-demographics}
+
+<!--,<br>January 2020 - December 2022-->
 
 After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
 

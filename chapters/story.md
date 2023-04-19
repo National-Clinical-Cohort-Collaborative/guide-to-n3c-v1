@@ -102,7 +102,7 @@ The next step is to build a team to leverage retrospective medical records. Like
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
 1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
 1. a **statistician or data scientist** who understands the limitations of observational collection and can model retrospective data,
-1. a **logic liaison or informatician** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
+1. a **logic liaison or informaticist** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
 
@@ -221,12 +221,12 @@ After determining the need for a concept set defining anemia, which is a common 
 
 ## Voice of Narrator
 
-Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analyis. This is typically within the purview of the team informaticist or logic liaison. Let's take a peak into the process...
+Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analysis. This is typically within the purview of the team informaticist or logic liaison. Let's take a peak into the process...
 :::
 
 After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset. Depending on the study design, this can be organized in multiple ways. In general, analytic datasets are organized at either the person or encounter level. This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter. This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
 
-Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.  They also provide tempaltes to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
+Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.  They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
 
 <style>
 table {
@@ -384,12 +384,12 @@ Once the analytic dataset is finalized, the handoff between the informaticist an
 * **Navigator**: Welcome everyone. Today we'd like to review the analytic dataset and next steps in moving the analysis forward.
 * **Informaticist**: Yep. I've made a new code workbook in your folder in the project workspace. Can you pull it up and we can take a look.
 * **Statistician**: Sure. Did you send me the dataset? I don't remember seeing an email.
-* **N** Remember, everything has to be done within the secure N3C platform. So you won't be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?
-* **S** ...remind me.
+* **N**: Remember, everything has to be done within the secure N3C platform. So you won't be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?
+* **S**: ...remind me.
 * *A few minutes later after a refresher.*
-* **S** Ok, great. I think I get it. So it's not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?
-* **N** You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.
-* **S** Gotcha. I'll reach out if I have any questions once I get to that point in the process. Thanks!
+* **S**: Ok, great. I think I get it. So it's not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?
+* **N**: You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.
+* **S**: Gotcha. I'll reach out if I have any questions once I get to that point in the process. Thanks!
 
 From here, the statistician can work directly in N3C using R or Python for data analysis. After some work figuring out the platform, the statistician has some simple summary statistics to add to a report. Within a code workbook, they develop the following code and output to add to a report.
 
@@ -472,9 +472,9 @@ After repeating this for the remaining analyses for the project, the statisticia
 
 * **Statistician**: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now?
 * **Navigator**: That's great! Now that it's been approved, you can go into the Download Review Dashboard and there's an area where you can safely download the results. The review comes with a DRR #, which is required to download the associated results.
-* **S** Ok. And then I can send it out to the rest of the team?
-* **N** Yep! Once it's been reviewed, you can share it with the rest of the team outside of the Enclave.
-* **S** Great. Thank you! I'll set up a time to review the results with the team next week.
+* **S**: Ok. And then I can send it out to the rest of the team?
+* **N**: Yep! Once it's been reviewed, you can share it with the rest of the team outside of the Enclave.
+* **S**: Great. Thank you! I'll set up a time to review the results with the team next week.
 
 ## Draft paper, pub committee
 
@@ -486,32 +486,25 @@ Nearing the trail head...
 :::
 
 * **Investigator**: Thanks everyone for making this meeting. I hope you've had a chance to review the results that were circulated last week.
-* **Subject Matter Expert**: They looked great. Very unexpected, but intruiging results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A.
+* **Subject Matter Expert**: They looked great. Very unexpected, but intriguing results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A.
 * *Team reviews the results in detail. Manuscript write-up divided amongst the study team.*
-* **I** Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal?
-* **Navigator** Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it's compliant with N3C policies and adheres to the original research question proposed by us.
-* **I** Ok, that makes sense. How long does it usually take?
-* **N** In my experience, it's a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review.
-* **I** Awesome. I hope you'll be able to help us when we get to the step. Thank you!
-* **N** Of course. Let's plan on meeting after the draft is closer to being finished.
-* **I** Sounds great. See you all in two weeks!
+* **I**: Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal?
+* **Navigator**: Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it's compliant with N3C policies and adheres to the original research question proposed by us.
+* **I**: Ok, that makes sense. How long does it usually take?
+* **N**: In my experience, it's a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review.
+* **I**: Awesome. I hope you'll be able to help us when we get to the step. Thank you!
+* **N**: Of course. Let's plan on meeting after the draft is closer to being finished.
+* **I**: Sounds great. See you all in two weeks!
 
 At this point, the team divides up the remaining work and gets to writing. After completing a draft that's almost ready to be submitted for publication, they submit their draft to the [N3C Publication Committee](publishing.md). After a week, they hear back from the N3C Publication Committee.
 
-### Sample Email from N3C Publication Comittee
+### Sample Email from N3C Publication Committee
 >
 > Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19
+>
 > Dear Investigator,
->
->
 >
 > The publication committee has reviewed and conditionally approved your manuscript for submission. The following must be addressed:
 > Please add "on behalf of the N3C consortium" to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.
 >
->
-> Sincerely,
->
->
-> The N3C Publication Committee
->
->
+> Sincerely, The N3C Publication Committee

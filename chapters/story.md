@@ -417,56 +417,21 @@ descriptive_statistics <- function(analytic_dataset) {
 }
 ```
 
-Which produces the following table.
+Which produces the following @tbl-story-demographics.
 
-<strong>Table 2: Characteristics of Patients with and without Scurvy, January 2020 - December 2022 </strong>
-<table>
-    <tr>
-        <th><strong>Characteristic</strong></th>
-        <td><strong>No History of Scurvy,</strong> <br>N = 19,871</td>
-        <td><strong>History of Scurvy,</strong> <br>N = 2,199</td>
-    </tr>
-    <tr>
-        <th>Age, Median (IQR)</th>
-        <td>50 (25, 75)</td>
-        <td>51 (27, 75)</td>
-    </tr>
-    <tr>
-        <th>Race/Ethnicity</th>
-        <td>NA</td>
-        <td>NA</td>
-    </tr>
-    <tr>
-        <th>Non-Hispanic White</th>
-        <td>7,834 (39%)</td>
-        <td>883 (40%)</td>
-    </tr>
-    <tr>
-        <th>Non-Hispanic Black or African American</th>
-        <td>3,970 (20%)</td>
-        <td>431 (20%)</td>
-    </tr>
-    <tr>
-        <th>Hispanic or Latinx</th>
-        <td>3,986 (20%)</td>
-        <td>430 (20%)</td>
-    </tr>
-    <tr>
-        <th>Missing/Other</th>
-        <td>4,081 (21%)</td>
-        <td>455 (21%)</td>
-    </tr>
-    <tr>
-        <th>Medication A</th>
-        <td>3,017 (15%)</td>
-        <td>318 (14%)</td>
-    </tr>
-    <tr>
-        <th>Medication B</th>
-        <td>1,661 (8.4%)</td>
-        <td>173 (7.9%)</td>
-    </tr>
-</table>
+| Characteristic                             | No History of Scurvy | History of Scurvy |
+| :----------------------------------------- | -----------: | ----------: |
+| Patient Count                              | 19,871       | 2,199       |
+| Age, Median (IQR)                          | 50 (25, 75)  | 51 (27, 75) |
+| Race/Ethnicity                             | NA           | NA          |
+| Non-Hispanic<br>White                      | 7,834 (39%)  | 883 (40%)   |
+| Non-Hispanic<br>Black or African American  | 3,970 (20%)  | 431 (20%)   |
+| Hispanic or Latinx                         | 3,986 (20%)  | 430 (20%)   |
+| Missing/Other                              | 4,081 (21%)  | 455 (21%)   |
+| Medication A                               | 3,017 (15%)  | 318 (14%)   |
+| Medication B                               | 1,661 (8%)   | 173 (8%)    |
+
+: Characteristics of Patients with and without Scurvy,<br>January 2020 - December 2022 {#tbl-story-demographics}
 
 After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
 

@@ -393,20 +393,28 @@ Once the analytic dataset is finalized, the handoff between the informaticist an
 
 From here, the statistician can work directly in N3C using R or Python for data analysis. After some work figuring out the platform, the statistician has some simple summary statistics to add to a report. Within a code workbook, they develop the following code and output to add to a report.
 
-```
-  descriptive_statistics <- function(analytic_dataset) {
+```r
+descriptive_statistics <- function(analytic_dataset) {
   library(gtsummary)
   library(dplyr)
 
   patient_characteristics <-
     analytic_dataset %>%
-    select(Scurvy_Indicator_Before_COVID, Age, Race_Ethnicity, Medication_A, Medication_B) %>%
-    tbl_summary(by = Scurvy_Indicator_Before_COVID)
+    dplyr::select(
+      Scurvy_Indicator_Before_COVID,
+      Age,
+      Race_Ethnicity,
+      Medication_A,
+      Medication_B,
+    ) %>%
+    gtsummary::tbl_summary(
+      by = Scurvy_Indicator_Before_COVID
+    )
 
   table1 <- patient_characteristics <- as_tibble(table1, col_labels = FALSE)
 
   return(table1)
-  }
+}
 ```
 
 Which produces the following table.

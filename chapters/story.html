@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
@@ -97,6 +160,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../assets/font-awesome.css">
+<link rel="stylesheet" href="../assets/tables.css">
 <meta name="citation_title" content="[[2]{.chapter-number}&nbsp; [A Research Story]{.chapter-title}]{#sec-story .quarto-section-identifier}">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Higher hospitalization and mortality rates among SARS-CoV-2-infected persons in rural america;,citation_author=Alfred Jerrod Anzalone;,citation_author=Ronald Horswell;,citation_author=Brian M Hendricks;,citation_author=San Chu;,citation_author=William B Hillegass;,citation_author=William H Beasley;,citation_author=Jeremy R Harper;,citation_author=Wesley Kimble;,citation_author=Clifford J Rosen;,citation_author=Lucio Miele;,citation_author=others;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=1;,citation_doi=10.1111/jrh.12689;,citation_volume=39;,citation_journal_title=The Journal of Rural Health;,citation_publisher=Wiley Online Library;">
@@ -310,7 +374,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#analyses" id="toc-analyses" class="nav-link" data-scroll-target="#analyses"><span class="toc-section-number">2.7</span>  Analyses</a></li>
   <li><a href="#draft-paper-pub-committee" id="toc-draft-paper-pub-committee" class="nav-link" data-scroll-target="#draft-paper-pub-committee"><span class="toc-section-number">2.8</span>  Draft paper, pub committee</a>
   <ul class="collapse">
-  <li><a href="#sample-email-from-n3c-publication-comittee" id="toc-sample-email-from-n3c-publication-comittee" class="nav-link" data-scroll-target="#sample-email-from-n3c-publication-comittee"><span class="toc-section-number">2.8.1</span>  Sample Email from N3C Publication Comittee</a></li>
+  <li><a href="#sample-email-from-n3c-publication-committee" id="toc-sample-email-from-n3c-publication-committee" class="nav-link" data-scroll-target="#sample-email-from-n3c-publication-committee"><span class="toc-section-number">2.8.1</span>  Sample Email from N3C Publication Committee</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/story.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/story.md" class="toc-action">View source</a></p></div></div></nav>
@@ -412,7 +476,7 @@ Voice of Narrator
 <li>a <strong>navigator</strong> who has learned the administrative and IRB requirements and can facilitate the investigation,</li>
 <li>a <strong>subject matter expert</strong> (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,</li>
 <li>a <strong>statistician or data scientist</strong> who understands the limitations of observational collection and can model retrospective data,</li>
-<li>a <strong>logic liaison or informatician</strong> who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),</li>
+<li>a <strong>logic liaison or informaticist</strong> who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),</li>
 <li>a <strong>data liaison</strong> who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and</li>
 <li>a <strong>principal investigator</strong> who knows the literature and can testable hypotheses and write the manuscript.</li>
 </ol>
@@ -554,371 +618,161 @@ Voice of Narrator
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analyis. This is typically within the purview of the team informaticist or logic liaison. Let’s take a peak into the process…</p>
+<p>Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analysis. This is typically within the purview of the team informaticist or logic liaison. Let’s take a peak into the process…</p>
 </div>
 </div>
 <p>After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset. Depending on the study design, this can be organized in multiple ways. In general, analytic datasets are organized at either the person or encounter level. This means that you’ll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter. This topic is covered in greater detail in the <a href="../chapters/tools.html">Tools</a> and <a href="../chapters/practices.html">Best Practices</a> chapters.</p>
-<p>Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a <a href="../chapters/tools.html#sec-tools-apps-workbook">code workbook</a> or <a href="../chapters/tools.html#sec-tools-apps-repo">code repository</a> in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team’s statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs. They also provide tempaltes to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).</p>
-
-<style>
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-</style>
-
-
-<strong>Table 1: Scurvy Analytic Dataset</strong>
+<p>Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a <a href="../chapters/tools.html#sec-tools-apps-workbook">code workbook</a> or <a href="../chapters/tools.html#sec-tools-apps-repo">code repository</a> in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team’s statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs. They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).</p>
 <div style="overflow-x:auto;">
-
-<table>
-<tbody><tr>
-<th>
-Age
-</th>
-<th>
-Sex
-</th>
-<th>
-Race_Ethnicity
-</th>
-<th>
-Quarter_of_COVID_Diagnosis
-</th>
-<th>
-Smoking_Status
-</th>
-<th>
-Scurvy_Indicator_Before_COVID
-</th>
-<th>
-Medication_A
-</th>
-<th>
-Medication_B
-</th>
-<th>
-Diabetes_Indicator_Before_COVID
-</th>
-<th>
-COPD_Indicator_Before_COVID
-</th>
-<th>
-Liver_Disease_Indicator_Before_COVID
-</th>
-<th>
-Cancer_Indicator_Before_COVID
-</th>
-<th>
-Renal_Disease_Indicator_Before_COVID
-</th>
-<th>
-COVID_Hospitalization
-</th>
-<th>
-ECMO_IMV
-</th>
-<th>
-Time_to_ECMO_IMV
-</th>
-<th>
-Death
-</th>
-<th>
-Time_to_Death
-</th>
+<div id="tbl-story-analytic" class="anchored">
+<table class="table">
+<caption>Table&nbsp;2.1: Scurvy Analytic Dataset</caption>
+<colgroup>
+<col style="width: 1%">
+<col style="width: 1%">
+<col style="width: 13%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 5%">
+<col style="width: 1%">
+<col style="width: 1%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 2%">
+<col style="width: 5%">
+<col style="width: 1%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age</th>
+<th>Sex</th>
+<th style="text-align: left;">Race Ethnicity</th>
+<th style="text-align: left;">Quarter of COVID dx</th>
+<th style="text-align: left;">Smoking Status</th>
+<th style="text-align: center;">Scurvy pre-COVID</th>
+<th style="text-align: center;">Med A</th>
+<th style="text-align: center;">Med B</th>
+<th style="text-align: center;">Diabetes pre-COVID</th>
+<th style="text-align: center;">COPD pre-COVID</th>
+<th style="text-align: center;">Liver Disease pre-COVID</th>
+<th style="text-align: center;">Cancer pre-COVID</th>
+<th style="text-align: center;">Renal Disease pre-COVID</th>
+<th style="text-align: center;">COVID Hospitalization</th>
+<th style="text-align: center;">ECMO IMV</th>
+<th style="text-align: center;">Time to ECMO IMV</th>
+<th style="text-align: center;">Death</th>
+<th style="text-align: right;">Time to Death</th>
 </tr>
-<tr>
-<td>
-27
-</td>
-<td>
-M
-</td>
-<td>
-Non-Hispanic White
-</td>
-<td>
-Q2 2022
-</td>
-<td>
-Current or Former Smoker
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-28
-</td>
-<td>
-0
-</td>
-<td>
-28
-</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td>27</td>
+<td>M</td>
+<td style="text-align: left;">Non-Hispanic White</td>
+<td style="text-align: left;">2022<br>Q2</td>
+<td style="text-align: left;">Current or Former Smoker</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: right;">28</td>
 </tr>
-<tr>
-<td>
-75
-</td>
-<td>
-F
-</td>
-<td>
-Hispanic or Latinx
-</td>
-<td>
-Q1 2021
-</td>
-<td>
-No Documented History of Smoking
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-28
-</td>
-<td>
-0
-</td>
-<td>
-28
-</td>
+<tr class="even">
+<td>75</td>
+<td>F</td>
+<td style="text-align: left;">Hispanic or Latinx</td>
+<td style="text-align: left;">2021<br>Q1</td>
+<td style="text-align: left;">No Documented History of Smoking</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: right;">28</td>
 </tr>
-<tr>
-<td>
-54
-</td>
-<td>
-M
-</td>
-<td>
-Non-Hispanic Black or African American
-</td>
-<td>
-Q4 2020
-</td>
-<td>
-No Documented History of Smoking
-</td>
-<td>
-1
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-1
-</td>
-<td>
-1
-</td>
+<tr class="odd">
+<td>54</td>
+<td>M</td>
+<td style="text-align: left;">Non-Hispanic Black or African American</td>
+<td style="text-align: left;">2020<br>Q4</td>
+<td style="text-align: left;">No Documented History of Smoking</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">1</td>
 </tr>
-<tr>
-<td>
-34
-</td>
-<td>
-F
-</td>
-<td>
-Non-Hispanic White
-</td>
-<td>
-Q1 2023
-</td>
-<td>
-Current or Former Smoker
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-1
-</td>
-<td>
-1
-</td>
-<td>
-3
-</td>
-<td>
-1
-</td>
-<td>
-5
-</td>
+<tr class="even">
+<td>34</td>
+<td>F</td>
+<td style="text-align: left;">Non-Hispanic White</td>
+<td style="text-align: left;">2023<br>Q1</td>
+<td style="text-align: left;">Current or Former Smoker</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">5</td>
 </tr>
-<tr>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
-<td>
-…
-</td>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: right;">…</td>
 </tr>
-
-</tbody></table>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 <section id="analyses" class="level2" data-number="2.7">
@@ -940,139 +794,108 @@ Voice of Narrator
 <li><strong>Navigator</strong>: Welcome everyone. Today we’d like to review the analytic dataset and next steps in moving the analysis forward.</li>
 <li><strong>Informaticist</strong>: Yep. I’ve made a new code workbook in your folder in the project workspace. Can you pull it up and we can take a look.</li>
 <li><strong>Statistician</strong>: Sure. Did you send me the dataset? I don’t remember seeing an email.</li>
-<li><strong>N</strong> Remember, everything has to be done within the secure N3C platform. So you won’t be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?</li>
-<li><strong>S</strong> …remind me.</li>
+<li><strong>N</strong>: Remember, everything has to be done within the secure N3C platform. So you won’t be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?</li>
+<li><strong>S</strong>: …remind me.</li>
 <li><em>A few minutes later after a refresher.</em></li>
-<li><strong>S</strong> Ok, great. I think I get it. So it’s not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?</li>
-<li><strong>N</strong> You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.</li>
-<li><strong>S</strong> Gotcha. I’ll reach out if I have any questions once I get to that point in the process. Thanks!</li>
+<li><strong>S</strong>: Ok, great. I think I get it. So it’s not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?</li>
+<li><strong>N</strong>: You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.</li>
+<li><strong>S</strong>: Gotcha. I’ll reach out if I have any questions once I get to that point in the process. Thanks!</li>
 </ul>
 <p>From here, the statistician can work directly in N3C using R or Python for data analysis. After some work figuring out the platform, the statistician has some simple summary statistics to add to a report. Within a code workbook, they develop the following code and output to add to a report.</p>
-<pre><code>  descriptive_statistics &lt;- function(analytic_dataset) {
-  library(gtsummary)
-  library(dplyr)
-
-  patient_characteristics &lt;-
-    analytic_dataset %&gt;%
-    select(Scurvy_Indicator_Before_COVID, Age, Race_Ethnicity, Medication_A, Medication_B) %&gt;%
-    tbl_summary(by = Scurvy_Indicator_Before_COVID)  
-
-  table1 &lt;- patient_characteristics &lt;- as_tibble(table1, col_labels = FALSE)
-
-  return(table1)
-  }</code></pre>
-<p>Which produces the following table.</p>
-<strong>Table 2: Characteristics of Patients with and without Scurvy, January 2020 - December 2022 </strong>
-
-<table>
-<tbody><tr>
-<th>
-<strong>Characteristic</strong>
-</th>
-<td>
-<strong>No History of Scurvy,</strong> <br>N = 19,871
-</td>
-<td>
-<strong>History of Scurvy,</strong> <br>N = 2,199
-</td>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>descriptive_statistics <span class="ot">&lt;-</span> <span class="cf">function</span>(analytic_dataset) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(gtsummary)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  patient_characteristics <span class="ot">&lt;-</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    analytic_dataset <span class="sc">%&gt;%</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      Scurvy_Indicator_Before_COVID,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      Age,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      Race_Ethnicity,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      Medication_A,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      Medication_B,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    gtsummary<span class="sc">::</span><span class="fu">tbl_summary</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> Scurvy_Indicator_Before_COVID</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  table1 <span class="ot">&lt;-</span> patient_characteristics <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(table1, <span class="at">col_labels =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(table1)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Which produces the following <a href="#tbl-story-demographics">Table&nbsp;<span>2.2</span></a>.</p>
+<div id="tbl-story-demographics" class="anchored">
+<table class="table">
+<caption>Table&nbsp;2.2: Characteristics of Patients with and without Scurvy</caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Characteristic</th>
+<th style="text-align: right;">No History&nbsp;of&nbsp;Scurvy</th>
+<th style="text-align: right;">History&nbsp;of&nbsp;Scurvy</th>
 </tr>
-<tr>
-<th>
-Age, Median (IQR)
-</th>
-<td>
-50&nbsp;(25,&nbsp;75)
-</td>
-<td>
-51&nbsp;(27,&nbsp;75)
-</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Patient Count</td>
+<td style="text-align: right;">19,871</td>
+<td style="text-align: right;">2,199</td>
 </tr>
-<tr>
-<th>
-Race/Ethnicity
-</th>
-<td>
-NA
-</td>
-<td>
-NA
-</td>
+<tr class="even">
+<td style="text-align: left;">Age, Median<br>(IQR)</td>
+<td style="text-align: right;">50<br>(25,&nbsp;75)</td>
+<td style="text-align: right;">51<br>(27,&nbsp;75)</td>
 </tr>
-<tr>
-<th>
-Non-Hispanic&nbsp;White
-</th>
-<td>
-7,834&nbsp;(39%)
-</td>
-<td>
-883&nbsp;(40%)
-</td>
+<tr class="odd">
+<td style="text-align: left;">Race/Ethnicity</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
 </tr>
-<tr>
-<th>
-Non-Hispanic&nbsp;Black&nbsp;or&nbsp;African&nbsp;American
-</th>
-<td>
-3,970&nbsp;(20%)
-</td>
-<td>
-431&nbsp;(20%)
-</td>
+<tr class="even">
+<td style="text-align: left;">Non-Hispanic<br>White</td>
+<td style="text-align: right;">7,834<br>(39%)</td>
+<td style="text-align: right;">883<br>(40%)</td>
 </tr>
-<tr>
-<th>
-Hispanic&nbsp;or&nbsp;Latinx
-</th>
-<td>
-3,986&nbsp;(20%)
-</td>
-<td>
-430&nbsp;(20%)
-</td>
+<tr class="odd">
+<td style="text-align: left;">Non-Hispanic<br>Black or African American</td>
+<td style="text-align: right;">3,970<br>(20%)</td>
+<td style="text-align: right;">431<br>(20%)</td>
 </tr>
-<tr>
-<th>
-Missing/Other
-</th>
-<td>
-4,081&nbsp;(21%)
-</td>
-<td>
-455&nbsp;(21%)
-</td>
+<tr class="even">
+<td style="text-align: left;">Hispanic or Latinx</td>
+<td style="text-align: right;">3,986<br>(20%)</td>
+<td style="text-align: right;">430<br>(20%)</td>
 </tr>
-<tr>
-<th>
-Medication A
-</th>
-<td>
-3,017&nbsp;(15%)
-</td>
-<td>
-318&nbsp;(14%)
-</td>
+<tr class="odd">
+<td style="text-align: left;">Missing/Other</td>
+<td style="text-align: right;">4,081<br>(21%)</td>
+<td style="text-align: right;">455<br>(21%)</td>
 </tr>
-<tr>
-<th>
-Medication B
-</th>
-<td>
-1,661&nbsp;(8.4%)
-</td>
-<td>
-173&nbsp;(7.9%)
-</td>
+<tr class="even">
+<td style="text-align: left;">Medication A</td>
+<td style="text-align: right;">3,017<br>(15%)</td>
+<td style="text-align: right;">318<br>(14%)</td>
 </tr>
-
-</tbody></table>
+<tr class="odd">
+<td style="text-align: left;">Medication B</td>
+<td style="text-align: right;">1,661<br>(8%)</td>
+<td style="text-align: right;">173<br>(8%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--,<br>January 2020 - December 2022-->
 <p>After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the <a href="../chapters/publishing.html">N3C Download Review Committee</a></p>
 <ul>
 <li><strong>Statistician</strong>: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now?</li>
 <li><strong>Navigator</strong>: That’s great! Now that it’s been approved, you can go into the Download Review Dashboard and there’s an area where you can safely download the results. The review comes with a DRR #, which is required to download the associated results.</li>
-<li><strong>S</strong> Ok. And then I can send it out to the rest of the team?</li>
-<li><strong>N</strong> Yep! Once it’s been reviewed, you can share it with the rest of the team outside of the Enclave.</li>
-<li><strong>S</strong> Great. Thank you! I’ll set up a time to review the results with the team next week.</li>
+<li><strong>S</strong>: Ok. And then I can send it out to the rest of the team?</li>
+<li><strong>N</strong>: Yep! Once it’s been reviewed, you can share it with the rest of the team outside of the Enclave.</li>
+<li><strong>S</strong>: Great. Thank you! I’ll set up a time to review the results with the team next week.</li>
 </ul>
 </section>
 <section id="draft-paper-pub-committee" class="level2" data-number="2.8">
@@ -1092,24 +915,24 @@ Voice of Narrator
 </div>
 <ul>
 <li><strong>Investigator</strong>: Thanks everyone for making this meeting. I hope you’ve had a chance to review the results that were circulated last week.</li>
-<li><strong>Subject Matter Expert</strong>: They looked great. Very unexpected, but intruiging results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A.</li>
+<li><strong>Subject Matter Expert</strong>: They looked great. Very unexpected, but intriguing results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A.</li>
 <li><em>Team reviews the results in detail. Manuscript write-up divided amongst the study team.</em></li>
-<li><strong>I</strong> Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal?</li>
-<li><strong>Navigator</strong> Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it’s compliant with N3C policies and adheres to the original research question proposed by us.</li>
-<li><strong>I</strong> Ok, that makes sense. How long does it usually take?</li>
-<li><strong>N</strong> In my experience, it’s a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review.</li>
-<li><strong>I</strong> Awesome. I hope you’ll be able to help us when we get to the step. Thank you!</li>
-<li><strong>N</strong> Of course. Let’s plan on meeting after the draft is closer to being finished.</li>
-<li><strong>I</strong> Sounds great. See you all in two weeks!</li>
+<li><strong>I</strong>: Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal?</li>
+<li><strong>Navigator</strong>: Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it’s compliant with N3C policies and adheres to the original research question proposed by us.</li>
+<li><strong>I</strong>: Ok, that makes sense. How long does it usually take?</li>
+<li><strong>N</strong>: In my experience, it’s a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review.</li>
+<li><strong>I</strong>: Awesome. I hope you’ll be able to help us when we get to the step. Thank you!</li>
+<li><strong>N</strong>: Of course. Let’s plan on meeting after the draft is closer to being finished.</li>
+<li><strong>I</strong>: Sounds great. See you all in two weeks!</li>
 </ul>
 <p>At this point, the team divides up the remaining work and gets to writing. After completing a draft that’s almost ready to be submitted for publication, they submit their draft to the <a href="../chapters/publishing.html">N3C Publication Committee</a>. After a week, they hear back from the N3C Publication Committee.</p>
-<section id="sample-email-from-n3c-publication-comittee" class="level3" data-number="2.8.1">
-<h3 data-number="2.8.1" class="anchored" data-anchor-id="sample-email-from-n3c-publication-comittee"><span class="header-section-number">2.8.1</span> Sample Email from N3C Publication Comittee</h3>
+<section id="sample-email-from-n3c-publication-committee" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="sample-email-from-n3c-publication-committee"><span class="header-section-number">2.8.1</span> Sample Email from N3C Publication Committee</h3>
 <blockquote class="blockquote">
-<p>Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19 Dear Investigator,</p>
+<p>Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19</p>
+<p>Dear Investigator,</p>
 <p>The publication committee has reviewed and conditionally approved your manuscript for submission. The following must be addressed: Please add “on behalf of the N3C consortium” to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.</p>
-<p>Sincerely,</p>
-<p>The N3C Publication Committee</p>
+<p>Sincerely, The N3C Publication Committee</p>
 </blockquote>
 
 
@@ -1426,7 +1249,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":true,"selector":".lightbox","openEffect":"zoom"});</script>
 
 
 

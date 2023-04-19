@@ -1,0 +1,16 @@
+table {
+  overflow-x: auto;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+caption {
+  text-align: left;
+  caption-side: left;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}

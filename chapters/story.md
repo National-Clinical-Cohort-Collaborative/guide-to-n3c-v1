@@ -228,148 +228,17 @@ After clarifying all the data elements and study protocol, the next step is to c
 
 Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.  They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
 
-<style>
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-</style>
-</head>
-<body>
-
-<strong>Table 1: Scurvy Analytic Dataset</strong>
 <div style="overflow-x:auto;">
-  <table>
-    <tr>
-        <th>Age</th>
-        <th>Sex</th>
-        <th>Race_Ethnicity</th>
-        <th>Quarter_of_COVID_Diagnosis</th>
-        <th>Smoking_Status</th>
-        <th>Scurvy_Indicator_Before_COVID</th>
-        <th>Medication_A</th>
-        <th>Medication_B</th>
-        <th>Diabetes_Indicator_Before_COVID</th>
-        <th>COPD_Indicator_Before_COVID</th>
-        <th>Liver_Disease_Indicator_Before_COVID</th>
-        <th>Cancer_Indicator_Before_COVID</th>
-        <th>Renal_Disease_Indicator_Before_COVID</th>
-        <th>COVID_Hospitalization</th>
-        <th>ECMO_IMV</th>
-        <th>Time_to_ECMO_IMV</th>
-        <th>Death</th>
-        <th>Time_to_Death</th>
-    </tr>
-    <tr>
-        <td>27</td>
-        <td>M</td>
-        <td>Non-Hispanic White</td>
-        <td>Q2 2022</td>
-        <td>Current or Former Smoker</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>28</td>
-        <td>0</td>
-        <td>28</td>
-    </tr>
-    <tr>
-        <td>75</td>
-        <td>F</td>
-        <td>Hispanic or Latinx</td>
-        <td>Q1 2021</td>
-        <td>No Documented History of Smoking</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>28</td>
-        <td>0</td>
-        <td>28</td>
-    </tr>
-    <tr>
-        <td>54</td>
-        <td>M</td>
-        <td>Non-Hispanic Black or African American</td>
-        <td>Q4 2020</td>
-        <td>No Documented History of Smoking</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>34</td>
-        <td>F</td>
-        <td>Non-Hispanic White</td>
-        <td>Q1 2023</td>
-        <td>Current or Former Smoker</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-        <td>3</td>
-        <td>1</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-        <td>…</td>
-    </tr>
-</table>
+
+| Age | Sex | Race Ethnicity                         | Quarter of COVID dx  | Smoking Status                   | Scurvy pre-COVID | Med A | Med B | Diabetes pre-COVID | COPD pre-COVID | Liver Disease pre-COVID | Cancer pre-COVID | Renal Disease pre-COVID | COVID Hospitalization | ECMO IMV | Time to ECMO IMV | Death | Time to Death |
+| --- | --- | :------------------------------------- | :------------------- | :------------------------------- | :--------------: | :---: | :---: | :----------------: | :------------: | :---------------------: | :--------------: | :---------------------: | :-------------------: | :------: | :--------------: | :---: | ------------: |
+| 27  | M   | Non-Hispanic White                     | Q2 2022              | Current or Former Smoker         | 0                | 0     | 0     | 0                  | 1              | 0                       | 0                | 0                       | 1                     | 0        | 28               | 0     | 28            |
+| 75  | F   | Hispanic or Latinx                     | Q1 2021              | No Documented History of Smoking | 0                | 0     | 0     | 0                  | 0              | 0                       | 1                | 0                       | 0                     | 0        | 28               | 0     | 28            |
+| 54  | M   | Non-Hispanic Black or African American | Q4 2020              | No Documented History of Smoking | 1                | 1     | 0     | 1                  | 0              | 0                       | 1                | 0                       | 1                     | 0        | 1                | 1     | 1             |
+| 34  | F   | Non-Hispanic White                     | Q1 2023              | Current or Former Smoker         | 1                | 0     | 1     | 1                  | 0              | 1                       | 0                | 0                       | 1                     | 1        | 3                | 1     | 5             |
+| …   | …   | …                                      | …                    | …                                | …                | …     | …     | …                  | …              | …                       | …                | …                       | …                     | …        | …                | …     | …             |
+
+: Scurvy Analytic Dataset {#tbl-story-analytic}
 </div>
 
 ## Analyses

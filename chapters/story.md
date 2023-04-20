@@ -30,7 +30,9 @@ author:
 
 # reference-location: margin
 
+
 csl: ../assets/csl/apa-7e.csl
+
 ---
 
 # A Research Story {#sec-story}
@@ -49,14 +51,14 @@ Electronic Health Record (EHR) research has become an increasingly important too
 
 ## Voice of Narrator
 
-Our story begins in your office. Your own piece of heaven. As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
+Our story begins in your own piece of heaven: your office. As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.  Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
 :::
 
 ## Onboarding {#sec-story-onboarding}
 
-The startup costs are more expensive for an N3C investigation compared to most, but the incremental costs are cheaper.  Even with strong institutional support, the university's agreement with the NIH takes several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
+As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place.  Even with strong institutional support, execution of the university's Data Use Agreement with the NIH may take several months in legal and administrative channels.  Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.  That's a remarkably short time considering the scale of available data.  It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
 
 :::{.callout-note icon=false}
 
@@ -73,7 +75,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Investigator**: Remind me what a DUR is?
 
-* **N**: A *d*ata *u*se *r*equest describes your upcoming project.  Once a committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
+* **N**: A *D*ata *U*se *R*equest describes your upcoming project.  Once an NIH committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
 
 * **I**: Umm, I think I got it.
 
@@ -81,7 +83,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **I**: Is there anything else I need to know?
 
-* **N**: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Your institution requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
+* **N**: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind. Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
 
 * **I**: Ok, that’s very helpful. I may need real dates as I anticipate differences in treatment deliveries based on real-world availability. Am I stuck with Level 2 data if I start there?
 
@@ -100,7 +102,7 @@ The next step is to build a team to leverage retrospective medical records. Like
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
 1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
 1. a **statistician or data scientist** who understands the limitations of observational collection and can model retrospective data,
-1. a **logic liaison or informatician** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
+1. a **logic liaison or informaticist** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
 
@@ -112,7 +114,7 @@ N3C teams have some differences from conventional research teams at single sites
 
 1. The role of the navigator is often the most important member of a successful team. Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls. N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
-If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
+If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.  Note that community-wide data and logic liaisons are available for consultation during regular office hours.
 
 :::{.callout-note icon=false}
 
@@ -139,7 +141,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **Subject Matter Expert**: Maybe this simplifies the picture...  In my clinical experience, a patient rarely switches between Drugs A & B.  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
 * **St**: In that case, should my initial model have three levels for treatment: A, B, and A+B?
 * **I**: Probably.  In the N3C database, can someone tell me how many patients get both during the same visit?
-* **LL**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to whip up something in SQL.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+* **LL**: I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].  Give me 2 minutes to add this drug to our templated fact tables which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**: Oh my goodness, is that your cat?  What a cutie! ^[There is a brief discussion of SME's cat.]
 * **LL** *after a few minutes*: Ok, I got it.  [Unmutes himself.]  Ok, I got it.  40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
 * **SME**: Weird. 8% is a lot more than I expected.  I was thinking around 1%.
@@ -179,7 +181,7 @@ While there are different approaches to developing a Research Protocol, the gene
 
 After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
 
-## Learning and using OMOP (e.g. concept sets)
+## Learning and using OMOP and OHDSI Tooling
 
 The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/) Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM. Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1]. Given its ubiquity and active research community, OMOP is well suited for N3C. OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
 
@@ -215,15 +217,100 @@ After determining the need for a concept set defining anemia, which is a common 
 
 ## Creating an analysis-ready dataset
 
-{Conventional data engineer role.  Dataset is created with input from the analyst.}
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
+Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analysis. This is typically within the purview of the team informaticist or logic liaison. Let's take a peak into the process...
+:::
+
+After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset. Depending on the study design, this can be organized in multiple ways. In general, analytic datasets are organized at either the person or encounter level. This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter. This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
+
+Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave. This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis. N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.  They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
+
+<div style="overflow-x:auto;">
+
+| Age | Sex | Race Ethnicity                         | Quarter of COVID dx  | Smoking Status                   | Scurvy pre-COVID | Med A | Med B | Diabetes pre-COVID | COPD pre-COVID | Liver Disease pre-COVID | Cancer pre-COVID | Renal Disease pre-COVID | COVID Hospitalization | ECMO IMV | Time to ECMO IMV | Death | Time to Death |
+| --- | --- | :------------------------------------- | :------------------- | :------------------------------- | :--------------: | :---: | :---: | :----------------: | :------------: | :---------------------: | :--------------: | :---------------------: | :-------------------: | :------: | :--------------: | :---: | ------------: |
+| 27  | M   | Non-Hispanic White                     | 2022<br>Q2           | Current or Former Smoker         | 0                | 0     | 0     | 0                  | 1              | 0                       | 0                | 0                       | 1                     | 0        | 28               | 0     | 28            |
+| 75  | F   | Hispanic or Latinx                     | 2021<br>Q1           | No Documented History of Smoking | 0                | 0     | 0     | 0                  | 0              | 0                       | 1                | 0                       | 0                     | 0        | 28               | 0     | 28            |
+| 54  | M   | Non-Hispanic Black or African American | 2020<br>Q4           | No Documented History of Smoking | 1                | 1     | 0     | 1                  | 0              | 0                       | 1                | 0                       | 1                     | 0        | 1                | 1     | 1             |
+| 34  | F   | Non-Hispanic White                     | 2023<br>Q1           | Current or Former Smoker         | 1                | 0     | 1     | 1                  | 0              | 1                       | 0                | 0                       | 1                     | 1        | 3                | 1     | 5             |
+| …   | …   | …                                      | …                    | …                                | …                | …     | …     | …                  | …              | …                       | …                | …                       | …                     | …        | …                | …     | …             |
+
+: Scurvy Analytic Dataset {#tbl-story-analytic}
+</div>
 
 ## Analyses
 
-* Developing the Analyses
-* finalizing analysis
-  * Pinning to a release
-  * DRR
-  * figures
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
+Once the analytic dataset is finalized, the handoff between the informaticist and statistician takes place. This often requires a discussion or ongoing dialogue to understand the data structure and definitions.
+:::
+
+* **Navigator**: Welcome everyone. Today we'd like to review the analytic dataset and next steps in moving the analysis forward.
+* **Informaticist**: Yep. I've made a new code workbook in your folder in the project workspace. Can you pull it up and we can take a look.
+* **Statistician**: Sure. Did you send me the dataset? I don't remember seeing an email.
+* **N**: Remember, everything has to be done within the secure N3C platform. So you won't be doing anything on your local machine. It all has to be done within the platform. Do you know how to get to the project workspace?
+* **S**: ...remind me.
+* *A few minutes later after a refresher.*
+* **S**: Ok, great. I think I get it. So it's not that different from using R in RStudio as long as I follow the documentation you sent me. I think I can figure that out. What happens when I want to share results with the rest of the team? Can I send them out?
+* **N**: You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace. If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process. N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.
+* **S**: Gotcha. I'll reach out if I have any questions once I get to that point in the process. Thanks!
+
+From here, the statistician can work directly in N3C using R or Python for data analysis. After some work figuring out the platform, the statistician has some simple summary statistics to add to a report. Within a code workbook, they develop the following code and output to add to a report.
+
+```r
+descriptive_statistics <- function(analytic_dataset) {
+  library(gtsummary)
+  library(dplyr)
+
+  patient_characteristics <-
+    analytic_dataset %>%
+    dplyr::select(
+      Scurvy_Indicator_Before_COVID,
+      Age,
+      Race_Ethnicity,
+      Medication_A,
+      Medication_B,
+    ) %>%
+    gtsummary::tbl_summary(
+      by = Scurvy_Indicator_Before_COVID
+    )
+
+  table1 <- patient_characteristics <- as_tibble(table1, col_labels = FALSE)
+
+  return(table1)
+}
+```
+
+Which produces the following @tbl-story-demographics.
+
+| Characteristic                             | No History&nbsp;of&nbsp;Scurvy | History&nbsp;of&nbsp;Scurvy |
+| :----------------------------------------- | ------------------: | ------------------: |
+| Patient Count                              | 19,871              | 2,199               |
+| Age, Median<br>(IQR)                       | 50<br>(25,&nbsp;75) | 51<br>(27,&nbsp;75) |
+| Race/Ethnicity                             | NA                  | NA                  |
+| Non-Hispanic<br>White                      | 7,834<br>(39%)      | 883<br>(40%)        |
+| Non-Hispanic<br>Black or African American  | 3,970<br>(20%)      | 431<br>(20%)        |
+| Hispanic or Latinx                         | 3,986<br>(20%)      | 430<br>(20%)        |
+| Missing/Other                              | 4,081<br>(21%)      | 455<br>(21%)        |
+| Medication A                               | 3,017<br>(15%)      | 318<br>(14%)        |
+| Medication B                               | 1,661<br>(8%)       | 173<br>(8%)         |
+
+: Characteristics of Patients with and without Scurvy {#tbl-story-demographics}
+
+<!--,<br>January 2020 - December 2022-->
+
+After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
+
+* **Statistician**: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now?
+* **Navigator**: That's great! Now that it's been approved, you can go into the Download Review Dashboard and there's an area where you can safely download the results. The review comes with a DRR #, which is required to download the associated results.
+* **S**: Ok. And then I can send it out to the rest of the team?
+* **N**: Yep! Once it's been reviewed, you can share it with the rest of the team outside of the Enclave.
+* **S**: Great. Thank you! I'll set up a time to review the results with the team next week.
 
 ## Draft paper, pub committee
 
@@ -233,3 +320,27 @@ After determining the need for a concept set defining anemia, which is a common 
 
 Nearing the trail head...
 :::
+
+* **Investigator**: Thanks everyone for making this meeting. I hope you've had a chance to review the results that were circulated last week.
+* **Subject Matter Expert**: They looked great. Very unexpected, but intriguing results. I was surprised that outcomes were so much better in those exposed Medication B than Medication A.
+* *Team reviews the results in detail. Manuscript write-up divided amongst the study team.*
+* **I**: Ok, so we should all know what the next steps are in terms of the write-up. Are there any other requirements from N3C before we can submit the paper to our target journal?
+* **Navigator**: Good question. The manuscript draft has to be reviewed by the N3C Publication Committee. They meet weekly and will review the drat to make sure it's compliant with N3C policies and adheres to the original research question proposed by us.
+* **I**: Ok, that makes sense. How long does it usually take?
+* **N**: In my experience, it's a pretty quick turnaround. Usually 1-2 weeks unless there are serious issues with the draft. They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process. Since we did this, it should be a quick review.
+* **I**: Awesome. I hope you'll be able to help us when we get to the step. Thank you!
+* **N**: Of course. Let's plan on meeting after the draft is closer to being finished.
+* **I**: Sounds great. See you all in two weeks!
+
+At this point, the team divides up the remaining work and gets to writing. After completing a draft that's almost ready to be submitted for publication, they submit their draft to the [N3C Publication Committee](publishing.md). After a week, they hear back from the N3C Publication Committee.
+
+### Sample Email from N3C Publication Committee
+>
+> Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19
+>
+> Dear Investigator,
+>
+> The publication committee has reviewed and conditionally approved your manuscript for submission. The following must be addressed:
+> Please add "on behalf of the N3C consortium" to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.
+>
+> Sincerely, The N3C Publication Committee

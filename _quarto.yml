@@ -14,7 +14,9 @@ format:
       light: [zephyr, ../assets/light-theme.scss]
       dark:  [slate , ../assets/dark-theme.scss]
     # css: assets/citation.css
-    css: assets/font-awesome.css
+    css:
+    - assets/font-awesome.css
+    - ../assets/tables.css
     link-external-newwindow: true
     template-partials:
       - title-block.html

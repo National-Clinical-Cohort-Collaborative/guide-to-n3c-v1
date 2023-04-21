@@ -9,5 +9,7 @@ See a draft of the chapter outline at
 :::
 
 :::{.callout-warning}
-At this point, any edits to this chapter should be made in Google Docs.  The current Markdown is for testing only.  It is NOT the source of truth (yet).
+At this point, any edits to this chapter should be made in Google Docs.
+The current Markdown is for testing only.
+It is NOT the source of truth (yet).
 :::

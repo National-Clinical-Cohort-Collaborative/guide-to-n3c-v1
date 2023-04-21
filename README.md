@@ -10,7 +10,8 @@ The N3C and its [domain teams](https://covid.cd2h.org/domain-teams) are healthie
 
 Accordingly, the [guide-to-n3c-v1](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1) repository welcomes input from you.
 
-If you see a small mistake or unclear language, we invite you to inform us in a [new issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues) or to edit the source and submitting a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).  When an editor reviews and accepts your change, the website will be updated within minutes.
+If you see a small mistake or unclear language, we invite you to inform us in a [new issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues) or to edit the source and submitting a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+When an editor reviews and accepts your change, the website will be updated within minutes.
 
 If you have an idea for something more substantial such as a chapter or section, please start a [new issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues) and the N3C Educational Committee will coordinate with you where it fits best.
 
@@ -19,11 +20,16 @@ Platform
 
 <!-- The section is manually duplicated between index.qmd and README.md. -->
 
-As the chapters are being written, talk to the chapter's Lead Author to learn if it's being written in GitHub or Google Docs.  Eventually all Google Docs chapters will be translated to Markdown.  Once a chapter has been finally converted to Markdown...
+As the chapters are being written, talk to the chapter's Lead Author to learn if it's being written in GitHub or Google Docs.
+Eventually all Google Docs chapters will be translated to Markdown.
+Once a chapter has been finally converted to Markdown...
 
-To make small changes like spelling corrections, we recommend editing the source directly in GitHub.  It handles the details without your knowledge (like starting a fork and prompting your pull request).  From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/), click on the "Edit this page <i class="fab fa-github" aria-hidden="true"></i>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
+To make small changes like spelling corrections, we recommend editing the source directly in GitHub.
+It handles the details without your knowledge (like starting a fork and prompting your pull request).
+From the appropriate page of [the book](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/), click on the "Edit this page <i class="fab fa-github" aria-hidden="true"></i>" button and type your change in the [GitHub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
-Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.  We suggest [Visual Studio Code](https://code.visualstudio.com/) or [RStudio](https://www.rstudio.com/products/rstudio/).
+Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type.
+We suggest [Visual Studio Code](https://code.visualstudio.com/) or [RStudio](https://www.rstudio.com/products/rstudio/).
 
 You don't have to understand the rest to contribute, but for those interested:
 

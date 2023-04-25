@@ -210,7 +210,7 @@ The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, an
 
 While it is not possible to push changes made locally up to the Enclave, it is possible to pull updates made in the Enclave with a simple `git pull`. However, updates are not pulled unless some action is taken within the workbook to commit them prior to pulling. Simply editing the code for a transform is not enough, but executing a transform or adding a new transform will commit the current state of the workbook so that it can be pulled.
 
-Once you’ve pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub. The recommended way to do this is to create a new _empty_ repository in GitHub (or your git hosting service of choice) with the same name as the workbook, and set it up as a push-only remote repository. For example, for a workbook named `example_workbook`, one would create a new GitHub repository named `example_workbook`, and in the local copy run
+Once you’ve pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub. The recommended way to do this is to create a new _empty_ repository in GitHub (or your git hosting service of choice) with the same name as the workbook, and set it up as a push-only remote repository. For example, for a workbook named `example_workbook`, one would create a new GitHub repository named `example_workbook`, and in the local copy run:
 
 ```bash
 git remote set-url --add --push origin https://github.com/<username>/example_workbook.git
@@ -237,53 +237,32 @@ Using them in Code Workbooks requires updating the workbook [environment](https:
 
 In fact, Python libraries published this way are automatically usable by others in N3C without submission to the Knowledge Store, but you should still submit the repository itself along with documentation as a Knowledge Object for discoverability in N3C. If you run into issues or have questions, be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office).
 
-
 ### Exporting Concept Sets
 
-As discussed in [Understanding the Data](#understanding-the-data), concept sets are sets of OMOP concept_ids representing clinical concepts. These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](#concept-set-browser) for details.
+As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids representing clinical concepts. These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](#concept-set-browser) for details.
 
 When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials. Fortunately, the concept set browser supports this functionality–when viewing a specific version of a concept set, the “OMOP Concepts” tab lists the individual concepts and provides an “Export list of Concepts as Excel.” The provided Excel export includes the concept IDs and other relevant information.
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-8: The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).
+![The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).](images/publishing/fig-publishing-080-cset-excel-export.png){#fig-publishing-080-cset-excel-export fig-alt="cset-excel-export"}
 
 Some concept sets, notably those properly reviewed and marked N3C Recommended, are already published externally and referenceable via a DOI at the [N3C Zenodo community](https://zenodo.org/communities/cd2h-covid/).
 
-
 ## Submitting to the Knowledge Store
 
-For security reasons the permissions around project workspaces are very tight; it is not possible for a researcher to share data, code, or other resources with others outside of the project workspace. While necessary, this prevents code sharing and re-use amongst the many analysts working in the Enclave. The [N3C Knowledge Store](#knowledge-store) provides an authorized mechanism for researchers to share code, and datasets derived via code, with other researchers (provided they also have access to the correct input datasets in the case of shared datasets). Because the Knowledge Store is internal to the Enclave and protected to those who have the authorization to view row-level data, the publication is not involved in monitoring or approving the contents.
+For security reasons the permissions around project workspaces are very tight; it is not possible for a researcher to share data, code, or other resources with others outside of the project workspace. While necessary, this prevents code sharing and re-use amongst the many analysts working in the Enclave. The [N3C Knowledge Store](tools.md#sec-tools-store) provides an authorized mechanism for researchers to share code, and datasets derived via code, with other researchers (provided they also have access to the correct input datasets in the case of shared datasets). Because the Knowledge Store is internal to the Enclave and protected to those who have the authorization to view row-level data, the publication is not involved in monitoring or approving the contents.
 
-If you’ve written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use. Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) training module (Enclave access required), but we’ll give an overview here. Note that the process can be cumbersome and sometimes requires administrator help–be sure to submit an [Enclave-internal support ticket](#Enclave-support-tickets) or visit [office hours](#office-hours) if you run into any issues or have questions.
+If you’ve written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use.
+Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) training module (Enclave access required), but we’ll give an overview here.
+Note that the process can be cumbersome and sometimes requires administrator help–be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office) if you run into any issues or have questions.
 
 Code sharing within N3C is usually accomplished by sharing Code Workbook “templates” in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user. Authoring workbook templates is covered in the [official documentation](https://www.palantir.com/docs/foundry/code-workbook/templates-overview/). Templates are typically accompanied by a README (as a Report) with documentation, an example workbook using the template on N3C data, and potentially the derived dataset created by the example workbook. We suggest placing these resources in a single folder prior to submitting them to the Knowledge Store.
 
 To submit your new “knowledge object” to the store, first find the “Publish New Knowledge Object” item under the … menu in the upper right of the Knowledge Store:
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-9: The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.
+![The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.](images/publishing/fig-publishing-090-knowledge-store-1.png){#fig-publishing-090-knowledge-store-1 fig-alt="knowledge-store-1"}
 
 This will open a form where you are able to select your knowledge object (you should select the folder containing your template and other materials) and add details such as a title and description.
 
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-10: Knowledge Store contribution form.
+![Knowledge Store contribution form.](images/publishing/fig-publishing-100-knowledge-store-form.png){#fig-publishing-100-knowledge-store-form fig-alt="knowledge-store-form"}
 
 Once the form is completed the submission will be sent to a queue for system administrators to finalize the creation of the knowledge object (which requires creating read-only copies in a place where other researchers can access them) and listing them in the store. Depending on the complexity and goals of your template, administrators may help create multiple versions of your example workbook with pre-configured access to different levels of N3C data and set up a schedule so that they produce new derived datasets whenever a new release of N3C data is available. This allows other researchers to use the computed datasets directly, or import the template for customization.

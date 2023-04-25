@@ -61,7 +61,7 @@ csl: ../assets/csl/apa-7e.csl
 
 # Publishing and Sharing Your Work {#sec-publishing}
 
-**Chapter Leads: Julie McMurry, Jeremy Harper**
+**Chapter Leads**: Julie McMurry, Jeremy Harper
 
 ## Publication Committee Process {#sec-publishing-committee}
 
@@ -103,9 +103,9 @@ The publication committee has a role in helping authors identify Tier 2 and Tier
 
 * Notify core contributors (named in [covid.cd2h.org/acknowledgements](covid.cd2h.org/acknowledgements)) and relevant domain teams of manuscripts that might be using their work
 * Enable core contributors and relevant domain teams to review the manuscript and either opt out of acknowledgement or opt into consortial contributorship.
-  Opting into consortial contributorship requires meeting the four ICJME criteria above
+  Opting into consortial contributorship requires meeting the four ICMJE criteria above
 * Any other invited individuals (eg.domain team etc) would opt into acknowledgement OR opt into consortial contributorship;
-  the latter requires meeting the four ICJME criteria above.
+  the latter requires meeting the four ICMJE criteria above.
 * The publication committee then informs the author of any responses to consortial-level contributions or changes to default acknowledgments.
 
 The publications committee helps to maintain the list of core contributors, and progress is underway to automatically track contributions directly within the Enclave, which aids this process.
@@ -124,7 +124,7 @@ Prior approval is also required regardless of the export mechanism (screen shot,
 ### Constraints with aggregated data pertaining to small groups of patients (aka small 'cell sizes') {#sec-publishing-drr-small}
 
 To protect patient's data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as `< 20` with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement).
-Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external helpdesk, see @sec-support).
+Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see @sec-support).
 A strong scientific rationale for this must be provided.
 NCATS makes the final decision about whether to approve the appeal.
 In no cases may group sizes below 10 be considered.

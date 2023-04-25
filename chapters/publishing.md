@@ -144,23 +144,21 @@ All datasets in the Enclave are capable of being versioned with branches, meanin
 
 Clicking on the “Branch” tab of the dataset node shows that the master branch is currently being used in this workbook. Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are ‘released’ periodically after [quality checks and harmonization](lifecycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively ‘pinning’ the dataset to a point in time. The `master` branch is configured to always match the latest release, and thus changes over time.
 
-When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example `source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release-v98-2022-10-27")`.
+When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example:
 
-
+```py
+source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release-v98-2022-10-27")`
 ```
-Note:
 
+:::{.callout-note}
 After changing the branch of an imported dataset, you will need to re-compute downstream results for their output to reflect the new input.
 
 Additionally, all primary N3C tables are versioned with similar release names; if you are using both the `condition_era` and `drug_exposure` tables, you should select the same branch for each. It is not recommended to mix data from different releases (or a pinned release with the master branch), because they may contain incompatible data–each N3C release is designed to be a self-contained set of datasets.
 
 In fact, because downstream results are only updated when they are explicitly run, you may wish to avoid using the master branch altogether, or run the risk of one set of different sets of results being based on different releases, depending on when they were run.
-
-```
-
+:::
 
 Why is pinning to a release helpful? Because the default `master` branch is continuously being updated, analysis results based on it will change over time along with the underlying data (if they are re-run). This becomes cumbersome when writing about results!
-
 
 ### Download Request Process
 
@@ -168,31 +166,17 @@ All research results derived from N3C data–including summary tables, figures, 
 
 The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) (Enclave access required), but we’ll provide a brief overview here.
 
-
 #### Submitting a Download Request
 
 The download request dashboard may be accessed from the Enclave homepage under “Download Dashboard.” This interface shows your previous requests, and you can submit a new one via the “Submit a new Download Request” button.
 
+![The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.](images/publishing/fig-publishing-030-download-dashboard.png){#fig-publishing-030-download-dashboard fig-alt="download-dashboard"}
 
+When submitting a new download request, you will first be asked to complete a short quiz to ensure you understand the requirements. Subsequently, you will be prompted to enter information about the request, and select one or more “Resources” that you wish to export. A single download request may include multiple resources, such as multiple summary tables saved as datasets. To export figures you should include them in a Report, which can be done from either the Code Workbook or Contour interfaces. Desired log information (such as textual results from statistical tests) should also be copied and pasted into the report so that it can be reviewed.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-3: The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.
-
-When submitting a ne
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)w download request, you will first be asked to complete a short quiz to ensure you understand the requirements. Subsequently, you will be prompted to enter information about the request, and select one or more “Resources” that you wish to export. A single download request may include multiple resources, such as multiple summary tables saved as datasets. To export figures you should include them in a Report, which can be done from either the Code Workbook or Contour interfaces. Desired log information (such as textual results from statistical tests) should also be copied and pasted into the report so that it can be reviewed.
-
-Figure 10-4: The download review request form.
+![The download review request form.](images/publishing/fig-publishing-040-download-form.png){#fig-publishing-040-download-form fig-alt="download-form"}
 
 If you need the review request to be expedited, you have the option of entering a Need By Date and providing a justification.
-
 
 #### Downloading an Approved Request
 
@@ -200,73 +184,58 @@ When a request is approved, behind the scenes a read-only copy of the materials 
 
 When your request is approved, you will see it listed as Approved in the Download Dashboard (see above). Each approved request is provided with a DRR ID, for example “DRR-E5C4B6C” shown above. If we scroll down further in the specific request, we can use the “View all…” link to see the individual approved “Resource(s) To Download”:
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-5: A view of exportable datasets and a report from an approved download request.
+![A view of exportable datasets and a report from an approved download request.](images/publishing/fig-publishing-050-download-approved.png){#fig-publishing-050-download-approved fig-alt="download-approved"}
 
 To export one of the datasets as CSV, we can open it by clicking on it, and in the resulting new tab select “Download as CSV” from the “Actions” menu - this will prompt you to enter the corresponding DRR ID, after which the file will be downloaded to your local computer.
 
 Exporting figures and logs stored in Reports can be done in multiple ways. After opening the approved report from the list of resources to download, you can select either “Export to PDF” or “Export to PowerPoint” from the “Actions” menu. Again you will be prompted to enter the DRR ID before the file download begins. A common issue with “Download as PDF” is that figures produced in Code Workbooks may be lower resolution than expected.
 
-
 ### Exporting Code to a Git Repo
 
 While code written inside the Enclave is generally not executable in other contexts (a result of the proprietary execution environment), exporting code for review and publication can be an important part of computational science. Fortunately, both Code Workbooks and Code Repositories support cloning as git repositories, which can then be mirrored to public git hosting like GitHub or BitBucket. This publication step is completely optional and may not even be applicable to all work.
 
-
-```
-Note:
-
+:::{.callout-note}
 Git repositories cloned from the Enclave are read-only; changes made to the locally cloned copy cannot be pushed back to the Enclave. You can however pull new changes made in the Enclave, see below.
 
 Unlike summary tables, figures, or other results derived from N3C data, N3C does not require review of code prior to export. However, you should be careful to ensure that the code does not include any sensitive information added by hand. The most common use case for such hard-coded data are `data_partner_id` values added to filter a data partner's data. These should be removed or masked to comply with N3C policy.
-```
-
+:::
 
 Code Workbook code can be exported via the “Gear” icon in the interface, under “Export git repository.” Selecting this item will open the workbook in a new browser tab, with a new “Export Code Workbook” panel on the right, providing the git command to use to clone the repo to your local computer. As described in the panel text, the link contains an authentication token that you should keep private.
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-6: Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
+![Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-060-workbook-git.png){#fig-publishing-060-workbook-git fig-alt="workbook-git"}
 
 The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, and `pipeline.sql`, containing all of the workbooks’ R, Python, and SQL transform code respectively. These files are not very reader-friendly, and as of this writing N3C is working on parsing tools to help researchers publish their work in an accessible manner.
-
 
 #### Pulling Changes, Pushing to GitHub, Branches, and Code Repositories
 
 While it is not possible to push changes made locally up to the Enclave, it is possible to pull updates made in the Enclave with a simple `git pull`. However, updates are not pulled unless some action is taken within the workbook to commit them prior to pulling. Simply editing the code for a transform is not enough, but executing a transform or adding a new transform will commit the current state of the workbook so that it can be pulled.
 
-Once you’ve pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub. The recommended way to do this is to create a new _empty_ repository in GitHub (or your git hosting service of choice) with the same name as the workbook, and set it up as a push-only remote repository. For example, for a workbook named `example_workbook`, one would create a new GitHub repository named `example_workbook`, and in the local copy run `git remote set-url --add --push origin https://github.com/&lt;username>/example_workbook.git`. A subsequent `git push` will sync the state of the remote repository. You will of course need the appropriate permissions to push a repository to GitHub, via a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or some other means.
+Once you’ve pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub. The recommended way to do this is to create a new _empty_ repository in GitHub (or your git hosting service of choice) with the same name as the workbook, and set it up as a push-only remote repository. For example, for a workbook named `example_workbook`, one would create a new GitHub repository named `example_workbook`, and in the local copy run
 
-If you have created one or more branches in your code workbook, these are treated as regular git branches and so can be synced locally with `git fetch` and `git switch &lt;branch-name>`. A subsequent `git push` will push the new branch to GitHub as well.
+```bash
+git remote set-url --add --push origin https://github.com/<username>/example_workbook.git
+```
 
-Code Repositories work much the same way. The primary differences are that 1) commits to a repo in the Enclave are made manually, rather than automatically when a transform is run or created, and 2) the Clone button provides only the git URL with the embedded token, you will need to use this URL in combination with `git clone` or other git commands as usual. Code Repos similarly support branching.
+A subsequent `git push` will sync the state of the remote repository. You will of course need the appropriate permissions to push a repository to GitHub, via a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or some other means.
 
+If you have created one or more branches in your code workbook, these are treated as regular git branches and so can be synced locally with `git fetch` and `git switch <branch-name>`. A subsequent `git push` will push the new branch to GitHub as well.
 
+Code Repositories work much the same way. The primary differences are that
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+1. commits to a repo in the Enclave are made manually, rather than automatically when a transform is run or created, and
+1. the Clone button provides only the git URL with the embedded token, you will need to use this URL in combination with `git clone` or other git commands as usual. Code Repos similarly support branching.
 
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-7: Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
-
+![Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-070-repo-git.png){#fig-publishing-070-repo-git fig-alt="repo-git"}
 
 #### Python Libraries and Code Repositories
 
-Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don’t: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher. One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) (Enclave access required). Authoring Python libraries is different from authoring Code Repositories that transform data, and is covered in the [official documentation](https://www.palantir.com/docs/foundry/transforms-python/share-python-libraries/), as is [utilizing such libraries in Code Repositories](https://www.palantir.com/docs/foundry/transforms-python/use-python-libraries/). Using them in Code Workbooks requires updating the workbook [environment](#code-workbook-environment) to include the library, just like with any other Python or R library you might like to use.
+Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don’t: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher.
+One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) (Enclave access required).
+Authoring Python libraries is different from authoring Code Repositories that transform data, and is covered in the [official documentation](https://www.palantir.com/docs/foundry/transforms-python/share-python-libraries/),
+as is [utilizing such libraries in Code Repositories](https://www.palantir.com/docs/foundry/transforms-python/use-python-libraries/).
+Using them in Code Workbooks requires updating the workbook [environment](https://www.palantir.com/docs/foundry/code-workbook/environment-overview/) to include the library, just like with any other Python or R library you might like to use.
 
-In fact, Python libraries published this way are automatically usable by others in N3C without submission to the Knowledge Store, but you should still submit the repository itself along with documentation as a Knowledge Object for discoverability in N3C. If you run into issues or have questions, be sure to submit an [Enclave-internal support ticket](#Enclave-support-tickets) or visit [office hours](#office-hours).
+In fact, Python libraries published this way are automatically usable by others in N3C without submission to the Knowledge Store, but you should still submit the repository itself along with documentation as a Knowledge Object for discoverability in N3C. If you run into issues or have questions, be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office).
 
 
 ### Exporting Concept Sets

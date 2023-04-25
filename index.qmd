@@ -1,27 +1,34 @@
-# Welcome {.unnumbered}
+# Welcome {.unnumbered #sec-welcome}
 
 Welcome to [*The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data*](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/).
 Here you will find guidance, information, and pointers to resources for conducting research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
-During a time of isolation and unanswered questions in an emerging pandemic, N3C was born of an urgent need to save lives. N3C was created “to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research.” ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation’s largest and most diverse set of de-identified health records to date. Today, thousands of researchers have actively engaged with N3C resulting in hundreds of scholarly products informing public policy and patient care.
+During a time of isolation and unanswered questions in an emerging pandemic, N3C was born of an urgent need to save lives.
+N3C was created "to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research." ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation's largest and most diverse set of de-identified health records to date.
+Today, thousands of researchers have actively engaged with N3C resulting in hundreds of scholarly products informing public policy and patient care.
 
-N3C emphasizes community and team science values which are embodied by the structure of the organization and reflected in the following chapters. This guide originated as a project of the Education and Training Domain Team, one of the many self-organizing [teams](#sec-onboarding-dt) within N3C. An editorial committee was formed to engage with principal investigators, clinician-scientists, informaticians, data scientists, and others to condense the collective knowledge amassed in N3C. Chapters are authored and peer reviewed by a diverse group of contributors with both broad and deep domain expertise. This has been a work of heart and soul, designed to make this ground-breaking work accessible without obscuring its complexity.
+N3C emphasizes community and team science values which are embodied by the structure of the organization and reflected in the following chapters.
+This guide originated as a project of the Education and Training Domain Team, one of the many self-organizing [teams](#sec-onboarding-dt) within N3C.
+An editorial committee was formed to engage with principal investigators, clinician-scientists, informaticians, data scientists, and others to condense the collective knowledge amassed in N3C.
+Chapters are authored and peer reviewed by a diverse group of contributors with both broad and deep domain expertise.
+This has been a work of heart and soul, designed to make this ground-breaking work accessible without obscuring its complexity.
 
-N3C is continuously evolving, and we expect this book will as well. We invite you to join us in continually expanding and improving this guide, but most importantly, we invite you to get involved in one of the many avenues for impactful research that N3C provides.
+N3C is continuously evolving, and we expect this book will as well.
+We invite you to join us in continually expanding and improving this guide, but most importantly, we invite you to get involved in one of the many avenues for impactful research that N3C provides.
 
 Sincerely,
 
 _The G2N3C Editorial Committee_
 
-## Contributors
+## Contributors {#sec-welcome-contributors}
 
 Individual chapter lead and contributor affiliations are also provided in each chapter.
 
 _Editorial Committee_:<br>
-Shawn T. O’Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley
+Shawn T. O'Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley
 
 @sec-intro -- _Introduction_:<br>
-Karen M. Crowley, Shawn T. O’Neil
+Karen M. Crowley, Shawn T. O'Neil
 
 @sec-story -- _A Research Story_:<br>
 Will Beasley, A. Jerrod Anzalone, Sharon Patrick
@@ -36,44 +43,47 @@ Christine Suver, Johanna Loomba
 Sharon Patrick, Jonathan F. Emery, Suzanne McCahan, Mary Helen Mays
 
 @sec-access -- _Getting & Managing Data Access_:<br>
-Shawn T. O’Neil, Mariam Deacy
+Shawn T. O'Neil, Mariam Deacy
 
 @sec-understanding -- _Understanding the Data_:<br>
-Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O’Neil, Thomas Richards, Kristin Kostka
+Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O'Neil, Thomas Richards, Kristin Kostka
 
 @sec-tools -- _Introducing Enclave Analysis Tools_:<br>
-Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O’Neil, Steven G. Johnson
+Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O'Neil, Steven G. Johnson
 
 @sec-practices -- _Best Practices for Research Lifecycle_:<br>
 Harold P. Lehmann, Hytham Sidky, Jimmy Phuong, Kate Bradwell, Kenneth J. Wilkins, Andrea G. Zhou, David Sahner
 
 @sec-publishing -- _Publishing and Sharing Your Work_:<br>
-Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O’Neil
+Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O'Neil
 
 @sec-support -- _Special Topic: Help and Support:_<br>
-Shawn T. O’Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
+Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
 
-## How to Contribute
+## How to Contribute {#sec-welcome-contribute}
 
-We welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown with the [Quarto](https://quarto.org/) package for R and hosted on GitHub.
+We welcome suggestions, edits, and larger contributions to this guide.
+This book is typeset in Markdown with the [Quarto](https://quarto.org/) package for R and hosted on GitHub.
 For errors or requests, please submit an Issue to the [Issues tracker](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues).
 To make larger or direct contributions, please make a pull request using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 If you would like to contribute but are unfamiliar with any of these technologies, please contact any of the editorial committee members or submit an Issue to request help.
 
-## How to Cite this Work
+## How to Cite this Work {#sec-welcome-cite}
 
-O’Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023). _The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data_. DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)
+O'Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023).
+_The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data_.
+DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)
 
-## Licensing
+## Licensing {#sec-welcome-licensing}
 
-This book is licensed under the [Creative Commons Attribution-NoDerivatives 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Individual chapters are as well, unless otherwise noted.
+This book is licensed under the [Creative Commons Attribution-NoDerivatives 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+Individual chapters are as well, unless otherwise noted.
 
-
-## Funding
+## Funding {#sec-welcome-funding}
 
 This content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the N3C program.
 
 Any analyses herein were conducted using the NCATS N3C Data Enclave supported by NCATS U24 TR002306, Axel Informatics Subcontract Number: NCATS-P00438-B and made possible because of the patients whose data was contributed by [partner organizations](https://covid.cd2h.org/dtas).
 We gratefully acknowledge the [scientists](https://covid.cd2h.org/acknowledgements) who have contributed to the on-going development of this community resource [@haendel_2020].
 
-Funding and support for individual authors is listed in Chapter qqq.
+Funding and support for individual authors is listed in @sec-funding.

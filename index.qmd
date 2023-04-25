@@ -86,4 +86,4 @@ This content is solely the responsibility of the authors and does not necessaril
 Any analyses herein were conducted using the NCATS N3C Data Enclave supported by NCATS U24 TR002306, Axel Informatics Subcontract Number: NCATS-P00438-B and made possible because of the patients whose data was contributed by [partner organizations](https://covid.cd2h.org/dtas).
 We gratefully acknowledge the [scientists](https://covid.cd2h.org/acknowledgements) who have contributed to the on-going development of this community resource [@haendel_2020].
 
-Funding and support for individual authors is listed in Chapter qqq.
+Funding and support for individual authors is listed in @sec-funding.

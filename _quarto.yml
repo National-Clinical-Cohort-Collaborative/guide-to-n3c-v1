@@ -95,5 +95,6 @@ book:
     # - chapters/lightbox.qmd
   - part: Back Matter
     chapters:
+    - chapters/funding.md
     - references.qmd
     # - chapters/colophon.qmd

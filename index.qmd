@@ -1,4 +1,4 @@
-# Welcome {.unnumbered}
+# Welcome {.unnumbered #sec-welcome}
 
 Welcome to [*The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data*](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/).
 Here you will find guidance, information, and pointers to resources for conducting research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
@@ -20,7 +20,7 @@ Sincerely,
 
 _The G2N3C Editorial Committee_
 
-## Contributors
+## Contributors {#sec-welcome-contributors}
 
 Individual chapter lead and contributor affiliations are also provided in each chapter.
 
@@ -60,7 +60,7 @@ Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K
 @sec-support -- _Special Topic: Help and Support:_<br>
 Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
 
-## How to Contribute
+## How to Contribute {#sec-welcome-contribute}
 
 We welcome suggestions, edits, and larger contributions to this guide.
 This book is typeset in Markdown with the [Quarto](https://quarto.org/) package for R and hosted on GitHub.
@@ -68,19 +68,18 @@ For errors or requests, please submit an Issue to the [Issues tracker](https://g
 To make larger or direct contributions, please make a pull request using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 If you would like to contribute but are unfamiliar with any of these technologies, please contact any of the editorial committee members or submit an Issue to request help.
 
-## How to Cite this Work
+## How to Cite this Work {#sec-welcome-cite}
 
 O'Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023).
 _The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data_.
 DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)
 
-## Licensing
+## Licensing {#sec-welcome-licensing}
 
 This book is licensed under the [Creative Commons Attribution-NoDerivatives 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 Individual chapters are as well, unless otherwise noted.
 
-
-## Funding
+## Funding {#sec-welcome-funding}
 
 This content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the N3C program.
 

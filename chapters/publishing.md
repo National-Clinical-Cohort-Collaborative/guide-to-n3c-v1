@@ -193,7 +193,7 @@ This becomes cumbersome when writing about results!
 All research results derived from N3C data–including summary tables, figures, and logs–must be reviewed to ensure they don't inadvertently leak any patient-level data.
 The review will check for the policy requirements described above (such as cell sizes less than 20 being masked), and when approved you will be able to download tabular data as a comma-separated-values (CSV) file, images as PDF or PNG, and logs as plain text.
 
-The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) (Enclave access required), but we'll provide a brief overview here.
+The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) {{< fa lock title="Link requires an N3C Enclave account" >}}, but we'll provide a brief overview here.
 
 #### Submitting a Download Request
 
@@ -285,7 +285,7 @@ The primary differences are that
 #### Python Libraries and Code Repositories
 
 Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don't: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher.
-One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) (Enclave access required).
+One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 Authoring Python libraries is different from authoring Code Repositories that transform data, and is covered in the [official documentation](https://www.palantir.com/docs/foundry/transforms-python/share-python-libraries/),
 as is [utilizing such libraries in Code Repositories](https://www.palantir.com/docs/foundry/transforms-python/use-python-libraries/).
 Using them in Code Workbooks requires updating the workbook [environment](https://www.palantir.com/docs/foundry/code-workbook/environment-overview/) to include the library, just like with any other Python or R library you might like to use.
@@ -313,7 +313,7 @@ The [N3C Knowledge Store](tools.md#sec-tools-store) provides an authorized mecha
 Because the Knowledge Store is internal to the Enclave and protected to those who have the authorization to view row-level data, the publication is not involved in monitoring or approving the contents.
 
 If you've written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use.
-Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) training module (Enclave access required), but we'll give an overview here.
+Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) {{< fa lock title="Link requires an N3C Enclave account" >}} training module, but we'll give an overview here.
 Note that the process can be cumbersome and sometimes requires administrator help–be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office) if you run into any issues or have questions.
 
 Code sharing within N3C is usually accomplished by sharing Code Workbook "templates" in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user.

@@ -1,162 +1,67 @@
 ---
 author:
-  - name: Julie McMurry
-    affiliation: TISLab
+  - name: Julie A McMurry
+    affiliation: University of Colorado, Anschutz Medical Campus
     affiliation-url: https://tislab.org/
-    # email: julie@tislab.org
-    # orcid:
+    email: julie.mcmurry@cuanschutz.edu
+    orcid: 0000-0002-9353-5498
     attributes:
       corresponding: true
 
-  - name: Jeremy Harper
+  - name: Jeremy Richard Harper
     affiliation: Owl Health Works
-    affiliation-url: https://www.owlhealthworks.com
-    # email: jeremy6@gmail.com
-    # orcid:
+    affiliation-url: https://www.linkedin.com/in/jeremyharper1/
+    email: jeremytech@gmail.com
+    orcid: 0000-0003-1244-8948
+
+  - name: Christine Suver
+    affiliation: Sage Bionetworks
+    # affiliation-url:
+    email: christine.suver@sagebase.org
+    orcid: 0000-0002-2986-385X
+
+  - name: Carolyn T Bramante
+    affiliation: University of Minnesota
+    # affiliation-url:
+    email: bramante@umn.edu
+    orcid: 0000-0001-5858-2080
+
+  - name: Mary K Emmett
+    affiliation: CAMC Institute for Academic Medicine
+    # affiliation-url:
+    email: mary.emmett@camc.org
+    orcid: 0000-0002-8551-8655
+
+  - name: Amit K Saha
+    affiliation: Wake Forest School of Medicine
+    affiliation-url: https://school.wakehealth.edu/faculty/s/amit-saha
+    email: aksaha@wakehealth.edu
+    orcid: 0000-0002-3542-4319
+
+  - name: Farrukh M. Koraishy
+    affiliation: Department of Medicine/Nephrology, Stony Brook University, NY
+    affiliation-url: https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research
+    email: Farrukh.Koraishy@stonybrookmedicine.edu
+    orcid: 0000-0001-6974-5674
+
+  - name: A Jerrod Anzalone
+    affiliation: University of Nebraska Medical Center
+    affiliation-url: https://gpctr.unmc.edu/
+    email: alfred.anzalone@unmc.edu
+    orcid: 0000-0002-3212-7845
+
+  # - name:
+  #   affiliation:
+  #   affiliation-url:
+  #   email:
+  #   orcid:
 
 csl: ../assets/csl/apa-7e.csl
 ---
 
 # Publishing and Sharing Your Work {#sec-publishing}
 
-<!-- Output copied to clipboard! -->
-
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 1
-* ALERTS: 10
-
-Conversion time: 1.14 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Mon Apr 24 2023 18:43:08 GMT-0700 (PDT)
-* Source doc: Publishing and Sharing your Work
-* Tables are currently converted to HTML tables.
-
-WARNING:
-Inline drawings not supported: look for ">>>>>  gd2md-html alert:  inline drawings..." in output.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 10.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-#  Publishing and Sharing your Work
-
 **Chapter Leads: Julie McMurry, Jeremy Harper**
-
-**Chapter Contributors: **
-
-Julie's formal/publishing name: Julie A McMurry
-
-Julie's preferred public email to be listed: julie.mcmurry@cuanschutz.edu
-
-Julie's ORCiD: [0000-0002-9353-5498](https://orcid.org/0000-0002-9353-5498)
-
-Julie's affiliation: University of Colorado, Anschutz Medical Campus
-
-Julie's affilaition’s url: https://tislab.org
-
-Jeremy's formal/publishing name: Jeremy Richard Harper
-
-Jeremy's preferred public email to be listed: jeremytech@gmail.com
-
-Jeremy's ORCiD: [https://orcid.org/0000-0003-1244-8948](http://orcid.org/0000-0003-1244-8948)
-
-Jeremy's affiliation: Owl Health Works
-
-Jeremy's affiliation’s url: https://www.linkedin.com/in/jeremyharper1/
-
-Christine's formal/publishing name: Christine Suver
-
-Christine's preferred public email to be listed: christine.suver@sagebase.org
-
-Christine's ORCiD: 0000-0002-2986-385X
-
-Christine's affiliation: Sage Bionetworks
-
-Christine’s affiliation’s url: --see this [example](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/research-story.html)
-
-
-
-Carolyn’s formal/publishing name: Carolyn T Bramante
-
-Carolyn’s preferred public email to be listed: bramante@umn.edu
-
-Carolyn’s ORCID: [https://orcid.org/0000-0001-5858-2080](https://orcid.org/0000-0001-5858-2080)
-
-Carolyn’s affiliation: University of Minnesota
-
-Carolyn’s affiliation’s url: --see this [example](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/research-story.html)
-
-
-
-Mary’s formal/publishing name: Mary K Emmett
-
-Preferred public email to be listed:[mary.emmett@camc.org](mailto:mary.emmett@camc.org)
-
-Mary’s ORCID: 0000-0002-8551-8655
-
-Mary’s affiliation: CAMC Institute for Academic Medicine
-
-Mary’s affiliation’s url:  --see this [example](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/research-story.html)
-
-Amit’s formal/publishing name: Amit K Saha
-
-Preferred public email to be listed:aksaha@wakehealth.edu
-
-Amit’s ORCID: 0000-0002-3542-4319
-
-Amit’s affiliation: Wake Forest School of Medicine
-
-Amit’s affiliation’s URL : https://school.wakehealth.edu/faculty/s/amit-saha
-
-Farrukh’s formal/publishing name: Farrukh M. Koraishy
-
-Preferred public email to be listed:Farrukh.Koraishy@stonybrookmedicine.edu
-
-Farrukh’s ORCID: 0000-0001-6974-5674
-
-Farrukh’s affiliation: Department of Medicine/Nephrology, Stony Brook University, NY
-
-Farrukh’s affiliation’s URL: [https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research](https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research)
-
-Jerrod’s Formal Publishing Name: A. Jerrod Anzalone
-
-Preferred public email to be listed: [alfred.anzalone@unmc.edu](mailto:alfred.anzalone@unmc.edu)
-
-Jerrod’s ORCID: 0000-0002-3212-7845
-
-Jerrod’s affiliation: Department of Neurological Sciences, University of Nebraska Medical Center, Omaha, Nebraska
-
 
 ## Publication Committee Process
 
@@ -164,67 +69,32 @@ The Publication Committee is a multidisciplinary team that meets on a weekly bas
 
 The guiding principle of the Publication Committee is to be a steward of the following critical components of the N3C:
 
-**(1)** **Data partners and individual patients: **Assure that the publication is:
+1. **Data partners and individual patients**: Assure that the publication is:
+    1. Consistent with the approved Data Use Request (**DUR**)
+    1. Consistent with policies to protect the identity of individuals, data partners, and marginalized groups
 
-a) Consistent with the approved Data Use Request (**DUR**)
+1. **Individual consortial contributors**: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see @tbl-publishing-authorship).
 
-b) Consistent with policies to protect the identity of individuals, data partners, and
+1. **N3C collaborative**: Assure that information about the N3C is represented accurately
 
-          marginalized groups
+1. **Authors**: Serve as a resource for authors
 
-**(2) Individual consortial contributors: **Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see [Table xx](#link-to-table)).
+| Tier 1:<br>Masthead Authorship | Tier 2:<br>Consortial Collaborators | Tier 3:<br>In Text Acknowledgements |
+| ------------------------------ | ----------------------------------- | ----------------------------------- |
+|Substantial intellectually important contributions made directly to the manuscript | Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study** | Important contributions to the N3C infrastructure |
 
- \
-**(3)** **N3C collaborative: **Assure that information about the N3C is represented accurately
-
-**(4) Authors: **Serve as a resource for authors
-
-
-<table>
-  <tr>
-   <td><strong>Tier 1</strong>
-   </td>
-   <td><strong>Tier 2</strong>
-   </td>
-   <td><strong>Tier 3</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Masthead Authorship</strong>
-   </td>
-   <td><strong>Consortial Collaborators</strong>
-   </td>
-   <td><strong>In Text Acknowledgements</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Substantial intellectually important contributions made directly to the manuscript
-   </td>
-   <td>
-    Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study**
-   </td>
-   <td>Important contributions to the N3C infrastructure
-   </td>
-  </tr>
-</table>
-
-
-Table 10-1: Authorship tiers designed to accurately represent publication contributions.
+: Authorship tiers designed to accurately represent publication contributions {#tbl-publishing-authorship}
 
 The first two tiers are indexed in Medline, which is an important way for contributions to acknowledge those who made them. Tier 1 and 2 authors must satisfy [ICMJE criteria](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html):
 
-“The ICMJE recommends that authorship be based on the following 4 criteria:
-
-
-
-* Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work; AND
-* Drafting the work or revising it critically for important intellectual content; AND
-* Final approval of the version to be published; AND
-* Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.”
+> The ICMJE recommends that authorship be based on the following 4 criteria:
+>
+> * Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work; AND
+> * Drafting the work or revising it critically for important intellectual content; AND
+> * Final approval of the version to be published; AND
+> * Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.
 
 The publication committee has a role in helping authors identify Tier 2 and Tier 3 contributors:
-
-
 
 * Notify core contributors (named in [covid.cd2h.org/acknowledgements](covid.cd2h.org/acknowledgements)) and relevant domain teams of manuscripts that might be using their work
 * Enable core contributors and relevant domain teams to review the manuscript and either opt out of acknowledgement or opt into consortial contributorship. Opting into consortial contributorship requires meeting the four ICJME criteria above
@@ -233,69 +103,46 @@ The publication committee has a role in helping authors identify Tier 2 and Tier
 
 The publications committee helps to maintain the list of core contributors, and progress is underway to automatically track contributions directly within the Enclave, which aids this process.
 
-The publication committee also maintains the content on [https://covid.cd2h.org/acknowlegements](https://covid.cd2h.org/acknowlegements) to be included in the acknowledgements section of each manuscript. An abridged version of the acknowledgements is available for use in abstracts, posters, and slides.
-
+The publication committee also maintains the content on <https://covid.cd2h.org/acknowlegements> to be included in the acknowledgements section of each manuscript. An abridged version of the acknowledgements is available for use in abstracts, posters, and slides.
 
 ## Result Download (aka export) Request Process
 
-
 ### Policy summary
 
-In compliance with the NCATS[ Data Transfer](https://ncats.nih.gov/files/NCATS_Data_Transfer_Agreement_05-11-2020_Updated%20508.pdf)<span style="text-decoration:underline;"> </span>and[ Data Use](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) Agreements that all Enclave users agree to, under no circumstances are tables, figures, parameter estimates, or aggregated statistics to leave the Enclave until download (aka export) approval is obtained by the ResultDownload Committee. Prior approval is required for export regardless of the result format (tables, figures etc.) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive). Prior approval is also required regardless of the export mechanism (screen shot, copy/paste, or download).
+In compliance with the NCATS [Data Transfer](https://ncats.nih.gov/files/NCATS_Data_Transfer_Agreement_05-11-2020_Updated%20508.pdf) and [Data Use](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) Agreements that all Enclave users agree to, under no circumstances are tables, figures, parameter estimates, or aggregated statistics to leave the Enclave until download (aka export) approval is obtained by the ResultDownload Committee. Prior approval is required for export regardless of the result format (tables, figures etc.) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive). Prior approval is also required regardless of the export mechanism (screen shot, copy/paste, or download).
 
+### Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’)
 
-### Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’).
+To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as `< 20` with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external helpdesk, see @sec-support). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.
 
-To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as “&lt;20” with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external helpdesk, see Chapter [X](#help-and-suppport)). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.
+Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV). In their original form (left) these would violate the policy, as there are several values reported below 20. Even if these values are simply replaced with `< 20` (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents. A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.
 
-Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV). In their original form (left) these would violate the policy, as there are several values reported below 20. Even if these values are simply replaced with ‘&lt;20’ (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents. A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-1: An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as “&lt;20”, and in this case additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the 'other gender' and HIV categories.
-
+![An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as `< 20`, and in this case additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the 'other gender' and HIV categories.](images/publishing/fig-publishing-010-masking-example.png){#fig-publishing-010-masking-example width=100% fig-alt="masking-example"}
 
 ### Constraints related to Native Populations
 
 NCATS has engaged in extensive discussion with the NIH Tribal Health Research Office and developed data use plans based on Tribal input following formal Tribal Consultations. As of September 2022, data from individuals who self-identify as American Indian (AI) or Alaska Native (AN) are indicated in race and ethnicity distribution.
-
-
 
 * All zip codes of regions representing rural populations of 20,000 persons or less are fully obscured to ‘00000’
 * All zip codes of regions of more than 20,000 persons that overlap with Tribal communities or where the majority of residents identify as AI/AN are identified by the first 3 digits. For example, if a ZIP code of “01234” represents a predominantly AI/AN community, the user will see only a partial ZIP code of “012”’.
 
 The N3C Data User Code of Conduct was revised to clarify that assumptions about Tribal affiliation are not valid or appropriate.  For more information, consult [NCATS Tribal Consultations](https://ncats.nih.gov/n3c/about/tribal-consultation).
 
-
 ### Constraints related to Data Partner IDs
 
 For any exports that include Data Partner IDs, these IDs must be masked before being published and a statement that these have been masked must also be included. You may consider assigning random labels to data partners, such as four digit codes which do not occur in the partner IDs.
-
 
 ## Technical Considerations
 
 In addition to processes and policies described above, there are technical requirements for exporting summary data and figures from the Enclave, and features you should be aware of as your project nears publication.
 
-
 ### Pinning to a Release
 
-All datasets in the Enclave are capable of being versioned with branches, meaning that previous versions of a dataset remain available under a different branch name. N3C uses this mechanism to provide researchers access to the most recent version of the data via the ‘master’ branch, which is selected by default when importing datasets to [Code Workbooks](#code-workbooks) or [Code Repositories](#code-repos). For example, consider the following Code Workbook, into which we’ve imported the [Synthea notional `condition_era` table](#synthea-notional-data).
+All datasets in the Enclave are capable of being versioned with branches, meaning that previous versions of a dataset remain available under a different branch name. N3C uses this mechanism to provide researchers access to the most recent version of the data via the ‘master’ branch, which is selected by default when importing datasets to [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Code Repositories](tools.md#code-repositories-sec-tools-apps-repo). For example, consider the following Code Workbook, into which we’ve imported the [Synthea notional `condition_era` table](support.html#sec-support-notional-synthea).
 
+![Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.](images/publishing/fig-publishing-020-dataset-branch.png){#fig-publishing-020-dataset-branch fig-alt="dataset-branch"}
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure 10-2: Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.
-
-Clicking on the “Branch” tab of the dataset node shows that the master branch is currently being used in this workbook. Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are ‘released’ periodically after [quality checks and harmonization](#data-lifecycle).) Selecting such a branch will import the release of that table as of the date selected, effectively ‘pinning’ the dataset to a point in time. The `master` branch is configured to always match the latest release, and thus changes over time.
+Clicking on the “Branch” tab of the dataset node shows that the master branch is currently being used in this workbook. Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are ‘released’ periodically after [quality checks and harmonization](lifecycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively ‘pinning’ the dataset to a point in time. The `master` branch is configured to always match the latest release, and thus changes over time.
 
 When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example `source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release-v98-2022-10-27")`.
 

@@ -121,16 +121,16 @@ In compliance with the NCATS [Data Transfer](https://ncats.nih.gov/files/NCATS_D
 Prior approval is required for export regardless of the result format (tables, figures etc.) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive).
 Prior approval is also required regardless of the export mechanism (screen shot, copy/paste, or download).
 
-### Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’)
+### Constraints with aggregated data pertaining to small groups of patients (aka small 'cell sizes')
 
-To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as `< 20` with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement).
+To protect patient's data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as `< 20` with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement).
 Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external helpdesk, see @sec-support).
 A strong scientific rationale for this must be provided.
 NCATS makes the final decision about whether to approve the appeal.
 In no cases may group sizes below 10 be considered.
 Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.
 
-Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV).
+Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the 'other' gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV).
 In their original form (left) these would violate the policy, as there are several values reported below 20.
 Even if these values are simply replaced with `< 20` (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents.
 A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.
@@ -142,9 +142,9 @@ A fully-masked example is shown on the right, modifying the reported values to s
 NCATS has engaged in extensive discussion with the NIH Tribal Health Research Office and developed data use plans based on Tribal input following formal Tribal Consultations.
 As of September 2022, data from individuals who self-identify as American Indian (AI) or Alaska Native (AN) are indicated in race and ethnicity distribution.
 
-* All zip codes of regions representing rural populations of 20,000 persons or less are fully obscured to ‘00000’
+* All zip codes of regions representing rural populations of 20,000 persons or less are fully obscured to '00000'
 * All zip codes of regions of more than 20,000 persons that overlap with Tribal communities or where the majority of residents identify as AI/AN are identified by the first 3 digits.
-  For example, if a ZIP code of “01234” represents a predominantly AI/AN community, the user will see only a partial ZIP code of “012”’.
+  For example, if a ZIP code of "01234" represents a predominantly AI/AN community, the user will see only a partial ZIP code of "012".
 
 The N3C Data User Code of Conduct was revised to clarify that assumptions about Tribal affiliation are not valid or appropriate.
 For more information, consult [NCATS Tribal Consultations](https://ncats.nih.gov/n3c/about/tribal-consultation).
@@ -161,13 +161,13 @@ In addition to processes and policies described above, there are technical requi
 ### Pinning to a Release
 
 All datasets in the Enclave are capable of being versioned with branches, meaning that previous versions of a dataset remain available under a different branch name.
-N3C uses this mechanism to provide researchers access to the most recent version of the data via the ‘master’ branch, which is selected by default when importing datasets to [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Code Repositories](tools.md#code-repositories-sec-tools-apps-repo).
-For example, consider the following Code Workbook, into which we’ve imported the [Synthea notional `condition_era` table](support.html#sec-support-notional-synthea).
+N3C uses this mechanism to provide researchers access to the most recent version of the data via the 'master' branch, which is selected by default when importing datasets to [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Code Repositories](tools.md#code-repositories-sec-tools-apps-repo).
+For example, consider the following Code Workbook, into which we've imported the [Synthea notional `condition_era` table](support.html#sec-support-notional-synthea).
 
 ![Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.](images/publishing/fig-publishing-020-dataset-branch.png){#fig-publishing-020-dataset-branch fig-alt="dataset-branch"}
 
-Clicking on the “Branch” tab of the dataset node shows that the master branch is currently being used in this workbook.
-Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are ‘released’ periodically after [quality checks and harmonization](lifecycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively ‘pinning’ the dataset to a point in time.
+Clicking on the "Branch" tab of the dataset node shows that the master branch is currently being used in this workbook.
+Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are 'released' periodically after [quality checks and harmonization](lifecycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively 'pinning' the dataset to a point in time.
 The `master` branch is configured to always match the latest release, and thus changes over time.
 
 When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example:
@@ -190,19 +190,19 @@ This becomes cumbersome when writing about results!
 
 ### Download Request Process
 
-All research results derived from N3C data–including summary tables, figures, and logs–must be reviewed to ensure they don’t inadvertently leak any patient-level data.
+All research results derived from N3C data–including summary tables, figures, and logs–must be reviewed to ensure they don't inadvertently leak any patient-level data.
 The review will check for the policy requirements described above (such as cell sizes less than 20 being masked), and when approved you will be able to download tabular data as a comma-separated-values (CSV) file, images as PDF or PNG, and logs as plain text.
 
-The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) (Enclave access required), but we’ll provide a brief overview here.
+The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) (Enclave access required), but we'll provide a brief overview here.
 
 #### Submitting a Download Request
 
-The download request dashboard may be accessed from the Enclave homepage under “Download Dashboard.” This interface shows your previous requests, and you can submit a new one via the “Submit a new Download Request” button.
+The download request dashboard may be accessed from the Enclave homepage under "Download Dashboard." This interface shows your previous requests, and you can submit a new one via the "Submit a new Download Request" button.
 
 ![The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.](images/publishing/fig-publishing-030-download-dashboard.png){#fig-publishing-030-download-dashboard fig-alt="download-dashboard"}
 
 When submitting a new download request, you will first be asked to complete a short quiz to ensure you understand the requirements.
-Subsequently, you will be prompted to enter information about the request, and select one or more “Resources” that you wish to export.
+Subsequently, you will be prompted to enter information about the request, and select one or more "Resources" that you wish to export.
 A single download request may include multiple resources, such as multiple summary tables saved as datasets.
 To export figures you should include them in a Report, which can be done from either the Code Workbook or Contour interfaces.
 Desired log information (such as textual results from statistical tests) should also be copied and pasted into the report so that it can be reviewed.
@@ -217,17 +217,17 @@ When a request is approved, behind the scenes a read-only copy of the materials 
 This is to prevent modification of export materials post-review.
 
 When your request is approved, you will see it listed as Approved in the Download Dashboard (see above).
-Each approved request is provided with a DRR ID, for example “DRR-E5C4B6C” shown above.
-If we scroll down further in the specific request, we can use the “View all…” link to see the individual approved “Resource(s) To Download”:
+Each approved request is provided with a DRR ID, for example "DRR-E5C4B6C" shown above.
+If we scroll down further in the specific request, we can use the "View all…" link to see the individual approved "Resource(s) To Download":
 
 ![A view of exportable datasets and a report from an approved download request.](images/publishing/fig-publishing-050-download-approved.png){#fig-publishing-050-download-approved fig-alt="download-approved"}
 
-To export one of the datasets as CSV, we can open it by clicking on it, and in the resulting new tab select “Download as CSV” from the “Actions” menu - this will prompt you to enter the corresponding DRR ID, after which the file will be downloaded to your local computer.
+To export one of the datasets as CSV, we can open it by clicking on it, and in the resulting new tab select "Download as CSV" from the "Actions" menu - this will prompt you to enter the corresponding DRR ID, after which the file will be downloaded to your local computer.
 
 Exporting figures and logs stored in Reports can be done in multiple ways.
-After opening the approved report from the list of resources to download, you can select either “Export to PDF” or “Export to PowerPoint” from the “Actions” menu.
+After opening the approved report from the list of resources to download, you can select either "Export to PDF" or "Export to PowerPoint" from the "Actions" menu.
 Again you will be prompted to enter the DRR ID before the file download begins.
-A common issue with “Download as PDF” is that figures produced in Code Workbooks may be lower resolution than expected.
+A common issue with "Download as PDF" is that figures produced in Code Workbooks may be lower resolution than expected.
 
 ### Exporting Code to a Git Repo
 
@@ -245,12 +245,12 @@ The most common use case for such hard-coded data are `data_partner_id` values a
 These should be removed or masked to comply with N3C policy.
 :::
 
-Code Workbook code can be exported via the “Gear” icon in the interface, under “Export git repository.” Selecting this item will open the workbook in a new browser tab, with a new “Export Code Workbook” panel on the right, providing the git command to use to clone the repo to your local computer.
+Code Workbook code can be exported via the "Gear" icon in the interface, under "Export git repository." Selecting this item will open the workbook in a new browser tab, with a new "Export Code Workbook" panel on the right, providing the git command to use to clone the repo to your local computer.
 As described in the panel text, the link contains an authentication token that you should keep private.
 
 ![Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-060-workbook-git.png){#fig-publishing-060-workbook-git fig-alt="workbook-git"}
 
-The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, and `pipeline.sql`, containing all of the workbooks’ R, Python, and SQL transform code respectively.
+The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, and `pipeline.sql`, containing all of the workbooks' R, Python, and SQL transform code respectively.
 These files are not very reader-friendly, and as of this writing N3C is working on parsing tools to help researchers publish their work in an accessible manner.
 
 #### Pulling Changes, Pushing to GitHub, Branches, and Code Repositories
@@ -259,7 +259,7 @@ While it is not possible to push changes made locally up to the Enclave, it is p
 However, updates are not pulled unless some action is taken within the workbook to commit them prior to pulling.
 Simply editing the code for a transform is not enough, but executing a transform or adding a new transform will commit the current state of the workbook so that it can be pulled.
 
-Once you’ve pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub.
+Once you've pulled the latest version of your workbook locally, you likely will want to push a copy up to a public repository such as GitHub.
 The recommended way to do this is to create a new _empty_ repository in GitHub (or your git hosting service of choice) with the same name as the workbook, and set it up as a push-only remote repository.
 For example, for a workbook named `example_workbook`, one would create a new GitHub repository named `example_workbook`, and in the local copy run:
 
@@ -284,7 +284,7 @@ The primary differences are that
 
 #### Python Libraries and Code Repositories
 
-Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don’t: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher.
+Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don't: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher.
 One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) (Enclave access required).
 Authoring Python libraries is different from authoring Code Repositories that transform data, and is covered in the [official documentation](https://www.palantir.com/docs/foundry/transforms-python/share-python-libraries/),
 as is [utilizing such libraries in Code Repositories](https://www.palantir.com/docs/foundry/transforms-python/use-python-libraries/).
@@ -299,7 +299,7 @@ As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids re
 These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](#concept-set-browser) for details.
 
 When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials.
-Fortunately, the concept set browser supports this functionality–when viewing a specific version of a concept set, the “OMOP Concepts” tab lists the individual concepts and provides an “Export list of Concepts as Excel.” The provided Excel export includes the concept IDs and other relevant information.
+Fortunately, the concept set browser supports this functionality–when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel." The provided Excel export includes the concept IDs and other relevant information.
 
 ![The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).](images/publishing/fig-publishing-080-cset-excel-export.png){#fig-publishing-080-cset-excel-export fig-alt="cset-excel-export"}
 
@@ -312,15 +312,15 @@ While necessary, this prevents code sharing and re-use amongst the many analysts
 The [N3C Knowledge Store](tools.md#sec-tools-store) provides an authorized mechanism for researchers to share code, and datasets derived via code, with other researchers (provided they also have access to the correct input datasets in the case of shared datasets).
 Because the Knowledge Store is internal to the Enclave and protected to those who have the authorization to view row-level data, the publication is not involved in monitoring or approving the contents.
 
-If you’ve written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use.
-Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) training module (Enclave access required), but we’ll give an overview here.
+If you've written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use.
+Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) training module (Enclave access required), but we'll give an overview here.
 Note that the process can be cumbersome and sometimes requires administrator help–be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office) if you run into any issues or have questions.
 
-Code sharing within N3C is usually accomplished by sharing Code Workbook “templates” in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user.
+Code sharing within N3C is usually accomplished by sharing Code Workbook "templates" in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user.
 Authoring workbook templates is covered in the [official documentation](https://www.palantir.com/docs/foundry/code-workbook/templates-overview/).
 Templates are typically accompanied by a README (as a Report) with documentation, an example workbook using the template on N3C data, and potentially the derived dataset created by the example workbook. We suggest placing these resources in a single folder prior to submitting them to the Knowledge Store.
 
-To submit your new “knowledge object” to the store, first find the “Publish New Knowledge Object” item under the … menu in the upper right of the Knowledge Store:
+To submit your new "knowledge object" to the store, first find the "Publish New Knowledge Object" item under the … menu in the upper right of the Knowledge Store:
 
 ![The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.](images/publishing/fig-publishing-090-knowledge-store-1.png){#fig-publishing-090-knowledge-store-1 fig-alt="knowledge-store-1"}
 

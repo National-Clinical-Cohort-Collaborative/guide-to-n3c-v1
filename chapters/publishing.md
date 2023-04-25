@@ -63,7 +63,7 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads: Julie McMurry, Jeremy Harper**
 
-## Publication Committee Process
+## Publication Committee Process {#sec-publishing-committee}
 
 The Publication Committee is a multidisciplinary team that meets on a weekly basis to evaluate abstracts and manuscripts prior to submission for peer review (and / or preprint).
 The committee's primary goal is to ensure that authors comply with N3C policies and procedures.
@@ -113,15 +113,15 @@ The publications committee helps to maintain the list of core contributors, and 
 The publication committee also maintains the content on <https://covid.cd2h.org/acknowlegements> to be included in the acknowledgements section of each manuscript.
 An abridged version of the acknowledgements is available for use in abstracts, posters, and slides.
 
-## Result Download (aka export) Request Process
+## Result Download (aka export) Request Process {#sec-publishing-drr}
 
-### Policy summary
+### Policy summary {#sec-publishing-drr-summary}
 
 In compliance with the NCATS [Data Transfer](https://ncats.nih.gov/files/NCATS_Data_Transfer_Agreement_05-11-2020_Updated%20508.pdf) and [Data Use](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) Agreements that all Enclave users agree to, under no circumstances are tables, figures, parameter estimates, or aggregated statistics to leave the Enclave until download (aka export) approval is obtained by the ResultDownload Committee.
 Prior approval is required for export regardless of the result format (tables, figures etc.) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive).
 Prior approval is also required regardless of the export mechanism (screen shot, copy/paste, or download).
 
-### Constraints with aggregated data pertaining to small groups of patients (aka small 'cell sizes')
+### Constraints with aggregated data pertaining to small groups of patients (aka small 'cell sizes') {#sec-publishing-drr-small}
 
 To protect patient's data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as `< 20` with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement).
 Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external helpdesk, see @sec-support).
@@ -137,7 +137,7 @@ A fully-masked example is shown on the right, modifying the reported values to s
 
 ![An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as `< 20`, and in this case additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the 'other gender' and HIV categories.](images/publishing/fig-publishing-010-masking-example.png){#fig-publishing-010-masking-example width=100% fig-alt="masking-example"}
 
-### Constraints related to Native Populations
+### Constraints related to Native Populations {#sec-publishing-drr-native}
 
 NCATS has engaged in extensive discussion with the NIH Tribal Health Research Office and developed data use plans based on Tribal input following formal Tribal Consultations.
 As of September 2022, data from individuals who self-identify as American Indian (AI) or Alaska Native (AN) are indicated in race and ethnicity distribution.
@@ -149,16 +149,16 @@ As of September 2022, data from individuals who self-identify as American Indian
 The N3C Data User Code of Conduct was revised to clarify that assumptions about Tribal affiliation are not valid or appropriate.
 For more information, consult [NCATS Tribal Consultations](https://ncats.nih.gov/n3c/about/tribal-consultation).
 
-### Constraints related to Data Partner IDs
+### Constraints related to Data Partner IDs {#sec-publishing-drr-partner}
 
 For any exports that include Data Partner IDs, these IDs must be masked before being published and a statement that these have been masked must also be included.
 You may consider assigning random labels to data partners, such as four digit codes which do not occur in the partner IDs.
 
-## Technical Considerations
+## Technical Considerations {#sec-publishing-tech}
 
 In addition to processes and policies described above, there are technical requirements for exporting summary data and figures from the Enclave, and features you should be aware of as your project nears publication.
 
-### Pinning to a Release
+### Pinning to a Release {#sec-publishing-tech-pin}
 
 All datasets in the Enclave are capable of being versioned with branches, meaning that previous versions of a dataset remain available under a different branch name.
 N3C uses this mechanism to provide researchers access to the most recent version of the data via the 'master' branch, which is selected by default when importing datasets to [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Code Repositories](tools.md#code-repositories-sec-tools-apps-repo).
@@ -188,14 +188,14 @@ In fact, because downstream results are only updated when they are explicitly ru
 Why is pinning to a release helpful? Because the default `master` branch is continuously being updated, analysis results based on it will change over time along with the underlying data (if they are re-run).
 This becomes cumbersome when writing about results!
 
-### Download Request Process
+### Download Request Process {#sec-publishing-tech-process}
 
 All research results derived from N3C data–including summary tables, figures, and logs–must be reviewed to ensure they don't inadvertently leak any patient-level data.
 The review will check for the policy requirements described above (such as cell sizes less than 20 being masked), and when approved you will be able to download tabular data as a comma-separated-values (CSV) file, images as PDF or PNG, and logs as plain text.
 
 The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) {{< fa lock title="Link requires an N3C Enclave account" >}}, but we'll provide a brief overview here.
 
-#### Submitting a Download Request
+#### Submitting a Download Request {#sec-publishing-tech-process-submit}
 
 The download request dashboard may be accessed from the Enclave homepage under "Download Dashboard." This interface shows your previous requests, and you can submit a new one via the "Submit a new Download Request" button.
 
@@ -211,7 +211,7 @@ Desired log information (such as textual results from statistical tests) should 
 
 If you need the review request to be expedited, you have the option of entering a Need By Date and providing a justification.
 
-#### Downloading an Approved Request
+#### Downloading an Approved Request {#sec-publishing-tech-process-download}
 
 When a request is approved, behind the scenes a read-only copy of the materials you requested is created in a location that you will have access to download from.
 This is to prevent modification of export materials post-review.
@@ -229,7 +229,7 @@ After opening the approved report from the list of resources to download, you ca
 Again you will be prompted to enter the DRR ID before the file download begins.
 A common issue with "Download as PDF" is that figures produced in Code Workbooks may be lower resolution than expected.
 
-### Exporting Code to a Git Repo
+### Exporting Code to a Git Repo {#sec-publishing-tech-code}
 
 While code written inside the Enclave is generally not executable in other contexts (a result of the proprietary execution environment), exporting code for review and publication can be an important part of computational science.
 Fortunately, both Code Workbooks and Code Repositories support cloning as git repositories, which can then be mirrored to public git hosting like GitHub or BitBucket.
@@ -253,7 +253,7 @@ As described in the panel text, the link contains an authentication token that y
 The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, and `pipeline.sql`, containing all of the workbooks' R, Python, and SQL transform code respectively.
 These files are not very reader-friendly, and as of this writing N3C is working on parsing tools to help researchers publish their work in an accessible manner.
 
-#### Pulling Changes, Pushing to GitHub, Branches, and Code Repositories
+#### Pulling Changes, Pushing to GitHub, Branches, and Code Repositories {#sec-publishing-tech-code-github}
 
 While it is not possible to push changes made locally up to the Enclave, it is possible to pull updates made in the Enclave with a simple `git pull`.
 However, updates are not pulled unless some action is taken within the workbook to commit them prior to pulling.
@@ -282,7 +282,7 @@ The primary differences are that
 
 ![Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-070-repo-git.png){#fig-publishing-070-repo-git fig-alt="repo-git"}
 
-#### Python Libraries and Code Repositories
+#### Python Libraries and Code Repositories {#sec-publishing-tech-code-python}
 
 Code Repositories are less frequently submitted to the Knowledge Store, but they provide a feature for sharing code that Code Workbooks don't: it is possible to author a Python library in a Code Repository that can then be imported for use in either another Code Repository or a Code Workbook by any N3C researcher.
 One such example is the [Semantic Similarity Python Library](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E28751A&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
@@ -293,7 +293,7 @@ Using them in Code Workbooks requires updating the workbook [environment](https:
 In fact, Python libraries published this way are automatically usable by others in N3C without submission to the Knowledge Store, but you should still submit the repository itself along with documentation as a Knowledge Object for discoverability in N3C.
 If you run into issues or have questions, be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office).
 
-### Exporting Concept Sets
+### Exporting Concept Sets {#sec-publishing-tech-concepts}
 
 As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids representing clinical concepts.
 These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](#concept-set-browser) for details.
@@ -305,7 +305,7 @@ Fortunately, the concept set browser supports this functionality–when viewing 
 
 Some concept sets, notably those properly reviewed and marked N3C Recommended, are already published externally and referenceable via a DOI at the [N3C Zenodo community](https://zenodo.org/communities/cd2h-covid/).
 
-## Submitting to the Knowledge Store
+## Submitting to the Knowledge Store {#sec-publishing-ks}
 
 For security reasons the permissions around project workspaces are very tight; it is not possible for a researcher to share data, code, or other resources with others outside of the project workspace.
 While necessary, this prevents code sharing and re-use amongst the many analysts working in the Enclave.

@@ -4,7 +4,7 @@ Welcome to [*The Researcher's Guide to N3C: A National Resource for Analyzing Re
 Here you will find guidance, information, and pointers to resources for conducting research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
 During a time of isolation and unanswered questions in an emerging pandemic, N3C was born of an urgent need to save lives.
-N3C was created “to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research.” ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation’s largest and most diverse set of de-identified health records to date.
+N3C was created "to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research." ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation's largest and most diverse set of de-identified health records to date.
 Today, thousands of researchers have actively engaged with N3C resulting in hundreds of scholarly products informing public policy and patient care.
 
 N3C emphasizes community and team science values which are embodied by the structure of the organization and reflected in the following chapters.
@@ -25,10 +25,10 @@ _The G2N3C Editorial Committee_
 Individual chapter lead and contributor affiliations are also provided in each chapter.
 
 _Editorial Committee_:<br>
-Shawn T. O’Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley
+Shawn T. O'Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley
 
 @sec-intro -- _Introduction_:<br>
-Karen M. Crowley, Shawn T. O’Neil
+Karen M. Crowley, Shawn T. O'Neil
 
 @sec-story -- _A Research Story_:<br>
 Will Beasley, A. Jerrod Anzalone, Sharon Patrick
@@ -43,22 +43,22 @@ Christine Suver, Johanna Loomba
 Sharon Patrick, Jonathan F. Emery, Suzanne McCahan, Mary Helen Mays
 
 @sec-access -- _Getting & Managing Data Access_:<br>
-Shawn T. O’Neil, Mariam Deacy
+Shawn T. O'Neil, Mariam Deacy
 
 @sec-understanding -- _Understanding the Data_:<br>
-Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O’Neil, Thomas Richards, Kristin Kostka
+Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O'Neil, Thomas Richards, Kristin Kostka
 
 @sec-tools -- _Introducing Enclave Analysis Tools_:<br>
-Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O’Neil, Steven G. Johnson
+Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O'Neil, Steven G. Johnson
 
 @sec-practices -- _Best Practices for Research Lifecycle_:<br>
 Harold P. Lehmann, Hytham Sidky, Jimmy Phuong, Kate Bradwell, Kenneth J. Wilkins, Andrea G. Zhou, David Sahner
 
 @sec-publishing -- _Publishing and Sharing Your Work_:<br>
-Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O’Neil
+Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O'Neil
 
 @sec-support -- _Special Topic: Help and Support:_<br>
-Shawn T. O’Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
+Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
 
 ## How to Contribute
 
@@ -70,7 +70,7 @@ If you would like to contribute but are unfamiliar with any of these technologie
 
 ## How to Cite this Work
 
-O’Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023).
+O'Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023).
 _The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data_.
 DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)
 

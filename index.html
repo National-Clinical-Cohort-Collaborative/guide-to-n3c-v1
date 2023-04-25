@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,10 +18,29 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -47,8 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -117,11 +134,16 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">The Researcher’s Guide to N3C</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -129,155 +151,177 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="./The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="sidebar-tool px-1"><i class="bi bi-journal"></i></a>
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Getting Started</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./chapters/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/story.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a>
+  <a href="./chapters/story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Lifecycle - From Patients to N3C Researchers</span></a>
+  <a href="./chapters/lifecycle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Lifecycle - From Patients to N3C Researchers</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/governance.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></a>
+  <a href="./chapters/governance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></a>
+  <a href="./chapters/onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Investigating</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Investigating</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a>
+  <a href="./chapters/access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/understanding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></a>
+  <a href="./chapters/understanding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a>
+  <a href="./chapters/tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/practices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Best Practices and Important Data Considerations</span></a>
+  <a href="./chapters/practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Best Practices and Important Data Considerations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/publishing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></a>
+  <a href="./chapters/publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Special Topics</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Special Topics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/support.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Help and Support</span></a>
+  <a href="./chapters/support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Help and Support</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/ml.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Machine Learning</span></a>
+  <a href="./chapters/ml.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Machine Learning</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Advanced Enclave Coding Techniques</span></a>
+  <a href="./chapters/advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Advanced Enclave Coding Techniques</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/examples.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Start to finish examples or worked examples</span></a>
+  <a href="./chapters/examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Start to finish examples or worked examples</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Back Matter</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Back Matter</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
       </ul>
@@ -285,6 +329,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -293,14 +338,11 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <ul>
   <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
   <ul class="collapse">
-  <li><a href="#contributing-content" id="toc-contributing-content" class="nav-link" data-scroll-target="#contributing-content">Contributing Content</a></li>
-  <li><a href="#platform" id="toc-platform" class="nav-link" data-scroll-target="#platform">Platform</a>
-  <ul class="collapse">
-  <li><a href="#minor-changes" id="toc-minor-changes" class="nav-link" data-scroll-target="#minor-changes">Minor Changes</a></li>
-  <li><a href="#larger-changes-and-additions" id="toc-larger-changes-and-additions" class="nav-link" data-scroll-target="#larger-changes-and-additions">Larger Changes and Additions</a></li>
-  <li><a href="#details" id="toc-details" class="nav-link" data-scroll-target="#details">Details</a></li>
-  </ul></li>
-  <li><a href="#funding-and-licensing" id="toc-funding-and-licensing" class="nav-link" data-scroll-target="#funding-and-licensing">Funding and Licensing</a></li>
+  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
+  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">How to Contribute</a></li>
+  <li><a href="#how-to-cite-this-work" id="toc-how-to-cite-this-work" class="nav-link" data-scroll-target="#how-to-cite-this-work">How to Cite this Work</a></li>
+  <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
+  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></nav>
@@ -310,7 +352,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">The Researcher’s Guide to N3C</h1>
+<h1 class="title">The Researcher’s Guide to N3C</h1>
 <p class="subtitle lead">A National Resource for Analyzing Real-World Health Data</p>
 </div>
 
@@ -342,48 +384,64 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/logo.png" class="lightbox" title="images/n3c-logo-circle-large-0.png" data-gallery="quarto-lightbox-gallery-1"><img src="images/logo.png" title="The Researcher's Guide to N3C" class="img-fluid figure-img" alt="images/n3c-logo-circle-large-0.png"></a></p>
+<p><a href="images/logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="images/n3c-logo-circle-large-0.png"><img src="images/logo.png" title="The Researcher's Guide to N3C" class="img-fluid figure-img" alt="images/n3c-logo-circle-large-0.png"></a></p>
 </figure>
 </div>
 <section id="welcome" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome</h1>
-<p><em><a href="https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/">The Guide to N3C: A National Resource for Analyzing Real-World Health Data</a></em> is designed to guide research with the <a href="https://ncats.nih.gov/n3c">National COVID Cohort Collaborative</a> (N3C).</p>
-<section id="contributing-content" class="level2">
-<h2 class="anchored" data-anchor-id="contributing-content">Contributing Content</h2>
-<p>The N3C and its <a href="https://covid.cd2h.org/domain-teams">domain teams</a> are healthiest when assimilating contributions from reseachers of different skills (<em>e.g.</em>, clinicians &amp; informaticians), specialties (<em>e.g.</em>, endocrinology &amp; gerontology), programming languages (<em>e.g.</em>, Python, R, &amp; SQL) and experiences (<em>e.g.</em>, students &amp; PIs).</p>
-<p>Accordingly, the <a href="https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1">guide-to-n3c-v1</a> repository welcomes input from you.</p>
-<p>If you see a small mistake or unclear language, we invite you to inform us in a <a href="https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues">new issue</a> or to edit the source and submitting a <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a>. When an editor reviews and accepts your change, the website will be updated within minutes.</p>
-<p>If you have an idea for something more substantial such as a chapter or section, please start a <a href="https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues">new issue</a> and the N3C Educational Committee will coordinate with you where it fits best.</p>
+<p>Welcome to <a href="https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/"><em>The Researcher’s Guide to N3C: A National Resource for Analyzing Real-World Health Data</em></a>. Here you will find guidance, information, and pointers to resources for conducting research with the <a href="https://ncats.nih.gov/n3c">National COVID Cohort Collaborative</a> (N3C).</p>
+<p>During a time of isolation and unanswered questions in an emerging pandemic, N3C was born of an urgent need to save lives. N3C was created “to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research.” <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation’s largest and most diverse set of de-identified health records to date. Today, thousands of researchers have actively engaged with N3C resulting in hundreds of scholarly products informing public policy and patient care.</p>
+<p>N3C emphasizes community and team science values which are embodied by the structure of the organization and reflected in the following chapters. This guide originated as a project of the Education and Training Domain Team, one of the many self-organizing <a href="chapters/onboarding.html#sec-onboarding-dt">teams</a> within N3C. An editorial committee was formed to engage with principal investigators, clinician-scientists, informaticians, data scientists, and others to condense the collective knowledge amassed in N3C. Chapters are authored and peer reviewed by a diverse group of contributors with both broad and deep domain expertise. This has been a work of heart and soul, designed to make this ground-breaking work accessible without obscuring its complexity.</p>
+<p>N3C is continuously evolving, and we expect this book will as well. We invite you to join us in continually expanding and improving this guide, but most importantly, we invite you to get involved in one of the many avenues for impactful research that N3C provides.</p>
+<p>Sincerely,</p>
+<p><em>The G2N3C Editorial Committee</em></p>
+<section id="contributors" class="level2">
+<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
+<p>Individual chapter lead and contributor affiliations are also provided in each chapter.</p>
+<p><em>Editorial Committee</em>:<br> Shawn T. O’Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley</p>
+<p><a href="chapters/intro.html"><span>Chapter&nbsp;1</span></a> – <em>Introduction</em>:<br> Karen M. Crowley, Shawn T. O’Neil</p>
+<p><a href="chapters/story.html"><span>Chapter&nbsp;2</span></a> – <em>A Research Story</em>:<br> Will Beasley, A. Jerrod Anzalone, Sharon Patrick</p>
+<p><a href="chapters/lifecycle.html"><span>Chapter&nbsp;3</span></a> – <em>Data Lifecycle - From Patients to N3C Researchers</em>:<br> Stephanie Hong, Bryan Laraway</p>
+<p><a href="chapters/governance.html"><span>Chapter&nbsp;4</span></a> – <em>Governance, Leadership, and Operations Structures</em>:<br> Christine Suver, Johanna Loomba</p>
+<p><a href="chapters/onboarding.html"><span>Chapter&nbsp;5</span></a> – <em>Onboarding, Enclave Access, N3C Team Science</em>:<br> Sharon Patrick, Jonathan F. Emery, Suzanne McCahan, Mary Helen Mays</p>
+<p><a href="chapters/access.html"><span>Chapter&nbsp;6</span></a> – <em>Getting &amp; Managing Data Access</em>:<br> Shawn T. O’Neil, Mariam Deacy</p>
+<p><a href="chapters/understanding.html"><span>Chapter&nbsp;7</span></a> – <em>Understanding the Data</em>:<br> Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O’Neil, Thomas Richards, Kristin Kostka</p>
+<p><a href="chapters/tools.html"><span>Chapter&nbsp;8</span></a> – <em>Introducing Enclave Analysis Tools</em>:<br> Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O’Neil, Steven G. Johnson</p>
+<p><a href="chapters/practices.html"><span>Chapter&nbsp;9</span></a> – <em>Best Practices for Research Lifecycle</em>:<br> Harold P. Lehmann, Hytham Sidky, Jimmy Phuong, Kate Bradwell, Kenneth J. Wilkins, Andrea G. Zhou, David Sahner</p>
+<p><a href="chapters/publishing.html"><span>Chapter&nbsp;10</span></a> – <em>Publishing and Sharing Your Work</em>:<br> Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O’Neil</p>
+<p><a href="chapters/support.html"><span>Chapter&nbsp;11</span></a> – <em>Special Topic: Help and Support:</em><br> Shawn T. O’Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi</p>
 </section>
-<section id="platform" class="level2">
-<h2 class="anchored" data-anchor-id="platform">Platform</h2>
-<!-- The section is manually duplicated between index.qmd and README.md. -->
-<p>As the chapters are being written, talk to the chapter’s Lead Author to learn if it’s being written in GitHub or Google Docs. Eventually all Google Docs chapters will be translated to Markdown. Once a chapter has been finally converted to Markdown…</p>
-<section id="minor-changes" class="level3">
-<h3 class="anchored" data-anchor-id="minor-changes">Minor Changes</h3>
-<p>To make small changes like spelling corrections, we recommend editing the source directly in GitHub. It handles the details without your knowledge (like starting a fork and prompting your pull request). From the appropriate page of <a href="https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/">the book</a>, click on the “Edit this page <i class="fab fa-github" aria-hidden="true"></i>” button and type your change in the <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files">GitHub editor</a>.</p>
+<section id="how-to-contribute" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-contribute">How to Contribute</h2>
+<p>We welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown with the <a href="https://quarto.org/">Quarto</a> package for R and hosted on GitHub. For errors or requests, please submit an Issue to the <a href="https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues">Issues tracker</a>. To make larger or direct contributions, please make a pull request using the standard <a href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects">GitHub workflow</a>. If you would like to contribute but are unfamiliar with any of these technologies, please contact any of the editorial committee members or submit an Issue to request help.</p>
 </section>
-<section id="larger-changes-and-additions" class="level3">
-<h3 class="anchored" data-anchor-id="larger-changes-and-additions">Larger Changes and Additions</h3>
-<p>Substantial edits and writing are better accommodated by a text editor on your local machine that can preview the rendered content as you type. We suggest <a href="https://code.visualstudio.com/">Visual Studio Code</a> or <a href="https://www.rstudio.com/products/rstudio/">RStudio</a>.</p>
+<section id="how-to-cite-this-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-cite-this-work">How to Cite this Work</h2>
+<p>O’Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023). <em>The Researcher’s Guide to N3C: A National Resource for Analyzing Real-World Health Data</em>. DOI: <a href="https://zenodo.org/record/7749367#.ZEgPD3bMJmM">10.5281/zenodo.7749367</a></p>
 </section>
-<section id="details" class="level3">
-<h3 class="anchored" data-anchor-id="details">Details</h3>
-<p>You don’t have to understand the rest to contribute, but for those interested:</p>
-<ul>
-<li><p>The majority of this book is written in a collection of <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> documents and assembled by the <a href="https://quarto.org/">Quarto</a>.</p></li>
-<li><p>After your change is pushed to GitHub, a <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Action</a> spawns a small VM that (a) collects all the Markdown documents, (b) calls <a href="https://quarto.org/">Quarto</a>/<a href="https://pandoc.org/">Pandoc</a> to convert them to html, and (c) moves the rendered html files to the “gh-pages” branch.</p></li>
-<li><p>GitHub Pages serves the contents of the <a href="https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/tree/gh-pages"><code>gh-pages</code> branch</a> to anyone with a browser.</p></li>
-</ul>
+<section id="licensing" class="level2">
+<h2 class="anchored" data-anchor-id="licensing">Licensing</h2>
+<p>This book is licensed under the <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0</a>. Individual chapters are as well, unless otherwise noted.</p>
 </section>
-</section>
-<section id="funding-and-licensing" class="level2">
-<h2 class="anchored" data-anchor-id="funding-and-licensing">Funding and Licensing</h2>
-<p>The N3C is supported by <a href="https://www.nih.gov/">NIH</a> National Center for Advancing Translational Sciences (<a href="https://ncats.nih.gov/">NCATS</a>).</p>
-<p>This book is licensed under the <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0</a>. <i class="fa-brands fa-creative-commons fa-xs" title="Creative Commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by fa-xs" title="Attribution" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nd fa-xs" title="No Derivatives" aria-label="creative-commons-nd"></i></p>
+<section id="funding" class="level2">
+<h2 class="anchored" data-anchor-id="funding">Funding</h2>
+<p>This content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the N3C program.</p>
+<p>Any analyses herein were conducted using the NCATS N3C Data Enclave supported by NCATS U24 TR002306, Axel Informatics Subcontract Number: NCATS-P00438-B and made possible because of the patients whose data was contributed by <a href="https://covid.cd2h.org/dtas">partner organizations</a>. We gratefully acknowledge the <a href="https://covid.cd2h.org/acknowledgements">scientists</a> who have contributed to the on-going development of this community resource <span class="citation" data-cites="haendel_2020">(<a href="references.html#ref-haendel_2020" role="doc-biblioref">Haendel et al. 2020</a>)</span>.</p>
+<p>Funding and support for individual authors is listed in Chapter qqq.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-haendel_2020" class="csl-entry" role="listitem">
+Haendel, Melissa A, Christopher G Chute, Tellen D Bennett, David A Eichmann, Justin Guinney, Warren A Kibbe, Philip R O Payne, et al. 2020. <span>“<span class="nocase">The National COVID Cohort Collaborative (N3C): Rationale, design, infrastructure, and deployment</span>.”</span> <em>Journal of the American Medical Informatics Association</em> 28 (3): 427–43. <a href="https://doi.org/10.1093/jamia/ocaa196">https://doi.org/10.1093/jamia/ocaa196</a>.
+</div>
+</div>
 </section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>See <a href="https://covid.cd2h.org/about" class="uri">https://covid.cd2h.org/about</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -529,9 +587,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -596,6 +668,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -639,7 +797,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -662,10 +820,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":true,"closeEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom","closeEffect":"zoom"});</script>
 
 
 

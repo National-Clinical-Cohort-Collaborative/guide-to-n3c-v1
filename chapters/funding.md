@@ -7,17 +7,17 @@ csl: ../assets/csl/apa-7e.csl
 [A. Jerrod Anzalone](https://orcid.org/0000-0000-0000-0000):
 University of Nebraska Medical Center, Department of Neurological Sciences.
 <br>
-Great Plains IDeA-CTR, NIH/NIGMS U54 GM115458.
+Great Plains IDeA-CTR, NIH/NIGMS 5 U54 GM115458.
 
 [William H. Beasley](https://orcid.org/0000-0002-5613-5006):
 University of Oklahoma Health Science Center, Biomedical and Behavioral Methodology Core.
 <br>
-Oklahoma Shared Clinical and Translational Resources, U54GM104938
+Oklahoma Shared Clinical and Translational Resources, NIH/NIGMS 5 U54 GM104938
 
 [Karen M. Crowley](https://orcid.org/0000-0002-1995-6358):
 Brown University, Brown Center for Biomedical Informatics, RI Advance-CTR Biomedical Informatics, Bioinformatics, and Cyberinfrastructure Enhancement Core.
 <br>
-NIH/NIGMS U54 GM115677.
+NIH/NIGMS 5 U54 GM115677.
 
 [Lisa C. Eskenazi](https://orcid.org/0000-0000-0000-0000):
 Johns Hopkins University, School of Medicine, Biomedical Informatics & Data Science.
@@ -47,7 +47,7 @@ NCATS-P00438-B.
 [Mary H. Mays](https://orcid.org/0000-0000-0000-0000):
 University of Puerto Rico Medical Sciences Campus, Hispanic Alliance for Clinical and Translational Research.
 <br>
-NIH/NIGMS U54GM133807.
+NIH/NIGMS 5 U54 GM133807.
 
 [Shawn T. O'Neil](https://orcid.org/0000-0001-6220-7080):
 University of Colorado, Department of Biomedical Informatics, Translational and Integrative Biology Lab.
@@ -57,7 +57,7 @@ NCATS U24 TR002306.
 [Sharon J. Patrick](https://orcid.org/0000-0001-6535-2013):
 West Virginia Clinical and Translational Science Institute, Biostatistics, Epidemiology, and Research Design Core.
 <br>
-NIH/NIGMS 5U54GM104942.
+NIH/NIGMS 5 U54 GM104942.
 
 [Christine Suver](https://orcid.org/0000-0002-2986-385X):
 Sage Bionetworks, Research Governance and Ethics.

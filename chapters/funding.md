@@ -49,6 +49,11 @@ University of Puerto Rico Medical Sciences Campus, Hispanic Alliance for Clinica
 <br>
 NIH/NIGMS 5 U54 GM133807.
 
+[Julie A McMurry](https://orcid.org/0000-0002-9353-5498):
+University of Colorado, Anschutz Medical Campus.
+<br>
+NCATS U24 TR002306, Axel Informatics Subcontract NCATS-P00438-B
+
 [Shawn T. O'Neil](https://orcid.org/0000-0001-6220-7080):
 University of Colorado, Department of Biomedical Informatics, Translational and Integrative Biology Lab.
 <br>

@@ -92,7 +92,6 @@ book:
     - chapters/ml.md
     - chapters/advanced.md
     - chapters/examples.md
-    # - chapters/lightbox.qmd
   - part: Back Matter
     chapters:
     - chapters/funding.md

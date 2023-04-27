@@ -201,7 +201,7 @@ As part of N3C’s efforts to support COVID-19 and long COVID research, N3C requ
 
 ![Data Enhancements](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
 
-*Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, O2 devices, NLP, and SDoH datasets.
+*Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets.
 
 ### Long COVID Clinics {#sec-cycle-enhancements-long}
 
@@ -230,13 +230,13 @@ Whether they are clinical notes, radiology notes, or some other note type, notes
 
 For more details about the N3C NLP data, including the NLP submission process and Github repository containing tools for processing notes, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/NLP-Submission-Process).
 
-### O2 Devices {#sec-cycle-enhancements-oxygen}
+### Oxygen Devices {#sec-cycle-enhancements-oxygen}
 
 Oxygen device data is critical for N3C research, as a significant number of hospitalized COVID-19 patients have required oxygen supplementation and/or ventilation support using oxygen devices or ventilators. However, the current common data model (CDM) does not capture oxygen supplementation with sufficient granularity, which can limit the usefulness of the data for research purposes.
 
 To address this issue, N3C is working to improve the data on oxygen supplementation and ventilation support in the CDM, including by collecting more detailed data on the types and modes of oxygen delivery and ventilation support that patients receive. This will help to provide a more comprehensive and nuanced understanding of the role of oxygen supplementation and ventilation support in the care of hospitalized COVID-19 patients.
 
-For more details about the N3C O2 Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
+For more details about the N3C Oxygen Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
 
 ### Social Determinants of Health {#sec-cycle-enhancements-sdoh}
 

@@ -96,8 +96,8 @@ N3C provides a number of training and support venues, including regular office h
 See @sec-support for more information on these topics.
 
 Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information.
-Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see @sec-lifecycle), which supports sophisticated filtering and querying (Chapters [-@sec-understanding] and [-@sec-tools]).
-Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-lifecycle).
+Data are extensively quality-checked and harmonized for consistency to the OMOP common data model (see @sec-cycle), which supports sophisticated filtering and querying (Chapters [-@sec-understanding] and [-@sec-tools]).
+Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-cycle).
 
 Big data is of little value without powerful analysis tools.
 Fortunately, N3C's enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two.

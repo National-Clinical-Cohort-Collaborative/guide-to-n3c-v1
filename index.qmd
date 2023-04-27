@@ -33,7 +33,7 @@ Karen M. Crowley, Shawn T. O'Neil
 @sec-story -- _A Research Story_:<br>
 Will Beasley, A. Jerrod Anzalone, Sharon Patrick
 
-@sec-lifecycle -- _Data Lifecycle - From Patients to N3C Researchers_:<br>
+@sec-cycle -- _Data Life Cycle - From Patients to N3C Researchers_:<br>
 Stephanie Hong, Bryan Laraway
 
 @sec-governance -- _Governance, Leadership, and Operations Structures_:<br>

@@ -167,7 +167,7 @@ For example, consider the following Code Workbook, into which we've imported the
 ![Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.](images/publishing/fig-publishing-020-dataset-branch.png){#fig-publishing-020-dataset-branch fig-alt="dataset-branch"}
 
 Clicking on the "Branch" tab of the dataset node shows that the master branch is currently being used in this workbook.
-Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are 'released' periodically after [quality checks and harmonization](lifecycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively 'pinning' the dataset to a point in time.
+Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are 'released' periodically after [quality checks and harmonization](cycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively 'pinning' the dataset to a point in time.
 The `master` branch is configured to always match the latest release, and thus changes over time.
 
 When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example:

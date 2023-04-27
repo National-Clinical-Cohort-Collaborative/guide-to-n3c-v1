@@ -76,7 +76,7 @@ book:
     chapters:
     - chapters/intro.md
     - chapters/story.md
-    - chapters/lifecycle.md
+    - chapters/cycle.md
     - chapters/governance.md
     - chapters/onboarding.md
   - part: Investigating

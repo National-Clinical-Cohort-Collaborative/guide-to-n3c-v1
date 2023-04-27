@@ -35,7 +35,7 @@ author:
 csl: ../assets/csl/apa-7e.csl
 ---
 
-# Data Lifecycle - From Patients to N3C Researchers {#sec-lifecycle}
+# Data Life Cycle - From Patients to N3C Researchers {#sec-cycle}
 
 **Chapter Leads:** Stephanie Hong, Bryan Laraway
 

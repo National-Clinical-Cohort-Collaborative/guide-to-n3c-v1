@@ -97,8 +97,8 @@ Other OMOP tables link records by shared columns; here's a few columns from the 
 Some other tables available with Level 3 data are specific to N3C; here's a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
 
 ![An example of the N3C-specific `manifest` table.
-This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table.
-This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-lifecycle), and when their last submission was."}
+This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table.
+This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was."}
 
 ### PPRL Data {#sec-access-background-pprl}
 
@@ -110,7 +110,7 @@ While we won't describe how the process works here, researchers with enclave acc
 Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools.
 As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
 
-Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-lifecycle).
+Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-cycle).
 
 Level 1 Synthetic data are available to researchers at US and approved foreign organizations (though note the update about Level 1 data generation above), as well as individuals without any affiliation with a research organization, i.e., "citizen scientists." This level of data thus provides opportunities for public outreach and engagement with topics in clinical science.
 Citizen scientists must nevertheless complete some training requirements and sign the legal Data Use Agreement document.
@@ -272,7 +272,7 @@ For a Level 2 DUR, this is required only if your local institution requires IRB 
 
 The Level 3, Limited Data Set (LDS) offers the most complete view of N3C data.
 Unlike Level 2 De-Identified data, dates are not shifted (for most contributing data partners) and 5-digit patient zip codes are available (for most zip codes).
-See @sec-lifecycle for more details
+See @sec-cycle for more details
 
 Level 3 DURs require the same attestations and human subjects research protection training as Level 2 DURs.
 A Level 3 DUR also allows researchers to request access to one or more supplemental PPRL datasets providing additional information about patients.

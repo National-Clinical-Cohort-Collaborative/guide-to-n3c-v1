@@ -39,7 +39,7 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Will Beasley, Jerrod Anzalone
 
-Now that we have introduced N3C and described its motivation and importance, we'll walk through the lifecycle of an example project from onboarding to publishing.
+Now that we have introduced N3C and described its motivation and importance, we'll walk through the life cycle of an example project from onboarding to publishing.
 This path typically takes at least 6 months and 6 collaborators.
 It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers.
 Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.
@@ -202,7 +202,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **Logic Liaison**:
   Hmmm.
   I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-understanding, specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.], but you may not find it useful.
-  Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-lifecycle.]
+  Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
 * **I**:
   Bummer.
   Then what's realistic or feasible?

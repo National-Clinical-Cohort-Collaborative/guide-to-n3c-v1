@@ -44,13 +44,9 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Harold Lehmann and Lisa Eskenazi
 
-:::{.callout-warning}
-This chapter is in the middle of being converted.  Please do NOT make changes to the frozen Google Docs version.  The markdown source will be ready soon to edit directly.
-:::
-
 ## Introduction {#sec-understanding-intro}
 
-The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see ("The N3C 'Enclave' and Data Access" in the Introduction)[#IntroductionEnclave)).
+The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see [The N3C "Enclave" and Data Access](intro.html#sec-intro-enclave) in the Introduction).
 
 We start with the Observational Medical Outcomes Partnership (OMOP) vocabulary, since all data are represented in the OMOP common data model (CDM) format.
 This chapter will describe the difference between the OMOP concept id unique identifier and the source value contributed by a site, the notion of hierarchy across concepts, and the OHDSI tools outside the Enclave that can help.

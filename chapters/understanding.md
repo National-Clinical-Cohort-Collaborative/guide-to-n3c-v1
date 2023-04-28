@@ -144,7 +144,7 @@ Data are available as well in the  `Standardized health system`, `Payer_plan_per
 
 ![OMOP [Data model](https://ohdsi.github.io/CommonDataModel)](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
 
-To learn more about OMOP and get acquainted with the CDM used in the N3C Data Enclave and its functionality, see [OMOP 101: A Crash Course in OMOP Standard Vocabulary](https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b) {{< fa lock title="Link requires an N3C Enclave account" >}}. ([or refer them to the Special Topics OHDSI Resources in this guide](https://docs.google.com/document/u/0/d/1G3gSeTuxnsnZ00R_xaN6-t10RnY0xJwPB2ABCr-Lt3U/edit))
+To learn more about OMOP and get acquainted with the CDM used in the N3C Data Enclave and its functionality, see [OMOP 101: A Crash Course in OMOP Standard Vocabulary](https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b) {{< fa lock title="Link requires an N3C Enclave account" >}} and @sec-support in this guide.
 
 The figure below shows all OMOP tables within the N3C Enclave.
 
@@ -172,7 +172,8 @@ Generally, the analyst has used those codes in concept sets, to which topic we n
 ## Concept Sets
 
 Any study or analysis performed in the Enclave will start with identifying meaningful clinical conditions and events in patient data.
-We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records. [CITE: [https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1](https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1), [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/)] For any given phenomenon used in an analysis, however, a single concept code will seldom be sufficient, and _concept sets_ are used.
+We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records [@gold_2021; @gold_2018].
+For any given phenomenon used in an analysis, however, a single concept code will seldom be sufficient, and concept _sets_ are used.
 
 There are many reasons to specify a concept set:
 

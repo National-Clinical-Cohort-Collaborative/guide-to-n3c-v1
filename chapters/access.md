@@ -51,7 +51,7 @@ The manifest information (described below) indicates which data partners do so a
 ### Level 2, De-Identified {#sec-access-background-l2}
 
 Level 2 data, also known as De-Identified data, contains nearly the same information as the Level 3 data, but the two PHI-containing fields are further anonymized.
-Zip codes available in Level 3 are truncated to just the first 3 digits, and all recorded dates are shifted randomly, where the range of the random shift is +/- 180 days.
+Zip codes available in Level 3 are truncated to just the first 3 digits, and all recorded dates are shifted randomly, where the range of the random shift is &plusmn;180 days.
 This is not as dramatic a research limitation as it may seem, because the random shift amount is determined _per patient_: all dates for a given patient are shifted by the same (unknown, random) amount, allowing identifying sets of patients who had, for example, a positive COVID-19 PCR test and within 14 days received a given drug treatment.^[Like Level 3 data, birth dates are available only at the year and month level, and these are similarly shifted along with other patient-associated dates.
 In Level 2 data birth date information is removed entirely for patients who are more than 90 years old, and a separate `is_age_90_or_older` column identifies these individuals as a group.] Level 2 data would not be appropriate for studies considering absolute timing, such as whether a patients' primary COVID infection occurred during the Delta wave.
 Such questions are best answered by the LDS data.

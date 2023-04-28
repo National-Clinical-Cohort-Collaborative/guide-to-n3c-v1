@@ -1,7 +1,7 @@
 ---
 author:
   - name: Stephanie S. Hong
-    affiliation: Johns Hopkins School of Medicine, GIM BIDS section
+    affiliation: Johns Hopkins School of Medicine, Department of General Internal Medicine, Biomedical Informatics and Data Science Section
     affiliation-url: http://dhsi.med.jhmi.edu/index.php
     email: shong59@jh.edu
     orcid: 0000-0002-0795-1293

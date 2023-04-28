@@ -190,7 +190,7 @@ This process includes tribal zip code truncation and Agency for Healthcare Resea
 
 Tribal zip code truncation is a process that is used to protect the privacy of individuals who live on tribal lands in the United States.
 In order to protect the privacy of these individuals, all zip codes that represent a region where the majority of residents are American Indian (AI) or Alaska Native (AN) have been truncated to three digits.
-This announcement can be found in the [N3C Training Area](https://unite.nih.gov/workspace/notepad/view-read-only/ri.notepad.main.notepad.8cef6f46-aac3-48ca-ae16-5b0acb5b597e).
+This announcement can be found in the [N3C Training Area](https://unite.nih.gov/workspace/notepad/view-read-only/ri.notepad.main.notepad.8cef6f46-aac3-48ca-ae16-5b0acb5b597e) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
 Furthermore, data is scanned to remove any "Never Events" codes that may be left in the submitted data.
 The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors—such as wrong-site surgery—that should never occur.

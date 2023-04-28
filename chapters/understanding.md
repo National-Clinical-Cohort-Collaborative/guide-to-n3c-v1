@@ -439,7 +439,8 @@ The results are found in the Measurement table, as harmonized_value_as_number, h
 
 _Phenotype_ and _cohort_.
 A [phenotype](https://pubmed.ncbi.nlm.nih.gov/23956018/) is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events.
-Examples would be, “has Acute COVID”; “treated with ampicillin.”[^1] A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
+Examples would be, “has Acute COVID”; “treated with ampicillin.”^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code.” A related _cohort_ would be, “Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_.” However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).]
+A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
 In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
 
@@ -540,7 +541,7 @@ More than 64 million Americans are currently covered by Medicare.
 
 _Medicaid_ was signed into law in 1965 alongside Medicare.
 All states, the District of Columbia, and the U.S. territories have Medicaid programs designed to provide health coverage for low-income people.
-Although the Federal government establishes certain parameters for all states to follow, each state administers their Medicaid program differently, resulting in variations in Medicaid coverage across the country.[^2]
+Although the Federal government establishes certain parameters for all states to follow, each state administers their Medicaid program differently, resulting in variations in Medicaid coverage across the country.^[See <https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/>.]
 
 For a full description of CMS, see the [HHS website](https://www.hhs.gov/answers/medicare-and-medicaid/what-is-the-difference-between-medicare-medicaid/index.html).
 
@@ -655,12 +656,3 @@ Importing such an external dataset entails a process of review that examines the
 The [External Datasets page](https://covid.cd2h.org/external-datasets) gives more detail, including how to request a new dataset.
 
 **This concludes an exciting chapter in the never ending story of N3C. To a cinema near you. Real soon.**
-
-<!-- Footnotes themselves at the bottom. -->
-## Notes
-
-[^1]:
-     A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code.” A related _cohort_ would be, “Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_.” However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).
-
-[^2]:
-     https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/

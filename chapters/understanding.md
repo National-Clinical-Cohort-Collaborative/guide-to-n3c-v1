@@ -112,7 +112,7 @@ This CDM compiles standards from disparate public and private sources as well as
 Concepts are related to each other.
 For instance, hypertrophic cardiomyopathy (concept id `4124693`) is a type of cardiomyopathy (concept id `321319`).
 The `concept_relationship` table stores these relationships.
-While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See [concept sets](#ConceptSets).)
+While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See [concept sets](understanding.md#sec-understanding-sets).)
 
 ![A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _`321319`](images/understanding/fig-understanding-020-concept-relationship-1.png){#fig-understanding-020-concept-relationship-1 fig-alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _`321319`"}
 
@@ -130,7 +130,7 @@ The concept relationship table contains many other relationship types beyond hie
 
 [ATHENA](https://athena.ohdsi.org/search-terms/terms?query) is an OHDSI tool for exploring OMOP vocabularies and even downloading them; its primary use in N3C is for looking up individual terms.
 More details on using ATHENA to search terms are documented on OHDSI's publicly-viewable GitHub [repository](https://github.com/OHDSI/Athena). [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
-See section below on concept sets (#ConceptSets) that describes further uses of the ATLAS tool.
+See section below on [concept sets](understanding.md#sec-understanding-sets) that describes further uses of the ATLAS tool.
 
 The OMOP vocabulary is updated regularly to keep up with the continual evolution of sources.
 Its vocabulary maintenance and improvement is an ongoing activity that requires community participation and support.
@@ -169,7 +169,7 @@ Another subtlety is when the relationships between codes are changed.
 The Enclave attempts to contact those who have used codes related to the changed code.
 Generally, the analyst has used those codes in concept sets, to which topic we now turn.
 
-## Concept Sets {#sec-understanding-sets-}
+## Concept Sets {#sec-understanding-sets}
 
 Any study or analysis performed in the Enclave will start with identifying meaningful clinical conditions and events in patient data.
 We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records [@gold_2021; @gold_2018].
@@ -195,7 +195,7 @@ This GitHub repository is functionally our _Shared Variable Library_. Other vari
 
 The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
 
-* Concept set name, version #, date of finalization
+* Concept set name, version number, date of finalization
 * Intention
 * Limitations (of the concept-ids within the concept set)
 * Issues (with respect to data in the N3C Data Enclave, so analysts are forewarned)
@@ -304,7 +304,7 @@ If you are creating a new version within an existing container, please contact t
 If not, clone the existing version into a new container, naming the container with a name that connotes the difference between the existing and the new concept sets.
 
 If you use a concept set in a published manuscript, make it publicly available.
-See the next section, [#Published Concept Sets].
+See the next section, [Published Concept Sets](@sec-understanding-sets-library-published).
 
 Additional documentation on the concept set browser and editor can be found on the [Enclave](https://unite.nih.gov/workspace/documentation/product/concept-set-builder).
 A [tutorial](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=7) {{< fa lock title="Link requires an N3C Enclave account" >}} is available that explores these tools further.

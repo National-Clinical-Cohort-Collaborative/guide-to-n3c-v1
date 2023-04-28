@@ -100,7 +100,7 @@ The central table in the OMOP vocabulary system is the table, `concept`.
 
 The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids.
 All analyses are done with these concept ids.
-Thus, the physician’s diagnosis of "diabetes" may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary  into OMOP as the standard concept id, `320128`.
+Thus, the physician's diagnosis of "diabetes" may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary  into OMOP as the standard concept id, `320128`.
 The original code (I10) is called, and stored in OMOP, as the _source value.
 _But it is the concept id code that analysts would use.
 N3C is committed to using "standard" concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes "translated" to their corresponding standard concepts.
@@ -129,7 +129,7 @@ For hierarchical relationships, more distant relationships are found in the conc
 The concept relationship table contains many other relationship types beyond hierarchical relationships: Mapped from, Maps to, Has brand name of, Consists of, etc.
 
 [ATHENA](https://athena.ohdsi.org/search-terms/terms?query) is an OHDSI tool for exploring OMOP vocabularies and even downloading them; its primary use in N3C is for looking up individual terms.
-More details on using ATHENA to search terms are documented on OHDSI’s publicly-viewable [GitHub](https://github.com/OHDSI/Athena) repository. [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
+More details on using ATHENA to search terms are documented on OHDSI's publicly-viewable [GitHub](https://github.com/OHDSI/Athena) repository. [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
 See section below on concept sets (#ConceptSets) that describes further uses of the ATLAS tool.
 
 The OMOP vocabulary is updated regularly to keep up with the continual evolution of sources.
@@ -139,7 +139,7 @@ The most recent specification documentation can be found at [OMOP Common Data Mo
 New versions of the OMOP vocabulary are downloaded monthly by the Enclave managers.
 
 The OMOP CDM assembles these relationships in the `Standardized vocabulary` section of the CDM.
-These tables are available to N3C researchers, along with the `Standardized clinical data` tables that store the patients’ data (expressed using the concept ids).
+These tables are available to N3C researchers, along with the `Standardized clinical data` tables that store the patients' data (expressed using the concept ids).
 Data are available as well in the  `Standardized health system`, `Payer_plan_period` (not `cost`), and `Standardized derived elements` tables.
 
 ![OMOP [Data model](https://ohdsi.github.io/CommonDataModel)](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
@@ -200,7 +200,7 @@ The concept set content that will be made public in [Zenodo](https://zenodo.org/
 * Issues (with respect to data in the N3C Data Enclave, so analysts are forewarned)
 * Provenance (how the concept set was assembled, which communicates how trustworthy the concept set is)
 * Attributions (who did what)
-* The list of codes (in JavaScript Object Notation (JSON) format, which can be imported directly into Observational Health Data Sciences & Informatics (OHDSI)’s Atlas tool)
+* The list of codes (in JavaScript Object Notation (JSON) format, which can be imported directly into Observational Health Data Sciences & Informatics (OHDSI)'s Atlas tool)
 * Zenodo persistent document object identifier (DOI)
 
 ### What is a concept set?
@@ -297,7 +297,7 @@ Because of these limitations, also **_do beware_** that ATLAS "record counts" (t
 Intention, Limitations, and Provenance comprise concept set metadata.
 
 **_Intention_** communicates in sentences more than the name can.
-For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it’s homozygous or heterozygous, the former being clinical and the latter often not).
+For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it's homozygous or heterozygous, the former being clinical and the latter often not).
 It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.
 
 **_Limitations_** communicates edge cases and caveats to the analyst. "Issues" communicates performance with the Enclave data.
@@ -368,7 +368,7 @@ The clinical experts and the N3C Data Liaisons and Logic Liaisons perform the fo
 * Select relevant parent concepts and their descendants from OMOP standard codes, using Charlson Comorbidity description or the relevant section the referenced CDC page to establish intention.
 * Utilize the OHDSI Atlas tool to explore the OMOP hierarchy to look for other potential parent codes and also to remove child codes that are non-specific to the intended scope of the concept set.
 * Compare the draft concept set to other related concept sets, using the Concept Set Overlap feature of the Concept Set Editor.
-  This facilitates review of any codes that do not overlap with those in value sets from reputable stewards such as the National Library of Medicine’s Value Set Authority Center (VSAC) and the Healthcare Cost and Utilization Project (HCUP) and from existing similar concept sets within the Concept Set Browser.
+  This facilitates review of any codes that do not overlap with those in value sets from reputable stewards such as the National Library of Medicine's Value Set Authority Center (VSAC) and the Healthcare Cost and Utilization Project (HCUP) and from existing similar concept sets within the Concept Set Browser.
   Add and remove concepts (and their descendants) as per recommendations from the clinical experts.
 * Reduce the intentional concept set expression as parsimonious as possible, retaining all the approved concepts collected in prior steps.
 * Iterate as needed.
@@ -484,9 +484,9 @@ As a result the data_partner_id column will only represent a subset of the data 
 See the [Intro to PPRL documentation](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.095ada1d-1a0c-48d6-80ba-2d4c547b362c) for more information.
 
 Secondly, these data sources should not be considered comprehensive in the sense of providing full information on all deaths in the US.
-As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table–that’s why N3C has collected this data in the first place!)
+As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table–that's why N3C has collected this data in the first place!)
 
-Different data sources lag in inclusion of mortality information from the actual date of death (e.g. if someone’s date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18).
+Different data sources lag in inclusion of mortality information from the actual date of death (e.g. if someone's date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18).
 This lag varies by data source type: government sources tend to lag longer than private sources.
 For detailed information on mortality data latency, data completeness, and other considerations, see the [N3C PPRL Mortality Data Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.e45cd20e-9da9-44c7-b1d1-747e7c56102f) and the [N3C Mortality Data FAQs](https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE#MORTALITY).
 
@@ -532,7 +532,7 @@ The following columns are used:
 
 #### Introduction
 
-The Centers for Medicare and Medicaid Services (CMS) is a federal agency that is part of the U.S. Department of Health and Human Services (HHS) that administers the nation’s Medicare Program.
+The Centers for Medicare and Medicaid Services (CMS) is a federal agency that is part of the U.S. Department of Health and Human Services (HHS) that administers the nation's Medicare Program.
 The agency also works with state governments to administer programs that include Medicaid and the Children's Health Insurance Program (CHIP).
 
 _Medicare_ is the federal health insurance program created in 1965 to provide health coverage for Americans aged 65 and older.
@@ -650,7 +650,7 @@ There are datasets about the locations themselves (e.g., [zip code distances](ht
 There are also datasets to help in mapping from zip codes (data available in Level 3 Enclave datasets), such as [Mapping Zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus).
 All available datasets are available at [The Data Discovery Engine](https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset) (outside the Enclave) and in [The Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) (inside the Enclave; filter on "External Dataset").
 
-Note that most of these depend on 5-digit zip codes for linking between a patient’s record and the external dataset, and so are useful only in the context of a Level 3 DUR.
+Note that most of these depend on 5-digit zip codes for linking between a patient's record and the external dataset, and so are useful only in the context of a Level 3 DUR.
 
 Importing such an external dataset entails a process of review that examines the need, the risk to reidentification, and the license.
 The [External Datasets page](https://covid.cd2h.org/external-datasets) gives more detail, including how to request a new dataset.

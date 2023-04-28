@@ -237,7 +237,15 @@ Unit inference is performed in the following cases; cases where the measurement 
 
 The massive amounts of measurement data in N3C enables the process of correcting units via inference based on the distribution of the existing data values for the same laboratory results.
 Furthermore, the same measurement data in different units are also converted to use the canonical units using the unit conversion table.
-This unit-harmonization pipeline consists of several steps: (1) selecting a canonical unit for each measurement variable, (2) developing a formula for converting data values to this canonical unit, (3) obtaining a clinical review of each formula, (4) applying the formula to convert data values in each unit into the target canonical unit, and (5) removing any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
+
+This unit-harmonization pipeline consists of several steps:
+
+1. selecting a canonical unit for each measurement variable,
+1. developing a formula for converting data values to this canonical unit,
+1. obtaining a clinical review of each formula,
+1. applying the formula to convert data values in each unit into the target canonical unit, and
+1. removing any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
+
 For data with missing units for all the results within a lab test for a particular data partner, N3C compares the values to pooled values from all data partners using the Kolmogorov-Smirnov test.
 
 ![Unit conversion example for degree Fahrenheit to degree Celsius](images/cycle/fig-cycle-040-conversion.png){#fig-cycle-040-conversion fig-alt="Unit conversion example for degree Fahrenheit to degree Celsius"}

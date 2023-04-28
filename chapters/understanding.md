@@ -394,20 +394,20 @@ _Harmonized values_.
 It is no surprise that, across over 70 data partners, and the many included sites, different institutions measure the same analyte in different ways and report the results with different units of measure.
 N3C has spent a fair amount of effort to harmonize units (and therefore values; think degrees Fahrenheit and degrees Celsius), so analysts have a level playing field for their analyses.
 In addition, many units of measure are missing, so, as part of that effort, an algorithm has been developed to use the pooled data across the Enclave to help us infer units (and therefore, values).
-This strategy has led to the "rescue" of over 78% of records where units of measure were missing.
-See _[Harmonizing units and values of quantitative data elements in a very large nationally pooled electronic health record (EHR) dataset](https://jhu.pure.elsevier.com/en/publications/harmonizing-units-and-values-of-quantitative-data-elements-in-a-v)_.
+This strategy has led to the "rescue" of over 78% of records where units of measure were missing;
+see @bradwell_2022.
 This harmonization was done for about 70 measurements so far.
-The results are found in the Measurement table, as harmonized_value_as_number, harmonized_unit_concept_id and unit_concept_id_or_inferred_unit_concept_id.
+The results are found in the Measurement table, as `harmonized_value_as_number`, `harmonized_unit_concept_id` and `unit_concept_id_or_inferred_unit_concept_id`.
 
 _Phenotype_ and _cohort_.
-A [phenotype](https://pubmed.ncbi.nlm.nih.gov/23956018/) is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events.
+A phenotype is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
 Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).]
 A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
 In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
 
 _Derived variables/facts._ Facts are designations that a patient falls into a category (at a point in time).
-Thus, **confirmed_covid_patient **or** TOBACCOSMOKER_indicator** is set as "1" (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+Thus, `confirmed_covid_patient` or `TOBACCOSMOKER_indicator` is set as "1" (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 Other Logic Liaison Templates include many derived facts of value to analysis.
 See @sec-tools.
 

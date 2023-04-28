@@ -274,9 +274,9 @@ Each of these SMEs will be called upon in your work.
 
 ### N3C Concept Set Library
 
-The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an N3C Enclave account" >}}, illustrated in @fig-understanding-090._ This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition.
+The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an N3C Enclave account" >}}, illustrated in @fig-understanding-090-concept-set-versions. This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition.
 We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question.
-A workflow for performing this series of tasks is shown in @fig-understanding-090.
+A workflow for performing this series of tasks is shown in @fig-understanding-090-concept-set-versions.
 
 ![An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser](images/understanding/fig-understanding-090-concept-set-versions.png){#fig-understanding-090-concept-set-versions fig-alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"}
 
@@ -477,17 +477,15 @@ The summary data currently available in N3C includes:
 
 * Sample Date
 * WHO label (e.g. alpha, delta, omicron)
-* *PANGO lineage (e.g. B.1.1.7)
-
-_*Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples._
+* PANGO lineage (e.g. B.1.1.7)^[Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples]
 
 #### Viral Variant Data in OMOP
 
 Summary PPRL viral variant data is available as an enriched OMOP measurement table available in the PPRL Datasets data.
 The following columns are used:
 
-* **measurement_concept_id** contains OMOP **concept_id** 36033667, "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing", for all viral variant samples.
-* **value_as_concept_id** will be encoded with the OMOP concept representing the WHO label (e.g. **concept_id** 4228611 for "Omicron").
+* `measurement_concept_id` contains OMOP `concept_id` 36033667, "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing", for all viral variant samples.
+* `value_as_concept_id` will be encoded with the OMOP concept representing the WHO label (e.g. `concept_id` 4228611 for "Omicron").
 * A new column outside the standard OMOP schema includes the PANGO lineage.
 
 ### Centers for Medicare and Medicaid Services (CMS)
@@ -556,11 +554,11 @@ Enrollment in Medicare and Medicaid are well defined and thoroughly tracked, pro
 |                                                                             | - EHR elements may get altered or added by billing teams or automatically by software to optimize reimbursement (sometimes described as up-coding) |
 +-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-: Differences between EHR and CMS Claims Data {#tbl-understanding-ehr-versus-claims}
+: Differences between EHR and CMS Claims Data {#tbl-understanding-ehr-versus-claims tbl-colwidths="[45,55]"}
 
 #### Additional CMS Resources
 
-For a detailed investigation of the usefulness of EHR vs administrative claims data, see [Comparing Population-based Risk-stratification Model Performance Using Demographic, Diagnosis and Medication Data Extracted From Outpatient Electronic Health Records Versus Administrative Claims by Kharrazi et al., 2017](https://pubmed.ncbi.nlm.nih.gov/28598890/).
+For a detailed investigation of the usefulness of EHR vs administrative claims data, see @kharrazi_2017.
 
 For detailed information on the N3C CMS data, see [N3C PPRL CMS Data Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.899f98b5-2846-41a3-9563-adb75c9042ce) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 

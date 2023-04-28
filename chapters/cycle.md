@@ -76,10 +76,17 @@ Once the data is transferred to the Enclave the automated pipeline is triggered 
 
 The contributing sites regularly run scripts written by the N3C Phenotype Workstream to extract COVID and control group patients' data.
 Data encoded in four different CDMs (i.e., OMOP, PCORnet, ACT, and TriNetX) from over 232 medical institutions are harmonized to the target Observational Medical Outcomes Partnership (OMOP) CDM with ~50,000 transforms and constituent mappings recorded with full provenance.
-The N3C Data ingestion pipeline consists of the following five categories of steps: (1) Native source CDM conformance check after unzipping the payload.
-This ensures that the submitted data adheres to the source CDM specification. (2) Correction of COVID-19 laboratory tests with missing LOINC codes.
-The COVID-19 TestNorm utility [@dong_2020] is used to rescue COVID lab tests with missing LOINC codes. (3) Source data terminology translation.
-The terminology translation step involves standardizing the terminology used in the data so that they are consistent across data sources, and includes conversion of terms used in the source dataset to those used in the target data model. (4) OMOP CDM conformance check which structures and organizes the data into common domains using common terminology. (5) Data quality check where the source data terminology is converted to OMOP concepts using the OMOP concept relationships to ensure that the data is consistent and accurate across the domain.
+
+The N3C Data ingestion pipeline consists of the following five categories of steps:
+
+1. Native source CDM conformance check after unzipping the payload.
+  This ensures that the submitted data adheres to the source CDM specification.
+1. Correction of COVID-19 laboratory tests with missing LOINC codes.
+  The COVID-19 TestNorm utility [@dong_2020] is used to rescue COVID lab tests with missing LOINC codes.
+1. Source data terminology translation.
+   The terminology translation step involves standardizing the terminology used in the data so that they are consistent across data sources, and includes conversion of terms used in the source dataset to those used in the target data model.
+1. OMOP CDM conformance check which structures and organizes the data into common domains using common terminology.
+1. Data quality check where the source data terminology is converted to OMOP concepts using the OMOP concept relationships to ensure that the data is consistent and accurate across the domain.
 
 ![Pipeline Workflow](images/cycle/fig-cycle-015-workflow.png){#fig-cycle-015-workflow fig-alt="Pipeline Workflow"}
 

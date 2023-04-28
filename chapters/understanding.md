@@ -68,7 +68,7 @@ Later chapters will give more details on how to use the resources and tools desc
 ## OHDSI Basics
 
 This Observational Health Data Sciences and Informatics (OHDSI) basics section introduces the OHDSI community and provides an introduction to OMOP vocabularies, and vocabulary search tools such as ATHENA and ATLAS.
-For further OHDSI collaborative knowledge and exploration, refer to [*The Book of OHDSI*](https://ohdsi.github.io/TheBookOfOhdsi/) which serves as a central knowledge repository [@ohdsi_2019].
+For further OHDSI collaborative knowledge and exploration, refer to [_The Book of OHDSI_](https://ohdsi.github.io/TheBookOfOhdsi/) which serves as a central knowledge repository [@ohdsi_2019].
 The Book of OHDSI is a living document, community-maintained through open-source development tools, and evolves continuously.
 The online version, available for free, always represents the latest version.
 
@@ -105,7 +105,7 @@ The original code (I10) is called, and stored in OMOP, as the _source value.
 _But it is the concept id code that analysts would use.
 N3C is committed to using "standard" concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes "translated" to their corresponding standard concepts.
 
-*The Book of OHDSI* has a detailed chapter on [Standardized Vocabularies](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).
+_The Book of OHDSI_ has a detailed chapter on [Standardized Vocabularies](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).
 The OHDSI vocabularies are in a standardized CDM structure that houses existing vocabularies used in the public domain.
 This CDM compiles standards from disparate public and private sources as well as some OMOP grown concepts.
 
@@ -190,7 +190,7 @@ _If you are publishing your results, concept sets are considered a publicly view
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 
 Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository.
-Such posting is part of the process known as making research[FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
+Such posting is part of the process known as making research [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
 This GitHub repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
 The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
@@ -239,7 +239,7 @@ ATLAS is used by the OHDSI community to construct concept sets.
 Best practice is for each research institution to have its own CDM instance.
 The Enclave, for technical reasons, cannot implement ATLAS.
 In the future, N3C hopes to provide a public tool but it is unclear when this release will occur.
-Users without their own local ATLAS may explore its utility using a publicly available one on OHDSI.org. **_Do beware _** all public tools are intended to be a demonstration site to showcase the power of the open-source toolstack.
+Users without their own local ATLAS may explore its utility using a publicly available one on OHDSI.org. _Do beware_ all public tools are intended to be a demonstration site to showcase the power of the open-source tool stack.
 They are not intended for active research projects.
 These deployments are not running on a real OMOP CDM.
 They use synthetic data like the CMS Synthetic Public Use Files (SYNPUF) in the OMOP CDM format.
@@ -247,7 +247,7 @@ The vocabulary schema will reflect whatever version of the vocabulary was in pla
 It will not reflect the most recent version of the OMOP vocabulary, which may be problematic for research projects that use newly approved vaccines or medicines.
 You should not make the habit of saving content within the public instance.
 It can be reset and wiped at any point in time.
-If you enjoy using ATLAS, consider spinning up your own instance via Broadsea, OHDSI in a box or other OHDSI Community resources to jumpstart users with their own ATLAS deployment.
+If you enjoy using ATLAS, consider spinning up your own instance via Broadsea, OHDSI in a box, or other OHDSI Community resources to jumpstart users with their own ATLAS deployment.
 It is very easy to do and runs effectively, even on synthetic data.
 Resources are available via the OHDSI ATLAS workgroup.
 While it is a handy complement to the Enclave, do focus on the N3C products: The N3C concept set library and the concept set editor.
@@ -257,21 +257,27 @@ Because of these limitations, also **_do beware_** that ATLAS "record counts" (t
 
 ### Concept Set Metadata
 
-Intention, Limitations, and Provenance comprise concept set metadata.
-
-**_Intention_** communicates in sentences more than the name can.
-For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it's homozygous or heterozygous, the former being clinical and the latter often not).
-It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.
-
-**_Limitations_** communicates edge cases and caveats to the analyst. "Issues" communicates performance with the Enclave data.
-This performance could include the number of codes contributing the majority of the data (e.g., from Term Usage) or the distribution of values across sites, in the case of lab tests.
-
-**_Provenance_** communicates how the concept set was assembled.
-It should include any authorities consulted (the literature, the Value Set Authority Center, the domain team members, etc.) and a sense of what modifications, if any, were made from that authoritative beginning. (Of note, "ATLAS" is not an authoritative beginning, unless there is annotation on the ATLAS site of the authoritative source for that specific concept set.)
-
 The work on concept sets does not take place in a vacuum.
 It is assumed that you are part of a project team, which has the following Subject Matter Expertise (SME): Research/Clinical, Vocabulary, Informatics, and Statistical/Analytic.
 Each of these SMEs will be called upon in your work.
+
+Intention, Limitations, and Provenance comprise concept set metadata.
+
+#### Intention
+
+Intention communicates in sentences more than the name can.
+For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it's homozygous or heterozygous, the former being clinical and the latter often not).
+It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.
+
+#### Limitations
+
+Limitations communicates edge cases and caveats to the analyst. "Issues" communicates performance with the Enclave data.
+This performance could include the number of codes contributing the majority of the data (e.g., from Term Usage) or the distribution of values across sites, in the case of lab tests.
+
+#### Provenance
+
+Provenance communicates how the concept set was assembled.
+It should include any authorities consulted (the literature, the Value Set Authority Center, the domain team members, etc.) and a sense of what modifications, if any, were made from that authoritative beginning. (Of note, "ATLAS" is not an authoritative beginning, unless there is annotation on the ATLAS site of the authoritative source for that specific concept set.)
 
 ### N3C Concept Set Library
 
@@ -283,7 +289,7 @@ A workflow for performing this series of tasks is shown in @fig-understanding-09
 
 When created from scratch, a _container_ is created, so multiple _versions_ of the concept sets can be supported.
 New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards.
-Containers are indicated by blue icons; versions, by brown icons, as illustrated in Figure _image-090-cset_versions.gif_.
+Containers are indicated by blue icons; versions, by brown icons, as illustrated in @fig-understanding-090-concept-set-versions.
 
 ![Workflow for finding, extending, and creating concept sets](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
 
@@ -381,17 +387,24 @@ The Properties and Reviews will be published, whether missing or not.
 
 Data tables of use or interest to analysts found in either the LDS or Safe Harbor Release are the following:
 
-_Manifest._ This table, found in the folder along with the OMOP tables, provides data about each data partner that analysts should find helpful when trying to understand variation in the data: CDM type (ACT, OMOP, PCORNet, TriNetX) and version, whether dates are shifted (and how much), and date of last contribution.
+### Manifest
 
-_Control Map._ For every "case" generated locally by the Phenotype algorithm, the algorithm also identifies 2 "controls", that are matched by age, sex, race, and ethnicities, including matched by missing values.
+This table, found in the folder along with the OMOP tables, provides data about each data partner that analysts should find helpful when trying to understand variation in the data: CDM type (ACT, OMOP, PCORNet, TriNetX) and version, whether dates are shifted (and how much), and date of last contribution.
+
+### Control Map
+
+For every "case" generated locally by the Phenotype algorithm, the algorithm also identifies 2 "controls", that are matched by age, sex, race, and ethnicities, including matched by missing values.
 While it may be tempting to use this map to identify controls for your own study, too many patients who were initial "controls" may have become "cases", or their true status is unknown, because of home or other non-site testing.
 Other matching methods (e.g., propensity scores) are more trustworthy.
 
-_Microvisit to Macrovisit Map._ While admissions to the hospital are recorded in the Visit_Occurrence table, the end-date is not always so recorded.
+### Microvisit to Macrovisit Map
+
+While admissions to the hospital are recorded in the Visit_Occurrence table, the end-date is not always so recorded.
 Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the visit_occurrence table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
 See [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
-_Harmonized values_.
+### Harmonized values
+
 It is no surprise that, across over 70 data partners, and the many included sites, different institutions measure the same analyte in different ways and report the results with different units of measure.
 N3C has spent a fair amount of effort to harmonize units (and therefore values; think degrees Fahrenheit and degrees Celsius), so analysts have a level playing field for their analyses.
 In addition, many units of measure are missing, so, as part of that effort, an algorithm has been developed to use the pooled data across the Enclave to help us infer units (and therefore, values).
@@ -400,21 +413,25 @@ see @bradwell_2022.
 This harmonization was done for about 70 measurements so far.
 The results are found in the Measurement table, as `harmonized_value_as_number`, `harmonized_unit_concept_id` and `unit_concept_id_or_inferred_unit_concept_id`.
 
-_Phenotype_ and _cohort_.
-A phenotype is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
+### Phenotype and cohort
+
+A _phenotype_ is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
 Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
-A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
+
+A _cohort_ is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
 In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
 
-_Derived variables/facts._ Facts are designations that a patient falls into a category (at a point in time).
+### Derived variables/facts
+
+Facts are designations that a patient falls into a category (at a point in time).
 Thus, `confirmed_covid_patient` or `TOBACCOSMOKER_indicator` is set as "1" (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 Other Logic Liaison Templates include many derived facts of value to analysis.
 See @sec-tools.
 
 ## Beyond EHR: PPRL-Based Data
 
-### Introduction
+### Introduction to PPRL
 
 Privacy Preserving Record Linkage (PPRL) is a cryptographically-secure method to link information about individuals from different sources of data, without revealing personal information about those individuals.
 PPRL enables N3C to collect information such as EHR data from clinical data partners, viral variant information from sequencing centers, mortality information from government and private sources, and government Medicare and Medicaid data, all into a single unified database for researcher use.
@@ -433,7 +450,7 @@ To provide more complete information on mortality, N3C has collected additional 
 Because the data sources themselves are sensitive information, supplemental PPRL mortality records are broken down into three source categories:
 
 * _Government Mortality_: Government data sourced from death certificates and person-reporting.
-* _ObituaryData.com_: Obituary data sourced from funeral homes, newspapers, and other online obituary sources specifically from obituarydata.com (a private obituary aggregator).
+* _Public Obituary_: Obituary data sourced from funeral homes, newspapers, and other online obituary sources specifically from <https://www.obituarydata.com/> (a private obituary aggregator).
 * _Private Obituary_: Obituary data sourced from funeral homes, newspapers, and other online obituary sources sourced from other private sources.
 
 PPRL mortality data are harmonized against the existing Level-3 (LDS) OMOP tables in the N3C Data Enclave.
@@ -491,7 +508,7 @@ The following columns are used:
 
 ### Centers for Medicare and Medicaid Services (CMS)
 
-#### Introduction
+#### Introduction to CMS
 
 The Centers for Medicare and Medicaid Services (CMS) is a federal agency that is part of the U.S. Department of Health and Human Services (HHS) that administers the nation's Medicare Program.
 The agency also works with state governments to administer programs that include Medicaid and the Children's Health Insurance Program (CHIP).

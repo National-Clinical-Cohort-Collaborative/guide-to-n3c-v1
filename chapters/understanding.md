@@ -1,22 +1,45 @@
 ---
 author:
+  - name: Harold P. Lehmann
+    affiliation: Johns Hopkins University
+    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
+    email: lehmann@jhmi.edu
+    orcid: 0000-0002-7698-219X
+
   - name: Lisa Eskenazi
     affiliation: Johns Hopkins University
-    affiliation-url: https://www.jhu.edu/
-    # email: leskena2@jh.edu
-    # orcid:
+    affiliation-url:
+    email: leskena2@jh.edu
+    orcid: 0000-0001-8693-7838
     attributes:
       corresponding: true
 
-  - name: Harold Lehmann
-    affiliation: Johns Hopkins University School of Medicine
-    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
-    # email: lehmann@jhmi.edu
-    # orcid:
+  - name: Shawn O'Neil
+    affiliation: University of Colorado Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: shawn@tislab.org
+    orcid: 0000-0001-6220-7080
+
+  - name: Thomas Richards
+    affiliation: Johns Hopkins University
+    affiliation-url: https://www.jhu.edu/
+    # email:
+    orcid: 0000-0003-4945-9050
+
+  - name: Kristin Kostka
+    affiliation: The OHDSI Center at the Roux Institute, Northeastern University, Portland, ME & NDORMS, University of Oxford, Oxford, UK
+    # affiliation-url:
+    # email:
+    orcid: 0000-0003-2595-8736
+
+  - name: Sigfried Gold
+    # affiliation:
+    # affiliation-url:
+    # email:
+    orcid: 0000-0001-7853-6137
 
 csl: ../assets/csl/apa-7e.csl
 ---
-
 # Understanding the Data {#sec-understanding}
 
 :::{.callout-note}

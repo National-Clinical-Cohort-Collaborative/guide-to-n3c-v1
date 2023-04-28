@@ -221,52 +221,14 @@ Thus, the "Mapped" attribute is rarely helpful, as it applies only if using sour
 For example, a concept set expression could contain two concepts as depicted in Table [10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression).
 Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/4329847) ("Myocardial infarction") and all of its descendants, but exclude concept [314666](http://athena.ohdsi.org/search-terms/terms/314666) ("Old myocardial infarction") and all of its descendants.
 
-<table>
-  <tr>
-   <td><strong>Concept Id</strong>
-   </td>
-   <td><strong>Concept Name</strong>
-   </td>
-   <td><strong>Excluded</strong>
-   </td>
-   <td><strong>Descendants</strong>
-   </td>
-   <td><strong>Mapped</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>4329847
-   </td>
-   <td>Myocardial infarction
-   </td>
-   <td>
-    NO
-   </td>
-   <td>
-    YES
-   </td>
-   <td>NO
-   </td>
-  </tr>
-  <tr>
-   <td>314666
-   </td>
-   <td>Old myocardial infarction
-   </td>
-   <td>
-    YES
-   </td>
-   <td>
-    YES
-   </td>
-   <td>NO
-   </td>
-  </tr>
-</table>
+| Concept Id | Concept Name              | Excluded | Descendants | Mapped |
+|------------|---------------------------|----------|-------------|--------|
+| 4329847    | Myocardial infarction     | NO       | YES         | NO     |
+| 314666     | Old myocardial infarction | YES      | YES         | NO     |
 
-_Figure image-070-ConceptSetExpression.gif. Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts._
+: Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts {#tbl-understanding-concept-set}
 
-As shown in [Figure xxx](_Figure image-080-MIHierarchy.gif)_, this will include "Myocardial infarction" and all of its descendants except "Old myocardial infarction" and its descendants.
+As shown in @tbl-understanding-concept-set, this will include "Myocardial infarction" and all of its descendants except "Old myocardial infarction" and its descendants.
 In total, this concept set expression implies nearly a hundred Standard Concepts.
 These Standard Concepts in turn reflect hundreds of source codes (e.g. ICD-9 and ICD-10 codes) that may appear in the various databases.
 

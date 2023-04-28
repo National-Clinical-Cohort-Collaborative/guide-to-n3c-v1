@@ -9,7 +9,7 @@ author:
       corresponding: true
 
   - name: Bryan Laraway
-    affiliation: TISLaUniversity of Colorado - Anschutz Medical Campus
+    affiliation: University of Colorado - Anschutz Medical Campus
     affiliation-url: https://medschool.cuanschutz.edu/dbmi
     email: bryan.laraway@cuanschutz.edu
     orcid: 0000-0002-0450-7074

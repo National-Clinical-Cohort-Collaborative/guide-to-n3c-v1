@@ -545,52 +545,18 @@ The pipeline also required deidentification of patient and provider identifiers.
 CMS claims data provides slightly different information compared to EHR data; for example, rather than providing medication prescription information, CMS provides information on medication dispensation from the pharmacy.
 Enrollment in Medicare and Medicaid are well defined and thoroughly tracked, providing insight into patients healthcare utilization vs eligibility that may be lacking in EHR data.
 
-<table>
-  <tr>
-   <td colspan="2" >Differences between EHR and CMS Claims Data
-   </td>
-  </tr>
-  <tr>
-   <td>EHR Data
-   </td>
-   <td>CMS Claims Data
-   </td>
-  </tr>
-  <tr>
-   <td>
-<ul>
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| EHR Data                                                                    | CMS Claims Data                                                                                                                                    |
++=============================================================================+====================================================================================================================================================+
+| - Usually contains data only about care received in that healthcare system  | - Have little clinical data but have data (Dx, Px, etc) from all healthcare sites a patient received services                                      |
+| - Reflects orders or intent                                                 | - Reflect performed services                                                                                                                       |
+| - Contains deep clinical data (labs, vitals, notes, surveys, history)       | - Reflect filled prescriptions                                                                                                                     |
+| - May not contain billing data                                              | - Contain amounts billed and paid                                                                                                                  |
+| - Usually does not contain eligibility or enrollment                        | - Paid claim indicates enrollment                                                                                                                  |
+|                                                                             | - EHR elements may get altered or added by billing teams or automatically by software to optimize reimbursement (sometimes described as up-coding) |
++-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-<li>Usually contains data only about care received in that healthcare system
-
-<li>Reflects orders or intent
-
-<li>Contains deep clinical data (labs, vitals, notes, surveys, history)
-
-<li>May not contain billing data
-
-<li>Usually does not contain eligibility or enrollment
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Have little clinical data but have data (Dx, Px, etc) from all healthcare sites a patient received services
-
-<li>Reflect performed services
-
-<li>Reflect filled prescriptions
-
-<li>Contain amounts billed and paid
-
-<li>Paid claim indicates enrollment
-
-<li>EHR elements may get altered or added by billing teams or automatically by software to optimize reimbursement – sometimes described as up-coding
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
+: Differences between EHR and CMS Claims Data {#tbl-understanding-ehr-versus-claims}
 
 #### Additional CMS Resources
 

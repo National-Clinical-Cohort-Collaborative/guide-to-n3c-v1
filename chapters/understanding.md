@@ -60,7 +60,6 @@ We turn next to constructs—derived variables and facts—derived from concept 
 
 We round out this discussion with an introduction to external datasets that have been brought into the Enclave and the process to bring further datasets in.
 
-
 Later chapters will give more details on how to use the resources and tools described here.
 
 ## OHDSI Basics
@@ -131,7 +130,6 @@ More subtle issues are when the source vocabulary managers change or decommissio
 
 Any study or analysis performed in the Enclave will start with identifying meaningful clinical conditions and events in patient data. We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records. [CITE: [https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1](https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1), [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/)] For any given phenomenon used in an analysis, however, a single concept code will seldom be sufficient, and _concept sets_ are used.
 
-
 There are many reasons to specify a concept set:
 
 * Variables in your study are implemented using concept sets.
@@ -142,11 +140,11 @@ There are many reasons to specify a concept set:
 
 _If you are publishing your results, concept sets are considered a publicly viewable part of your work._ Such public viewing is important.
 
-* It is required by the Strengthening the _Reporting of Observational Studies in Epidemiology_ ([STROBE](https://www.equator-network.org/reporting-guidelines/strobe/)<span style="text-decoration:underline;">)</span> guidelines for publishing observational research.
+* It is required by the Strengthening the _Reporting of Observational Studies in Epidemiology_ [STROBE](https://www.equator-network.org/reporting-guidelines/strobe/) guidelines for publishing observational research.
 * Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 
-Concept sets that are “finalized” within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository. Such posting is part of the process known as making research[ FAIR](https://www.force11.org/group/fairgroup/fairprinciples)<span style="text-decoration:underline;"> (findable, accessible, interoperable, reusable)</span>. This GitHub repository is functionally our _Shared Variable Library._ Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
+Concept sets that are “finalized” within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository. Such posting is part of the process known as making research[FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable). This GitHub repository is functionally our _Shared Variable Library._ Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
 The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
 
@@ -216,7 +214,6 @@ For example, a concept set expression could contain two concepts as depicted in 
   </tr>
 </table>
 
-
 _Figure image-070-ConceptSetExpression.gif. Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts._
 
 As shown in [Figure xxx](_Figure image-080-MIHierarchy.gif)_, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants. In total, this concept set expression implies nearly a hundred Standard Concepts. These Standard Concepts in turn reflect hundreds of source codes (e.g. ICD-9 and ICD-10 codes) that may appear in the various databases.
@@ -241,7 +238,7 @@ The work on concept sets does not take place in a vacuum. It is assumed that you
 
 ### N3C Concept Set Library
 
-The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), illustrated in Figure _image-090-cset_versions.gif._ This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition. We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question. A workflow for performing this series of tasks is shown in Figure _image-090-ConceptSetFlowsheet.gif_.
+The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), illustrated in @fig-understanding-090._ This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition. We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question. A workflow for performing this series of tasks is shown in @fig-understanding-090.
 
 ![An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser](images/understanding/fig-understanding-090-concept-set-versions.png){#fig-understanding-090-concept-set-versions fig-alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"}
 
@@ -265,13 +262,13 @@ Additional documentation on the concept set browser and editor can be found on t
 
 The [N3C Data Liaisons and Logic Liaisons](https://covid.cd2h.org/liaisons), in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines. The original N3C Recommended concept sets were selected based on
 
-1) the comorbid conditions identified by the [US Centers for Disease Control (CDC) definitions for COVID-19](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html) as increasing risk of severe COVID-19
+1. the comorbid conditions identified by the [US Centers for Disease Control (CDC) definitions for COVID-19](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html) as increasing risk of severe COVID-19
 
-2) the comorbid conditions identified in the [Charlson Comorbidity Index](https://healthcaredelivery.cancer.gov/seermedicare/considerations/comorbidity.html#:~:text=The%20Charlson%20Comorbidity%20Index%20was,were%20included%20in%20the%20index.), and
+1. the comorbid conditions identified in the [Charlson Comorbidity Index](https://healthcaredelivery.cancer.gov/seermedicare/considerations/comorbidity.html#:~:text=The%20Charlson%20Comorbidity%20Index%20was,were%20included%20in%20the%20index.), and
 
-3) others as requested by N3C leadership for use in the Logic Liaison templates.
+1. others as requested by N3C leadership for use in the Logic Liaison templates.
 
-The N3C Recommended concept sets have been vetted by clinical experts (typically N3C Domain Team leads) and the Data and Logic Liaison teams according to the below refinement and finalization process.  _The latest version of the listed concept sets should always be used, _as earlier versions represent iterations and have not passed the final review.
+The N3C Recommended concept sets have been vetted by clinical experts (typically N3C Domain Team leads) and the Data and Logic Liaison teams according to the below refinement and finalization process.  _The latest version of the listed concept sets should always be used,_ as earlier versions represent iterations and have not passed the final review.
 
 ###### Refinement Process
 
@@ -303,7 +300,6 @@ Re “the people” and “the process”: The concept set meta-data, especially
 
 Another means of deciding on a level of trust is the Reviews. The Enclave supports two types of reviews.
 
-
 * “Vocabulary review”: Here, a terminologist or informatician familiar with the OMOP vocabulary has reviewed the process documented (in Provenance) or in real time (as part of work with the Domain Team) and documents satisfaction with what codes are included and what are excluded.
 * “Clinical review”: Here, a clinical member of the Domain Team or project has reviewed the codes to confirm that they match the “Intention” of the concept set.
 
@@ -327,7 +323,7 @@ _Harmonized values_. It is no surprise that, across over 70 data partners, and t
 
 _Phenotype_ and _cohort_. A [phenotype](https://pubmed.ncbi.nlm.nih.gov/23956018/) is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events. Examples would be, “has Acute COVID”; “treated with ampicillin.”[^1] A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time. Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research. In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
 
-_Derived variables/facts._ Facts are designations that a patient falls into a category (at a point in time). Thus, **confirmed_covid_patient **or** TOBACCOSMOKER_indicator** is set as “1” (true) if certain conditions are met in the template ([Logic Liaison Template] All Patients Facts)[https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus). Other Logic Liaison Templates include many derived facts of value to analysis. See (Analyzing the Data)[#AnalyzingTheData].
+_Derived variables/facts._ Facts are designations that a patient falls into a category (at a point in time). Thus, **confirmed_covid_patient **or** TOBACCOSMOKER_indicator** is set as “1” (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus). Other Logic Liaison Templates include many derived facts of value to analysis. See @sec-tools.
 
 ## Beyond EHR: PPRL-Based Data
 

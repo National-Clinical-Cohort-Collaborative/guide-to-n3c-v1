@@ -220,7 +220,7 @@ While ATLAS concept sets may contain standard and non-standard concepts, Enclave
 Thus, the "Mapped" attribute is rarely helpful, as it applies only if using source data.
 
 For example, a concept set expression could contain two concepts as depicted in _The Book of OHDSI's_ [Cohort chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression).
-Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/4329847) ("Myocardial infarction") and all of its descendants, but exclude concept [314666](http://athena.ohdsi.org/search-terms/terms/314666) ("Old myocardial infarction") and all of its descendants.
+Here we include concept [4329847](https://athena.ohdsi.org/search-terms/terms/4329847) ("Myocardial infarction") and all of its descendants, but exclude concept [314666](https://athena.ohdsi.org/search-terms/terms/314666) ("Old myocardial infarction") and all of its descendants.
 
 | Concept Id | Concept Name              | Excluded | Descendants | Mapped |
 |------------|---------------------------|----------|-------------|--------|

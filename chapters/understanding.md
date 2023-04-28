@@ -191,7 +191,7 @@ _If you are publishing your results, concept sets are considered a publicly view
 
 Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository.
 Such posting is part of the process known as making research[FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
-This GitHub repository is functionally our _Shared Variable Library._ Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
+This GitHub repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
 The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
 
@@ -206,7 +206,7 @@ The concept set content that will be made public in [Zenodo](https://zenodo.org/
 
 ### What is a concept set?
 
-The Book of OHDSI explains [concept sets](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#conceptSets) as:
+_The Book of OHDSI_ explains [concept sets](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#conceptSets) as:
 
 > A concept set is an expression representing a list of concepts that can be used as a reusable component in various analyses.
 > It can be thought of as a standardized, computer-executable equivalent of the code lists often used in observational studies.
@@ -219,7 +219,7 @@ The Book of OHDSI explains [concept sets](https://ohdsi.github.io/TheBookOfOhdsi
 While ATLAS concept sets may contain standard and non-standard concepts, Enclave concept sets may include "standard" (SNOMED-based) concepts only.
 Thus, the "Mapped" attribute is rarely helpful, as it applies only if using source data.
 
-For example, a concept set expression could contain two concepts as depicted in Table [10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression).
+For example, a concept set expression could contain two concepts as depicted in _The Book of OHDSI's_ [Cohort chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression).
 Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/4329847) ("Myocardial infarction") and all of its descendants, but exclude concept [314666](http://athena.ohdsi.org/search-terms/terms/314666) ("Old myocardial infarction") and all of its descendants.
 
 | Concept Id | Concept Name              | Excluded | Descendants | Mapped |
@@ -402,7 +402,7 @@ The results are found in the Measurement table, as `harmonized_value_as_number`,
 
 _Phenotype_ and _cohort_.
 A phenotype is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
-Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).]
+Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
 A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
 In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.

@@ -50,7 +50,7 @@ This chapter is in the middle of being converted.  Please do NOT make changes to
 
 ## Introduction
 
-The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see (“The N3C “Enclave” and Data Access” in the Introduction)[#IntroductionEnclave)).
+The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see ("The N3C 'Enclave' and Data Access" in the Introduction)[#IntroductionEnclave)).
 
 We start with the Observational Medical Outcomes Partnership (OMOP) vocabulary, since all data are represented in the OMOP common data model (CDM) format.
 This chapter will describe the difference between the OMOP concept id unique identifier and the source value contributed by a site, the notion of hierarchy across concepts, and the OHDSI tools outside the Enclave that can help.
@@ -83,7 +83,7 @@ More information about OHDSI can be found at [www.OHDSI.org](http://www.OHDSI.or
 
 The Book of OHDSI [states](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html):
 
-> The OMOP Standardized Vocabularies, often referred to simply as “the Vocabulary”, are a foundational part of the OHDSI research network, and an integral part of the CDM.
+> The OMOP Standardized Vocabularies, often referred to simply as "the Vocabulary", are a foundational part of the OHDSI research network, and an integral part of the CDM.
 > They allow standardization of methods, definitions and results by defining the content of the data, paving the way for true remote (behind the firewall) network research and analytics.
 > Usually, finding and interpreting the content of observational healthcare data, whether it is structured data using coding schemes or laid down in free text, is passed all the way through to the researcher, who is faced with a myriad of different ways to describe clinical events.
 > OHDSI requires harmonization not only to a standardized format, but also to a rigorous standard content.
@@ -100,10 +100,10 @@ The central table in the OMOP vocabulary system is the table, `concept`.
 
 The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids.
 All analyses are done with these concept ids.
-Thus, the physician’s diagnosis of “diabetes” may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary  into OMOP as the standard concept id, `320128`.
+Thus, the physician’s diagnosis of "diabetes" may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary  into OMOP as the standard concept id, `320128`.
 The original code (I10) is called, and stored in OMOP, as the _source value.
 _But it is the concept id code that analysts would use.
-N3C is committed to using “standard” concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes “translated” to their corresponding standard concepts.
+N3C is committed to using "standard" concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes "translated" to their corresponding standard concepts.
 
 The Book of OHDSI has a [detailed chapter](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html) on Standardized Vocabularies.
 The OHDSI vocabularies are in a standardized CDM structure that houses existing vocabularies used in the public domain.
@@ -122,7 +122,7 @@ Hypertrophic cardiomyopathy (concept id `4124693`) is a type of cardiomyopathy (
 
 ![The converse representation of @fig-understanding-020-concept-relationship-1 row 47](images/understanding/fig-understanding-030-concept-relationship-2.png){#fig-understanding-030-concept-relationship-2 fig-alt="The converse representation"}
 
-The hierarchical relationship between the two concepts is represented once (above) with a “Subsumes” record and again (below) with an “Is a” record.
+The hierarchical relationship between the two concepts is represented once (above) with a "Subsumes" record and again (below) with an "Is a" record.
 The concept_relationship only contains direct relationships between pairs of concepts.
 For hierarchical relationships, more distant relationships are found in the concept_ancestor table.
 
@@ -152,7 +152,7 @@ The figure below shows all OMOP tables within the N3C Enclave.
 
 #### Domains
 
-Tables may contain data from more than one “domain.” There are currently 36 Domains in OMOP; the 5 primary clinical Domains are Drug, Condition, Observation, Procedure, and Measurement, plus others.
+Tables may contain data from more than one "domain". There are currently 36 Domains in OMOP; the 5 primary clinical Domains are Drug, Condition, Observation, Procedure, and Measurement, plus others.
 They classify concepts in the concept table.
 
 ![Listed in decreasing order by the number of concepts for which we have data in N3C](images/understanding/fig-understanding-060-domains.png){#fig-understanding-060-domains fig-alt="Listed in decreasing order by the number of concepts for which we have data in N3C"}
@@ -160,7 +160,7 @@ They classify concepts in the concept table.
 #### Vocabulary Updates
 
 As stated above, source vocabularies change.
-For instance, at the start of the pandemic, there were no ICD10 codes for “COVID-19 infection”, and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
+For instance, at the start of the pandemic, there were no ICD10 codes for "COVID-19 infection", and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
 When we need a code, but there is none in the OMOP vocabulary, we create a _local code_.
 When the OMOP vocabulary team releases a newer,  relevant code to replace the local code, the Enclave attempts to contact everyone who has employed the local code, notifying them of the change.
 
@@ -188,7 +188,7 @@ _If you are publishing your results, concept sets are considered a publicly view
 * Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 
-Concept sets that are “finalized” within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository.
+Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository.
 Such posting is part of the process known as making research[FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
 This GitHub repository is functionally our _Shared Variable Library._ Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
@@ -215,11 +215,11 @@ The Book of OHDSI explains [concept sets](https://ohdsi.github.io/TheBookOfOhdsi
 * **Descendants**: Consider not only this concept, but also all of its descendants.
 * **Mapped**: Allow to search for non-standard concepts.
 
-While ATLAS concept sets may contain standard and non-standard concepts, Enclave concept sets may include “standard” (SNOMED-based) concepts only.
-Thus, the “Mapped” attribute is rarely helpful, as it applies only if using source data.
+While ATLAS concept sets may contain standard and non-standard concepts, Enclave concept sets may include "standard" (SNOMED-based) concepts only.
+Thus, the "Mapped" attribute is rarely helpful, as it applies only if using source data.
 
 For example, a concept set expression could contain two concepts as depicted in Table [10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression).
-Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/4329847) (“Myocardial infarction”) and all of its descendants, but exclude concept [314666](http://athena.ohdsi.org/search-terms/terms/314666) (“Old myocardial infarction”) and all of its descendants.
+Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/4329847) ("Myocardial infarction") and all of its descendants, but exclude concept [314666](http://athena.ohdsi.org/search-terms/terms/314666) ("Old myocardial infarction") and all of its descendants.
 
 <table>
   <tr>
@@ -266,7 +266,7 @@ Here we include concept [4329847](http://athena.ohdsi.org/search-terms/terms/432
 
 _Figure image-070-ConceptSetExpression.gif. Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts._
 
-As shown in [Figure xxx](_Figure image-080-MIHierarchy.gif)_, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants.
+As shown in [Figure xxx](_Figure image-080-MIHierarchy.gif)_, this will include "Myocardial infarction" and all of its descendants except "Old myocardial infarction" and its descendants.
 In total, this concept set expression implies nearly a hundred Standard Concepts.
 These Standard Concepts in turn reflect hundreds of source codes (e.g. ICD-9 and ICD-10 codes) that may appear in the various databases.
 
@@ -290,21 +290,21 @@ Resources are available via the OHDSI ATLAS workgroup.
 While it is a handy complement to the Enclave, do focus on the N3C products: The N3C concept set library and the concept set editor.
 The Enclave builds its own OMOP vocabulary releases from downloading the vocabulary tables from ATHENA.
 
-Because of these limitations, also **_do beware_** that ATLAS “record counts” (the number of patients with data expressing the given concept id) are _not_ linked to N3C and do not represent the counts or distribution of concept ids within the Enclave.
+Because of these limitations, also **_do beware_** that ATLAS "record counts" (the number of patients with data expressing the given concept id) are _not_ linked to N3C and do not represent the counts or distribution of concept ids within the Enclave.
 
 ### Concept Set Metadata
 
 Intention, Limitations, and Provenance comprise concept set metadata.
 
 **_Intention_** communicates in sentences more than the name can.
-For instance, is the concept set intended to be “broad,” and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it “narrow,” and specific? Is it meant to be definitional (these codes “mean” diabetes”) or indicative (the codes tell me that you have diabetes, e.g., “retinopathy due to diabetes mellitus”; the codes suggest chronic lung disease, e.g., “infertility due to cystic fibrosis”). “Intention” can also indicate whether the concept set has clinical manifestations or not (e.g., “Sickle Cell” indicates a genetic condition, but unclear if it’s homozygous or heterozygous, the former being clinical and the latter often not).
+For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it’s homozygous or heterozygous, the former being clinical and the latter often not).
 It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.
 
-**_Limitations_** communicates edge cases and caveats to the analyst. “Issues” communicates performance with the Enclave data.
+**_Limitations_** communicates edge cases and caveats to the analyst. "Issues" communicates performance with the Enclave data.
 This performance could include the number of codes contributing the majority of the data (e.g., from Term Usage) or the distribution of values across sites, in the case of lab tests.
 
 **_Provenance_** communicates how the concept set was assembled.
-It should include any authorities consulted (the literature, the Value Set Authority Center, the domain team members, etc.) and a sense of what modifications, if any, were made from that authoritative beginning. (Of note, “ATLAS” is not an authoritative beginning, unless there is annotation on the ATLAS site of the authoritative source for that specific concept set.)
+It should include any authorities consulted (the literature, the Value Set Authority Center, the domain team members, etc.) and a sense of what modifications, if any, were made from that authoritative beginning. (Of note, "ATLAS" is not an authoritative beginning, unless there is annotation on the ATLAS site of the authoritative source for that specific concept set.)
 
 The work on concept sets does not take place in a vacuum.
 It is assumed that you are part of a project team, which has the following Subject Matter Expertise (SME): Research/Clinical, Vocabulary, Informatics, and Statistical/Analytic.
@@ -342,7 +342,7 @@ A [tutorial](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main
 
 #### Published Concept Sets
 
-“Publication” includes 3 ways of making a concept set available to other researchers.
+"Publication" includes 3 ways of making a concept set available to other researchers.
 Provisionally Approved and N3C Recommended are automatically submitted to Zenodo, to generate a permanent DOI URL that can be used in publication or in sharing concept set contents with analysts outside the Enclave.
 Any study manuscript for publication should ensure that any concept set used is either Provisionally Approved or N3C Recommended.
 The Zenodo URL should appear in the resulting publication.
@@ -391,20 +391,20 @@ This status is automatically established once a concept set achieves at least on
 Why should anyone trust a concept set? This trust is needed both within the project team and outside the team.
 The project team needs to trust a concept set in an analysis; someone outside the team needs to assess its trust in deciding whether to (re) use it in their own analysis.
 
-“Trust” in a concept set derives from a number of factors.
+"Trust" in a concept set derives from a number of factors.
 First, do we trust the people who assembled the concept set and its process? Second, do we believe that the concept set encodes the concepts we want it to encode, and excludes those we do not? Third, does it perform within the Enclave data the way we expect it to?
 
-Re “the people” and “the process”: The concept set meta-data, especially the identity of the author and reviewers, and the Provenance, provide the necessary information.
+Re "the people" and "the process": The concept set meta-data, especially the identity of the author and reviewers, and the Provenance, provide the necessary information.
 
 Another means of deciding on a level of trust is the Reviews.
 The Enclave supports two types of reviews.
 
-* “Vocabulary review”: Here, a terminologist or informatician familiar with the OMOP vocabulary has reviewed the process documented (in Provenance) or in real time (as part of work with the Domain Team) and documents satisfaction with what codes are included and what are excluded.
-* “Clinical review”: Here, a clinical member of the Domain Team or project has reviewed the codes to confirm that they match the “Intention” of the concept set.
+* "Vocabulary review": Here, a terminologist or informatician familiar with the OMOP vocabulary has reviewed the process documented (in Provenance) or in real time (as part of work with the Domain Team) and documents satisfaction with what codes are included and what are excluded.
+* "Clinical review": Here, a clinical member of the Domain Team or project has reviewed the codes to confirm that they match the "Intention" of the concept set.
 
 A third means of deciding on a level of trust is looking to see what research projects have used the concept set.
 The more authoritative (and published) those projects are, the more authority they have.
-Of course, in some cases, a concept set “going viral” may simply be a popularity contest and not an indicator of correctness (false positives).
+Of course, in some cases, a concept set "going viral" may simply be a popularity contest and not an indicator of correctness (false positives).
 At the same time, linking of a concept set to a research project is a manual process, which is often not done (false negatives).
 
 Note that this entire scheme of authority and validity depends on adequate documentation of properties.
@@ -420,32 +420,32 @@ Data tables of use or interest to analysts found in either the LDS or Safe Harbo
 
 _Manifest._ This table, found in the folder along with the OMOP tables, provides data about each data partner that analysts should find helpful when trying to understand variation in the data: CDM type (ACT, OMOP, PCORNet, TriNetX) and version, whether dates are shifted (and how much), and date of last contribution.
 
-_Control Map._ For every “case” generated locally by the Phenotype algorithm, the algorithm also identifies 2 “controls,” that are matched by age, sex, race, and ethnicities, including matched by missing values.
-While it may be tempting to use this map to identify controls for your own study, too many patients who were initial “controls” may have become “cases,” or their true status is unknown, because of home or other non-site testing.
+_Control Map._ For every "case" generated locally by the Phenotype algorithm, the algorithm also identifies 2 "controls", that are matched by age, sex, race, and ethnicities, including matched by missing values.
+While it may be tempting to use this map to identify controls for your own study, too many patients who were initial "controls" may have become "cases", or their true status is unknown, because of home or other non-site testing.
 Other matching methods (e.g., propensity scores) are more trustworthy.
 
 _Microvisit to Macrovisit Map._ While admissions to the hospital are recorded in the Visit_Occurrence table, the end-date is not always so recorded.
-Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an “encounter.” So an admission may be represented in the visit_occurrence table as a string of such “encounters.” We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
+Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the visit_occurrence table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
 See [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed).
 
 _Harmonized values_.
 It is no surprise that, across over 70 data partners, and the many included sites, different institutions measure the same analyte in different ways and report the results with different units of measure.
 N3C has spent a fair amount of effort to harmonize units (and therefore values; think degrees Fahrenheit and degrees Celsius), so analysts have a level playing field for their analyses.
 In addition, many units of measure are missing, so, as part of that effort, an algorithm has been developed to use the pooled data across the Enclave to help us infer units (and therefore, values).
-This strategy has led to the “rescue” of over 78% of records where units of measure were missing.
+This strategy has led to the "rescue" of over 78% of records where units of measure were missing.
 See _[Harmonizing units and values of quantitative data elements in a very large nationally pooled electronic health record (EHR) dataset](https://jhu.pure.elsevier.com/en/publications/harmonizing-units-and-values-of-quantitative-data-elements-in-a-v)_.
 This harmonization was done for about 70 measurements so far.
 The results are found in the Measurement table, as harmonized_value_as_number, harmonized_unit_concept_id and unit_concept_id_or_inferred_unit_concept_id.
 
 _Phenotype_ and _cohort_.
 A [phenotype](https://pubmed.ncbi.nlm.nih.gov/23956018/) is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events.
-Examples would be, “has Acute COVID”; “treated with ampicillin.”^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code.” A related _cohort_ would be, “Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_.” However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).]
+Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably (Book of OHDSI, [Chapter 10.1](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)).]
 A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
 In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
 
 _Derived variables/facts._ Facts are designations that a patient falls into a category (at a point in time).
-Thus, **confirmed_covid_patient **or** TOBACCOSMOKER_indicator** is set as “1” (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus).
+Thus, **confirmed_covid_patient **or** TOBACCOSMOKER_indicator** is set as "1" (true) if certain conditions are met in the template [Logic Liaison Template All Patients Facts](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus).
 Other Logic Liaison Templates include many derived facts of value to analysis.
 See @sec-tools.
 
@@ -644,11 +644,11 @@ In depth CMS training webinar is available on [YouTube](https://www.youtube.com/
 
 ## Public/External Datasets
 
-Because our data are not representative of the geographic locations whence they come, it is important for many analyses to attempt to “correct” the results due to this selection bias.
+Because our data are not representative of the geographic locations whence they come, it is important for many analyses to attempt to "correct" the results due to this selection bias.
 Data sets, called _external datasets,_ are available outside the Enclave that provide information about such locations.
 There are datasets about the locations themselves (e.g., [zip code distances](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8BCEA01&view=focus)), about the demographics in those locations (e.g., [zip code census](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-595A20D&view=focus)),  or about covid, in those locations (e.g., [covid hesitancy by county](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-EEA964E&view=focus), [state policy by date](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B1CD234&view=focus)).
 There are also datasets to help in mapping from zip codes (data available in Level 3 Enclave datasets), such as [Mapping Zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus).
-All available datasets are available at [The Data Discovery Engine](https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset) (outside the Enclave) and in [The Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) (inside the Enclave; filter on “External Dataset”).
+All available datasets are available at [The Data Discovery Engine](https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset) (outside the Enclave) and in [The Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) (inside the Enclave; filter on "External Dataset").
 
 Note that most of these depend on 5-digit zip codes for linking between a patient’s record and the external dataset, and so are useful only in the context of a Level 3 DUR.
 

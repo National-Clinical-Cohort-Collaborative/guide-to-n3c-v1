@@ -68,7 +68,7 @@ Later chapters will give more details on how to use the resources and tools desc
 ## OHDSI Basics
 
 This Observational Health Data Sciences and Informatics (OHDSI) basics section introduces the OHDSI community and provides an introduction to OMOP vocabularies, and vocabulary search tools such as ATHENA and ATLAS.
-For further OHDSI collaborative knowledge and exploration, refer to the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) which serves as a central knowledge repository.
+For further OHDSI collaborative knowledge and exploration, refer to [*The Book of OHDSI*](https://ohdsi.github.io/TheBookOfOhdsi/) which serves as a central knowledge repository [@ohdsi_2019].
 The Book of OHDSI is a living document, community-maintained through open-source development tools, and evolves continuously.
 The online version, available for free, always represents the latest version.
 
@@ -77,7 +77,7 @@ The online version, available for free, always represents the latest version.
 OHDSI is an international, interdisciplinary research collaborative that promotes open-source research.
 Its purpose is to create open source solutions that bring out the value of observational health data through large-scale analytics.
 OHDSI has established an international network of researchers and observational health databases with a central coordinating center housed at Columbia University.
-More information about OHDSI can be found at [www.OHDSI.org](http://www.OHDSI.org)
+More information about OHDSI can be found at <https://www.OHDSI.org>.
 
 ### OMOP Vocabulary
 
@@ -105,7 +105,7 @@ The original code (I10) is called, and stored in OMOP, as the _source value.
 _But it is the concept id code that analysts would use.
 N3C is committed to using "standard" concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes "translated" to their corresponding standard concepts.
 
-The Book of OHDSI has a [detailed chapter](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html) on Standardized Vocabularies.
+*The Book of OHDSI* has a detailed chapter on [Standardized Vocabularies](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).
 The OHDSI vocabularies are in a standardized CDM structure that houses existing vocabularies used in the public domain.
 This CDM compiles standards from disparate public and private sources as well as some OMOP grown concepts.
 
@@ -129,7 +129,7 @@ For hierarchical relationships, more distant relationships are found in the conc
 The concept relationship table contains many other relationship types beyond hierarchical relationships: Mapped from, Maps to, Has brand name of, Consists of, etc.
 
 [ATHENA](https://athena.ohdsi.org/search-terms/terms?query) is an OHDSI tool for exploring OMOP vocabularies and even downloading them; its primary use in N3C is for looking up individual terms.
-More details on using ATHENA to search terms are documented on OHDSI's publicly-viewable [GitHub](https://github.com/OHDSI/Athena) repository. [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
+More details on using ATHENA to search terms are documented on OHDSI's publicly-viewable GitHub [repository](https://github.com/OHDSI/Athena). [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
 See section below on concept sets (#ConceptSets) that describes further uses of the ATLAS tool.
 
 The OMOP vocabulary is updated regularly to keep up with the continual evolution of sources.

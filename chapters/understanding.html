@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Harold P. Lehmann">
 <meta name="author" content="Lisa Eskenazi">
-<meta name="author" content="Harold Lehmann">
+<meta name="author" content="Shawn O’Neil">
+<meta name="author" content="Thomas Richards">
+<meta name="author" content="Kristin Kostka">
+<meta name="author" content="Sigfried Gold">
 
 <title>The Researcher’s Guide to N3C - 7&nbsp; Understanding the Data</title>
 <style>
@@ -46,6 +50,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -79,8 +88,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
 <meta name="citation_title" content="[[7]{.chapter-number}&nbsp; [Understanding the Data]{.chapter-title}]{#sec-understanding .quarto-section-identifier}">
+<meta name="citation_author" content="Harold P. Lehmann">
 <meta name="citation_author" content="Lisa Eskenazi">
-<meta name="citation_author" content="Harold Lehmann">
+<meta name="citation_author" content="Shawn O&amp;amp;#039;Neil">
+<meta name="citation_author" content="Thomas Richards">
+<meta name="citation_author" content="Kristin Kostka">
+<meta name="citation_author" content="Sigfried Gold">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Higher hospitalization and mortality rates among SARS-CoV-2-infected persons in rural america;,citation_author=Alfred Jerrod Anzalone;,citation_author=Ronald Horswell;,citation_author=Brian M Hendricks;,citation_author=San Chu;,citation_author=William B Hillegass;,citation_author=William H Beasley;,citation_author=Jeremy R Harper;,citation_author=Wesley Kimble;,citation_author=Clifford J Rosen;,citation_author=Lucio Miele;,citation_author=others;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=1;,citation_doi=10.1111/jrh.12689;,citation_volume=39;,citation_journal_title=The Journal of Rural Health;,citation_publisher=Wiley Online Library;">
 <meta name="citation_reference" content="citation_title=A new method of classifying prognostic comorbidity in longitudinal studies: Development and validation;,citation_author=Mary E. Charlson;,citation_author=Peter Pompei;,citation_author=Kathy L. Ales;,citation_author=C.Ronald MacKenzie;,citation_publication_date=1987;,citation_cover_date=1987;,citation_year=1987;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/0021968187901718;,citation_issue=5;,citation_doi=10.1016/0021-9681(87)90171-8;,citation_issn=0021-9681;,citation_volume=40;,citation_journal_title=Journal of Chronic Diseases;">
@@ -316,7 +329,34 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a></li>
+  <li><a href="#ohdsi-basics" id="toc-ohdsi-basics" class="nav-link" data-scroll-target="#ohdsi-basics"><span class="header-section-number">7.2</span> OHDSI Basics</a>
+  <ul class="collapse">
+  <li><a href="#ohdsi-community" id="toc-ohdsi-community" class="nav-link" data-scroll-target="#ohdsi-community"><span class="header-section-number">7.2.1</span> OHDSI Community</a></li>
+  <li><a href="#omop-vocabulary" id="toc-omop-vocabulary" class="nav-link" data-scroll-target="#omop-vocabulary"><span class="header-section-number">7.2.2</span> OMOP Vocabulary</a></li>
+  </ul></li>
+  <li><a href="#concept-sets" id="toc-concept-sets" class="nav-link" data-scroll-target="#concept-sets"><span class="header-section-number">7.3</span> Concept Sets</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-concept-set" id="toc-what-is-a-concept-set" class="nav-link" data-scroll-target="#what-is-a-concept-set"><span class="header-section-number">7.3.1</span> What is a concept set?</a></li>
+  <li><a href="#concept-set-metadata" id="toc-concept-set-metadata" class="nav-link" data-scroll-target="#concept-set-metadata"><span class="header-section-number">7.3.2</span> Concept Set Metadata</a></li>
+  <li><a href="#n3c-concept-set-library" id="toc-n3c-concept-set-library" class="nav-link" data-scroll-target="#n3c-concept-set-library"><span class="header-section-number">7.3.3</span> N3C Concept Set Library</a></li>
+  </ul></li>
+  <li><a href="#ehr-based-data-beyond-omop" id="toc-ehr-based-data-beyond-omop" class="nav-link" data-scroll-target="#ehr-based-data-beyond-omop"><span class="header-section-number">7.4</span> EHR-Based Data Beyond OMOP</a></li>
+  <li><a href="#beyond-ehr-pprl-based-data" id="toc-beyond-ehr-pprl-based-data" class="nav-link" data-scroll-target="#beyond-ehr-pprl-based-data"><span class="header-section-number">7.5</span> Beyond EHR: PPRL-Based Data</a>
+  <ul class="collapse">
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1"><span class="header-section-number">7.5.1</span> Introduction</a></li>
+  <li><a href="#pprl-data-access" id="toc-pprl-data-access" class="nav-link" data-scroll-target="#pprl-data-access"><span class="header-section-number">7.5.2</span> PPRL Data Access</a></li>
+  <li><a href="#mortality" id="toc-mortality" class="nav-link" data-scroll-target="#mortality"><span class="header-section-number">7.5.3</span> Mortality</a></li>
+  <li><a href="#viral-variant" id="toc-viral-variant" class="nav-link" data-scroll-target="#viral-variant"><span class="header-section-number">7.5.4</span> Viral Variant</a></li>
+  <li><a href="#centers-for-medicare-and-medicaid-services-cms" id="toc-centers-for-medicare-and-medicaid-services-cms" class="nav-link" data-scroll-target="#centers-for-medicare-and-medicaid-services-cms"><span class="header-section-number">7.5.5</span> Centers for Medicare and Medicaid Services (CMS)</a></li>
+  </ul></li>
+  <li><a href="#publicexternal-datasets" id="toc-publicexternal-datasets" class="nav-link" data-scroll-target="#publicexternal-datasets"><span class="header-section-number">7.6</span> Public/External Datasets</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/understanding.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/understanding.md" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -332,7 +372,35 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Lisa Eskenazi </p>
+    <p class="author">Harold P. Lehmann <a href="https://orcid.org/0000-0002-7698-219X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/">
+            Johns Hopkins University
+            </a>
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Lisa Eskenazi <a href="https://orcid.org/0000-0001-8693-7838" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Johns Hopkins University
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Shawn O’Neil <a href="https://orcid.org/0000-0001-6220-7080" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://oneilsh.github.io/">
+            University of Colorado Anschutz
+            </a>
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Thomas Richards <a href="https://orcid.org/0000-0003-4945-9050" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -342,15 +410,16 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
           </p>
       </div>
       <div class="quarto-title-meta-contents">
-    <p class="author">Harold Lehmann </p>
+    <p class="author">Kristin Kostka <a href="https://orcid.org/0000-0003-2595-8736" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/">
-            Johns Hopkins University School of Medicine
-            </a>
+            The OHDSI Center at the Roux Institute, Northeastern University, Portland, ME &amp; NDORMS, University of Oxford, Oxford, UK
           </p>
       </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Sigfried Gold <a href="https://orcid.org/0000-0001-7853-6137" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
     </div>
 
 <div class="quarto-title-meta">
@@ -363,20 +432,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 
 </header>
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This chapter is being drafted in Google Docs at <a href="https://drive.google.com/drive/u/0/folders/1OHv1P2DKGucKBpSNEiQp8lGfR2xYHPAW" class="uri">https://drive.google.com/drive/u/0/folders/1OHv1P2DKGucKBpSNEiQp8lGfR2xYHPAW</a></p>
-<p>See a draft of the chapter outline at <a href="https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/" class="uri">https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/</a></p>
-</div>
-</div>
+<p><strong>Chapter Leads:</strong> Harold Lehmann and Lisa Eskenazi</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -387,11 +443,463 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>At this point, any edits to this chapter should be made in Google Docs. The current Markdown is for testing only. It is NOT the source of truth (yet).</p>
+<p>This chapter is in the middle of being converted. Please do NOT make changes to the frozen Google Docs version. The markdown source will be ready soon to edit directly.</p>
 </div>
 </div>
+<section id="introduction" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> Introduction</h2>
+<p>The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see (“The N3C ‘Enclave’ and Data Access” in the Introduction)[#IntroductionEnclave)).</p>
+<p>We start with the Observational Medical Outcomes Partnership (OMOP) vocabulary, since all data are represented in the OMOP common data model (CDM) format. This chapter will describe the difference between the OMOP concept id unique identifier and the source value contributed by a site, the notion of hierarchy across concepts, and the OHDSI tools outside the Enclave that can help. Because we are working in a secure NCATS Enclave environment, we cannot rely on OHDSI tools outside the Enclave, so knowing the basic applications available within the Enclave and how these data are organized is crucial for the proper conduct of research.</p>
+<p>We next present the notion and management of concept sets. These are concept ids that are taken as synonymous, for a given research purpose, and have their own set of tools.</p>
+<p>We turn next to constructs—derived variables and facts—derived from concept sets and the raw data, including N3C OMOP additions that build on the OMOP data.</p>
+<p>We round out this discussion with an introduction to external datasets that have been brought into the Enclave and the process to bring further datasets in.</p>
+<p>Later chapters will give more details on how to use the resources and tools described here.</p>
+</section>
+<section id="ohdsi-basics" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="ohdsi-basics"><span class="header-section-number">7.2</span> OHDSI Basics</h2>
+<p>This Observational Health Data Sciences and Informatics (OHDSI) basics section introduces the OHDSI community and provides an introduction to OMOP vocabularies, and vocabulary search tools such as ATHENA and ATLAS. For further OHDSI collaborative knowledge and exploration, refer to the <a href="https://ohdsi.github.io/TheBookOfOhdsi/">Book of OHDSI</a> which serves as a central knowledge repository. The Book of OHDSI is a living document, community-maintained through open-source development tools, and evolves continuously. The online version, available for free, always represents the latest version.</p>
+<section id="ohdsi-community" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="ohdsi-community"><span class="header-section-number">7.2.1</span> OHDSI Community</h3>
+<p>OHDSI is an international, interdisciplinary research collaborative that promotes open-source research. Its purpose is to create open source solutions that bring out the value of observational health data through large-scale analytics. OHDSI has established an international network of researchers and observational health databases with a central coordinating center housed at Columbia University. More information about OHDSI can be found at <a href="http://www.OHDSI.org">www.OHDSI.org</a></p>
+</section>
+<section id="omop-vocabulary" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="omop-vocabulary"><span class="header-section-number">7.2.2</span> OMOP Vocabulary</h3>
+<p>The Book of OHDSI <a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html">states</a>:</p>
+<blockquote class="blockquote">
+<p>The OMOP Standardized Vocabularies, often referred to simply as “the Vocabulary”, are a foundational part of the OHDSI research network, and an integral part of the CDM. They allow standardization of methods, definitions and results by defining the content of the data, paving the way for true remote (behind the firewall) network research and analytics. Usually, finding and interpreting the content of observational healthcare data, whether it is structured data using coding schemes or laid down in free text, is passed all the way through to the researcher, who is faced with a myriad of different ways to describe clinical events. OHDSI requires harmonization not only to a standardized format, but also to a rigorous standard content.</p>
+</blockquote>
+<p>N3C relies heavily on the OMOP common data model which is part of the heart of the N3C harmonization process. OMOP, along with other data partners from ACT, TriNetX, and PCORI, ingest their data feeds into a central OMOP N3C repository that is then available within the N3C Enclave for researchers.</p>
+<p>The OMOP CDM is an open-source, community standard for observational healthcare data and consists of clinical tables describing conditions and events from patient records and vocabulary tables describing clinical concepts. The central table in the OMOP vocabulary system is the table, <code>concept</code>.</p>
+<div id="fig-understanding-010-concept" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-010-concept.png" class="lightbox" title="Sample rows from the 6.9-million row table of concepts imported from OMOP" data-gallery="quarto-lightbox-gallery-1"><img src="images/understanding/fig-understanding-010-concept.png" class="img-fluid figure-img" alt="Sample rows from the 6.9-million row table of concepts imported from OMOP"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.1: Sample rows from the 6.9-million row table of concepts imported from OMOP</figcaption>
+</figure>
+</div>
+<section id="vocabulary-concepts" class="level4" data-number="7.2.2.1">
+<h4 data-number="7.2.2.1" class="anchored" data-anchor-id="vocabulary-concepts"><span class="header-section-number">7.2.2.1</span> Vocabulary Concepts</h4>
+<p>The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids. All analyses are done with these concept ids. Thus, the physician’s diagnosis of “diabetes” may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary into OMOP as the standard concept id, <code>320128</code>. The original code (I10) is called, and stored in OMOP, as the _source value. _But it is the concept id code that analysts would use. N3C is committed to using “standard” concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes “translated” to their corresponding standard concepts.</p>
+<p>The Book of OHDSI has a <a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html">detailed chapter</a> on Standardized Vocabularies. The OHDSI vocabularies are in a standardized CDM structure that houses existing vocabularies used in the public domain. This CDM compiles standards from disparate public and private sources as well as some OMOP grown concepts.</p>
+<p>Concepts are related to each other. For instance, hypertrophic cardiomyopathy (concept id <code>4124693</code>) is a type of cardiomyopathy (concept id <code>321319</code>). The <code>concept_relationship</code> table stores these relationships. While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See <a href="#ConceptSets">concept sets</a>.)</p>
+<div id="fig-understanding-020-concept-relationship-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-020-concept-relationship-1.png" class="lightbox" title="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _321319" data-gallery="quarto-lightbox-gallery-2"><img src="images/understanding/fig-understanding-020-concept-relationship-1.png" class="img-fluid figure-img" alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _`321319`"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.2: A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _<code>321319</code></figcaption>
+</figure>
+</div>
+<p>Every relationship type connecting two OMOP concepts has a converse. In the concept_relationship table, this means a parent-child relationship will be represented (redundantly) by two records. Hypertrophic cardiomyopathy (concept id <code>4124693</code>) is a type of cardiomyopathy (concept id <code>321319</code>):</p>
+<div id="fig-understanding-030-concept-relationship-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-030-concept-relationship-2.png" class="lightbox" title="The converse representation of @fig-understanding-020-concept-relationship-1 row 47" data-gallery="quarto-lightbox-gallery-3"><img src="images/understanding/fig-understanding-030-concept-relationship-2.png" class="img-fluid figure-img" alt="The converse representation"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.3: The converse representation of <a href="#fig-understanding-020-concept-relationship-1">Figure&nbsp;<span>7.2</span></a> row 47</figcaption>
+</figure>
+</div>
+<p>The hierarchical relationship between the two concepts is represented once (above) with a “Subsumes” record and again (below) with an “Is a” record. The concept_relationship only contains direct relationships between pairs of concepts. For hierarchical relationships, more distant relationships are found in the concept_ancestor table.</p>
+<p>The concept relationship table contains many other relationship types beyond hierarchical relationships: Mapped from, Maps to, Has brand name of, Consists of, etc.</p>
+<p><a href="https://athena.ohdsi.org/search-terms/terms?query">ATHENA</a> is an OHDSI tool for exploring OMOP vocabularies and even downloading them; its primary use in N3C is for looking up individual terms. More details on using ATHENA to search terms are documented on OHDSI’s publicly-viewable <a href="https://github.com/OHDSI/Athena">GitHub</a> repository. <a href="https://atlas.ohdsi.org/#/home">ATLAS</a> is an OHDSI tool to explore concepts and their relationships. See section below on concept sets (#ConceptSets) that describes further uses of the ATLAS tool.</p>
+<p>The OMOP vocabulary is updated regularly to keep up with the continual evolution of sources. Its vocabulary maintenance and improvement is an ongoing activity that requires community participation and support. Releases and release notes are published via Git Releases on the OMOP Vocabulary GitHub. The most recent specification documentation can be found at <a href="https://ohdsi.github.io/CommonDataModel/cdm53.html">OMOP Common Data Model</a>. New versions of the OMOP vocabulary are downloaded monthly by the Enclave managers.</p>
+<p>The OMOP CDM assembles these relationships in the <code>Standardized vocabulary</code> section of the CDM. These tables are available to N3C researchers, along with the <code>Standardized clinical data</code> tables that store the patients’ data (expressed using the concept ids). Data are available as well in the <code>Standardized health system</code>, <code>Payer_plan_period</code> (not <code>cost</code>), and <code>Standardized derived elements</code> tables.</p>
+<div id="fig-understanding-040-omop" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-040-omop.png" class="lightbox" title="OMOP Data model" data-gallery="quarto-lightbox-gallery-4"><img src="images/understanding/fig-understanding-040-omop.png" class="img-fluid figure-img" alt="omop"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.4: OMOP <a href="https://ohdsi.github.io/CommonDataModel">Data model</a></figcaption>
+</figure>
+</div>
+<p>To learn more about OMOP and get acquainted with the CDM used in the N3C Data Enclave and its functionality, see <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b">OMOP 101: A Crash Course in OMOP Standard Vocabulary</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>. (<a href="https://docs.google.com/document/u/0/d/1G3gSeTuxnsnZ00R_xaN6-t10RnY0xJwPB2ABCr-Lt3U/edit">or refer them to the Special Topics OHDSI Resources in this guide</a>)</p>
+<p>The figure below shows all OMOP tables within the N3C Enclave.</p>
+<div id="fig-understanding-050-lds" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-050-lds.png" class="lightbox" title="Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder" data-gallery="quarto-lightbox-gallery-5"><img src="images/understanding/fig-understanding-050-lds.png" class="img-fluid figure-img" alt="n3c tables"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.5: Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder</figcaption>
+</figure>
+</div>
+</section>
+<section id="domains" class="level4" data-number="7.2.2.2">
+<h4 data-number="7.2.2.2" class="anchored" data-anchor-id="domains"><span class="header-section-number">7.2.2.2</span> Domains</h4>
+<p>Tables may contain data from more than one “domain”. There are currently 36 Domains in OMOP; the 5 primary clinical Domains are Drug, Condition, Observation, Procedure, and Measurement, plus others. They classify concepts in the concept table.</p>
+<div id="fig-understanding-060-domains" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-060-domains.png" class="lightbox" title="Listed in decreasing order by the number of concepts for which we have data in N3C" data-gallery="quarto-lightbox-gallery-6"><img src="images/understanding/fig-understanding-060-domains.png" class="img-fluid figure-img" alt="Listed in decreasing order by the number of concepts for which we have data in N3C"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.6: Listed in decreasing order by the number of concepts for which we have data in N3C</figcaption>
+</figure>
+</div>
+</section>
+<section id="vocabulary-updates" class="level4" data-number="7.2.2.3">
+<h4 data-number="7.2.2.3" class="anchored" data-anchor-id="vocabulary-updates"><span class="header-section-number">7.2.2.3</span> Vocabulary Updates</h4>
+<p>As stated above, source vocabularies change. For instance, at the start of the pandemic, there were no ICD10 codes for “COVID-19 infection”, and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes. When we need a code, but there is none in the OMOP vocabulary, we create a <em>local code</em>. When the OMOP vocabulary team releases a newer, relevant code to replace the local code, the Enclave attempts to contact everyone who has employed the local code, notifying them of the change.</p>
+<p>More subtle issues are when the source vocabulary managers change or decommission existing codes or add new codes (that do not have a local-code equivalent), and the OMOP managers incorporate those changes in the vocabularies brought into the Enclave every month. Another subtlety is when the relationships between codes are changed. The Enclave attempts to contact those who have used codes related to the changed code. Generally, the analyst has used those codes in concept sets, to which topic we now turn.</p>
+</section>
+</section>
+</section>
+<section id="concept-sets" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="concept-sets"><span class="header-section-number">7.3</span> Concept Sets</h2>
+<p>Any study or analysis performed in the Enclave will start with identifying meaningful clinical conditions and events in patient data. We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records. [CITE: <a href="https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1">https://www.medrxiv.org/content/10.1101/2021.10.14.21264917v1</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371254/</a>] For any given phenomenon used in an analysis, however, a single concept code will seldom be sufficient, and <em>concept sets</em> are used.</p>
+<p>There are many reasons to specify a concept set:</p>
+<ul>
+<li>Variables in your study are implemented using concept sets.</li>
+<li>Having dozens or hundreds of concept ids in a single concept set makes analysis much easier.</li>
+<li>It makes the analysis easier to peer review.</li>
+<li>It makes your research coherent with the research of others who use the same concept set(s).</li>
+<li>Chunking concept-ids together into concept sets with different names and intentions makes your own (research) intentions clearer.</li>
+</ul>
+<p><em>If you are publishing your results, concept sets are considered a publicly viewable part of your work.</em> Such public viewing is important.</p>
+<ul>
+<li>It is required by the Strengthening the <em>Reporting of Observational Studies in Epidemiology</em> <a href="https://www.equator-network.org/reporting-guidelines/strobe/">STROBE</a> guidelines for publishing observational research.</li>
+<li>Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.</li>
+<li>It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.</li>
+</ul>
+<p>Concept sets that are “finalized” within N3C will have information about them posted to our publicly-viewable <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets">GitHub</a> repository. Such posting is part of the process known as making research<a href="https://www.force11.org/group/fairgroup/fairprinciples">FAIR</a> (findable, accessible, interoperable, reusable). This GitHub repository is functionally our <em>Shared Variable Library.</em> Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).</p>
+<p>The concept set content that will be made public in <a href="https://zenodo.org/">Zenodo</a> and/or GitHub are:</p>
+<ul>
+<li>Concept set name, version #, date of finalization</li>
+<li>Intention</li>
+<li>Limitations (of the concept-ids within the concept set)</li>
+<li>Issues (with respect to data in the N3C Data Enclave, so analysts are forewarned)</li>
+<li>Provenance (how the concept set was assembled, which communicates how trustworthy the concept set is)</li>
+<li>Attributions (who did what)</li>
+<li>The list of codes (in JavaScript Object Notation (JSON) format, which can be imported directly into Observational Health Data Sciences &amp; Informatics (OHDSI)’s Atlas tool)</li>
+<li>Zenodo persistent document object identifier (DOI)</li>
+</ul>
+<section id="what-is-a-concept-set" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="what-is-a-concept-set"><span class="header-section-number">7.3.1</span> What is a concept set?</h3>
+<p>The Book of OHDSI explains <a href="https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#conceptSets">concept sets</a> as:</p>
+<blockquote class="blockquote">
+<p>A concept set is an expression representing a list of concepts that can be used as a reusable component in various analyses. It can be thought of as a standardized, computer-executable equivalent of the code lists often used in observational studies. A concept set expression consists of a list of concepts with the following attributes:</p>
+</blockquote>
+<ul>
+<li><strong>Exclude</strong>: Exclude this concept (and any of its descendants if selected) from the concept set.</li>
+<li><strong>Descendants</strong>: Consider not only this concept, but also all of its descendants.</li>
+<li><strong>Mapped</strong>: Allow to search for non-standard concepts.</li>
+</ul>
+<p>While ATLAS concept sets may contain standard and non-standard concepts, Enclave concept sets may include “standard” (SNOMED-based) concepts only. Thus, the “Mapped” attribute is rarely helpful, as it applies only if using source data.</p>
+<p>For example, a concept set expression could contain two concepts as depicted in Table <a href="https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html#tab:conceptSetExpression">10.1</a>. Here we include concept <a href="http://athena.ohdsi.org/search-terms/terms/4329847">4329847</a> (“Myocardial infarction”) and all of its descendants, but exclude concept <a href="http://athena.ohdsi.org/search-terms/terms/314666">314666</a> (“Old myocardial infarction”) and all of its descendants.</p>
+
+<table>
+<tbody><tr>
+<td>
+<strong>Concept Id</strong>
+</td>
+<td>
+<strong>Concept Name</strong>
+</td>
+<td>
+<strong>Excluded</strong>
+</td>
+<td>
+<strong>Descendants</strong>
+</td>
+<td>
+<strong>Mapped</strong>
+</td>
+</tr>
+<tr>
+<td>
+4329847
+</td>
+<td>
+Myocardial infarction
+</td>
+<td>
+NO
+</td>
+<td>
+YES
+</td>
+<td>
+NO
+</td>
+</tr>
+<tr>
+<td>
+314666
+</td>
+<td>
+Old myocardial infarction
+</td>
+<td>
+YES
+</td>
+<td>
+YES
+</td>
+<td>
+NO
+</td>
+</tr>
+
+</tbody></table>
+<p><em>Figure image-070-ConceptSetExpression.gif. Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts.</em></p>
+<p>As shown in <a href="_Figure image-080-MIHierarchy.gif">Figure xxx</a>_, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants. In total, this concept set expression implies nearly a hundred Standard Concepts. These Standard Concepts in turn reflect hundreds of source codes (e.g.&nbsp;ICD-9 and ICD-10 codes) that may appear in the various databases.</p>
+<div id="fig-understanding-080-mi-hierarchy" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-080-mi-hierarchy.png" class="lightbox" title="Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts" data-gallery="quarto-lightbox-gallery-7"><img src="images/understanding/fig-understanding-080-mi-hierarchy.png" class="img-fluid figure-img" alt=""></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.7: Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts</figcaption>
+</figure>
+</div>
+<p>ATLAS is used by the OHDSI community to construct concept sets. Best practice is for each research institution to have its own CDM instance. The Enclave, for technical reasons, cannot implement ATLAS. In the future, N3C hopes to provide a public tool but it is unclear when this release will occur. Users without their own local ATLAS may explore its utility using a publicly available one on OHDSI.org. <strong><em>Do beware </em></strong> all public tools are intended to be a demonstration site to showcase the power of the open-source toolstack. They are not intended for active research projects. These deployments are not running on a real OMOP CDM. They use synthetic data like the CMS Synthetic Public Use Files (SYNPUF) in the OMOP CDM format. The vocabulary schema will reflect whatever version of the vocabulary was in place when that OMOP CDM ETL was run. It will not reflect the most recent version of the OMOP vocabulary, which may be problematic for research projects that use newly approved vaccines or medicines. You should not make the habit of saving content within the public instance. It can be reset and wiped at any point in time. If you enjoy using ATLAS, consider spinning up your own instance via Broadsea, OHDSI in a box or other OHDSI Community resources to jumpstart users with their own ATLAS deployment. It is very easy to do and runs effectively, even on synthetic data. Resources are available via the OHDSI ATLAS workgroup. While it is a handy complement to the Enclave, do focus on the N3C products: The N3C concept set library and the concept set editor. The Enclave builds its own OMOP vocabulary releases from downloading the vocabulary tables from ATHENA.</p>
+<p>Because of these limitations, also <strong><em>do beware</em></strong> that ATLAS “record counts” (the number of patients with data expressing the given concept id) are <em>not</em> linked to N3C and do not represent the counts or distribution of concept ids within the Enclave.</p>
+</section>
+<section id="concept-set-metadata" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="concept-set-metadata"><span class="header-section-number">7.3.2</span> Concept Set Metadata</h3>
+<p>Intention, Limitations, and Provenance comprise concept set metadata.</p>
+<p><strong><em>Intention</em></strong> communicates in sentences more than the name can. For instance, is the concept set intended to be “broad”, and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it “narrow”, and specific? Is it meant to be definitional (these codes “mean” diabetes) or indicative (the codes tell me that you have diabetes, e.g., “retinopathy due to diabetes mellitus”; the codes suggest chronic lung disease, e.g., “infertility due to cystic fibrosis”). “Intention” can also indicate whether the concept set has clinical manifestations or not (e.g., “Sickle Cell” indicates a genetic condition, but unclear if it’s homozygous or heterozygous, the former being clinical and the latter often not). It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.</p>
+<p><strong><em>Limitations</em></strong> communicates edge cases and caveats to the analyst. “Issues” communicates performance with the Enclave data. This performance could include the number of codes contributing the majority of the data (e.g., from Term Usage) or the distribution of values across sites, in the case of lab tests.</p>
+<p><strong><em>Provenance</em></strong> communicates how the concept set was assembled. It should include any authorities consulted (the literature, the Value Set Authority Center, the domain team members, etc.) and a sense of what modifications, if any, were made from that authoritative beginning. (Of note, “ATLAS” is not an authoritative beginning, unless there is annotation on the ATLAS site of the authoritative source for that specific concept set.)</p>
+<p>The work on concept sets does not take place in a vacuum. It is assumed that you are part of a project team, which has the following Subject Matter Expertise (SME): Research/Clinical, Vocabulary, Informatics, and Statistical/Analytic. Each of these SMEs will be called upon in your work.</p>
+</section>
+<section id="n3c-concept-set-library" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="n3c-concept-set-library"><span class="header-section-number">7.3.3</span> N3C Concept Set Library</h3>
+<p>The concept sets already created in the Enclave can be browsed in the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf">concept set browser</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>, illustrated in <span class="quarto-unresolved-ref">?fig-understanding-090._</span> This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition. We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question. A workflow for performing this series of tasks is shown in <span class="quarto-unresolved-ref">?fig-understanding-090</span>.</p>
+<div id="fig-understanding-090-concept-set-versions" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-090-concept-set-versions.png" class="lightbox" title="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser" data-gallery="quarto-lightbox-gallery-8"><img src="images/understanding/fig-understanding-090-concept-set-versions.png" class="img-fluid figure-img" alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.8: An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser</figcaption>
+</figure>
+</div>
+<p>When created from scratch, a <em>container</em> is created, so multiple <em>versions</em> of the concept sets can be supported. New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards. Containers are indicated by blue icons; versions, by brown icons, as illustrated in Figure <em>image-090-cset_versions.gif</em>.</p>
+<div id="fig-understanding-100-concept-set-flowsheet" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="lightbox" title="Workflow for finding, extending, and creating concept sets" data-gallery="quarto-lightbox-gallery-9"><img src="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="img-fluid figure-img" alt="Workflow for finding, extending, and creating concept sets"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;7.9: Workflow for finding, extending, and creating concept sets</figcaption>
+</figure>
+</div>
+<p>*New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript</p>
+<p>The browse screen allows you to filter to concept sets relevant to you. Once you have identified a concept set that you might use, drilling into it provides data about that concept set: versions, metadata, concept expressions, concepts. In reviewing the concept set (generally by drilling to the most recent version), it may be worth exploring similar concept sets using the concept set Overlap tab. At this point, you may be satisfied that an existing concept set serves your needs. If not, you can create a new one — either an entirely new concept set, or a new version of an existing concept set, modifying it to meet your requirements. If you are creating a new version within an existing container, please contact the concept set owner to ensure that your update is in the right spirit. If not, clone the existing version into a new container, naming the container with a name that connotes the difference between the existing and the new concept sets.</p>
+<p>If you use a concept set in a published manuscript, make it publicly available. See the next section, [#Published Concept Sets].</p>
+<p>Additional documentation on the concept set browser and editor can be found on the <a href="https://unite.nih.gov/workspace/documentation/product/concept-set-builder">Enclave</a>. A <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=7">tutorial</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> is available that explores these tools further.</p>
+<section id="published-concept-sets" class="level4" data-number="7.3.3.1">
+<h4 data-number="7.3.3.1" class="anchored" data-anchor-id="published-concept-sets"><span class="header-section-number">7.3.3.1</span> Published Concept Sets</h4>
+<p>“Publication” includes 3 ways of making a concept set available to other researchers. Provisionally Approved and N3C Recommended are automatically submitted to Zenodo, to generate a permanent DOI URL that can be used in publication or in sharing concept set contents with analysts outside the Enclave. Any study manuscript for publication should ensure that any concept set used is either Provisionally Approved or N3C Recommended. The Zenodo URL should appear in the resulting publication.</p>
+<section id="n3c-recommended-concept-sets---pre-defined-concept-set-commonly-used" class="level5" data-number="7.3.3.1.1">
+<h5 data-number="7.3.3.1.1" class="anchored" data-anchor-id="n3c-recommended-concept-sets---pre-defined-concept-set-commonly-used"><span class="header-section-number">7.3.3.1.1</span> N3C Recommended concept sets - pre-defined concept set commonly used</h5>
+<p>The <a href="https://covid.cd2h.org/liaisons">N3C Data Liaisons and Logic Liaisons</a>, in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines. The original N3C Recommended concept sets were selected based on</p>
+<ol type="1">
+<li><p>the comorbid conditions identified by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">US Centers for Disease Control (CDC) definitions for COVID-19</a> as increasing risk of severe COVID-19</p></li>
+<li><p>the comorbid conditions identified in the <a href="https://healthcaredelivery.cancer.gov/seermedicare/considerations/comorbidity.html#:~:text=The%20Charlson%20Comorbidity%20Index%20was,were%20included%20in%20the%20index.">Charlson Comorbidity Index</a>, and</p></li>
+<li><p>others as requested by N3C leadership for use in the Logic Liaison templates.</p></li>
+</ol>
+<p>The N3C Recommended concept sets have been vetted by clinical experts (typically N3C Domain Team leads) and the Data and Logic Liaison teams according to the below refinement and finalization process. <em>The latest version of the listed concept sets should always be used</em>, as earlier versions represent iterations and have not passed the final review.</p>
+<section id="refinement-process" class="level6" data-number="7.3.3.1.1.1">
+<h6 data-number="7.3.3.1.1.1" class="anchored" data-anchor-id="refinement-process"><span class="header-section-number">7.3.3.1.1.1</span> Refinement Process</h6>
+<p>The clinical experts and the N3C Data Liaisons and Logic Liaisons perform the following steps in establishing an intentional N3C Recommended concept set:</p>
+<ul>
+<li>Select relevant parent concepts and their descendants from OMOP standard codes, using Charlson Comorbidity description or the relevant section the referenced CDC page to establish intention.</li>
+<li>Utilize the OHDSI Atlas tool to explore the OMOP hierarchy to look for other potential parent codes and also to remove child codes that are non-specific to the intended scope of the concept set.</li>
+<li>Compare the draft concept set to other related concept sets, using the Concept Set Overlap feature of the Concept Set Editor. This facilitates review of any codes that do not overlap with those in value sets from reputable stewards such as the National Library of Medicine’s Value Set Authority Center (VSAC) and the Healthcare Cost and Utilization Project (HCUP) and from existing similar concept sets within the Concept Set Browser. Add and remove concepts (and their descendants) as per recommendations from the clinical experts.</li>
+<li>Reduce the intentional concept set expression as parsimonious as possible, retaining all the approved concepts collected in prior steps.</li>
+<li>Iterate as needed.</li>
+<li>Document metadata (properties) in the Concept Set Editor for each created concept set to include: Intention, Limitations, Provenance, and at least one vocabulary and one clinical review.</li>
+<li>Present for final vetting at the Data Liaison meeting for N3C Recommended designation.</li>
+</ul>
+<p>These concept sets are in queue to be published as pdf (Properties) and json (concept ids) in Zenodo, to be available to researchers outside the Enclave. Once published, their Zenodo DOI will be posted to the Zenodo Property of the version that was published. The N3C Recommended concept sets are currently published to the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json">N3C GitHub</a> and are available to researchers outside the Enclave.</p>
+<p>The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&amp;view=focus">COVID-19 Diagnosed or Lab Confirmed Patients</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> and <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&amp;view=focus">All Patients</a> which then populate the <a href="https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard">N3C Phenotype Explorer</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> and <a href="https://covid.cd2h.org/dashboard/">N3C Public Health Dashboards</a>.</p>
+</section>
+</section>
+<section id="provisionally-approved" class="level5" data-number="7.3.3.1.2">
+<h5 data-number="7.3.3.1.2" class="anchored" data-anchor-id="provisionally-approved"><span class="header-section-number">7.3.3.1.2</span> Provisionally Approved</h5>
+<p>The third type of publication is Provisionally Approved. This status is automatically established once a concept set achieves at least one positive Vocabulary Review and one pos​​itive Clinical Review.</p>
+</section>
+</section>
+<section id="concept-set-reviews-and-validation" class="level4" data-number="7.3.3.2">
+<h4 data-number="7.3.3.2" class="anchored" data-anchor-id="concept-set-reviews-and-validation"><span class="header-section-number">7.3.3.2</span> Concept set reviews and validation</h4>
+<p>Why should anyone trust a concept set? This trust is needed both within the project team and outside the team. The project team needs to trust a concept set in an analysis; someone outside the team needs to assess its trust in deciding whether to (re) use it in their own analysis.</p>
+<p>“Trust” in a concept set derives from a number of factors. First, do we trust the people who assembled the concept set and its process? Second, do we believe that the concept set encodes the concepts we want it to encode, and excludes those we do not? Third, does it perform within the Enclave data the way we expect it to?</p>
+<p>Re “the people” and “the process”: The concept set meta-data, especially the identity of the author and reviewers, and the Provenance, provide the necessary information.</p>
+<p>Another means of deciding on a level of trust is the Reviews. The Enclave supports two types of reviews.</p>
+<ul>
+<li>“Vocabulary review”: Here, a terminologist or informatician familiar with the OMOP vocabulary has reviewed the process documented (in Provenance) or in real time (as part of work with the Domain Team) and documents satisfaction with what codes are included and what are excluded.</li>
+<li>“Clinical review”: Here, a clinical member of the Domain Team or project has reviewed the codes to confirm that they match the “Intention” of the concept set.</li>
+</ul>
+<p>A third means of deciding on a level of trust is looking to see what research projects have used the concept set. The more authoritative (and published) those projects are, the more authority they have. Of course, in some cases, a concept set “going viral” may simply be a popularity contest and not an indicator of correctness (false positives). At the same time, linking of a concept set to a research project is a manual process, which is often not done (false negatives).</p>
+<p>Note that this entire scheme of authority and validity depends on adequate documentation of properties. There are many enticing concept sets that do not have properties filled, reviews performed, nor projects linked. Please ensure that your concept sets are not missing these key components.</p>
+<p>Note, as well, that, if you publish a paper, using a concept set, that concept set should be published as well. The Properties and Reviews will be published, whether missing or not.</p>
+</section>
+</section>
+</section>
+<section id="ehr-based-data-beyond-omop" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="ehr-based-data-beyond-omop"><span class="header-section-number">7.4</span> EHR-Based Data Beyond OMOP</h2>
+<p>Data tables of use or interest to analysts found in either the LDS or Safe Harbor Release are the following:</p>
+<p><em>Manifest.</em> This table, found in the folder along with the OMOP tables, provides data about each data partner that analysts should find helpful when trying to understand variation in the data: CDM type (ACT, OMOP, PCORNet, TriNetX) and version, whether dates are shifted (and how much), and date of last contribution.</p>
+<p><em>Control Map.</em> For every “case” generated locally by the Phenotype algorithm, the algorithm also identifies 2 “controls”, that are matched by age, sex, race, and ethnicities, including matched by missing values. While it may be tempting to use this map to identify controls for your own study, too many patients who were initial “controls” may have become “cases”, or their true status is unknown, because of home or other non-site testing. Other matching methods (e.g., propensity scores) are more trustworthy.</p>
+<p><em>Microvisit to Macrovisit Map.</em> While admissions to the hospital are recorded in the Visit_Occurrence table, the end-date is not always so recorded. Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an “encounter”. So an admission may be represented in the visit_occurrence table as a string of such “encounters”. We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval. See <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed">Enclave</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>.</p>
+<p><em>Harmonized values</em>. It is no surprise that, across over 70 data partners, and the many included sites, different institutions measure the same analyte in different ways and report the results with different units of measure. N3C has spent a fair amount of effort to harmonize units (and therefore values; think degrees Fahrenheit and degrees Celsius), so analysts have a level playing field for their analyses. In addition, many units of measure are missing, so, as part of that effort, an algorithm has been developed to use the pooled data across the Enclave to help us infer units (and therefore, values). This strategy has led to the “rescue” of over 78% of records where units of measure were missing. See <em><a href="https://jhu.pure.elsevier.com/en/publications/harmonizing-units-and-values-of-quantitative-data-elements-in-a-v">Harmonizing units and values of quantitative data elements in a very large nationally pooled electronic health record (EHR) dataset</a></em>. This harmonization was done for about 70 measurements so far. The results are found in the Measurement table, as harmonized_value_as_number, harmonized_unit_concept_id and unit_concept_id_or_inferred_unit_concept_id.</p>
+<p><em>Phenotype</em> and <em>cohort</em>. A <a href="https://pubmed.ncbi.nlm.nih.gov/23956018/">phenotype</a> is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events. Examples would be, “has Acute COVID”; “treated with ampicillin”.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> A cohort is a set of persons who satisfy one or more inclusion criteria for a duration of time. Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research. In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.</p>
+<p><em>Derived variables/facts.</em> Facts are designations that a patient falls into a category (at a point in time). Thus, <strong>confirmed_covid_patient </strong>or** TOBACCOSMOKER_indicator** is set as “1” (true) if certain conditions are met in the template <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&amp;view=focus">Logic Liaison Template All Patients Facts</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>. Other Logic Liaison Templates include many derived facts of value to analysis. See <a href="tools.html"><span>Chapter&nbsp;8</span></a>.</p>
+</section>
+<section id="beyond-ehr-pprl-based-data" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="beyond-ehr-pprl-based-data"><span class="header-section-number">7.5</span> Beyond EHR: PPRL-Based Data</h2>
+<section id="introduction-1" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">7.5.1</span> Introduction</h3>
+<p>Privacy Preserving Record Linkage (PPRL) is a cryptographically-secure method to link information about individuals from different sources of data, without revealing personal information about those individuals. PPRL enables N3C to collect information such as EHR data from clinical data partners, viral variant information from sequencing centers, mortality information from government and private sources, and government Medicare and Medicaid data, all into a single unified database for researcher use.</p>
+</section>
+<section id="pprl-data-access" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="pprl-data-access"><span class="header-section-number">7.5.2</span> PPRL Data Access</h3>
+<p>Access to datasets that incorporate the PPRL are available through the N3C Data Use Request process. PPRL requests are treated as level 3 / Limited Data Set requests and as such require a signed institutional Data Use Agreement (DUA), a local letter of determination, investigator attestation to the N3C Code of Conduct, IT security training, and human subject training. Requests for use of datasets linked by the PPRL require approval by the National Center for Advancing Translational Sciences (NCATS) federally staffed Data Access Committee (DAC).</p>
+</section>
+<section id="mortality" class="level3" data-number="7.5.3">
+<h3 data-number="7.5.3" class="anchored" data-anchor-id="mortality"><span class="header-section-number">7.5.3</span> Mortality</h3>
+<section id="mortality-data-within-n3c" class="level4" data-number="7.5.3.1">
+<h4 data-number="7.5.3.1" class="anchored" data-anchor-id="mortality-data-within-n3c"><span class="header-section-number">7.5.3.1</span> Mortality Data Within N3C</h4>
+<p>To provide more complete information on mortality, N3C has collected additional mortality data from multiple sources. Because the data sources themselves are sensitive information, supplemental PPRL mortality records are broken down into three source categories:</p>
+<ul>
+<li><em>Government Mortality</em>: Government data sourced from death certificates and person-reporting.</li>
+<li><em>ObituaryData.com</em>: Obituary data sourced from funeral homes, newspapers, and other online obituary sources specifically from obituarydata.com (a private obituary aggregator).</li>
+<li><em>Private Obituary</em>: Obituary data sourced from funeral homes, newspapers, and other online obituary sources sourced from other private sources.</li>
+</ul>
+<p>PPRL mortality data are harmonized against the existing Level-3 (LDS) OMOP tables in the N3C Data Enclave. Once access is granted via a Level 3 DUR requesting mortality data, PPRL tables may be found in the Data Catalog under the PPRL Datasets collection. The primary mortality data are available in a table simply called mortality.</p>
+</section>
+<section id="mortality-data-completeness-and-caveats" class="level4" data-number="7.5.3.2">
+<h4 data-number="7.5.3.2" class="anchored" data-anchor-id="mortality-data-completeness-and-caveats"><span class="header-section-number">7.5.3.2</span> Mortality Data Completeness and Caveats</h4>
+<p>First, note that mortality information is only available for those data partners who have opted in to linkage of their records against the mortality data. As a result the data_partner_id column will only represent a subset of the data partner IDs found in other N3C OMOP tables. See the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.095ada1d-1a0c-48d6-80ba-2d4c547b362c">Intro to PPRL documentation</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> for more information.</p>
+<p>Secondly, these data sources should not be considered comprehensive in the sense of providing full information on all deaths in the US. As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table–that’s why N3C has collected this data in the first place!)</p>
+<p>Different data sources lag in inclusion of mortality information from the actual date of death (e.g.&nbsp;if someone’s date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18). This lag varies by data source type: government sources tend to lag longer than private sources. For detailed information on mortality data latency, data completeness, and other considerations, see the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.e45cd20e-9da9-44c7-b1d1-747e7c56102f">N3C PPRL Mortality Data Guide</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> and the <a href="https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE#MORTALITY">N3C Mortality Data FAQs</a>.</p>
+</section>
+</section>
+<section id="viral-variant" class="level3" data-number="7.5.4">
+<h3 data-number="7.5.4" class="anchored" data-anchor-id="viral-variant"><span class="header-section-number">7.5.4</span> Viral Variant</h3>
+<section id="what-are-viral-variants" class="level4" data-number="7.5.4.1">
+<h4 data-number="7.5.4.1" class="anchored" data-anchor-id="what-are-viral-variants"><span class="header-section-number">7.5.4.1</span> What Are Viral Variants</h4>
+<p>Several coronavirus variants have emerged as the virus, SARS-CoV-2, continues to mutate and evolve. For general information about COVID viral variants, see <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/a-new-strain-of-coronavirus-what-you-should-know#:~:text=A%20variant%20of%20interest%20is,testing%2C%20or%20more%20severe%20disease.">COVID Variants: What You Should Know</a></p>
+</section>
+<section id="viral-variants-data-within-n3c" class="level4" data-number="7.5.4.2">
+<h4 data-number="7.5.4.2" class="anchored" data-anchor-id="viral-variants-data-within-n3c"><span class="header-section-number">7.5.4.2</span> Viral Variants Data Within N3C</h4>
+<p>The collection and linkage viral variant PPRL data within N3C is planned in two phases; in the first phase (completed), N3C links patient summary information about sequenced variants. In the second phase (in development), N3C will provide information on the viral variant’s genome sequence via connection to NCBI sequence databases.</p>
+<p>For the latest information about viral variant data within N3C, see the N3C <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8514a4bb-b9bb-4b4b-b97a-4e9b1ca61a48">PPRL Viral Variants Guide</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> and <a href="https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE">N3C Viral Variant FAQs</a>.</p>
+</section>
+<section id="which-sites" class="level4" data-number="7.5.4.3">
+<h4 data-number="7.5.4.3" class="anchored" data-anchor-id="which-sites"><span class="header-section-number">7.5.4.3</span> Which sites</h4>
+<p>The initial viral variant data set includes data from a small number of sites. The number of viral variant data sets will increase as more sites from Clinical and Translational Science Awards (CTSA) and Clinical Trials Research (CTR) participate.</p>
+</section>
+<section id="viral-variants-completeness-and-caveats" class="level4" data-number="7.5.4.4">
+<h4 data-number="7.5.4.4" class="anchored" data-anchor-id="viral-variants-completeness-and-caveats"><span class="header-section-number">7.5.4.4</span> Viral Variants Completeness and Caveats</h4>
+<p>The summary data currently available in N3C includes:</p>
+<ul>
+<li>Sample Date</li>
+<li>WHO label (e.g.&nbsp;alpha, delta, omicron)</li>
+<li>*PANGO lineage (e.g.&nbsp;B.1.1.7)</li>
+</ul>
+<p>_*Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples._</p>
+</section>
+<section id="viral-variant-data-in-omop" class="level4" data-number="7.5.4.5">
+<h4 data-number="7.5.4.5" class="anchored" data-anchor-id="viral-variant-data-in-omop"><span class="header-section-number">7.5.4.5</span> Viral Variant Data in OMOP</h4>
+<p>Summary PPRL viral variant data is available as an enriched OMOP measurement table available in the PPRL Datasets data. The following columns are used:</p>
+<ul>
+<li><strong>measurement_concept_id</strong> contains OMOP <strong>concept_id</strong> 36033667, “SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing”, for all viral variant samples.</li>
+<li><strong>value_as_concept_id</strong> will be encoded with the OMOP concept representing the WHO label (e.g.&nbsp;<strong>concept_id</strong> 4228611 for “Omicron”).</li>
+<li>A new column outside the standard OMOP schema includes the PANGO lineage.</li>
+</ul>
+</section>
+</section>
+<section id="centers-for-medicare-and-medicaid-services-cms" class="level3" data-number="7.5.5">
+<h3 data-number="7.5.5" class="anchored" data-anchor-id="centers-for-medicare-and-medicaid-services-cms"><span class="header-section-number">7.5.5</span> Centers for Medicare and Medicaid Services (CMS)</h3>
+<section id="introduction-2" class="level4" data-number="7.5.5.1">
+<h4 data-number="7.5.5.1" class="anchored" data-anchor-id="introduction-2"><span class="header-section-number">7.5.5.1</span> Introduction</h4>
+<p>The Centers for Medicare and Medicaid Services (CMS) is a federal agency that is part of the U.S. Department of Health and Human Services (HHS) that administers the nation’s Medicare Program. The agency also works with state governments to administer programs that include Medicaid and the Children’s Health Insurance Program (CHIP).</p>
+<p><em>Medicare</em> is the federal health insurance program created in 1965 to provide health coverage for Americans aged 65 and older. The program was expanded in 1972 to cover people younger than 65 who have permanent disabilities. More than 64 million Americans are currently covered by Medicare.</p>
+<p><em>Medicaid</em> was signed into law in 1965 alongside Medicare. All states, the District of Columbia, and the U.S. territories have Medicaid programs designed to provide health coverage for low-income people. Although the Federal government establishes certain parameters for all states to follow, each state administers their Medicaid program differently, resulting in variations in Medicaid coverage across the country.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>For a full description of CMS, see the <a href="https://www.hhs.gov/answers/medicare-and-medicaid/what-is-the-difference-between-medicare-medicaid/index.html">HHS website</a>.</p>
+</section>
+<section id="cms-claims-data" class="level4" data-number="7.5.5.2">
+<h4 data-number="7.5.5.2" class="anchored" data-anchor-id="cms-claims-data"><span class="header-section-number">7.5.5.2</span> CMS Claims Data</h4>
+<p>Medical providers (including pharmacies) submit claims for services or drugs for reimbursement of the enrolled participants. The CMS claims provide an audit trail of billing and reimbursement for healthcare services provided to a patient enrolled in an insurance benefit package no matter where the services were rendered. CMS data contain claims from all sites a patient obtained billable services while enrolled and all medications a patient had filled. CMS claims do not contain clinical depth of EHR data and may not contain non-billable (unbillable) services.</p>
+</section>
+<section id="cms-data-in-n3c" class="level4" data-number="7.5.5.3">
+<h4 data-number="7.5.5.3" class="anchored" data-anchor-id="cms-data-in-n3c"><span class="header-section-number">7.5.5.3</span> CMS Data in N3C</h4>
+<p>The N3C CMS dataset contains de-identified billing data from the Centers for Medicare and Medicaid Services, formatted into the OMOP common data model for N3C researcher use. The initial CMS data within N3C contains over 240K COVID-19 patients and is updated on a monthly basis. The amount of CMS patients available in the Enclave is dependent on sites participating in the NCATS PPRL linkage initiative, and as additional sites implement the tokenization process the number of patients will increase.</p>
+<p>CMS records available cover the period from Jan 1, 2017 to the most recently available (three months ago observation period). Although N3C refreshes its CMS data feed on a weekly basis, CMS data has a significant lag, with most records taking six months or more to become available in the system. All seven types of MS claims are included: Part B (PB), Durable Medical Equipment (DME), Inpatient (IP), Outpatient (OP), Skilled Nursing Facility (SNF), Home Health Agency (HHA), Hospice. The records contain masked providers of service and masked care sites linkable to other characteristics.</p>
+<p>The Master Beneficiary Summary File (MBSF):</p>
+<ul>
+<li>Provides enrollment period and reasons for enrollment</li>
+<li>Identifies patients with dual enrollment in Medicare and Medicaid</li>
+<li>Can be used to distinguish non-users from non-eligible</li>
+<li>Identifies periods of continuous enrollment</li>
+<li>Can be used to perform annualization</li>
+</ul>
+</section>
+<section id="cms-into-omop-cdm-structure" class="level4" data-number="7.5.5.4">
+<h4 data-number="7.5.5.4" class="anchored" data-anchor-id="cms-into-omop-cdm-structure"><span class="header-section-number">7.5.5.4</span> CMS into OMOP CDM Structure</h4>
+<p>The N3C Data Ingestion and Harmonization (DI&amp;H) team worked with partner Acumen to identify CMS data to be ingested. DI&amp;H then created the mapping from native CMS data elements into the OMOP data model. DI&amp;H created a Code Map Service and a Data Transformation Pipeline, which involved combining sometimes up to 45 rows of data into a single patient record and creating constructs, such as coherent visits across claims. The pipeline also required deidentification of patient and provider identifiers.</p>
+</section>
+<section id="cms-data-completeness-and-caveats" class="level4" data-number="7.5.5.5">
+<h4 data-number="7.5.5.5" class="anchored" data-anchor-id="cms-data-completeness-and-caveats"><span class="header-section-number">7.5.5.5</span> CMS Data Completeness and Caveats</h4>
+<p>CMS claims data provides slightly different information compared to EHR data; for example, rather than providing medication prescription information, CMS provides information on medication dispensation from the pharmacy. Enrollment in Medicare and Medicaid are well defined and thoroughly tracked, providing insight into patients healthcare utilization vs eligibility that may be lacking in EHR data.</p>
+
+<table>
+<tbody><tr>
+<td colspan="2">
+Differences between EHR and CMS Claims Data
+</td>
+</tr>
+<tr>
+<td>
+EHR Data
+</td>
+<td>
+CMS Claims Data
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>
+<p>Usually contains data only about care received in that healthcare system</p>
+</li><li>
+<p>Reflects orders or intent</p>
+</li><li>
+<p>Contains deep clinical data (labs, vitals, notes, surveys, history)</p>
+</li><li>
+<p>May not contain billing data</p>
+</li><li>
+Usually does not contain eligibility or enrollment
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+<p>Have little clinical data but have data (Dx, Px, etc) from all healthcare sites a patient received services</p>
+</li><li>
+<p>Reflect performed services</p>
+</li><li>
+<p>Reflect filled prescriptions</p>
+</li><li>
+<p>Contain amounts billed and paid</p>
+</li><li>
+<p>Paid claim indicates enrollment</p>
+</li><li>
+EHR elements may get altered or added by billing teams or automatically by software to optimize reimbursement – sometimes described as up-coding
+</li>
+</ul>
+</td>
+</tr>
+
+</tbody></table>
+</section>
+<section id="additional-cms-resources" class="level4" data-number="7.5.5.6">
+<h4 data-number="7.5.5.6" class="anchored" data-anchor-id="additional-cms-resources"><span class="header-section-number">7.5.5.6</span> Additional CMS Resources</h4>
+<p>For a detailed investigation of the usefulness of EHR vs administrative claims data, see <a href="https://pubmed.ncbi.nlm.nih.gov/28598890/">Comparing Population-based Risk-stratification Model Performance Using Demographic, Diagnosis and Medication Data Extracted From Outpatient Electronic Health Records Versus Administrative Claims by Kharrazi et al., 2017</a>.</p>
+<p>For detailed information on the N3C CMS data, see <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.899f98b5-2846-41a3-9563-adb75c9042ce">N3C PPRL CMS Data Guide</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>.</p>
+<p>CMS Research Data Assistance Center (ResDAC) contains data dictionaries, code books, and enormous amounts of information about Medicare claims and enrollment. It is a good place to figure out what values represent. Look for dictionaries for the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/LimitedDataSets/StandardAnalyticalFiles">CMS Standard Analytic Files (SAF) or Limited Data Sets (LDS)</a>.</p>
+<p>In depth CMS training webinar is available on <a href="https://www.youtube.com/watch?v=fs0tM7RnL54">YouTube</a>.</p>
+</section>
+</section>
+</section>
+<section id="publicexternal-datasets" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="publicexternal-datasets"><span class="header-section-number">7.6</span> Public/External Datasets</h2>
+<p>Because our data are not representative of the geographic locations whence they come, it is important for many analyses to attempt to “correct” the results due to this selection bias. Data sets, called <em>external datasets</em>, are available outside the Enclave that provide information about such locations. There are datasets about the locations themselves (e.g., <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8BCEA01&amp;view=focus">zip code distances</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>), about the demographics in those locations (e.g., <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-595A20D&amp;view=focus">zip code census</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>), or about covid, in those locations (e.g., <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-EEA964E&amp;view=focus">covid hesitancy by county</a>, <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B1CD234&amp;view=focus">state policy by date</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>). There are also datasets to help in mapping from zip codes (data available in Level 3 Enclave datasets), such as <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&amp;view=focus">Mapping Zip codes to states and geolocations</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>. All available datasets are available at <a href="https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset">The Data Discovery Engine</a> (outside the Enclave) and in <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b">The Knowledge Store</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> (inside the Enclave; filter on “External Dataset”).</p>
+<p>Note that most of these depend on 5-digit zip codes for linking between a patient’s record and the external dataset, and so are useful only in the context of a Level 3 DUR.</p>
+<p>Importing such an external dataset entails a process of review that examines the need, the risk to reidentification, and the license. The <a href="https://covid.cd2h.org/external-datasets">External Datasets page</a> gives more detail, including how to request a new dataset.</p>
+<p><strong>This concludes an exciting chapter in the never ending story of N3C. To a cinema near you. Real soon.</strong></p>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>A <em>phenotype</em> is general and a <em>cohort</em> is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code.” A related <em>cohort</em> would be, “Must have _2 _outpatient visits without diabetes <em>since Jan 1, 2017</em> without a diabetes diagnostic code, followed by at least one visit with such a code <em>before Jan 1, 2020</em>.” However, in OHDSI the two terms are used interchangeably (Book of OHDSI, <a href="https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html">Chapter 10.1</a>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>See <a href="https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/" class="uri">https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -774,10 +1282,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/understanding.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/understanding.md" class="toc-action">View source</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});</script>
 
 
 

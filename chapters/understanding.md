@@ -183,9 +183,9 @@ _If you are publishing your results, concept sets are considered a publicly view
 * Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 
-Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable [GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets) repository.
+Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable GitHub [repository](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets).
 Such posting is part of the process known as making research [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
-This GitHub repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
+This repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
 The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
 
@@ -247,7 +247,7 @@ Resources are available via the OHDSI ATLAS workgroup.
 While it is a handy complement to the Enclave, do focus on the N3C products: The N3C concept set library and the concept set editor.
 The Enclave builds its own OMOP vocabulary releases from downloading the vocabulary tables from ATHENA.
 
-Because of these limitations, also **_do beware_** that ATLAS "record counts" (the number of patients with data expressing the given concept id) are _not_ linked to N3C and do not represent the counts or distribution of concept ids within the Enclave.
+Because of these limitations, also _do beware_ that ATLAS "record counts" (the number of patients with data expressing the given concept id) are _not_ linked to N3C and do not represent the counts or distribution of concept ids within the Enclave.
 
 ### Concept Set Metadata {#sec-understanding-sets-metadata}
 
@@ -260,7 +260,10 @@ Intention, Limitations, and Provenance comprise concept set metadata.
 #### Intention {#sec-understanding-sets-metadata-intention}
 
 Intention communicates in sentences more than the name can.
-For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down? Or is it "narrow", and specific? Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis"). "Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it's homozygous or heterozygous, the former being clinical and the latter often not).
+For instance, is the concept set intended to be "broad", and sensitive, to capture as many cases as possible, leaving to downstream analysts to winnow the set of patients down?
+Or is it "narrow", and specific?
+Is it meant to be definitional (these codes "mean" diabetes) or indicative (the codes tell me that you have diabetes, e.g., "retinopathy due to diabetes mellitus"; the codes suggest chronic lung disease, e.g., "infertility due to cystic fibrosis").
+"Intention" can also indicate whether the concept set has clinical manifestations or not (e.g., "Sickle Cell" indicates a genetic condition, but unclear if it's homozygous or heterozygous, the former being clinical and the latter often not).
 It is true that a later analyst will look through the list of codes, but having an explicit intention helps that analyst screen potential concept sets.
 
 #### Limitations {#sec-understanding-sets-limitations}

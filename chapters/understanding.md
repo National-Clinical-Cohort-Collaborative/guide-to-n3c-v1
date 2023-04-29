@@ -95,11 +95,9 @@ The central table in the OMOP vocabulary system is the table, `concept`.
 #### Vocabulary Concepts {#sec-understanding-basics-omop-vocab}
 
 The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids.
-All analyses are done with these concept ids.
-Thus, the physician's diagnosis of "diabetes" may be stored in the EHR as I10 (ICD10), which gets translated via the OMOP Vocabulary  into OMOP as the standard concept id, `320128`.
-The original code (I10) is called, and stored in OMOP, as the _source value.
-_But it is the concept id code that analysts would use.
-N3C is committed to using "standard" concepts only in its analyses, which means that clinicians who are used to using source codes like ICD10 need to have those lists of codes "translated" to their corresponding standard concepts.
+Suppose a physician diagnoses a patient with diabetes and types "I10" into the EHR (which uses the ICD10 vocabulary).
+The "I10" value is stored in OMOP as the `source_value`, and is then translated via the OMOP Vocabulary to the standard concept id, "320128".^[This translation is automated with software, as opposed to manually performed by a human.]
+N3C analyses use _standard_ concept ids, as opposed to specific codes that aren't necessarily consistent across hospitals.
 
 _The Book of OHDSI_ has a detailed chapter on [Standardized Vocabularies](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).
 The OHDSI vocabularies are in a standardized CDM structure that houses existing vocabularies used in the public domain.

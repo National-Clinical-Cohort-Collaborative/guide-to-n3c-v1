@@ -105,22 +105,22 @@ This CDM compiles standards from disparate public and private sources as well as
 
 Concepts are related to each other.
 For instance, hypertrophic cardiomyopathy (concept id `4124693`) is a type of cardiomyopathy (concept id `321319`).
-The `concept_relationship` table stores these relationships.
+The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table stores these relationships.
 While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See [concept sets](understanding.md#sec-understanding-sets).)
 
-![A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _`321319`](images/understanding/fig-understanding-020-concept-relationship-1.png){#fig-understanding-020-concept-relationship-1 fig-alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, _`321319`"}
+![A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319](images/understanding/fig-understanding-020-concept-relationship-1.png){#fig-understanding-020-concept-relationship-1 fig-alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"}
 
 Every relationship type connecting two OMOP concepts has a converse.
-In the concept_relationship table, this means a parent-child relationship will be represented (redundantly) by two records.
-Hypertrophic cardiomyopathy (concept id `4124693`) is a type of cardiomyopathy (concept id `321319`):
+In the `concept_relationship` table, this means a parent-child relationship will be represented (redundantly) by two records.
+Hypertrophic cardiomyopathy (concept id 4124693) is a type of cardiomyopathy (concept id 321319):
 
 ![The converse representation of @fig-understanding-020-concept-relationship-1 row 47](images/understanding/fig-understanding-030-concept-relationship-2.png){#fig-understanding-030-concept-relationship-2 fig-alt="The converse representation"}
 
 The hierarchical relationship between the two concepts is represented once (above) with a "Subsumes" record and again (below) with an "Is a" record.
-The concept_relationship only contains direct relationships between pairs of concepts.
-For hierarchical relationships, more distant relationships are found in the concept_ancestor table.
+`concept_relationship` contains only direct relationships between pairs of concepts.
+For hierarchical relationships, more distant relationships are found in the [`concept_ancestor`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_ANCESTOR) table.
 
-The concept relationship table contains many other relationship types beyond hierarchical relationships: Mapped from, Maps to, Has brand name of, Consists of, etc.
+The `concept_relationship` table contains many other relationship types beyond hierarchical relationships: "Mapped from", "Maps to", "Has brand name of", "Consists of", etc.
 
 [ATHENA](https://athena.ohdsi.org/search-terms/terms?query) is an OHDSI tool for exploring OMOP vocabularies and even downloading them; its primary use in N3C is for looking up individual terms.
 More details on using ATHENA to search terms are documented on OHDSI's publicly-viewable GitHub [repository](https://github.com/OHDSI/Athena). [ATLAS](https://atlas.ohdsi.org/#/home) is an OHDSI tool to explore concepts and their relationships.
@@ -128,7 +128,7 @@ See section below on [concept sets](understanding.md#sec-understanding-sets) tha
 
 The OMOP vocabulary is updated regularly to keep up with the continual evolution of sources.
 Its vocabulary maintenance and improvement is an ongoing activity that requires community participation and support.
-Releases and release notes are published via Git Releases on the OMOP Vocabulary GitHub.
+Releases and release notes are published via Git Releases on the OMOP Vocabulary GitHub repository.
 The most recent specification documentation can be found at [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm53.html).
 New versions of the OMOP vocabulary are downloaded monthly by the Enclave managers.
 

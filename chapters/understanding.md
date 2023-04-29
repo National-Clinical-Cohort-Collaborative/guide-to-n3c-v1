@@ -132,9 +132,9 @@ Releases and release notes are published via Git Releases on the OMOP Vocabulary
 The most recent specification documentation can be found at [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm53.html).
 New versions of the OMOP vocabulary are downloaded monthly by the Enclave managers.
 
-The OMOP CDM assembles these relationships in the `Standardized vocabulary` section of the CDM.
-These tables are available to N3C researchers, along with the `Standardized clinical data` tables that store the patients' data (expressed using the concept ids).
-Data are available as well in the  `Standardized health system`, `Payer_plan_period` (not `cost`), and `Standardized derived elements` tables.
+The OMOP CDM assembles these relationships in the [Standardized vocabulary](https://ohdsi.github.io/CommonDataModel/cdm60.html#Vocabulary_Tables) section of the CDM.
+These tables are available to N3C researchers, along with the [Standardized clinical data](https://ohdsi.github.io/CommonDataModel/cdm60.html#Clinical_Data_Tables) tables that store the patients' data (expressed using the concept ids).
+Data are available as well in the [Standardized health system](https://ohdsi.github.io/CommonDataModel/cdm60.html#Health_System_Data_Tables), `Payer_plan_period` (not `cost`), and [Standardized derived elements](https://ohdsi.github.io/CommonDataModel/cdm60.html#Standardized_Derived_Elements) tables.
 
 ![OMOP [Data model](https://ohdsi.github.io/CommonDataModel)](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
 

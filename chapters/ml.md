@@ -19,6 +19,8 @@ csl: ../assets/csl/apa-7e.csl
 
 # Machine Learning {#sec-ml}
 
+**Chapter Leads:** Peter Robinson, Justin Reese, Blessy Antony, T.M. Murali, Elena Casiraghi, Hannah Blau
+
 :::{.callout-note}
 This chapter is being drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1HZ3IGv17zUl9t8RxZSl4uOq_FRzrgTp_>

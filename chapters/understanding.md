@@ -42,7 +42,7 @@ csl: ../assets/csl/apa-7e.csl
 ---
 # Understanding the Data {#sec-understanding}
 
-**Chapter Leads:** Harold Lehmann and Lisa Eskenazi
+**Chapter Leads:** Harold Lehmann, Lisa Eskenazi
 
 ## Introduction {#sec-understanding-intro}
 

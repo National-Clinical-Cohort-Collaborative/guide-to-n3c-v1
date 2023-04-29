@@ -19,6 +19,8 @@ csl: ../assets/csl/apa-7e.csl
 
 # Best Practices and Important Data Considerations {#sec-practices}
 
+**Chapter Leads:** Ken Wilkins, Harold Lehmann
+
 :::{.callout-note}
 This chapter is being drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1ExkYChsnO3hYZk6HCI5cEfQdQJ9F-ynw>

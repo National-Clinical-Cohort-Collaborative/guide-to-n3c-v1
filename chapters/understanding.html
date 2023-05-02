@@ -492,7 +492,7 @@ Note
 <p>The OMOP CDM is an open-source, community standard for observational healthcare data and consists of clinical tables describing conditions and events from patient records and vocabulary tables describing clinical concepts. The central table in the OMOP vocabulary system is the table, <code>concept</code>.</p>
 <div id="fig-understanding-010-concept" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-010-concept.png" class="lightbox" title="Sample rows from the 6.9-million row table of concepts imported from OMOP" data-gallery="quarto-lightbox-gallery-1"><img src="images/understanding/fig-understanding-010-concept.png" class="img-fluid figure-img" alt="Sample rows from the 6.9-million row table of concepts imported from OMOP"></a></p>
+<p><a href="images/understanding/fig-understanding-010-concept.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Sample rows from the 6.9-million row table of concepts imported from OMOP"><img src="images/understanding/fig-understanding-010-concept.png" class="img-fluid figure-img" alt="Sample rows from the 6.9-million row table of concepts imported from OMOP"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.1: Sample rows from the 6.9-million row table of concepts imported from OMOP</figcaption>
 </figure>
 </div>
@@ -503,14 +503,14 @@ Note
 <p>Concepts are related to each other. For instance, hypertrophic cardiomyopathy (concept id <code>4124693</code>) is a type of cardiomyopathy (concept id <code>321319</code>). The <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP"><code>concept_relationship</code></a> table stores these relationships. While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See <a href="../chapters/understanding.html#sec-understanding-sets">concept sets</a>.)</p>
 <div id="fig-understanding-020-concept-relationship-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-020-concept-relationship-1.png" class="lightbox" title="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319" data-gallery="quarto-lightbox-gallery-2"><img src="images/understanding/fig-understanding-020-concept-relationship-1.png" class="img-fluid figure-img" alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"></a></p>
+<p><a href="images/understanding/fig-understanding-020-concept-relationship-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"><img src="images/understanding/fig-understanding-020-concept-relationship-1.png" class="img-fluid figure-img" alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.2: A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319</figcaption>
 </figure>
 </div>
 <p>Every relationship type connecting two OMOP concepts has a converse. In the <code>concept_relationship</code> table, this means a parent-child relationship will be represented (redundantly) by two records. Hypertrophic cardiomyopathy (concept id 4124693) is a type of cardiomyopathy (concept id 321319):</p>
 <div id="fig-understanding-030-concept-relationship-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-030-concept-relationship-2.png" class="lightbox" title="The converse representation of @fig-understanding-020-concept-relationship-1 row 47" data-gallery="quarto-lightbox-gallery-3"><img src="images/understanding/fig-understanding-030-concept-relationship-2.png" class="img-fluid figure-img" alt="The converse representation"></a></p>
+<p><a href="images/understanding/fig-understanding-030-concept-relationship-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="The converse representation of @fig-understanding-020-concept-relationship-1 row 47"><img src="images/understanding/fig-understanding-030-concept-relationship-2.png" class="img-fluid figure-img" alt="The converse representation"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.3: The converse representation of <a href="#fig-understanding-020-concept-relationship-1">Figure&nbsp;<span>7.2</span></a> row 47</figcaption>
 </figure>
 </div>
@@ -521,7 +521,7 @@ Note
 <p>The OMOP CDM assembles these relationships in the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#Vocabulary_Tables">Standardized vocabulary</a> section of the CDM. These tables are available to N3C researchers, along with the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#Clinical_Data_Tables">Standardized clinical data</a> tables that store the patients’ data (expressed using the concept ids). Data are available as well in the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#Health_System_Data_Tables">Standardized health system</a>, <code>Payer_plan_period</code> (not <code>cost</code>), and <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#Standardized_Derived_Elements">Standardized derived elements</a> tables.</p>
 <div id="fig-understanding-040-omop" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-040-omop.png" class="lightbox" title="OMOP Data model" data-gallery="quarto-lightbox-gallery-4"><img src="images/understanding/fig-understanding-040-omop.png" class="img-fluid figure-img" alt="omop"></a></p>
+<p><a href="images/understanding/fig-understanding-040-omop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="OMOP Data model"><img src="images/understanding/fig-understanding-040-omop.png" class="img-fluid figure-img" alt="omop"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.4: OMOP <a href="https://ohdsi.github.io/CommonDataModel">Data model</a></figcaption>
 </figure>
 </div>
@@ -529,7 +529,7 @@ Note
 <p>The figure below shows all OMOP tables within the N3C Enclave.</p>
 <div id="fig-understanding-050-lds" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-050-lds.png" class="lightbox" title="Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder" data-gallery="quarto-lightbox-gallery-5"><img src="images/understanding/fig-understanding-050-lds.png" class="img-fluid figure-img" alt="n3c tables"></a></p>
+<p><a href="images/understanding/fig-understanding-050-lds.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder"><img src="images/understanding/fig-understanding-050-lds.png" class="img-fluid figure-img" alt="n3c tables"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.5: Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder</figcaption>
 </figure>
 </div>
@@ -539,7 +539,7 @@ Note
 <p>Tables may contain data from more than one “domain”. There are currently 36 Domains in OMOP; the 5 primary clinical Domains are Drug, Condition, Observation, Procedure, and Measurement, plus others. They classify concepts in the concept table.</p>
 <div id="fig-understanding-060-domains" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-060-domains.png" class="lightbox" title="Listed in decreasing order by the number of concepts for which we have data in N3C" data-gallery="quarto-lightbox-gallery-6"><img src="images/understanding/fig-understanding-060-domains.png" class="img-fluid figure-img" alt="Listed in decreasing order by the number of concepts for which we have data in N3C"></a></p>
+<p><a href="images/understanding/fig-understanding-060-domains.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Listed in decreasing order by the number of concepts for which we have data in N3C"><img src="images/understanding/fig-understanding-060-domains.png" class="img-fluid figure-img" alt="Listed in decreasing order by the number of concepts for which we have data in N3C"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.6: Listed in decreasing order by the number of concepts for which we have data in N3C</figcaption>
 </figure>
 </div>
@@ -633,7 +633,7 @@ Note
 <p>As shown in <a href="#tbl-understanding-concept-set">Table&nbsp;<span>7.1</span></a>, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants. In total, this concept set expression implies nearly a hundred Standard Concepts. These Standard Concepts in turn reflect hundreds of source codes (e.g.&nbsp;ICD-9 and ICD-10 codes) that may appear in the various databases.</p>
 <div id="fig-understanding-080-mi-hierarchy" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-080-mi-hierarchy.png" class="lightbox" title="Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts" data-gallery="quarto-lightbox-gallery-7"><img src="images/understanding/fig-understanding-080-mi-hierarchy.png" class="img-fluid figure-img" alt=""></a></p>
+<p><a href="images/understanding/fig-understanding-080-mi-hierarchy.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts"><img src="images/understanding/fig-understanding-080-mi-hierarchy.png" class="img-fluid figure-img" alt=""></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.7: Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts</figcaption>
 </figure>
 </div>
@@ -662,14 +662,14 @@ Note
 <p>The concept sets already created in the Enclave can be browsed in the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf">concept set browser</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i>, illustrated in <a href="#fig-understanding-090-concept-set-versions">Figure&nbsp;<span>7.8</span></a>. This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition. We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question. A workflow for performing this series of tasks is shown in <a href="#fig-understanding-090-concept-set-versions">Figure&nbsp;<span>7.8</span></a>.</p>
 <div id="fig-understanding-090-concept-set-versions" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-090-concept-set-versions.png" class="lightbox" title="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser" data-gallery="quarto-lightbox-gallery-8"><img src="images/understanding/fig-understanding-090-concept-set-versions.png" class="img-fluid figure-img" alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"></a></p>
+<p><a href="images/understanding/fig-understanding-090-concept-set-versions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"><img src="images/understanding/fig-understanding-090-concept-set-versions.png" class="img-fluid figure-img" alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.8: An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser</figcaption>
 </figure>
 </div>
 <p>When created from scratch, a <em>container</em> is created, so multiple <em>versions</em> of the concept sets can be supported. New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards. Containers are indicated by blue icons; versions, by brown icons, as illustrated in <a href="#fig-understanding-090-concept-set-versions">Figure&nbsp;<span>7.8</span></a>.</p>
 <div id="fig-understanding-100-concept-set-flowsheet" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="lightbox" title="Workflow for finding, extending, and creating concept sets" data-gallery="quarto-lightbox-gallery-9"><img src="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="img-fluid figure-img" alt="Workflow for finding, extending, and creating concept sets"></a></p>
+<p><a href="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Workflow for finding, extending, and creating concept sets"><img src="images/understanding/fig-understanding-100-concept-set-flowsheet.png" class="img-fluid figure-img" alt="Workflow for finding, extending, and creating concept sets"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;7.9: Workflow for finding, extending, and creating concept sets</figcaption>
 </figure>
 </div>
@@ -1319,7 +1319,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":true});</script>
 
 
 

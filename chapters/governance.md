@@ -21,6 +21,13 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Christine Suver, Johanna Loomba
 
+:::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
+
 ## Preamble {#sec-governance-preamble}
 
 N3C is more than simply a data enclave.

@@ -21,6 +21,13 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Shawn O'Neil, Mariam Deacy
 
+:::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
+
 N3C is strongly committed to patient privacy.
 After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it.
 Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.

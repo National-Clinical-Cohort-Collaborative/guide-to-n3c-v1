@@ -44,6 +44,13 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Harold Lehmann, Lisa Eskenazi
 
+:::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
+
 ## Introduction {#sec-understanding-intro}
 
 The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see [The N3C "Enclave" and Data Access](intro.html#sec-intro-enclave) in the Introduction).

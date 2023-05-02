@@ -63,6 +63,13 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Julie McMurry, Jeremy Harper
 
+:::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
+
 ## Publication Committee Process {#sec-publishing-committee}
 
 The Publication Committee is a multidisciplinary team that meets on a weekly basis to evaluate abstracts and manuscripts prior to submission for peer review (and / or preprint).

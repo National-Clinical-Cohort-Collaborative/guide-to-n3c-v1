@@ -42,7 +42,14 @@ csl: ../assets/csl/apa-7e.csl
 ---
 # Understanding the Data {#sec-understanding}
 
-**Chapter Leads:** Harold Lehmann and Lisa Eskenazi
+**Chapter Leads:** Harold Lehmann, Lisa Eskenazi
+
+:::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
 
 ## Introduction {#sec-understanding-intro}
 

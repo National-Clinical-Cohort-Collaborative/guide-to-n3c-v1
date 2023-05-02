@@ -39,6 +39,11 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Will Beasley, Jerrod Anzalone
 
+:::{.callout-note}
+This chapter is being written.
+We hope to complete this chapter during May 2023.
+:::
+
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the life cycle of an example project from onboarding to publishing.
 This path typically takes at least 6 months and 6 collaborators.
 It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers.

@@ -34,6 +34,13 @@ csl: ../assets/csl/apa-7e.csl
 **Chapter Leads**: Sharon Patrick, Suzanne McCahan, Jonathan Emery
 
 :::{.callout-note}
+This chapter is being finalized.
+The content might change a little.
+Most of the remaining work involves formatting and cross references to other chapters.
+We hope to complete this chapter during May 2023.
+:::
+
+:::{.callout-note}
 This chapter is being drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1zOGR2rGGgr1lxP8mV5XmtkuxEZI_R7II>
 

@@ -35,11 +35,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Shawn O'Neil, Saad Ljazouli
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
-
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 
 While live-support options are available, submitting questions via "tickets" (also known as "issues" in the enclave) helps ensure they reach the right person and that questions are logged and tracked.
@@ -128,7 +123,7 @@ Here you will find a link to "Submit a Support Request" that directs you to sele
 
 ![Ticket details](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](#data-use-requests) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](#pprl-data) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request.
 The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
@@ -144,7 +139,7 @@ All are welcome to join, from experienced N3C analysts looking for help with com
 Experienced N3C volunteers are on hand and able to help with most questions.
 They can also refer you to external resources, or suggest submitting a ticket when appropriate.
 Some researchers join just to watch and learn.
-To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](#data-levels) of access.
+To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](access.md#sec-access-background) of access.
 
 ## Training Resources {#sec-support-training}
 
@@ -185,11 +180,11 @@ To contribute to the training portal or other N3C-related education and training
 
 ### Self Guided Tours (Academy) {#sec-support-training-academy}
 
-This platform feature provides step-by-step walkthroughs of individual tools like [Contour](#contour) and [Code Workbooks](#code-workbooks).
+This platform feature provides step-by-step walkthroughs of individual tools like [Contour](tools.md#sec-tools-apps-contour) and [Code Workbooks](tools.md#sec-tools-apps-workbook).
 The Foundry 10X and 20X series are recommended and cover the basic tools researchers will encounter.
 Along the right individual steps walk you through an example workflow or analysis.
 Note that because these tours are not developed by N3C, the example analyses and data will not be N3C-relevant.
-You may also be prompted to create files or work in a "home folder" (which N3C has disabled) or a [project workspace](#project-workspaces) you don't have write permissions to.
+You may also be prompted to create files or work in a "home folder" (which N3C has disabled) or a [project workspace](access.md#sec-access-workspaces) you don't have write permissions to.
 Instead, you can utilize the N3C Training Area (see below).
 
 ![Academy walk-through](images/support/fig-support-150-academy.png){#fig-support-150-academy width=75% fig-alt="Academy walk-through"}
@@ -197,7 +192,7 @@ Instead, you can utilize the N3C Training Area (see below).
 ### N3C Community Notes {#sec-support-training-community}
 
 N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items.
-The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](#knowledge-objects), and [concept sets](#concept-sets).
+The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](tools.md#sec-tools-store), and [concept sets](tools.md#sec-tools-concepts).
 The note overview contains a link whose URL points at this specific note in the application for sharing.
 
 ![N3C Community Notes](images/support/fig-support-160-community-notes.png){#fig-support-160-community-notes width=75% fig-alt="N3C Community Notes"}
@@ -216,7 +211,7 @@ This last entry in the Training Resources page simply redirects to a page descri
 
 ## N3C Training Area {#sec-support-area}
 
-The N3C Training Area is a [project workspace](#project-workspaces) where all N3C users can practice and learn using notional datasets (described below).
+The N3C Training Area is a [project workspace](access.md#sec-access-workspaces) where all N3C users can practice and learn using notional datasets (described below).
 This workspace is also used to organize other training resources (like the Training Portal).
 
 ![Training Area](images/support/fig-support-180-training-area.png){#fig-support-180-training-area width=75% fig-alt="Training Area"}
@@ -226,9 +221,9 @@ Within this folder you will be able to create new analyses, and these will have 
 
 ## Notional Datasets {#sec-support-notional}
 
-OMOP-formatted N3C patient data are protected by a [Data Use Request](#data-use-request) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR.
-The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](#about-the-data) data that do not require a DUR to access.
-They are both available via the [data catalog](#data-catalog) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](#level-one-data), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
+OMOP-formatted N3C patient data are protected by a [Data Use Request](access.md#sec-access-dur) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR.
+The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
+They are both available via the [data catalog](access.md#sec-access-workspaces) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](access.md#sec-access-availability), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
 ![Two sets of synthetic data](images/support/fig-support-190-synthetic-datasets.png){#fig-support-190-synthetic-datasets width=75% fig-alt="Two sets of synthetic data"}
 
@@ -254,7 +249,7 @@ With regard to COVID-19, N3C has modified the original data published by @walono
 
 The Synthea data have an additional benefit of being slightly more aligned with real N3C data for additions beyond the OMOP standard.
 For example, while SynPuf data tables include data partner IDs, Synthea also includes a `manifest` table with mock data partner metadata.
-The Synthea data also include constructed [macrovisit](#macrovisits) information.
+The Synthea data also include constructed [macrovisit](understanding.md#sec-understanding-ehr) information.
 
 ## OHDSI Resources {#sec-support-ohdsi}
 
@@ -304,9 +299,9 @@ They also provide support services as described below.
 ### Data Liaison Services {#sec-support-liaisons-data}
 
 EHR data are complex, more so when they cover data contributed by 75+ sites.
-The Data Liaisons group consist of those most familiar N3C data, including members of the [phenotype](#phenotype) and [ingestion and harmonization](#ingestion-and-harmonization) teams.
+The Data Liaisons group consist of those most familiar with N3C data, including members of the [phenotype and ingestion and harmonization](cycle.md) teams.
 Data Liaisons are subject matter experts in biomedical, translational, clinical data standards and Real-World data utilization to support program investigator analyses.
-Data Liaisons curate and review N3C-recommended [concept sets](#recommended-concept-set) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system.
+Data Liaisons curate and review N3C-recommended [concept sets](tools.md#sec-tools-concepts) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system.
 Potential data quality issues should also be submitted via enclave-internal ticket system for routing to the Data Liaisons for review.
 
 For basic questions about the OMOP common data model, refer to the OHDSI resources, and training portal modules for getting started with OMOP.
@@ -317,7 +312,7 @@ The Data Liaisons team will send a representative to your domain team meetings o
 ### Logic Liaison Services {#sec-support-liaisons-logic}
 
 Logic Liaisons consist of analysts with significant technical expertise for research with N3C data.
-Although they do not develop project-specific research code as a service, they do create [Knowledge Objects](#knowledge-objects) such as reusable code templates and convenient derived datasets.
+Although they do not develop project-specific research code as a service, they do create [Knowledge Objects](tools.md#sec-tools-store) such as reusable code templates and convenient derived datasets.
 Logic Liaison members provide technical support at office hours, and many are active in the `#n3c-analytics` Slack channel.
 
 Logic Liaisons support N3C researchers who are learning to use and adapt the Logic Liaison code fact tables and templates.

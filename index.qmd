@@ -33,7 +33,7 @@ Karen M. Crowley, Shawn T. O'Neil
 @sec-story -- _A Research Story_<br>
 Will Beasley, A. Jerrod Anzalone, Sharon Patrick
 
-@sec-cycle -- _Data Lifecycle - From Patients to N3C Researchers_<br>
+@sec-cycle -- _Data Life Cycle - From Patients to N3C Researchers_<br>
 Stephanie Hong, Bryan Laraway, Xiaohan Tanner Zhang, Maya Choudhury, Sofia Z. Dard
 
 @sec-governance -- _Governance, Leadership, and Operations Structures_<br>
@@ -51,7 +51,7 @@ Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O'Neil, Thomas Richard
 @sec-tools -- _Introducing Enclave Analysis Tools_<br>
 Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O'Neil, Steven G. Johnson
 
-@sec-practices -- _Best Practices for Research Lifecycle_<br>
+@sec-practices -- _Best Practices for Research Life Cycle_<br>
 Harold P. Lehmann, Hytham Sidky, Jimmy Phuong, Kate Bradwell, Kenneth J. Wilkins, Andrea G. Zhou, David Sahner
 
 @sec-publishing -- _Publishing and Sharing Your Work_<br>

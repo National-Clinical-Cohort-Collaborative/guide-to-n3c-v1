@@ -11,8 +11,8 @@ author:
   - name: Mariam Deacy
     affiliation: NIH NCATS
     affiliation-url: https://ncats.nih.gov/
-    # email: mariam.deacy@nih.gov
-    # orcid:
+    email: mariam.deacy@nih.gov
+    orcid: 0000-0001-8307-5208
 
 csl: ../assets/csl/apa-7e.csl
 ---
@@ -20,11 +20,6 @@ csl: ../assets/csl/apa-7e.csl
 # Getting & Managing Data Access {#sec-access}
 
 **Chapter Leads:** Shawn O'Neil, Mariam Deacy
-
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
 
 N3C is strongly committed to patient privacy.
 After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it.
@@ -266,8 +261,7 @@ The specific courses required vary from institution to institution, so check wit
 If your institution does not offer or recommend specific courses, you can utilize the [free course](https://www.hhs.gov/ohrp/education-and-outreach/human-research-protection-training/human-research-protection-foundational-training) provided by Health and Human Services.
 
 ![DUR Human Subjects Research Protection (HSRP) training attestation.
-HSPR training must have been completed within the last three years.](images/access/fig-access-120-dur-hsrp.png){#fig-access-120-dur-hsrp fig-alt="DUR Human Subjects Research Protection (HSRP) training attestation.
-HSPR training must have been completed within the last three years."}
+HSRP training must have been completed within the last three years.](images/access/fig-access-120-dur-hsrp.png){#fig-access-120-dur-hsrp fig-alt="HSRP training attestation."}
 
 In addition to human subjects research protection training, you will need to consider whether your institution requires a letter of determination from your local IRB when using De-Identified data.
 If so, you'll be prompted to upload the letter as a PDF before you can submit the DUR.

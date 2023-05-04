@@ -6,7 +6,7 @@ csl: ../assets/csl/apa-7e.csl
 
 [A. Jerrod Anzalone](https://orcid.org/0000-0000-0000-0000):
 University of Nebraska Medical Center, Department of Neurological Sciences.
-<br>
+<br/>
 Great Plains IDeA-CTR, NIH/NIGMS 5 U54 GM115458.
 
 [William H. Beasley](https://orcid.org/0000-0002-5613-5006):

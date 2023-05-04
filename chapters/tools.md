@@ -91,7 +91,7 @@ Upon approval, you are free to submit to the venue of choice and freely present 
 Data download requests are performed within the Enclave environment, followed by submitting a [Google Form to the Publication Review Committee](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&sa=D&source=docs&ust=1677168810532504&usg=AOvVaw12T-1ZD5cVj92DGadpr1IN).
 
 The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.
-This chapter is best utilized along side the information provided in the next chapter, Best Practices and Important Data Considerations (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
+This chapter is best utilized along side the information provided in the next chapter, Best Practices for the Research Life Cycle (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
 
 ## Using Concept Sets {#sec-tools-concepts}
 
@@ -210,10 +210,10 @@ Additional details around exporting results can be found in the Publishing and S
 Training materials for getting started with Logic Liaison Templates are available [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=26) {{< fa lock title="Link requires an N3C Enclave account" >}} within the Enclave.
 Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.
 
-While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jumpstart on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
+While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump start on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
 You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks.
 The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site.
-Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices and Important Data Considerations (@sec-practices).
+Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (@sec-practices).
 
 ## N3C Enclave Applications {#sec-tools-apps}
 
@@ -238,7 +238,7 @@ As a result of this organization and tracking, the tool facilitates easy transla
 Protocol Pad is the foundation for performing reproducible and repeatable science within the N3C Enclave.
 The templates, checklists, and links to key resources provided within the tool guide you along the path of well structured division of labor and use of best practices when performing research using the observational data in the Enclave.
 The tool also assists your team in keeping the work in alignment with the project.
-A more in depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices and Important Data Considerations chapter (see @sec-practices).-->
+A more in depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
 Documentation on the tool's functionality can be found in this [Quick Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}}
 as well as this more [Detailed Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 

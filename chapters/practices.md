@@ -17,7 +17,7 @@ author:
 csl: ../assets/csl/apa-7e.csl
 ---
 
-# Best Practices and Important Data Considerations {#sec-practices}
+# Best Practices for the Research Life Cycle {#sec-practices}
 
 **Chapter Leads:** Ken Wilkins, Harold Lehmann
 

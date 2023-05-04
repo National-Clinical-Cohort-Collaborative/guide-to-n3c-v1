@@ -301,7 +301,7 @@ If you run into issues or have questions, be sure to submit an [Enclave-internal
 ### Exporting Concept Sets {#sec-publishing-tech-concepts}
 
 As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids representing clinical concepts.
-These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](#concept-set-browser) for details.
+These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](tools.md#sec-tools-concepts) for details.
 
 When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials.
 Fortunately, the concept set browser supports this functionality–when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel." The provided Excel export includes the concept IDs and other relevant information.

@@ -11,8 +11,8 @@ author:
   - name: Mariam Deacy
     affiliation: NIH NCATS
     affiliation-url: https://ncats.nih.gov/
-    # email: mariam.deacy@nih.gov
-    # orcid:
+    email: mariam.deacy@nih.gov
+    orcid: 0000-0001-8307-5208
 
 csl: ../assets/csl/apa-7e.csl
 ---
@@ -20,11 +20,6 @@ csl: ../assets/csl/apa-7e.csl
 # Getting & Managing Data Access {#sec-access}
 
 **Chapter Leads:** Shawn O'Neil, Mariam Deacy
-
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
 
 N3C is strongly committed to patient privacy.
 After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it.

@@ -40,10 +40,8 @@ csl: ../assets/csl/apa-7e.csl
 **Chapter Leads:** Stephanie Hong, Bryan Laraway
 
 :::{.callout-note}
-This chapter is being finalized.
-The content might change a little.
-Most of the remaining work involves formatting and cross references to other chapters.
-We hope to complete this chapter during May 2023.
+This chapter is undergoing final edits, including formatting and cross referencing.
+Edits are expected to complete by June 2023.
 :::
 
 ## Introduction {#sec-cycle-intro}

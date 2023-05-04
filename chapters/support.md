@@ -35,11 +35,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Shawn O'Neil, Saad Ljazouli
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
-
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 
 While live-support options are available, submitting questions via "tickets" (also known as "issues" in the enclave) helps ensure they reach the right person and that questions are logged and tracked.

@@ -210,7 +210,7 @@ Additional details around exporting results can be found in the Publishing and S
 Training materials for getting started with Logic Liaison Templates are available [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=26) {{< fa lock title="Link requires an N3C Enclave account" >}} within the Enclave.
 Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.
 
-While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jumpstart on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
+While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump start on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
 You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks.
 The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site.
 Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (@sec-practices).

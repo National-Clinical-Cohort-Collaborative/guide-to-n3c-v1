@@ -144,7 +144,7 @@ All are welcome to join, from experienced N3C analysts looking for help with com
 Experienced N3C volunteers are on hand and able to help with most questions.
 They can also refer you to external resources, or suggest submitting a ticket when appropriate.
 Some researchers join just to watch and learn.
-To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](#data-levels) of access.
+To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](access.md#sec-access-background) of access.
 
 ## Training Resources {#sec-support-training}
 
@@ -185,7 +185,7 @@ To contribute to the training portal or other N3C-related education and training
 
 ### Self Guided Tours (Academy) {#sec-support-training-academy}
 
-This platform feature provides step-by-step walkthroughs of individual tools like [Contour](#contour) and [Code Workbooks](#code-workbooks).
+This platform feature provides step-by-step walkthroughs of individual tools like [Contour](tools.md#sec-tools-apps-contour) and [Code Workbooks](tools.md#sec-tools-apps-workbook).
 The Foundry 10X and 20X series are recommended and cover the basic tools researchers will encounter.
 Along the right individual steps walk you through an example workflow or analysis.
 Note that because these tours are not developed by N3C, the example analyses and data will not be N3C-relevant.

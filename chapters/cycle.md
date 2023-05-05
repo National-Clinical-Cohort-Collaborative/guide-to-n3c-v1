@@ -226,8 +226,7 @@ Some example of "Never Events" consists of 29 "serious reportable events" groupe
 By removing AHRQ codes indicating data elements deemed to contain or represent sensitive information, it becomes more difficult to identify specific individuals and their healthcare treatments, procedures, and diagnoses.
 The N3C has a list of AHRQ codes to screen out sensitive items, and these records have been removed from the datasets before the weekly releases.
 More detailed information about the list of the serious Never Events can be found [here](https://www.qualityforum.org/Topics/SREs/List_of_SREs.aspx).
-Some example codes for "Never Events are Y62.2.2;Wrong site surgery, T80.29.4; Falls and trauma, W50-W4.5; Pressure ulcers, 998.4; Medication errors,  L89.6; Surgery on the wrong body part or Y63.2.7; Surgery on the wrong patient.
-Note, that these are just a few example codes and not an exhaustive list and different healthcare organizations may classify incidents in different ways.
+Note that different healthcare organizations may classify incidents in different ways.
 
 ## N3C Data Harmonization Workflow {#sec-cycle-workflow}
 

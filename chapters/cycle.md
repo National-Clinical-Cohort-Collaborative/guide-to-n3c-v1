@@ -49,9 +49,11 @@ Edits are expected to complete by June 2023.
 This chapter introduces the National COVID Cohort Collaborative (N3C) data ingestion and harmonization pipeline and explains the technical and research requirements for the central data repository.
 N3C is a centralized data repository and accessible Real World Data (RWD) dataset that facilitates COVID-19 research.
 The COVID-19 pandemic has taken the lives of over 6.8 million people worldwide^[See <https://covid19.who.int/>] and more than 1.1 million in the United States^[See <https://covid.cdc.gov/covid-data-tracker/#datatracker-home>].
+
 N3C is the largest national, publicly available HIPAA-limited dataset in US history, and its innovative data-governance and public-government partnership has made broad sensitive clinical data sharing possible to support COVID-19 research.
 To date, N3C brings together over 23 billion clinical records from over 18 million patients from 75 medical institutions.
 It represents a major achievement in overcoming legal, regulatory, and technical barriers to become the largest and first national, publicly available HIPAA-limited data set.
+
 The N3C has galvanized sharing of data, methods, and artifacts; reproducibility and transparency; and attribution for all types of contributors.
 Furthermore, N3C connects to other patient data repositories through Patient Privacy Preserving Record Linkage (PPRL) and integrates with environmental, social, mortality evidence, viral variant genomic datasets, and CMS (Centers for Medicare & Medicaid Services) datasets to create a holistic view of the patient's healthcare journey.
 The availability of this data has catalyzed over 300+ institutions involving 3,800+ researchers.
@@ -61,6 +63,7 @@ The availability of this data has catalyzed over 300+ institutions involving 3,8
 Disparate data sources from over 75 data partners are ingested, harmonized and merged together to create a central electronic health record (EHR) data repository.
 Manual curation of 2,000 mappings was scaled into a fully automated data pipeline that includes common data model (CDM) schema checks, data conformance checks, correction for missing COVID test measurement codes and data expectation checks within the data ingestion and harmonization process.
 Each data partner's ingested data is merged to create a central data repository, which allows for consistent and efficient data quality reviews.
+
 Beyond well recognized data quality issues, we discovered heuristics relating to each CDM conformance, demographics, COVID tests and associated results, conditions, encounters, measurements, observations, coding completeness, and fitness for use.
 The results of the data quality issues were communicated back to the participating sites and the sites improved their data quality after feedback.
 Furthermore, the N3C central data repository, referred to as the Data Enclave or Enclave, is able to infer missing measurement units as well as correct invalid units of measure for certain laboratory test results through unit inference algorithms.
@@ -117,11 +120,13 @@ The N3C data conformance check is an important process that is used to verify th
 This process ensures that the data meets the source CDM constraints and is formatted and structured correctly according to the CDM version specification set by the CDM model.
 During the data conformance check, the data files are parsed and any empty strings are replaced with null values.
 The columns are also cast to the expected data types as defined by the CDM model specifications.
+
 There are several types of checks that are included in the data conformance process, such as presence of required tables and primary key checks.
 Table checks are used to ensure that all of the required tables (such as demographics, patient_dimension, and patient) are present in the dataset.
 Primary key checks verify that there are no null values or duplicates in the primary key fields, which helps to ensure the integrity and reliability of the data.
 For example, if the primary key field contains duplicates, the build will fail as a result of a failed data health check, and an issue is logged for the triage team to contact the site with reference to the source data that raised the error.
 The integrity of the foreign key reference is also checked and the row is excluded and removed from the ingestion pipeline.
+
 Certain data health checks will fail the build and prevent the data from getting reviewed for release.
 By performing native CDM conformance checks, N3C can ensure that data is fully prepared to be ingested by the next step in the data pipeline.
 
@@ -131,6 +136,7 @@ Among different types of clinical data ingested into N3C, COVID-19 diagnostic te
 To address the urgency of the pandemic, individual institutions have created local names and local codes for those new COVID-19 testings in their EHRs.
 Meanwhile, LOINC, a widely used international standard for lab tests, has responded quickly by developing a new set of standard codes for COVID-19 testings to guide standard coding of COVID-19 testings in clinical settings.
 The N3C Enclave repository contains a supplementary data mapping table to map COVID-19 lab measurement data with missing LOINC codes.
+
 The [COVID-19 TestNorm](https://clamp.uth.edu/covid/loinc.php) tool developed at UT Houston was used to initially prepare the mapping table.
 This tool is available as an open-source package for developers and as an online Web application for end users.
 In addition to the curated mapping table, missing LOINC codes for COVID-19 test measurement data are carefully reviewed by the Data Ingestion & Harmonization (DI&H) team.
@@ -207,21 +213,20 @@ This announcement can be found in the [N3C Training Area](https://unite.nih.gov/
 Furthermore, data is scanned to remove any "Never Events" codes that may be left in the submitted data.
 The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors—such as wrong-site surgery—that should never occur.
 AHRQ codes are "Never Events" that are used by AHRQ to identify specific healthcare treatments, procedures, and diagnoses in data sets.
-Some example of "Never Events" consists of 29 "serious reportable events" grouped into 7 categories:
+"Never Events" consists of 29 "serious reportable events" grouped into the following seven categories:
 
-1. Surgical or procedural events, for example,  Surgery or other invasive procedure performed on the wrong body part
-1. Product or device events, for example, Patient death or serious injury associated with the use of contaminated drugs, devices, or biologics provided by the health care setting
-1. Patient protection events, for example,  Patient death or serious disability associated with patient elopement (disappearance)
-1. Care management events, for example, Patient death or serious injury associated with a medication error
-1. Environmental events, for example, Patient or staff death or serious disability associated with an electric shock in the course of a patient care process in a health care setting
-1. Radiologic events, for example, Death or serious injury of a patient or staff associated with introduction of a metallic object into the MRI area
-1. Criminal events, for example, any instance of care ordered by or provided by someone impersonating a physician, nurse, pharmacist, or other licensed health care provider or abduction of a patient/resident of any age
+1. _Surgical or procedural events_, such as surgery or other invasive procedure performed on the wrong body part.
+1. _Product or device events_, such as patient death or serious injury associated with the use of contaminated drugs, devices, or biologics provided by the health care setting.
+1. _Patient protection events_, such as patient death or serious disability associated with patient elopement (disappearance).
+1. _Care management events_, such as patient death or serious injury associated with a medication error.
+1. _Environmental events_, such as patient or staff death or serious disability associated with an electric shock in the course of a patient care process in a health care setting.
+1. _Radiologic events_, such as death or serious injury of a patient or staff associated with introduction of a metallic object into the MRI area.
+1. _Criminal events_, such as any instance of care ordered by or provided by someone impersonating a physician, nurse, pharmacist, or other licensed health care provider or abduction of a patient/resident of any age.
 
 By removing AHRQ codes indicating data elements deemed to contain or represent sensitive information, it becomes more difficult to identify specific individuals and their healthcare treatments, procedures, and diagnoses.
 The N3C has a list of AHRQ codes to screen out sensitive items, and these records have been removed from the datasets before the weekly releases.
 More detailed information about the list of the serious Never Events can be found [here](https://www.qualityforum.org/Topics/SREs/List_of_SREs.aspx).
-Some example codes for "Never Events are Y62.2.2;Wrong site surgery, T80.29.4; Falls and trauma, W50-W4.5; Pressure ulcers, 998.4; Medication errors,  L89.6; Surgery on the wrong body part or Y63.2.7; Surgery on the wrong patient.
-Note, that these are just a few example codes and not an exhaustive list and different healthcare organizations may classify incidents in different ways.
+Note that different healthcare organizations may classify incidents in different ways.
 
 ## N3C Data Harmonization Workflow {#sec-cycle-workflow}
 
@@ -245,11 +250,11 @@ Furthermore, the same measurement data in different units are also converted to 
 
 This unit-harmonization pipeline consists of several steps:
 
-1. selecting a canonical unit for each measurement variable,
-1. developing a formula for converting data values to this canonical unit,
-1. obtaining a clinical review of each formula,
-1. applying the formula to convert data values in each unit into the target canonical unit, and
-1. removing any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
+1. Select a canonical unit for each measurement variable.
+1. Develop a formula for converting data values to this canonical unit.
+1. Obtain a clinical review of each formula.
+1. Apply the formula to convert data values in each unit into the target canonical unit.
+1. Remove any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
 
 For data with missing units for all the results within a lab test for a particular data partner, N3C compares the values to pooled values from all data partners using the Kolmogorov-Smirnov test.
 
@@ -293,6 +298,7 @@ The figure above shows a screenshot of the Data Quality Portal (showing the chec
 
 The N3C DQP is based on the OHDSI OMOP Data Quality Dashboard (DQD), which provides a range of features and tools for identifying and addressing data quality issues.
 Through queries implemented in the N3C DQP, we are able to quickly assess after every new data build each site's number of  COVID-19 tests and their results, demographic counts by gender, race and ethnicity, counts of visit types, counts and percentages of non-standard concepts found in each domain, implausible death and birth dates, and visits with negative duration.
+
 The DQP is used to determine the coding completeness of the site's data and its overall fitness for use by the research community and whether further data improvement is required before the data can be released for research.
 The combination of both automated and continual assessment of manual data quality checks through DQP enables the scale and rigor required for the N3C research community.
 In addition to the capabilities provided by the DQD, the N3C DQP includes a set of COVID-19-specific data quality checks that focus on the coding of COVID-19 labs, patient encounters, and other data relevant to the SARS-CoV-2 pandemic.
@@ -314,10 +320,12 @@ Figures and tables were created using Palantir's Contour application to provide 
 Site scorecards provide reports to all sites that are released in the N3C Enclave.
 These reports are sent on a biweekly cadence, via the sFTP outgoing folder.
 They are created in an automated fashion and based on the latest data available for the site in the Enclave.
+
 Each site receives two scorecards: a site-specific report and a site-comparison report.
-The site-specific scorecard provides data quality information specific to the site's latest payload.
-The site-comparison scorecard provides useful context via comparisons between the site and other anonymized sites on various metrics.
+The _site-specific_ scorecard provides data quality information specific to the site's latest payload.
+The _site-comparison_ scorecard provides useful context via comparisons between the site and other anonymized sites on various metrics.
 Sites submitting data in the OMOP or PEDSnet CDM receive scorecards with comparisons to other OMOP sites, while sites submitting data in ACT, TriNetX, or PCORnet CDM receive scorecards with comparisons to sites with these non-OMOP data models.
+
 Scorecards focus on several data quality areas including demographics, COVID-19 metrics, visits/encounters, measurements/labs, non-plausible dates such as dates in the distant past or future, use of non-standard concepts, and N3C-specific data enhancements such as social determinants of health and oxygen supplementation device data.
 Sites are also provided with contact information should they have further questions about their scorecard or need help troubleshooting data discrepancies.
 
@@ -366,9 +374,7 @@ These data elements help to create a more comprehensive and rich dataset that ca
 By adding these data elements, sites can contribute to the collective knowledge about COVID-19 and help to inform the development of effective treatments, policies, and strategies to address the pandemic.
 N3C is committed to working closely with participating sites to ensure that the data collection process is efficient and straightforward and that the data is accurately and reliably captured and integrated into the N3C dataset.
 
-![Data Enhancements](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
-
-*Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets.
+![Data Enhancements. Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets.](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
 
 ### Long COVID Clinics {#sec-cycle-enhancements-long}
 
@@ -407,15 +413,15 @@ Once processed, the data is available to researchers in the OMOP NOTE_NLP table.
 
 For more details about the N3C NLP data, including the NLP submission process and Github repository containing tools for processing notes, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/NLP-Submission-Process).
 
-### Oxygen Devices {#sec-cycle-enhancements-oxygen}
+### O<sub>2</sub> Supplement Devices {#sec-cycle-enhancements-oxygen}
 
-Oxygen device data is critical for N3C research, as a significant number of hospitalized COVID-19 patients have required oxygen supplementation and/or ventilation support using oxygen devices or ventilators.
+O<sub>2</sub> device data is critical for N3C research, as a significant number of hospitalized COVID-19 patients have required oxygen supplementation and/or ventilation support using O<sub>2</sub> devices or ventilators.
 However, the current common data model (CDM) does not capture oxygen supplementation with sufficient granularity, which can limit the usefulness of the data for research purposes.
 
-To address this issue, N3C is working to improve the data on oxygen supplementation and ventilation support in the CDM, including by collecting more detailed data on the types and modes of oxygen delivery and ventilation support that patients receive.
+To address this issue, N3C is working to improve the data on oxygen supplementation and ventilation support in the CDM, including by collecting more detailed data on the types and modes of O<sub>2</sub> delivery and ventilation support that patients receive.
 This will help to provide a more comprehensive and nuanced understanding of the role of oxygen supplementation and ventilation support in the care of hospitalized COVID-19 patients.
 
-For more details about the N3C Oxygen Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
+For more details about the N3C O<sub>2</sub> Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
 
 ### Social Determinants of Health {#sec-cycle-enhancements-sdoh}
 

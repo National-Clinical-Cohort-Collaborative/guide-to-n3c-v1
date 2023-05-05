@@ -375,9 +375,7 @@ These data elements help to create a more comprehensive and rich dataset that ca
 By adding these data elements, sites can contribute to the collective knowledge about COVID-19 and help to inform the development of effective treatments, policies, and strategies to address the pandemic.
 N3C is committed to working closely with participating sites to ensure that the data collection process is efficient and straightforward and that the data is accurately and reliably captured and integrated into the N3C dataset.
 
-![Data Enhancements](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
-
-*Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets.
+![Data Enhancements. Clinical Data contains data enhancements from data partners which includes long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets.](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
 
 ### Long COVID Clinics {#sec-cycle-enhancements-long}
 
@@ -416,15 +414,15 @@ Once processed, the data is available to researchers in the OMOP NOTE_NLP table.
 
 For more details about the N3C NLP data, including the NLP submission process and Github repository containing tools for processing notes, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/NLP-Submission-Process).
 
-### Oxygen Devices {#sec-cycle-enhancements-oxygen}
+### O<sub>2</sub> Supplement Devices {#sec-cycle-enhancements-oxygen}
 
-Oxygen device data is critical for N3C research, as a significant number of hospitalized COVID-19 patients have required oxygen supplementation and/or ventilation support using oxygen devices or ventilators.
+O<sub>2</sub> device data is critical for N3C research, as a significant number of hospitalized COVID-19 patients have required oxygen supplementation and/or ventilation support using O<sub>2</sub> devices or ventilators.
 However, the current common data model (CDM) does not capture oxygen supplementation with sufficient granularity, which can limit the usefulness of the data for research purposes.
 
-To address this issue, N3C is working to improve the data on oxygen supplementation and ventilation support in the CDM, including by collecting more detailed data on the types and modes of oxygen delivery and ventilation support that patients receive.
+To address this issue, N3C is working to improve the data on oxygen supplementation and ventilation support in the CDM, including by collecting more detailed data on the types and modes of O<sub>2</sub> delivery and ventilation support that patients receive.
 This will help to provide a more comprehensive and nuanced understanding of the role of oxygen supplementation and ventilation support in the care of hospitalized COVID-19 patients.
 
-For more details about the N3C Oxygen Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
+For more details about the N3C O<sub>2</sub> Device data please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-O2-Device-(Tier-1)).
 
 ### Social Determinants of Health {#sec-cycle-enhancements-sdoh}
 

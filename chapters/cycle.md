@@ -250,11 +250,11 @@ Furthermore, the same measurement data in different units are also converted to 
 
 This unit-harmonization pipeline consists of several steps:
 
-1. selecting a canonical unit for each measurement variable,
-1. developing a formula for converting data values to this canonical unit,
-1. obtaining a clinical review of each formula,
-1. applying the formula to convert data values in each unit into the target canonical unit, and
-1. removing any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
+1. Select a canonical unit for each measurement variable.
+1. Develop a formula for converting data values to this canonical unit.
+1. Obtain a clinical review of each formula.
+1. Apply the formula to convert data values in each unit into the target canonical unit.
+1. Remove any rows containing harmonized values that fall outside of accepted value ranges for the measurement.
 
 For data with missing units for all the results within a lab test for a particular data partner, N3C compares the values to pooled values from all data partners using the Kolmogorov-Smirnov test.
 

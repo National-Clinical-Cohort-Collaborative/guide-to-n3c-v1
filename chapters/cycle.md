@@ -213,15 +213,15 @@ This announcement can be found in the [N3C Training Area](https://unite.nih.gov/
 Furthermore, data is scanned to remove any "Never Events" codes that may be left in the submitted data.
 The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors—such as wrong-site surgery—that should never occur.
 AHRQ codes are "Never Events" that are used by AHRQ to identify specific healthcare treatments, procedures, and diagnoses in data sets.
-Some example of "Never Events" consists of 29 "serious reportable events" grouped into 7 categories:
+"Never Events" consists of 29 "serious reportable events" grouped into the following seven categories:
 
-1. Surgical or procedural events, for example,  Surgery or other invasive procedure performed on the wrong body part
-1. Product or device events, for example, Patient death or serious injury associated with the use of contaminated drugs, devices, or biologics provided by the health care setting
-1. Patient protection events, for example,  Patient death or serious disability associated with patient elopement (disappearance)
-1. Care management events, for example, Patient death or serious injury associated with a medication error
-1. Environmental events, for example, Patient or staff death or serious disability associated with an electric shock in the course of a patient care process in a health care setting
-1. Radiologic events, for example, Death or serious injury of a patient or staff associated with introduction of a metallic object into the MRI area
-1. Criminal events, for example, any instance of care ordered by or provided by someone impersonating a physician, nurse, pharmacist, or other licensed health care provider or abduction of a patient/resident of any age
+1. _Surgical or procedural events_, such as surgery or other invasive procedure performed on the wrong body part.
+1. _Product or device events_, such as patient death or serious injury associated with the use of contaminated drugs, devices, or biologics provided by the health care setting.
+1. _Patient protection events_, such as patient death or serious disability associated with patient elopement (disappearance).
+1. _Care management events_, such as patient death or serious injury associated with a medication error.
+1. _Environmental events_, such as patient or staff death or serious disability associated with an electric shock in the course of a patient care process in a health care setting.
+1. _Radiologic events_, such as death or serious injury of a patient or staff associated with introduction of a metallic object into the MRI area.
+1. _Criminal events_, such as any instance of care ordered by or provided by someone impersonating a physician, nurse, pharmacist, or other licensed health care provider or abduction of a patient/resident of any age.
 
 By removing AHRQ codes indicating data elements deemed to contain or represent sensitive information, it becomes more difficult to identify specific individuals and their healthcare treatments, procedures, and diagnoses.
 The N3C has a list of AHRQ codes to screen out sensitive items, and these records have been removed from the datasets before the weekly releases.

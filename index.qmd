@@ -4,7 +4,7 @@ Welcome to [*The Researcher's Guide to N3C: A National Resource for Analyzing Re
 Here you will find guidance, information, and pointers to resources for conducting research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
 During a time of isolation and unanswered questions in an emerging pandemic, N3C was born of an urgent need to save lives.
-N3C was created "to acquire and harmonize data across organizations and [provide] a secure data environment to enable transparent and reproducible collaborative research." ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation's largest and most diverse set of de-identified health records to date.
+N3C was created "to acquire and harmonize data across organizations and provide a secure data environment to enable transparent and reproducible collaborative research." ^[See <https://covid.cd2h.org/about>.] Dozens of technical, clinical, and regulatory experts from government agencies, healthcare organizations, academic institutions, and the private sector worked together to build the nation's largest and most diverse set of de-identified health records to date.
 Today, thousands of researchers have actively engaged with N3C resulting in hundreds of scholarly products informing public policy and patient care.
 
 N3C emphasizes community and team science values which are embodied by the structure of the organization and reflected in the following chapters.

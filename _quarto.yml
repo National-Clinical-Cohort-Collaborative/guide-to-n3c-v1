@@ -39,7 +39,8 @@ book:
   # logo: images/n3c-logo-circle-large-0.png
   # logo: images/logo.png
   # favicon: images/logo.png
-  cover-image: images/logo.png
+  cover-image: images/n3c_logo_slim.png
+  # cover-image: images/logo.png
   cover-image-alt: images/n3c-logo-circle-large-0.png
   favicon: images/n3c-logo-circle-large-0.png
   repo-url: https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1

@@ -457,7 +457,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>This chapter introduces tools in the N3C Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community. The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward. It is expected that you know how data are organized in the N3C Enclave, including the OMOP data model, vocabulary, and concept sets (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a> for details).</p>
 <div id="fig-tools-010-intro-to-tools" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" title="High-level overview of an N3C project" data-gallery="quarto-lightbox-gallery-1"><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a></p>
+<p><a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="High-level overview of an N3C project"><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.1: High-level overview of an N3C project</figcaption>
 </figure>
 </div>
@@ -474,7 +474,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>As discussed in the previous chapter Understanding the Data (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model. By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.</p>
 <div id="fig-tools-020-concept-home" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" title="Concept Set Browser Homepage" data-gallery="quarto-lightbox-gallery-2"><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a></p>
+<p><a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Concept Set Browser Homepage"><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.2: Concept Set Browser Homepage</figcaption>
 </figure>
 </div>
@@ -482,7 +482,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Once concept sets have been identified for use in your analysis through the Concept Set Browser, the concept set members table becomes the link between concepts and the encompassing concept set as shown by <a href="#fig-tools-030-concept-table">Figure&nbsp;<span>8.3</span></a>. You then have to “point” the code to the concept set members table to access this linkage. Once this has been accomplished, the choice becomes using the most recent version of a concept set (<code>concept_set_members.concept_set_name where most_recent_version = TRUE</code>) or using a specific version of the concept set (<code>concept_set_members.codeset_id = {codeset id value}</code>). While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.</p>
 <div id="fig-tools-030-concept-table" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" title="concept_set_members table" data-gallery="quarto-lightbox-gallery-3"><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a></p>
+<p><a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="concept_set_members table"><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.3: <code>concept_set_members</code> table</figcaption>
 </figure>
 </div>
@@ -502,7 +502,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Depending on the author’s intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset. The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding. Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts. A few helpful starter templates are those produced by the Logic Liaisons (see the <a href="../chapters/support.html#sec-support-liaisons-logic">Logic Liaison Services</a> section in <a href="support.html"><span>Chapter&nbsp;11</span></a>), some of which can be seen in <a href="#fig-tools-040-knowledge-store-homepage">Figure&nbsp;<span>8.4</span></a>.</p>
 <div id="fig-tools-040-knowledge-store-homepage" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" title="N3C Knowledge Store Homepage" data-gallery="quarto-lightbox-gallery-4"><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a></p>
+<p><a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="N3C Knowledge Store Homepage"><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.4: N3C Knowledge Store Homepage</figcaption>
 </figure>
 </div>
@@ -513,14 +513,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by <a href="#fig-tools-050-knowledge-store-example">Figure&nbsp;<span>8.5</span></a>. It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project specific version of the fact tables. The <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&amp;view=focus">SDoH Variables ALL PATIENTS</a> <i class="fa-solid fa-lock" title="Link requires an N3C Enclave account" aria-label="lock"></i> template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient. Because joining this data requires a valid five digit zip code, these fields are only available for patients with a five digit zip code in Level 3 (LDS) data.</p>
 <div id="fig-tools-050-knowledge-store-example" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" title="Example Logic Liaison Fact Table Template Knowledge Object" data-gallery="quarto-lightbox-gallery-5"><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a></p>
+<p><a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Example Logic Liaison Fact Table Template Knowledge Object"><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object</figcaption>
 </figure>
 </div>
 <p>The Logic Liaisons have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. <a href="#fig-tools-060-ll-template-1">Figure&nbsp;<span>8.6</span></a> depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.</p>
 <div id="fig-tools-060-ll-template-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" title="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates" data-gallery="quarto-lightbox-gallery-6"><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a></p>
+<p><a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates</figcaption>
 </figure>
 </div>
@@ -540,7 +540,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p><a href="#fig-tools-070-ll-template-2">Figure&nbsp;<span>8.7</span></a> is a continuation of <a href="#fig-tools-030-concept-table">Figure&nbsp;<span>8.3</span></a> to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.</p>
 <div id="fig-tools-070-ll-template-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" title="Example Application of Logic Liaison Ancillary Quality Templates" data-gallery="quarto-lightbox-gallery-7"><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a></p>
+<p><a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Example Application of Logic Liaison Ancillary Quality Templates"><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates</figcaption>
 </figure>
 </div>
@@ -566,7 +566,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-080-protocol-pad" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" title="N3C Protocol Pad Homepage" data-gallery="quarto-lightbox-gallery-8"><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a></p>
+<p><a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="N3C Protocol Pad Homepage"><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.8: N3C Protocol Pad Homepage</figcaption>
 </figure>
 </div>
@@ -585,7 +585,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-090-contour" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-090-contour.png" class="lightbox" title="Example Contour Analysis" data-gallery="quarto-lightbox-gallery-9"><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a></p>
+<p><a href="images/tools/fig-tools-090-contour.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Example Contour Analysis"><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.9: Example Contour Analysis</figcaption>
 </figure>
 </div>
@@ -610,13 +610,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. <a href="#fig-tools-100-transforms-abstract">Figure&nbsp;<span>8.10</span></a> shows an abstract version of a Code Workbook, while <a href="#fig-tools-110-transforms-example">Figure&nbsp;<span>8.11</span></a> is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation <em>one or more tables are specified as the input</em> and are transformed into a single output table (<a href="#fig-tools-100-transforms-abstract">Figure&nbsp;<span>8.10</span></a>). Multiple transformations can also be strung together (<a href="#fig-tools-110-transforms-example">Figure&nbsp;<span>8.11</span></a>) to create an analysis pipeline (see Foundry’s <a href="https://www.palantir.com/docs/foundry/building-pipelines/overview/">Anatomy of a Data Pipeline</a> module for more detailed information, as well as <a href="practices.html"><span>Chapter&nbsp;9</span></a>). In Code Workbook, <em>the primary and required output of a transformation is always a single table</em>; however, visualizations such as graphs and charts can also be generated and saved along the way. Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.</p>
 <div id="fig-tools-100-transforms-abstract" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" title="Abstracted view of data transforms" data-gallery="quarto-lightbox-gallery-10"><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a></p>
+<p><a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Abstracted view of data transforms"><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.10: Abstracted view of data transforms</figcaption>
 </figure>
 </div>
 <div id="fig-tools-110-transforms-example" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" title="Example Data Transformation Pipeline in Code Workbook" data-gallery="quarto-lightbox-gallery-11"><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a></p>
+<p><a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Example Data Transformation Pipeline in Code Workbook"><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook</figcaption>
 </figure>
 </div>
@@ -638,7 +638,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Because the <em>master</em> branch can change in the interval between you creating a branch and merging it back in, it is important to preview merge changes to ensure that the branch’s contributions are both correct and compatible with the current state of the <em>master</em> branch. However, note that your branch will be automatically deleted after it is merged, which is an important difference from the normal Git behavior. Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, you can create a code branch in which all input datasets are set to the same version release (as shown in <a href="#fig-tools-120-release-pin">Figure&nbsp;<span>8.12</span></a>) to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User-generated datasets are set to the same branch as the Code Workbook in which they were created. Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.</p>
 <div id="fig-tools-120-release-pin" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" title="Pinning to an input dataset’s release version" data-gallery="quarto-lightbox-gallery-12"><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a></p>
+<p><a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Pinning to an input dataset’s release version"><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.12: Pinning to an input dataset’s release version</figcaption>
 </figure>
 </div>
@@ -655,7 +655,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-130-code-repo" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" title="Example Code Repository" data-gallery="quarto-lightbox-gallery-13"><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a></p>
+<p><a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Example Code Repository"><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.13: Example Code Repository</figcaption>
 </figure>
 </div>
@@ -681,7 +681,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-140-fusion" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-140-fusion.png" class="lightbox" title="Example Fusion Sheet" data-gallery="quarto-lightbox-gallery-14"><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a></p>
+<p><a href="images/tools/fig-tools-140-fusion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Example Fusion Sheet"><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.14: Example Fusion Sheet</figcaption>
 </figure>
 </div>
@@ -700,7 +700,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-150-notepad" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-150-notepad.png" class="lightbox" title="Example Notepad Document" data-gallery="quarto-lightbox-gallery-15"><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a></p>
+<p><a href="images/tools/fig-tools-150-notepad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Example Notepad Document"><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.15: Example Notepad Document</figcaption>
 </figure>
 </div>
@@ -718,7 +718,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ul>
 <div id="fig-tools-160-data-lineage" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" title="Example Data Lineage Visualization" data-gallery="quarto-lightbox-gallery-16"><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a></p>
+<p><a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Example Data Lineage Visualization"><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;8.16: Example Data Lineage Visualization</figcaption>
 </figure>
 </div>
@@ -1124,7 +1124,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":true});</script>
 
 
 

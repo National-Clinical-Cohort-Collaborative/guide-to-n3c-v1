@@ -78,7 +78,7 @@ It is Federal Risk and Authorization Management Program (FedRAMP) compliant.
 As data is transferred into the N3C Data Enclave for processing, the governance team receives secure messages regarding this process for audit purposes.
 Once the data is transferred to the Enclave the automated pipeline is triggered to process the data through the data ingestion and harmonization pipeline.
 
-![Figure 3.1: N3C Data Pipeline: Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Enclave and harmonized in to the OMOP CDM. ](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
+![N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Enclave and harmonized in to the OMOP CDM.](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
 
 ### N3C Data Ingestion Pipeline Workflow {#sec-cycle-overview-ingestion}
 
@@ -96,7 +96,7 @@ The N3C Data ingestion pipeline consists of the following five categories of ste
 1. OMOP CDM conformance check which structures and organizes the data into common domains using common terminology.
 1. Data quality check where the source data terminology is converted to OMOP concepts using the OMOP concept relationships to ensure that the data is consistent and accurate across the domain.
 
-![Figure 3.2: N3C Data Pipeline Workflow: Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages. ](images/cycle/fig-cycle-015-workflow.png){#fig-cycle-015-workflow fig-alt="Pipeline Workflow"}
+![N3C Data Pipeline Workflow: Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.](images/cycle/fig-cycle-015-workflow.png){#fig-cycle-015-workflow fig-alt="Pipeline Workflow"}
 
 Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g. UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm.
 We created a shareable set of crosswalk mappings that are used to convert the value sets, such as gender and race concept sets, from all source CDMs to OMOP concepts along with associated OMOP domain mapping information.
@@ -167,14 +167,14 @@ These CDE mappings include categories such as race, ethnicity, and gender.
 CDM specific CDE values are reviewed and the corresponding list of OMOP concept ids are identified to create a crosswalk mapping table that can be used in the vocabulary transformation step in the pipeline.
 The curated crosswalk mapping table is available in the [N3C GitHub repository](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic/reference_tables).
 
-![Figure 3.3: Static ValueSet N3C Mapping Table: A static value set mapping table is utilized to map values that are well defined by CDM specifications.](images/cycle/fig-cycle-020-mapping-static.png){#fig-cycle-020-mapping-static fig-alt="Pipeline Workflow"}
+![Static ValueSet N3C Mapping Table: A static value set mapping table is utilized to map values that are well defined by CDM specifications.](images/cycle/fig-cycle-020-mapping-static.png){#fig-cycle-020-mapping-static fig-alt="Pipeline Workflow"}
 
 Dynamic crosswalk mapping tables, on the other hand, are created during the transformation process in the pipeline based on the existence of codes that are found in the sites' submitted payload.
 These mappings are created for each data payload to maximize the efficiency of the transformation process.
 For example some sites only submit a handful of distinct COVID-19 lab tests and would only need a short list of entries in the mapping table for the laboratory tests.
 The code used to generate the crosswalk mapping table is also available in the [N3C GitHub repository](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic).
 
-![Figure 3.4: Dynamic N3C Mapping Table: A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.](images/cycle/fig-cycle-030-mapping-dynamic.png){#fig-cycle-030-mapping-dynamic fig-alt="Dynamic N3C Mapping Table"}
+![Dynamic N3C Mapping Table: A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.](images/cycle/fig-cycle-030-mapping-dynamic.png){#fig-cycle-030-mapping-dynamic fig-alt="Dynamic N3C Mapping Table"}
 
 ### OMOP domain mapping {#sec-cycle-overview-domain}
 
@@ -275,9 +275,9 @@ When the data ingestion pipeline is deployed for a new site, it includes a set o
 The DI&H pipeline is run every time a data payload is submitted to N3C, and if the new data doesn't meet the desired data health expectations, the pipeline automatically logs an issue and the pipeline administrators are immediately notified.
 The logged issues are triaged by the DI&H team, and if the issue requires communication with the site to correct, a site buddy is assigned to review the issue details for communication with the site to aid in correcting the site data that raised the data expectation failure.
 
-![Figure 3.7: Automated Data Health Checks: Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners. ](images/cycle/fig-cycle-055-checks-2.png){#fig-cycle-055-checks-2 fig-alt="Data Health Checks 2"}
+![Automated Data Health Checks: Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.](images/cycle/fig-cycle-055-checks-2.png){#fig-cycle-055-checks-2 fig-alt="Data Health Checks 2"}
 
-![Figure 3.8: Data Health Checks and Code Templates : Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are are automatically tracked.](images/cycle/fig-cycle-060-checks-3.png){#fig-cycle-060-checks-3 fig-alt="Data Health Checks 3"}
+![Data Health Checks and Code Templates : Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are are automatically tracked.](images/cycle/fig-cycle-060-checks-3.png){#fig-cycle-060-checks-3 fig-alt="Data Health Checks 3"}
 
 Within N3C, template technology is utilized to deploy the data ingestion pipeline.
 The CDM-specific DI&H pipeline is deployed for a new site using the same data ingestion template written for each source CDM.
@@ -292,7 +292,7 @@ The N3C Data Quality Portal (DQP) is a comprehensive tool and interface develope
 The DQP is only accessible to the ingestion and harmonization team.
 It covers all aspects of data quality across different OMOP domain tables.
 
-![Figure 3.9: Data Quality Portal: The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions. ](images/cycle/fig-cycle-070-dqp-1.png){#fig-cycle-070-dqp-1 fig-alt="Data Quality Portal"}
+![Data Quality Portal: The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions.](images/cycle/fig-cycle-070-dqp-1.png){#fig-cycle-070-dqp-1 fig-alt="Data Quality Portal"}
 
 The figure above shows a screenshot of the Data Quality Portal (showing the checks for the measurement domain).
 
@@ -304,7 +304,7 @@ The combination of both automated and continual assessment of manual data qualit
 In addition to the capabilities provided by the DQD, the N3C DQP includes a set of COVID-19-specific data quality checks that focus on the coding of COVID-19 labs, patient encounters, and other data relevant to the SARS-CoV-2 pandemic.
 These checks help to ensure that the data is accurate, reliable, consistent, and support more comprehensive and informed analysis of the data.
 
-![Figure 3.10: DQP Metrics: The Data Quality Portal also allows for comparison of data quality metric results between data partners.](images/cycle/fig-cycle-075-dqp-2.png){#fig-cycle-075-dqp-2 fig-alt="DQP"}
+![DQP Metrics: The Data Quality Portal also allows for comparison of data quality metric results between data partners.](images/cycle/fig-cycle-075-dqp-2.png){#fig-cycle-075-dqp-2 fig-alt="DQP"}
 
 One unique feature of the DQP is the ability to check distributions and patterns across different sites, which can help to identify and fix any abnormal patterns or anomalies in the data.
 This is particularly important for the N3C centralized data repository, as it enables the team to quickly identify and correct the data issues.
@@ -315,7 +315,7 @@ The DI&H team has created site feedback reports called scorecards that could not
 The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses.
 Figures and tables were created using Palantir's Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.
 
-![Figure 3.11: Site Scorecard: Site scorecards utilize charts and graphical representation of data partner's submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.](images/cycle/fig-cycle-078-scorecard-1.png){#fig-cycle-078-scorecard-1 fig-alt="Site Scorecard 1"}
+![Site Scorecard: Site scorecards utilize charts and graphical representation of data partner's submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.](images/cycle/fig-cycle-078-scorecard-1.png){#fig-cycle-078-scorecard-1 fig-alt="Site Scorecard 1"}
 
 Site scorecards provide reports to all sites that are released in the N3C Enclave.
 These reports are sent on a biweekly cadence, via the sFTP outgoing folder.
@@ -329,7 +329,7 @@ Sites submitting data in the OMOP or PEDSnet CDM receive scorecards with compari
 Scorecards focus on several data quality areas including demographics, COVID-19 metrics, visits/encounters, measurements/labs, non-plausible dates such as dates in the distant past or future, use of non-standard concepts, and N3C-specific data enhancements such as social determinants of health and oxygen supplementation device data.
 Sites are also provided with contact information should they have further questions about their scorecard or need help troubleshooting data discrepancies.
 
-![Figure 3.12: Inpatient Length of Stay Distribution Scorecard: This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites. ](images/cycle/fig-cycle-079-scorecard-2.png){#fig-cycle-079-scorecard-2 fig-alt="Site Scorecard 2"}
+![Inpatient Length of Stay Distribution Scorecard: This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites.](images/cycle/fig-cycle-079-scorecard-2.png){#fig-cycle-079-scorecard-2 fig-alt="Site Scorecard 2"}
 
 The scorecards allow sites to be directly involved in the data quality improvement process by highlighting areas for targeted improvement in their local source data, which would ultimately result in data quality improvements in their N3C payloads.
 Additionally, the scorecards allow the DI&H team to monitor and maintain data quality across subsequent N3C data submissions and prevent any regression on those metrics.
@@ -374,7 +374,7 @@ These data elements help to create a more comprehensive and rich dataset that ca
 By adding these data elements, sites can contribute to the collective knowledge about COVID-19 and help to inform the development of effective treatments, policies, and strategies to address the pandemic.
 N3C is committed to working closely with participating sites to ensure that the data collection process is efficient and straightforward and that the data is accurately and reliably captured and integrated into the N3C dataset.
 
-![Figure 3.14: N3C Data Enhancements:  N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
+![N3C Data Enhancements:  N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.](images/cycle/fig-cycle-080-enhancements.png){#fig-cycle-080-enhancements fig-alt="Data Enhancements"}
 
 ### Long COVID Clinics {#sec-cycle-enhancements-long}
 

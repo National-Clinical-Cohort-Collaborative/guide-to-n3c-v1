@@ -96,7 +96,7 @@ OMOP, along with other data partners from ACT, TriNetX, and PCORI, ingest their 
 The OMOP CDM is an open-source, community standard for observational healthcare data and consists of clinical tables describing conditions and events from patient records and vocabulary tables describing clinical concepts.
 The central table in the OMOP vocabulary system is the table, `concept`.
 
-![Sample rows from the 6.9-million row table of concepts imported from OMOP](images/understanding/fig-understanding-010-concept.png){#fig-understanding-010-concept fig-alt="Sample rows from the 6.9-million row table of concepts imported from OMOP"}
+![Sample rows from the 6.9-million row table of concepts imported from OMOP.](images/understanding/fig-understanding-010-concept.png){#fig-understanding-010-concept fig-alt="Sample rows from the 6.9-million row table of concepts imported from OMOP"}
 
 #### Vocabulary Concepts {#sec-understanding-basics-omop-vocab}
 
@@ -114,13 +114,13 @@ For instance, hypertrophic cardiomyopathy (concept id `4124693`) is a type of ca
 The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table stores these relationships.
 While analysts are welcome to use this table in their queries, there are other approaches to doing the same. (See [concept sets](understanding.md#sec-understanding-sets).)
 
-![A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319](images/understanding/fig-understanding-020-concept-relationship-1.png){#fig-understanding-020-concept-relationship-1 fig-alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"}
+![A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319.](images/understanding/fig-understanding-020-concept-relationship-1.png){#fig-understanding-020-concept-relationship-1 fig-alt="A sample from the 54.4 million-row table imported from OMOP, focused on the cardiomyopathy concept id, 321319"}
 
 Every relationship type connecting two OMOP concepts has a converse.
 In the `concept_relationship` table, this means a parent-child relationship will be represented (redundantly) by two records.
 Hypertrophic cardiomyopathy (concept id 4124693) is a type of cardiomyopathy (concept id 321319):
 
-![The converse representation of @fig-understanding-020-concept-relationship-1 row 47](images/understanding/fig-understanding-030-concept-relationship-2.png){#fig-understanding-030-concept-relationship-2 fig-alt="The converse representation"}
+![The converse representation of @fig-understanding-020-concept-relationship-1 row 47.](images/understanding/fig-understanding-030-concept-relationship-2.png){#fig-understanding-030-concept-relationship-2 fig-alt="The converse representation"}
 
 The hierarchical relationship between the two concepts is represented once (above) with a "Subsumes" record and again (below) with an "Is a" record.
 `concept_relationship` contains only direct relationships between pairs of concepts.
@@ -142,20 +142,20 @@ The OMOP CDM assembles these relationships in the [Standardized vocabulary](http
 These tables are available to N3C researchers, along with the [Standardized clinical data](https://ohdsi.github.io/CommonDataModel/cdm60.html#Clinical_Data_Tables) tables that store the patients' data (expressed using the concept ids).
 Data are available as well in the [Standardized health system](https://ohdsi.github.io/CommonDataModel/cdm60.html#Health_System_Data_Tables), `Payer_plan_period` (not `cost`), and [Standardized derived elements](https://ohdsi.github.io/CommonDataModel/cdm60.html#Standardized_Derived_Elements) tables.
 
-![OMOP [Data model](https://ohdsi.github.io/CommonDataModel)](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
+![OMOP [Data model](https://ohdsi.github.io/CommonDataModel).](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
 
 To learn more about OMOP and get acquainted with the CDM used in the N3C Data Enclave and its functionality, see [OMOP 101: A Crash Course in OMOP Standard Vocabulary](https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b) {{< fa lock title="Link requires an N3C Enclave account" >}} and @sec-support in this guide.
 
 The figure below shows all OMOP tables within the N3C Enclave.
 
-![Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder](images/understanding/fig-understanding-050-lds.png){#fig-understanding-050-lds fig-alt="n3c tables"}
+![Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder.](images/understanding/fig-understanding-050-lds.png){#fig-understanding-050-lds fig-alt="n3c tables"}
 
 #### Domains {#sec-understanding-basics-omop-domains}
 
 Tables may contain data from more than one "domain". There are currently 36 Domains in OMOP; the 5 primary clinical Domains are Drug, Condition, Observation, Procedure, and Measurement, plus others.
 They classify concepts in the concept table.
 
-![Listed in decreasing order by the number of concepts for which we have data in N3C](images/understanding/fig-understanding-060-domains.png){#fig-understanding-060-domains fig-alt="Listed in decreasing order by the number of concepts for which we have data in N3C"}
+![Listed in decreasing order by the number of concepts for which we have data in N3C.](images/understanding/fig-understanding-060-domains.png){#fig-understanding-060-domains fig-alt="Listed in decreasing order by the number of concepts for which we have data in N3C"}
 
 #### Vocabulary Updates {#sec-understanding-basics-omop-updates}
 
@@ -233,7 +233,7 @@ As shown in @tbl-understanding-concept-set, this will include "Myocardial infarc
 In total, this concept set expression implies nearly a hundred Standard Concepts.
 These Standard Concepts in turn reflect hundreds of source codes (e.g. ICD-9 and ICD-10 codes) that may appear in the various databases.
 
-![Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts](images/understanding/fig-understanding-080-mi-hierarchy.png){#fig-understanding-080-mi-hierarchy fig-alt=""}
+![Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts.](images/understanding/fig-understanding-080-mi-hierarchy.png){#fig-understanding-080-mi-hierarchy fig-alt=""}
 
 ATLAS is used by the OHDSI community to construct concept sets.
 Best practice is for each research institution to have its own CDM instance.
@@ -288,13 +288,13 @@ The concept sets already created in the Enclave can be browsed in the [concept s
 We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question.
 A workflow for performing this series of tasks is shown in @fig-understanding-090-concept-set-versions.
 
-![An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser](images/understanding/fig-understanding-090-concept-set-versions.png){#fig-understanding-090-concept-set-versions fig-alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"}
+![An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser.](images/understanding/fig-understanding-090-concept-set-versions.png){#fig-understanding-090-concept-set-versions fig-alt="An illustration of the Myocardial Infarction concept set and container and versions in the concept set browser"}
 
 When created from scratch, a _container_ is created, so multiple _versions_ of the concept sets can be supported.
 New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards.
 Containers are indicated by blue icons; versions, by brown icons, as illustrated in @fig-understanding-090-concept-set-versions.
 
-![Workflow for finding, extending, and creating concept sets](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
+![Workflow for finding, extending, and creating concept sets.](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
 
 *New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript
 

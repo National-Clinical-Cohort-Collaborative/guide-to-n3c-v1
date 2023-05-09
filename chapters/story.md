@@ -49,7 +49,7 @@ This path typically takes at least 6 months and 6 collaborators.
 It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers.
 Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.
 
-![Path of a typical N3C project](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Path of a typical N3C project"}
+![Path of a typical N3C project.](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Path of a typical N3C project"}
 
 Suppose you are starting a project by yourself.
 In that case, the N3C ecosystem of researchers and resources is at your fingertips.
@@ -149,7 +149,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 After some thought, the investigator puts together a research protocol and submits a DUR in N3C.
 They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
 
-![Submitted Data Use Request](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
+![Submitted Data Use Request.](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
 
 ## Team building & collaborating {#sec-story-team}
 
@@ -164,7 +164,7 @@ Ideally a team has at least, as shown in @fig-story-030-team-formation, members 
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
 
-![Typical N3C Team Composition](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
+![Typical N3C Team Composition.](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
 
 N3C teams have some differences from conventional research teams at single sites.
 Some trends we have noticed are:

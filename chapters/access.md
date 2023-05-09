@@ -87,8 +87,7 @@ The previously-generated datasets are still available for use however, and gaini
 
 To give a sneak preview of the primary N3C data format, here's a snapshot of a few columns of notional (_fake_) data in OMOP format from the `condition_occurrence` table:
 
-![A subset of rows and columns for mock condition_occurrence data.
-Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source.](images/access/fig-access-010-condition_occurrence.png){#fig-access-010-condition_occurrence fig-alt="A subset of rows and columns for mock condition_occurrence data.
+![A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source.](images/access/fig-access-010-condition_occurrence.png){#fig-access-010-condition_occurrence fig-alt="A subset of rows and columns for mock condition_occurrence data.
 Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source."}
 
 Notice in particular the columns for `data_partner_id` (a pseudo-random identifier assigned to each data partner), `condition_concept_id` (the OMOP identifier uniquely describing the condition used for data filtering and analysis), and `condition_concept_name` (the human-readable version of `condition_concept_id`, used for convenience but not for data filtering).
@@ -98,8 +97,7 @@ Other OMOP tables link records by shared columns; here's a few columns from the 
 
 Some other tables available with Level 3 data are specific to N3C; here's a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
 
-![An example of the N3C-specific `manifest` table.
-This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table.
+![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table.
 This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was."}
 
 ### PPRL Data {#sec-access-background-pprl}
@@ -130,8 +128,7 @@ While researchers are not able to modify these permissions themselves, understan
 
 Data management in the Enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
 
-![Project workspace browser.
-Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser.
+![Project workspace browser. Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser.
 Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.'}
 
 Workspaces are used for multiple purposes.
@@ -283,8 +280,7 @@ These provide additional mortality information, viral variant records, and claim
 
 A Level 3 DUR additionally requires a letter of determination from the submitter's local IRB:
 
-![The lead (submitting) investigator must supply an IRB letter of determination from their local institution.
-Collaborators from the same institution as the lead aren't required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.](images/access/fig-access-150-dur-level3-irb.png){#fig-access-150-dur-level3-irb fig-alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution.
+![The lead (submitting) investigator must supply an IRB letter of determination from their local institution.  Collaborators from the same institution as the lead aren't required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.](images/access/fig-access-150-dur-level3-irb.png){#fig-access-150-dur-level3-irb fig-alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution.
 Collaborators from the same institution as the lead aren't required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB."}
 
 Note that when requesting access to PPRL datasets, _both the Research Project Rationale (reviewed by the DAC) and the IRB letter of determination should address the need for the PPRL datasets requested._ Failure to adequately justify the use of PPRL datasets may result in denial of the DUR, or approval with lack of PPRL dataset access.

@@ -108,7 +108,7 @@ Seven principles summarize the Community Guiding Principles:
   Follow proper communication etiquette.
   Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.
 
-![N3C shared Governance initiatives with sign-off responsibility represented](images/governance/fig-governance-010-shared.png){#fig-governance-010-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
+![N3C shared Governance initiatives with sign-off responsibility represented.](images/governance/fig-governance-010-shared.png){#fig-governance-010-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 
 ## Ethical oversight {#sec-governance-ethics}
 
@@ -150,7 +150,7 @@ Users must submit a new DUR for every separate study. (See Chapters [-@sec-onboa
 There are three levels of data access commensurate with the sensitivity of the data.
 See @sec-access for more details about these levels.
 
-![Data Tiers](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
+![Data Tiers.](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
 
 Access to each data level requires approval from the Data Access Committee.
 In addition, investigators requesting access to level 3 data must submit proof of IRB approval from their institution or an independent accredited IRB for their intended use.

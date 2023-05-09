@@ -39,11 +39,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Stephanie Hong, Bryan Laraway
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
-
 ## Introduction {#sec-cycle-intro}
 
 This chapter introduces the National COVID Cohort Collaborative (N3C) data ingestion and harmonization pipeline and explains the technical and research requirements for the central data repository.

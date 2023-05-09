@@ -51,7 +51,7 @@ This chapter introduces tools in the N3C Enclave used to analyze data, view resu
 The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward.
 It is expected that you know how data are organized in the N3C Enclave, including the OMOP data model, vocabulary, and concept sets (see @sec-understanding for details).
 
-![High-level overview of an N3C project](images/tools/fig-tools-010-intro-to-tools.png){#fig-tools-010-intro-to-tools fig-alt="High-level overview of an N3C project"}
+![High-level overview of an N3C project.](images/tools/fig-tools-010-intro-to-tools.png){#fig-tools-010-intro-to-tools fig-alt="High-level overview of an N3C project"}
 
 Due to the complexities of analyzing large clinical datasets, such as that compiled in the N3C Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question.  @fig-tools-010-intro-to-tools provides a high-level overview of the process behind forming a team and performing research using the N3C Enclave, along with the recommended field expertise needed during each phase.
 It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases.
@@ -98,7 +98,7 @@ This chapter is best utilized along side the information provided in the next ch
 As discussed in the previous chapter Understanding the Data (see @sec-understanding), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model.
 By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.
 
-![Concept Set Browser Homepage](images/tools/fig-tools-020-concept-home.png){#fig-tools-020-concept-home fig-alt="Concept Set Browser Homepage"}
+![Concept Set Browser Homepage.](images/tools/fig-tools-020-concept-home.png){#fig-tools-020-concept-home fig-alt="Concept Set Browser Homepage"}
 
 The Concept Set Browser shown in @fig-tools-020-concept-home is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 For more details around the process of concept set creation, read the Concept Sets section in @sec-understanding.
@@ -114,7 +114,7 @@ You then have to "point" the code to the concept set members table to access thi
 Once this has been accomplished, the choice becomes using the most recent version of a concept set (`concept_set_members.concept_set_name where most_recent_version = TRUE`) or using a specific version of the concept set (`concept_set_members.codeset_id = {codeset id value}`).
 While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.
 
-![`concept_set_members` table](images/tools/fig-tools-030-concept-table.png){#fig-tools-030-concept-table fig-alt="Concept_set_members"}
+![`concept_set_members` table.](images/tools/fig-tools-030-concept-table.png){#fig-tools-030-concept-table fig-alt="Concept_set_members"}
 
 Referring to a concept set by name and using the most recent version is often the preferred method for concept sets marked as N3C Recommended since these concept sets can only be updated by N3C core contributors after they have gone through a validation process which has been described in the previous chapter, [Understanding the Data](understanding.md).
 
@@ -147,7 +147,7 @@ The code templates themselves can also be imported and customized to produce a d
 Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts.
 A few helpful starter templates are those produced by the Logic Liaisons (see the [Logic Liaison Services](support.md#sec-support-liaisons-logic) section in @sec-support), some of which can be seen in @fig-tools-040-knowledge-store-homepage.
 
-![N3C Knowledge Store Homepage](images/tools/fig-tools-040-knowledge-store-homepage.png){#fig-tools-040-knowledge-store-homepage fig-alt="N3C Knowledge Store Homepage"}
+![N3C Knowledge Store Homepage.](images/tools/fig-tools-040-knowledge-store-homepage.png){#fig-tools-040-knowledge-store-homepage fig-alt="N3C Knowledge Store Homepage"}
 
 ### Logic Liaison Fact Tables and Templates {#sec-tools-store-ll}
 
@@ -162,11 +162,11 @@ It is recommended you first open the README and example code workbooks to see ho
 The [SDoH Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient.
 Because joining this data requires a valid five digit zip code, these fields are only available for patients with a five digit zip code in Level 3 (LDS) data.
 
-![Example Logic Liaison Fact Table Template Knowledge Object](images/tools/fig-tools-050-knowledge-store-example.png){#fig-tools-050-knowledge-store-example fig-alt="Example Logic Liaison Fact Table Template Knowledge Object"}
+![Example Logic Liaison Fact Table Template Knowledge Object.](images/tools/fig-tools-050-knowledge-store-example.png){#fig-tools-050-knowledge-store-example fig-alt="Example Logic Liaison Fact Table Template Knowledge Object"}
 
 The Logic Liaisons have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. @fig-tools-060-ll-template-1 depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.
 
-![Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates](images/tools/fig-tools-060-ll-template-1.png){#fig-tools-060-ll-template-1 fig-alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"}
+![Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.](images/tools/fig-tools-060-ll-template-1.png){#fig-tools-060-ll-template-1 fig-alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"}
 
 The data quality templates provide a variety of data tables and visualizations.
 The first two of which provide a method for evaluating overall quality of the harmonized data ingested from sites.
@@ -196,7 +196,7 @@ Once the main fact table templates mentioned earlier this section have been appl
 
 @fig-tools-070-ll-template-2 is a continuation of @fig-tools-030-concept-table to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.
 
-![Example Application of Logic Liaison Ancillary Quality Templates](images/tools/fig-tools-070-ll-template-2.png){#fig-tools-070-ll-template-2 fig-alt="Example Application of Logic Liaison Ancillary Quality Templates"}
+![Example Application of Logic Liaison Ancillary Quality Templates.](images/tools/fig-tools-070-ll-template-2.png){#fig-tools-070-ll-template-2 fig-alt="Example Application of Logic Liaison Ancillary Quality Templates"}
 
 The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question specific facts by site.
 
@@ -228,7 +228,7 @@ N3C Documentation: [Quick Start Guide](https://unite.nih.gov/workspace/notepad/v
 * Promote collaboration, organize work, and translation to final manuscript
 * Methodology checklist
 
-![N3C Protocol Pad Homepage](images/tools/fig-tools-080-protocol-pad.png){#fig-tools-080-protocol-pad fig-alt="N3C Protocol Pad Homepage"}
+![N3C Protocol Pad Homepage.](images/tools/fig-tools-080-protocol-pad.png){#fig-tools-080-protocol-pad fig-alt="N3C Protocol Pad Homepage"}
 
 Before diving into an analysis, it is highly recommended that you use N3C's Protocol Pad shown in @fig-tools-080-protocol-pad to organize your thoughts and path forward.
 Research studies can span many months and pass through the hands of many team members before reaching a stage where you may want to share the results through publication or other approved means.
@@ -252,7 +252,7 @@ Foundry Documentation: [Contour Overview](https://www.palantir.com/docs/foundry/
 * Allows customization with Contour's expression language
 * Dashboard development
 
-![Example Contour Analysis](images/tools/fig-tools-090-contour.png){#fig-tools-090-contour fig-alt="Example Contour Analysis"}
+![Example Contour Analysis.](images/tools/fig-tools-090-contour.png){#fig-tools-090-contour fig-alt="Example Contour Analysis"}
 
 The Contour application is a programming-free interface to the N3C Enclave that allows those with limited knowledge of Python, R, and SQL to create top-down analysis pipelines in a point-and-click fashion, as well as generate dynamically updated dashboards.
 A Contour analysis starts by specifying the path to the input dataset as shown in @fig-tools-090-contour.
@@ -294,9 +294,9 @@ Multiple transformations can also be strung together (@fig-tools-110-transforms-
 In Code Workbook, _the primary and required output of a transformation is always a single table_; however, visualizations such as graphs and charts can also be generated and saved along the way.
 Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.
 
-![Abstracted view of data transforms](images/tools/fig-tools-100-transforms-abstract.png "image_tooltip"){#fig-tools-100-transforms-abstract fig-alt="Abstracted view of data transforms"}
+![Abstracted view of data transforms.](images/tools/fig-tools-100-transforms-abstract.png "image_tooltip"){#fig-tools-100-transforms-abstract fig-alt="Abstracted view of data transforms"}
 
-![Example Data Transformation Pipeline in Code Workbook](images/tools/fig-tools-110-transforms-example.png){#fig-tools-110-transforms-example fig-alt="Example Data Transformation Pipeline in Code Workbook"}
+![Example Data Transformation Pipeline in Code Workbook.](images/tools/fig-tools-110-transforms-example.png){#fig-tools-110-transforms-example fig-alt="Example Data Transformation Pipeline in Code Workbook"}
 
 #### Types of Transforms {#sec-tools-apps-workbook-transform}
 
@@ -346,7 +346,7 @@ Because the OMOP and N3C-curated datasets are also versioned, you can create a c
 User-generated datasets are set to the same branch as the Code Workbook in which they were created.
 Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.
 
-![Pinning to an input dataset's release version](images/tools/fig-tools-120-release-pin.png){#fig-tools-120-release-pin fig-alt="Pinning to an input dataset's release version"}
+![Pinning to an input dataset's release version.](images/tools/fig-tools-120-release-pin.png){#fig-tools-120-release-pin fig-alt="Pinning to an input dataset's release version"}
 
 Palantir has created extensive [documentation](https://www.palantir.com/docs/foundry/code-workbook/overview/) of the Code Workbook application including tutorials.
 N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Enclave account" >}}.
@@ -359,7 +359,7 @@ Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/
 * Code reuse across projects
 * Built in version control
 
-![Example Code Repository](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
+![Example Code Repository.](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
 
 Code Repositories shown in @fig-tools-130-code-repo are available within the N3C enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
 Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates.
@@ -392,7 +392,7 @@ Foundry Documentation: [Fusion Sheet Overview](https://www.palantir.com/docs/fou
 * Create charts
 * Allow customization and flexibility
 
-![Example Fusion Sheet](images/tools/fig-tools-140-fusion.png){#fig-tools-140-fusion fig-alt="Example Fusion Sheet"}
+![Example Fusion Sheet.](images/tools/fig-tools-140-fusion.png){#fig-tools-140-fusion fig-alt="Example Fusion Sheet"}
 
 Fusion, shown in @fig-tools-140-fusion, is a spreadsheet application within the Enclave analogous to Microsoft Excel or Google Sheets.
 Palantir provides [extensive documentation](https://www.palantir.com/docs/foundry/fusion/overview/).
@@ -419,7 +419,7 @@ Foundry Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry/
 * Monthly status reports using template function
 * Unable to create dashboard or complex page-based text editing
 
-![Example Notepad Document](images/tools/fig-tools-150-notepad.png){#fig-tools-150-notepad fig-alt="Example Notepad Document"}
+![Example Notepad Document.](images/tools/fig-tools-150-notepad.png){#fig-tools-150-notepad fig-alt="Example Notepad Document"}
 
 Many research projects in the Enclave are complex, involving multiple summary datasets, statistical analyses, and visualizations scattered across multiple applications and documents.
 Notepad is a tool that is often used for consolidating various research artifacts from multiple sources within the Enclave into a single coherent document as shown in @fig-tools-150-notepad.
@@ -443,11 +443,11 @@ Foundry Documentation: [Data Lineage Overview](https://www.palantir.com/docs/fou
 * Facilitate dataset build scheduling
 
 ::: {.content-visible unless-format="pdf"}
-![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.gif){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
+![Example Data Lineage Visualization.](images/tools/fig-tools-160-data-lineage.gif){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
 :::
 
 ::: {.content-visible when-format="pdf"}
-![Example Data Lineage Visualization](images/tools/fig-tools-160-data-lineage.png){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
+![Example Data Lineage Visualization.](images/tools/fig-tools-160-data-lineage.png){#fig-tools-160-data-lineage fig-alt="Example Data Lineage Visualization"}
 :::
 
 Whether you're creating a data pipeline for your research project or investigating one from the Knowledge Store, you'll likely want to holistically assess the dataset's origins with the Data Lineage tool shown in @fig-tools-160-data-lineage.

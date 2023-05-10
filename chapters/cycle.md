@@ -445,3 +445,12 @@ The approach and methods to construct the claims data with encounters will be up
 The CMS data is used to complement and augment the N3C OMOP datasets.
 
 Additional details on the CMS datasets can be found in the [Understanding The Data chapter](https://docs.google.com/document/d/1cgQItN3dYY3HJDTkYz0YgOgaK5FDU1lGDSFdeE8Cc8s/edit#heading=h.ter2k3zf5e9).
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Stephanie Hong.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

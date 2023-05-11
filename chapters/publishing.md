@@ -336,3 +336,12 @@ This will open a form where you are able to select your knowledge object (you sh
 Once the form is completed the submission will be sent to a queue for system administrators to finalize the creation of the knowledge object (which requires creating read-only copies in a place where other researchers can access them) and listing them in the store.
 Depending on the complexity and goals of your template, administrators may help create multiple versions of your example workbook with pre-configured access to different levels of N3C data and set up a schedule so that they produce new derived datasets whenever a new release of N3C data is available.
 This allows other researchers to use the computed datasets directly, or import the template for customization.
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Julie McMurry.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

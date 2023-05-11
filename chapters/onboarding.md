@@ -165,3 +165,12 @@ There is a public-facing version of searching projects in addition to using the 
 Users can search [https://covid.cd2h.org/projects](https://covid.cd2h.org/projects) or [https://covid.cd2h.org/dashboard/exploration#projects](https://covid.cd2h.org/dashboard/exploration#projects) and search for title, lead investigator name and also the institution.
 There are many features that are available to search using the public-facing dashboard.
 There are four categories of.
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Sharon Patrick.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

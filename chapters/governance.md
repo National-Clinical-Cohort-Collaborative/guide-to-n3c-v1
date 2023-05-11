@@ -171,3 +171,12 @@ For each incident type, an escalation path clarifies the first line of response 
 Users can report interpersonal conflicts to the "Report Conduct Concerns" page on the website.
 All concerns reported are taken seriously and handled with discretion.
 A Community Response Team of 2-3 individuals nominated by the community follows a conflict resolution process to help parties solve disagreements in good faith with constructive dialog and escalate to NIH if relevant.
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Christine Suver.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

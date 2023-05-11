@@ -603,3 +603,12 @@ Importing such an external dataset entails a process of review that examines the
 The [External Datasets page](https://covid.cd2h.org/external-datasets) gives more detail, including how to request a new dataset.
 
 **This concludes an exciting chapter in the never ending story of N3C. To a cinema near you. Real soon.**
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Harold Lehmann.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

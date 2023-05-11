@@ -370,3 +370,12 @@ Back in the My Projects dashboard, we can select the "Manage My Projects" button
 The main configuration options are "Configure N3C Domain Teams" to modify the listed linkage between the project and domain teams, "Review Collaborator Requests for this Project" which opens the collaborator approval dashboard above, and "Allow or Disallow Collaborator Requests." This last option enables or disables the "Request to Join" link for the project in the Explore Projects dashboard.
 
 ![Adjusting other project settings.](images/access/fig-access-210-other-project-settings.png){#fig-access-210-other-project-settings fig-alt="Adjusting other project settings."}
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Shawn O'Neil.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

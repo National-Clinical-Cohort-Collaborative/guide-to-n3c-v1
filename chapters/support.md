@@ -325,3 +325,12 @@ Personalized help is provided during N3C Office Hours.
 Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the enclave.
 Team members are also active in the `#n3c-analytics` Slack channel.
 The Logic Liaison team will send a representative to your domain team meetings on an as needed basis for general consultation.
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Shawn O'Neil.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

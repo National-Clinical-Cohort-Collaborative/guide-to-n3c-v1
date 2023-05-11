@@ -457,3 +457,12 @@ The Data Lineage tool allows you to view details such as a dataset's schema, las
 You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis.
 The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules.
 Foundry Documentation provides [additional instructions and descriptions](https://www.palantir.com/docs/foundry/data-lineage/overview/) of Data Lineage.
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Amy Olex.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

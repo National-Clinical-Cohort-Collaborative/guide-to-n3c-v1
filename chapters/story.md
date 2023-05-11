@@ -587,3 +587,12 @@ After a week, they hear back from the N3C Publication Committee.
 > Please add "on behalf of the N3C consortium" to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.
 >
 > Sincerely, The N3C Publication Committee
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published May 2023.
+The chapter's corresponding author is Will Beasley.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::

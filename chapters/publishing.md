@@ -90,7 +90,7 @@ Thus, a tiered approach to authorship has been developed (see @tbl-publishing-au
 
 | Tier 1:<br>Masthead Authorship | Tier 2:<br>Consortial Collaborators | Tier 3:<br>In Text Acknowledgements |
 | ------------------------------ | ----------------------------------- | ----------------------------------- |
-|Substantial intellectually important contributions made directly to the manuscript | Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study** | Important contributions to the N3C infrastructure |
+|Substantial intellectually important contributions made directly to the manuscript | Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study | Important contributions to the N3C infrastructure |
 
 : Authorship tiers designed to accurately represent publication contributions {#tbl-publishing-authorship}
 

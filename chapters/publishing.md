@@ -16,19 +16,19 @@ author:
 
   - name: Christine Suver
     affiliation: Sage Bionetworks
-    # affiliation-url:
+    affiliation-url: https://www.linkedin.com/in/christine-suver-451233b
     email: christine.suver@sagebase.org
     orcid: 0000-0002-2986-385X
 
   - name: Carolyn T Bramante
     affiliation: University of Minnesota
-    # affiliation-url:
+    affiliation-url: https://med.umn.edu/bio/carolyn-bramante
     email: bramante@umn.edu
     orcid: 0000-0001-5858-2080
 
   - name: Mary K Emmett
     affiliation: CAMC Institute for Academic Medicine
-    # affiliation-url:
+    affiliation-url: https://www.linkedin.com/in/mary-emmett-6673529
     email: mary.emmett@camc.org
     orcid: 0000-0002-8551-8655
 
@@ -63,11 +63,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Julie McMurry, Jeremy Harper
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
-
 ## Publication Committee Process {#sec-publishing-committee}
 
 The Publication Committee is a multidisciplinary team that meets on a weekly basis to evaluate abstracts and manuscripts prior to submission for peer review (and / or preprint).
@@ -90,7 +85,7 @@ Thus, a tiered approach to authorship has been developed (see @tbl-publishing-au
 
 | Tier 1:<br>Masthead Authorship | Tier 2:<br>Consortial Collaborators | Tier 3:<br>In Text Acknowledgements |
 | ------------------------------ | ----------------------------------- | ----------------------------------- |
-|Substantial intellectually important contributions made directly to the manuscript | Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study** | Important contributions to the N3C infrastructure |
+|Substantial intellectually important contributions made directly to the manuscript | Less substantial but still intellectually important contributions made directly to the study/manuscript or to knowledge artifacts used directly by the study, such as concept sets or code | Important contributions to the N3C infrastructure |
 
 : Authorship tiers designed to accurately represent publication contributions {#tbl-publishing-authorship}
 

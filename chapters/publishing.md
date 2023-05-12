@@ -16,19 +16,19 @@ author:
 
   - name: Christine Suver
     affiliation: Sage Bionetworks
-    # affiliation-url:
+    affiliation-url: https://www.linkedin.com/in/christine-suver-451233b
     email: christine.suver@sagebase.org
     orcid: 0000-0002-2986-385X
 
   - name: Carolyn T Bramante
     affiliation: University of Minnesota
-    # affiliation-url:
+    affiliation-url: https://med.umn.edu/bio/carolyn-bramante
     email: bramante@umn.edu
     orcid: 0000-0001-5858-2080
 
   - name: Mary K Emmett
     affiliation: CAMC Institute for Academic Medicine
-    # affiliation-url:
+    affiliation-url: https://www.linkedin.com/in/mary-emmett-6673529
     email: mary.emmett@camc.org
     orcid: 0000-0002-8551-8655
 

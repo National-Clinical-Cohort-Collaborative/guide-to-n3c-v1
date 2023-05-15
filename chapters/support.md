@@ -331,6 +331,5 @@ The Logic Liaison team will send a representative to your domain team meetings o
 ## Additional Chapter Details
 
 This chapter was first published May 2023.
-The chapter's corresponding author is Shawn O'Neil.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

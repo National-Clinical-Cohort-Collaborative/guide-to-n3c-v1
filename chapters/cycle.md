@@ -451,6 +451,5 @@ Additional details on the CMS datasets can be found in the [Understanding The Da
 ## Additional Chapter Details
 
 This chapter was first published May 2023.
-The chapter's corresponding author is Stephanie Hong.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

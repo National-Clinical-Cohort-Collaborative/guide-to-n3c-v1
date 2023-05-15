@@ -65,12 +65,16 @@ Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
 We welcome suggestions, edits, and larger contributions to this guide.
 This book is typeset in Markdown with the [Quarto](https://quarto.org/) package for R and hosted on GitHub.
 For errors or requests, please submit an Issue to the [Issues tracker](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues).
-To make larger or direct contributions, please make a pull request using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
-If you would like to contribute but are unfamiliar with any of these technologies, please contact any of the editorial committee members or submit an Issue to request help.
+To make larger or direct contributions, please make a [pull request](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: g2n3c_correspondence@ctsi-something-something.com> with comments and suggestions for changes.
+If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapter/support.html).
+
+This project uses  the [N3C Community Guidelines](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/blob/main/CODE_OF_CONDUCT.md) as a Contributor Code of Conduct;
+by participating in this project you agree to abide by its terms.
 
 ## How to Cite this Work {#sec-welcome-cite}
 
-O'Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (2023).
+O'Neil ST, Beasley W, Loomba J, Patrick S, Wilkins KJ, Crowley KM. (Eds.) (2023).
 _The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data_.
 DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)
 

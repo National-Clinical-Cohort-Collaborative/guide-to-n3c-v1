@@ -593,6 +593,5 @@ After a week, they hear back from the N3C Publication Committee.
 ## Additional Chapter Details
 
 This chapter was first published May 2023.
-The chapter's corresponding author is Will Beasley.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

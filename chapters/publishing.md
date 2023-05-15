@@ -337,6 +337,5 @@ This allows other researchers to use the computed datasets directly, or import t
 ## Additional Chapter Details
 
 This chapter was first published May 2023.
-The chapter's corresponding author is Julie McMurry.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

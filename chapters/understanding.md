@@ -609,6 +609,5 @@ The [External Datasets page](https://covid.cd2h.org/external-datasets) gives mor
 ## Additional Chapter Details
 
 This chapter was first published May 2023.
-The chapter's corresponding author is Harold Lehmann.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

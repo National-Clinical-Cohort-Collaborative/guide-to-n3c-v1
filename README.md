@@ -3,6 +3,10 @@ The Researcher's Guide to N3C
 
 *[The Researcher's Guide to N3C: A National Resource for Analyzing Real-World Health Data](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/)* is designed to guide research with the [National COVID Cohort Collaborative](https://ncats.nih.gov/n3c) (N3C).
 
+The rendered booked is accessible through either of these urls:
+* [covid.cd2h.org/guide-to-n3c](https://covid.cd2h.org/guide-to-n3c) and 
+* [national-covid-cohort-collaborative.github.io/guide-to-n3c-v1](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1).
+
 Contributing Content
 ------------------
 

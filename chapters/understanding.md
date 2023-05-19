@@ -312,12 +312,10 @@ A [tutorial](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main
 
 #### Published Concept Sets {#sec-understanding-sets-library-published}
 
-"Publication" includes 3 ways of making a concept set available to other researchers.
+"Publication" includes 2 ways of making a concept set available to other researchers.
 Provisionally Approved and N3C Recommended are automatically submitted to Zenodo, to generate a permanent DOI URL that can be used in publication or in sharing concept set contents with analysts outside the Enclave.
 Any study manuscript for publication should ensure that any concept set used is either Provisionally Approved or N3C Recommended.
 The Zenodo URL should appear in the resulting publication.
-
-##### N3C Recommended concept sets - pre-defined concept set commonly used
 
 The [N3C Data Liaisons and Logic Liaisons](https://covid.cd2h.org/liaisons), in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines.
 The original N3C Recommended concept sets were selected based on
@@ -330,8 +328,6 @@ The original N3C Recommended concept sets were selected based on
 
 The N3C Recommended concept sets have been vetted by clinical experts (typically N3C Domain Team leads) and the Data and Logic Liaison teams according to the below refinement and finalization process.
 _The latest version of the listed concept sets should always be used_, as earlier versions represent iterations and have not passed the final review.
-
-###### Refinement Process
 
 The clinical experts and the N3C Data Liaisons and Logic Liaisons perform the following steps in establishing an intentional N3C Recommended concept set:
 

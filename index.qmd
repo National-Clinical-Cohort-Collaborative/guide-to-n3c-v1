@@ -63,11 +63,13 @@ Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
 ## How to Contribute {#sec-welcome-contribute}
 
 We welcome suggestions, edits, and larger contributions to this guide.
-This book is typeset in Markdown with the [Quarto](https://quarto.org/) package for R and hosted on GitHub.
-For errors or requests, please submit an Issue to the [Issues tracker](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues).
+This book is typeset in Markdown, rendered with [Quarto](https://quarto.org/), and hosted on GitHub.
+For errors or requests, please submit an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+to the book's [issue tracker](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues).
 To make larger or direct contributions, please make a [pull request](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+
 If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: g2n3c_correspondence@ctsi-something-something.com> with comments and suggestions for changes.
-If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapter/support.html).
+If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapters/support.md).
 
 This project uses  the [N3C Community Guidelines](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/blob/main/CODE_OF_CONDUCT.md) as a Contributor Code of Conduct;
 by participating in this project you agree to abide by its terms.

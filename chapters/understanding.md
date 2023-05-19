@@ -45,11 +45,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Harold Lehmann, Lisa Eskenazi
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross referencing.
-Edits are expected to complete by June 2023.
-:::
-
 ## Introduction {#sec-understanding-intro}
 
 The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see [The N3C "Enclave" and Data Access](intro.html#sec-intro-enclave) in the Introduction).
@@ -101,7 +96,7 @@ The central table in the OMOP vocabulary system is the table, `concept`.
 #### Vocabulary Concepts {#sec-understanding-basics-omop-vocab}
 
 The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids.
-Suppose a physician diagnoses a patient with diabetes and types "I10" into the EHR (which uses the ICD10 vocabulary).
+Suppose a physician diagnoses a patient with diabetes and types "I10" into the EHR (which uses the ICD-10 vocabulary).
 The "I10" value is stored in OMOP as the `source_value`, and is then translated via the OMOP Vocabulary to the standard concept id, "320128".^[This translation is automated with software, as opposed to manually performed by a human.]
 N3C analyses use _standard_ concept ids, as opposed to specific codes that aren't necessarily consistent across hospitals.
 
@@ -160,7 +155,7 @@ They classify concepts in the concept table.
 #### Vocabulary Updates {#sec-understanding-basics-omop-updates}
 
 As stated above, source vocabularies change.
-For instance, at the start of the pandemic, there were no ICD10 codes for "COVID-19 infection", and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
+For instance, at the start of the pandemic, there were no ICD-10 codes for "COVID-19 infection", and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
 When we need a code, but there is none in the OMOP vocabulary, we create a _local code_.
 When the OMOP vocabulary team releases a newer,  relevant code to replace the local code, the Enclave attempts to contact everyone who has employed the local code, notifying them of the change.
 
@@ -193,7 +188,8 @@ Concept sets that are "finalized" within N3C will have information about them po
 Such posting is part of the process known as making research [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
 This repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
-The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
+The following concept set content will be made public in
+[Zenodo](https://zenodo.org/) and/or GitHub:
 
 * Concept set name, version number, date of finalization
 * Intention
@@ -294,9 +290,7 @@ When created from scratch, a _container_ is created, so multiple _versions_ of t
 New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards.
 Containers are indicated by blue icons; versions, by brown icons, as illustrated in @fig-understanding-090-concept-set-versions.
 
-![Workflow for finding, extending, and creating concept sets.](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
-
-*New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript
+![Workflow for finding, extending, and creating concept sets.  <br>*New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
 
 The browse screen allows you to filter to concept sets relevant to you.
 Once you have identified a concept set that you might use, drilling into it provides data about that concept set: versions, metadata, concept expressions, concepts.
@@ -314,12 +308,10 @@ A [tutorial](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main
 
 #### Published Concept Sets {#sec-understanding-sets-library-published}
 
-"Publication" includes 3 ways of making a concept set available to other researchers.
+"Publication" includes 2 ways of making a concept set available to other researchers.
 Provisionally Approved and N3C Recommended are automatically submitted to Zenodo, to generate a permanent DOI URL that can be used in publication or in sharing concept set contents with analysts outside the Enclave.
 Any study manuscript for publication should ensure that any concept set used is either Provisionally Approved or N3C Recommended.
 The Zenodo URL should appear in the resulting publication.
-
-##### N3C Recommended concept sets - pre-defined concept set commonly used
 
 The [N3C Data Liaisons and Logic Liaisons](https://covid.cd2h.org/liaisons), in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines.
 The original N3C Recommended concept sets were selected based on
@@ -332,8 +324,6 @@ The original N3C Recommended concept sets were selected based on
 
 The N3C Recommended concept sets have been vetted by clinical experts (typically N3C Domain Team leads) and the Data and Logic Liaison teams according to the below refinement and finalization process.
 _The latest version of the listed concept sets should always be used_, as earlier versions represent iterations and have not passed the final review.
-
-###### Refinement Process
 
 The clinical experts and the N3C Data Liaisons and Logic Liaisons perform the following steps in establishing an intentional N3C Recommended concept set:
 
@@ -352,11 +342,6 @@ Once published, their Zenodo DOI will be posted to the Zenodo Property of the ve
 The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
 
 The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} and [All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an N3C Enclave account" >}} and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
-
-##### Provisionally Approved
-
-The third type of publication is Provisionally Approved.
-This status is automatically established once a concept set achieves at least one positive Vocabulary Review and one positive Clinical Review.
 
 #### Concept set reviews and validation {#sec-understanding-sets-library-review}
 

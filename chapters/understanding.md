@@ -101,7 +101,7 @@ The central table in the OMOP vocabulary system is the table, `concept`.
 #### Vocabulary Concepts {#sec-understanding-basics-omop-vocab}
 
 The meaning of every data element in the OMOP vocabulary, and many of the values of the data themselves, are represented by codes in the source data that get mapped to OMOP concept ids.
-Suppose a physician diagnoses a patient with diabetes and types "I10" into the EHR (which uses the ICD10 vocabulary).
+Suppose a physician diagnoses a patient with diabetes and types "I10" into the EHR (which uses the ICD-10 vocabulary).
 The "I10" value is stored in OMOP as the `source_value`, and is then translated via the OMOP Vocabulary to the standard concept id, "320128".^[This translation is automated with software, as opposed to manually performed by a human.]
 N3C analyses use _standard_ concept ids, as opposed to specific codes that aren't necessarily consistent across hospitals.
 
@@ -160,7 +160,7 @@ They classify concepts in the concept table.
 #### Vocabulary Updates {#sec-understanding-basics-omop-updates}
 
 As stated above, source vocabularies change.
-For instance, at the start of the pandemic, there were no ICD10 codes for "COVID-19 infection", and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
+For instance, at the start of the pandemic, there were no ICD-10 codes for "COVID-19 infection", and therefore, there were no OMOP vocabulary codes for it and, therefore, no N3C codes.
 When we need a code, but there is none in the OMOP vocabulary, we create a _local code_.
 When the OMOP vocabulary team releases a newer,  relevant code to replace the local code, the Enclave attempts to contact everyone who has employed the local code, notifying them of the change.
 
@@ -193,7 +193,8 @@ Concept sets that are "finalized" within N3C will have information about them po
 Such posting is part of the process known as making research [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
 This repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
-The concept set content that will be made public in [Zenodo](https://zenodo.org/) and/or GitHub are:
+The following concept set content will be made public in
+[Zenodo](https://zenodo.org/) and/or GitHub:
 
 * Concept set name, version number, date of finalization
 * Intention

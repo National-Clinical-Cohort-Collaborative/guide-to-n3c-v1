@@ -294,9 +294,7 @@ When created from scratch, a _container_ is created, so multiple _versions_ of t
 New versions are created as the team gets better facility with the tool, as the team understands better from domain experts subtleties in the intention of the concept set, or as changes are made to the vocabularies, by OHDSI or the source vocabulary stewards.
 Containers are indicated by blue icons; versions, by brown icons, as illustrated in @fig-understanding-090-concept-set-versions.
 
-![Workflow for finding, extending, and creating concept sets.](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
-
-*New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript
+![Workflow for finding, extending, and creating concept sets.  <br>*New container name should be similar to source container, but different enough to communicate altered intention. MS=Manuscript](images/understanding/fig-understanding-100-concept-set-flowsheet.png){#fig-understanding-100-concept-set-flowsheet fig-alt="Workflow for finding, extending, and creating concept sets"}
 
 The browse screen allows you to filter to concept sets relevant to you.
 Once you have identified a concept set that you might use, drilling into it provides data about that concept set: versions, metadata, concept expressions, concepts.
@@ -352,11 +350,6 @@ Once published, their Zenodo DOI will be posted to the Zenodo Property of the ve
 The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
 
 The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} and [All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an N3C Enclave account" >}} and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
-
-##### Provisionally Approved
-
-The third type of publication is Provisionally Approved.
-This status is automatically established once a concept set achieves at least one positive Vocabulary Review and one positive Clinical Review.
 
 #### Concept set reviews and validation {#sec-understanding-sets-library-review}
 

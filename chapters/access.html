@@ -429,21 +429,21 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>To give a sneak preview of the primary N3C data format, here’s a snapshot of a few columns of notional (<em>fake</em>) data in OMOP format from the <code>condition_occurrence</code> table:</p>
 <div id="fig-access-010-condition_occurrence" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-010-condition_occurrence.png" class="lightbox" title="A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added data_partner_id, these are anonymized identifiers for sites contributing data, labeling each record with a source." data-gallery="quarto-lightbox-gallery-1"><img src="images/access/fig-access-010-condition_occurrence.png" class="img-fluid figure-img" alt="A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source."></a></p>
+<p><a href="images/access/fig-access-010-condition_occurrence.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added data_partner_id, these are anonymized identifiers for sites contributing data, labeling each record with a source."><img src="images/access/fig-access-010-condition_occurrence.png" class="img-fluid figure-img" alt="A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.1: A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added <code>data_partner_id</code>, these are anonymized identifiers for sites contributing data, labeling each record with a source.</figcaption>
 </figure>
 </div>
 <p>Notice in particular the columns for <code>data_partner_id</code> (a pseudo-random identifier assigned to each data partner), <code>condition_concept_id</code> (the OMOP identifier uniquely describing the condition used for data filtering and analysis), and <code>condition_concept_name</code> (the human-readable version of <code>condition_concept_id</code>, used for convenience but not for data filtering). Other OMOP tables link records by shared columns; here’s a few columns from the <code>person</code> table describing basic demographics of patients:</p>
 <div id="fig-access-020-person" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-020-person.png" class="lightbox" title="Example data for the OMOP person table." data-gallery="quarto-lightbox-gallery-2"><img src="images/access/fig-access-020-person.png" class="img-fluid figure-img" alt="Example data for the OMOP `person` table."></a></p>
+<p><a href="images/access/fig-access-020-person.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Example data for the OMOP person table."><img src="images/access/fig-access-020-person.png" class="img-fluid figure-img" alt="Example data for the OMOP `person` table."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.2: Example data for the OMOP <code>person</code> table.</figcaption>
 </figure>
 </div>
 <p>Some other tables available with Level 3 data are specific to N3C; here’s a few columns from a notional <code>manifest</code> table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:</p>
 <div id="fig-access-030-manifest" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-030-manifest.png" class="lightbox" title="An example of the N3C-specific manifest table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see @sec-cycle), and when their last submission was." data-gallery="quarto-lightbox-gallery-3"><img src="images/access/fig-access-030-manifest.png" class="img-fluid figure-img" alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was."></a></p>
+<p><a href="images/access/fig-access-030-manifest.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="An example of the N3C-specific manifest table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see @sec-cycle), and when their last submission was."><img src="images/access/fig-access-030-manifest.png" class="img-fluid figure-img" alt="An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.3: An example of the N3C-specific <code>manifest</code> table. This table provides information about data partners, such as their source common data model (<code>cdm_name</code>), whether they pre-shift dates (see <a href="cycle.html"><span>Chapter&nbsp;3</span></a>), and when their last submission was.</figcaption>
 </figure>
 </div>
@@ -468,7 +468,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Data management in the Enclave is centered around “project workspaces” which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the “Projects &amp; files” link in the left navigation menu.</p>
 <div id="fig-access-040-projects-list" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-040-projects-list.png" class="lightbox" title="Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below." data-gallery="quarto-lightbox-gallery-4"><img src="images/access/fig-access-040-projects-list.png" class="img-fluid figure-img" alt="Project workspace browser. Note that the &quot;Request access&quot; buttons are not active and clicking one will suggest visiting the DUR dashboards described below."></a></p>
+<p><a href="images/access/fig-access-040-projects-list.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below."><img src="images/access/fig-access-040-projects-list.png" class="img-fluid figure-img" alt="Project workspace browser. Note that the &quot;Request access&quot; buttons are not active and clicking one will suggest visiting the DUR dashboards described below."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.4: Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below.</figcaption>
 </figure>
 </div>
@@ -494,7 +494,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>There are three primary dashboards used to create and manage DURs; all three are linked from the Enclave homepage via buttons titled “Data Use Request (DUR)”, “My Projects (DURs)”, and “Explore Projects (DURs).”</p>
 <div id="fig-access-050-dur-dashboards-home" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-050-dur-dashboards-home.png" class="lightbox" title="Enclave homepage. Highlighted are the three DUR-related dashboards." data-gallery="quarto-lightbox-gallery-5"><img src="images/access/fig-access-050-dur-dashboards-home.png" class="img-fluid figure-img" alt="Enclave homepage. Highlighted are the three DUR-related dashboards."></a></p>
+<p><a href="images/access/fig-access-050-dur-dashboards-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Enclave homepage. Highlighted are the three DUR-related dashboards."><img src="images/access/fig-access-050-dur-dashboards-home.png" class="img-fluid figure-img" alt="Enclave homepage. Highlighted are the three DUR-related dashboards."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.5: Enclave homepage. Highlighted are the three DUR-related dashboards.</figcaption>
 </figure>
 </div>
@@ -510,7 +510,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>This first dashboard is really just the DUR form itself, and is used to request the creation of, and access to, a brand new research project with access to one of the levels of protected N3C data. The form has a number of sections, and some of these are dynamic, depending on choices to earlier questions. The left side of the DUR form provides quick links to other dashboards or actions; “Create a New Project” simply refreshes the page (since we are already creating a new project DUR), “Request to become a collaborator on an existing project” opens the Explore Projects dashboard (discussed below), and Public Health Proposal opens the application form for the <a href="https://covid.cd2h.org/phastr">N3C PHASTR</a> initiative (which utilizes a specialized variant of the DUR process discussed here).</p>
 <div id="fig-access-060-new-dur" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-060-new-dur.png" class="lightbox" title="New Data Use Request (DUR) form." data-gallery="quarto-lightbox-gallery-6"><img src="images/access/fig-access-060-new-dur.png" class="img-fluid figure-img" alt="New Data Use Request (DUR) form."></a></p>
+<p><a href="images/access/fig-access-060-new-dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="New Data Use Request (DUR) form."><img src="images/access/fig-access-060-new-dur.png" class="img-fluid figure-img" alt="New Data Use Request (DUR) form."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.6: New Data Use Request (DUR) form.</figcaption>
 </figure>
 </div>
@@ -518,14 +518,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The Research Project Rationale deserves special attention. This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request. The project rationale should describe for the DAC why data access is being requested in light of the goals of the research project. The rationale should include a justification for the level of data being requested, especially if requesting the Level 3 Limited Data Set (LDS). If your project doesn’t require the accurate dates or full patient zip codes provided by Level 3 data, it will be rejected, or approved for the Level 2 data even though Level 3 was requested. Similarly, if requesting access to any PPRL (see <a href="#sec-access-availability"><span>Section&nbsp;6.2</span></a>) datasets the rationale should include why. (You will also need to have the PPRL data mentioned in your IRB letter of determination - see below.)</p>
 <div id="fig-access-070-dur-metadata" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-070-dur-metadata.png" class="lightbox" title="DUR metadata fields." data-gallery="quarto-lightbox-gallery-7"><img src="images/access/fig-access-070-dur-metadata.png" class="img-fluid figure-img" alt="DUR metadata fields."></a></p>
+<p><a href="images/access/fig-access-070-dur-metadata.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="DUR metadata fields."><img src="images/access/fig-access-070-dur-metadata.png" class="img-fluid figure-img" alt="DUR metadata fields."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.7: DUR metadata fields.</figcaption>
 </figure>
 </div>
 <p>The next questions pertain to potential collaborations. The “Please associate your project with an existing N3C Domain Team” prompts you to select a domain team that best fits your project. Domain Teams are N3C working groups encompassing multiple research projects and are used to facilitate collaboration. Linking your project to a domain team this way in the Enclave allows others to navigate domain teams and browse linked projects dynamically. It is possible to modify this linkage later, so if you aren’t sure feel free to check the “need help choosing” check box.</p>
 <div id="fig-access-080-dur-collaborators" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-080-dur-collaborators.png" class="lightbox" title="DUR Domain Teams and collaborator fields." data-gallery="quarto-lightbox-gallery-8"><img src="images/access/fig-access-080-dur-collaborators.png" class="img-fluid figure-img" alt="DUR Domain Teams and collaborator fields."></a></p>
+<p><a href="images/access/fig-access-080-dur-collaborators.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="DUR Domain Teams and collaborator fields."><img src="images/access/fig-access-080-dur-collaborators.png" class="img-fluid figure-img" alt="DUR Domain Teams and collaborator fields."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.8: DUR Domain Teams and collaborator fields.</figcaption>
 </figure>
 </div>
@@ -534,7 +534,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Next is the choice of data level to request. Levels 2 and 3 require additional information, so we’ll start with the Level 1 data and return to see the differences for Levels 2 and 3.</p>
 <div id="fig-access-090-dur-data-level" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-090-dur-data-level.png" class="lightbox" title="DUR data level request." data-gallery="quarto-lightbox-gallery-9"><img src="images/access/fig-access-090-dur-data-level.png" class="img-fluid figure-img" alt="DUR data level request."></a></p>
+<p><a href="images/access/fig-access-090-dur-data-level.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="DUR data level request."><img src="images/access/fig-access-090-dur-data-level.png" class="img-fluid figure-img" alt="DUR data level request."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.9: DUR data level request.</figcaption>
 </figure>
 </div>
@@ -543,14 +543,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>For Level 1 access, the first requirements are that you have read and attested to the <a href="../chapters/onboarding.html#data-use-agreements">Data Use Agreement</a>, and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of onboarding, so we won’t cover them here (see <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>).</p>
 <div id="fig-access-100-dur-attestations" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-100-dur-attestations.png" class="lightbox" title="DUR attestations." data-gallery="quarto-lightbox-gallery-10"><img src="images/access/fig-access-100-dur-attestations.png" class="img-fluid figure-img" alt="DUR attestations."></a></p>
+<p><a href="images/access/fig-access-100-dur-attestations.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="DUR attestations."><img src="images/access/fig-access-100-dur-attestations.png" class="img-fluid figure-img" alt="DUR attestations."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.10: DUR attestations.</figcaption>
 </figure>
 </div>
 <p>Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the <a href="../chapters/publishing.html">N3C download policy</a> (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions’ policies around doing so. (Some institutions restrict how and when EHR data can be linked to other datasets, including <a href="../chapters/understanding.html">publicly available</a> data ingested for use by N3C researchers.) <!-- TODO: like the last section of the "Understanding the Data" chapter --></p>
 <div id="fig-access-110-dur-acknowledgements" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-110-dur-acknowledgements.png" class="lightbox" title="DUR attestations and acknowledgements." data-gallery="quarto-lightbox-gallery-11"><img src="images/access/fig-access-110-dur-acknowledgements.png" class="img-fluid figure-img" alt="DUR attestations and acknowledgements."></a></p>
+<p><a href="images/access/fig-access-110-dur-acknowledgements.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="DUR attestations and acknowledgements."><img src="images/access/fig-access-110-dur-acknowledgements.png" class="img-fluid figure-img" alt="DUR attestations and acknowledgements."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.11: DUR attestations and acknowledgements.</figcaption>
 </figure>
 </div>
@@ -561,14 +561,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Requesting access to Level 2, De-Identified data requires additional information. First, when selecting the Level 2 request option, you will be asked to confirm that you have taken Human Subjects Research Protection training within the last three years and provide the date of completion. Most research institutions provide specific training courses to satisfy this requirement, for example via the <a href="https://citiprogram.org">CITI Program</a>. The specific courses required vary from institution to institution, so check with your research office or equivalent authority for guidance. If your institution does not offer or recommend specific courses, you can utilize the <a href="https://www.hhs.gov/ohrp/education-and-outreach/human-research-protection-training/human-research-protection-foundational-training">free course</a> provided by Health and Human Services.</p>
 <div id="fig-access-120-dur-hsrp" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-120-dur-hsrp.png" class="lightbox" title="DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years." data-gallery="quarto-lightbox-gallery-12"><img src="images/access/fig-access-120-dur-hsrp.png" class="img-fluid figure-img" alt="HSRP training attestation."></a></p>
+<p><a href="images/access/fig-access-120-dur-hsrp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years."><img src="images/access/fig-access-120-dur-hsrp.png" class="img-fluid figure-img" alt="HSRP training attestation."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.12: DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years.</figcaption>
 </figure>
 </div>
 <p>In addition to human subjects research protection training, you will need to consider whether your institution requires a letter of determination from your local IRB when using De-Identified data. If so, you’ll be prompted to upload the letter as a PDF before you can submit the DUR.</p>
 <div id="fig-access-130-dur-level2-irb" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-130-dur-level2-irb.png" class="lightbox" title="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access." data-gallery="quarto-lightbox-gallery-13"><img src="images/access/fig-access-130-dur-level2-irb.png" class="img-fluid figure-img" alt="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access."></a></p>
+<p><a href="images/access/fig-access-130-dur-level2-irb.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access."><img src="images/access/fig-access-130-dur-level2-irb.png" class="img-fluid figure-img" alt="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.13: DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access.</figcaption>
 </figure>
 </div>
@@ -579,14 +579,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Level 3 DURs require the same attestations and human subjects research protection training as Level 2 DURs. A Level 3 DUR also allows researchers to request access to one or more supplemental PPRL datasets providing additional information about patients. These provide additional mortality information, viral variant records, and claims data from the Centers for Medicare and Medicaid Services, but are available only for subsets of N3C patients (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a> for details about PPRL).</p>
 <div id="fig-access-140-dur-level3-pprl" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-140-dur-level3-pprl.png" class="lightbox" title="DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests." data-gallery="quarto-lightbox-gallery-14"><img src="images/access/fig-access-140-dur-level3-pprl.png" class="img-fluid figure-img" alt="DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests."></a></p>
+<p><a href="images/access/fig-access-140-dur-level3-pprl.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests."><img src="images/access/fig-access-140-dur-level3-pprl.png" class="img-fluid figure-img" alt="DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.14: DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.</figcaption>
 </figure>
 </div>
 <p>A Level 3 DUR additionally requires a letter of determination from the submitter’s local IRB:</p>
 <div id="fig-access-150-dur-level3-irb" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-150-dur-level3-irb.png" class="lightbox" title="The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB." data-gallery="quarto-lightbox-gallery-15"><img src="images/access/fig-access-150-dur-level3-irb.png" class="img-fluid figure-img" alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren't required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB."></a></p>
+<p><a href="images/access/fig-access-150-dur-level3-irb.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB."><img src="images/access/fig-access-150-dur-level3-irb.png" class="img-fluid figure-img" alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren't required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.15: The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.</figcaption>
 </figure>
 </div>
@@ -605,14 +605,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The “Search Projects” field is helpful in finding one of the many N3C projects and supports searching in any of the shown text columns. The “Projects by N3C Domain Team” button shows the project list organized by domain team, which can be useful in identifying potential overlapping research. Finally, “Closed Projects” lists non-active projects, for example those whose 1-year expiry has passed without renewal.</p>
 <div id="fig-access-160-explore-projects" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-160-explore-projects.png" class="lightbox" title="The Explore Projects dashboard." data-gallery="quarto-lightbox-gallery-16"><img src="images/access/fig-access-160-explore-projects.png" class="img-fluid figure-img" alt="The Explore Projects dashboard."></a></p>
+<p><a href="images/access/fig-access-160-explore-projects.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="The Explore Projects dashboard."><img src="images/access/fig-access-160-explore-projects.png" class="img-fluid figure-img" alt="The Explore Projects dashboard."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.16: The Explore Projects dashboard.</figcaption>
 </figure>
 </div>
 <p>To request to join a project, simply click its Request to Join link from the list. This opens up a collaborator DUR: a copy of the DUR submitted by the project lead, but the Title, Abstract, selected data level, and domain-team linkage are not changeable. You will need to complete the other requirements for the data level however (see above), including submitting a letter of determination from your local IRB if needed. If the DUR indicates that PPRL data are requested, your IRB letter should also reference these datasets. IRB determination letters are required for all Level 3 DURs, or if the DUR is Level 2 and your institution requires IRB review. (Note that the DUR form will not ask for an IRB letter if you are registered with N3C as being from the same institution as the project lead; in this case it is assumed that the lead’s already-submitted letter covers you as well.)</p>
 <div id="fig-access-170-collaborator-dur" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-170-collaborator-dur.png" class="lightbox" title="Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed." data-gallery="quarto-lightbox-gallery-17"><img src="images/access/fig-access-170-collaborator-dur.png" class="img-fluid figure-img" alt="Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed."></a></p>
+<p><a href="images/access/fig-access-170-collaborator-dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed."><img src="images/access/fig-access-170-collaborator-dur.png" class="img-fluid figure-img" alt="Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.17: Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed.</figcaption>
 </figure>
 </div>
@@ -624,7 +624,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The My Projects dashboard, linked from the Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.</p>
 <div id="fig-access-180-my-projects" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-180-my-projects.png" class="lightbox" title="The My Projects dashboard." data-gallery="quarto-lightbox-gallery-18"><img src="images/access/fig-access-180-my-projects.png" class="img-fluid figure-img" alt="The My Projects dashboard."></a></p>
+<p><a href="images/access/fig-access-180-my-projects.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="The My Projects dashboard."><img src="images/access/fig-access-180-my-projects.png" class="img-fluid figure-img" alt="The My Projects dashboard."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.18: The My Projects dashboard.</figcaption>
 </figure>
 </div>
@@ -634,7 +634,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>If we scroll further to the right we see other important columns, particularly the Action and Renewal columns.</p>
 <div id="fig-access-190-my-projects-more" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-190-my-projects-more.png" class="lightbox" title="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options." data-gallery="quarto-lightbox-gallery-19"><img src="images/access/fig-access-190-my-projects-more.png" class="img-fluid figure-img" alt="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options."></a></p>
+<p><a href="images/access/fig-access-190-my-projects-more.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options."><img src="images/access/fig-access-190-my-projects-more.png" class="img-fluid figure-img" alt="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.19: Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options.</figcaption>
 </figure>
 </div>
@@ -645,14 +645,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The My Projects dashboard provides some additional functionality for project leads not available to collaborators in addition to the Appeal link. First is the dashboard accessed via the “Review Collaborator Requests for My Projects” button. The projects for which you are a lead are listed along the left, and the requests to access that project are listed along the right. You can choose to approve or deny each request by selecting it and clicking the large blue “Approve Selected Collaborator Request” button. Collaborator access cannot be revoked this way, however.</p>
 <div id="fig-access-200-review-collaborator-requests" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-200-review-collaborator-requests.png" class="lightbox" title="Reviewing collaborator requests to join my projects." data-gallery="quarto-lightbox-gallery-20"><img src="images/access/fig-access-200-review-collaborator-requests.png" class="img-fluid figure-img" alt="Reviewing collaborator requests to join my projects."></a></p>
+<p><a href="images/access/fig-access-200-review-collaborator-requests.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Reviewing collaborator requests to join my projects."><img src="images/access/fig-access-200-review-collaborator-requests.png" class="img-fluid figure-img" alt="Reviewing collaborator requests to join my projects."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.20: Reviewing collaborator requests to join my projects.</figcaption>
 </figure>
 </div>
 <p>Back in the My Projects dashboard, we can select the “Manage My Projects” button to see more project configuration options. The main configuration options are “Configure N3C Domain Teams” to modify the listed linkage between the project and domain teams, “Review Collaborator Requests for this Project” which opens the collaborator approval dashboard above, and “Allow or Disallow Collaborator Requests.” This last option enables or disables the “Request to Join” link for the project in the Explore Projects dashboard.</p>
 <div id="fig-access-210-other-project-settings" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/access/fig-access-210-other-project-settings.png" class="lightbox" title="Adjusting other project settings." data-gallery="quarto-lightbox-gallery-21"><img src="images/access/fig-access-210-other-project-settings.png" class="img-fluid figure-img" alt="Adjusting other project settings."></a></p>
+<p><a href="images/access/fig-access-210-other-project-settings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Adjusting other project settings."><img src="images/access/fig-access-210-other-project-settings.png" class="img-fluid figure-img" alt="Adjusting other project settings."></a></p>
 <figcaption class="figure-caption">Figure&nbsp;6.21: Adjusting other project settings.</figcaption>
 </figure>
 </div>
@@ -1068,7 +1068,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});</script>
 
 
 

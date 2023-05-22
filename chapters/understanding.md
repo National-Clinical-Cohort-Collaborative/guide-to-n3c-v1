@@ -23,19 +23,19 @@ author:
   - name: Thomas Richards
     affiliation: Johns Hopkins University
     affiliation-url: https://www.jhu.edu/
-    # email:
+    email: tom.richards@jhu.edu
     orcid: 0000-0003-4945-9050
 
   - name: Kristin Kostka
     affiliation: The OHDSI Center at the Roux Institute, Northeastern University, Portland, ME & NDORMS, University of Oxford, Oxford, UK
-    # affiliation-url:
-    # email:
+    affiliation-url: https://roux.northeastern.edu/ohdsi/
+    email: kostka@ohdsi.org
     orcid: 0000-0003-2595-8736
 
   - name: Sigfried Gold
-    # affiliation:
-    # affiliation-url:
-    # email:
+    affiliation: Johns Hopkins University
+    affiliation-url: http://sigfried.org/
+    email: sigfried@jhu.edu
     orcid: 0000-0001-7853-6137
 
 csl: ../assets/csl/apa-7e.csl

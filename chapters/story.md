@@ -59,7 +59,7 @@ If you would like to join an existing project, there are [domain teams](onboardi
 Electronic Health Record (EHR) research has become an increasingly important tool to evaluate real-world evidence (RWE) to understand insights into treatment effectiveness, the impact of healthcare interventions, and our understanding of rare diseases.
 EHRs provide access to large, diverse patient populations and longitudinal data that allows observations of health changes over time or in cross-section.
 The strength of the EHR is that it reflects real-world care and is often a better representation of clinical care than the controlled settings of a traditional clinical trial.
-However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient’s lived experience relative their health outcomes.
+However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient's lived experience relative their health outcomes.
 
 :::{.callout-note icon=false}
 
@@ -67,7 +67,7 @@ However, with this comes challenges of interpreting differences in care delivery
 
 Our story begins in your own piece of heaven: your office.
 As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR.
-You expect a modest improvement based on the meds’ relationships with other diseases.
+You expect a modest improvement based on the meds' relationships with other diseases.
 But many patients are required to detect a modest effect size, and your local institution has a small population.
 Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
 
@@ -129,13 +129,13 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 * **N**:
   The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data.
   Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days.
-  Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures.
+  Also, all location identifiers are obfuscated to allow potential reidentification, so you won't have access to 5-digit ZIP Codes or other granular location measures.
   If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements.
   Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
   Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
 
 * **I**:
-  Ok, that’s very helpful.
+  Ok, that's very helpful.
   I may need real dates as I anticipate differences in treatment deliveries based on real-world availability.
   Am I stuck with Level 2 data if I start there?
 
@@ -144,9 +144,9 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   If needed, you can request a workspace to be updated from Level 2 to Level 3 and receive IRB approval.
 
 * **I**:
-  That’s great.
-  I think we’ll start with Level 2 and go from there.
-  I’ll work on the research protocol.
+  That's great.
+  I think we'll start with Level 2 and go from there.
+  I'll work on the research protocol.
 
 After some thought, the investigator puts together a research protocol and submits a DUR in N3C.
 They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
@@ -183,7 +183,7 @@ Some trends we have noticed are:
 
 1. The role of the navigator is often the most important member of a successful team.
   Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls.
-  N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
+  N3C is bigger and younger than your site's EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.
@@ -318,7 +318,7 @@ Developing a research protocol is both familiar and vague for most research team
 Most researchers have several years of graduate-level courses and real-world experience.
 
 1. Tradeoffs are inevitable when selecting variables.
-  Rarely will an investigator’s first choice be available.
+  Rarely will an investigator's first choice be available.
 
 1. Retrospective medical records are extracted from a larger dataset.
   An investigation can use only a fraction of the terabytes in an EMR.

@@ -117,7 +117,7 @@ For more information see:
 
 <https://ncats.nih.gov/n3c/resources/data-access>
 
-## Enclave Access
+## Enclave Access {#sec-onboarding-enclave-access}
 
 ## Research Project Teams
 

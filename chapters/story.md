@@ -78,10 +78,12 @@ Your mind wanders as you get a little greedy; additional hypotheses enter your d
 ## Onboarding {#sec-story-onboarding}
 
 As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place.
-Even with strong institutional support, execution of the university's Data Use Agreement with the NIH may take several months in legal and administrative channels.
-Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.
+The initial time investment is higher for an N3C investigation compared to most, but project-specific work tends to go faster.
+System access generally requires your institution to sign a Data Use Agreement with N3C,
+and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand, hundreds of institutions have already done so. You can check the list at <https://covid.cd2h.org/duas>, and more detail about this process is covered in @sec-onboarding-enclave-access]
+Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee.
 That's a remarkably short time considering the scale of available data.
-It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
+It's likely quicker than initiating a project based on a single EMR from your site, and much quicker than accessing EMRs from 70+ sites individually.
 
 :::{.callout-note icon=false}
 
@@ -105,8 +107,8 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**:
   A *D*ata *U*se *R*equest describes your upcoming project.
-  Once an NIH committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.
-  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
+  Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.
+  Once you've submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
 
 * **I**:
   Umm, I think I got it.
@@ -153,8 +155,14 @@ They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
 
 ## Team building & collaborating {#sec-story-team}
 
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 The next step is to build a team to leverage retrospective medical records.
 Like most contemporary research teams, heterogenous skills are important.
+:::
+
 Ideally a team has at least, as shown in @fig-story-030-team-formation, members who can fill the roles below:
 
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,

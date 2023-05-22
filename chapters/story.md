@@ -66,13 +66,13 @@ However, with this comes challenges of interpreting differences in care delivery
 ## Voice of Narrator
 
 Our story begins in your own piece of heaven: your office.
-As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR.
-You expect a modest improvement based on the meds' relationships with other diseases.
+As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR.
+You expect a modest improvement based on the medications' relationships with other diseases.
 But many patients are required to detect a modest effect size, and your local institution has a small population.
-Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
+Given its low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
-Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
+Your mind wanders, and you begin to daydream of additional hypotheses.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  Your thoughts race into the night, a never-ending stream of possibilities.
 :::
 
 ## Onboarding {#sec-story-onboarding}

@@ -119,7 +119,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork is discussed in @sec-onboarding.]
 
 * **Investigator**:
-  Remind me what a DUR is?
+  Remind me.  What is a [DUR](access.md#sec-access-dur)?
 
 * **N**:
   A *D*ata *U*se *R*equest describes your upcoming project.
@@ -150,7 +150,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   meaning all the dates are shifted within &plusmn;180 days.
   Also, all location identifiers are obfuscated to prevent reidentification,
   so you won't have access to 5-digit ZIP Codes or other granular location measures.
-  If you need either of those, you have to submit [Level 3]((access.md#sec-access-request-l3)) data,
+  If you need either of those, you have to submit [Level 3](access.md#sec-access-request-l3) data,
   which is a limited data set containing these data elements.
   Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
   Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
@@ -169,8 +169,8 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   I think we'll start with Level 2 and go from there.
   I'll work on the research protocol.
 
-After some thought, the investigator puts together a research protocol and submits a DUR in N3C.
-They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
+After some thought, the investigator develops a research protocol and
+submits a DUR, shown in @fig-story-020-dur.
 
 ![Submitted Data Use Request.](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
 
@@ -184,7 +184,7 @@ The next step is to build a team to leverage retrospective medical records.
 Like most contemporary research teams, heterogenous skills are important.
 :::
 
-Ideally a team has at least, as shown in @fig-story-030-team-formation, members who can fill the roles below:
+@fig-story-030-team-formation depicts the authors' ideal team.  Sometimes one person can serve multiple roles.
 
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
 1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
@@ -209,22 +209,14 @@ Some trends we have noticed are:
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.
 
-:::{.callout-note icon=false}
-
-## Voice of Narrator
-
-Recruiting your crew...
-:::
-
 ## Research Team's First Meeting
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-Three weeks later...
-
-Once the team is assembled, the first discussion is usually a variation of this exchange, with the goal to move toward competition of a research protocol:
+The team is assembled after a few weeks.
+The first discussion is usually a variation of the following exchange, with the goal to move toward completion of a research protocol.
 :::
 
 * **Investigator**:
@@ -256,7 +248,10 @@ Once the team is assembled, the first discussion is usually a variation of this 
   In the N3C database, can someone tell me how many patients get both during the same visit?
 * **LL**:
   I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].
-  Give me 2 minutes to add this drug to our templated fact tables which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+  Give me 2 minutes to add this drug to our templated fact tables^[
+  See @sec-understanding-sets-library-published
+  and @sec-support-liaisons-logic
+  ] which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**:
   Oh my goodness, is that your cat?
   What a cutie!^[There is a brief discussion of SME's cat.]

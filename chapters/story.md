@@ -99,8 +99,8 @@ It's likely quicker than initiating a project based on a single EMR from your si
 
 ## Voice of Narrator
 
-The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution;
-the roles are defined below in @sec-story-team.]
+The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your institution;
+the roles are defined below in @sec-story-team.  If your institution doesn't support this position, we suggest starting with the [N3C Office Hours](support.md#sec-support-office) or other avenues of [support](support.md).]
 She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
@@ -228,9 +228,12 @@ Once the team is assembled, the first discussion is usually a variation of this 
   I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.
 * **Logic Liaison**:
   Hmmm.
-  I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-understanding,
-  specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.],
-  but you may not find it useful.
+  I'm happy to produce a dataset with the `dose` and `frequency` columns, but you may not find it useful.^[
+  <!-- Read about the OMOP Standard Tables in @sec-understanding,
+  specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. -->
+  OMOP tables are designed to represent data from many sources,
+  but typically they need to be transformed before they are analyzed with conventional statistical software.
+  ]
   Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
 * **I**:
   Bummer.
@@ -305,7 +308,7 @@ Once the team is assembled, the first discussion is usually a variation of this 
   But I've got good news.
   All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.
   Furthermore the diagnosis codes are standardized really well across sites.
-  That's because all the providers enter ICD codes into the EMR,
+  That's because most providers enter ICD codes into the EMR,
   which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**:
@@ -321,17 +324,21 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **LL**:
   It's actually worse than that.
   Sorry I'm a downer today.
-  Can you see my screen?  Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH's NLM.
+  Can you see my screen?  Drug A has 15 brand names and 200 different ...^[
+  The conversation get really technical.  More technical than the editors want for this chapter.
+  ]
+  <!--
+  RxNorm codes; each package is uniquely identified by the NIH's NLM.
   SME and I started on a concept set Thursday.
   We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.
   There are five ingredients that are conceptualized as Drug A.
   A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP)
   table is discussed with the OMOP concept hierarchy in @sec-understanding.]
   I'll roll up the meds into the patient-level dataset.
-  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records.
-  You'll probably want to transform the two counts into two booleans.
+  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. -->
+  So long story short, you'll probably want to transform the two counts into two booleans.
 * **St**:
-  And if I change my mind and decide to use the counts, then at least I'll know.
+  Ok.  Thanks for simplifying the dataset for me.
 
 ## Protocol, variables, & definitions
 

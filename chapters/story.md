@@ -315,7 +315,7 @@ The first discussion is usually a variation of the following exchange, with the 
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**:
   Well, that's fine for this paper.
-  Maybe our next manuscript will follow up with N3C's death records.^[TODO: is the book planning to have a section on the CMS & death records?]
+  Maybe our next manuscript will follow up with N3C's death records.^[Mortality records are discussed in @sec-understanding-pprl-mortality.]
 * **SME**:
   Sorry everybody, I have clinic this week, and they're calling me.
   I need to drop.^[Everyone says goodbye to the cat.]
@@ -326,7 +326,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **LL**:
   It's actually worse than that.
   Sorry I'm a downer today.
-  Can you see my screen?  Drug A has 15 brand names and 200 different ...^[
+  Can you see my screen?  Drug A has 15 brand names and 200 different...^[
   The conversation get really technical.  More technical than the editors want for this chapter.
   ]
   <!--

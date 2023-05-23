@@ -552,7 +552,7 @@ After repeating this for the remaining analyses for the project, the statisticia
   What happens now?
 * **Navigator**:
   That's great! Now that it's been approved, you can go into the Download Review Dashboard and there's an area where you can safely download the results.
-  The review comes with a DRR #, which is required to download the associated results.
+  The review comes with a [DRR ID](publishing.md#sec-publishing-tech-process-download), which is required to download the associated results.
 * **S**:
   Ok.
   And then I can send it out to the rest of the team?

@@ -332,8 +332,6 @@ Once the team is assembled, the first discussion is usually a variation of this 
   You'll probably want to transform the two counts into two booleans.
 * **St**:
   And if I change my mind and decide to use the counts, then at least I'll know.
-* **Shoreleave**:
-  and knowing is half the battle.
 
 ## Protocol, variables, & definitions
 

@@ -70,10 +70,10 @@ However, with this comes challenges of interpreting differences in care delivery
 
 Our story begins in your own piece of heaven: your office.
 As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
-Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR.
+Given that scurvy is a rare disease with no opportunities for industry funding, you decide to use observational data from the EHR.
 You expect a modest improvement based on the medications' relationships with other diseases.
 But many patients are required to detect a modest effect size, and your local institution has a small population.
-Given its low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.
+Given the disease's low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
 Your mind wanders, and you begin to daydream of additional hypotheses.
@@ -85,12 +85,14 @@ Your thoughts race into the night, a never-ending stream of possibilities.
 
 ## Onboarding {#sec-story-onboarding}
 
-As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place.
+As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements.
 The initial time investment is higher for an N3C investigation compared to most, but project-specific work tends to go faster.
 System access generally requires your institution to sign a Data Use Agreement with N3C,
 and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand,
-hundreds of institutions have already done so.
-You can check the list at <https://covid.cd2h.org/duas>, and more detail about this process is covered in @sec-onboarding-enclave-access]
+hundreds of institutions have already done so;
+check the list at <https://covid.cd2h.org/duas>.
+This process is described in @sec-onboarding-enclave-access.]
+
 Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee.
 That's a remarkably short time considering the scale of available data.
 It's likely quicker than initiating a project based on a single EMR from your site, and much quicker than accessing EMRs from 70+ sites individually.
@@ -99,7 +101,8 @@ It's likely quicker than initiating a project based on a single EMR from your si
 
 ## Voice of Narrator
 
-The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your institution;
+The next afternoon you are chatting with your institution's navigator.^[
+This "navigator" role may be called something differently at your institution;
 the roles are defined below in @sec-story-team.  If your institution doesn't support this position, we suggest starting with the [N3C Office Hours](support.md#sec-support-office) or other avenues of [support](support.md).]
 She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
@@ -113,7 +116,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]
   There are two remaining steps.
   First, complete your personal paperwork.^[See @sec-onboarding.]
-  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
+  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork is discussed in @sec-onboarding.]
 
 * **Investigator**:
   Remind me what a DUR is?
@@ -121,7 +124,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 * **N**:
   A *D*ata *U*se *R*equest describes your upcoming project.
   Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]
-  Everyone on your project uses this dedicated workspace too.
+  Everyone on your project shares this dedicated workspace.
   Once you've submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
 
 * **I**:
@@ -141,10 +144,14 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   Is there anything else I need to know?
 
 * **N**:
-  The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data.
-  Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days.
-  Also, all location identifiers are obfuscated to allow potential reidentification, so you won't have access to 5-digit ZIP Codes or other granular location measures.
-  If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements.
+  The only other consideration at this point is whether your want your study to use
+  Level 2 or Level 3 data.
+  [Level 2](access.md#sec-access-request-l2) data is fully de-identified,
+  meaning all the dates are shifted within &plusmn;180 days.
+  Also, all location identifiers are obfuscated to prevent reidentification,
+  so you won't have access to 5-digit ZIP Codes or other granular location measures.
+  If you need either of those, you have to submit [Level 3]((access.md#sec-access-request-l3)) data,
+  which is a limited data set containing these data elements.
   Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
   Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
 

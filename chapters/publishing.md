@@ -217,7 +217,7 @@ When a request is approved, behind the scenes a read-only copy of the materials 
 This is to prevent modification of export materials post-review.
 
 When your request is approved, you will see it listed as Approved in the Download Dashboard (see above).
-Each approved request is provided with a DRR ID, for example "DRR-E5C4B6C" shown above.
+Each approved request is provided with a DRR ID (which stands for Data Review Request), for example "DRR-E5C4B6C" shown above.
 If we scroll down further in the specific request, we can use the "View all…" link to see the individual approved "Resource(s) To Download":
 
 ![A view of exportable datasets and a report from an approved download request.](images/publishing/fig-publishing-050-download-approved.png){#fig-publishing-050-download-approved fig-alt="download-approved"}

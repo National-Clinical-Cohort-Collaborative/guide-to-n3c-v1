@@ -23,19 +23,19 @@ author:
   - name: Thomas Richards
     affiliation: Johns Hopkins University
     affiliation-url: https://www.jhu.edu/
-    # email:
+    email: tom.richards@jhu.edu
     orcid: 0000-0003-4945-9050
 
   - name: Kristin Kostka
     affiliation: The OHDSI Center at the Roux Institute, Northeastern University, Portland, ME & NDORMS, University of Oxford, Oxford, UK
-    # affiliation-url:
-    # email:
+    affiliation-url: https://roux.northeastern.edu/ohdsi/
+    email: kostka@ohdsi.org
     orcid: 0000-0003-2595-8736
 
   - name: Sigfried Gold
-    # affiliation:
-    # affiliation-url:
-    # email:
+    affiliation: Johns Hopkins University
+    affiliation-url: http://sigfried.org/
+    email: sigfried@jhu.edu
     orcid: 0000-0001-7853-6137
 
 csl: ../assets/csl/apa-7e.csl
@@ -341,7 +341,7 @@ These concept sets are in queue to be published as pdf (Properties) and json (co
 Once published, their Zenodo DOI will be posted to the Zenodo Property of the version that was published.
 The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
 
-The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} and [All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an N3C Enclave account" >}} and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
+The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} and [All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an N3C Enclave account" >}} and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
 
 #### Concept set reviews and validation {#sec-understanding-sets-library-review}
 

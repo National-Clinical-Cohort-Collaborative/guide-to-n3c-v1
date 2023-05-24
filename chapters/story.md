@@ -54,40 +54,57 @@ Coupled with a large and diverse set of robust patient records, completing a res
 Suppose you are starting a project by yourself.
 In that case, the N3C ecosystem of researchers and resources is at your fingertips.
 You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).
-If you would like to join an existing project, there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities. @fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
+If you would like to join an existing project,
+there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities.
+@fig-story-010-intro-to-story provides a high-level overview of the path of a typical N3C project from clinical question to research product.
 
-Electronic Health Record (EHR) research has become an increasingly important tool to evaluate real-world evidence (RWE) to understand insights into treatment effectiveness, the impact of healthcare interventions, and our understanding of rare diseases.
+Electronic Health Record (EHR) research has become an increasingly important tool to evaluate real-world evidence (RWE) to understand insights into treatment effectiveness,
+the impact of healthcare interventions, and our understanding of rare diseases.
 EHRs provide access to large, diverse patient populations and longitudinal data that allows observations of health changes over time or in cross-section.
 The strength of the EHR is that it reflects real-world care and is often a better representation of clinical care than the controlled settings of a traditional clinical trial.
-However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient’s lived experience relative their health outcomes.
+However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient's lived experience relative their health outcomes.
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
 Our story begins in your own piece of heaven: your office.
-As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?" Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR.
-You expect a modest improvement based on the meds’ relationships with other diseases.
+As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
+Given that scurvy is a rare disease with no opportunities for industry funding, you decide to use observational data from the EHR.
+You expect a modest improvement based on the medications' relationships with other diseases.
 But many patients are required to detect a modest effect size, and your local institution has a small population.
-Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.
+Given the disease's low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
-Your mind wanders as you get a little greedy; additional hypotheses enter your daydream.  *Does the relationship attenuate as you move inland?*  You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.  *Is the relationship more pronounced in other racial/ethnic groups?*  The stream persists throughout the night.
+Your mind wanders, and you begin to daydream of additional hypotheses.
+*Does the relationship attenuate as you move inland?*
+You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.
+*Is the relationship more pronounced in other racial/ethnic groups?*
+Your thoughts race into the night, a never-ending stream of possibilities.
 :::
 
 ## Onboarding {#sec-story-onboarding}
 
-As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place.
-Even with strong institutional support, execution of the university's Data Use Agreement with the NIH may take several months in legal and administrative channels.
-Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff.
+As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements.
+The initial time investment is higher for an N3C investigation compared to most, but project-specific work tends to go faster.
+System access generally requires your institution to sign a Data Use Agreement with N3C,
+and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand,
+hundreds of institutions have already done so;
+check the list at <https://covid.cd2h.org/duas>.
+This process is described in @sec-onboarding-enclave-access.]
+
+Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee.
 That's a remarkably short time considering the scale of available data.
-It's likely quicker than initiating a project based on a single EMR from your site --much quicker than EMRs from 70+ sites.
+It's likely quicker than initiating a project based on a single EHR from your site, and much quicker than accessing EHRs from 70+ sites individually.
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-The next afternoon you are chatting with your institution's Navigator.^[This role may be called something differently at your Institution; the roles are defined below in @sec-story-team.]  She organized the local N3C presentation and invited any interested attendees to contact her.
+The next afternoon you are chatting with your institution's navigator.^[
+This "navigator" role may be called something differently at your institution;
+the roles are defined below in @sec-story-team.  If your institution doesn't support this position, we suggest starting with the [N3C Office Hours](support.md#sec-support-office) or other avenues of [support](support.md).]
+She organized the local N3C presentation and invited any interested attendees to contact her.
 :::
 
 ::: {.callout-tip appearance="simple" icon=true}
@@ -96,17 +113,19 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Navigator**:
   I'm glad you think the N3C might help your research.
-  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]  There are two remaining steps.
+  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]
+  There are two remaining steps.
   First, complete your personal paperwork.^[See @sec-onboarding.]
-  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork are discussed in @sec-onboarding.]
+  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork is discussed in @sec-onboarding.]
 
 * **Investigator**:
-  Remind me what a DUR is?
+  Remind me.  What is a [DUR](access.md#sec-access-dur)?
 
 * **N**:
   A *D*ata *U*se *R*equest describes your upcoming project.
-  Once an NIH committee approves your proposal, your project's code and data are protected in this workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]  Everyone on your project uses this dedicated workspace too.
-  But they don't have to submit additional DURs --you grant them permission to join yours.^[DURs are the topic of @sec-access.]
+  Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]
+  Everyone on your project shares this dedicated workspace.
+  Once you've submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
 
 * **I**:
   Umm, I think I got it.
@@ -125,15 +144,19 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   Is there anything else I need to know?
 
 * **N**:
-  The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data.
-  Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days.
-  Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures.
-  If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements.
+  The only other consideration at this point is whether your want your study to use
+  Level 2 or Level 3 data.
+  [Level 2](access.md#sec-access-request-l2) data is fully de-identified,
+  meaning all the dates are shifted within &plusmn;180 days.
+  Also, all location identifiers are obfuscated to prevent reidentification,
+  so you won't have access to 5-digit ZIP Codes or other granular location measures.
+  If you need either of those, you have to submit [Level 3](access.md#sec-access-request-l3) data,
+  which is a limited data set containing these data elements.
   Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
   Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
 
 * **I**:
-  Ok, that’s very helpful.
+  Ok, that's very helpful.
   I may need real dates as I anticipate differences in treatment deliveries based on real-world availability.
   Am I stuck with Level 2 data if I start there?
 
@@ -142,20 +165,25 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   If needed, you can request a workspace to be updated from Level 2 to Level 3 and receive IRB approval.
 
 * **I**:
-  That’s great.
-  I think we’ll start with Level 2 and go from there.
-  I’ll work on the research protocol.
+  That's great.
+  I think we'll start with Level 2 and go from there.
+  I'll work on the research protocol.
 
-After some thought, the investigator puts together a research protocol and submits a DUR in N3C.
-They submit the [DUR](access.md#sec-access-dur), shown in @fig-story-020-dur.
+After some thought, the investigator develops a research protocol and
+submits a DUR, shown in @fig-story-020-dur.
 
 ![Submitted Data Use Request.](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
 
 ## Team building & collaborating {#sec-story-team}
 
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 The next step is to build a team to leverage retrospective medical records.
 Like most contemporary research teams, heterogenous skills are important.
-Ideally a team has at least, as shown in @fig-story-030-team-formation, members who can fill the roles below:
+You follow some advice and assemble the following team.
+:::
 
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
 1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
@@ -163,6 +191,8 @@ Ideally a team has at least, as shown in @fig-story-030-team-formation, members 
 1. a **logic liaison or informaticist** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
+
+@fig-story-030-team-formation depicts these roles.  Depending on the investigation and the personnel, sometimes one person can serve multiple roles.
 
 ![Typical N3C Team Composition.](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
 
@@ -175,17 +205,10 @@ Some trends we have noticed are:
 
 1. The role of the navigator is often the most important member of a successful team.
   Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls.
-  N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
+  N3C is bigger and younger than your site's EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.
-
-:::{.callout-note icon=false}
-
-## Voice of Narrator
-
-Recruiting your crew...
-:::
 
 ## Research Team's First Meeting
 
@@ -193,9 +216,8 @@ Recruiting your crew...
 
 ## Voice of Narrator
 
-Three weeks later...
-
-Once the team is assembled, the first discussion is usually a variation of this exchange, with the goal to move toward competition of a research protocol:
+The team is assembled after a few weeks.
+The first discussion is usually a variation of the following exchange, with the goal to move toward completion of a research protocol.
 :::
 
 * **Investigator**:
@@ -206,7 +228,12 @@ Once the team is assembled, the first discussion is usually a variation of this 
   I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.
 * **Logic Liaison**:
   Hmmm.
-  I'm happy to produce a dataset with the `dose` and `frequency` columns^[Read about the OMOP Standard Tables in @sec-understanding, specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table.], but you may not find it useful.
+  I'm happy to produce a dataset with the `dose` and `frequency` columns, but you may not find it useful.^[
+  <!-- Read about the OMOP Standard Tables in @sec-understanding,
+  specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. -->
+  OMOP tables are designed to represent data from many sources,
+  but typically they need to be transformed before they are analyzed with conventional statistical software.
+  ]
   Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
 * **I**:
   Bummer.
@@ -222,7 +249,10 @@ Once the team is assembled, the first discussion is usually a variation of this 
   In the N3C database, can someone tell me how many patients get both during the same visit?
 * **LL**:
   I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].
-  Give me 2 minutes to add this drug to our templated fact tables which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+  Give me 2 minutes to add this drug to our templated fact tables^[
+  See @sec-understanding-sets-library-published
+  and @sec-support-liaisons-logic
+  ] which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**:
   Oh my goodness, is that your cat?
   What a cutie!^[There is a brief discussion of SME's cat.]
@@ -265,11 +295,15 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **LL**:
   Bad news.
   This is kinda like the `dose` and `frequency` situation a few minutes ago.
-  The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE) theoretically can connect a patient's diagnoses across different locations.
+  The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE)
+  theoretically can connect a patient's diagnoses across different locations.
   But the quality of the historical records really depends on the site.
-  Some places like Rhode Island leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange) is a health information exchange.] to populate their N3C dataset.
+  Some places like Rhode Island leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange)
+  is a health information exchange.] to populate their N3C dataset.
   However other places are not as well connected.
-  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in @sec-practices.]
+  If a patient doesn't have diagnosis records, it's tough to determine if they are healthy,
+  or if their primary care provider uses a siloed EHR.^[The benefits and caveats of real-world data are a theme throughout the book,
+  particularly in the best practices discussed in @sec-practices.]
 * **I**:
   Ugh.
   Good point.
@@ -277,11 +311,12 @@ Once the team is assembled, the first discussion is usually a variation of this 
   But I've got good news.
   All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.
   Furthermore the diagnosis codes are standardized really well across sites.
-  That's because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
+  That's because most providers enter ICD codes into the EHR,
+  which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**:
   Well, that's fine for this paper.
-  Maybe our next manuscript will follow up with N3C's death records.^[TODO: is the book planning to have a section on the CMS & death records?]
+  Maybe our next manuscript will follow up with N3C's death records.^[Mortality records are discussed in @sec-understanding-pprl-mortality.]
 * **SME**:
   Sorry everybody, I have clinic this week, and they're calling me.
   I need to drop.^[Everyone says goodbye to the cat.]
@@ -292,51 +327,81 @@ Once the team is assembled, the first discussion is usually a variation of this 
 * **LL**:
   It's actually worse than that.
   Sorry I'm a downer today.
-  Can you see my screen?  Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH's NLM.
+  Can you see my screen?  Drug A has 15 brand names and 200 different...^[
+  The conversation get really technical.  More technical than the editors want for this chapter.
+  ]
+  <!--
+  RxNorm codes; each package is uniquely identified by the NIH's NLM.
   SME and I started on a concept set Thursday.
   We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.
   There are five ingredients that are conceptualized as Drug A.
-  A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP) table is discussed with the OMOP concept hierarchy in @sec-understanding.]  I'll roll up the meds into the patient-level dataset.
-  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records.
-  You'll probably want to transform the two counts into two booleans.
+  A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP)
+  table is discussed with the OMOP concept hierarchy in @sec-understanding.]
+  I'll roll up the meds into the patient-level dataset.
+  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. -->
+  So long story short, you'll probably want to transform the two counts into two booleans.
 * **St**:
-  And if I change my mind and decide to use the counts, then at least I'll know.
-* **Shoreleave**:
-  and knowing is half the battle.
+  Ok.  Thanks for simplifying the dataset for me.
 
 ## Protocol, variables, & definitions
 
-Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies.
-Most researchers have several years of graduate-level courses and real-world experience.
+:::{.callout-note icon=false}
 
-1. Tradeoffs are inevitable when selecting variables.
-  Rarely will an investigator’s first choice be available.
+## Voice of Narrator
 
-1. Retrospective medical records are extracted from a larger dataset.
-  An investigation can use only a fraction of the terabytes in an EMR.
-  Many decisions are involved to include only the relevant variables among the qualifying patients.
+Developing a research protocol is both familiar and vague in the context of EHR studies,
+even when researchers have several years of graduate-level courses and real-world experience.
+Tradeoffs are inevitable when selecting variables,
+and an investigator's first choice is not always available.
+
+:::
+
+An investigation can realistically use only a fraction of the terabytes of information in an EHR.
+The research team must identify the relevant variables among the qualifying patients
+to produce a coherent dataset tailored to their hypotheses.
 
 While there are different approaches to developing a Research Protocol, the general steps involved include:
 
-1. Define the research question: The first step is to clearly define the research question and the patient population of interest.
+1. Define the research question:
+  The first step is to clearly define the research question and the patient population of interest.
   This will guide the selection of relevant clinical concepts and data sources.
 
-1. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
+1. Determine the study design:
+  The research team should choose an appropriate study design, such as a cohort study or case-control study,
+  and determine the inclusion and exclusion criteria for the patient population.
 
-1. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
+1. Develop the analytic plan:
+  The research team should prospectively specify the statistical methods to be used to analyze the data,
+  including any adjustments for confounding variables and any sensitivity analyses.
 
-1. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
-  N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.
+1. Document the study protocol:
+  The research team should document a detailed study protocol that includes all of the above information,
+  as well as any other relevant information,
+  such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
 
-After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
+The Enclave's Protocol Pad supports the development and documentation of detailed study protocols.^[
+@sec-tools-apps-protocol describes the tool
+and @sec-practices describes the best practices.
+]
 
-## Learning and using OMOP and OHDSI Tooling
+## OMOP Tools
 
-The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/) Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
+After you have creating a research protocol,
+you turn to OMOP and N3C tools to define the variables.
+
+:::
+
+The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/)
+Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
 OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM.
 Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].
 Given its ubiquity and active research community, OMOP is well suited for N3C.
-OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
+OMOP has extensive tooling to support researchers,
+including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
 
 1. [Atlas](https://github.com/OHDSI/Atlas/wiki) provides a user-friendly interface for querying and analyzing data in the OMOP CDM.
   In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.
@@ -404,7 +469,9 @@ In general, analytic datasets are organized at either the person or encounter le
 This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter.
 This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
 
-Using the previously defined protocol, the informaticist will use the [concept set browser] to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook) or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
+Using the previously defined protocol, the informaticist will use the [concept set browser]
+to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
+or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
 This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
 N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
 They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
@@ -518,7 +585,7 @@ After repeating this for the remaining analyses for the project, the statisticia
   What happens now?
 * **Navigator**:
   That's great! Now that it's been approved, you can go into the Download Review Dashboard and there's an area where you can safely download the results.
-  The review comes with a DRR #, which is required to download the associated results.
+  The review comes with a [DRR ID](publishing.md#sec-publishing-tech-process-download), which is required to download the associated results.
 * **S**:
   Ok.
   And then I can send it out to the rest of the team?

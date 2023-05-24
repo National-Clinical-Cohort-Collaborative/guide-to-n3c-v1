@@ -239,8 +239,10 @@ Protocol Pad is the foundation for performing reproducible and repeatable scienc
 The templates, checklists, and links to key resources provided within the tool guide you along the path of well structured division of labor and use of best practices when performing research using the observational data in the Enclave.
 The tool also assists your team in keeping the work in alignment with the project.
 A more in depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
-Documentation on the tool's functionality can be found in this [Quick Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}}
-as well as this more [Detailed Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+Documentation on the tool's functionality can be found in the
+[QuickStart Users' Guide to Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}}
+as well as the
+[Protocol Pad White Paper and Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
 ### Contour {#sec-tools-apps-contour}
 

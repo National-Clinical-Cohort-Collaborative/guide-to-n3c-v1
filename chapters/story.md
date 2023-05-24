@@ -95,7 +95,7 @@ This process is described in @sec-onboarding-enclave-access.]
 
 Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee.
 That's a remarkably short time considering the scale of available data.
-It's likely quicker than initiating a project based on a single EMR from your site, and much quicker than accessing EMRs from 70+ sites individually.
+It's likely quicker than initiating a project based on a single EHR from your site, and much quicker than accessing EHRs from 70+ sites individually.
 
 :::{.callout-note icon=false}
 
@@ -182,9 +182,8 @@ submits a DUR, shown in @fig-story-020-dur.
 
 The next step is to build a team to leverage retrospective medical records.
 Like most contemporary research teams, heterogenous skills are important.
+You follow some advice and assemble the following team.
 :::
-
-@fig-story-030-team-formation depicts the authors' ideal team.  Sometimes one person can serve multiple roles.
 
 1. a **navigator** who has learned the administrative and IRB requirements and can facilitate the investigation,
 1. a **subject matter expert** (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,
@@ -192,6 +191,8 @@ Like most contemporary research teams, heterogenous skills are important.
 1. a **logic liaison or informaticist** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
 1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
+
+@fig-story-030-team-formation depicts these roles.  Depending on the investigation and the personnel, sometimes one person can serve multiple roles.
 
 ![Typical N3C Team Composition.](images/story/fig-story-030-team-formation.png){#fig-story-030-team-formation fig-alt="Typical N3C Team Composition"}
 
@@ -301,7 +302,7 @@ The first discussion is usually a variation of the following exchange, with the 
   is a health information exchange.] to populate their N3C dataset.
   However other places are not as well connected.
   If a patient doesn't have diagnosis records, it's tough to determine if they are healthy,
-  or if their primary care provider uses a siloed EMR.^[The benefits and caveats of real-world data are a theme throughout the book,
+  or if their primary care provider uses a siloed EHR.^[The benefits and caveats of real-world data are a theme throughout the book,
   particularly in the best practices discussed in @sec-practices.]
 * **I**:
   Ugh.
@@ -310,7 +311,7 @@ The first discussion is usually a variation of the following exchange, with the 
   But I've got good news.
   All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.
   Furthermore the diagnosis codes are standardized really well across sites.
-  That's because most providers enter ICD codes into the EMR,
+  That's because most providers enter ICD codes into the EHR,
   which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**:
@@ -344,15 +345,14 @@ The first discussion is usually a variation of the following exchange, with the 
 
 ## Protocol, variables, & definitions
 
-Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies.
-Most researchers have several years of graduate-level courses and real-world experience.
+Developing a research protocol is both familiar and vague in the context of EHR studies,
+even when researchers have several years of graduate-level courses and real-world experience.
+Tradeoffs are inevitable when selecting variables,
+and an investigator's first choice is not always available.
 
-1. Tradeoffs are inevitable when selecting variables.
-  Rarely will an investigator's first choice be available.
-
-1. Retrospective medical records are extracted from a larger dataset.
-  An investigation can use only a fraction of the terabytes in an EMR.
-  Many decisions are involved to include only the relevant variables among the qualifying patients.
+An investigation can realistically use only a fraction of the terabytes of information in an EHR.
+The research team must identify the relevant variables among the qualifying patients
+to produce a coherent dataset tailored to their hypotheses.
 
 While there are different approaches to developing a Research Protocol, the general steps involved include:
 
@@ -361,9 +361,9 @@ While there are different approaches to developing a Research Protocol, the gene
 
 1. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
 
-1. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
+2. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
 
-1. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information,
+3. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information,
   as well as any other relevant information,
   such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
   N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.

@@ -378,15 +378,20 @@ While there are different approaches to developing a Research Protocol, the gene
   The research team should document a detailed study protocol that includes all of the above information,
   as well as any other relevant information,
   such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
-  N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.
 
-## Learning and using OMOP and OHDSI Tooling
+The Enclave's Protocol Pad supports the development and documentation of detailed study protocols.^[
+@sec-tools-apps-protocol describes the tool
+and @sec-practices describes the best practices.
+]
+
+## OMOP Tools
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
+After you have creating a research protocol,
+you turn to OMOP and N3C tools to define the variables.
 
 :::
 
@@ -395,7 +400,8 @@ Observational Health Data Sciences and Informatics (OHDSI) program maintains the
 OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM.
 Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].
 Given its ubiquity and active research community, OMOP is well suited for N3C.
-OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
+OMOP has extensive tooling to support researchers,
+including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
 
 1. [Atlas](https://github.com/OHDSI/Atlas/wiki) provides a user-friendly interface for querying and analyzing data in the OMOP CDM.
   In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.

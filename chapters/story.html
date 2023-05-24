@@ -369,7 +369,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-story-team" id="toc-sec-story-team" class="nav-link" data-scroll-target="#sec-story-team"><span class="header-section-number">2.2</span> Team building &amp; collaborating</a></li>
   <li><a href="#research-teams-first-meeting" id="toc-research-teams-first-meeting" class="nav-link" data-scroll-target="#research-teams-first-meeting"><span class="header-section-number">2.3</span> Research Team’s First Meeting</a></li>
   <li><a href="#protocol-variables-definitions" id="toc-protocol-variables-definitions" class="nav-link" data-scroll-target="#protocol-variables-definitions"><span class="header-section-number">2.4</span> Protocol, variables, &amp; definitions</a></li>
-  <li><a href="#learning-and-using-omop-and-ohdsi-tooling" id="toc-learning-and-using-omop-and-ohdsi-tooling" class="nav-link" data-scroll-target="#learning-and-using-omop-and-ohdsi-tooling"><span class="header-section-number">2.5</span> Learning and using OMOP and OHDSI Tooling</a></li>
+  <li><a href="#omop-tools" id="toc-omop-tools" class="nav-link" data-scroll-target="#omop-tools"><span class="header-section-number">2.5</span> OMOP Tools</a></li>
   <li><a href="#creating-an-analysis-ready-dataset" id="toc-creating-an-analysis-ready-dataset" class="nav-link" data-scroll-target="#creating-an-analysis-ready-dataset"><span class="header-section-number">2.6</span> Creating an analysis-ready dataset</a></li>
   <li><a href="#analyses" id="toc-analyses" class="nav-link" data-scroll-target="#analyses"><span class="header-section-number">2.7</span> Analyses</a></li>
   <li><a href="#draft-paper-pub-committee" id="toc-draft-paper-pub-committee" class="nav-link" data-scroll-target="#draft-paper-pub-committee"><span class="header-section-number">2.8</span> Draft paper, pub committee</a>
@@ -416,7 +416,7 @@ Note
 <p>Now that we have introduced N3C and described its motivation and importance, we’ll walk through the life cycle of an example project from onboarding to publishing. This path typically takes at least 6 months and 6 collaborators. It isn’t easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.</p>
 <div id="fig-story-010-intro-to-story" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" title="Path of a typical N3C project." data-gallery="quarto-lightbox-gallery-1"><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a></p>
+<p><a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Path of a typical N3C project."><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;2.1: Path of a typical N3C project.</figcaption>
 </figure>
 </div>
@@ -432,13 +432,14 @@ Voice of Narrator
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Our story begins in your own piece of heaven: your office. As a researcher of scurvy, you have wondered, “do patients receiving the newest medications have more favorable covid outcomes than patients receiving the previous generation?” Given that scurvy is a rare disease with no opportunities for industry funding, leaving the best option for studying it observational data from the EHR. You expect a modest improvement based on the meds’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given its low prevalence, no single institution would have a sufficient sample size to answer your research question.</p>
-<p>Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals. Your mind wanders as you get a little greedy; additional hypotheses enter your daydream. <em>Does the relationship attenuate as you move inland?</em> You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions. <em>Is the relationship more pronounced in other racial/ethnic groups?</em> The stream persists throughout the night.</p>
+<p>Our story begins in your own piece of heaven: your office. As a researcher of scurvy, you have wondered, “do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?” Given that scurvy is a rare disease with no opportunities for industry funding, you decide to use observational data from the EHR. You expect a modest improvement based on the medications’ relationships with other diseases. But many patients are required to detect a modest effect size, and your local institution has a small population. Given the disease’s low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.</p>
+<p>Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals. Your mind wanders, and you begin to daydream of additional hypotheses. <em>Does the relationship attenuate as you move inland?</em> You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions. <em>Is the relationship more pronounced in other racial/ethnic groups?</em> Your thoughts race into the night, a never-ending stream of possibilities.</p>
 </div>
 </div>
 <section id="sec-story-onboarding" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-story-onboarding"><span class="header-section-number">2.1</span> Onboarding</h2>
-<p>As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal be put in place. Even with strong institutional support, execution of the university’s Data Use Agreement with the NIH may take several months in legal and administrative channels. Yet after clearing that first (tall) hurdle for your site, each specific project takes only a week or two to be processed by the N3C staff. That’s a remarkably short time considering the scale of available data. It’s likely quicker than initiating a project based on a single EMR from your site –much quicker than EMRs from 70+ sites.</p>
+<p>As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements. The initial time investment is higher for an N3C investigation compared to most, but project-specific work tends to go faster. System access generally requires your institution to sign a Data Use Agreement with N3C, and even with strong institutional support this can takes several months in legal and administrative channels.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee. That’s a remarkably short time considering the scale of available data. It’s likely quicker than initiating a project based on a single EHR from your site, and much quicker than accessing EHRs from 70+ sites individually.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -449,7 +450,7 @@ Voice of Narrator
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The next afternoon you are chatting with your institution’s Navigator.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> She organized the local N3C presentation and invited any interested attendees to contact her.</p>
+<p>The next afternoon you are chatting with your institution’s navigator.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> She organized the local N3C presentation and invited any interested attendees to contact her.</p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-tip">
@@ -463,48 +464,27 @@ Voice of Narrator
 </div>
 </div>
 <ul>
-<li><p><strong>Navigator</strong>: I’m glad you think the N3C might help your research. As I wrote in this morning’s email, the agreement between the university and the NIH was established last year, so don’t worry about that.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> There are two remaining steps. First, complete your personal paperwork.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Second, submit a DUR tailored to your hypotheses.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
-<li><p><strong>Investigator</strong>: Remind me what a DUR is?</p></li>
-<li><p><strong>N</strong>: A <em>D</em>ata <em>U</em>se <em>R</em>equest describes your upcoming project. Once an NIH committee approves your proposal, your project’s code and data are protected in this workspace allotted on the NIH cloud.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Everyone on your project uses this dedicated workspace too. But they don’t have to submit additional DURs –you grant them permission to join yours.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p></li>
+<li><p><strong>Navigator</strong>: I’m glad you think the N3C might help your research. As I wrote in this morning’s email, the agreement between the university and the NIH was established last year, so don’t worry about that.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> There are two remaining steps. First, complete your personal paperwork.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Second, submit a DUR tailored to your hypotheses.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p></li>
+<li><p><strong>Investigator</strong>: Remind me. What is a <a href="../chapters/access.html#sec-access-dur">DUR</a>?</p></li>
+<li><p><strong>N</strong>: A <em>D</em>ata <em>U</em>se <em>R</em>equest describes your upcoming project. Once an NIH committee approves your proposal, your project’s code and data are protected in an associated workspace allotted on the NIH cloud.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Everyone on your project shares this dedicated workspace. Once you’ve submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
 <li><p><strong>I</strong>: Umm, I think I got it.</p></li>
 <li><p><strong>N</strong>: It will make sense once you get it into it. Skim the example DUR proposals I’m sending now. Then start filling out this online form. Get as far as you can, and then I’ll help with the rest. If there’s something I don’t know, I’ll ask a friend. The DUR application process will take about an hour. Then the proposal will likely be approved within a week or two. In the meantime, we can talk about potential collaborators.</p></li>
 <li><p><strong>I</strong>: Is there anything else I need to know?</p></li>
-<li><p><strong>N</strong>: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. Level 2 data is fully de-identified, meaning all the dates are shifted by up to 180 days. Also, all location identifiers are obfuscated to allow potential reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit Level 3 data, which is a limited data set containing these data elements. Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind. Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.</p></li>
+<li><p><strong>N</strong>: The only other consideration at this point is whether your want your study to use Level 2 or Level 3 data. <a href="../chapters/access.html#sec-access-request-l2">Level 2</a> data is fully de-identified, meaning all the dates are shifted within ±180 days. Also, all location identifiers are obfuscated to prevent reidentification, so you won’t have access to 5-digit ZIP Codes or other granular location measures. If you need either of those, you have to submit <a href="../chapters/access.html#sec-access-request-l3">Level 3</a> data, which is a limited data set containing these data elements. Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind. Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.</p></li>
 <li><p><strong>I</strong>: Ok, that’s very helpful. I may need real dates as I anticipate differences in treatment deliveries based on real-world availability. Am I stuck with Level 2 data if I start there?</p></li>
 <li><p><strong>N</strong>: No. If needed, you can request a workspace to be updated from Level 2 to Level 3 and receive IRB approval.</p></li>
 <li><p><strong>I</strong>: That’s great. I think we’ll start with Level 2 and go from there. I’ll work on the research protocol.</p></li>
 </ul>
-<p>After some thought, the investigator puts together a research protocol and submits a DUR in N3C. They submit the <a href="../chapters/access.html#sec-access-dur">DUR</a>, shown in <a href="#fig-story-020-dur">Figure&nbsp;<span>2.2</span></a>.</p>
+<p>After some thought, the investigator develops a research protocol and submits a DUR, shown in <a href="#fig-story-020-dur">Figure&nbsp;<span>2.2</span></a>.</p>
 <div id="fig-story-020-dur" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/story/fig-story-020-dur.png" class="lightbox" title="Submitted Data Use Request." data-gallery="quarto-lightbox-gallery-2"><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a></p>
+<p><a href="images/story/fig-story-020-dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Submitted Data Use Request."><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;2.2: Submitted Data Use Request.</figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-story-team" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-story-team"><span class="header-section-number">2.2</span> Team building &amp; collaborating</h2>
-<p>The next step is to build a team to leverage retrospective medical records. Like most contemporary research teams, heterogenous skills are important. Ideally a team has at least, as shown in <a href="#fig-story-030-team-formation">Figure&nbsp;<span>2.3</span></a>, members who can fill the roles below:</p>
-<ol type="1">
-<li>a <strong>navigator</strong> who has learned the administrative and IRB requirements and can facilitate the investigation,</li>
-<li>a <strong>subject matter expert</strong> (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,</li>
-<li>a <strong>statistician or data scientist</strong> who understands the limitations of observational collection and can model retrospective data,</li>
-<li>a <strong>logic liaison or informaticist</strong> who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),</li>
-<li>a <strong>data liaison</strong> who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and</li>
-<li>a <strong>principal investigator</strong> who knows the literature and can testable hypotheses and write the manuscript.</li>
-</ol>
-<div id="fig-story-030-team-formation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/story/fig-story-030-team-formation.png" class="lightbox" title="Typical N3C Team Composition." data-gallery="quarto-lightbox-gallery-3"><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;2.3: Typical N3C Team Composition.</figcaption>
-</figure>
-</div>
-<p>N3C teams have some differences from conventional research teams at single sites. Some trends we have noticed are:</p>
-<ol type="1">
-<li><p>Most N3C teams have researchers from multiple institutions. In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism. Researchers from a single institution/lab are sometimes more reluctant to generate contrary views.</p></li>
-<li><p>The role of the navigator is often the most important member of a successful team. Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls. N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.</p></li>
-</ol>
-<p>If your team needs someone, consider asking a relevant <a href="../chapters/onboarding.html#sec-onboarding-dt">domain team</a> for help identifying and approaching potential collaborators. Note that community-wide data and logic liaisons are available for consultation during regular office hours.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -515,9 +495,30 @@ Voice of Narrator
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Recruiting your crew…</p>
+<p>The next step is to build a team to leverage retrospective medical records. Like most contemporary research teams, heterogenous skills are important. You follow some advice and assemble the following team.</p>
 </div>
 </div>
+<ol type="1">
+<li>a <strong>navigator</strong> who has learned the administrative and IRB requirements and can facilitate the investigation,</li>
+<li>a <strong>subject matter expert</strong> (SME) who has clinical experience with the disease of interest and can inform decisions with EHR variables,</li>
+<li>a <strong>statistician or data scientist</strong> who understands the limitations of observational collection and can model retrospective data,</li>
+<li>a <strong>logic liaison or informaticist</strong> who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),</li>
+<li>a <strong>data liaison</strong> who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and</li>
+<li>a <strong>principal investigator</strong> who knows the literature and can testable hypotheses and write the manuscript.</li>
+</ol>
+<p><a href="#fig-story-030-team-formation">Figure&nbsp;<span>2.3</span></a> depicts these roles. Depending on the investigation and the personnel, sometimes one person can serve multiple roles.</p>
+<div id="fig-story-030-team-formation" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="images/story/fig-story-030-team-formation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Typical N3C Team Composition."><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;2.3: Typical N3C Team Composition.</figcaption>
+</figure>
+</div>
+<p>N3C teams have some differences from conventional research teams at single sites. Some trends we have noticed are:</p>
+<ol type="1">
+<li><p>Most N3C teams have researchers from multiple institutions. In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism. Researchers from a single institution/lab are sometimes more reluctant to generate contrary views.</p></li>
+<li><p>The role of the navigator is often the most important member of a successful team. Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls. N3C is bigger and younger than your site’s EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.</p></li>
+</ol>
+<p>If your team needs someone, consider asking a relevant <a href="../chapters/onboarding.html#sec-onboarding-dt">domain team</a> for help identifying and approaching potential collaborators. Note that community-wide data and logic liaisons are available for consultation during regular office hours.</p>
 </section>
 <section id="research-teams-first-meeting" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="research-teams-first-meeting"><span class="header-section-number">2.3</span> Research Team’s First Meeting</h2>
@@ -531,57 +532,85 @@ Voice of Narrator
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Three weeks later…</p>
-<p>Once the team is assembled, the first discussion is usually a variation of this exchange, with the goal to move toward competition of a research protocol:</p>
+<p>The team is assembled after a few weeks. The first discussion is usually a variation of the following exchange, with the goal to move toward completion of a research protocol.</p>
 </div>
 </div>
 <ul>
 <li><strong>Investigator</strong>: Welcome everyone. We’d like to know if Drug A or Drug B is associated with better outcomes.</li>
 <li><strong>Statistician</strong>: No problem. I can longitudinally model the type and amount of each medication received by each patient, relative to their intake date.</li>
-<li><strong>Logic Liaison</strong>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, but you may not find it useful. Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
+<li><strong>Logic Liaison</strong>: Hmmm. I’m happy to produce a dataset with the <code>dose</code> and <code>frequency</code> columns, but you may not find it useful.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Those two columns are sparsely populated and they look inconsistent across sites.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
 <li><strong>I</strong>: Bummer. Then what’s realistic or feasible?</li>
 <li><strong>Subject Matter Expert</strong>: Maybe this simplifies the picture… In my clinical experience, a patient rarely switches between Drugs A &amp; B. Based on the initial presentation, their provider will pick A <em>or</em> B, and complete the regimen unless there’s an adverse event.</li>
 <li><strong>St</strong>: In that case, should my initial model have three levels for treatment: A, B, and A+B?</li>
 <li><strong>I</strong>: Probably. In the N3C database, can someone tell me how many patients get both during the same visit?</li>
-<li><strong>LL</strong>: I’m already logged into the Enclave<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. Give me 2 minutes to add this drug to our templated fact tables which show same day events and also summarize events at the patient level.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
-<li><strong>I</strong>: Oh my goodness, is that your cat? What a cutie!<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
+<li><strong>LL</strong>: I’m already logged into the Enclave<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. Give me 2 minutes to add this drug to our templated fact tables<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> which show same day events and also summarize events at the patient level.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></li>
+<li><strong>I</strong>: Oh my goodness, is that your cat? What a cutie!<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></li>
 <li><strong>LL</strong> <em>after a few minutes</em>: Ok, I got it. [Unmutes himself.] Ok, I got it. 40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A &amp; B in the same visit.</li>
 <li><strong>SME</strong>: Weird. 8% is a lot more than I expected. I was thinking around 1%.</li>
-<li><strong>LL</strong>: Hmm, let me check. Give me another minute.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></li>
+<li><strong>LL</strong>: Hmm, let me check. Give me another minute.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></li>
 <li><strong>LL</strong> <em>after a few minutes</em>: I see what you mean. It looks like the bulk of the combo patients were admitted in the spring of 2020. After Jan 2021, only 3% of patients have both Drug A &amp; B.</li>
 <li><strong>St</strong>: I was already planning to model the phase of the pandemic. I’ll test if there’s a significant interaction between time and treatment.</li>
 <li><strong>I</strong>: I like that as a starting point. Regarding the question about dose and frequency… For now let’s assume the providers were following the current dosing guidelines. Therefore the <code>dose</code> and <code>frequency</code> variables can be dropped from the analyses.</li>
 <li><strong>St</strong>: Phew. I didn’t want to admit this. But I skimmed the dosing guidelines you emailed yesterday. It looked complicated. I wasn’t sure if I could appropriately incorporate those variables in the model.</li>
 <li><strong>I</strong>: Well, that’s everything I wanted to cover today. See you in two weeks. Wait. I can’t believe I forgot. Sorry -our Navigator is sick this week and I’m almost worthless in her absence. Is everyone still on the call? For our secondary hypothesis, we want everything to connect to a patient’s diagnoses. …before, during, and after their covid hospitalization.</li>
-<li><strong>LL</strong>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Rhode Island leverage their state’s HIE<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EMR.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></li>
+<li><strong>LL</strong>: Bad news. This is kinda like the <code>dose</code> and <code>frequency</code> situation a few minutes ago. The structure of the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE">OMOP diagnosis table</a> theoretically can connect a patient’s diagnoses across different locations. But the quality of the historical records really depends on the site. Some places like Rhode Island leverage their state’s HIE<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> to populate their N3C dataset. However other places are not as well connected. If a patient doesn’t have diagnosis records, it’s tough to determine if they are healthy, or if their primary care provider uses a siloed EHR.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
 <li><strong>I</strong>: Ugh. Good point.</li>
-<li><strong>LL</strong>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because all the providers enter ICD codes into the EMR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a></li>
-<li><strong>I</strong>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
-<li><strong>SME</strong>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
+<li><strong>LL</strong>: But I’ve got good news. All the N3C contributors comprehensively capture all conditions diagnosed <em>during</em> the visit. Furthermore the diagnosis codes are standardized really well across sites. That’s because most providers enter ICD codes into the EHR, which eventually can be cleanly mapped to OMOP’s standard concepts.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
+<li><strong>I</strong>: Well, that’s fine for this paper. Maybe our next manuscript will follow up with N3C’s death records.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></li>
+<li><strong>SME</strong>: Sorry everybody, I have clinic this week, and they’re calling me. I need to drop.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></li>
 <li><strong>St</strong>: Can I go back and ask a question about medications? I see that Drug A has 15 different brand names. I don’t recognize half of them. How should I classify them?</li>
-<li><strong>LL</strong>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different RxNorm codes; each package is uniquely identified by the NIH’s NLM. SME and I started on a concept set Thursday. We’re operationalizing the drug classes by their <a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html">RxNorm</a> ingredient. There are five ingredients that are conceptualized as Drug A. A friend showed me how she used the OMOP tables in a different project.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> I’ll roll up the meds into the patient-level dataset. It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. You’ll probably want to transform the two counts into two booleans.</li>
-<li><strong>St</strong>: And if I change my mind and decide to use the counts, then at least I’ll know.</li>
-<li><strong>Shoreleave</strong>: and knowing is half the battle.</li>
+<li><strong>LL</strong>: It’s actually worse than that. Sorry I’m a downer today. Can you see my screen? Drug A has 15 brand names and 200 different…<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> <!--
+  RxNorm codes; each package is uniquely identified by the NIH's NLM.
+  SME and I started on a concept set Thursday.
+  We're operationalizing the drug classes by their [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/docs/appendix5.html) ingredient.
+  There are five ingredients that are conceptualized as Drug A.
+  A friend showed me how she used the OMOP tables in a different project.^[The [`concept_relationship`](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP)
+  table is discussed with the OMOP concept hierarchy in @sec-understanding.]
+  I'll roll up the meds into the patient-level dataset.
+  It will have one integer for the number of medication records tied to a Drug A ingredient and another integer for Drug B records. --> So long story short, you’ll probably want to transform the two counts into two booleans.</li>
+<li><strong>St</strong>: Ok. Thanks for simplifying the dataset for me.</li>
 </ul>
 </section>
 <section id="protocol-variables-definitions" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="protocol-variables-definitions"><span class="header-section-number">2.4</span> Protocol, variables, &amp; definitions</h2>
-<p>Developing a research protocol is both familiar and vague for most research teams in the context of EHR studies. Most researchers have several years of graduate-level courses and real-world experience.</p>
-<ol type="1">
-<li><p>Tradeoffs are inevitable when selecting variables. Rarely will an investigator’s first choice be available.</p></li>
-<li><p>Retrospective medical records are extracted from a larger dataset. An investigation can use only a fraction of the terabytes in an EMR. Many decisions are involved to include only the relevant variables among the qualifying patients.</p></li>
-</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Voice of Narrator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Developing a research protocol is both familiar and vague in the context of EHR studies, even when researchers have several years of graduate-level courses and real-world experience. Tradeoffs are inevitable when selecting variables, and an investigator’s first choice is not always available.</p>
+</div>
+</div>
+<p>An investigation can realistically use only a fraction of the terabytes of information in an EHR. The research team must identify the relevant variables among the qualifying patients to produce a coherent dataset tailored to their hypotheses.</p>
 <p>While there are different approaches to developing a Research Protocol, the general steps involved include:</p>
 <ol type="1">
 <li><p>Define the research question: The first step is to clearly define the research question and the patient population of interest. This will guide the selection of relevant clinical concepts and data sources.</p></li>
 <li><p>Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.</p></li>
 <li><p>Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.</p></li>
-<li><p>Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements. N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.</p></li>
+<li><p>Document the study protocol: The research team should document a detailed study protocol that includes all of the above information, as well as any other relevant information, such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.</p></li>
 </ol>
-<p>After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.</p>
+<p>The Enclave’s Protocol Pad supports the development and documentation of detailed study protocols.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
 </section>
-<section id="learning-and-using-omop-and-ohdsi-tooling" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="learning-and-using-omop-and-ohdsi-tooling"><span class="header-section-number">2.5</span> Learning and using OMOP and OHDSI Tooling</h2>
+<section id="omop-tools" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="omop-tools"><span class="header-section-number">2.5</span> OMOP Tools</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Voice of Narrator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After you have creating a research protocol, you turn to OMOP and N3C tools to define the variables.</p>
+</div>
+</div>
 <p>The <a href="https://www.ohdsi.org/">Observational Health Data Sciences and Informatics (OHDSI)</a> Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM. Detecting a small signal requires a large datasets –larger than any single health care database <span class="citation" data-cites="ohdsi_2019">(<a href="../references.html#ref-ohdsi_2019" role="doc-biblioref">OHDSI 2019, chap. 1</a>)</span>. Given its ubiquity and active research community, OMOP is well suited for N3C. OMOP has extensive tooling to support researchers, including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:</p>
 <ol type="1">
 <li><p><a href="https://github.com/OHDSI/Atlas/wiki">Atlas</a> provides a user-friendly interface for querying and analyzing data in the OMOP CDM. In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.</p></li>
@@ -905,7 +934,7 @@ Voice of Narrator
 <p>After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the <a href="../chapters/publishing.html">N3C Download Review Committee</a></p>
 <ul>
 <li><strong>Statistician</strong>: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now?</li>
-<li><strong>Navigator</strong>: That’s great! Now that it’s been approved, you can go into the Download Review Dashboard and there’s an area where you can safely download the results. The review comes with a DRR #, which is required to download the associated results.</li>
+<li><strong>Navigator</strong>: That’s great! Now that it’s been approved, you can go into the Download Review Dashboard and there’s an area where you can safely download the results. The review comes with a <a href="../chapters/publishing.html#sec-publishing-tech-process-download">DRR ID</a>, which is required to download the associated results.</li>
 <li><strong>S</strong>: Ok. And then I can send it out to the rest of the team?</li>
 <li><strong>N</strong>: Yep! Once it’s been reviewed, you can share it with the rest of the team outside of the Enclave.</li>
 <li><strong>S</strong>: Great. Thank you! I’ll set up a time to review the results with the team next week.</li>
@@ -972,24 +1001,28 @@ OHDSI. 2019. <em>The Book of OHDSI: Observational Health Data Sciences and Infor
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>This role may be called something differently at your Institution; the roles are defined below in <a href="#sec-story-team"><span>Section&nbsp;2.2</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Read about the institutional-level DUA in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>See <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Project-level paperwork are discussed in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>The NIH “Enclave” is detailed in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>DURs are the topic of <a href="access.html"><span>Chapter&nbsp;6</span></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Read about the OMOP Standard Tables in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>, specifically the medications are in the <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE"><code>drug_exposure</code></a> table.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Conformance is a topic in <a href="cycle.html"><span>Chapter&nbsp;3</span></a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>See <a href="access.html"><span>Chapter&nbsp;6</span></a> for accessing the N3C Enclave.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>There is a brief discussion of SME’s cat.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>There is a brief discussion of S’s daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>An <a href="https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange">HIE</a> is a health information exchange.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html"><span>Chapter&nbsp;9</span></a>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Authoring and using concept sets are described in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>TODO: is the book planning to have a section on the CMS &amp; death records?<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p>Everyone says goodbye to the cat.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p>The <a href="https://ohdsi.github.io/CommonDataModel/cdm60.html#CONCEPT_RELATIONSHIP"><code>concept_relationship</code></a> table is discussed with the OMOP concept hierarchy in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>On the other hand, hundreds of institutions have already done so; check the list at <a href="https://covid.cd2h.org/duas" class="uri">https://covid.cd2h.org/duas</a>. This process is described in <a href="onboarding.html#sec-onboarding-enclave-access"><span>Section&nbsp;5.4</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p> This “navigator” role may be called something differently at your institution; the roles are defined below in <a href="#sec-story-team"><span>Section&nbsp;2.2</span></a>. If your institution doesn’t support this position, we suggest starting with the <a href="../chapters/support.html#sec-support-office">N3C Office Hours</a> or other avenues of <a href="../chapters/support.html">support</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Read about the institutional-level DUA in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>See <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Project-level paperwork is discussed in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The NIH “Enclave” is detailed in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>DURs are the topic of <a href="access.html"><span>Chapter&nbsp;6</span></a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p> <!-- Read about the OMOP Standard Tables in @sec-understanding,
+  specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. --> OMOP tables are designed to represent data from many sources, but typically they need to be transformed before they are analyzed with conventional statistical software.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Conformance is a topic in <a href="cycle.html"><span>Chapter&nbsp;3</span></a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>See <a href="access.html"><span>Chapter&nbsp;6</span></a> for accessing the N3C Enclave.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p> See <a href="understanding.html#sec-understanding-sets-library-published"><span>Section&nbsp;7.3.3.1</span></a> and <a href="support.html#sec-support-liaisons-logic"><span>Section&nbsp;11.9.2</span></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>There is a brief discussion of SME’s cat.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>There is a brief discussion of S’s daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>An <a href="https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange">HIE</a> is a health information exchange.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html"><span>Chapter&nbsp;9</span></a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Authoring and using concept sets are described in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Mortality records are discussed in <a href="understanding.html#sec-understanding-pprl-mortality"><span>Section&nbsp;7.5.3</span></a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Everyone says goodbye to the cat.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p> The conversation get really technical. More technical than the editors want for this chapter.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p> <a href="tools.html#sec-tools-apps-protocol"><span>Section&nbsp;8.4.1</span></a> describes the tool and <a href="practices.html"><span>Chapter&nbsp;9</span></a> describes the best practices.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1378,7 +1411,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":true,"openEffect":"zoom","descPosition":"bottom"});</script>
 
 
 

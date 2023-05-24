@@ -345,10 +345,16 @@ The first discussion is usually a variation of the following exchange, with the 
 
 ## Protocol, variables, & definitions
 
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 Developing a research protocol is both familiar and vague in the context of EHR studies,
 even when researchers have several years of graduate-level courses and real-world experience.
 Tradeoffs are inevitable when selecting variables,
 and an investigator's first choice is not always available.
+
+:::
 
 An investigation can realistically use only a fraction of the terabytes of information in an EHR.
 The research team must identify the relevant variables among the qualifying patients
@@ -356,21 +362,33 @@ to produce a coherent dataset tailored to their hypotheses.
 
 While there are different approaches to developing a Research Protocol, the general steps involved include:
 
-1. Define the research question: The first step is to clearly define the research question and the patient population of interest.
+1. Define the research question:
+  The first step is to clearly define the research question and the patient population of interest.
   This will guide the selection of relevant clinical concepts and data sources.
 
-1. Determine the study design: The research team should choose an appropriate study design, such as a cohort study or case-control study, and determine the inclusion and exclusion criteria for the patient population.
+1. Determine the study design:
+  The research team should choose an appropriate study design, such as a cohort study or case-control study,
+  and determine the inclusion and exclusion criteria for the patient population.
 
-2. Develop the analytic plan: The research team should prospectively specify the statistical methods to be used to analyze the data, including any adjustments for confounding variables and any sensitivity analyses.
+1. Develop the analytic plan:
+  The research team should prospectively specify the statistical methods to be used to analyze the data,
+  including any adjustments for confounding variables and any sensitivity analyses.
 
-3. Document the study protocol: The research team should document a detailed study protocol that includes all of the above information,
+1. Document the study protocol:
+  The research team should document a detailed study protocol that includes all of the above information,
   as well as any other relevant information,
   such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
   N3C contains a Protocol Pad that supports the development and documentation of detailed study protocols.
 
+## Learning and using OMOP and OHDSI Tooling
+
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 After creating a research protocol, variable definitions are decided using OMOP and N3C tools and deployed in the Enclave.
 
-## Learning and using OMOP and OHDSI Tooling
+:::
 
 The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/)
 Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).

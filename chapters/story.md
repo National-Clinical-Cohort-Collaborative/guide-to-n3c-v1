@@ -86,8 +86,8 @@ Your thoughts race into the night, a never-ending stream of possibilities.
 ## Onboarding {#sec-story-onboarding}
 
 As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements.
-The initial time investment is higher for an N3C investigation compared to most, but project-specific work tends to go faster.
-System access generally requires your institution to sign a Data Use Agreement with N3C,
+The initial time investment is longer for an N3C investigation compared to most, but project-specific work tends to go faster.
+System access generally requires your institution to sign a Data Use Agreement (DUA) with N3C,
 and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand,
 hundreds of institutions have already done so;
 check the list at <https://covid.cd2h.org/duas>.
@@ -208,7 +208,7 @@ Some trends we have noticed are:
   N3C is bigger and younger than your site's EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
-Note that community-wide data and logic liaisons are available for consultation during regular office hours.
+Note that community-wide data and logic liaisons are available for consultation during regular office hours.^[See @sec-support-liaisons.]
 
 ## Research Team's First Meeting
 
@@ -469,11 +469,11 @@ In general, analytic datasets are organized at either the person or encounter le
 This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter.
 This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
 
-Using the previously defined protocol, the informaticist will use the [concept set browser]
+Using the previously defined protocol, the informaticist will use the [concept set browser](tools.md#sec-tools-concepts)
 to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
 or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
 This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
-N3C Logic Liaison templates are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
+[N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
 They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
 
 <div style="overflow-x:auto;">
@@ -562,7 +562,7 @@ descriptive_statistics <- function(analytic_dataset) {
 
 Which produces the following @tbl-story-demographics.
 
-| Characteristic                             | No History&nbsp;of&nbsp;Scurvy | History&nbsp;of&nbsp;Scurvy |
+| Characteristic                             | No History<br>of<br>Scurvy | History<br>of<br>Scurvy |
 | :----------------------------------------- | ------------------: | ------------------: |
 | Patient Count                              | 19,871              | 2,199               |
 | Age, Median<br>(IQR)                       | 50<br>(25,&nbsp;75) | 51<br>(27,&nbsp;75) |

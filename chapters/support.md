@@ -293,13 +293,15 @@ The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is t
 [N3C Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of Domain Teams and their members.
 In order to perform research, users need to identify key variables for analysis.
 These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions.
-Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams.
+Through interaction with [Domain Teams](onboarding.md#sec-onboarding-dt),
+the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams.
 
 You may have noticed the data & logic liaisons have appeared several times in this book, including:
 
 * Fact Tables and Templates (@sec-tools-store-ll),
-* Curated Concept Sets (@sec-tools-concepts), and
-* Published Concepts Sets (@sec-understanding-sets-library-published).
+* Curated Concept Sets (@sec-tools-concepts),
+* Published Concepts Sets (@sec-understanding-sets-library-published), and
+* Data Quality (@pfaff_2022b).
 
 They also provide support services as described below.
 

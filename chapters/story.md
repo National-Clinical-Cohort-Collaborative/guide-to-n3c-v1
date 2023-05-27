@@ -87,7 +87,7 @@ Your thoughts race into the night, a never-ending stream of possibilities.
 
 As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements.
 The initial time investment is longer for an N3C investigation compared to most, but project-specific work tends to go faster.
-System access generally requires your institution to sign a Data Use Agreement (DUA) with N3C,
+System access generally requires your institution to sign a Data Use Agreement ([DUA](governance.md#sec-governance-contractual)) with N3C,
 and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand,
 hundreds of institutions have already done so;
 check the list at <https://covid.cd2h.org/duas>.
@@ -158,7 +158,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 * **I**:
   Ok, that's very helpful.
   I may need real dates as I anticipate differences in treatment deliveries based on real-world availability.
-  Am I stuck with Level 2 data if I start there?
+  If I start with Level 2, am I stuck with Level 2?
 
 * **N**:
   No.
@@ -170,7 +170,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   I'll work on the research protocol.
 
 After some thought, the investigator develops a research protocol and
-submits a DUR, shown in @fig-story-020-dur.
+submits the DUR in @fig-story-020-dur.
 
 ![Submitted Data Use Request.](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
 
@@ -232,7 +232,7 @@ The first discussion is usually a variation of the following exchange, with the 
   <!-- Read about the OMOP Standard Tables in @sec-understanding,
   specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. -->
   OMOP tables are designed to represent data from many sources,
-  but typically they need to be transformed before they are analyzed with conventional statistical software.
+  but typically they need to be transformed before analysis with conventional statistical software.
   ]
   Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
 * **I**:
@@ -290,7 +290,7 @@ The first discussion is usually a variation of the following exchange, with the 
   See you in two weeks.
   Wait.
   I can't believe I forgot.
-  Sorry -our Navigator is sick this week and I'm almost worthless in her absence.
+  Sorry --our Navigator is sick this week and I'm almost worthless in her absence.
   Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
 * **LL**:
   Bad news.
@@ -328,7 +328,7 @@ The first discussion is usually a variation of the following exchange, with the 
   It's actually worse than that.
   Sorry I'm a downer today.
   Can you see my screen?  Drug A has 15 brand names and 200 different...^[
-  The conversation get really technical.  More technical than the editors want for this chapter.
+  The conversation gets really technical.  More technical than the editors want for this chapter.
   ]
   <!--
   RxNorm codes; each package is uniquely identified by the NIH's NLM.
@@ -356,7 +356,7 @@ and an investigator's first choice is not always available.
 
 :::
 
-An investigation can realistically use only a fraction of the terabytes of information in an EHR.
+Realistically an investigation can use only a fraction of the terabytes of information in an EHR.
 The research team must identify the relevant variables among the qualifying patients
 to produce a coherent dataset tailored to their hypotheses.
 
@@ -395,32 +395,31 @@ you turn to OMOP and N3C tools to define the variables.
 
 :::
 
-The [Observational Health Data Sciences and Informatics (OHDSI)](https://www.ohdsi.org/)
-Observational Health Data Sciences and Informatics (OHDSI) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
-OMOP was funded in 2008 by the US Food and Drug Administration, primarily for adverse drug events surveillance, but it has since expanded to become the de-facto global research CDM.
+The Observational Health Data Sciences and Informatics ([OHDSI](https://www.ohdsi.org/)) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
+OMOP was funded by the US Food and Drug Administration in 2008, primarily for adverse drug events surveillance, but it has expanded to become the de-facto global research CDM.
 Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].
 Given its ubiquity and active research community, OMOP is well suited for N3C.
 OMOP has extensive tooling to support researchers,
-including two that directly support the curation of concept sets from the OHDSI program and one that is specific to N3C:
+including two tools that directly support the curation of concept sets from the OHDSI program and one tool that is specific to N3C:
 
 1. [Atlas](https://github.com/OHDSI/Atlas/wiki) provides a user-friendly interface for querying and analyzing data in the OMOP CDM.
   In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.
 
 1. [Athena](https://athena.ohdsi.org/) is a centralized repository of standardized clinical vocabularies.
 
-1. The [N3C Concept Set Browser](@sec-tools) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
+2. The [N3C Concept Set Browser](tools.md#sec-tools-concepts) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 
 Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset.
-The contain lists of medical codes, usually restricted to very specific definition or computable phenotype.
+The contain lists of medical codes, usually restricted to a very specific definition or computable phenotype.
 In N3C, they are used to identify cohorts or exposures to answer a research question.
 They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
 
 In general, the overall process involved in developing concepts is as follows:
 
-1. Define the research question: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
-1. Explore the data: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.
-1. Refine the concept set: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.
-1. Validate the concept set: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.
+1. _Define the research question_: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
+1. _Explore the data_: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.
+1. _Refine the concept set_: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.
+1. _Validate the concept set_: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.
 
 :::{.callout-note icon=false}
 
@@ -430,11 +429,11 @@ After determining the need for a concept set defining anemia, which is a common 
 :::
 
 * **Data Liaison**:
-  Good morning! I've started digging into existing concept sets for anemia and found one potential option.
+  Good morning! I've started browsing existing concept sets for anemia and found one potential option.
 * **Subject Matter Expert**:
-  Good morning! That's great.
-  Let's take a look at it.
-* **DL** *pulls up concept set for anemia*:
+  That's great.
+  Let's take a look.
+* **DL** _pulls up concept set for anemia_:
   This is one that's out there.
   It uses the parent SNOMED CT Code [271737000](https://athena.ohdsi.org/search-terms/terms/439777).
 * **SME**:
@@ -445,7 +444,7 @@ After determining the need for a concept set defining anemia, which is a common 
   Gotcha.
   Let's take a look at the hierarchy and see if we can refine it.
   We can look at the descendants and go from there.
-* *Three hours later*
+  <br>*Three hours transpire.*
 * **DL**:
   Ok, great.
   I think we have a working example.
@@ -463,14 +462,14 @@ This is typically within the purview of the team informaticist or logic liaison.
 Let's take a peak into the process...
 :::
 
-After clarifying all the data elements and study protocol, the next step is to curate an an analytic dataset.
+After clarifying all the data elements and study protocol, the next step is to curate an analytic dataset.
 Depending on the study design, this can be organized in multiple ways.
-In general, analytic datasets are organized at either the person or encounter level.
-This means that you'll have a single analytic dataset that contains one row with facts about either an individual patient or an individual encounter.
+In general, an analytic dataset is organized at either the person or encounter level.
+This means that you'll have a single analytic dataset per patient or one row per  encounter.
 This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
 
 Using the previously defined protocol, the informaticist will use the [concept set browser](tools.md#sec-tools-concepts)
-to identify or create concept sets of relevance to the study and begin to pull together the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
+to identify or create relevant concept sets and prepare the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
 or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
 This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
 [N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.

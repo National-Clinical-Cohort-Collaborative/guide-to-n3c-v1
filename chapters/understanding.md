@@ -180,7 +180,7 @@ There are many reasons to specify a concept set:
 
 _If you are publishing your results, concept sets are considered a publicly viewable part of your work._ Such public viewing is important.
 
-* It is required by the Strengthening the _Reporting of Observational Studies in Epidemiology_ [STROBE](https://www.equator-network.org/reporting-guidelines/strobe/) guidelines for publishing observational research.
+* It is required by the Strengthening the Reporting of Observational Studies in Epidemiology ([STROBE](https://www.equator-network.org/reporting-guidelines/strobe/)) guidelines for publishing observational research.
 * Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 

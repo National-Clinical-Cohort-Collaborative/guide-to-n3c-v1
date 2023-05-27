@@ -103,7 +103,7 @@ By leveraging the hierarchical structure, parent codes and descendants can be ca
 The Concept Set Browser shown in @fig-tools-020-concept-home is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 For more details around the process of concept set creation, read the Concept Sets section in @sec-understanding.
 It is recommended that, if you are a new researcher, you start your search for a concept set with the list of N3C Recommended concept sets.
-These concept sets have been frozen in their validated state by the [Logic Liaisons and the Data Liaisons](https://covid.cd2h.org/liaisons) after obtaining clinician and informatic reviews (see @sec-understanding).
+These concept sets have been frozen in their validated state by the [Logic Liaisons and the Data Liaisons](support.md#sec-support-liaisons) after obtaining clinician and informatic reviews (see @sec-understanding).
 They are also the ones used to identify common comorbidities and other facts on the Phenotype Explorer and in the Logic Liaison Fact Table templates.
 The recommended other method of finding commonly used concept sets is by exploring bundles within the Concept Set Browser.
 These are groups of concept sets that are often used together.

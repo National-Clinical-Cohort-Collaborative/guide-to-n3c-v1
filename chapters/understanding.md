@@ -313,7 +313,7 @@ Provisionally Approved and N3C Recommended are automatically submitted to Zenodo
 Any study manuscript for publication should ensure that any concept set used is either Provisionally Approved or N3C Recommended.
 The Zenodo URL should appear in the resulting publication.
 
-The [N3C Data Liaisons and Logic Liaisons](https://covid.cd2h.org/liaisons), in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines.
+The [N3C Data Liaisons and Logic Liaisons](support.md#sec-support-liaisons), in partnership with the Domain Teams, have selected common medical features often required for broad use in research that support the analytics pipelines.
 The original N3C Recommended concept sets were selected based on
 
 1. the comorbid conditions identified by the [US Centers for Disease Control (CDC) definitions for COVID-19](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html) as increasing risk of severe COVID-19

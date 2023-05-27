@@ -474,7 +474,7 @@ or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
 This time-intensive process produces a dataset that the team's statistician will analyze.
 [N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
 
-The N3C Logic Liaisons also provide tools that assess the quality of your derived dataset.
+The [N3C Logic Liaisons](support.md#sec-support-liaisons) also provide tools that assess the quality of your derived dataset.
 These tools inform decisions such as dropping specific sites or variables from the analysis (for example, if a sites appears to be systematically missing a variable that is important to your hypothesis).^[See also @pfaff_2022b.]
 
 <div style="overflow-x:auto;">

@@ -174,7 +174,7 @@ submits the DUR in @fig-story-020-dur.
 
 ![Submitted Data Use Request.](images/story/fig-story-020-dur.png){#fig-story-020-dur fig-alt="Submitted Data Use Request"}
 
-## Team building & collaborating {#sec-story-team}
+## Team Construction {#sec-story-team}
 
 :::{.callout-note icon=false}
 
@@ -210,7 +210,7 @@ Some trends we have noticed are:
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.^[See @sec-support-liaisons.]
 
-## Research Team's First Meeting
+## Initial Meeting {#sec-story-meeting}
 
 :::{.callout-note icon=false}
 
@@ -343,7 +343,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **St**:
   Ok.  Thanks for simplifying the dataset for me.
 
-## Protocol, variables, & definitions
+## Protocol, variables, & definitions {#sec-story-definitions}
 
 :::{.callout-note icon=false}
 
@@ -384,7 +384,7 @@ The Enclave's Protocol Pad supports the development and documentation of detaile
 and @sec-practices describes the best practices.
 ]
 
-## OMOP Tools
+## OMOP Tools {#sec-story-omop}
 
 :::{.callout-note icon=false}
 
@@ -451,7 +451,7 @@ After determining the need for a concept set defining anemia, which is a common 
   I'm going to extract all of these into a spreadsheet.
   Please go through this one more time and then I'll share with the group to review.
 
-## Data Preparat
+## Data Preparation {#sec-story-preparation}
 
 :::{.callout-note icon=false}
 
@@ -490,7 +490,7 @@ These tools inform decisions such as dropping specific sites or variables from t
 : Scurvy Analytic Dataset {#tbl-story-analytic}
 </div>
 
-## Analyses
+## Analyses {#sec-story-analyse}
 
 :::{.callout-note icon=false}
 
@@ -604,13 +604,13 @@ After repeating this for the remaining analyses for the project, the statisticia
   Great.
   Thank you! I'll set up a time to review the results with the team next week.
 
-## Manuscript Preparation
+## Manuscript Preparation {#sec-story-manuscript}
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-After a few iterations, the analyses are complete and the team prepares for the next phase
+After a few iterations, the analyses are complete and the team prepares for the next phase.
 :::
 
 * **Investigator**:

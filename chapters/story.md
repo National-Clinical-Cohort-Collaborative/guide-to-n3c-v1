@@ -407,7 +407,7 @@ including two tools that directly support the curation of concept sets from the 
 
 1. [Athena](https://athena.ohdsi.org/) is a centralized repository of standardized clinical vocabularies.
 
-2. The [N3C Concept Set Browser](tools.md#sec-tools-concepts) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
+1. The [N3C Concept Set Browser](tools.md#sec-tools-concepts) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 
 Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset.
 The contain lists of medical codes, usually restricted to a very specific definition or computable phenotype.
@@ -451,7 +451,7 @@ After determining the need for a concept set defining anemia, which is a common 
   I'm going to extract all of these into a spreadsheet.
   Please go through this one more time and then I'll share with the group to review.
 
-## Creating an analysis-ready dataset
+## Data Preparat
 
 :::{.callout-note icon=false}
 
@@ -604,13 +604,13 @@ After repeating this for the remaining analyses for the project, the statisticia
   Great.
   Thank you! I'll set up a time to review the results with the team next week.
 
-## Draft paper, pub committee
+## Manuscript Preparation
 
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
 
-Nearing the trail head...
+After a few iterations, the analyses are complete and the team prepares for the next phase
 :::
 
 * **Investigator**:
@@ -648,9 +648,21 @@ Nearing the trail head...
   Sounds great.
   See you all in two weeks!
 
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 At this point, the team divides the remaining work and starts writing.
-After completing a draft that's almost ready to be submitted for publication, they submit their draft to the [N3C Publication Committee](publishing.md).
-After a week, they receive approval and submit the manuscript.
+After completing a draft that's almost ready to be submitted for publication,
+they submit their draft to the [N3C Publication Committee](publishing.md).
+After a week, they receive approval (see the collapsed callout below),
+tweak the manuscript, and submit it to a journal.
+
+Their research story has finished, but your is just beginning.
+The chapters in this book provide details that are useful to N3C researchers.
+Please tell us if you have ideas how to improve the book for someone in your position.
+Enjoy!
+:::
 
 ::: {.callout-tip icon=false collapse="true"}
 

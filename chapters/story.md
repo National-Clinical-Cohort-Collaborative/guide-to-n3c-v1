@@ -523,16 +523,19 @@ This often requires a discussion or ongoing dialogue to understand the data stru
 * **S**:
   Ok, great.
   I think I get it.
-  So it's not that different from using R in RStudio as long as I follow the documentation you sent me.
+  So it's not too different from using R in RStudio as long as I follow the documentation you sent me.
   I think I can figure that out.
-  What happens when I want to share results with the rest of the team? Can I send them out?
+  What happens when I want to share results with the rest of the team?
+  Can I email everyone the initial results?
 * **N**:
-  You can add them to a report and share them within the N3C Enclave to those who have access to our project workspace.
-  If you want to share results outside the platform, you can request any summary results, model output, or plots using the download review process.
-  N3C leadership reviews any results before they can be extracted from the Enclave to ensure compliance with the N3C privacy and security expectations.
+  Ehh, there's a better way to securely share intermediate results.
+  First, create a blank report and add stuff like tables, graphs, summary results, and model output to a report.
+  Next, share the report (within the N3C Enclave) to those who have access to our project workspace.
+  Then when it's time to share results outside the platform, we'll submit a download review request ([DRR](publishing.md#sec-publishing-tech-process-download)) to ensure compliance with the N3C privacy and security expectations.
+  Once N3C leadership approves the DRR, the report can be extracted from the Enclave .
 * **S**:
   Gotcha.
-  I'll reach out if I have any questions once I get to that point in the process.
+  I'll reach out if I have any questions once I get to that point.
   Thanks!
 
 From here, the statistician can work directly in N3C using R or Python for data analysis.

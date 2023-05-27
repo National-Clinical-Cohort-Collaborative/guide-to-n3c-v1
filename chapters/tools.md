@@ -140,7 +140,7 @@ Internal datasets are generated from data inside the enclave, typically by resea
 As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person level data at various levels of granularity (see @sec-understanding).
 Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.
 
-### Code Templates{#sec-tools-store-templates}
+### Code Templates {#sec-tools-store-templates}
 
 Depending on the author's intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset.
 The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding.

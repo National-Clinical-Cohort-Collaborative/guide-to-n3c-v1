@@ -496,15 +496,13 @@ These tools inform decisions such as dropping specific sites or variables from t
 
 ## Voice of Narrator
 
-Once the group
-
-Once the analytic dataset is finalized, the handoff between the informaticist and statistician takes place.
-This often requires a discussion or ongoing dialogue to understand the data structure and definitions.
+After the first draft of the analytic dataset is prepared, the focus shifts from the informaticist to the statistician.
+This often requires a discussion to communicate the definitions and data structure.
 :::
 
 * **Navigator**:
   Welcome everyone.
-  Today we'd like to review the analytic dataset and next steps in moving the analysis forward.
+  Today we'll review the initial analytic dataset and next steps in the analysis.
 * **Informaticist**:
   Yep.
   I've made a new code workbook in your folder in the project workspace.
@@ -518,7 +516,7 @@ This often requires a discussion or ongoing dialogue to understand the data stru
   It all has to be done within the platform.
   Do you know how to get to the project workspace?
 * **S**:
-  ...remind me.
+  ...remind me, please?
 * *A few minutes later after a refresher.*
 * **S**:
   Ok, great.
@@ -538,9 +536,14 @@ This often requires a discussion or ongoing dialogue to understand the data stru
   I'll reach out if I have any questions once I get to that point.
   Thanks!
 
+:::{.callout-note icon=false}
+
+## Voice of Narrator
+
 From here, the statistician can work directly in N3C using R or Python for data analysis.
-After some work figuring out the platform, the statistician has some simple summary statistics to add to a report.
-Within a code workbook, they develop the following code and output to add to a report.
+After some work figuring out the platform, the statistician adds some simple summary statistics to a report.
+Within a code workbook, they develop the following code to produces a table added to a report.
+:::
 
 ```r
 descriptive_statistics <- function(analytic_dataset) {
@@ -620,7 +623,7 @@ Nearing the trail head...
 * *Team reviews the results in detail.
   Manuscript write-up divided amongst the study team.*
 * **I**:
-  Ok, so we should all know what the next steps are in terms of the write-up.
+  Ok, so we should all know what the next steps are for preparing the manuscript.
   Are there any other requirements from N3C before we can submit the paper to our target journal?
 * **Navigator**:
   Good question.
@@ -633,10 +636,10 @@ Nearing the trail head...
   In my experience, it's a pretty quick turnaround.
   Usually 1-2 weeks unless there are serious issues with the draft.
   They are primarily concerned about compliance with N3C policies, such as not having small cell counts and having gone through the download review process.
-  Since we did this, it should be a quick review.
+  Since we were following these guidelines, it should be a quick review.
 * **I**:
   Awesome.
-  I hope you'll be able to help us when we get to the step.
+  I hope you'll still be available to help when we get to the step.
   Thank you!
 * **N**:
   Of course.
@@ -645,12 +648,14 @@ Nearing the trail head...
   Sounds great.
   See you all in two weeks!
 
-At this point, the team divides up the remaining work and gets to writing.
+At this point, the team divides the remaining work and starts writing.
 After completing a draft that's almost ready to be submitted for publication, they submit their draft to the [N3C Publication Committee](publishing.md).
-After a week, they hear back from the N3C Publication Committee.
+After a week, they receive approval and submit the manuscript.
 
-### Sample Email from N3C Publication Committee
->
+::: {.callout-tip icon=false collapse="true"}
+
+## Sample Email from N3C Publication Committee
+
 > Title: Approved to submit MSID:383.23 | Investigator | The Impact of Drug A and Drug B on Patient with Scurvy Post-Acute COVID-19
 >
 > Dear Investigator,
@@ -660,6 +665,7 @@ After a week, they hear back from the N3C Publication Committee.
 > Please add "on behalf of the N3C consortium" to the end of the author list with an asterisk that says consortial contributors are in the process of being documented.
 >
 > Sincerely, The N3C Publication Committee
+:::
 
 ::: {.callout-note appearance="simple"}
 

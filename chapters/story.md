@@ -459,7 +459,7 @@ After determining the need for a concept set defining anemia, which is a common 
 
 Once the project team has outlined the study protocol, key definitions, and timing of study elements, the next phase is the curation of a dataset for analysis.
 This is typically within the purview of the team informaticist or logic liaison.
-Let's take a peak into the process...
+Let's take a peek into the process...
 :::
 
 After clarifying all the data elements and study protocol, the next step is to curate an analytic dataset.
@@ -471,9 +471,11 @@ This topic is covered in greater detail in the [Tools](tools.md) and [Best Pract
 Using the previously defined protocol, the informaticist will use the [concept set browser](tools.md#sec-tools-concepts)
 to identify or create relevant concept sets and prepare the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
 or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
-This will be a time-intensive process that, once completed, will result in a dataset that is ready for analysis, which can be handed off to the team's statistician for analysis.
+This time-intensive process produces a dataset that the team's statistician will analyze.
 [N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
-They also provide templates to assess the quality of the derived dataset which can provide insights into data density and completeness and help support decisions about dropping certain sites for the analysis (for example, if they appear to be systematically missing key variables).
+
+The N3C Logic Liaisons also provide tools that assess the quality of your derived dataset.
+These tools inform decisions such as dropping specific sites or variables from the analysis (for example, if a sites appears to be systematically missing a variable that is important to your hypothesis).^[See also @pfaff_2022b.]
 
 <div style="overflow-x:auto;">
 
@@ -493,6 +495,8 @@ They also provide templates to assess the quality of the derived dataset which c
 :::{.callout-note icon=false}
 
 ## Voice of Narrator
+
+Once the group
 
 Once the analytic dataset is finalized, the handoff between the informaticist and statistician takes place.
 This often requires a discussion or ongoing dialogue to understand the data structure and definitions.

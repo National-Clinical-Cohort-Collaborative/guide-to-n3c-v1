@@ -122,7 +122,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   Remind me.  What is a [DUR](access.md#sec-access-dur)?
 
 * **N**:
-  A *D*ata *U*se *R*equest describes your upcoming project.
+  A Data Use Request describes your upcoming project.
   Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]
   Everyone on your project shares this dedicated workspace.
   Once you've submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
@@ -490,7 +490,7 @@ These tools inform decisions such as dropping specific sites or variables from t
 : Scurvy Analytic Dataset {#tbl-story-analytic}
 </div>
 
-## Analyses {#sec-story-analyse}
+## Analyses {#sec-story-analyses}
 
 :::{.callout-note icon=false}
 

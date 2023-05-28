@@ -280,7 +280,7 @@ For more information and an index of recorded sessions see the [Enclave Users' G
 Slack is commonly used for team communication in N3C, and several widely-subscribed channels are great support resources.
 These include `#n3c-analytics` where researchers ask general questions about methods or data (with 390+ members), `#n3c-training` where training-related announcements are posted, and a variety of topic-focused channels such as `#n3c-ml` for machine-learning.
 N3C uses the Slack organization of the [National Center for Data To Health](https://cd2h.org) at [https://cd2h.slack.com](https://cd2h.slack.com).
-Access however is managed via the N3C [onboarding process](#onboarding), where Slack-preferred emails are collected.
+Access however is managed via the N3C [onboarding process](onboarding.md), where Slack-preferred emails are collected.
 
 ### Domain Teams {#sec-support-community-dt}
 

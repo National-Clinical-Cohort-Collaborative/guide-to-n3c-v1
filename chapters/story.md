@@ -45,14 +45,13 @@ We hope to complete this chapter during May 2023.
 :::
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the life cycle of an example project from onboarding to publishing.
-This path typically takes at least 6 months and 6 collaborators.
 It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers.
-Coupled with a large and diverse set of robust patient records, completing a research project within a year is possible.
+Coupled with a large and diverse set of robust patient records, it is possible to complete an investigation within 6 to 12 months.
 
 ![Path of a typical N3C project.](images/story/fig-story-010-intro-to-story.png){#fig-story-010-intro-to-story fig-alt="Path of a typical N3C project"}
 
 Suppose you are starting a project by yourself.
-In that case, the N3C ecosystem of researchers and resources is at your fingertips.
+The N3C ecosystem of researchers and resources is at your fingertips.
 You'll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as [instructional material](support.md) and [office hours](support.md#sec-support-office)).
 If you would like to join an existing project,
 there are [domain teams](onboarding.md#sec-onboarding-dt) and ongoing projects that likely will fit your interests and benefit from your abilities.
@@ -70,9 +69,9 @@ However, with this comes challenges of interpreting differences in care delivery
 
 Our story begins in your own piece of heaven: your office.
 As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
-Given that scurvy is a rare disease with no opportunities for industry funding, you decide to use observational data from the EHR.
+Given that scurvy is a rare disease with few opportunities for industry funding, you decide to use observational data from the EHR.
 You expect a modest improvement based on the medications' relationships with other diseases.
-But many patients are required to detect a modest effect size, and your local institution has a small population.
+But a large sample is required to detect a modest effect size, and your local institution has only a small population.
 Given the disease's low prevalence, no single US-based institution likely has a sufficient sample size to answer your research question.
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
@@ -87,13 +86,13 @@ Your thoughts race into the night, a never-ending stream of possibilities.
 
 As is typical for access to patient data outside your own institution, institutional participation in N3C requires legal agreements.
 The initial time investment is longer for an N3C investigation compared to most, but project-specific work tends to go faster.
-System access generally requires your institution to sign a Data Use Agreement ([DUA](governance.md#sec-governance-contractual)) with N3C,
-and even with strong institutional support this can takes several months in legal and administrative channels.^[On the other hand,
+System access requires your institution to sign a Data Use Agreement ([DUA](governance.md#sec-governance-contractual)) with N3C,
+and even with strong institutional support this can take several months in legal and administrative channels.^[On the other hand,
 hundreds of institutions have already done so;
 check the list at <https://covid.cd2h.org/duas>.
 This process is described in @sec-onboarding-enclave-access.]
 
-Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee.
+Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee ([DAC](access.md#sec-access-dur)).
 That's a remarkably short time considering the scale of available data.
 It's likely quicker than initiating a project based on a single EHR from your site, and much quicker than accessing EHRs from 70+ sites individually.
 
@@ -125,7 +124,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   A Data Use Request describes your upcoming project.
   Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]
   Everyone on your project shares this dedicated workspace.
-  Once you've submitted it, your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
+  Your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
 
 * **I**:
   Umm, I think I got it.
@@ -152,8 +151,8 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   so you won't have access to 5-digit ZIP Codes or other granular location measures.
   If you need either of those, you have to submit [Level 3](access.md#sec-access-request-l3) data,
   which is a limited data set containing these data elements.
-  Some institutions requires an IRB protocol to submit a Level 3 DUR, so keep that in mind.
-  Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I can provide that to you.
+  Some institutions require an IRB protocol to submit a Level 3 DUR, so keep that in mind.
+  Our institutional IRB has provided a letter covering most Level 3 DURs in N3C, so I'll send that to you.
 
 * **I**:
   Ok, that's very helpful.
@@ -166,8 +165,8 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **I**:
   That's great.
-  I think we'll start with Level 2 and go from there.
-  I'll work on the research protocol.
+  I think we'll start with Level 2.
+  I'll work on the research protocol now.
 
 After some thought, the investigator develops a research protocol and
 submits the DUR in @fig-story-020-dur.
@@ -232,7 +231,7 @@ The first discussion is usually a variation of the following exchange, with the 
   <!-- Read about the OMOP Standard Tables in @sec-understanding,
   specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. -->
   OMOP tables are designed to represent data from many sources,
-  but typically they need to be transformed before analysis with conventional statistical software.
+  but typically need to be transformed before analysis.
   ]
   Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
 * **I**:
@@ -257,7 +256,7 @@ The first discussion is usually a variation of the following exchange, with the 
   Oh my goodness, is that your cat?
   What a cutie!^[There is a brief discussion of SME's cat.]
 * **LL** _after a few minutes_:
-  Ok, I got it.  [Unmutes himself.]
+  Ok, I got it.  _Unmutes himself._
   Ok, I got it.
   40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
 * **SME**:
@@ -272,7 +271,7 @@ The first discussion is usually a variation of the following exchange, with the 
   It looks like the bulk of the combo patients were admitted in the spring of 2020.
   After Jan 2021, only 3% of patients have both Drug A & B.
 * **St**:
-  I was already planning to model the phase of the pandemic.
+  I was planning to model the phase of the pandemic (by including the diagnosis date as a covariate).
   I'll test if there's a significant interaction between time and treatment.
 * **I**:
   I like that as a starting point.

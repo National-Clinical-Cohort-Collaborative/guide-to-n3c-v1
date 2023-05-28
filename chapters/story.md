@@ -77,9 +77,9 @@ Given the disease's low prevalence, no single US-based institution likely has a 
 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
 Your mind wanders, and you begin to daydream of additional hypotheses.
-*Does the relationship attenuate as you move inland?*
+_Does the relationship attenuate as you move inland?_
 You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.
-*Is the relationship more pronounced in other racial/ethnic groups?*
+_Is the relationship more pronounced in other racial/ethnic groups?_
 Your thoughts race into the night, a never-ending stream of possibilities.
 :::
 
@@ -134,7 +134,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   It will make sense once you get it into it.
   Skim the example DUR proposals I'm sending now.
   Then start filling out this online form.
-  Get as far as you can, and then I'll help with the rest.
+  Get as far as you can, and I'll help with the rest.
   If there's something I don't know, I'll ask a friend.
   The DUR application process will take about an hour.
   Then the proposal will likely be approved within a week or two.
@@ -241,7 +241,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **Subject Matter Expert**:
   Maybe this simplifies the picture...
   In my clinical experience, a patient rarely switches between Drugs A & B.
-  Based on the initial presentation, their provider will pick A *or* B, and complete the regimen unless there's an adverse event.
+  Based on the initial presentation, their provider will pick A _or_ B, and complete the regimen unless there's an adverse event.
 * **St**:
   In that case, should my initial model have three levels for treatment: A, B, and A+B?
 * **I**:
@@ -256,7 +256,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **I**:
   Oh my goodness, is that your cat?
   What a cutie!^[There is a brief discussion of SME's cat.]
-* **LL** *after a few minutes*:
+* **LL** _after a few minutes_:
   Ok, I got it.  [Unmutes himself.]
   Ok, I got it.
   40% of patients are Drug A only, 52% are Drug B only, while 8% have at least one administration of both Drug A & B in the same visit.
@@ -267,7 +267,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **LL**:
   Hmm, let me check.
   Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
-* **LL** *after a few minutes*:
+* **LL** _after a few minutes_:
   I see what you mean.
   It looks like the bulk of the combo patients were admitted in the spring of 2020.
   After Jan 2021, only 3% of patients have both Drug A & B.
@@ -309,7 +309,7 @@ The first discussion is usually a variation of the following exchange, with the 
   Good point.
 * **LL**:
   But I've got good news.
-  All the N3C contributors comprehensively capture all conditions diagnosed *during* the visit.
+  All the N3C contributors comprehensively capture all conditions diagnosed _during_ the visit.
   Furthermore the diagnosis codes are standardized really well across sites.
   That's because most providers enter ICD codes into the EHR,
   which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
@@ -444,7 +444,7 @@ After determining the need for a concept set defining anemia, which is a common 
   Gotcha.
   Let's take a look at the hierarchy and see if we can refine it.
   We can look at the descendants and go from there.
-  <br>*Three hours transpire.*
+  <br>_Three hours elapse._
 * **DL**:
   Ok, great.
   I think we have a working example.
@@ -517,7 +517,7 @@ This often requires a discussion to communicate the definitions and data structu
   Do you know how to get to the project workspace?
 * **S**:
   ...remind me, please?
-* *A few minutes later after a refresher.*
+* _A few minutes later after a refresher._
 * **S**:
   Ok, great.
   I think I get it.
@@ -620,8 +620,8 @@ After a few iterations, the analyses are complete and the team prepares for the 
   They looked great.
   Very unexpected, but intriguing results.
   I was surprised that outcomes were so much better in those exposed Medication B than Medication A.
-* *Team reviews the results in detail.
-  Manuscript write-up divided amongst the study team.*
+* _Team reviews the results in detail.
+  Manuscript write-up divided amongst the study team._
 * **I**:
   Ok, so we should all know what the next steps are for preparing the manuscript.
   Are there any other requirements from N3C before we can submit the paper to our target journal?

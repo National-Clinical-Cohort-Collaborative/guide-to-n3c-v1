@@ -156,6 +156,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/story.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/access.md"
         }
     ]
 }

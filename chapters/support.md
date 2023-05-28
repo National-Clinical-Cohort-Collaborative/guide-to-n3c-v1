@@ -301,7 +301,7 @@ You may have noticed the data & logic liaisons have appeared several times in th
 * Fact Tables and Templates (@sec-tools-store-ll),
 * Curated Concept Sets (@sec-tools-concepts),
 * Published Concepts Sets (@sec-understanding-sets-library-published), and
-* Data Quality (@pfaff_2022b).
+* Data Quality [@pfaff_2022b].
 
 They also provide support services as described below.
 

@@ -68,7 +68,7 @@ However, with this comes challenges of interpreting differences in care delivery
 ## Voice of Narrator
 
 Our story begins in your own piece of heaven: your office.
-As a researcher of scurvy, you have wondered, "do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
+As a researcher of scurvy, you have wondered, "Do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
 Given that scurvy is a rare disease with few opportunities for industry funding, you decide to use observational data from the EHR.
 You expect a modest improvement based on the medications' relationships with other diseases.
 But a large sample is required to detect a modest effect size, and your local institution has only a small population.
@@ -143,7 +143,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
   Is there anything else I need to know?
 
 * **N**:
-  The only other consideration at this point is whether your want your study to use
+  The only other consideration at this point is whether you want your study to use
   Level 2 or Level 3 data.
   [Level 2](access.md#sec-access-request-l2) data is fully de-identified,
   meaning all the dates are shifted within &plusmn;180 days.
@@ -216,7 +216,7 @@ Note that community-wide data and logic liaisons are available for consultation 
 ## Voice of Narrator
 
 The team is assembled after a few weeks.
-The first discussion is usually a variation of the following exchange, with the goal to move toward completion of a research protocol.
+The first discussion is usually a variation of the following exchange, with the goal to move toward the completion of a research protocol.
 :::
 
 * **Investigator**:
@@ -230,7 +230,7 @@ The first discussion is usually a variation of the following exchange, with the 
   I'm happy to produce a dataset with the `dose` and `frequency` columns, but you may not find it useful.^[
   <!-- Read about the OMOP Standard Tables in @sec-understanding,
   specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. -->
-  OMOP tables are designed to represent data from many sources,
+  OMOP tables are designed to represent data from many sources
   but typically need to be transformed before analysis.
   ]
   Those two columns are sparsely populated and they look inconsistent across sites.^[Conformance is a topic in @sec-cycle.]
@@ -251,7 +251,7 @@ The first discussion is usually a variation of the following exchange, with the 
   Give me 2 minutes to add this drug to our templated fact tables^[
   See @sec-understanding-sets-library-published
   and @sec-support-liaisons-logic
-  ] which show same day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
+  ] which show same-day events and also summarize events at the patient level.^[Read about SQL, Python, and R transforms in Code Workbooks in @sec-tools.]
 * **I**:
   Oh my goodness, is that your cat?
   What a cutie!^[There is a brief discussion of SME's cat.]
@@ -290,13 +290,13 @@ The first discussion is usually a variation of the following exchange, with the 
   Wait.
   I can't believe I forgot.
   Sorry --our Navigator is sick this week and I'm almost worthless in her absence.
-  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect  to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
+  Is everyone still on the call?  For our secondary hypothesis, we want everything to connect to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
 * **LL**:
   Bad news.
   This is kinda like the `dose` and `frequency` situation a few minutes ago.
   The structure of the [OMOP diagnosis table](https://ohdsi.github.io/CommonDataModel/cdm60.html#CONDITION_OCCURRENCE)
   theoretically can connect a patient's diagnoses across different locations.
-  But the quality of the historical records really depends on the site.
+  But the quality of the historical records depends on the site.
   Some places like Rhode Island leverage their state's HIE^[An [HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange)
   is a health information exchange.] to populate their N3C dataset.
   However other places are not as well connected.
@@ -309,7 +309,7 @@ The first discussion is usually a variation of the following exchange, with the 
 * **LL**:
   But I've got good news.
   All the N3C contributors comprehensively capture all conditions diagnosed _during_ the visit.
-  Furthermore the diagnosis codes are standardized really well across sites.
+  Furthermore the diagnosis codes are standardized well across sites.
   That's because most providers enter ICD codes into the EHR,
   which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
@@ -376,7 +376,7 @@ While there are different approaches to developing a Research Protocol, the gene
 1. Document the study protocol:
   The research team should document a detailed study protocol that includes all of the above information,
   as well as any other relevant information,
-  such as the ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
+  such as ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
 
 The Enclave's Protocol Pad supports the development and documentation of detailed study protocols.^[
 @sec-tools-apps-protocol describes the tool
@@ -389,15 +389,15 @@ and @sec-practices describes the best practices.
 
 ## Voice of Narrator
 
-After you have creating a research protocol,
+After you have created a research protocol,
 you turn to OMOP and N3C tools to define the variables.
 
 :::
 
 The Observational Health Data Sciences and Informatics ([OHDSI](https://www.ohdsi.org/)) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
 OMOP was funded by the US Food and Drug Administration in 2008, primarily for adverse drug events surveillance, but it has expanded to become the de-facto global research CDM.
-Detecting a small signal requires a large datasets --larger than any single health care database [@ohdsi_2019, Chapter 1].
-Given its ubiquity and active research community, OMOP is well suited for N3C.
+Detecting a small signal requires a large dataset --larger than any single healthcare database [@ohdsi_2019, Chapter 1].
+Given its ubiquity and active research community, OMOP is well-suited for N3C.
 OMOP has extensive tooling to support researchers,
 including two tools that directly support the curation of concept sets from the OHDSI program and one tool that is specific to N3C:
 
@@ -406,10 +406,10 @@ including two tools that directly support the curation of concept sets from the 
 
 1. [Athena](https://athena.ohdsi.org/) is a centralized repository of standardized clinical vocabularies.
 
-1. The [N3C Concept Set Browser](tools.md#sec-tools-concepts) is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
+1. The [N3C Concept Set Browser](tools.md#sec-tools-concepts) is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 
 Concept sets, described in detail in @sec-understanding and @sec-tools, are the basic building blocks of an analytic dataset.
-The contain lists of medical codes, usually restricted to a very specific definition or computable phenotype.
+They contain lists of medical codes, usually restricted to a very specific definition or computable phenotype.
 In N3C, they are used to identify cohorts or exposures to answer a research question.
 They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).
 
@@ -432,7 +432,7 @@ After determining the need for a concept set defining anemia, which is a common 
 * **Subject Matter Expert**:
   That's great.
   Let's take a look.
-* **DL** _pulls up concept set for anemia_:
+* **DL** _pulls up a concept set for anemia_:
   This is one that's out there.
   It uses the parent SNOMED CT Code [271737000](https://athena.ohdsi.org/search-terms/terms/439777).
 * **SME**:
@@ -448,7 +448,7 @@ After determining the need for a concept set defining anemia, which is a common 
   Ok, great.
   I think we have a working example.
   I'm going to extract all of these into a spreadsheet.
-  Please go through this one more time and then I'll share with the group to review.
+  Please go through this one more time and then I'll share it with the group to review.
 
 ## Data Preparation {#sec-story-preparation}
 
@@ -464,7 +464,7 @@ Let's take a peek into the process...
 After clarifying all the data elements and study protocol, the next step is to curate an analytic dataset.
 Depending on the study design, this can be organized in multiple ways.
 In general, an analytic dataset is organized at either the person or encounter level.
-This means that you'll have a single analytic dataset per patient or one row per  encounter.
+This means that you'll have a single analytic dataset per patient or one row per encounter.
 This topic is covered in greater detail in the [Tools](tools.md) and [Best Practices](practices.md) chapters.
 
 Using the previously defined protocol, the informaticist will use the [concept set browser](tools.md#sec-tools-concepts)
@@ -474,7 +474,7 @@ This time-intensive process produces a dataset that the team's statistician will
 [N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
 
 The [N3C Logic Liaisons](support.md#sec-support-liaisons) also provide tools that assess the quality of your derived dataset.
-These tools inform decisions such as dropping specific sites or variables from the analysis (for example, if a sites appears to be systematically missing a variable that is important to your hypothesis).^[See also @pfaff_2022b.]
+These tools inform decisions such as dropping specific sites or variables from the analysis (for example, if a site appears to be systematically missing a variable that is important to your hypothesis).^[See also @pfaff_2022b.]
 
 <div style="overflow-x:auto;">
 
@@ -501,7 +501,7 @@ This often requires a discussion to communicate the definitions and data structu
 
 * **Navigator**:
   Welcome everyone.
-  Today we'll review the initial analytic dataset and next steps in the analysis.
+  Today we'll review the initial analytic dataset and the next steps in the analysis.
 * **Informaticist**:
   Yep.
   I've made a new code workbook in your folder in the project workspace.
@@ -527,9 +527,9 @@ This often requires a discussion to communicate the definitions and data structu
 * **N**:
   Ehh, there's a better way to securely share intermediate results.
   First, create a blank report and add stuff like tables, graphs, summary results, and model output to a report.
-  Next, share the report (within the N3C Enclave) to those who have access to our project workspace.
+  Next, share the report (within the N3C Enclave) with those who have access to our project workspace.
   Then when it's time to share results outside the platform, we'll submit a download review request ([DRR](publishing.md#sec-publishing-tech-process-download)) to ensure compliance with the N3C privacy and security expectations.
-  Once N3C leadership approves the DRR, the report can be extracted from the Enclave .
+  Once N3C leadership approves the DRR, the report can be extracted from the Enclave.
 * **S**:
   Gotcha.
   I'll reach out if I have any questions once I get to that point.
@@ -541,7 +541,7 @@ This often requires a discussion to communicate the definitions and data structu
 
 From here, the statistician can work directly in N3C using R or Python for data analysis.
 After some work figuring out the platform, the statistician adds some simple summary statistics to a report.
-Within a code workbook, they develop the following code to produces a table added to a report.
+Within a code workbook, they develop the following code to produce a table added to a report.
 :::
 
 ```r
@@ -627,7 +627,7 @@ After a few iterations, the analyses are complete and the team prepares for the 
 * **Navigator**:
   Good question.
   The manuscript draft has to be reviewed by the N3C Publication Committee.
-  They meet weekly and will review the drat to make sure it's compliant with N3C policies and adheres to the original research question proposed by us.
+  They meet weekly and will review the draft to make sure it's compliant with N3C policies and adheres to the original research question proposed by us.
 * **I**:
   Ok, that makes sense.
   How long does it usually take?
@@ -657,7 +657,7 @@ they submit their draft to the [N3C Publication Committee](publishing.md).
 After a week, they receive approval (see the collapsed callout below),
 tweak the manuscript, and submit it to a journal.
 
-Their research story has finished, but your is just beginning.
+Their research story has finished, but yours is just beginning.
 The chapters in this book provide details that are useful to N3C researchers.
 Please tell us if you have ideas how to improve the book for someone in your position.
 Enjoy!

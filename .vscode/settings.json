@@ -8,6 +8,7 @@
         "Anzalone",
         "apalike",
         "biblio",
+        "Bioinformatics",
         "Bionetworks",
         "biostatisticians",
         "bookdown",
@@ -26,6 +27,8 @@
         "comorbidities",
         "consortial",
         "contributorship",
+        "COPD",
+        "covariate",
         "CTSA",
         "Deacy",
         "deidentification",
@@ -34,6 +37,8 @@
         "discoverability",
         "documentclass",
         "downlit",
+        "dplyr",
+        "ecmo",
         "EHDEN",
         "embeddable",
         "epub",
@@ -41,10 +46,12 @@
         "ethnicities",
         "eval",
         "favicon",
+        "flowsheet",
         "fullnote",
         "Gelman",
         "generalizability",
         "ghpagescname",
+        "gtsummary",
         "Hadley",
         "HCPCS",
         "heatmaps",
@@ -120,6 +127,7 @@
         "telehealth",
         "templatization",
         "templatized",
+        "tibble",
         "tidyverse",
         "tikz",
         "tinytex",
@@ -142,5 +150,62 @@
         "Yihui's",
         "Zenodo",
         "Zhou"
+    ],
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/story.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/access.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/advanced.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/cycle.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/governance.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/intro.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/onboarding.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/publishing.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/support.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/tools.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/understanding.md"
+        }
     ]
 }

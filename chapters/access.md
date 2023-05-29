@@ -67,7 +67,7 @@ Level 1, or Synthetic,^[The Synthetic data discussed here should not be confused
 These happen to have similar sounding names: SynPuf and Synthea.] data provide the most anonymous view of the harmonized data, and are quite different from the Level 2 and 3 datasets in both format and content.
 Rather, Level 1 data were _generated_ from a statistical model of a _researcher-defined subset_ of the Level 3 data.
 This means Level 1 data contain no real patient records at all, but only a synthetic derivative designed to be statistically similar.
-The generation process is handled by a private company, MDClone, whose proprietary algorithms also look for resulting information that are too similar to real patient information, potentially resulting in a loss of patient privacy.
+The generation process is handled by a private company, MDClone, whose proprietary algorithms also look for resulting information that is too similar to real patient information, potentially resulting in a loss of patient privacy.
 Such records are masked with "censored" values in the resulting dataset.
 
 Because this statistical-modeling approach doesn't scale to the entirety of an EHR database, it is generated on subsets of data of interest to researchers, with the assistance of MDClone representatives.
@@ -91,11 +91,11 @@ To give a sneak preview of the primary N3C data format, here's a snapshot of a f
 Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data, labeling each record with a source."}
 
 Notice in particular the columns for `data_partner_id` (a pseudo-random identifier assigned to each data partner), `condition_concept_id` (the OMOP identifier uniquely describing the condition used for data filtering and analysis), and `condition_concept_name` (the human-readable version of `condition_concept_id`, used for convenience but not for data filtering).
-Other OMOP tables link records by shared columns; here's a few columns from the `person` table describing basic demographics of patients:
+Other OMOP tables link records by shared columns; here are a few columns from the `person` table describing basic demographics of patients:
 
 ![Example data for the OMOP `person` table.](images/access/fig-access-020-person.png){#fig-access-020-person fig-alt="Example data for the OMOP `person` table."}
 
-Some other tables available with Level 3 data are specific to N3C; here's a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
+Some other tables available with Level 3 data are specific to N3C; here are a few columns from a notional `manifest` table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:
 
 ![An example of the N3C-specific `manifest` table. This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table.
 This table provides information about data partners, such as their source common data model (`cdm_name`), whether they pre-shift dates (see @sec-cycle), and when their last submission was."}
@@ -195,7 +195,7 @@ This interface also provides some project management functionality for leads, su
 
 ## Data Use Request (DUR): Initiate a New Research Project {#sec-access-request}
 
-This first dashboard is really just the DUR form itself, and is used to request the creation of, and access to, a brand new research project with access to one of the levels of protected N3C data.
+This first dashboard is really just the DUR form itself, and is used to request the creation of, and access to, a brand-new research project with access to one of the levels of protected N3C data.
 The form has a number of sections, and some of these are dynamic, depending on choices to earlier questions.
 The left side of the DUR form provides quick links to other dashboards or actions; "Create a New Project" simply refreshes the page (since we are already creating a new project DUR), "Request to become a collaborator on an existing project" opens the Explore Projects dashboard (discussed below), and Public Health Proposal opens the application form for the [N3C PHASTR](https://covid.cd2h.org/phastr) initiative (which utilizes a specialized variant of the DUR process discussed here).
 
@@ -222,7 +222,7 @@ It is possible to modify this linkage later, so if you aren't sure feel free to 
 
 The next question, "Allow other researchers to join this project," configures the project so that others can request to join via the Explore Projects dashboard.
 If this is enabled, other researchers will be able to fill out a collaborator DUR (a copy of this DUR but with the title, abstract, and data level fixed).
-As the lead submitting this primary DUR, you will have the opportunity to approve or deny such requests (via the My Projects dashboard); if you approve, their request will be forwarded to the DAC for final approval to the workspace and data.
+As the lead submitting this primary DUR, you will have the opportunity to approve or deny such requests (via the My Projects dashboard); if you approve, their request will be forwarded to the DAC for final approval of the workspace and data.
 This option can be changed later.
 
 The Collaborators section allows you to send invites to potential collaborators to join the project.
@@ -245,7 +245,7 @@ Finally, you will need to attest to having read the N3C Code of Conduct (with th
 (Some institutions restrict how and when EHR data can be linked to other datasets, including [publicly available](understanding.md) data ingested for use by N3C researchers.)
 <!-- TODO: like the last section of the "Understanding the Data" chapter -->
 
-![DUR attestations and acknowledgements.](images/access/fig-access-110-dur-acknowledgements.png){#fig-access-110-dur-acknowledgements fig-alt="DUR attestations and acknowledgements."}
+![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgements.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
 
 With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.
 
@@ -293,14 +293,14 @@ An email is also sent to the submitting lead with links to useful learning resou
 
 The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks.
 The status of your DUR will be shown in the My Projects dashboard (below).
-If a submitted DUR has not received any update for longer than two weeks, you should submit a request for follow up to the [Enclave-external](support.md#sec-support-external) ticket support system.
+If a submitted DUR has not received any update for longer than two weeks, you should submit a request for a follow-up to the [Enclave-external](support.md#sec-support-external) ticket support system.
 
 ## Explore Projects (DURs): Browse and Join Projects {#sec-access-explore}
 
 Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the Enclave allows researchers to request to join projects that allow for it as collaborators.
 
 First, let's explore the dashboard.
-The initial list of projects shown are "Projects to join" - these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration.
+The initial list of projects shown is "Projects to join" - these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration.
 Below this list are two expandable sections, "Projects to Explore" listing projects that do not allow requests to join, and "Operational Projects (N3C Technical Development)" listing DURs used by the data ingestion and harmonization teams and others.
 
 The "Search Projects" field is helpful in finding one of the many N3C projects and supports searching in any of the shown text columns.
@@ -321,7 +321,7 @@ Collaborator DURs must first be approved by the project lead (via their My Proje
 You may thus want to reach out to the lead prior to requesting access to their project so they can expect the request.
 Once approved by the lead the DUR is sent to the DAC for final approval.
 After DAC approval you will be given access to the project workspace (see [Workspaces, Permissions, and the Data Catalog](access.md#sec-access-workspaces) above).
-Collaborator DURs are generally faster to approve than new project DURs, but as with new project DURs if no progress is made in two weeks you should submit a request for follow up to the [Enclave-external](support.md#sec-support-external) ticket support system.
+Collaborator DURs are generally faster to approve than new project DURs, but as with new project DURs if no progress is made in two weeks you should submit a request for follow-up to the [Enclave-external](support.md#sec-support-external) ticket support system.
 
 As with new project DURs, the status of your submitted collaborator DURs can be found in the My Projects dashboard.
 

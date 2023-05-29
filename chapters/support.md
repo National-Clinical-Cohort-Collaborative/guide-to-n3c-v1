@@ -82,13 +82,13 @@ Finally, we are prompted to submit our issue, including a title and description 
 Answering all of these is not required, but any information you can add that speaks to them is helpful.
 This section also allows you to upload a screenshot if desired.
 Even though these issues are protected in enclave, you should not screenshot any data (or results like summary tables or figures), as that would result in your local computer storing, even if temporarily, unapproved patient-level information.
-Nevertheless, when excluding patient data is possible, a screenshot may help diagnose the problem, and the support personnel who respond to the issue may request a screenshot during follow up.
+Nevertheless, when excluding patient data is possible, a screenshot may help diagnose the problem, and the support personnel who respond to the issue may request a screenshot during follow-up.
 
 ![More details.](images/support/fig-support-060-issue-more-details.png){#fig-support-060-issue-more-details width=50% fig-alt="More details"}
 
 We can scroll down in this panel to see more advanced information pertaining to the ticket.
 Priority should generally be left to "Medium," since "High" priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users.
-The default assignee is the "N3C: Issues Triage Team," who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow up from support may take longer).
+The default assignee is the "N3C: Issues Triage Team," who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow-up from support may take longer).
 Followers allow you to specify other users who will receive alerts about this issue.
 Adding labels to the ticket is optional as well, since the triage team usually applies relevant labels for tracking purposes.
 
@@ -123,7 +123,7 @@ Here you will find a link to "Submit a Support Request" that directs you to sele
 
 ![Ticket details.](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options are described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options is described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request.
 The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
@@ -139,7 +139,7 @@ All are welcome to join, from experienced N3C analysts looking for help with com
 Experienced N3C volunteers are on hand and able to help with most questions.
 They can also refer you to external resources, or suggest submitting a ticket when appropriate.
 Some researchers join just to watch and learn.
-To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing researchers to share their screen only with others who have the same [level](access.md#sec-access-background) of access.
+To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowing a researcher to share their screen only with others who have the same [level](access.md#sec-access-background) of access.
 
 ## Training Resources {#sec-support-training}
 
@@ -167,7 +167,7 @@ This interface is limited in the number of items it can display, so you may want
 ![Learning Paths.](images/support/fig-support-130-training-paths.png){#fig-support-130-training-paths fig-alt="Learning Paths"}
 
 Opening a module from the main list view reveals an overview of the module, including title, description, topics, learning objectives, suggested background, and estimated time to complete.
-Immediately below the title is a link whose URL points at this specific module in the portal for sharing.
+Immediately below the title is a link whose URL points to this specific module in the portal for sharing.
 
 ![Overview of a Training Module.](images/support/fig-support-140-training-module-overview.png){#fig-support-140-training-module-overview fig-alt="Overview of a Training Module"}
 
@@ -193,7 +193,7 @@ Instead, you can utilize the N3C Training Area (see below).
 
 N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items.
 The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](tools.md#sec-tools-store), and [concept sets](tools.md#sec-tools-concepts).
-The note overview contains a link whose URL points at this specific note in the application for sharing.
+The note overview contains a link whose URL points to this specific note in the application for sharing.
 
 ![N3C Community Notes.](images/support/fig-support-160-community-notes.png){#fig-support-160-community-notes width=75% fig-alt="N3C Community Notes"}
 
@@ -231,8 +231,8 @@ They are both available via the [data catalog](access.md#sec-access-workspaces) 
 
 SynPuf is short for "Synthetic Public Use Files," or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
 These SynPuf files originate from [SynPuf Medicare Claims data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs) and have been [converted to OMOP format](https://forums.ohdsi.org/t/synpuf/4936) by the OHDSI community.
-The content of these data differ from N3C data in many ways (e.g. records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
-Lastly, the data are not recent, and so contain no COVID-19 related records such as diagnoses, lab tests, or vaccine records.
+The content of these data differs from N3C data in many ways (e.g. records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
+Lastly, the data are not recent, and so contain no COVID-19-related records such as diagnoses, lab tests, or vaccine records.
 The SynPuf data do not contain some N3C customizations to the OMOP data model, for example the `manifest` table used in N3C data to describe metadata about contributing data partners.
 
 Compared to the Synthea data however, SynPuf data better represent real EHR data, including the potential for data entry errors, diversity in medical codes used, and missing data.
@@ -278,9 +278,9 @@ For more information and an index of recorded sessions see the [Enclave Users' G
 ### Slack {#sec-support-community-slack}
 
 Slack is commonly used for team communication in N3C, and several widely-subscribed channels are great support resources.
-These include `#n3c-analytics` where researchers ask general questions about methods or data (with 390+ members), `#n3c-training` where training-related announcements are posted, and a variety of topic-focused channels such as `#n3c-ml` for machine-learning.
+These include `#n3c-analytics` where researchers ask general questions about methods or data (with 390+ members), `#n3c-training` where training-related announcements are posted, and a variety of topic-focused channels such as `#n3c-ml` for machine learning.
 N3C uses the Slack organization of the [National Center for Data To Health](https://cd2h.org) at [https://cd2h.slack.com](https://cd2h.slack.com).
-Access however is managed via the N3C [onboarding process](#onboarding), where Slack-preferred emails are collected.
+Access however is managed via the N3C [onboarding process](onboarding.md), where Slack-preferred emails are collected.
 
 ### Domain Teams {#sec-support-community-dt}
 
@@ -290,33 +290,42 @@ The [pregnancy domain team](https://covid.cd2h.org/pregnancy), for example, is t
 
 ## Data and Logic Liaisons {#sec-support-liaisons}
 
-[Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of Domain Teams and their members.
+[N3C Logic and Data Liaisons](https://covid.cd2h.org/liaisons) are teams contributing to the N3C mission through software development and user support, prioritizing the needs of Domain Teams and their members.
 In order to perform research, users need to identify key variables for analysis.
 These key variables are generated through Code Workbooks and Templates that utilize specific Concept Sets (lists of key variables from constituent vocabularies), that identify and extract data to answer research questions.
-Through interaction with Domain Teams, the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams.
+Through interaction with [Domain Teams](onboarding.md#sec-onboarding-dt),
+the Data and Logic Liaisons continually develop and refine a core set of N3C Recommended concept sets and code templates that generate commonly used variables and support efficient customization by research teams.
+
+You may have noticed the data & logic liaisons have appeared several times in this book, including:
+
+* Fact Tables and Templates (@sec-tools-store-ll),
+* Curated Concept Sets (@sec-tools-concepts),
+* Published Concepts Sets (@sec-understanding-sets-library-published), and
+* Data Quality [@pfaff_2022b].
+
 They also provide support services as described below.
 
 ### Data Liaison Services {#sec-support-liaisons-data}
 
 EHR data are complex, more so when they cover data contributed by 75+ sites.
-The Data Liaisons group consist of those most familiar with N3C data, including members of the [phenotype and ingestion and harmonization](cycle.md) teams.
-Data Liaisons are subject matter experts in biomedical, translational, clinical data standards and Real-World data utilization to support program investigator analyses.
+The Data Liaisons group consists of those most familiar with N3C data, including members of the [phenotype and ingestion and harmonization](cycle.md) teams.
+Data Liaisons are subject matter experts in biomedical, translational, clinical data standards, and Real-World data utilization to support program investigator analyses.
 Data Liaisons curate and review N3C-recommended [concept sets](tools.md#sec-tools-concepts) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system.
 Potential data quality issues should also be submitted via enclave-internal ticket system for routing to the Data Liaisons for review.
 
 For basic questions about the OMOP common data model, refer to the OHDSI resources, and training portal modules for getting started with OMOP.
 Personalized assistance is provided during N3C Office Hours.
 Support for Concept Set consultation can be received by submitting a help desk technical support ticket in the N3C enclave.
-The Data Liaisons team will send a representative to your domain team meetings on an as needed basis for general consultation.
+The Data Liaisons team will send a representative to your domain team meetings on an as-needed basis for general consultation.
 
 ### Logic Liaison Services {#sec-support-liaisons-logic}
 
 Logic Liaisons consist of analysts with significant technical expertise for research with N3C data.
 Although they do not develop project-specific research code as a service, they do create [Knowledge Objects](tools.md#sec-tools-store) such as reusable code templates and convenient derived datasets.
-Logic Liaison members provide technical support at office hours, and many are active in the `#n3c-analytics` Slack channel.
+Logic Liaison members provide technical support during office hours, and many are active in the `#n3c-analytics` Slack channel.
 
 Logic Liaisons support N3C researchers who are learning to use and adapt the Logic Liaison code fact tables and templates.
-They also help researchers assess the feasibility of the project design with regards to data availability and data limitations.
+They also help researchers assess the feasibility of the project design with regard to data availability and data limitations.
 This team helps researchers assess and clean their project-specific fact tables using Logic Liaison Data Quality templates, which help research teams decide which sites to include in the analysis.
 
 Logic Liaison Code Fact Tables and Templates can be accessed by searching the Knowledge Store for "Logic Liaison Template".
@@ -324,7 +333,7 @@ Recorded trainings are provided in the "Logic Liaison Templates" module of the N
 Personalized help is provided during N3C Office Hours.
 Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the enclave.
 Team members are also active in the `#n3c-analytics` Slack channel.
-The Logic Liaison team will send a representative to your domain team meetings on an as needed basis for general consultation.
+The Logic Liaison team will send a representative to your domain team meetings on an as-needed basis for general consultation.
 
 ::: {.callout-note appearance="simple"}
 

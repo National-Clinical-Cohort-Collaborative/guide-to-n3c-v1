@@ -102,24 +102,24 @@ Tier 1 and 2 authors must satisfy [ICMJE criteria](https://www.icmje.org/recomme
 The publication committee has a role in helping authors identify Tier 2 and Tier 3 contributors:
 
 * Notify core contributors (named in [covid.cd2h.org/acknowledgements](covid.cd2h.org/acknowledgements)) and relevant domain teams of manuscripts that might be using their work
-* Enable core contributors and relevant domain teams to review the manuscript and either opt out of acknowledgement or opt into consortial contributorship.
+* Enable core contributors and relevant domain teams to review the manuscript and either opt out of acknowledgment or opt into consortial contributorship.
   Opting into consortial contributorship requires meeting the four ICMJE criteria above
-* Any other invited individuals (eg.domain team etc) would opt into acknowledgement OR opt into consortial contributorship;
+* Any other invited individuals (e.g., domain team) would opt into acknowledgment OR opt into consortial contributorship;
   the latter requires meeting the four ICMJE criteria above.
 * The publication committee then informs the author of any responses to consortial-level contributions or changes to default acknowledgments.
 
 The publications committee helps to maintain the list of core contributors, and progress is underway to automatically track contributions directly within the Enclave, which aids this process.
 
-The publication committee also maintains the content on <https://covid.cd2h.org/acknowlegements> to be included in the acknowledgements section of each manuscript.
-An abridged version of the acknowledgements is available for use in abstracts, posters, and slides.
+The publication committee also maintains the content on <https://covid.cd2h.org/acknowledgements> to be included in the acknowledgments section of each manuscript.
+An abridged version of the acknowledgments is available for use in abstracts, posters, and slides.
 
 ## Result Download (aka export) Request Process {#sec-publishing-drr}
 
 ### Policy summary {#sec-publishing-drr-summary}
 
 In compliance with the NCATS [Data Transfer](https://ncats.nih.gov/files/NCATS_Data_Transfer_Agreement_05-11-2020_Updated%20508.pdf) and [Data Use](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) Agreements that all Enclave users agree to, under no circumstances are tables, figures, parameter estimates, or aggregated statistics to leave the Enclave until download (aka export) approval is obtained by the ResultDownload Committee.
-Prior approval is required for export regardless of the result format (tables, figures etc.) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive).
-Prior approval is also required regardless of the export mechanism (screen shot, copy/paste, or download).
+Prior approval is required for export regardless of the result format (e.g., tables, figures) and regardless of the target venue (manuscripts, posters, presentations, supplementary material, or even your own private hard drive).
+Prior approval is also required regardless of the export mechanism (screenshot, copy/paste, or download).
 
 ### Constraints with aggregated data pertaining to small groups of patients (aka small 'cell sizes') {#sec-publishing-drr-small}
 
@@ -135,7 +135,7 @@ In their original form (left) these would violate the policy, as there are sever
 Even if these values are simply replaced with `< 20` (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents.
 A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.
 
-![An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as `< 20`, and in this case additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the 'other gender' and HIV categories.](images/publishing/fig-publishing-010-masking-example.png){#fig-publishing-010-masking-example width=100% fig-alt="masking-example"}
+![An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as `< 20`, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the 'other gender' and HIV categories.](images/publishing/fig-publishing-010-masking-example.png){#fig-publishing-010-masking-example width=100% fig-alt="masking-example"}
 
 ### Constraints related to Native Populations {#sec-publishing-drr-native}
 
@@ -152,11 +152,11 @@ For more information, consult [NCATS Tribal Consultations](https://ncats.nih.gov
 ### Constraints related to Data Partner IDs {#sec-publishing-drr-partner}
 
 For any exports that include Data Partner IDs, these IDs must be masked before being published and a statement that these have been masked must also be included.
-You may consider assigning random labels to data partners, such as four digit codes which do not occur in the partner IDs.
+You may consider assigning random labels to data partners, such as four-digit codes which do not occur in the partner IDs.
 
 ## Technical Considerations {#sec-publishing-tech}
 
-In addition to processes and policies described above, there are technical requirements for exporting summary data and figures from the Enclave, and features you should be aware of as your project nears publication.
+In addition to the processes and policies described above, there are technical requirements for exporting summary data and figures from the Enclave, and features you should be aware of as your project nears publication.
 
 ### Pinning to a Release {#sec-publishing-tech-pin}
 
@@ -173,7 +173,7 @@ The `master` branch is configured to always match the latest release, and thus c
 When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example:
 
 ```py
-source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release-v98-2022-10-27")`
+source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release-v98-2022-10-27")
 ```
 
 :::{.callout-note}
@@ -241,7 +241,7 @@ You can however pull new changes made in the Enclave, see below.
 
 Unlike summary tables, figures, or other results derived from N3C data, N3C does not require review of code prior to export.
 However, you should be careful to ensure that the code does not include any sensitive information added by hand.
-The most common use case for such hard-coded data are `data_partner_id` values added to filter a data partner's data.
+The most common use case for such hard-coded data is `data_partner_id` values added to filter a data partner's data.
 These should be removed or masked to comply with N3C policy.
 :::
 
@@ -251,7 +251,7 @@ As described in the panel text, the link contains an authentication token that y
 ![Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-060-workbook-git.png){#fig-publishing-060-workbook-git fig-alt="workbook-git"}
 
 The resulting git repo will contain three files, `pipeline.R`, `pipeline.py`, and `pipeline.sql`, containing all of the workbooks' R, Python, and SQL transform code respectively.
-These files are not very reader-friendly, and as of this writing N3C is working on parsing tools to help researchers publish their work in an accessible manner.
+These files are not very reader-friendly, and as of this writing, N3C is working on parsing tools to help researchers publish their work in an accessible manner.
 
 #### Pulling Changes, Pushing to GitHub, Branches, and Code Repositories {#sec-publishing-tech-code-github}
 

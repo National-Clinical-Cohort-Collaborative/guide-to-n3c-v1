@@ -74,14 +74,14 @@ Concept set generation can be done using the N3C Enclave Concept Set Browser, or
 
 Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e. datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment.
 Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions.
-Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc.  Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C vetted concept sets and peer-reviewed code as a starter table.
+Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc.  Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C-vetted concept sets and peer-reviewed code as a starter table.
 You can then append this base fact table to include project-specific facts needed for analyses.  @fig-tools-060-ll-template-1 and @fig-tools-070-ll-template-2 in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation.
 The generation of the original fact tables from raw OMOP tables can be done using Code Workbooks (@sec-tools-apps-workbook) or Code Repositories (@sec-tools-apps-repo).
 
 Data scientists and statisticians can then analyze the extracted and formatted fact tables.
 This includes statistical tests, summary tables, visualizations, and reports for the team to discuss.
 Data analysis is also a cyclical process with all team members engaged in assessing results and circling back to further refine the computational phenotype and concept sets if needed.
-Depending on the type of analysis needed, [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Contour](tools.md#sec-tools-apps-contour) can be utilized at this step, followed by [Foundry's Notepad](tools.md#sec-tools-apps-notepad) for reporting out results for secure team dissemination within the Enclave environment.
+Depending on the type of analysis needed, [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Contour](tools.md#sec-tools-apps-contour) can be utilized at this step, followed by [Foundry's Notepad](tools.md#sec-tools-apps-notepad) for reporting results for secure team dissemination within the Enclave environment.
 
 Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the N3C Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see @sec-publishing).
 The download request is meant to ensure no prohibited data is being downloaded as per the [N3C Data Download Policy](https://covid.cd2h.org/download) summarized in the Publishing and Sharing Your Work chapter.
@@ -91,7 +91,7 @@ Upon approval, you are free to submit to the venue of choice and freely present 
 Data download requests are performed within the Enclave environment, followed by submitting a [Google Form to the Publication Review Committee](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&sa=D&source=docs&ust=1677168810532504&usg=AOvVaw12T-1ZD5cVj92DGadpr1IN).
 
 The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.
-This chapter is best utilized along side the information provided in the next chapter, Best Practices for the Research Life Cycle (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
+This chapter is best utilized alongside the information provided in the next chapter, Best Practices for the Research Life Cycle (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
 
 ## Using Concept Sets {#sec-tools-concepts}
 
@@ -100,10 +100,10 @@ By leveraging the hierarchical structure, parent codes and descendants can be ca
 
 ![Concept Set Browser Homepage.](images/tools/fig-tools-020-concept-home.png){#fig-tools-020-concept-home fig-alt="Concept Set Browser Homepage"}
 
-The Concept Set Browser shown in @fig-tools-020-concept-home is an N3C specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
+The Concept Set Browser shown in @fig-tools-020-concept-home is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.
 For more details around the process of concept set creation, read the Concept Sets section in @sec-understanding.
 It is recommended that, if you are a new researcher, you start your search for a concept set with the list of N3C Recommended concept sets.
-These concept sets have been frozen in their validated state by the [Logic Liaisons and the Data Liaisons](https://covid.cd2h.org/liaisons) after obtaining clinician and informatic reviews (see @sec-understanding).
+These concept sets have been frozen in their validated state by the [Logic Liaisons and the Data Liaisons](support.md#sec-support-liaisons) after obtaining clinician and informatic reviews (see @sec-understanding).
 They are also the ones used to identify common comorbidities and other facts on the Phenotype Explorer and in the Logic Liaison Fact Table templates.
 The recommended other method of finding commonly used concept sets is by exploring bundles within the Concept Set Browser.
 These are groups of concept sets that are often used together.
@@ -120,7 +120,7 @@ Referring to a concept set by name and using the most recent version is often th
 
 For concept sets that have not undergone the validation process and have not been marked as N3C Recommended by the N3C core contributors, it is recommended that the research team performs their own validation on an existing concept set or creates a new concept set with the input of a clinician.
 The concept set should then be referenced using its codeset ID when you are performing your data analysis.
-This will allow your team to perform their analysis from start to finish without worry about unvalidated modifications to the concept set.
+This will allow your team to perform their analysis from start to finish without worrying about unvalidated modifications to the concept set.
 However, the codeset id being referenced in the code may need to be updated if the team chooses to modify the concept set once starting the analysis.
 
 In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python [Code Workbook](tools.md#sec-tools-apps-workbook) transforms with the use of the [Logic Liaison's Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} or in [Code Repositories](tools.md#sec-tools-apps-repo).
@@ -136,11 +136,11 @@ Otherwise, more specifics on how to navigate the KS can be found in this [Knowle
 
 Of the many types of Knowledge Objects, the most common are datasets and code templates.
 Datasets in the Knowledge Store can be internal or external.
-Internal datasets are generated from data inside the enclave, typically by researchers as part of their project, and are often of patient or row level granularity.
-As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person level data at various levels of granularity (see @sec-understanding).
+Internal datasets are generated from data inside the enclave, typically by researchers as part of their project, and are often of patient or row-level granularity.
+As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person-level data at various levels of granularity (see @sec-understanding).
 Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.
 
-### Code Templates{#sec-tools-store-templates}
+### Code Templates {#sec-tools-store-templates}
 
 Depending on the author's intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset.
 The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding.
@@ -158,9 +158,9 @@ These day-level and person-level datasets are commonly referred to as the Logic 
 These fact tables are produced using a default set of concept sets from the N3C Recommended Concept Sets list and a set of default values for the template's parameters.
 
 The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by @fig-tools-050-knowledge-store-example.
-It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project specific version of the fact tables.
+It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project-specific version of the fact tables.
 The [SDoH Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient.
-Because joining this data requires a valid five digit zip code, these fields are only available for patients with a five digit zip code in Level 3 (LDS) data.
+Because joining this data requires a valid five-digit zip code, these fields are only available for patients with a five-digit zip code in Level 3 (LDS) data.
 
 ![Example Logic Liaison Fact Table Template Knowledge Object.](images/tools/fig-tools-050-knowledge-store-example.png){#fig-tools-050-knowledge-store-example fig-alt="Example Logic Liaison Fact Table Template Knowledge Object"}
 
@@ -198,7 +198,7 @@ Once the main fact table templates mentioned earlier this section have been appl
 
 ![Example Application of Logic Liaison Ancillary Quality Templates.](images/tools/fig-tools-070-ll-template-2.png){#fig-tools-070-ll-template-2 fig-alt="Example Application of Logic Liaison Ancillary Quality Templates"}
 
-The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question specific facts by site.
+The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question-specific facts by site.
 
 * [Systematic Missingness by Site and Study Variable](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
   Produces a final visualization that has a binary indicator for whether or not a site is systematically missing meaningful data for the study variables in the input dataset
@@ -236,9 +236,9 @@ The Protocol Pad serves as an electronic lab notebook to help organize tasks, tr
 As a result of this organization and tracking, the tool facilitates easy translation of the work, decisions, and contributors to producing a final manuscript if that is the goal of the protocol.
 
 Protocol Pad is the foundation for performing reproducible and repeatable science within the N3C Enclave.
-The templates, checklists, and links to key resources provided within the tool guide you along the path of well structured division of labor and use of best practices when performing research using the observational data in the Enclave.
+The templates, checklists, and links to key resources provided within the tool guide you along the path of a well-structured division of labor and use of best practices when performing research using the observational data in the Enclave.
 The tool also assists your team in keeping the work in alignment with the project.
-A more in depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
+A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
 Documentation on the tool's functionality can be found in the
 [QuickStart Users' Guide to Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}}
 as well as the
@@ -261,12 +261,12 @@ A Contour analysis starts by specifying the path to the input dataset as shown i
 Subsequent transforms of that dataset are then specified, which can include adding/calculating new columns, filtering rows or columns, joining with other datasets, creating summary figures and charts, summarizing tables through pivoting, and more.
 Contour's [expression language](https://www.palantir.com/docs/foundry/contour/expressions-overview/) also allows for more complex querying and data aggregation beyond the default operations provided.
 Once an analysis is complete, resulting datasets can be saved to the Enclave for use in additional Contour pipelines or other Enclave applications, like [Code Workbooks](tools.md#sec-tools-apps-workbook).
-Contour can also quickly create summary figures from source tables without code, and has a variety of visualization options, including bar charts, histograms and heatmaps.
+Contour can also quickly create summary figures from source tables without code, and has a variety of visualization options, including bar charts, histograms, and heatmaps.
 
 Figures or summary tables created in Contour can be exported to a dashboard within Contour.
-Contour Dashboards allows chart-to-chart filtering, and an easy drag-and-drop interface to build the dashboard while iterating on an analysis.
+A Contour Dashboard allows chart-to-chart filtering, and an easy drag-and-drop interface to build the dashboard while iterating on an analysis.
 A dashboard is dynamic and interactive, allowing the reader to adjust the graphs to better explore analysis results in a guided and structured way.
-Figures generated in a Contour analysis can also be exported to other Enclave applications like Notepad for reporting out results.
+Figures generated in a Contour analysis can also be exported to other Enclave applications like Notepad for reporting results.
 The main difference between [Notepad](tools.md#sec-tools-apps-notepad) and a Contour Dashboard is that Notepad provides a static report with figures that cannot be dynamically changed by the reader.
 A detailed orientation to Contour can be found in the Foundry Documentation [here](https://www.palantir.com/docs/foundry/contour/overview/).
 
@@ -316,12 +316,12 @@ Both Python and R transforms can optionally return a single dataset and produce 
 Any visualization produced in a Code Workbook can subsequently be embedded in a Notepad document.
 Datasets returned by a transform are ephemeral by default, that is, the transform must be recomputed each time the dataset is used as a downstream input, but options exist to conserve compute power by either caching or saving the output.
 Caching stores the output temporarily, while saving the dataset stores it permanently in the Enclave.
-It is recommended that transforms in a pipeline requiring significant compute be saved as datasets to reduce iteration time during development.
+It is recommended that transforms in a pipeline requiring significant compute time be saved as datasets to reduce iteration time during development.
 In addition to manually clicking "Run" on a transform, a [build schedule](https://www.palantir.com/docs/foundry/building-pipelines/scheduling-overview/) can be defined to recompute it at regular intervals based on a trigger.
 You can choose the trigger to be the successful update of an input dataset or simply the elapsing of a specified period of time.
 This capability can best be visualized using [Data Lineage](tools.md#sec-tools-apps-lineage).
 
-The Console, Global Code, and Logs panels  facilitate quick iteration and code development and debugging.
+The Console, Global Code, and Logs panels facilitate quick iteration and code development and debugging.
 The [Console](https://www.palantir.com/docs/foundry/code-workbook/workbooks-console/) allows you to interactively execute and check syntax in Python, R, or SQL outside of a transform node.  [Global Code](https://www.palantir.com/docs/foundry/code-workbook/workbooks-global-code/) allows you to define custom functions available to all transforms in the Code Workbook.
 Each code transform includes a Logs panel to view console output generated by code and to view detailed stack traces when transforms fail due to an error.
 
@@ -359,7 +359,7 @@ Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/
 
 * Production pipelines
 * Code reuse across projects
-* Built in version control
+* Built-in version control
 
 ![Example Code Repository.](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
 
@@ -373,11 +373,11 @@ Some code is useful enough that it should be shared across projects.
 Code Repositories provide a standard mechanism for encapsulating reusable components and allowing them to be reused within projects.
 
 Underlying the Code Repository is the Git version control system.
-You can edit and maintain code using all of the capabilities of Git including comparing versions, branching and pull requests.
+You can edit and maintain code using all of the capabilities of Git including comparing versions, branching, and pull requests.
 Versions that are tagged in Git will be automatically published in the Enclave as a shared library, which allows you and others that have access to your project space to import that code into other Code Workbooks (note this requires you to create a customized environment that imports your code specifically, which may increase workbook initialization time).
 If you want to make your repository public so others outside of your project workspace can use it you can do one of the following:
 
-* Package your code into a properly structured python package.
+* Package your code into a properly structured Python package.
 This allows other researchers from different project spaces to run it from their Code Workbooks or Repositories.
 * Submit the Code Repository to the Knowledge Store where it will then be visible to anyone who has Enclave access.
 * Publish the Code Repository to a public Github where the code will then become accessible to anyone outside the Enclave.
@@ -405,7 +405,7 @@ Similar to Google Sheets, multiple users can simultaneously view and edit the sa
 
 Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few.
 While you cannot directly import external .xls/.xlsx formatted files into the Enclave, you can copy/paste external dataset values into Fusion.
-For example, you can copy and paste concept IDs from [ATLAS](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas) to use in an analysis or metadata manually curated for a dataset.
+For example, you can copy and paste concept IDs from [ATLAS](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas) to use in an analysis or in metadata manually curated for a dataset.
 To import larger external datasets into the N3C Enclave see @sec-understanding, and [N3C procedures and protocols around importing large external datasets](https://zenodo.org/record/4574608#.Y6IeG-zMJTZ).
 In addition to standard spreadsheet functionality, Fusion has additional features which allow it to integrate with the rest of your Enclave environment.
 Objects created within Fusion, such as formatted tables, can be embedded in [Notepad](tools.md#sec-tools-apps-notepad).
@@ -430,8 +430,8 @@ Users can also create sections and provide narrative structure to their document
 A Notepad document can be arranged and configured using a point-and-click interface.
 
 All embedded objects can be configured to remain static or refresh automatically when the underlying data sources update.
-Notepad is also useful for annotating documents, presenting an executive summary of results for internal stakeholders, or external presentations after being approved for download request and export as PDF.  [Logic Liaison Templates](tools.md#sec-tools-store-ll) in the Knowledge Store generally includes a README which is created using Notepad.
-The tool does have limitations in that it cannot be used to create dashboards that include chart-to-chart filtering; however, [Contour Dashboards](https://www.palantir.com/docs/foundry/contour/dashboards-overview/) can provide this feature for tabular data and [Quiver Dashboards](https://www.palantir.com/docs/foundry/quiver/dashboards-overview/) can provide this feature for object or time series data.
+Notepad is also useful for annotating documents, presenting an executive summary of results for internal stakeholders, or external presentations after being approved for download request and export as PDF.  A [Logic Liaison Template](tools.md#sec-tools-store-ll) in the Knowledge Store generally includes a README which is created using Notepad.
+The tool does have limitations in that it cannot be used to create dashboards that include chart-to-chart filtering; however, a [Contour Dashboard](https://www.palantir.com/docs/foundry/contour/dashboards-overview/) can provide this feature for tabular data and a [Quiver Dashboard](https://www.palantir.com/docs/foundry/quiver/dashboards-overview/) can provide this feature for object or time series data.
 Palantir has curated documentation for creating and editing [Notepad](https://www.palantir.com/docs/foundry/notepad/overview/) documents.
 Palantir also has documentation for their application known as [Reports](https://www.palantir.com/docs/foundry/reports/overview/) that was previously used in a similar fashion though with less functionality compared to Notepad.
 
@@ -454,7 +454,7 @@ Foundry Documentation: [Data Lineage Overview](https://www.palantir.com/docs/fou
 
 Whether you're creating a data pipeline for your research project or investigating one from the Knowledge Store, you'll likely want to holistically assess the dataset's origins with the Data Lineage tool shown in @fig-tools-160-data-lineage.
 The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants.
-Views are enhanced with color-coding and grouping.
+Views are enhanced with color coding and grouping.
 The Data Lineage tool allows you to view details such as a dataset's schema, last build datetime, and the code that generated the dataset.
 You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis.
 The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules.

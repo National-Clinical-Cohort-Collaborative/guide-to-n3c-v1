@@ -45,7 +45,7 @@ This chapter introduces the National COVID Cohort Collaborative (N3C) data inges
 N3C is a centralized data repository and accessible Real World Data (RWD) dataset that facilitates COVID-19 research.
 The COVID-19 pandemic has taken the lives of over 6.8 million people worldwide^[See <https://covid19.who.int/>] and more than 1.1 million in the United States^[See <https://covid.cdc.gov/covid-data-tracker/#datatracker-home>].
 
-N3C is the largest national, publicly available HIPAA-limited dataset in US history, and its innovative data-governance and public-government partnership has made broad sensitive clinical data sharing possible to support COVID-19 research.
+N3C is the largest national, publicly available HIPAA-limited dataset in US history, and its innovative data-governance and public-government partnership have made broad sensitive clinical data sharing possible to support COVID-19 research.
 To date, N3C brings together over 23 billion clinical records from over 18 million patients from 75 medical institutions.
 It represents a major achievement in overcoming legal, regulatory, and technical barriers to become the largest and first national, publicly available HIPAA-limited data set.
 
@@ -59,7 +59,7 @@ Disparate data sources from over 75 data partners are ingested, harmonized and m
 Manual curation of 2,000 mappings was scaled into a fully automated data pipeline that includes common data model (CDM) schema checks, data conformance checks, correction for missing COVID test measurement codes and data expectation checks within the data ingestion and harmonization process.
 Each data partner's ingested data is merged to create a central data repository, which allows for consistent and efficient data quality reviews.
 
-Beyond well recognized data quality issues, we discovered heuristics relating to each CDM conformance, demographics, COVID tests and associated results, conditions, encounters, measurements, observations, coding completeness, and fitness for use.
+Beyond well-recognized data quality issues, we discovered heuristics relating to each CDM conformance, demographics, COVID tests and associated results, conditions, encounters, measurements, observations, coding completeness, and fitness for use.
 The results of the data quality issues were communicated back to the participating sites and the sites improved their data quality after feedback.
 Furthermore, the N3C central data repository, referred to as the Data Enclave or Enclave, is able to infer missing measurement units as well as correct invalid units of measure for certain laboratory test results through unit inference algorithms.
 Unified Code for Units of Measure is used to harmonize the measurement units.
@@ -73,7 +73,7 @@ It is Federal Risk and Authorization Management Program (FedRAMP) compliant.
 As data is transferred into the N3C Data Enclave for processing, the governance team receives secure messages regarding this process for audit purposes.
 Once the data is transferred to the Enclave the automated pipeline is triggered to process the data through the data ingestion and harmonization pipeline.
 
-![N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Enclave and harmonized in to the OMOP CDM.](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
+![N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Enclave and harmonized into the OMOP CDM.](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
 
 ### N3C Data Ingestion Pipeline Workflow {#sec-cycle-overview-ingestion}
 
@@ -106,7 +106,7 @@ Sites that are contributing data to N3C are required to include a manifest file 
 This manifest file includes detailed information about the submitted dataset, such as the local CDM name, site name, run date, information on date shifting that the site may perform prior to submission, the site's contact information, and the OMOP vocabulary version number used at the site if the site uses the OMOP CDM.
 In addition to submitting the zipped data files, sites must also provide the expected row counts of the submitted datasets.
 The row count information is used as part of a handshake protocol for the pipeline to confirm the correct receipt of the datasets sent by the participating site.
-If the parsed data counts in the Enclave do not match the data counts sent by the site, then an issue is generated for follow up by the data triage team.
+If the parsed data counts in the Enclave do not match the data counts sent by the site, then an issue is generated for follow-up by the data triage team.
 This metadata helps to ensure that the submitted datasets are properly parsed through the automated ingestion pipeline and can be used effectively by N3C researchers.
 
 ### Check Conformance with the Source Common Data Model {#sec-cycle-overview-conformance}
@@ -116,7 +116,7 @@ This process ensures that the data meets the source CDM constraints and is forma
 During the data conformance check, the data files are parsed and any empty strings are replaced with null values.
 The columns are also cast to the expected data types as defined by the CDM model specifications.
 
-There are several types of checks that are included in the data conformance process, such as presence of required tables and primary key checks.
+There are several types of checks that are included in the data conformance process, such as the presence of required tables and primary key checks.
 Table checks are used to ensure that all of the required tables (such as demographics, patient_dimension, and patient) are present in the dataset.
 Primary key checks verify that there are no null values or duplicates in the primary key fields, which helps to ensure the integrity and reliability of the data.
 For example, if the primary key field contains duplicates, the build will fail as a result of a failed data health check, and an issue is logged for the triage team to contact the site with reference to the source data that raised the error.
@@ -142,13 +142,13 @@ The new mapping entries are manually reviewed by vocabulary experts and clinicia
 
 The incoming data sets submitted by contributing sites use collections of vocabulary codes to describe the managed concept collections from which to draw value set content.
 Each CDM defines a list of codes / vocabulary that are native to its CDM and internally unique to represent a concept.
-The CDM defined static sets of common data elements (CDE) do not change from payload to payload and are uniform across different sites and data payloads.
+The CDM-defined static sets of common data elements (CDE) do not change from payload to payload and are uniform across different sites and data payloads.
 
 Technically, terminology, vocabulary, and code system are not synonyms, but the community often uses these phrases interchangeably.
-The incoming data sets use well defined terminology to encode clinical meanings in the data.
+The incoming data sets use well-defined terminology to encode clinical meanings in the data.
 For example, the International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) is used for diagnoses which have complex ideas that include multiple, nuanced sub-elements.
 SNOMED CT is also used to encode clinical diagnoses which have internal hierarchies built upon increasing specificity (IS-A) and may also include relationships among the concepts (e.g., caused-by or finding-site).
-Logical Observation Identifiers Names and Codes (LOINC) is used to represent laboratory tests.
+Logical Observation Identifiers Names and Codes (LOINC) are used to represent laboratory tests.
 ICD-10-PCS, HCPCS, and CPT4 codes are used for procedures.
 CVX codes are used for vaccines and RxNorm codes are used to specify the medications prescribed and administered.
 The string text used to indicate the code system categories are not uniform across the CDM models and some are case sensitive, i.e. "RxNorm" vs. "RXNORM".^[See <https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf>.]
@@ -159,10 +159,10 @@ Two categories of crosswalk mapping tables are generated to perform the translat
 Static crosswalk common data element mappings are based on permissible values for a given column within a CDM table and they are well defined by the CDM specifications.
 CDE are uniform across different sites and data payloads.
 These CDE mappings include categories such as race, ethnicity, and gender.
-CDM specific CDE values are reviewed and the corresponding list of OMOP concept ids are identified to create a crosswalk mapping table that can be used in the vocabulary transformation step in the pipeline.
+CDM-specific CDE values are reviewed and the corresponding list of OMOP concept ids is identified to create a crosswalk mapping table that can be used in the vocabulary transformation step in the pipeline.
 The curated crosswalk mapping table is available in the [N3C GitHub repository](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic/reference_tables).
 
-![Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well defined by CDM specifications.](images/cycle/fig-cycle-020-mapping-static.png){#fig-cycle-020-mapping-static fig-alt="Pipeline Workflow"}
+![Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications.](images/cycle/fig-cycle-020-mapping-static.png){#fig-cycle-020-mapping-static fig-alt="Pipeline Workflow"}
 
 Dynamic crosswalk mapping tables, on the other hand, are created during the transformation process in the pipeline based on the existence of codes that are found in the sites' submitted payload.
 These mappings are created for each data payload to maximize the efficiency of the transformation process.
@@ -173,7 +173,7 @@ The code used to generate the crosswalk mapping table is also available in the [
 
 ### OMOP domain mapping {#sec-cycle-overview-domain}
 
-The OMOP CDM is person centric.
+The OMOP CDM is person-centric.
 OMOP organizes the patient's temporal EHR records in multiple domains; condition, procedure, drug, device, and measurement.
 OMOP domain mapping is the process of aligning data from different sources to the OMOP framework, using OMOP standard terminology and concepts, and ensuring that the data are populated in the correct OMOP domain table.
 This process is important because it helps to ensure that the data are consistent and can be easily understood and analyzed.
@@ -181,7 +181,7 @@ By mapping data to the OMOP framework, researchers and analysts are able to comp
 
 OMOP domain mapping typically involves the creation of mapping tables that translate the source code from different CDM data sources to the OMOP standard concept terminology and concept ids used in the OMOP vocabulary framework.
 The OMOP vocabulary dictates which source code should be placed in which target domain after it is translated into OMOP concepts.
-This vocabulary transformation using the OMOP concept relationships arranges the data into a well organized and consistent format that can be easily analyzed and queried.
+This vocabulary transformation using the OMOP concept relationships arranges the data into a well-organized and consistent format that can be easily analyzed and queried.
 
 ### N3C Global ID generation for all primary key fields {#sec-cycle-overview-globalid}
 
@@ -198,7 +198,7 @@ The automated N3C DI&H pipeline is able to handle large volumes of data efficien
 
 The N3C works with domain experts to screen sensitive information to protect patient privacy.
 N3C datasets are cleaned again in the pipeline before the data is released.
-The pipeline contains a process to remove any possible privacy breaching data.
+The pipeline contains a process to remove any possible privacy-breaching data.
 This process includes tribal zip code truncation and Agency for Healthcare Research and Quality (AHRQ) code removal.
 
 Tribal zip code truncation is a process that is used to protect the privacy of individuals who live on tribal lands in the United States.
@@ -240,7 +240,7 @@ N3C has compiled one of the largest secure collections of clinical health data w
 In order to facilitate COVID-19 research, N3C has grouped ontologically similar OMOP measurement concepts together for 53 measured concept categories and developed a unit-harmonization pipeline to ensure that the data is consistent and comparable.
 Unit inference is performed in the following cases; cases where the measurement units are missing or in cases where the units are provided by the site and valid for the given lab, but the value distribution indicates that it is the wrong unit.
 
-The massive amounts of measurement data in N3C enables the process of correcting units via inference based on the distribution of the existing data values for the same laboratory results.
+The massive amounts of measurement data in N3C enable the process of correcting units via inference based on the distribution of the existing data values for the same laboratory results.
 Furthermore, the same measurement data in different units are also converted to use the canonical units using the unit conversion table.
 
 This unit-harmonization pipeline consists of several steps:
@@ -272,13 +272,13 @@ The logged issues are triaged by the DI&H team, and if the issue requires commun
 
 ![Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.](images/cycle/fig-cycle-055-checks-2.png){#fig-cycle-055-checks-2 fig-alt="Data Health Checks 2"}
 
-![Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are are automatically tracked.](images/cycle/fig-cycle-060-checks-3.png){#fig-cycle-060-checks-3 fig-alt="Data Health Checks 3"}
+![Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked.](images/cycle/fig-cycle-060-checks-3.png){#fig-cycle-060-checks-3 fig-alt="Data Health Checks 3"}
 
 Within N3C, template technology is utilized to deploy the data ingestion pipeline.
 The CDM-specific DI&H pipeline is deployed for a new site using the same data ingestion template written for each source CDM.
 Once deployed the data checks run automatically and are tracked within the Enclave.
 The data pipeline is refreshed within roughly 30 minutes whenever source data is updated at the sFTP site.
-The data ingestion pipeline templates are utilized to ingest over 75 data partner's data.
+The data ingestion pipeline templates are utilized to ingest over 75 data partners' data.
 The ingested data that pass the data quality checks are available to be merged to the limited dataset (LDS) where they then become available to the research community.
 
 #### Manual Data Quality Checks through Data Quality Portal {#sec-cycle-harmonization-dqc-manual}
@@ -310,7 +310,7 @@ The DI&H team has created site feedback reports called scorecards that could not
 The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses.
 Figures and tables were created using Palantir's Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.
 
-![Site Scorecard. Site scorecards utilize charts and graphical representation of data partner's submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.](images/cycle/fig-cycle-078-scorecard-1.png){#fig-cycle-078-scorecard-1 fig-alt="Site Scorecard 1"}
+![Site Scorecard. Site scorecards utilize charts and graphical representations of data partner's submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.](images/cycle/fig-cycle-078-scorecard-1.png){#fig-cycle-078-scorecard-1 fig-alt="Site Scorecard 1"}
 
 Site scorecards provide reports to all sites that are released in the N3C Enclave.
 These reports are sent on a biweekly cadence, via the sFTP outgoing folder.
@@ -338,12 +338,12 @@ The N3C Enclave hosts patient data at multiple levels of patient data completene
 
 with corresponding levels of restricted access.
 The most complete data set available within the N3C Enclave is the limited data set (LDS), which is a type of dataset that has had certain protected health information (PHI) removed or de-identified in accordance with the Health Insurance Portability and Accountability Act (HIPAA).
-However, some data elements, such as dates (date of birth/death, admission, discharge, service, etc.), location data (city, state, five digit zip code), and age are still available.
+However, some data elements, such as dates (date of birth/death, admission, discharge, service, etc.), location data (city, state, five-digit zip code), and age are still available.
 
 The DI&H workstream meets bi-weekly to review potential data quality issues found in site data submissions.
 Based on various data quality metrics of the submitted data from each site, the "release" or "no release" status flag is set for each data partner.
 Based on this release status flag, the pipeline determines whether or not to merge the site's payload data to the LDS.
-The dimension of data quality checks include internal and external validations, data conformance, and completeness that are based on the OHDSI data quality framework [@pfaff_2022b].
+The dimension of data quality checks includes internal and external validations, data conformance, and completeness that are based on the OHDSI data quality framework [@pfaff_2022b].
 
 Generate SafeHarbor DataSets (L2)
 
@@ -353,7 +353,7 @@ The SafeHarbor dataset (L2) is generated by applying the following list of proce
 * The zip code is truncated to the first 3 digits.
 * All patient-level date and datetime fields are shifted by keeping two sets of random &plusmn;180 numbers.
   One number is used to shift the time part and the other number is used to shift the date part. (Please note that a number of sites do pre-shift the date fields prior to submitting the data to N3C.
-  The data partners who pre-shift the date-field can be identified by the maxDateShift column of the manifest table.)
+  The data partners who pre-shift the date field can be identified by the maxDateShift column of the manifest table.)
 * After creating the randomized date/time shifting numbers for a patient new to the N3C Enclave, the patient-level date shift is stored for each subsequent payload, such that the same number is used for the patient from the patient's initial data load and every data load thereafter.
 * Times are shifted &plusmn;180 minutes from the actual time.
   All times are shifted by a consistent base time shift for all patients.
@@ -406,7 +406,7 @@ Although there may be some structured data elements present in these notes that 
 In order to process the note data, it is necessary to use Natural Language Processing (NLP) techniques.
 Once processed, the data is available to researchers in the OMOP NOTE_NLP table.
 
-For more details about the N3C NLP data, including the NLP submission process and Github repository containing tools for processing notes, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/NLP-Submission-Process).
+For more details about the N3C NLP data, including the NLP submission process and GitHub repository containing tools for processing notes, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/NLP-Submission-Process).
 
 ### O<sub>2</sub> Supplement Devices {#sec-cycle-enhancements-oxygen}
 
@@ -420,7 +420,7 @@ For more details about the N3C O<sub>2</sub> Device data please refer to this [G
 
 ### Social Determinants of Health {#sec-cycle-enhancements-sdoh}
 
-Social Determinants of Health (SDOH) refer to the social, economic, and environmental factors that can impact an individual's health and wellbeing.
+Social Determinants of Health (SDOH) refer to the social, economic, and environmental factors that can impact an individual's health and well-being.
 These factors can include things like income and education level, housing and transportation, and access to healthcare and other resources.
 While N3C has made available several external datasets containing SDOH data that can be incorporated into a research project ([See the Public/External Datasets section of the Understanding The Data chapter](https://docs.google.com/document/d/1cgQItN3dYY3HJDTkYz0YgOgaK5FDU1lGDSFdeE8Cc8s/edit#heading=h.olgqg22wdn4y)), N3C has also requested that data partners that routinely collect SDOH data provide that data as part of their data submissions, if they are able.
 
@@ -439,7 +439,7 @@ The missing portion of health care received by the patient may include visits to
 It may also be missing telehealth visits and the purchasing of equipment or devices to be used at home.
 Often data from these outside-of-hospital visit settings are not captured via the EHR.
 Using PPRL technology, we linked N3C patients with CMS patients and supplemented N3C EHR information using a comprehensive CMS claims dataset.
-For the PPRL linked patients we provide additional datasets that can be referenced to render a more holistic view of the patient's healthcare journey.
+For the PPRL-linked patients we provide additional datasets that can be referenced to render a more holistic view of the patient's healthcare journey.
 This work is currently ongoing.
 The approach and methods to construct the claims data with encounters will be updated soon.
 The CMS data is used to complement and augment the N3C OMOP datasets.

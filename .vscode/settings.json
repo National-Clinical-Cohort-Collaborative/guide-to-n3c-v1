@@ -161,6 +161,16 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/access.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/advanced.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/cycle.md"
         }
     ]
 }

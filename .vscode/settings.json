@@ -196,6 +196,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/support.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/tools.md"
         }
     ]
 }

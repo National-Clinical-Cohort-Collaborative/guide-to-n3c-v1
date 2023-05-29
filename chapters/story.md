@@ -311,7 +311,7 @@ The first discussion is usually a variation of the following exchange, with the 
   All the N3C contributors comprehensively capture all conditions diagnosed _during_ the visit.
   Furthermore the diagnosis codes are standardized well across sites.
   That's because most providers enter ICD codes into the EHR,
-  which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets are described in @sec-understanding.
+  which eventually can be cleanly mapped to OMOP's standard concepts.^[Authoring and using concept sets is described in @sec-understanding.
   Mapping an ICD to SNOMED diagnosis code is an example of mapping a "non-standard" to a "standard" concept, discussed in @sec-understanding.]
 * **I**:
   Well, that's fine for this paper.

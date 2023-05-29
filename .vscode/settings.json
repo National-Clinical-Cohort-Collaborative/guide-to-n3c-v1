@@ -191,6 +191,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/publishing.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/support.md"
         }
     ]
 }

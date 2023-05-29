@@ -181,6 +181,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/intro.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/onboarding.md"
         }
     ]
 }

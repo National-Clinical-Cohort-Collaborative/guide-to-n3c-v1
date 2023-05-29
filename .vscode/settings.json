@@ -186,6 +186,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/onboarding.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/publishing.md"
         }
     ]
 }

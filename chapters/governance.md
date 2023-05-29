@@ -44,15 +44,15 @@ Early on, the N3C conducted [general webinars](https://www.youtube.com/watch?v=O
 ## Establishing a collaborative governance culture- The Partnership and Governance Workstream {#sec-governance-culture}
 
 Achieving the goals of a shared data resource involves deciding how the resource may be produced, operated, used, and sustained.
-Critical considerations for establishing a data sharing governance framework include:
+Critical considerations for establishing a data-sharing governance framework include:
 
 * Developing a data-sharing strategy (i.e., deciding what data will be shared and whether sharing will be bilateral or multilateral, whether the data will be centralized or distributed /decentralized),
-* Understanding the legal, regulatory and organizational compliance requirements and establishing the data sharing agreements (i.e. identifying potential restrictions on data sharing and use due to laws, regulations or ancillary agreements, and understanding party's legitimate interests)
+* Understanding the legal, regulatory, and organizational compliance requirements and establishing the data sharing agreements (i.e. identifying potential restrictions on data sharing and use due to laws, regulations, or ancillary agreements, and understanding party's legitimate interests)
 * Selecting the technical environment where sharing will occur (i.e. selecting the technical infrastructure and the security measures to be implemented to protect data integrity, assessing risks and managing data access)
 * Preparing the data for sharing, retention and disposition (i.e. optimizing data usability, selecting data processing methods and adopting FAIR principles)
 * Monitoring data sharing (i.e. establishing a monitoring and reporting plan, enforcing policies and procedures, and resolving disputes)
 
-[The Data Partnership and Governance Workstream](https://covid.cd2h.org/N3C_governance) established by the N3C PIs with participation from NCATS and the scientific and ethics community, is responsible for (1) establishing and refining the principles, policies, and procedures to support N3C, (2) determining the roles and functions to support the governance strategy, and (3) making recommendations to NIH for their implementation.
+[The Data Partnership and Governance Workstream](https://covid.cd2h.org/N3C_governance) established by the N3C PIs with participation from NCATS and the scientific and ethics community is responsible for (1) establishing and refining the principles, policies, and procedures to support N3C, (2) determining the roles and functions to support the governance strategy, and (3) making recommendations to NIH for their implementation.
 The workstream convenes representatives of contributing organizations, researchers, and institutions that support them, NCATS, ethicists, and anyone interested in advancing N3C.
 
 At the start, the Partnership and Governance workstream met twice weekly to rapidly align on an N3C governance vision and establish the universal conditions governing the use of N3C data.
@@ -87,7 +87,7 @@ Seven principles summarize the Community Guiding Principles:
 1. **Partnership**:
   N3C community members are trusted partners committed to honoring the [N3C community guiding principles](https://zenodo.org/record/3979610) and [N3C User Code of Conduct](https://ncats.nih.gov/n3c/resources/data-user-code-of-conduct)
 1. **Inclusivity**:
-  N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19 related research, including citizen/community scientists
+  N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19-related research, including citizen/community scientists
 1. **Transparency**:
   Open processes and reproducible research is the hallmark of N3C and good scientific practice.
   Access to data is project-based and focused on COVID-19 research questions.
@@ -128,7 +128,7 @@ An N3C [Data Transfer Agreement](https://ncats.nih.gov/files/NCATS_Data_Transfer
 
 N3C leaders saw the value of enhancing the N3C research capability and developing the governance to enable [privacy-preserving record linkage](https://covid.cd2h.org/PPRL) (PPRL) between N3C data and other data sources.
 PPRL enables linking records across multiple datasets without revealing the identity of the data subject.
-Data contributing organizations willing to participate in this data linkage pilot must execute a separate [Linkage Honest Data Broker Agreement](https://ncats.nih.gov/files/NCATS_LHBA-508.pdf)(LHBA) with NCATS and the Linkage Honest Broker.
+Data-contributing organizations willing to participate in this data linkage pilot must execute a separate [Linkage Honest Data Broker Agreement](https://ncats.nih.gov/files/NCATS_LHBA-508.pdf)(LHBA) with NCATS and the Linkage Honest Broker.
 Again, separating the DTA and LHBA provides the flexibility to contribute data without enrolling in the PPRL.
 
 A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) (DUA) must be executed between NCATS and signing officials from an institution whose investigators wish to access N3C data.

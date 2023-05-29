@@ -171,6 +171,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/cycle.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "chapters/governance.md"
         }
     ]
 }

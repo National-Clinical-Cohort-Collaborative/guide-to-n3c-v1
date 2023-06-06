@@ -136,7 +136,7 @@ Otherwise, more specifics on how to navigate the KS can be found in this [Knowle
 
 Of the many types of Knowledge Objects, the most common are datasets and code templates.
 Datasets in the Knowledge Store can be internal or external.
-Internal datasets are generated from data inside the enclave, typically by researchers as part of their project, and are often of patient or row-level granularity.
+Internal datasets are generated from data inside the Enclave, typically by researchers as part of their project, and are often of patient or row-level granularity.
 As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person-level data at various levels of granularity (see @sec-understanding).
 Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.
 
@@ -363,7 +363,7 @@ Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/
 
 ![Example Code Repository.](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
 
-Code Repositories shown in @fig-tools-130-code-repo are available within the N3C enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
+Code Repositories shown in @fig-tools-130-code-repo are available within the N3C Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
 Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates.
 Additional [differences between Code Repositories and Code Workbooks](https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/) can be found in the Foundry Documentation.
 Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an N3C Enclave account" >}}.

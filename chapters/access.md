@@ -26,12 +26,12 @@ After all, N3C is the steward for EHR data on millions of patients from dozens o
 Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter.
-The DUR form is available only inside the enclave, so enclave access is required to request data access.
-N3C registration and enclave access are covered in @sec-onboarding, so we won't cover those topics here.
+The DUR form is available only inside the Enclave, so Enclave access is required to request data access.
+N3C registration and Enclave access are covered in @sec-onboarding, so we won't cover those topics here.
 
 ## Background: N3C Protected Data Levels {#sec-access-background}
 
-Not all data in the enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with enclave access.
+Not all data in the Enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements.
@@ -72,7 +72,7 @@ Such records are masked with "censored" values in the resulting dataset.
 
 Because this statistical-modeling approach doesn't scale to the entirety of an EHR database, it is generated on subsets of data of interest to researchers, with the assistance of MDClone representatives.
 To take an example, consider a research team interested in outcomes of COVID-19 in diabetic vs. non-diabetic individuals.
-Inside the enclave, the team initiates a request with an MDClone liaison, suggesting that they would like to collect a set of patient information (with one row per patient in the resulting table), with columns for `patient_age` (at the date of their first COVID-positive PCR test result), `has_diabetes` (indicating if their record contains a diabetes diagnosis), `days_until_ventilation` (number of days elapsed between their COVID-positive test and subsequent mechanical ventilation, or `null` if they were not ventilated within 30 days), and several other potential confounding variables.
+Inside the Enclave, the team initiates a request with an MDClone liaison, suggesting that they would like to collect a set of patient information (with one row per patient in the resulting table), with columns for `patient_age` (at the date of their first COVID-positive PCR test result), `has_diabetes` (indicating if their record contains a diabetes diagnosis), `days_until_ventilation` (number of days elapsed between their COVID-positive test and subsequent mechanical ventilation, or `null` if they were not ventilated within 30 days), and several other potential confounding variables.
 The MDClone liaison then collects this requested information from the Level 3 data, develops a representative statistical model, and delivers a table of synthesized rows from the model with the columns requested to the team.
 
 Level 1 datasets are generated from the most recent Level 3 release at the time of generation, and not automatically updated as new primary N3C data arrives.
@@ -103,7 +103,7 @@ This table provides information about data partners, such as their source common
 ### PPRL Data {#sec-access-background-pprl}
 
 PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, _without_ revealing to any party except the data sources themselves any identifying information about the individual.
-While we won't describe how the process works here, researchers with enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal (see @sec-support-training).
+While we won't describe how the process works here, researchers with Enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal (see @sec-support-training).
 
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
@@ -288,7 +288,7 @@ Note that when requesting access to PPRL datasets, _both the Research Project Ra
 ### Project Workspace Creation and Data Access {#sec-access-request-creation}
 
 The Data Access Committee reviews all DURs.
-After a new project DUR is approved, a workspace is created inside the enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](access.md#sec-access-workspaces) above), and the submitting lead is given access to this project workspace.
+After a new project DUR is approved, a workspace is created inside the Enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](access.md#sec-access-workspaces) above), and the submitting lead is given access to this project workspace.
 An email is also sent to the submitting lead with links to useful learning resources.
 
 The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks.

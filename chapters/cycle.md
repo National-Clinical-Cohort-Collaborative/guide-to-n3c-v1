@@ -306,7 +306,7 @@ This is particularly important for the N3C centralized data repository, as it en
 
 ### Site Scorecard {#sec-cycle-harmonization-scorecard}
 
-The DI&H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the N3C enclave.
+The DI&H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the N3C Enclave.
 The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses.
 Figures and tables were created using Palantir's Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.
 
@@ -433,7 +433,7 @@ More information about PPRL and the datasets available through this linkage can 
 
 ### CMS {#sec-cycle-enhancements-cms}
 
-The N3C enclave is a continuously refreshed data resource following the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
+The N3C Enclave is a continuously refreshed data resource following the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
 However a patient's data from the EHR may be missing data from the patient's healthcare journey outside of hospital settings.
 The missing portion of health care received by the patient may include visits to the pharmacy, visits to the outpatient clinic as well as the non-hospital institutional care facilities.
 It may also be missing telehealth visits and the purchasing of equipment or devices to be used at home.

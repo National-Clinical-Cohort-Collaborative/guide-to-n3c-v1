@@ -243,7 +243,7 @@ The vocabulary schema will reflect whatever version of the vocabulary was in pla
 It will not reflect the most recent version of the OMOP vocabulary, which may be problematic for research projects that use newly approved vaccines or medicines.
 You should not make the habit of saving content within the public instance.
 It can be reset and wiped at any point in time.
-If you enjoy using ATLAS, consider spinning up your own instance via Broadsea, OHDSI in a box, or other OHDSI Community resources to jump start users with their own ATLAS deployment.
+If you enjoy using ATLAS, consider spinning up your own instance via Broadsea, OHDSI in a box, or other OHDSI Community resources to jump-start users with their own ATLAS deployment.
 It is very easy to do and runs effectively, even on synthetic data.
 Resources are available via the OHDSI ATLAS workgroup.
 While it is a handy complement to the Enclave, do focus on the N3C products: The N3C concept set library and the concept set editor.
@@ -507,7 +507,7 @@ More than 64 million Americans are currently covered by Medicare.
 
 _Medicaid_ was signed into law in 1965 alongside Medicare.
 All states, the District of Columbia, and the U.S. territories have Medicaid programs designed to provide health coverage for low-income people.
-Although the Federal government establishes certain parameters for all states to follow, each state administers their Medicaid program differently, resulting in variations in Medicaid coverage across the country.^[See <https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/>.]
+Although the Federal government establishes certain parameters for all states to follow, each state administers its Medicaid program differently, resulting in variations in Medicaid coverage across the country.^[See <https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/>.]
 
 For a full description of CMS, see the [HHS website](https://www.hhs.gov/answers/medicare-and-medicaid/what-is-the-difference-between-medicare-medicaid/index.html).
 

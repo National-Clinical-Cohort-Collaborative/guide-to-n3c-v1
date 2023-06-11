@@ -55,7 +55,7 @@ It is expected that you know how data are organized in the Enclave, including th
 
 Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question.  @fig-tools-010-intro-to-tools provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase.
 It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases.
-Managing these collaborative and multi-faceted projects requires good record keeping.
+Managing these collaborative and multi-faceted projects requires good recordkeeping.
 The [N3C Protocol Pad](tools.md#sec-tools-apps-protocol) is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner [@wilkinson_2016] (see also <https://www.go-fair.org/fair-principles/>).
 Thus it is recommended that you utilize this tool throughout the implementation of your project.
 
@@ -173,7 +173,7 @@ The first two of which provide a method for evaluating overall quality of the ha
 
 * [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the number of unique patient/concept/days for each of the major OMOP tables (i.e. condition_occurrence, drug_exposure, etc) and uses them to create a heatmap displaying how many MADs each site is from the median for each OMOP table.
-The template also scores the site's date shifting practices.
+The template also scores the site's date-shifting practices.
 * [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Creates a bar plot showing whitelisted data partners that have, at minimum, a certain percentage of COVID patients associated with a specified measurement, condition, drug, procedure, etc.
   Sites not meeting the minimum requirement are removed from the whitelist.
@@ -210,7 +210,7 @@ Additional details around exporting results can be found in the Publishing and S
 Training materials for getting started with Logic Liaison Templates are available [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=26) {{< fa lock title="Link requires an Enclave account" >}} within the Enclave.
 Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.
 
-While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump start on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
+While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump-start on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
 You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks.
 The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site.
 Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (@sec-practices).
@@ -415,7 +415,7 @@ Finally, Fusion sheets can be templatized to facilitate replication of similar f
 
 Foundry Documentation: [Notepad Overview](https://www.palantir.com/docs/foundry/notepad/overview/)
 
-* Note taking with ability to add embeds of the workflow
+* Note-taking with ability to add embeds of the workflow
 * Documentation of pipelines or datasets
 * Create report templates
 * Monthly status reports using template function

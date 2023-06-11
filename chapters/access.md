@@ -36,10 +36,10 @@ These low-risk data are covered more in Chapters [-@sec-understanding] and [-@se
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements.
 Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data.
-On the other hand, there are some studies that can be accomplished only with Level 3 data.
+On the other hand, some studies can be accomplished with only Level 3 data.
 Note that if you start with a lower level of data, it is possible to "upgrade" a project's access level, though all participants in the project will need to complete another DUR for the new level.
 
-In addition to the primary Level 1, 2, and 3 datasets is "PPRL" data.
+In addition to the primary Level 1, 2, and 3 datasets are "PPRL" data.
 PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information.
 These are available alongside only Level 3 data as an optional add-on; we'll discuss PPRL in more detail below.
 
@@ -108,7 +108,7 @@ While we won't describe how the process works here, researchers with Enclave acc
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
 Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools.
-As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
+As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from the researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
 
 Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-cycle).
 

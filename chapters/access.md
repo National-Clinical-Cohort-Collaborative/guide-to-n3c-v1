@@ -26,12 +26,12 @@ After all, N3C is the steward for EHR data on millions of patients from dozens o
 Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter.
-The DUR form is available only inside the Enclave, so Enclave access is required to request data access.
+The DUR form is available only inside the N3C Data Enclave, so Enclave access is required to request data access.
 N3C registration and Enclave access are covered in @sec-onboarding, so we won't cover those topics here.
 
 ## Background: N3C Protected Data Levels {#sec-access-background}
 
-Not all data in the Enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
+Not all data in the N3C Data Enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements.
@@ -178,7 +178,7 @@ Such cases may require intervention by administrative support, so it is wise to 
 
 ## DUR Dashboards {#sec-access-dashboards}
 
-There are three primary dashboards used to create and manage DURs; all three are linked from the Enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
+There are three primary dashboards used to create and manage DURs; all three are linked from the N3C Data Enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
 
 ![Enclave homepage. Highlighted are the three DUR-related dashboards.](images/access/fig-access-050-dur-dashboards-home.png){#fig-access-050-dur-dashboards-home fig-alt="Enclave homepage. Highlighted are the three DUR-related dashboards."}
 
@@ -201,7 +201,7 @@ The left side of the DUR form provides quick links to other dashboards or action
 
 ![New Data Use Request (DUR) form.](images/access/fig-access-060-new-dur.png){#fig-access-060-new-dur fig-alt="New Data Use Request (DUR) form."}
 
-Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the Enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
+Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the N3C Data Enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
 
 The Research Project Rationale deserves special attention.
 This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request.
@@ -297,7 +297,7 @@ If a submitted DUR has not received any update for longer than two weeks, you sh
 
 ## Explore Projects (DURs): Browse and Join Projects {#sec-access-explore}
 
-Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the Enclave allows researchers to request to join projects that allow for it as collaborators.
+Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the N3C Data Enclave allows researchers to request to join projects that allow for it as collaborators.
 
 First, let's explore the dashboard.
 The initial list of projects shown is "Projects to join" - these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration.
@@ -327,7 +327,7 @@ As with new project DURs, the status of your submitted collaborator DURs can be 
 
 ## My Projects (DURs): DUR Invitations, Status, and Management for Leads {#sec-access-my}
 
-The My Projects dashboard, linked from the Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
+The My Projects dashboard, linked from the N3C Data Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
 
 ![The My Projects dashboard.](images/access/fig-access-180-my-projects.png){#fig-access-180-my-projects fig-alt="The My Projects dashboard."}
 

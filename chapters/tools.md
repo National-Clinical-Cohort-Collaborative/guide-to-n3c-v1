@@ -123,14 +123,14 @@ The concept set should then be referenced using its codeset ID when you are perf
 This will allow your team to perform their analysis from start to finish without worrying about unvalidated modifications to the concept set.
 However, the codeset id being referenced in the code may need to be updated if the team chooses to modify the concept set once starting the analysis.
 
-In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python [Code Workbook](tools.md#sec-tools-apps-workbook) transforms with the use of the [Logic Liaison's Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} or in [Code Repositories](tools.md#sec-tools-apps-repo).
+In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python [Code Workbook](tools.md#sec-tools-apps-workbook) transforms with the use of the [Logic Liaison's Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an Enclave account" >}} or in [Code Repositories](tools.md#sec-tools-apps-repo).
 
 ## N3C Knowledge Store {#sec-tools-store}
 
 The N3C Knowledge Store is an application where you, as an Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated.
 Most Knowledge Store (KS) objects come about as core contributors and researchers alike develop resources they believe may be useful for others either within or outside of their research project team and wish to share them with the broader community.
-If you find yourself in this situation, you can easily create, submit, and share a KS resource by following this [Code Workbook Template Quick Start Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.1d9ad825-30d1-475c-b77b-88836af5ea2c) {{< fa lock title="Link requires an N3C Enclave account" >}}.
-Otherwise, more specifics on how to navigate the KS can be found in this [Knowledge Store Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.7ac7904d-bbc3-4678-a224-8b8b7c12d40e) {{< fa lock title="Link requires an N3C Enclave account" >}} within the Enclave.
+If you find yourself in this situation, you can easily create, submit, and share a KS resource by following this [Code Workbook Template Quick Start Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.1d9ad825-30d1-475c-b77b-88836af5ea2c) {{< fa lock title="Link requires an Enclave account" >}}.
+Otherwise, more specifics on how to navigate the KS can be found in this [Knowledge Store Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.7ac7904d-bbc3-4678-a224-8b8b7c12d40e) {{< fa lock title="Link requires an Enclave account" >}} within the Enclave.
 
 ### Datasets {#sec-tools-store-data}
 
@@ -153,13 +153,13 @@ A few helpful starter templates are those produced by the Logic Liaisons (see th
 
 The Logic Liaison Fact Tables and Templates are specifically designed to provide a validated and community agreed-upon method for calculating particular facts at the date level and/or the patient level.
 Through surveying the Domain Team Leads to establish a list of commonly derived variables and continuous feedback from the N3C Community to refine and update this list, the Logic Liaisons have developed, disseminated, and maintain two main fact table templates and an additional fact table template for SDoH variables.
-These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for [all N3C patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} as well as a subset who have an index date for their acute COVID-19 infection, the [confirmed COVID-19 positive patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} (PCR/AG positive or U07.1 COVID-19 diagnosed).
+These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for [all N3C patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an Enclave account" >}} as well as a subset who have an index date for their acute COVID-19 infection, the [confirmed COVID-19 positive patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}} (PCR/AG positive or U07.1 COVID-19 diagnosed).
 These day-level and person-level datasets are commonly referred to as the Logic Liaison Fact Tables and can be imported directly into a workbook for use without modifying the template.
 These fact tables are produced using a default set of concept sets from the N3C Recommended Concept Sets list and a set of default values for the template's parameters.
 
 The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by @fig-tools-050-knowledge-store-example.
 It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project-specific version of the fact tables.
-The [SDoH Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient.
+The [SDoH Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&view=focus) {{< fa lock title="Link requires an Enclave account" >}} template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient.
 Because joining this data requires a valid five-digit zip code, these fields are only available for patients with a five-digit zip code in Level 3 (LDS) data.
 
 ![Example Logic Liaison Fact Table Template Knowledge Object.](images/tools/fig-tools-050-knowledge-store-example.png){#fig-tools-050-knowledge-store-example fig-alt="Example Logic Liaison Fact Table Template Knowledge Object"}
@@ -171,27 +171,27 @@ The Logic Liaisons have also developed, disseminated, and maintained a handful o
 The data quality templates provide a variety of data tables and visualizations.
 The first two of which provide a method for evaluating overall quality of the harmonized data ingested from sites.
 
-* [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the number of unique patient/concept/days for each of the major OMOP tables (i.e. condition_occurrence, drug_exposure, etc) and uses them to create a heatmap displaying how many MADs each site is from the median for each OMOP table.
 The template also scores the site's date shifting practices.
-* [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Creates a bar plot showing whitelisted data partners that have, at minimum, a certain percentage of COVID patients associated with a specified measurement, condition, drug, procedure, etc.
   Sites not meeting the minimum requirement are removed from the whitelist.
 These tables can be used in downstream filtering to keep only sites meeting the user-defined minimum data quality.
 
 Once the main fact table templates mentioned earlier this section have been applied to generate the base fact tables, the ancillary fact templates utilize the day-level and person-level datasets of the base fact templates to efficiently generate additional derived variables based on broadly requested and applicable logic such as:
 
-* [Vaccine Fact](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-4BE516B&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Vaccine Fact](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-4BE516B&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Creates a vaccine fact table at the person level that summarizes their vaccination information
-* [Study Specific Fact Indexing](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-23CE9BD&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Study Specific Fact Indexing](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-23CE9BD&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Summarizes the indicators of a visit-level patient fact table with respect to whether they were present pre-, post-, or in a user-defined window surrounding an index date corresponding to a study-specific event.
   This template is similar to the All Patients Facts Tables with the exception that it is organized around a study-specific event rather than COVID diagnosis.
-* [Combined Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Combined Variables ALL PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Allows you to combine two variables (variable 1 and variable 2) in a visit-level table by creating a new "same-day occurrence variable" indicating that both variables appear that day for that patient.
   You can also choose to make an "either/or" variable in the visit-level table that combines two variables (variable 3 and variable 4) into a new variable that flags days where at least one of the input variables is recorded for that patient.
-* [Combined Variables COVID PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DA00725&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Combined Variables COVID PATIENTS](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DA00725&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Same as above except for patients with facts found based on their covid index date.
-* [CCI Score](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-06D5DA0&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [CCI Score](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-06D5DA0&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Provides an all-time score or a before-or-day-of-covid score (depending on your selection in the template) per patient based on the CCI weights [@charlson_1987].
 
 @fig-tools-070-ll-template-2 is a continuation of @fig-tools-030-concept-table to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.
@@ -200,14 +200,14 @@ Once the main fact table templates mentioned earlier this section have been appl
 
 The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question-specific facts by site.
 
-* [Systematic Missingness by Site and Study Variable](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Systematic Missingness by Site and Study Variable](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Produces a final visualization that has a binary indicator for whether or not a site is systematically missing meaningful data for the study variables in the input dataset
-* [Fact Density by Site Visualization](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}:
+* [Fact Density by Site Visualization](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the numerical values in each column of the input table (any non-numerical field is converted to a binary value using the isNotNull() function) and creates heatmaps to visualize the metrics.
 
 Once you obtain results you wish to share outside of the Enclave for a project, the results must undergo a Data Download Request before being available to export outside of the Enclave.
 Additional details around exporting results can be found in the Publishing and Sharing Your Work chapter (see @sec-publishing).
-Training materials for getting started with Logic Liaison Templates are available [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=26) {{< fa lock title="Link requires an N3C Enclave account" >}} within the Enclave.
+Training materials for getting started with Logic Liaison Templates are available [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=26) {{< fa lock title="Link requires an Enclave account" >}} within the Enclave.
 Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.
 
 While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump start on gathering and understanding the data by avoiding effort duplication and providing a general starting point.
@@ -222,7 +222,7 @@ Before designing and running an analysis utilizing data in the Enclave, it helps
 
 ### N3C Protocol Pad {#sec-tools-apps-protocol}
 
-N3C Documentation: [Quick Start Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}} and [Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+N3C Documentation: [Quick Start Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an Enclave account" >}} and [Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an Enclave account" >}}.
 
 * Electronic lab notebook
 * Promote collaboration, organize work, and translation to final manuscript
@@ -240,9 +240,9 @@ The templates, checklists, and links to key resources provided within the tool g
 The tool also assists your team in keeping the work in alignment with the project.
 A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
 Documentation on the tool's functionality can be found in the
-[QuickStart Users' Guide to Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an N3C Enclave account" >}}
+[QuickStart Users' Guide to Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an Enclave account" >}}
 as well as the
-[Protocol Pad White Paper and Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+[Protocol Pad White Paper and Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an Enclave account" >}}.
 
 ### Contour {#sec-tools-apps-contour}
 
@@ -272,7 +272,7 @@ A detailed orientation to Contour can be found in the Foundry Documentation [her
 
 ### Code Workbooks {#sec-tools-apps-workbook}
 
-Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Enclave account" >}}
+Tutorial: [Intro to Code Workbook](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an Enclave account" >}}
 
 Foundry Documentation: [Code Workbook Overview](https://www.palantir.com/docs/foundry/code-workbook/overview/)
 
@@ -351,7 +351,7 @@ Finally, Code Workbooks allow you to collect and download all coded transformati
 ![Pinning to an input dataset's release version.](images/tools/fig-tools-120-release-pin.png){#fig-tools-120-release-pin fig-alt="Pinning to an input dataset's release version"}
 
 Palantir has created extensive [documentation](https://www.palantir.com/docs/foundry/code-workbook/overview/) of the Code Workbook application including tutorials.
-N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+N3C has also published [training materials](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an Enclave account" >}}.
 
 ### Code Repositories {#sec-tools-apps-repo}
 
@@ -366,7 +366,7 @@ Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/
 Code Repositories shown in @fig-tools-130-code-repo are available within the N3C Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
 Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates.
 Additional [differences between Code Repositories and Code Workbooks](https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/) can be found in the Foundry Documentation.
-Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an N3C Enclave account" >}}.
+Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an Enclave account" >}}.
 
 For any large analytic project, there are many pieces of code and other artifacts that should be shared between different components within the project.
 Some code is useful enough that it should be shared across projects.

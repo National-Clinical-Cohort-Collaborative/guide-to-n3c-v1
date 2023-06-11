@@ -47,13 +47,13 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Introduction {#sec-tools-intro}
 
-This chapter introduces tools in the N3C Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community.
+This chapter introduces tools in the N3C Data Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community.
 The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward.
-It is expected that you know how data are organized in the N3C Enclave, including the OMOP data model, vocabulary, and concept sets (see @sec-understanding for details).
+It is expected that you know how data are organized in the Enclave, including the OMOP data model, vocabulary, and concept sets (see @sec-understanding for details).
 
 ![High-level overview of an N3C project.](images/tools/fig-tools-010-intro-to-tools.png){#fig-tools-010-intro-to-tools fig-alt="High-level overview of an N3C project"}
 
-Due to the complexities of analyzing large clinical datasets, such as that compiled in the N3C Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question.  @fig-tools-010-intro-to-tools provides a high-level overview of the process behind forming a team and performing research using the N3C Enclave, along with the recommended field expertise needed during each phase.
+Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question.  @fig-tools-010-intro-to-tools provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase.
 It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases.
 Managing these collaborative and multi-faceted projects requires good record keeping.
 The [N3C Protocol Pad](tools.md#sec-tools-apps-protocol) is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner [@wilkinson_2016] (see also <https://www.go-fair.org/fair-principles/>).
@@ -63,14 +63,14 @@ A research project in N3C starts with organizing a team with the required expert
 Because the N3C contains real-world EHR data that is harmonized from multiple data models and dozens of institutions, some information needed to identify an ideal clinical phenotype may be missing or incomplete.
 Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts.
 This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available.
-Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the N3C Enclave, what is missing or sparse, and overall data quality (see @sec-practices).
+Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the Enclave, what is missing or sparse, and overall data quality (see @sec-practices).
 Some data quality aspects can be easily obtained through the use of [Logic Liaison Templates](tools.md#sec-tools-ll) accessible through the [N3C Knowledge Store](tools.md#sec-tools-store).
-The N3C Enclave application [Contour](tools.md#sec-tools-apps-contour) can be utilized at this stage, along with [Code Workbooks](tools.md#sec-tools-apps-workbook) for quick querying and visualizing of the data.
+The Enclave application [Contour](tools.md#sec-tools-apps-contour) can be utilized at this stage, along with [Code Workbooks](tools.md#sec-tools-apps-workbook) for quick querying and visualizing of the data.
 Additionally, [Fusion](tools.md#sec-tools-apps-fusion) can be utilized to keep track of developed concept sets and utilized to easily input them into Logic Liaison Templates.
 
 The generation of a computational phenotype overlaps with the generation of concept sets (see @sec-understanding for details), and is often a cyclical process.
 Well-vetted concept sets are key to obtaining robust cohorts, thus, having a team member familiar with the organization of data and the OMOP vocabulary, such as a data liaison, who can work closely with a clinician is beneficial.
-Concept set generation can be done using the N3C Enclave Concept Set Browser, or externally through OHDSI ATLAS.
+Concept set generation can be done using the Enclave Concept Set Browser, or externally through OHDSI ATLAS.
 
 Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e. datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment.
 Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions.
@@ -83,14 +83,14 @@ This includes statistical tests, summary tables, visualizations, and reports for
 Data analysis is also a cyclical process with all team members engaged in assessing results and circling back to further refine the computational phenotype and concept sets if needed.
 Depending on the type of analysis needed, [Code Workbooks](tools.md#sec-tools-apps-workbook) or [Contour](tools.md#sec-tools-apps-contour) can be utilized at this step, followed by [Foundry's Notepad](tools.md#sec-tools-apps-notepad) for reporting results for secure team dissemination within the Enclave environment.
 
-Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the N3C Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see @sec-publishing).
+Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see @sec-publishing).
 The download request is meant to ensure no prohibited data is being downloaded as per the [N3C Data Download Policy](https://covid.cd2h.org/download) summarized in the Publishing and Sharing Your Work chapter.
 After approval, your results can be included in research outputs, such as publications, and then submitted to the Publication Review Committee (see @sec-publishing).
 This step is necessary to ensure data are being reported properly in the context of the research project and that proper attribution is being given to all those who contributed to the success of the research, either directly or indirectly.
 Upon approval, you are free to submit to the venue of choice and freely present the approved data to anyone at any time.
 Data download requests are performed within the Enclave environment, followed by submitting a [Google Form to the Publication Review Committee](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&sa=D&source=docs&ust=1677168810532504&usg=AOvVaw12T-1ZD5cVj92DGadpr1IN).
 
-The following sections of this chapter discuss each of the features and applications needed to perform research in the N3C Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.
+The following sections of this chapter discuss each of the features and applications needed to perform research in the Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices.
 This chapter is best utilized alongside the information provided in the next chapter, Best Practices for the Research Life Cycle (see @sec-practices), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.
 
 ## Using Concept Sets {#sec-tools-concepts}
@@ -127,7 +127,7 @@ In constructing phenotypes from concept sets, concept sets may also need to be j
 
 ## N3C Knowledge Store {#sec-tools-store}
 
-The N3C Knowledge Store is an application where you, as an Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated.
+The N3C Knowledge Store is an application where you, as an N3C Data Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated.
 Most Knowledge Store (KS) objects come about as core contributors and researchers alike develop resources they believe may be useful for others either within or outside of their research project team and wish to share them with the broader community.
 If you find yourself in this situation, you can easily create, submit, and share a KS resource by following this [Code Workbook Template Quick Start Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.1d9ad825-30d1-475c-b77b-88836af5ea2c) {{< fa lock title="Link requires an Enclave account" >}}.
 Otherwise, more specifics on how to navigate the KS can be found in this [Knowledge Store Guide](https://unite.nih.gov/workspace/report/ri.report.main.report.7ac7904d-bbc3-4678-a224-8b8b7c12d40e) {{< fa lock title="Link requires an Enclave account" >}} within the Enclave.
@@ -215,10 +215,10 @@ You can then build upon this fact table using the ancillary templates that allow
 The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site.
 Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (@sec-practices).
 
-## N3C Enclave Applications {#sec-tools-apps}
+## Enclave Applications {#sec-tools-apps}
 
-This section will cover the usage of various applications made available in the N3C Enclave, including Protocol Pad, Contour, Code Workbooks, and more ([a complete list of Foundry applications can be found here](https://www.palantir.com/docs/foundry/getting-started/application-reference/)).
-Before designing and running an analysis utilizing data in the Enclave, it helps to understand the concepts of a "[data pipeline](https://www.palantir.com/docs/foundry/data-integration/data-pipeline/)" and a "[data transform](https://www.palantir.com/docs/foundry/pipeline-builder/core-concepts/)" as well as how the data are stored and accessed via Apache Spark on a distributed file system.  <!--For those unfamiliar with these concepts a high-level overview, along with links to documentation on code optimization in the N3C Enclave, can be found in Section [QQQ] of Chapter [QQQ].-->
+This section will cover the usage of various applications made available in the N3C Data Enclave, including Protocol Pad, Contour, Code Workbooks, and more ([a complete list of Foundry applications can be found here](https://www.palantir.com/docs/foundry/getting-started/application-reference/)).
+Before designing and running an analysis utilizing data in the Enclave, it helps to understand the concepts of a "[data pipeline](https://www.palantir.com/docs/foundry/data-integration/data-pipeline/)" and a "[data transform](https://www.palantir.com/docs/foundry/pipeline-builder/core-concepts/)" as well as how the data are stored and accessed via Apache Spark on a distributed file system.  <!--For those unfamiliar with these concepts a high-level overview, along with links to documentation on code optimization in the Enclave, can be found in Section [QQQ] of Chapter [QQQ].-->
 
 ### N3C Protocol Pad {#sec-tools-apps-protocol}
 
@@ -235,7 +235,7 @@ Research studies can span many months and pass through the hands of many team me
 The Protocol Pad serves as an electronic lab notebook to help organize tasks, track progress, and document results in a cohesive format throughout the process of reaching a study's final state.
 As a result of this organization and tracking, the tool facilitates easy translation of the work, decisions, and contributors to producing a final manuscript if that is the goal of the protocol.
 
-Protocol Pad is the foundation for performing reproducible and repeatable science within the N3C Enclave.
+Protocol Pad is the foundation for performing reproducible and repeatable science within the Enclave.
 The templates, checklists, and links to key resources provided within the tool guide you along the path of a well-structured division of labor and use of best practices when performing research using the observational data in the Enclave.
 The tool also assists your team in keeping the work in alignment with the project.
 A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
@@ -256,7 +256,7 @@ Foundry Documentation: [Contour Overview](https://www.palantir.com/docs/foundry/
 
 ![Example Contour Analysis.](images/tools/fig-tools-090-contour.png){#fig-tools-090-contour fig-alt="Example Contour Analysis"}
 
-The Contour application is a programming-free interface to the N3C Enclave that allows those with limited knowledge of Python, R, and SQL to create top-down analysis pipelines in a point-and-click fashion, as well as generate dynamically updated dashboards.
+The Contour application is a programming-free interface to the Enclave that allows those with limited knowledge of Python, R, and SQL to create top-down analysis pipelines in a point-and-click fashion, as well as generate dynamically updated dashboards.
 A Contour analysis starts by specifying the path to the input dataset as shown in @fig-tools-090-contour.
 Subsequent transforms of that dataset are then specified, which can include adding/calculating new columns, filtering rows or columns, joining with other datasets, creating summary figures and charts, summarizing tables through pivoting, and more.
 Contour's [expression language](https://www.palantir.com/docs/foundry/contour/expressions-overview/) also allows for more complex querying and data aggregation beyond the default operations provided.
@@ -363,7 +363,7 @@ Foundry Documentation: [Code Repository Overview](https://www.palantir.com/docs/
 
 ![Example Code Repository.](images/tools/fig-tools-130-code-repo.png){#fig-tools-130-code-repo fig-alt="Example Code Repository"}
 
-Code Repositories shown in @fig-tools-130-code-repo are available within the N3C Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
+Code Repositories shown in @fig-tools-130-code-repo are available within the Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline.
 Code Repositories _do not support_ data visualization, coding in R, or point-and-click templates.
 Additional [differences between Code Repositories and Code Workbooks](https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/) can be found in the Foundry Documentation.
 Palantir has also compiled several [tutorials on how to create, publish, and maintain Code Repositories](https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1)  {{< fa lock title="Link requires an Enclave account" >}}.
@@ -406,7 +406,7 @@ Similar to Google Sheets, multiple users can simultaneously view and edit the sa
 Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few.
 While you cannot directly import external .xls/.xlsx formatted files into the Enclave, you can copy/paste external dataset values into Fusion.
 For example, you can copy and paste concept IDs from [ATLAS](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas) to use in an analysis or in metadata manually curated for a dataset.
-To import larger external datasets into the N3C Enclave see @sec-understanding, and [N3C procedures and protocols around importing large external datasets](https://zenodo.org/record/4574608#.Y6IeG-zMJTZ).
+To import larger external datasets into the Enclave see @sec-understanding, and [N3C procedures and protocols around importing large external datasets](https://zenodo.org/record/4574608#.Y6IeG-zMJTZ).
 In addition to standard spreadsheet functionality, Fusion has additional features which allow it to integrate with the rest of your Enclave environment.
 Objects created within Fusion, such as formatted tables, can be embedded in [Notepad](tools.md#sec-tools-apps-notepad).
 Finally, Fusion sheets can be templatized to facilitate replication of similar functionality.

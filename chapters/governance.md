@@ -23,7 +23,7 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Preamble {#sec-governance-preamble}
 
-N3C is more than simply a data Enclave.
+N3C is more than simply a data N3C Data Enclave.
 It is a research community dedicated to facilitating collaborations and the rapid generation and dissemination of knowledge to help combat COVID-19.
 There were numerous innovations along the pathway to N3C.
 The novel governance procedures and structures described here may benefit other collaborative research efforts beyond the pandemic emergency response.
@@ -57,7 +57,7 @@ The workstream convenes representatives of contributing organizations, researche
 
 At the start, the Partnership and Governance workstream met twice weekly to rapidly align on an N3C governance vision and establish the universal conditions governing the use of N3C data.
 These conditions are that data protection is adopted by default, contributing sites are not identified, and workspaces must be provisioned on a per-project basis only for COVID-19-related research.
-Also, data cannot be extracted or downloaded from the data Enclave, with the exception of publishable summary results or figures, each of which must be reviewed prior to export (see @sec-publishing for details on this process).
+Also, data cannot be extracted or downloaded from the data N3C Data Enclave, with the exception of publishable summary results or figures, each of which must be reviewed prior to export (see @sec-publishing for details on this process).
 
 The workstream split into a smaller subgroup to draft the supporting governance documents while continuing to meet with the whole Workstream for ideation, context, and feedback weekly.
 Onward, the workstream adjusted the frequency of the meetings to the work cadence.
@@ -72,7 +72,7 @@ Governance policies are posted on Zenodo to promote transparency and elicit comm
 This also provides a resource for other researchers facing similar governance needs.
 
 The N3C Governance framework was developed with guidance from the NIH Office of the General Counsel.
-As data steward, NCATS has fiduciary responsibility for the data Enclave and adjudicating access.
+As data steward, NCATS has fiduciary responsibility for the N3C Data Enclave and adjudicating access.
 As such, NCATS is responsible for establishing the terms for data contribution and use, user training requirements, and Enclave usage accountability mechanisms.
 Participating in N3C necessitates both organization-level agreement(s) and user commitments to the [N3C User Code of Conduct](https://ncats.nih.gov/n3c/resources/data-user-code-of-conduct) and other N3C governance requirements.
 
@@ -114,7 +114,7 @@ Institutions can select their own IRB or rely on JHU's IRB as the Central IRB fo
 Relying institutions must use the [SMART-IRB online reliance system](https://smartirb.org/reliance/) and execute a Master Reliance Agreement to delegate IRB oversight to JHU's IRB for their contribution to N3C.
 While it is not necessary to use JHU's IRB, the reliance process is simple and efficient, and relying on a single IRB reduces the burden associated with contributing data and speeds up IRB review.
 
-Second, NCATS obtained IRB approval for the Data Enclave from the NIH IRB since NIH houses the Enclave under NCATS oversight.
+Second, NCATS obtained IRB approval for the N3C Data Enclave from the NIH IRB since NIH houses the Enclave under NCATS oversight.
 NCATS also received a Certificate of Confidentiality to resist legal requests to disclose identifying information from the people represented in N3C data.
 
 ## Contractual Agreements: Separating Data Transfer and Data Use {#sec-governance-contractual}

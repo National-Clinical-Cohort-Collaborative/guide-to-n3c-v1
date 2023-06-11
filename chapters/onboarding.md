@@ -52,15 +52,15 @@ The current Markdown is for testing only.
 It is NOT the source of truth (yet).
 :::
 
-The N3C has an extensive secure onboarding process due to the sensitivity of the data within the Enclave.
+The N3C has an extensive secure onboarding process due to the sensitivity of the data within the N3C Data Enclave.
 There are several steps that need to be completed in order for a researcher or N3C user to gain access to the Enclave.
 
 ## Researcher Eligibility {#sec-onboarding-eligibility}
 
 Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave.
-Everyone with an N3C Data Enclave account has access to the tools and public datasets that are available in the Enclave.
+Everyone with an Enclave account has access to the tools and public datasets that are available in the Enclave.
 
-There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave. (For more information about the levels of data, see the section 'Description of Levels 1, 2, 3' in the 'Getting & Managing Data Access' chapter.
+There are several levels of Electronic Health Record (EHR) data that are available within the Enclave. (For more information about the levels of data, see the section 'Description of Levels 1, 2, 3' in the 'Getting & Managing Data Access' chapter.
 LINK NEEDS TO BE ADDED HERE)
 
 Citizen scientists are only eligible to access synthetic data (Level 1).
@@ -78,17 +78,17 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
 
 ### Human Subjects Training
 
-Due to the secure nature of the data that is available in the N3C Enclave registration of users is key.
+Due to the secure nature of the data that is available in the N3C Data Enclave registration of users is key.
 There are two options in which users can log in and create an account, InCommon or Login.gov.
 The InCommon pathway is available to select institutions that participate in that identity management service.
 You can click the link to confirm if your organization participates.
 If your institution does not participate with InCOmmon, you will need to create a login.gov account.
 Use the link to Login.gov and complete the required fields to create an account.
-Once you know which pathway you will use to create an Enclave account there are other security measures that are put in place, you will need to have an ORCiD, complete NIH security Training, and also human subjects training.
+Once you know which pathway you will use to create an Enclave account there are other security measures that are put in place, you will need to have an ORCiD, complete NIH security training, and also human subjects training.
 
 ORCiD, which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
-The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
+The Enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
 The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).
 The course takes approximately 60-90 minutes to complete and you should print your certificate of completion.
 Users need to complete Human Subjects training that aligns with their institution's guidelines.

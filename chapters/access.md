@@ -245,7 +245,7 @@ Finally, you will need to attest to having read the N3C Code of Conduct (with th
 (Some institutions restrict how and when EHR data can be linked to other datasets, including [publicly available](understanding.md) data ingested for use by N3C researchers.)
 <!-- TODO: like the last section of the "Understanding the Data" chapter -->
 
-![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgements.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
+![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgments.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
 
 With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.
 

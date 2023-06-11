@@ -54,9 +54,9 @@ A potential data partner with data in PCORNet format, for example, will locally 
 The process of coalescing multiple such data payloads into a unified whole is known as _harmonization_, and is a complex task even after everything has been mapped to OMOP initially.
 Two overlapping teams of EHR data experts participate in this process: one works closely with data partners to make it as easy as possible to contribute data to N3C, and another handles the post-ingestion harmonization and comprehensive quality checks of the incoming data.
 
-## The N3C "Data Enclave" and Data Access {#sec-intro-enclave}
+## The N3C Data Enclave and Data Access {#sec-intro-enclave}
 
-Once harmonized and stored in the secure N3C Data Enclave, the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
+Once harmonized and stored in the secure "N3C Data Enclave", the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
 
 ![A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based Enclave.](images/intro/fig-intro-020-harmonized.png){#fig-intro-intro-harmonized fig-alt="A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based Enclave."}
 

@@ -47,11 +47,11 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Introduction {#sec-understanding-intro}
 
-The purpose of this chapter is to introduce the core building blocks for performing analyses in the Enclave (see [The N3C "Enclave" and Data Access](intro.html#sec-intro-enclave) in the Introduction).
+The purpose of this chapter is to introduce the core building blocks for performing analyses in the N3C Data Enclave (see [The N3C Data Enclave and Data Access](intro.html#sec-intro-enclave) in the Introduction).
 
 We start with the Observational Medical Outcomes Partnership (OMOP) vocabulary, since all data are represented in the OMOP common data model (CDM) format.
 This chapter will describe the difference between the OMOP concept id unique identifier and the source value contributed by a site, the notion of hierarchy across concepts, and the OHDSI tools outside the Enclave that can help.
-Because we are working in a secure NCATS  Enclave environment, we cannot rely on OHDSI tools outside the Enclave, so knowing the basic applications available within the Enclave and how these data are organized is crucial for the proper conduct of research.
+Because we are working in a secure NCATS Enclave environment, we cannot rely on OHDSI tools outside the Enclave, so knowing the basic applications available within the Enclave and how these data are organized is crucial for the proper conduct of research.
 
 We next present the notion and management of concept sets.
 These are concept ids that are taken as synonymous, for a given research purpose, and have their own set of tools.
@@ -86,7 +86,7 @@ The Book of OHDSI [states](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVo
 > OHDSI requires harmonization not only to a standardized format, but also to a rigorous standard content.
 
 N3C relies heavily on the OMOP common data model which is part of the heart of the N3C harmonization process.
-OMOP, along with other data partners from ACT, TriNetX, and PCORI, ingest their data feeds into a central OMOP N3C repository that is then available within the N3C Enclave for researchers.
+OMOP, along with other data partners from ACT, TriNetX, and PCORI, ingest their data feeds into a central OMOP N3C repository that is then available within the N3C Data Enclave for researchers.
 
 The OMOP CDM is an open-source, community standard for observational healthcare data and consists of clinical tables describing conditions and events from patient records and vocabulary tables describing clinical concepts.
 The central table in the OMOP vocabulary system is the table, `concept`.
@@ -139,9 +139,9 @@ Data are available as well in the [Standardized health system](https://ohdsi.git
 
 ![OMOP [Data model](https://ohdsi.github.io/CommonDataModel).](images/understanding/fig-understanding-040-omop.png){#fig-understanding-040-omop fig-alt="omop"}
 
-To learn more about OMOP and get acquainted with the CDM used in the N3C Data Enclave and its functionality, see [OMOP 101: A Crash Course in OMOP Standard Vocabulary](https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b) {{< fa lock title="Link requires an Enclave account" >}} and @sec-support in this guide.
+To learn more about OMOP and get acquainted with the CDM used in the Enclave and its functionality, see [OMOP 101: A Crash Course in OMOP Standard Vocabulary](https://unite.nih.gov/workspace/report/ri.report.main.report.1f3c0dae-0191-4f52-b69e-4e0587e24b3b) {{< fa lock title="Link requires an Enclave account" >}} and @sec-support in this guide.
 
-The figure below shows all OMOP tables within the N3C Enclave.
+The figure below shows all OMOP tables within the Enclave.
 
 ![Note that this folder contains tables (e.g., conditions-to-microvisits) that are unique to N3C. The SafeHarbor release has a comparable folder.](images/understanding/fig-understanding-050-lds.png){#fig-understanding-050-lds fig-alt="n3c tables"}
 
@@ -166,7 +166,7 @@ Generally, the analyst has used those codes in concept sets, to which topic we n
 
 ## Concept Sets {#sec-understanding-sets}
 
-Any study or analysis performed in the Enclave will start with identifying meaningful clinical conditions and events in patient data.
+Any study or analysis performed in the N3C Data Enclave will start with identifying meaningful clinical conditions and events in patient data.
 We attempt to determine the presence or absence of clinical phenomena in patient history through the presence or absence of certain concept codes in patient records [@gold_2021; @gold_2018].
 For any given phenomenon used in an analysis, however, a single concept code will seldom be sufficient, and concept _sets_ are used.
 
@@ -194,7 +194,7 @@ The following concept set content will be made public in
 * Concept set name, version number, date of finalization
 * Intention
 * Limitations (of the concept-ids within the concept set)
-* Issues (with respect to data in the N3C Data Enclave, so analysts are forewarned)
+* Issues (with respect to data in the Enclave, so analysts are forewarned)
 * Provenance (how the concept set was assembled, which communicates how trustworthy the concept set is)
 * Attributions (who did what)
 * The list of codes (in JavaScript Object Notation (JSON) format, which can be imported directly into Observational Health Data Sciences & Informatics (OHDSI)'s Atlas tool)
@@ -389,7 +389,7 @@ Other matching methods (e.g., propensity scores) are more trustworthy.
 
 While admissions to the hospital are recorded in the Visit_Occurrence table, the end date is not always so recorded.
 Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the visit_occurrence table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
-See [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed) {{< fa lock title="Link requires an Enclave account" >}}.
+See the N3C Data [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed) {{< fa lock title="Link requires an Enclave account" >}}.
 
 ### Harmonized values {#sec-understanding-ehr-harmonized}
 
@@ -408,7 +408,7 @@ Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ 
 
 A _cohort_ is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
-In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the N3C Enclave database that will enable research using the N3C basic and supplemental datasets.
+In this section, we will discuss existing tools and methodologies for identifying codes and terms, creating phenotypes, managing vocabulary concept sets, and how to ingest codes into the Enclave database that will enable research using the N3C basic and supplemental datasets.
 
 ### Derived variables/facts {#sec-understanding-ehr-derived}
 
@@ -577,7 +577,7 @@ A detailed CMS training webinar is available on [YouTube](https://www.youtube.co
 ## Public/External Datasets {#sec-understanding-public}
 
 Because our data are not representative of the geographic locations whence they come, it is important for many analyses to attempt to "correct" the results due to this selection bias.
-Data sets, called _external datasets_, are available outside the Enclave that provide information about such locations.
+Data sets, called _external datasets_, are available outside the N3C Data Enclave that provide information about such locations.
 There are datasets about the locations themselves (e.g., [zip code distances](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8BCEA01&view=focus) {{< fa lock title="Link requires an Enclave account" >}}), about the demographics in those locations (e.g., [zip code census](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-595A20D&view=focus) {{< fa lock title="Link requires an Enclave account" >}}),  or about covid, in those locations (e.g., [covid hesitancy by county](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-EEA964E&view=focus), [state policy by date](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B1CD234&view=focus) {{< fa lock title="Link requires an Enclave account" >}}).
 There are also datasets to help in mapping from zip codes (data available in Level 3 Enclave datasets), such as [Mapping Zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an Enclave account" >}}.
 All available datasets are available at [The Data Discovery Engine](https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset) (outside the Enclave) and in [The Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) {{< fa lock title="Link requires an Enclave account" >}} (inside the Enclave; filter on "External Dataset").

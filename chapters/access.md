@@ -26,20 +26,20 @@ After all, N3C is the steward for EHR data on millions of patients from dozens o
 Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter.
-The DUR form is available only inside the enclave, so enclave access is required to request data access.
-N3C registration and enclave access are covered in @sec-onboarding, so we won't cover those topics here.
+The DUR form is available only inside the N3C Data Enclave, so Enclave access is required to request data access.
+N3C registration and Enclave access are covered in @sec-onboarding, so we won't cover those topics here.
 
 ## Background: N3C Protected Data Levels {#sec-access-background}
 
-Not all data in the enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with enclave access.
+Not all data in the N3C Data Enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements.
 Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data.
-On the other hand, there are some studies that can be accomplished only with Level 3 data.
+On the other hand, some studies can be accomplished with only Level 3 data.
 Note that if you start with a lower level of data, it is possible to "upgrade" a project's access level, though all participants in the project will need to complete another DUR for the new level.
 
-In addition to the primary Level 1, 2, and 3 datasets is "PPRL" data.
+In addition to the primary Level 1, 2, and 3 datasets are "PPRL" data.
 PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information.
 These are available alongside only Level 3 data as an optional add-on; we'll discuss PPRL in more detail below.
 
@@ -72,7 +72,7 @@ Such records are masked with "censored" values in the resulting dataset.
 
 Because this statistical-modeling approach doesn't scale to the entirety of an EHR database, it is generated on subsets of data of interest to researchers, with the assistance of MDClone representatives.
 To take an example, consider a research team interested in outcomes of COVID-19 in diabetic vs. non-diabetic individuals.
-Inside the enclave, the team initiates a request with an MDClone liaison, suggesting that they would like to collect a set of patient information (with one row per patient in the resulting table), with columns for `patient_age` (at the date of their first COVID-positive PCR test result), `has_diabetes` (indicating if their record contains a diabetes diagnosis), `days_until_ventilation` (number of days elapsed between their COVID-positive test and subsequent mechanical ventilation, or `null` if they were not ventilated within 30 days), and several other potential confounding variables.
+Inside the Enclave, the team initiates a request with an MDClone liaison, suggesting that they would like to collect a set of patient information (with one row per patient in the resulting table), with columns for `patient_age` (at the date of their first COVID-positive PCR test result), `has_diabetes` (indicating if their record contains a diabetes diagnosis), `days_until_ventilation` (number of days elapsed between their COVID-positive test and subsequent mechanical ventilation, or `null` if they were not ventilated within 30 days), and several other potential confounding variables.
 The MDClone liaison then collects this requested information from the Level 3 data, develops a representative statistical model, and delivers a table of synthesized rows from the model with the columns requested to the team.
 
 Level 1 datasets are generated from the most recent Level 3 release at the time of generation, and not automatically updated as new primary N3C data arrives.
@@ -103,12 +103,12 @@ This table provides information about data partners, such as their source common
 ### PPRL Data {#sec-access-background-pprl}
 
 PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, _without_ revealing to any party except the data sources themselves any identifying information about the individual.
-While we won't describe how the process works here, researchers with enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal (see @sec-support-training).
+While we won't describe how the process works here, researchers with Enclave access can read more about it in @sec-understanding and the Introduction section of the [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an Enclave account" >}} in the Training Portal (see @sec-support-training).
 
 ## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
 
 Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools.
-As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
+As we'll discuss below, the most significant access requirement for Level 3 data is a letter of determination from the researchers' local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).
 
 Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see @sec-cycle).
 
@@ -178,7 +178,7 @@ Such cases may require intervention by administrative support, so it is wise to 
 
 ## DUR Dashboards {#sec-access-dashboards}
 
-There are three primary dashboards used to create and manage DURs; all three are linked from the Enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
+There are three primary dashboards used to create and manage DURs; all three are linked from the N3C Data Enclave homepage via buttons titled "Data Use Request (DUR)", "My Projects (DURs)", and "Explore Projects (DURs)."
 
 ![Enclave homepage. Highlighted are the three DUR-related dashboards.](images/access/fig-access-050-dur-dashboards-home.png){#fig-access-050-dur-dashboards-home fig-alt="Enclave homepage. Highlighted are the three DUR-related dashboards."}
 
@@ -201,7 +201,7 @@ The left side of the DUR form provides quick links to other dashboards or action
 
 ![New Data Use Request (DUR) form.](images/access/fig-access-060-new-dur.png){#fig-access-060-new-dur fig-alt="New Data Use Request (DUR) form."}
 
-Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the Enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
+Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the N3C Data Enclave via the Explore Projects dashboard, and outside at <https://covid.cd2h.org/dashboard/>.
 
 The Research Project Rationale deserves special attention.
 This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request.
@@ -245,7 +245,7 @@ Finally, you will need to attest to having read the N3C Code of Conduct (with th
 (Some institutions restrict how and when EHR data can be linked to other datasets, including [publicly available](understanding.md) data ingested for use by N3C researchers.)
 <!-- TODO: like the last section of the "Understanding the Data" chapter -->
 
-![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgements.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
+![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgments.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
 
 With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.
 
@@ -288,7 +288,7 @@ Note that when requesting access to PPRL datasets, _both the Research Project Ra
 ### Project Workspace Creation and Data Access {#sec-access-request-creation}
 
 The Data Access Committee reviews all DURs.
-After a new project DUR is approved, a workspace is created inside the enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](access.md#sec-access-workspaces) above), and the submitting lead is given access to this project workspace.
+After a new project DUR is approved, a workspace is created inside the Enclave with access to the approved datasets (see [Workspaces, Permissions, and the Data Catalog](access.md#sec-access-workspaces) above), and the submitting lead is given access to this project workspace.
 An email is also sent to the submitting lead with links to useful learning resources.
 
 The full review and access process varies depending on the level of data requested and workload of the DAC, but most DURs are evaluated within 2 weeks.
@@ -297,7 +297,7 @@ If a submitted DUR has not received any update for longer than two weeks, you sh
 
 ## Explore Projects (DURs): Browse and Join Projects {#sec-access-explore}
 
-Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the Enclave allows researchers to request to join projects that allow for it as collaborators.
+Although all N3C research projects are listed in the [public dashboard](https://covid.cd2h.org/dashboard/exploration#projects), the Explore Projects dashboard within the N3C Data Enclave allows researchers to request to join projects that allow for it as collaborators.
 
 First, let's explore the dashboard.
 The initial list of projects shown is "Projects to join" - these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration.
@@ -327,7 +327,7 @@ As with new project DURs, the status of your submitted collaborator DURs can be 
 
 ## My Projects (DURs): DUR Invitations, Status, and Management for Leads {#sec-access-my}
 
-The My Projects dashboard, linked from the Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
+The My Projects dashboard, linked from the N3C Data Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
 
 ![The My Projects dashboard.](images/access/fig-access-180-my-projects.png){#fig-access-180-my-projects fig-alt="The My Projects dashboard."}
 

@@ -52,15 +52,15 @@ The current Markdown is for testing only.
 It is NOT the source of truth (yet).
 :::
 
-The N3C has an extensive secure onboarding process due to the sensitivity of the data within the enclave.
-There are several steps that need to be completed in order for a researcher or N3C user to gain access to the enclave.
+The N3C has an extensive secure onboarding process due to the sensitivity of the data within the N3C Data Enclave.
+There are several steps that need to be completed in order for a researcher or N3C user to gain access to the Enclave.
 
 ## Researcher Eligibility {#sec-onboarding-eligibility}
 
 Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave.
-Everyone with an N3C Data Enclave account has access to the tools and public datasets that are available in the Enclave.
+Everyone with an Enclave account has access to the tools and public datasets that are available in the Enclave.
 
-There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave. (For more information about the levels of data, see the section 'Description of Levels 1, 2, 3' in the 'Getting & Managing Data Access' chapter.
+There are several levels of Electronic Health Record (EHR) data that are available within the Enclave. (For more information about the levels of data, see the section 'Description of Levels 1, 2, 3' in the 'Getting & Managing Data Access' chapter.
 LINK NEEDS TO BE ADDED HERE)
 
 Citizen scientists are only eligible to access synthetic data (Level 1).
@@ -78,21 +78,21 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
 
 ### Human Subjects Training
 
-Due to the secure nature of the data that is available in the N3C Enclave registration of users is key.
+Due to the secure nature of the data that is available in the N3C Data Enclave registration of users is key.
 There are two options in which users can log in and create an account, InCommon or Login.gov.
 The InCommon pathway is available to select institutions that participate in that identity management service.
 You can click the link to confirm if your organization participates.
 If your institution does not participate with InCOmmon, you will need to create a login.gov account.
 Use the link to Login.gov and complete the required fields to create an account.
-Once you know which pathway you will use to create an enclave account there are other security measures that are put in place, you will need to have an ORCiD, complete NIH security Training, and also human subjects training.
+Once you know which pathway you will use to create an Enclave account there are other security measures that are put in place, you will need to have an ORCiD, complete NIH security training, and also human subjects training.
 
 ORCiD, which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
-The N3C Data enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
+The Enclave is hosted by National Center for Advancing Translational Sciences and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
 The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).
 The course takes approximately 60-90 minutes to complete and you should print your certificate of completion.
 Users need to complete Human Subjects training that aligns with their institution's guidelines.
-You will need to provide the date of completion as part of enclave creation.
+You will need to provide the date of completion as part of Enclave creation.
 
 Overall, users will need to confirm if they use the InCOmmon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects training.
 
@@ -129,7 +129,7 @@ For more information see:
 
 ## Domain Teams {#sec-onboarding-dt}
 
-The N3C Data enclave is built for multi-site collaboration and aims to bring together researchers of different backgrounds with similar questions using domain teams.
+The N3C Data Enclave is built for multi-site collaboration and aims to bring together researchers of different backgrounds with similar questions using domain teams.
 Because N3C is multi-site, it can be difficult to collaborate with researchers of different backgrounds from different sites.
 Domain Teams exist to alleviate this difficulty.
 Some collaboration examples could be collecting pilot data for grant submission, sharing methodology and cohort logic, or learning how to use tools for large-scale data like machine learning.
@@ -151,8 +151,8 @@ See here for a list of existing domain teams:
 
 ### Object Explorer, Public Dashboard
 
-Once you have an enclave account you can log in and use the object explorer to browse researchers and research projects.
-The object explorer can be found on the left-hand side of your view on the enclave homepage.
+Once you have an Enclave account you can log in and use the object explorer to browse researchers and research projects.
+The object explorer can be found on the left-hand side of your view on the Enclave homepage.
 Click on Object Explorer and there are several object-type groups, to search researchers and projects, click on N3C Admin, from there you can search Data Use Requests, N3C Researchers, and Research Projects.
 If you are looking for a particular N3C researcher, you can click on that box and in the search bar type in their name and hit enter.
 A new box will be displayed and you can click on that researcher's name and from there you can see the research projects that are lead of or a collaborator on.
@@ -161,7 +161,7 @@ Using the search bar at the top of the page you can search by keyword.
 Type in the keyword and click enter and a results box will be displayed.
 You can view all results to find the project in which you are interested in joining.
 From that screen, you can select the title of the project that you are interested in joining or reading about.
-There is a public-facing version of searching projects in addition to using the enclave as a search method.
+There is a public-facing version of searching projects in addition to using the Enclave as a search method.
 Users can search [https://covid.cd2h.org/projects](https://covid.cd2h.org/projects) or [https://covid.cd2h.org/dashboard/exploration#projects](https://covid.cd2h.org/dashboard/exploration#projects) and search for title, lead investigator name and also the institution.
 There are many features that are available to search using the public-facing dashboard.
 There are four categories of.

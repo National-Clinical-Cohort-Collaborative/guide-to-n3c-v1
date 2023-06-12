@@ -122,7 +122,7 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **N**:
   A Data Use Request describes your upcoming project.
-  Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The NIH "Enclave" is detailed in @sec-tools.]
+  Once an NIH committee approves your proposal, your project's code and data are protected in an associated workspace allotted on the NIH cloud.^[The N3C Data Enclave is detailed in @sec-tools.]
   Everyone on your project shares this dedicated workspace.
   Your collaborators can request to join your workspace by signing a copy of your DUR in the Enclave as well.^[DURs are the topic of @sec-access.]
 
@@ -247,7 +247,7 @@ The first discussion is usually a variation of the following exchange, with the 
   Probably.
   In the N3C database, can someone tell me how many patients get both during the same visit?
 * **LL**:
-  I'm already logged into the Enclave^[See @sec-access for accessing the N3C Enclave.].
+  I'm already logged into the Enclave^[See @sec-access for accessing the N3C Data Enclave.].
   Give me 2 minutes to add this drug to our templated fact tables^[
   See @sec-understanding-sets-library-published
   and @sec-support-liaisons-logic
@@ -378,7 +378,7 @@ While there are different approaches to developing a Research Protocol, the gene
   as well as any other relevant information,
   such as ethical and regulatory considerations, data privacy and security measures, and data sharing agreements.
 
-The Enclave's Protocol Pad supports the development and documentation of detailed study protocols.^[
+The N3C Data Enclave's Protocol Pad supports the development and documentation of detailed study protocols.^[
 @sec-tools-apps-protocol describes the tool
 and @sec-practices describes the best practices.
 ]
@@ -469,7 +469,7 @@ This topic is covered in greater detail in the [Tools](tools.md) and [Best Pract
 
 Using the previously defined protocol, the informaticist will use the [concept set browser](tools.md#sec-tools-concepts)
 to identify or create relevant concept sets and prepare the analytic dataset in a [code workbook](tools.md#sec-tools-apps-workbook)
-or [code repository](tools.md#sec-tools-apps-repo) in the N3C Enclave.
+or [code repository](tools.md#sec-tools-apps-repo) in the N3C Data Enclave.
 This time-intensive process produces a dataset that the team's statistician will analyze.
 [N3C Logic Liaison fact tables and templates](tools.md#sec-tools-store-ll) are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.
 
@@ -527,7 +527,7 @@ This often requires a discussion to communicate the definitions and data structu
 * **N**:
   Ehh, there's a better way to securely share intermediate results.
   First, create a blank report and add stuff like tables, graphs, summary results, and model output to a report.
-  Next, share the report (within the N3C Enclave) with those who have access to our project workspace.
+  Next, share the report (within the N3C Data Enclave) with those who have access to our project workspace.
   Then when it's time to share results outside the platform, we'll submit a download review request ([DRR](publishing.md#sec-publishing-tech-process-download)) to ensure compliance with the N3C privacy and security expectations.
   Once N3C leadership approves the DRR, the report can be extracted from the Enclave.
 * **S**:

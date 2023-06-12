@@ -61,19 +61,19 @@ Each data partner's ingested data is merged to create a central data repository,
 
 Beyond well-recognized data quality issues, we discovered heuristics relating to each CDM conformance, demographics, COVID tests and associated results, conditions, encounters, measurements, observations, coding completeness, and fitness for use.
 The results of the data quality issues were communicated back to the participating sites and the sites improved their data quality after feedback.
-Furthermore, the N3C central data repository, referred to as the Data Enclave or Enclave, is able to infer missing measurement units as well as correct invalid units of measure for certain laboratory test results through unit inference algorithms.
+Furthermore, the N3C central data repository, referred to as the N3C Data Enclave or Enclave, is able to infer missing measurement units as well as correct invalid units of measure for certain laboratory test results through unit inference algorithms.
 Unified Code for Units of Measure is used to harmonize the measurement units.
 
 The N3C's central data repository also supports the N3C's data integrity, security, accessibility, and governance objectives.
 The contributing sites submit data in one of four CDM formats through SSH File Transfer Protocol (sFTP) to the secure cloud platform in a compressed data file zip format.
 The zip file structure must conform to a predefined payload structure for efficient processing.
-The zip file is then transferred to the data ingestion platform known as the N3C Enclave.
+The zip file is then transferred to the Enclave.
 All access to the sFTP site is audited and monitored.
 It is Federal Risk and Authorization Management Program (FedRAMP) compliant.
-As data is transferred into the N3C Data Enclave for processing, the governance team receives secure messages regarding this process for audit purposes.
+As data is transferred into the Enclave for processing, the governance team receives secure messages regarding this process for audit purposes.
 Once the data is transferred to the Enclave the automated pipeline is triggered to process the data through the data ingestion and harmonization pipeline.
 
-![N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Enclave and harmonized into the OMOP CDM.](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
+![N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM.](images/cycle/fig-cycle-010-pipeline.png){#fig-cycle-010-pipeline fig-alt="Data Pipeline"}
 
 ### N3C Data Ingestion Pipeline Workflow {#sec-cycle-overview-ingestion}
 
@@ -130,7 +130,7 @@ By performing native CDM conformance checks, N3C can ensure that data is fully p
 Among different types of clinical data ingested into N3C, COVID-19 diagnostic testings are extremely important for research analyses, as they are the primary means to identify the confirmed COVID-19 cases.
 To address the urgency of the pandemic, individual institutions have created local names and local codes for those new COVID-19 testings in their EHRs.
 Meanwhile, LOINC, a widely used international standard for lab tests, has responded quickly by developing a new set of standard codes for COVID-19 testings to guide standard coding of COVID-19 testings in clinical settings.
-The N3C Enclave repository contains a supplementary data mapping table to map COVID-19 lab measurement data with missing LOINC codes.
+The Enclave repository contains a supplementary data mapping table to map COVID-19 lab measurement data with missing LOINC codes.
 
 The [COVID-19 TestNorm](https://clamp.uth.edu/covid/loinc.php) tool developed at UT Houston was used to initially prepare the mapping table.
 This tool is available as an open-source package for developers and as an online Web application for end users.
@@ -203,7 +203,7 @@ This process includes tribal zip code truncation and Agency for Healthcare Resea
 
 Tribal zip code truncation is a process that is used to protect the privacy of individuals who live on tribal lands in the United States.
 In order to protect the privacy of these individuals, all zip codes that represent a region where the majority of residents are American Indian (AI) or Alaska Native (AN) have been truncated to three digits.
-This announcement can be found in the [N3C Training Area](https://unite.nih.gov/workspace/notepad/view-read-only/ri.notepad.main.notepad.8cef6f46-aac3-48ca-ae16-5b0acb5b597e) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+This announcement can be found in the [N3C Training Area](https://unite.nih.gov/workspace/notepad/view-read-only/ri.notepad.main.notepad.8cef6f46-aac3-48ca-ae16-5b0acb5b597e) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
 Furthermore, data is scanned to remove any "Never Events" codes that may be left in the submitted data.
 The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors—such as wrong-site surgery—that should never occur.
@@ -260,7 +260,7 @@ For more details please refer to the [UHI-tool-for-sites page](https://github.co
 
 ### Data Quality Checks {#sec-cycle-harmonization-dqc}
 
-The N3C Enclave performs two types of data quality checks: automated data health checks during the ingestion phase, and manual data quality assessment checks with the help of the Data Quality Portal tool after the data ingestion pipeline steps are complete.
+The N3C Data Enclave performs two types of data quality checks: automated data health checks during the ingestion phase, and manual data quality assessment checks with the help of the Data Quality Portal tool after the data ingestion pipeline steps are complete.
 
 #### Automated Data Health Checks {#sec-cycle-harmonization-dqc-automated}
 
@@ -306,13 +306,13 @@ This is particularly important for the N3C centralized data repository, as it en
 
 ### Site Scorecard {#sec-cycle-harmonization-scorecard}
 
-The DI&H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the N3C enclave.
+The DI&H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the Enclave.
 The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses.
 Figures and tables were created using Palantir's Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.
 
 ![Site Scorecard. Site scorecards utilize charts and graphical representations of data partner's submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.](images/cycle/fig-cycle-078-scorecard-1.png){#fig-cycle-078-scorecard-1 fig-alt="Site Scorecard 1"}
 
-Site scorecards provide reports to all sites that are released in the N3C Enclave.
+Site scorecards provide reports to all sites that are released in the Enclave.
 These reports are sent on a biweekly cadence, via the sFTP outgoing folder.
 They are created in an automated fashion and based on the latest data available for the site in the Enclave.
 
@@ -334,10 +334,10 @@ If the scorecards reveal that a released site is no longer passing key data qual
 
 ### De-Identification and release to LDS (L3) {#sec-cycle-releases-lds}
 
-The N3C Enclave hosts patient data at multiple levels of patient data completeness
+The N3C Data Enclave hosts patient data at multiple levels of patient data completeness
 
 with corresponding levels of restricted access.
-The most complete data set available within the N3C Enclave is the limited data set (LDS), which is a type of dataset that has had certain protected health information (PHI) removed or de-identified in accordance with the Health Insurance Portability and Accountability Act (HIPAA).
+The most complete data set available within the  Enclave is the limited data set (LDS), which is a type of dataset that has had certain protected health information (PHI) removed or de-identified in accordance with the Health Insurance Portability and Accountability Act (HIPAA).
 However, some data elements, such as dates (date of birth/death, admission, discharge, service, etc.), location data (city, state, five-digit zip code), and age are still available.
 
 The DI&H workstream meets bi-weekly to review potential data quality issues found in site data submissions.
@@ -354,7 +354,7 @@ The SafeHarbor dataset (L2) is generated by applying the following list of proce
 * All patient-level date and datetime fields are shifted by keeping two sets of random &plusmn;180 numbers.
   One number is used to shift the time part and the other number is used to shift the date part. (Please note that a number of sites do pre-shift the date fields prior to submitting the data to N3C.
   The data partners who pre-shift the date field can be identified by the maxDateShift column of the manifest table.)
-* After creating the randomized date/time shifting numbers for a patient new to the N3C Enclave, the patient-level date shift is stored for each subsequent payload, such that the same number is used for the patient from the patient's initial data load and every data load thereafter.
+* After creating the randomized date/time shifting numbers for a patient new to the Enclave, the patient-level date shift is stored for each subsequent payload, such that the same number is used for the patient from the patient's initial data load and every data load thereafter.
 * Times are shifted &plusmn;180 minutes from the actual time.
   All times are shifted by a consistent base time shift for all patients.
   However, an additional secret fuzz factor is applied to each time shift by an additional &plusmn;30 minutes and/or seconds, and this secret fuzz factor is patient-specific.
@@ -378,7 +378,7 @@ This phenomenon, known as long COVID, can have a significant impact on a patient
 
 By collecting data from long COVID clinics, researchers and healthcare providers can better understand the prevalence, severity, and course of long COVID, as well as the risk factors and protective factors that may influence the likelihood and severity of long COVID.
 
-Long COVID clinic data is collected in the Enclave.
+Long COVID clinic data is collected in the N3C Data Enclave.
 For more details, please refer to this [GitHub page](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-Long-COVID-Clinic).
 
 ### ADT Transactions {#sec-cycle-enhancements-adt}
@@ -433,7 +433,7 @@ More information about PPRL and the datasets available through this linkage can 
 
 ### CMS {#sec-cycle-enhancements-cms}
 
-The N3C enclave is a continuously refreshed data resource following the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
+The Enclave is a continuously refreshed data resource following the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
 However a patient's data from the EHR may be missing data from the patient's healthcare journey outside of hospital settings.
 The missing portion of health care received by the patient may include visits to the pharmacy, visits to the outpatient clinic as well as the non-hospital institutional care facilities.
 It may also be missing telehealth visits and the purchasing of equipment or devices to be used at home.

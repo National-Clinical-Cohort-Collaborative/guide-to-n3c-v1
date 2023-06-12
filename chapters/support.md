@@ -37,11 +37,11 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Support Tickets: Enclave-Internal {#sec-support-internal}
 
-While live-support options are available, submitting questions via "tickets" (also known as "issues" in the enclave) helps ensure they reach the right person and that questions are logged and tracked.
-Given the sensitive nature of N3C data, questions that pertain to patients or data partners should be asked within the enclave itself.
+While live-support options are available, submitting questions via "tickets" (also known as "issues" in the Enclave) helps ensure they reach the right person and that questions are logged and tracked.
+Given the sensitive nature of N3C data, questions that pertain to patients or data partners should be asked within the Enclave itself.
 
-The within-enclave support ticket system is also a good avenue for technical questions, including about platform features, performance, permissions, and tooling.
-In fact, when submitting a ticket in the enclave, the ticket itself will automatically track the resource being viewed when the ticket is submitted.
+The within-Enclave support ticket system is also a good avenue for technical questions, including about platform features, performance, permissions, and tooling.
+In fact, when submitting a ticket in the Enclave, the ticket itself will automatically track the resource being viewed when the ticket is submitted.
 
 To illustrate an example, we first navigate to the Synthea Notional Data entry in the Data Catalog (under "Projects & files" in the left navigation menu).
 
@@ -72,8 +72,8 @@ We'll just click Next here.
 
 ## Reporting Issues via Help Center {#sec-support-internal-reporting}
 
-Using "Report Issue" from the Help menu of an enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from.
-While most enclave applications have a Help menu near the top left, not all do.
+Using "Report Issue" from the Help menu of an Enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from.
+While most Enclave applications have a Help menu near the top left, not all do.
 In these cases you can alternatively submit an issue by finding the "Help & support" option in the lower part of the left navigation bar and choosing the "Help Center".
 This will open a sidebar to the right, with a large blue button at the bottom for "Report an Issue."
 :::
@@ -81,7 +81,7 @@ This will open a sidebar to the right, with a large blue button at the bottom fo
 Finally, we are prompted to submit our issue, including a title and description with pre-filled questions depending on the issue type selected.
 Answering all of these is not required, but any information you can add that speaks to them is helpful.
 This section also allows you to upload a screenshot if desired.
-Even though these issues are protected in enclave, you should not screenshot any data (or results like summary tables or figures), as that would result in your local computer storing, even if temporarily, unapproved patient-level information.
+Even though these issues are protected in Enclave, you should not screenshot any data (or results like summary tables or figures), as that would result in your local computer storing, even if temporarily, unapproved patient-level information.
 Nevertheless, when excluding patient data is possible, a screenshot may help diagnose the problem, and the support personnel who respond to the issue may request a screenshot during follow-up.
 
 ![More details.](images/support/fig-support-060-issue-more-details.png){#fig-support-060-issue-more-details width=50% fig-alt="More details"}
@@ -104,7 +104,7 @@ The same principle applies to other resource types like Code Workbooks, in cases
 ### Issue followup {#sec-support-internal-followup}
 
 After your ticket is submitted, it will be routed to a triage team who will decide which support group is best able to address it.
-These include groups with admin-level access and general knowledge of the enclave (at least one of which is familiar N3C-specific tools or workflows), experts in N3C data ingestion and harmonization processes, as well as individuals with expertise in OMOP and other N3C technologies.
+These include groups with admin-level access and general knowledge of the Enclave (at least one of which is familiar N3C-specific tools or workflows), experts in N3C data ingestion and harmonization processes, as well as individuals with expertise in OMOP and other N3C technologies.
 
 When activity occurs on your ticket you will see a small orange dot appear on the Notifications navigation menu item indicating you have a new notification, clicking this will show this notification (and any others you may have received).
 By default, you will also receive email notifications for ticket activity.
@@ -113,8 +113,8 @@ Finally, you can review and respond to tickets via the Issues application (which
 
 ## Support Tickets: Enclave-External {#sec-support-external}
 
-While the enclave-internal ticket system is a good avenue for more technical questions about data analysis or the data itself, most other questions should be directed to an enclave-external ticket system (sometimes called the "support desk").
-At the very least, if your issue is you cannot login to the enclave, that cannot be reported via the enclave-internal ticketing system!
+While the Enclave-internal ticket system is a good avenue for more technical questions about data analysis or the data itself, most other questions should be directed to an Enclave-external ticket system (sometimes called the "support desk").
+At the very least, if your issue is you cannot login to the Enclave, that cannot be reported via the Enclave-internal ticketing system!
 
 ![Starting a ticket.](images/support/fig-support-090-ticket-start.png){#fig-support-090-ticket-start width=50% fig-alt="Starting a ticket"}
 
@@ -123,7 +123,7 @@ Here you will find a link to "Submit a Support Request" that directs you to sele
 
 ![Ticket details.](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options is described, and range from enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options is described, and range from Enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request.
 The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
@@ -143,12 +143,12 @@ To satisfy N3C data privacy rules, N3C staff utilize Zoom breakout rooms allowin
 
 ## Training Resources {#sec-support-training}
 
-Many training and educational resources are available within the enclave where we can readily organize and link them to relevant resources.
-The "Training Material" button on the enclave homepage displays several categories of training materials:
+Many training and educational resources are available within the Enclave where we can readily organize and link them to relevant resources.
+The "Training Material" button on the Enclave homepage displays several categories of training materials:
 
 ![Training Material.](images/support/fig-support-110-training-material.png){#fig-support-110-training-material fig-alt="Training Material"}
 
-While the documentation and self-guided tours provide information about the cloud-based enclave platform, they don't provide any information specific to N3C.
+While the documentation and self-guided tours provide information about the cloud-based Enclave platform, they don't provide any information specific to N3C.
 The Training Portal is the primary location for N3C-related training materials, while N3C Community Notes allow researchers to post short articles/guides for others to use.
 The Support option will redirect to a page linking to the two ticket systems described above.
 
@@ -171,7 +171,7 @@ Immediately below the title is a link whose URL points to this specific module i
 
 ![Overview of a Training Module.](images/support/fig-support-140-training-module-overview.png){#fig-support-140-training-module-overview fig-alt="Overview of a Training Module"}
 
-To the right is a list of resources comprising the materials of the module; these may be videos or documents, example enclave resources like code workbooks, or in some cases links to relevant external resources.
+To the right is a list of resources comprising the materials of the module; these may be videos or documents, example Enclave resources like code workbooks, or in some cases links to relevant external resources.
 The small search box allows you to filter the list, and is especially useful for modules with many resources such as our Enclave Users' Group series discussed below.
 
 N3C community members are welcome to suggest or develop new training modules for inclusion in the portal.
@@ -191,7 +191,7 @@ Instead, you can utilize the N3C Training Area (see below).
 
 ### N3C Community Notes {#sec-support-training-community}
 
-N3C Community Notes is a within-enclave application where researchers can author and share short articles, code snippets, or FAQ items.
+N3C Community Notes is a within-Enclave application where researchers can author and share short articles, code snippets, or FAQ items.
 The application supports a rich tagging system, and notes can be linked to other N3C resources like training modules, [knowledge objects](tools.md#sec-tools-store), and [concept sets](tools.md#sec-tools-concepts).
 The note overview contains a link whose URL points to this specific note in the application for sharing.
 
@@ -221,7 +221,7 @@ Within this folder you will be able to create new analyses, and these will have 
 
 ## Notional Datasets {#sec-support-notional}
 
-OMOP-formatted N3C patient data are protected by a [Data Use Request](access.md#sec-access-dur) process, but researchers may wish to explore OMOP tables and enclave tools prior to completing a DUR.
+OMOP-formatted N3C patient data are protected by a [Data Use Request](access.md#sec-access-dur) process, but researchers may wish to explore OMOP tables and Enclave tools prior to completing a DUR.
 The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
 They are both available via the [data catalog](access.md#sec-access-workspaces) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](access.md#sec-access-availability), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
@@ -271,7 +271,7 @@ The Enclave Users Group (EUG) is a community-focused forum where analysts can sh
 Each session one or more presenters share a topic, emphasizing live Q&A, discussions, and meeting new people.
 Topics range from statistical techniques like propensity score matching, scaling machine learning algorithms for use on billion-row datasets, tips for scientific software development, and introductions of new N3C resources and initiatives.
 EUG sessions do not present protected data, so sessions are recorded and example resources are available in the N3C Training Area.
-For more information and an index of recorded sessions see the [Enclave Users' Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19) {{< fa lock title="Link requires an N3C Enclave account" >}} in the Training Portal.
+For more information and an index of recorded sessions see the [Enclave Users' Group module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=19) {{< fa lock title="Link requires an Enclave account" >}} in the Training Portal.
 
 ![Enclave Users' Group.](images/support/fig-support-210-eug.png){#fig-support-210-eug width=75% fig-alt="Enclave Users' Group"}
 
@@ -310,12 +310,12 @@ They also provide support services as described below.
 EHR data are complex, more so when they cover data contributed by 75+ sites.
 The Data Liaisons group consists of those most familiar with N3C data, including members of the [phenotype and ingestion and harmonization](cycle.md) teams.
 Data Liaisons are subject matter experts in biomedical, translational, clinical data standards, and Real-World data utilization to support program investigator analyses.
-Data Liaisons curate and review N3C-recommended [concept sets](tools.md#sec-tools-concepts) for researcher use, and can field data-related questions, which should be submitted via the enclave-internal ticket system.
-Potential data quality issues should also be submitted via enclave-internal ticket system for routing to the Data Liaisons for review.
+Data Liaisons curate and review N3C-recommended [concept sets](tools.md#sec-tools-concepts) for researcher use, and can field data-related questions, which should be submitted via the Enclave-internal ticket system.
+Potential data quality issues should also be submitted via Enclave-internal ticket system for routing to the Data Liaisons for review.
 
 For basic questions about the OMOP common data model, refer to the OHDSI resources, and training portal modules for getting started with OMOP.
 Personalized assistance is provided during N3C Office Hours.
-Support for Concept Set consultation can be received by submitting a help desk technical support ticket in the N3C enclave.
+Support for Concept Set consultation can be received by submitting a help desk technical support ticket in the N3C Enclave.
 The Data Liaisons team will send a representative to your domain team meetings on an as-needed basis for general consultation.
 
 ### Logic Liaison Services {#sec-support-liaisons-logic}
@@ -331,7 +331,7 @@ This team helps researchers assess and clean their project-specific fact tables 
 Logic Liaison Code Fact Tables and Templates can be accessed by searching the Knowledge Store for "Logic Liaison Template".
 Recorded trainings are provided in the "Logic Liaison Templates" module of the N3C Training Portal.
 Personalized help is provided during N3C Office Hours.
-Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the enclave.
+Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the Enclave.
 Team members are also active in the `#n3c-analytics` Slack channel.
 The Logic Liaison team will send a representative to your domain team meetings on an as-needed basis for general consultation.
 

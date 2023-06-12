@@ -46,7 +46,7 @@ Driven by the imperative of addressing COVID-19, in concert with the use of a Fe
 The Enclave is an installation of Palantir Technologies' Foundry platform, a FedRAMP-certified data analytics suite.] N3C is partnering with EHR data providers across the nation to collect billions of EHR data points for millions of patients with and without COVID-19 in a single, secure, accessible database for research use.
 In this centralized model, researchers have direct access to the entirety of the data to support complex analyses including AI and other machine learning techniques.
 N3C simultaneously moderates controlled access to these data by research teams from across the country (and beyond), including private companies, community colleges, universities, medical schools, and government entities.
-While data cannot be exported from the Enclave, published results can be after an export review (see @sec-publishing).
+While data cannot be exported from the N3C Data Enclave, published results can be after an export review (see @sec-publishing).
 
 Like federated research networks, N3C also uses a common data model, known as OMOP, chosen for its strong community support and open nature, support of scientific use cases, and availability of tools for translating and working with data (@sec-understanding and @sec-tools discuss OMOP in more detail).^[OMOP was originally developed by its namesake, the Observational Medical Outcomes Partnership, but is now stewarded by the Observational Health Data Sciences and Informatics (OHDSI, pronounced "odyssey") program, an international group of researchers and clinicians.
 For complete information about OHDSI and OMOP, see the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/).] To rapidly collect data from around the country, N3C leverages the existing work data owners have already done to convert their organization-unique data to one of a handful of N3C-supported "source" common data models: PCORNet, i2b2, TriNetX, ACT, and OMOP.
@@ -54,11 +54,11 @@ A potential data partner with data in PCORNet format, for example, will locally 
 The process of coalescing multiple such data payloads into a unified whole is known as _harmonization_, and is a complex task even after everything has been mapped to OMOP initially.
 Two overlapping teams of EHR data experts participate in this process: one works closely with data partners to make it as easy as possible to contribute data to N3C, and another handles the post-ingestion harmonization and comprehensive quality checks of the incoming data.
 
-## The N3C "Enclave" and Data Access {#sec-intro-enclave}
+## The N3C Data Enclave and Data Access {#sec-intro-enclave}
 
-Once harmonized and stored in the secure Enclave, the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
+Once harmonized and stored in the secure "N3C Data Enclave", the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
 
-![A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave.](images/intro/fig-intro-020-harmonized.png){#fig-intro-intro-harmonized fig-alt="A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based enclave."}
+![A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based Enclave.](images/intro/fig-intro-020-harmonized.png){#fig-intro-intro-harmonized fig-alt="A visual representation of N3C's data harmonization from source-CDM model, and team-based access to these data in a secure cloud-based Enclave."}
 
 Mere access to the Enclave, however, doesn't automatically provide access to any of the protected data itself (although we do make other, publicly-available datasets available with minimal restriction for practice and learning purposes).
 Multiple "levels" of the data are available with different anonymization techniques applied, facilitating "just enough" access to research teams depending on their needs and ability to access protected health information.
@@ -88,7 +88,7 @@ Dozens of N3C-supported publications span the gamut of research:
 These are but a small sample of work produced by researchers participating in N3C.
 
 This range of work is only possible by the diversity of interests and expertise researchers bring.
-Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure data enclave.
+Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure N3C Data Enclave.
 N3C supports team science in a variety of ways.
 Domain Teams, for example, serve to connect groups with similar interests for peer support, research coordination, and collaboration building.
 While most Domain Teams are clinically oriented (e.g. the Pregnancy Domain Team), others are more general (e.g. the Machine Learning Domain Team). @sec-onboarding covers Domain Teams in more detail.
@@ -100,7 +100,7 @@ Data are extensively quality-checked and harmonized for consistency with the OMO
 Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-cycle).
 
 Big data is of little value without powerful analysis tools.
-Fortunately, N3C's enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two.
+Fortunately, N3C's Enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two.
 Backed by the high-performance distributed-computing framework Apache Spark, researchers can include billions of rows of data in a single analysis.
 Graphical tools are also available for those without coding expertise, and the N3C community generates reusable code and datasets to pave the way for others.
 All of these tools are cloud-hosted, so researchers only need to bring a web browser.
@@ -108,14 +108,14 @@ For information on these topics, see @sec-tools.
 
 Finally, N3C has worked hard to make these resources secure _and_ accessible.
 Enclave access requires coverage by a Data Use Agreement, which hundreds of institutions across the US and beyond have signed on behalf of all their employees and students.
-Data itself is accessed via a guided Data Use Request form in the enclave, and researchers can invite others to their projects at any time.
+Data itself is accessed via a guided Data Use Request form in the Enclave, and researchers can invite others to their projects at any time.
 See Chapters [-@sec-onboarding] and [-@sec-access] for details.
 
 ### For Institutions {#sec-intro-next-institutions}
 
 There are two primary ways that institutions can participate in N3C: (1) by signing an institutional Data Use Agreement; and (2) by contributing data.
 
-Signing an institutional Data Use Agreement provides access to N3C's data enclave to all employees and students at your institution.
+Signing an institutional Data Use Agreement provides Enclave access to all employees and students at your institution.
 Hundreds of institutions have done so, connecting their research community to a vast network of data, tools, and expertise.
 For more information about Data Use Agreements, see @sec-onboarding.
 
@@ -125,7 +125,7 @@ While contributing sites implement their own data quality checks, N3C has discov
 
 Finally, N3C's governance structures may be of interest to other organizations embarking on large-scale, team-science efforts. @sec-governance introduces these perspectives.
 
-Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our enclave-external help desk, or just stopping by office hours.
+Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our Enclave-external help desk, or just stopping by office hours.
 More information on these latter two options may be found in @sec-support.
 
 ::: {.callout-note appearance="simple"}

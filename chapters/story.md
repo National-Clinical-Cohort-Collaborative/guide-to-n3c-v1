@@ -30,7 +30,6 @@ author:
 
 # reference-location: margin
 
-
 csl: ../assets/csl/apa-7e.csl
 
 ---
@@ -38,11 +37,6 @@ csl: ../assets/csl/apa-7e.csl
 # A Research Story {#sec-story}
 
 **Chapter Leads**: Will Beasley, Jerrod Anzalone
-
-:::{.callout-note}
-This chapter is being written.
-We hope to complete this chapter during May 2023.
-:::
 
 Now that we have introduced N3C and described its motivation and importance, we'll walk through the life cycle of an example project from onboarding to publishing.
 It isn't easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers.
@@ -77,7 +71,7 @@ Given the disease's low prevalence, no single US-based institution likely has a 
 Yesterday you attended a local N3C presentation and became interested because it likely has enough qualifying scurvy patients to detect even small signals.
 Your mind wanders, and you begin to daydream of additional hypotheses.
 _Does the relationship attenuate as you move inland?_
-You realize that a massive national dataset can not only better address your existing question, but it could also allow you to ask newer and more nuanced questions.
+You realize that a massive national dataset can not only better address your existing question, but could also allow you to ask newer and more nuanced questions.
 _Is the relationship more pronounced in other racial/ethnic groups?_
 Your thoughts race into the night, a never-ending stream of possibilities.
 :::
@@ -265,7 +259,7 @@ The first discussion is usually a variation of the following exchange, with the 
   I was thinking around 1%.
 * **LL**:
   Hmm, let me check.
-  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waiving a fairy wand.]
+  Give me another minute.^[There is a brief discussion of S's daughter strutting in the background wearing a cowboy hat and waving a fairy wand.]
 * **LL** _after a few minutes_:
   I see what you mean.
   It looks like the bulk of the combo patients were admitted in the spring of 2020.
@@ -618,7 +612,7 @@ After a few iterations, the analyses are complete and the team prepares for the 
 * **Subject Matter Expert**:
   They looked great.
   Very unexpected, but intriguing results.
-  I was surprised that outcomes were so much better in those exposed Medication B than Medication A.
+  I was surprised that outcomes were so much better in those exposed to Medication B than to Medication A.
 * _Team reviews the results in detail.
   Manuscript write-up divided amongst the study team._
 * **I**:

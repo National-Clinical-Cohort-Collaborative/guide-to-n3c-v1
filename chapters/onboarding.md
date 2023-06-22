@@ -156,7 +156,6 @@ Before you begin onboarding, be sure that your Google Groups settings (if you ha
 
 !! Missing Figure !!
 
-
 ## Enclave Registration
 
 Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
@@ -174,8 +173,6 @@ If you do not already have a Login.gov account associated with your institutiona
 In order to confirm if your organization has a data use agreement on file, it is required that you use your institutional email rather than a personal email.
 When a new Login.gov account is created, you will be prompted to set up two-factor authentication with any of the following apps:
 
-
-
 * [DUO ](https://duo.com/)
 * [Free OTP](https://apps.apple.com/us/app/freeotp-authenticator/id872559395)
 * [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform=iOS&hl=en)
@@ -183,13 +180,9 @@ When a new Login.gov account is created, you will be prompted to set up two-fact
 
 Once logged in, complete the required fields to create an account.
 
-
-
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image3.png "image_tooltip")
-
 
 Figure 1: Login options for registration.
 Many organizations participate in InCommon, a federated login network linking to your institution's login.
@@ -209,41 +202,28 @@ If you've already registered, you'll see the option to update your profile
 
 Then click the "edit this profile" at the bottom
 
-
-
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image4.png "image_tooltip")
 
-
 Whether you are a new or returning user, be sure to click both boxes
-
-
 
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image5.png "image_tooltip")
-
 
 For Google Drive, completing your onboarding profile with a Google-enabled account (whether a Gmail, Institutional email, or self-managed account) this update will automatically add your address to [n3c-allhands@ctsa.io](mailto:n3c-allhands@ctsa.io) Google Group which confers access to the N3C shared drive and is also used for low-volume communications.
 For your Google-enabled account (if different from your primary onboarding address) you may wish to change your subscription settings to "no email" so that you don't get double notifications at your primary and Gmail accounts.
 
-
-
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image6.png "image_tooltip")
-
 
 Most institutions offer Google-enabled accounts.
 Some institutions that don't offer that, do allow individuals to set up free self-managed Google accounts using their existing work address.
 For instructions on how to do this, see [tislab.org/google-intro](http://tislab.org/google-intro)
 
 If you have any issues, please log a ticket at [covid.cd2h.org/support](http://covid.cd2h.org/support)
-
 
 ## Data Use Agreements
 
@@ -263,9 +243,7 @@ The [Institutional DUA form](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agre
 If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to <NCATSPartnerships@mail.nih.gov>.
 See <https://ncats.nih.gov/n3c/resources/data-access> for more information on access forms and resources.
 
-
 ## Research Project Teams
-
 
 ### Project Lead vs Collaborators
 
@@ -280,13 +258,11 @@ Collaborators in a study are encouraged to request access to the Data Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.
 
-
 ### Common roles and expectations (PIs, PMs, SMEs, Analysts, ...)
 
 The process of developing and conducting a study using the N3C Data Enclave can be complex.
 The Principal Investigator/Project Lead and the study team will be interacting with multiple individuals, each with a specific role designed to create a sound methodology, yielding reliable and valuable outcomes and information.
 While these are common roles for N3C researchers, the projects do not require that all these roles be filled.  [see Domain Team section for information on how to find collaborators]  The following table (Table 2) identifies the common roles that are involved in developing and carrying out a study, along with typical expectations of each.
-
 
 <table>
   <tr>
@@ -346,12 +322,10 @@ An SME typically has knowledge not readily available from others on the research
   </tr>
 </table>
 
-
 Table 2. N3C Projects: Common Roles and Expectations
 
 On the topic of diverse teams, N3C encourages appropriate attribution of work, including for support roles in projects.
 See Chapter [X](#publishing-and-sharing) for guidance on publishing and attribution.
-
 
 #### Team Science
 
@@ -365,8 +339,6 @@ While some researchers may find the 'Team Science' paradigm and approach challen
 The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science_, 2015 <https://pubmed.ncbi.nlm.nih.gov/26247083/>) examined a number of factors that influence the function and success of team science.
 These include:
 
-
-
 * _<span style="text-decoration:underline;">Individual factors</span>_, such as how open team members are to collaboration, different ideas/approaches to conducting research (e.g., collaboration vs. individual), and individual communication and management styles.
 * _<span style="text-decoration:underline;">Institutional factors</span>_ including support for 'team science', such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
 * _<span style="text-decoration:underline;">Group factors, or team dynamics</span>_.
@@ -379,7 +351,6 @@ These include:
   In today's scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
   To do so effectively, these collaborative teams need reliable internet connectivity with equally reliable cybersecurity policies and support and space for local as well as distant meetings (e.g., Zoom, Teams) during all stages of the life of the study.
 
-
 ## Domain Teams
 
 The N3C Data Enclave is built for multi-site collaboration and aims to bring together researchers of different backgrounds with similar questions using Domain Teams.
@@ -391,7 +362,7 @@ When you look at the list of Domain Teams, you find that there is one focused on
 You can contact the Domain Team and attend the next meeting.
 At the meeting, you can find out whether your questions are already part of an existing project within the Domain Team, or if a new project should be created.
 
-The N3C website provides a [list](https://covid.cd2h.org/domain-teams) of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
+The N3C website provides a [list](https://covid.cd2h.org/domain-teams)of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
 Some examples of clinical Domain Teams are Acute Kidney Injury (AKI), Cardiovascular Disease, and Oncology.
 Examples of cross-cutting Domain Teams are Education and Training, Machine Learning, and Pharma-Commercial. (This Guide is a product of the Education and Training Domain Team.)
 
@@ -406,19 +377,13 @@ As a reminder, virtual meetings may not be recorded or screenshotted if they sho
 N3C-supplied resources support team science by supporting Domain Teams: each team is given a dedicated webpage where the time of the meetings and the lead(s) are posted, a Google Drive workspace, a Google Group mailing list, and a dedicated Slack channel.
 These resources are helpful for teams to post literature reviews, agendas, meeting recordings, or other relevant documents.
 
-
 ## Browsing Researchers/Projects/Institutions
-
 
 ### Object Explorer, Public Dashboard, Enclave Dashboard
 
-
-
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image7.png "image_tooltip")
-
 
 Figure 2 Enclave homepage
 
@@ -460,13 +425,9 @@ There is also a [more detailed dashboard with lists of projects, publications, a
 For additional training support, tutorials can be found here:
 <https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
-
-
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image8.png "image_tooltip")
-
 
 Figure 3 Object Explorer
 
@@ -495,13 +456,9 @@ Your address is automatically added to the N3C-all hands Google group which will
 Each Domain Team has a Google Drive folder they can use to house agendas, meeting minutes, publication tracking, and other resources.
 If you do not have a Google account, the link to those instructions is <https://support.google.com/accounts/answer/27441>.
 
-
-
 <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image9.png "image_tooltip")
-
 
 Figure 4: Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.
 

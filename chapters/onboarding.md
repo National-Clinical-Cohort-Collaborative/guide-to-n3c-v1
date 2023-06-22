@@ -137,7 +137,17 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * NIH IT training completion
   * Approved DUR
 
-## Registration {#sec-onboarding-registration}
+## Program Registration {#sec-onboarding-program}
+
+Not everyone who registers to participate in N3C necessarily needs Enclave access; however, everyone who needs Enclave access also needs access to the Google Drive. Access to the Google Drive is conferred through membership in a Google Group called [n3c-allhands@ctsa.io](mailto:n3c-allhands@ctsa.io). You can onboard with your institutional address and add a Gmail as an alias for the purposes of document access. Before you begin onboarding, be sure that your Google Groups settings (if you have them at all) are configured to allow others to add you to their groups:
+
+1. Sign into your Google account of choice and go to [https://groups.google.com/my-groups](https://groups.google.com/my-groups) and click the settings gear in the top right then “global settings”
+
+!! Missing Figure !!
+
+1. Then click the boxes
+
+!! Missing Figure !!
 
 ### ORCiD; InCommon vs Login.gov
 

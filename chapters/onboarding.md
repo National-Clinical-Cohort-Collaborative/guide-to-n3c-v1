@@ -148,13 +148,13 @@ Access to the Google Drive is conferred through membership in a Google Group cal
 You can onboard with your institutional address and add a Gmail as an alias for the purposes of document access.
 Before you begin onboarding, be sure that your Google Groups settings (if you have them at all) are configured to allow others to add you to their groups:
 
-1. Sign into your Google account of choice and go to <https://groups.google.com/my-groups> and click the settings gear in the top right then "global settings".
+First sign into your Google account of choice and go to <https://groups.google.com/my-groups> and click the settings gear in the top right then "global settings".
 
-!! Missing Figure !!
+![Open Global Settings in Google Groups.](images/onboarding/fig-onboarding-010-google-groups-setting-1.png){#fig-onboarding-010-google-groups-setting-1 fig-alt="Open Global Settings in Google Groups"}
 
-1. Then click the boxes
+Then click the following boxes.
 
-!! Missing Figure !!
+![Modify Global Settings in Google Groups.](images/onboarding/fig-onboarding-020-google-groups-setting-2.png){#fig-onboarding-020-google-groups-setting-2 fig-alt="Modify Global Settings in Google Groups"}
 
 ## Enclave Registration
 
@@ -180,9 +180,10 @@ When a new Login.gov account is created, you will be prompted to set up two-fact
 
 Once logged in, complete the required fields to create an account.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+![Login options for registration.
+Many organizations participate in InCommon, a federated login network linking to your institution's login.
+Other users will need to link a Login.gov account to their email for use in registration and login.
+](images/onboarding/fig-onboarding-030-login.png){#fig-onboarding-030-login fig-alt="Login options for registration"}
 
 Figure 1: Login options for registration.
 Many organizations participate in InCommon, a federated login network linking to your institution's login.
@@ -200,24 +201,18 @@ Overall, users will need to confirm if they use the InCommon or Login.gov pathwa
 
 If you've already registered, you'll see the option to update your profile
 
-Then click the "edit this profile" at the bottom
+Then click the "edit this profile" at the bottom.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+![Edit N3C & CD2H Registration.](images/onboarding/fig-onboarding-040-access.png){#fig-onboarding-040-access fig-alt="Edit N3C & CD2H Registration"}
 
 Whether you are a new or returning user, be sure to click both boxes
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+![Participate by clicking both boxes.](images/onboarding/fig-onboarding-050-participate.png){#fig-onboarding-050-participate fig-alt="Participate by clicking both boxes"}
 
 For Google Drive, completing your onboarding profile with a Google-enabled account (whether a Gmail, Institutional email, or self-managed account) this update will automatically add your address to [n3c-allhands@ctsa.io](mailto:n3c-allhands@ctsa.io) Google Group which confers access to the N3C shared drive and is also used for low-volume communications.
 For your Google-enabled account (if different from your primary onboarding address) you may wish to change your subscription settings to "no email" so that you don't get double notifications at your primary and Gmail accounts.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+![Do NOT click "Leave group".](images/onboarding/fig-onboarding-060-do-not-leave-group.png){#fig-onboarding-060-do-not-leave-group fig-alt="Do not leave group"}
 
 Most institutions offer Google-enabled accounts.
 Some institutions that don't offer that, do allow individuals to set up free self-managed Google accounts using their existing work address.
@@ -253,7 +248,7 @@ The Project Lead provides overall guidance to the study and is the primary point
 The Project Lead has responsibilities that can not be delegated to other team members.
 
 N3C strongly encourages collaborations among investigators within institutions as well as between institutions.
-As discussed in the [Data Use Agreements](@DUA)_ _section, individuals wishing access to the N3C Data Enclave must be at an institution that is covered by a DUA.
+As discussed in the [Data Use Agreements](@DUA) section, individuals wishing access to the N3C Data Enclave must be at an institution that is covered by a DUA.
 Collaborators in a study are encouraged to request access to the Data Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.
@@ -339,15 +334,15 @@ While some researchers may find the 'Team Science' paradigm and approach challen
 The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science_, 2015 <https://pubmed.ncbi.nlm.nih.gov/26247083/>) examined a number of factors that influence the function and success of team science.
 These include:
 
-* _<span style="text-decoration:underline;">Individual factors</span>_, such as how open team members are to collaboration, different ideas/approaches to conducting research (e.g., collaboration vs. individual), and individual communication and management styles.
-* _<span style="text-decoration:underline;">Institutional factors</span>_ including support for 'team science', such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
-* _<span style="text-decoration:underline;">Group factors, or team dynamics</span>_.
+* _Individual factors_, such as how open team members are to collaboration, different ideas/approaches to conducting research (e.g., collaboration vs. individual), and individual communication and management styles.
+* _Institutional factors_ including support for 'team science', such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
+* _Group factors, or team dynamics_.
   Bringing together individuals who are experts in their fields does not always translate into a well-organized, supportive, and clearly communicating group process.
   Collaborators, but especially Principal Investigators/Project Leads, are encouraged to be open to and understand the strengths and assets each member of the collaborative team brings to the project.
   Sound communication principles and methods of conflict resolution and negotiation strategies should be considered by the team early on in the establishment of the collaborative.
   This may be especially important for teams that are less experienced in working with one another, but well-established teams may want to revisit these points at the start and during a study.
   Having clear expectations of each collaborator's role and responsibilities at the beginning of the collaborative is highly recommended; this includes agreed-upon publication authorship for study outcomes.
-* _<span style="text-decoration:underline;">Infrastructure that underpins team science</span>_.
+* _Infrastructure that underpins team science_.
   In today's scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
   To do so effectively, these collaborative teams need reliable internet connectivity with equally reliable cybersecurity policies and support and space for local as well as distant meetings (e.g., Zoom, Teams) during all stages of the life of the study.
 
@@ -381,11 +376,7 @@ These resources are helpful for teams to post literature reviews, agendas, meeti
 
 ### Object Explorer, Public Dashboard, Enclave Dashboard
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
-
-Figure 2 Enclave homepage
+![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
 
 When you log into the Enclave, you will be presented with the home page and left sidebar.
 These two sections give launching points into Enclave content.
@@ -425,11 +416,7 @@ There is also a [more detailed dashboard with lists of projects, publications, a
 For additional training support, tutorials can be found here:
 <https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.png "image_tooltip")
-
-Figure 3 Object Explorer
+![Object Explorer.](images/onboarding/fig-onboarding-080-object-explorer.png){#fig-onboarding-080-object-explorer fig-alt="Object Explorer"}
 
 The object explorer can be found on the left sidebar in the Apps section.
 As the name suggests, this gives more granular navigation of several object-type groups.
@@ -456,11 +443,7 @@ Your address is automatically added to the N3C-all hands Google group which will
 Each Domain Team has a Google Drive folder they can use to house agendas, meeting minutes, publication tracking, and other resources.
 If you do not have a Google account, the link to those instructions is <https://support.google.com/accounts/answer/27441>.
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image9.png "image_tooltip")
-
-Figure 4: Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.
+![Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.](images/onboarding/fig-onboarding-090-google-drive-and-slack.png){#fig-onboarding-090-google-drive-and-slack fig-alt="Options set during registration"}
 
 N3C also has several Slack channels available that users can join.
 Slack is a quick and convenient communication method for teams and N3C users.

@@ -148,7 +148,7 @@ Access to the Google Drive is conferred through membership in a Google Group cal
 You can onboard with your institutional address and add a Gmail as an alias for the purposes of document access.
 Before you begin onboarding, be sure that your Google Groups settings (if you have them at all) are configured to allow others to add you to their groups:
 
-1. Sign into your Google account of choice and go to [https://groups.google.com/my-groups](https://groups.google.com/my-groups) and click the settings gear in the top right then "global settings".
+1. Sign into your Google account of choice and go to <https://groups.google.com/my-groups> and click the settings gear in the top right then "global settings".
 
 !! Missing Figure !!
 
@@ -159,13 +159,13 @@ Before you begin onboarding, be sure that your Google Groups settings (if you ha
 
 ## Enclave Registration
 
-Due to the secure nature of the data that is available in the N3C Enclave, [registration ](https://labs.cd2h.org/registration/)is required.
+Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
 Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS - see [Data Use Agreements](#data-use-agreements) below for details.
 There are four options you can use to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login. (See the image below for a screenshot of the login menu.)
 
 Most US universities participate in the InCommon authentication network; registering through this route enables you to use your existing Single Sign On to authenticate into the Enclave.
 There is a link on the registration page that leads to a list of organizations that participate in InCommon.
-You can also see it [here](https://incommon.org/community-organizations/).
+You can also see it at <https://incommon.org/community-organizations/>.
 If your organization participates, you should use the InCommon option and your institution credentials.
 It can cause issues later if your institution does participate in InCommon, but you do not use this mechanism.
 
@@ -199,7 +199,7 @@ Once you know which pathway you will use to create an Enclave account there are 
 You will need to have an ORCID iD, complete NIH security training, and complete human subjects research training. [ORCiD](https://orcid.org/), which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
 The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
-The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).  (Click on the 'Enter Public Training Portal' button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
+The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the 'Enter Public Training Portal' button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
 
 You need to complete Human Subjects Research training that aligns with your institution's guidelines.
 You will need to provide the date of completion when submitting or joining a DUR.
@@ -257,11 +257,11 @@ The DUA must be signed by authorized officials who have the authority to bind al
 Every individual who has access to the N3C Data Enclave must be covered by a DUA.
 This DUA must be in place before an account for the N3C Enclave is requested.
 If your institution has an active DUA, there is no additional action required with regard to the DUA.
-A list of institutions with DUAs can be found at [https://covid.cd2h.org/duas](https://covid.cd2h.org/duas).
+A list of institutions with DUAs can be found at <https://covid.cd2h.org/duas>.
 
 The [Institutional DUA form](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) is available on the web.
-If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to [NCATSPartnerships@mail.nih.gov](mailto:NCATSPartnerships@mail.nih.gov).
-See [here](https://ncats.nih.gov/n3c/resources/data-access) for more information on access forms and resources.
+If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to <NCATSPartnerships@mail.nih.gov>.
+See <https://ncats.nih.gov/n3c/resources/data-access> for more information on access forms and resources.
 
 
 ## Research Project Teams
@@ -362,7 +362,7 @@ In this way, N3C studies naturally emphasize Team Science.
 Collaboration may be challenging depending on the clarity of the study design, the definition of roles and responsibilities of each member of the collaboration, the communication means and methods, and the respect among each of the collaborating members.
 While some researchers may find the 'Team Science' paradigm and approach challenging, collaborative research often leads to breakthroughs and outcomes that would be difficult for an individual researcher to achieve.
 
-The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science, _2015 https://pubmed.ncbi.nlm.nih.gov/26247083/) examined a number of factors that influence the function and success of team science.
+The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science_, 2015 <https://pubmed.ncbi.nlm.nih.gov/26247083/>) examined a number of factors that influence the function and success of team science.
 These include:
 
 
@@ -391,7 +391,7 @@ When you look at the list of Domain Teams, you find that there is one focused on
 You can contact the Domain Team and attend the next meeting.
 At the meeting, you can find out whether your questions are already part of an existing project within the Domain Team, or if a new project should be created.
 
-The N3C website provides a [list ](https://covid.cd2h.org/domain-teams)of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
+The N3C website provides a [list](https://covid.cd2h.org/domain-teams) of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
 Some examples of clinical Domain Teams are Acute Kidney Injury (AKI), Cardiovascular Disease, and Oncology.
 Examples of cross-cutting Domain Teams are Education and Training, Machine Learning, and Pharma-Commercial. (This Guide is a product of the Education and Training Domain Team.)
 
@@ -457,7 +457,8 @@ These pages summarize the available data and describe how to get access.  **Data
 
 There is also a [more detailed dashboard with lists of projects, publications, and more.](https://covid.cd2h.org/dashboard/exploration#projects)
 
-For additional training support, tutorials can be found here:  [https://unite.nih.gov/workspace/slate/app/training](https://unite.nih.gov/workspace/slate/app/training)
+For additional training support, tutorials can be found here:
+<https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
 
 
@@ -492,7 +493,7 @@ N3C uses Google Drive and Google Groups for storage of communications, recording
 In order to ensure that you are receiving all relative N3C communications it is important to enter your Google ID when onboarding.
 Your address is automatically added to the N3C-all hands Google group which will allow access to N3C shared drives.
 Each Domain Team has a Google Drive folder they can use to house agendas, meeting minutes, publication tracking, and other resources.
-If you do not have a Google account, the link to those instructions is [https://support.google.com/accounts/answer/27441?hl=en](https://support.google.com/accounts/answer/27441?hl=en).
+If you do not have a Google account, the link to those instructions is <https://support.google.com/accounts/answer/27441>.
 
 
 
@@ -506,7 +507,7 @@ Figure 4: Options set during registration include whether you want to access the
 
 N3C also has several Slack channels available that users can join.
 Slack is a quick and convenient communication method for teams and N3C users.
-You can request a Slack invitation by completing a three-question form at [https://bit.ly/n3c-request-slack](https://bit.ly/n3c-request-slack).
+You can request a Slack invitation by completing a three-question form at <https://bit.ly/n3c-request-slack>.
 There are channels that are specific to different teams as well as a general N3C channel.
 
 :::{.callout-note}

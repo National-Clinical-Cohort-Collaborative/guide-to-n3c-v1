@@ -69,11 +69,11 @@ Everyone with an N3C Data Enclave account has access to the tools and public [da
 There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave.
 For more information about the levels of data, see section [Description of Levels 1, 2, 3] ( From 'Getting & Managing Data Access' chapter).
 
-If an individual is not affiliated with an institution, they are termed a “citizen scientist”.   Citizen scientists are only eligible to access synthetic data (Level 1).
+If an individual is not affiliated with an institution, they are termed a "citizen scientist".   Citizen scientists are only eligible to access synthetic data (Level 1).
 This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.
 
 Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removal of protected health information (PHI) (Level 2).
-Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). (A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section '[The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html)’.)
+Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). (A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section '[The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html)'.)
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
 
@@ -148,7 +148,7 @@ Access to the Google Drive is conferred through membership in a Google Group cal
 You can onboard with your institutional address and add a Gmail as an alias for the purposes of document access.
 Before you begin onboarding, be sure that your Google Groups settings (if you have them at all) are configured to allow others to add you to their groups:
 
-1. Sign into your Google account of choice and go to [https://groups.google.com/my-groups](https://groups.google.com/my-groups) and click the settings gear in the top right then “global settings”
+1. Sign into your Google account of choice and go to [https://groups.google.com/my-groups](https://groups.google.com/my-groups) and click the settings gear in the top right then "global settings".
 
 !! Missing Figure !!
 
@@ -192,22 +192,22 @@ Once logged in, complete the required fields to create an account.
 
 
 Figure 1: Login options for registration.
-Many organizations participate in InCommon, a federated login network linking to your institution’s login.
+Many organizations participate in InCommon, a federated login network linking to your institution's login.
 Other users will need to link a Login.gov account to their email for use in registration and login.
 
 Once you know which pathway you will use to create an Enclave account there are other security measures that you need to complete.
 You will need to have an ORCID iD, complete NIH security training, and complete human subjects research training. [ORCiD](https://orcid.org/), which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
-The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the “Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher” course.
-The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).  (Click on the ‘Enter Public Training Portal’ button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
+The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
+The course can be accessed at [https://irtsectraining.nih.gov/public.aspx](https://irtsectraining.nih.gov/public.aspx).  (Click on the 'Enter Public Training Portal' button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
 
 You need to complete Human Subjects Research training that aligns with your institution's guidelines.
 You will need to provide the date of completion when submitting or joining a DUR.
 Overall, users will need to confirm if they use the InCommon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects research training.
 
-If you’ve already registered, you’ll see the option to update your profile
+If you've already registered, you'll see the option to update your profile
 
-Then click the “edit this profile” at the bottom
+Then click the "edit this profile" at the bottom
 
 
 
@@ -228,7 +228,7 @@ Whether you are a new or returning user, be sure to click both boxes
 
 
 For Google Drive, completing your onboarding profile with a Google-enabled account (whether a Gmail, Institutional email, or self-managed account) this update will automatically add your address to [n3c-allhands@ctsa.io](mailto:n3c-allhands@ctsa.io) Google Group which confers access to the N3C shared drive and is also used for low-volume communications.
-For your Google-enabled account (if different from your primary onboarding address) you may wish to change your subscription settings to “no email” so that you don’t get double notifications at your primary and Gmail accounts.
+For your Google-enabled account (if different from your primary onboarding address) you may wish to change your subscription settings to "no email" so that you don't get double notifications at your primary and Gmail accounts.
 
 
 
@@ -239,7 +239,7 @@ For your Google-enabled account (if different from your primary onboarding addre
 
 
 Most institutions offer Google-enabled accounts.
-Some institutions that don’t offer that, do allow individuals to set up free self-managed Google accounts using their existing work address.
+Some institutions that don't offer that, do allow individuals to set up free self-managed Google accounts using their existing work address.
 For instructions on how to do this, see [tislab.org/google-intro](http://tislab.org/google-intro)
 
 If you have any issues, please log a ticket at [covid.cd2h.org/support](http://covid.cd2h.org/support)
@@ -269,7 +269,7 @@ See [here](https://ncats.nih.gov/n3c/resources/data-access) for more information
 
 ### Project Lead vs Collaborators
 
-N3C projects must identify a ‘Project Lead’ as a key person on studies using the N3C Data Enclave.
+N3C projects must identify a 'Project Lead' as a key person on studies using the N3C Data Enclave.
 The Project Lead may be the Principal Investigator of the research project, but it may also be someone with a role that is similar to that of a Project Coordinator.
 The Project Lead provides overall guidance to the study and is the primary point of contact, linking, and communicating with all other players collaborating on the project.
 The Project Lead has responsibilities that can not be delegated to other team members.
@@ -316,7 +316,7 @@ Projects are renewed annually, per the Data Use Request (DUR).
    <td>Collaborator(s)
    </td>
    <td>Individual(s) who adds knowledge, expertise, and/or perspective that enhances the project.
-Depending on the level of data access requested, collaborators from other institutions must submit an IRB letter from their institution and follow their own institutions’ policies for human subjects research, as applicable.
+Depending on the level of data access requested, collaborators from other institutions must submit an IRB letter from their institution and follow their own institutions' policies for human subjects research, as applicable.
    </td>
   </tr>
   <tr>
@@ -328,7 +328,7 @@ Depending on the level of data access requested, collaborators from other instit
   <tr>
    <td>Subject Matter Expert (SME)
    </td>
-   <td>Individual who brings ‘specialized’ knowledge to the study design, implementation, and data interpretation.
+   <td>Individual who brings 'specialized' knowledge to the study design, implementation, and data interpretation.
 An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19 related study) a cancer epidemiologist or medical anthropologist.
    </td>
   </tr>
@@ -358,9 +358,9 @@ See Chapter [X](#publishing-and-sharing) for guidance on publishing and attribut
 As shown in Table X, an N3C investigation requires a team of individuals who brings together different skills, knowledge domains, and expertise.
 In this way, N3C studies naturally emphasize Team Science.
 
-‘Team Science’ is essentially collaborative research where studies are conducted by teams and groups (large and small) rather than individual investigators.
+'Team Science' is essentially collaborative research where studies are conducted by teams and groups (large and small) rather than individual investigators.
 Collaboration may be challenging depending on the clarity of the study design, the definition of roles and responsibilities of each member of the collaboration, the communication means and methods, and the respect among each of the collaborating members.
-While some researchers may find the ‘Team Science’ paradigm and approach challenging, collaborative research often leads to breakthroughs and outcomes that would be difficult for an individual researcher to achieve.
+While some researchers may find the 'Team Science' paradigm and approach challenging, collaborative research often leads to breakthroughs and outcomes that would be difficult for an individual researcher to achieve.
 
 The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science, _2015 https://pubmed.ncbi.nlm.nih.gov/26247083/) examined a number of factors that influence the function and success of team science.
 These include:
@@ -368,7 +368,7 @@ These include:
 
 
 * _<span style="text-decoration:underline;">Individual factors</span>_, such as how open team members are to collaboration, different ideas/approaches to conducting research (e.g., collaboration vs. individual), and individual communication and management styles.
-* _<span style="text-decoration:underline;">Institutional factors</span>_ including support for ‘team science’, such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
+* _<span style="text-decoration:underline;">Institutional factors</span>_ including support for 'team science', such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
 * _<span style="text-decoration:underline;">Group factors, or team dynamics</span>_.
   Bringing together individuals who are experts in their fields does not always translate into a well-organized, supportive, and clearly communicating group process.
   Collaborators, but especially Principal Investigators/Project Leads, are encouraged to be open to and understand the strengths and assets each member of the collaborative team brings to the project.
@@ -376,7 +376,7 @@ These include:
   This may be especially important for teams that are less experienced in working with one another, but well-established teams may want to revisit these points at the start and during a study.
   Having clear expectations of each collaborator's role and responsibilities at the beginning of the collaborative is highly recommended; this includes agreed-upon publication authorship for study outcomes.
 * _<span style="text-decoration:underline;">Infrastructure that underpins team science</span>_.
-  In today’s scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
+  In today's scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
   To do so effectively, these collaborative teams need reliable internet connectivity with equally reliable cybersecurity policies and support and space for local as well as distant meetings (e.g., Zoom, Teams) during all stages of the life of the study.
 
 
@@ -386,7 +386,7 @@ The N3C Data Enclave is built for multi-site collaboration and aims to bring tog
 Because N3C is multi-site, it can be difficult to collaborate with researchers of different backgrounds from different sites. [Domain Teams](https://covid.cd2h.org/domain-teams) exist to alleviate this difficulty.
 Some collaboration examples could be collecting pilot data for grant submission, sharing methodology and cohort logic, or learning how to use tools for large-scale data like machine learning.
 
-For example, let’s say your institution recently signed the DUA and you have some questions about the relationship between rurality and COVID treatments.
+For example, let's say your institution recently signed the DUA and you have some questions about the relationship between rurality and COVID treatments.
 When you look at the list of Domain Teams, you find that there is one focused on rural health.
 You can contact the Domain Team and attend the next meeting.
 At the meeting, you can find out whether your questions are already part of an existing project within the Domain Team, or if a new project should be created.
@@ -395,7 +395,7 @@ The N3C website provides a [list ](https://covid.cd2h.org/domain-teams)of existi
 Some examples of clinical Domain Teams are Acute Kidney Injury (AKI), Cardiovascular Disease, and Oncology.
 Examples of cross-cutting Domain Teams are Education and Training, Machine Learning, and Pharma-Commercial. (This Guide is a product of the Education and Training Domain Team.)
 
-If an existing Domain Team doesn’t cover your interests, you can request to create a new Domain Team [here](https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58).
+If an existing Domain Team doesn't cover your interests, you can request to create a new Domain Team [here](https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58).
 To start a Domain Team, you will need to identify one or more team leads responsible for facilitating project success, coordinating meetings and agendas, and being a resource for the team.
 Additional roles frequently contributing to Domain Team success are Subject Matter Experts or Clinicians, Informatics Leads, and Data Analysts.
 It is also advantageous for the team to have a Project Manager to assist with organization, helping team members onboard to N3C, and assisting in accessing and managing projects as described in Chapter [X](#getting-and-managing-data-access).
@@ -474,14 +474,14 @@ As the name suggests, this gives more granular navigation of several object-type
 Examples of object groupings are institutions, researchers, projects, and DURs.
 
 The object explorer can be helpful in finding information.
-For example, let’s say you want to know if a certain researcher is a lead or collaborator on any projects.
+For example, let's say you want to know if a certain researcher is a lead or collaborator on any projects.
 First, you can click on N3C Admin, then N3C Researchers.
 Next, type the name into the search bar and press enter.
 Navigate to the Results tab, click the name you are looking for, and from there you can navigate to the Research Projects tab.
 
 Another example could be to search for projects related to your scientific questions.
 Again, click on N3C Admin, then Research Projects.
-Next, you can type any keyword of interest in the search bar like “kidney.” Navigate to the Results tab, and you will see a list of projects that contain the keyword in the title or description.
+Next, you can type any keyword of interest in the search bar like "kidney". Navigate to the Results tab, and you will see a list of projects that contain the keyword in the title or description.
 Click on any of these results to view the full record.
 
 Google Drive and Slack

@@ -257,65 +257,43 @@ Although collaboration on projects is promoted and encouraged, individuals can w
 
 The process of developing and conducting a study using the N3C Data Enclave can be complex.
 The Principal Investigator/Project Lead and the study team will be interacting with multiple individuals, each with a specific role designed to create a sound methodology, yielding reliable and valuable outcomes and information.
-While these are common roles for N3C researchers, the projects do not require that all these roles be filled.  [see Domain Team section for information on how to find collaborators]  The following table (Table 2) identifies the common roles that are involved in developing and carrying out a study, along with typical expectations of each.
+While these are common roles for N3C researchers, the projects do not require that all these roles be filled.  [see Domain Team section for information on how to find collaborators]  This section identifies the common roles that are involved in developing and carrying out a study, along with typical expectations of each.
 
-<table>
-  <tr>
-   <td><strong>Role</strong>
-   </td>
-   <td><strong>Responsibilities</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Principal Investigator/Project Lead/Lead Investigator (PI/PL/LI)
-   </td>
-   <td>Point of contact (POC) for the management and integrity of the design, conduct, and reporting of the research project and for managing, monitoring, and ensuring the integrity of any collaborative relationships.
+#### Principal Investigator/Project Lead/Lead Investigator (PI/PL/LI)
+
+The PI is the point of contact (POC) for the management and integrity of the design, conduct, and reporting of the research project and for managing, monitoring, and ensuring the integrity of any collaborative relationships.
+
 NCATS considers the Lead Investigator as the person on the DUR account who agrees to uphold the following responsibilities:
-<p>
 
-    ·         Serve as the N3C contact person for questions, concerns, and requests to join the project.
-<p>
+* Serve as the N3C contact person for questions, concerns, and requests to join the project.
+* Serve as the individual responsible for assuring completion of the project.
+  Projects are renewed annually, per the Data Use Request (DUR).
+* Identify and/or approve requests for collaborators to join the approved project-specific DUR.
 
-    ·         Serve as the individual responsible for assuring completion of the project.
-Projects are renewed annually, per the Data Use Request (DUR).
-<p>
+#### Collaborator(s)
 
-    ·         Identify and/or approve requests for collaborators to join the approved project-specific DUR.
-   </td>
-  </tr>
-  <tr>
-   <td>Collaborator(s)
-   </td>
-   <td>Individual(s) who adds knowledge, expertise, and/or perspective that enhances the project.
-Depending on the level of data access requested, collaborators from other institutions must submit an IRB letter from their institution and follow their own institutions' policies for human subjects research, as applicable.
-   </td>
-  </tr>
-  <tr>
-   <td>Project Manager/Project Coordinator
-   </td>
-   <td>Individual who supports the PI/PL and study team, manages study-related documentation, facilitates communication within the team, etc.
-   </td>
-  </tr>
-  <tr>
-   <td>Subject Matter Expert (SME)
-   </td>
-   <td>Individual who brings 'specialized' knowledge to the study design, implementation, and data interpretation.
+These individuals add knowledge, expertise, and/or perspective that enhances the project.
+Depending on the level of data access requested,
+collaborators from other institutions must submit an IRB letter from their institution and
+follow their own institutions' policies for human subjects research, as applicable.
+
+#### Project Manager/Project Coordinator
+
+This individual supports the PI/PL and study team, manages study-related documentation, facilitates communication within the team, etc.
+
+#### Subject Matter Expert (SME)
+
+This individual brings 'specialized' knowledge to the study design, implementation, and data interpretation.
 An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19 related study) a cancer epidemiologist or medical anthropologist.
-   </td>
-  </tr>
-  <tr>
-   <td>Data Analyst
-   </td>
-   <td>Individual who uses the N3C Data Enclave to identify, extract, and prepare data for analyses.   They work closely with the study team to clarify the hypotheses and extract relevant data elements
-   </td>
-  </tr>
-  <tr>
-   <td>Statistician
-   </td>
-   <td>Collaborator with background in statistics and data sciences, often with a primary disciplinary background such as public health, epidemiology, and an area of medicine.
-   </td>
-  </tr>
-</table>
+
+#### Data Analyst
+
+This individual uses the N3C Data Enclave to identify, extract, and prepare data for analyses.
+They work closely with the study team to clarify the hypotheses and extract relevant data elements
+
+#### Statistician
+
+This collaborator has a background in statistics and data sciences, often with a primary disciplinary background such as public health, epidemiology, and an area of medicine.
 
 Table 2. N3C Projects: Common Roles and Expectations
 

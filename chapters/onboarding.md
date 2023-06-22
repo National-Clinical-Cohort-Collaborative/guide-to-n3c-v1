@@ -73,6 +73,70 @@ Researchers from institutions outside the U.S. are eligible to access synthetic 
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
 
+### Data Level 3
+
+* _Also known as_:
+  * Limited Data Set (LDS)
+
+* _Data Description_:
+  Patient data that retain the following protected health information:
+  * dates of service, and
+  * patient ZIP code.
+
+* _Eligible Users_:
+  * Researchers from U.S.-based institutions.
+
+* _Access Requirements_:
+  * N3C registration
+  * N3C Data Enclave account
+  * Data Use Agreement (DUA) executed with NCATS
+  * NIH IT training completion
+  * Approved Data Use Request (DUR)
+  * Human Subjects Research Protection training completion
+  * Local Human Research Protection Program IRB determination letter
+
+### Data Level 2
+
+* _Also known as_:
+  * De-identified Data Set
+
+* _Data Description_:
+  Patient data from the LDS with the following changes —
+  * Dates of service are algorithmically shifted to protect patient privacy.
+  * Patient ZIP codes are truncated to the first three digits or removed entirely if the ZIP code represents fewer than 20,000 individuals.
+
+* _Eligible Users_:
+  * Researchers from U.S.-based institutions
+  * Researchers from foreign institutions
+
+* _Access Requirements_:
+  * N3C registration
+  * N3C Data Enclave account
+  * DUA executed with NCATS
+  * NIH IT training completion
+  * Approved DUR
+  * Human Subjects Research Protection training completion
+
+### Data Level 1
+
+* _Also known as_:
+  * Synthetic Data Set
+
+* _Data Description_:
+  Data that are computationally derived from the LDS that resemble patient information statistically but are not actual patient data.
+
+* _Eligible Users_:
+  * Researchers from U.S.-based institutions
+  * Researchers from foreign institutions
+  * Citizen scientists
+
+* _Access Requirements_:
+  * N3C registration
+  * N3C Data Enclave account
+  * DUA executed with NCATS
+  * NIH IT training completion
+  * Approved DUR
+
 ## Registration {#sec-onboarding-registration}
 
 ### ORCiD; InCommon vs Login.gov

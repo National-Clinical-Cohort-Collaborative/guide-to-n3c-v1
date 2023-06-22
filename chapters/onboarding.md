@@ -63,18 +63,15 @@ There are several steps that need to be completed in order for a researcher or N
 
 ## Researcher Eligibility {#sec-onboarding-eligibility}
 
-Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave.
-Everyone with an Enclave account has access to the tools and public datasets that are available in the Enclave.
+Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave. Everyone with an N3C Data Enclave account has access to the tools and public [datasets](https://covid.cd2h.org/external-datasets) that are available in the Enclave.
 
-There are several levels of Electronic Health Record (EHR) data that are available within the Enclave. (For more information about the levels of data, see the section 'Description of Levels 1, 2, 3' in the 'Getting & Managing Data Access' chapter.
-LINK NEEDS TO BE ADDED HERE)
+There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave. For more information about the levels of data, see section [Description of Levels 1, 2, 3] ( From 'Getting & Managing Data Access' chapter).
 
-Citizen scientists are only eligible to access synthetic data (Level 1).
-This data is artificial but statistically comparable to, and computationally derived from, the original EHR data.
+If an individual is not affiliated with an institution, they are termed a “citizen scientist”.   Citizen scientists are only eligible to access synthetic data (Level 1).  This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.
 
-Researchers from foreign institutions are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removing protected health information (PHI) (Level 2).  (PHI includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA).)
+Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removal of protected health information (PHI) (Level 2). Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). (A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section '[The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html)’.)
 
-Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2) and patient data that includes dates of service and patient zip code (Level 3).  (The latter data set is referred to as a limited dataset because it contains only 2 of the 18 PHI elements.)
+Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
 
 ## Registration {#sec-onboarding-registration}
 

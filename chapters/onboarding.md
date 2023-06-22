@@ -42,20 +42,9 @@ csl: ../assets/csl/apa-7e.csl
 :::{.callout-note}
 This chapter is undergoing final edits, including formatting and cross-referencing.
 Edits are expected to complete by June 2023.
-:::
 
-:::{.callout-note}
-This chapter is being drafted in Google Docs at
+This chapter was drafted in Google Docs at
 <https://drive.google.com/drive/u/0/folders/1zOGR2rGGgr1lxP8mV5XmtkuxEZI_R7II>
-
-See a draft of the chapter outline at
-<https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/>
-:::
-
-:::{.callout-warning}
-At this point, any edits to this chapter should be made in Google Docs.
-The current Markdown is for testing only.
-It is NOT the source of truth (yet).
 :::
 
 The N3C has an extensive secure onboarding process due to the sensitivity of the data within the N3C Data Enclave.

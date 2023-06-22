@@ -156,7 +156,7 @@ Then click the following boxes.
 
 ![Modify Global Settings in Google Groups.](images/onboarding/fig-onboarding-020-google-groups-setting-2.png){#fig-onboarding-020-google-groups-setting-2 fig-alt="Modify Global Settings in Google Groups"}
 
-## Enclave Registration
+## Enclave Registration {#sec-onboarding-enclave}
 
 Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
 Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS - see [Data Use Agreements](#data-use-agreements) below for details.
@@ -220,7 +220,7 @@ For instructions on how to do this, see [tislab.org/google-intro](http://tislab.
 
 If you have any issues, please log a ticket at [covid.cd2h.org/support](http://covid.cd2h.org/support)
 
-## Data Use Agreements
+## Data Use Agreements {#sec-onboarding-dua}
 
 Any research using N3C data first requires a data use agreement.
 A data use agreement (DUA) establishes the permitted uses of the data in the N3C Data Enclave.
@@ -238,9 +238,9 @@ The [Institutional DUA form](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agre
 If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to <NCATSPartnerships@mail.nih.gov>.
 See <https://ncats.nih.gov/n3c/resources/data-access> for more information on access forms and resources.
 
-## Research Project Teams
+## Research Project Teams {#sec-onboarding-team}
 
-### Project Lead vs Collaborators
+### Project Lead vs Collaborators {#sec-onboarding-team-lead}
 
 N3C projects must identify a 'Project Lead' as a key person on studies using the N3C Data Enclave.
 The Project Lead may be the Principal Investigator of the research project, but it may also be someone with a role that is similar to that of a Project Coordinator.
@@ -253,13 +253,13 @@ Collaborators in a study are encouraged to request access to the Data Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.
 
-### Common roles and expectations (PIs, PMs, SMEs, Analysts, ...)
+### Common roles and expectations (PIs, PMs, SMEs, Analysts, ...) {#sec-onboarding-team-role}
 
 The process of developing and conducting a study using the N3C Data Enclave can be complex.
 The Principal Investigator/Project Lead and the study team will be interacting with multiple individuals, each with a specific role designed to create a sound methodology, yielding reliable and valuable outcomes and information.
 While these are common roles for N3C researchers, the projects do not require that all these roles be filled.  [see Domain Team section for information on how to find collaborators]  This section identifies the common roles that are involved in developing and carrying out a study, along with typical expectations of each.
 
-#### Principal Investigator/Project Lead/Lead Investigator (PI/PL/LI)
+#### Principal Investigator/Project Lead/Lead Investigator (PI/PL/LI) {#sec-onboarding-team-role-pi}
 
 The PI is the point of contact (POC) for the management and integrity of the design, conduct, and reporting of the research project and for managing, monitoring, and ensuring the integrity of any collaborative relationships.
 
@@ -270,28 +270,28 @@ NCATS considers the Lead Investigator as the person on the DUR account who agree
   Projects are renewed annually, per the Data Use Request (DUR).
 * Identify and/or approve requests for collaborators to join the approved project-specific DUR.
 
-#### Collaborator(s)
+#### Collaborators {#sec-onboarding-team-role-collaborators}
 
 These individuals add knowledge, expertise, and/or perspective that enhances the project.
 Depending on the level of data access requested,
 collaborators from other institutions must submit an IRB letter from their institution and
 follow their own institutions' policies for human subjects research, as applicable.
 
-#### Project Manager/Project Coordinator
+#### Project Manager/Project Coordinator {#sec-onboarding-team-role-pm}
 
 This individual supports the PI/PL and study team, manages study-related documentation, facilitates communication within the team, etc.
 
-#### Subject Matter Expert (SME)
+#### Subject Matter Expert (SME) {#sec-onboarding-team-role-sme}
 
 This individual brings 'specialized' knowledge to the study design, implementation, and data interpretation.
 An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19 related study) a cancer epidemiologist or medical anthropologist.
 
-#### Data Analyst
+#### Data Analyst {#sec-onboarding-team-role-analyst}
 
 This individual uses the N3C Data Enclave to identify, extract, and prepare data for analyses.
 They work closely with the study team to clarify the hypotheses and extract relevant data elements
 
-#### Statistician
+#### Statistician {#sec-onboarding-team-role-statistician}
 
 This collaborator has a background in statistics and data sciences, often with a primary disciplinary background such as public health, epidemiology, and an area of medicine.
 
@@ -300,7 +300,7 @@ Table 2. N3C Projects: Common Roles and Expectations
 On the topic of diverse teams, N3C encourages appropriate attribution of work, including for support roles in projects.
 See Chapter [X](#publishing-and-sharing) for guidance on publishing and attribution.
 
-#### Team Science
+### Team Science {#sec-onboarding-team-science}
 
 As shown in Table X, an N3C investigation requires a team of individuals who brings together different skills, knowledge domains, and expertise.
 In this way, N3C studies naturally emphasize Team Science.
@@ -324,7 +324,7 @@ These include:
   In today's scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
   To do so effectively, these collaborative teams need reliable internet connectivity with equally reliable cybersecurity policies and support and space for local as well as distant meetings (e.g., Zoom, Teams) during all stages of the life of the study.
 
-## Domain Teams
+## Domain Teams {#sec-onboarding-dts}
 
 The N3C Data Enclave is built for multi-site collaboration and aims to bring together researchers of different backgrounds with similar questions using Domain Teams.
 Because N3C is multi-site, it can be difficult to collaborate with researchers of different backgrounds from different sites. [Domain Teams](https://covid.cd2h.org/domain-teams) exist to alleviate this difficulty.
@@ -350,9 +350,7 @@ As a reminder, virtual meetings may not be recorded or screenshotted if they sho
 N3C-supplied resources support team science by supporting Domain Teams: each team is given a dedicated webpage where the time of the meetings and the lead(s) are posted, a Google Drive workspace, a Google Group mailing list, and a dedicated Slack channel.
 These resources are helpful for teams to post literature reviews, agendas, meeting recordings, or other relevant documents.
 
-## Browsing Researchers/Projects/Institutions
-
-### Object Explorer, Public Dashboard, Enclave Dashboard
+## Browsing Researchers/Projects/Institutions {#sec-onboarding-browsing}
 
 ![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
 
@@ -411,7 +409,9 @@ Again, click on N3C Admin, then Research Projects.
 Next, you can type any keyword of interest in the search bar like "kidney". Navigate to the Results tab, and you will see a list of projects that contain the keyword in the title or description.
 Click on any of these results to view the full record.
 
-Google Drive and Slack
+## Collaboration Tools {#sec-onboarding-tools}
+
+### Google Drive {#sec-onboarding-tools-drive}
 
 During the onboarding process there is the option to request access to the N3C Enclave and there is a process to request access to participate in N3C Workstreams.
 One of the options under workstreams is GSuites (Gmail) ID.
@@ -422,6 +422,8 @@ Each Domain Team has a Google Drive folder they can use to house agendas, meetin
 If you do not have a Google account, the link to those instructions is <https://support.google.com/accounts/answer/27441>.
 
 ![Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.](images/onboarding/fig-onboarding-090-google-drive-and-slack.png){#fig-onboarding-090-google-drive-and-slack fig-alt="Options set during registration"}
+
+### Slack {#sec-onboarding-tools-slack}
 
 N3C also has several Slack channels available that users can join.
 Slack is a quick and convenient communication method for teams and N3C users.

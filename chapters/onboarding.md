@@ -17,14 +17,20 @@ author:
   - name: Suzanne McCahan
     affiliation: Nemours Children's Health
     affiliation-url: https://www.nemours.org/pediatric-research/labservices/core/biomedical-research-informatics.html
-    # email: suzanne.mccahan@nemours.org
-    # orcid:
+    email: suzanne.mccahan@nemours.org
+    orcid: 0000-0003-4459-0949
 
   - name: Mary Helen Mays
-    affiliation: Universidad de Puerto Rico
+    affiliation: Hispanic Alliance for Clinical and Translational Research
     affiliation-url: https://alliance.rcm.upr.edu/cores/biomedical-informatics-core
-    # email:
-    # orcid:
+    email: Mary.Mays@upr.edu
+    orcid: 0000-0001-6624-2238
+
+  - name: Julie A McMurry
+    affiliation: University of Colorado, Anschutz Medical Campus
+    affiliation-url: https://tislab.org/
+    email: julie.mcmurry@cuanschutz.edu
+    orcid: 0000-0002-9353-5498
 
 csl: ../assets/csl/apa-7e.csl
 ---

@@ -186,7 +186,7 @@ You will need to have an ORCID iD, complete NIH security training, and complete 
 !! _Is something missing.  It seemed to jump._ !!
 
 The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
-The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the 'Enter Public Training Portal' button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
+The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the "Enter Public Training Portal" button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
 
 You need to complete Human Subjects Research training that aligns with your institution's guidelines.
 You will need to provide the date of completion when submitting or joining a DUR.
@@ -235,7 +235,7 @@ See <https://ncats.nih.gov/n3c/resources/data-access> for more information on ac
 
 ### Project Lead vs Collaborators {#sec-onboarding-team-lead}
 
-N3C projects must identify a 'Project Lead' as a key person on studies using the N3C Data Enclave.
+N3C projects must identify a "Project Lead" as a key person on studies using the N3C Data Enclave.
 The Project Lead may be the Principal Investigator of the research project, but it may also be someone with a role that is similar to that of a Project Coordinator.
 The Project Lead provides overall guidance to the study and is the primary point of contact, linking, and communicating with all other players collaborating on the project.
 The Project Lead has responsibilities that can not be delegated to other team members.
@@ -276,7 +276,7 @@ This individual supports the PI/PL and study team, manages study-related documen
 
 #### Subject Matter Expert (SME) {#sec-onboarding-team-role-sme}
 
-This individual brings 'specialized' knowledge to the study design, implementation, and data interpretation.
+This individual brings "specialized" knowledge to the study design, implementation, and data interpretation.
 An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19 related study) a cancer epidemiologist or medical anthropologist.
 
 #### Data Analyst {#sec-onboarding-team-role-analyst}
@@ -298,15 +298,15 @@ See @sec-publishing for guidance on publishing and attribution.
 As described above in @sec-onboarding-team-role, an N3C investigation requires a team of individuals who brings together different skills, knowledge domains, and expertise.
 In this way, N3C studies naturally emphasize Team Science.
 
-'Team Science' is essentially collaborative research where studies are conducted by teams and groups (large and small) rather than individual investigators.
+"Team Science" is essentially collaborative research where studies are conducted by teams and groups (large and small) rather than individual investigators.
 Collaboration may be challenging depending on the clarity of the study design, the definition of roles and responsibilities of each member of the collaboration, the communication means and methods, and the respect among each of the collaborating members.
-While some researchers may find the 'Team Science' paradigm and approach challenging, collaborative research often leads to breakthroughs and outcomes that would be difficult for an individual researcher to achieve.
+While some researchers may find the Team Science paradigm and approach challenging, collaborative research often leads to breakthroughs and outcomes that would be difficult for an individual researcher to achieve.
 
 The Committee on the Science of Team Science of the National Research Council (Cooke and Hilton, Eds., _Enhancing the Science of Team Science_, 2015 <https://pubmed.ncbi.nlm.nih.gov/26247083/>) examined a number of factors that influence the function and success of team science.
 These include:
 
 * _Individual factors_, such as how open team members are to collaboration, different ideas/approaches to conducting research (e.g., collaboration vs. individual), and individual communication and management styles.
-* _Institutional factors_ including support for 'team science', such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
+* _Institutional factors_ including support for team science, such as geographic distance among institutions or individual researchers/team members, and institutional policies that support collaborative research (e.g., tenure/promotion policies).
 * _Group factors, or team dynamics_.
   Bringing together individuals who are experts in their fields does not always translate into a well-organized, supportive, and clearly communicating group process.
   Collaborators, but especially Principal Investigators/Project Leads, are encouraged to be open to and understand the strengths and assets each member of the collaborative team brings to the project.
@@ -328,7 +328,7 @@ When you look at the list of Domain Teams, you find that there is one focused on
 You can contact the Domain Team and attend the next meeting.
 At the meeting, you can find out whether your questions are already part of an existing project within the Domain Team, or if a new project should be created.
 
-The N3C website provides a [list](https://covid.cd2h.org/domain-teams)of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
+The N3C website provides a [list](https://covid.cd2h.org/domain-teams) of existing Domain Teams, grouped into clinical and cross-cutting Domain Teams.
 Some examples of clinical Domain Teams are Acute Kidney Injury (AKI), Cardiovascular Disease, and Oncology.
 Examples of cross-cutting Domain Teams are Education and Training, Machine Learning, and Pharma-Commercial. (This Guide is a product of the Education and Training Domain Team.)
 

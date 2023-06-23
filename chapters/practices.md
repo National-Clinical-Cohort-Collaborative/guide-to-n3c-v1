@@ -75,12 +75,12 @@ It is NOT the source of truth (yet).
 ## Overview
 
 While analyses within N3C fall under the general category of "Real World Data Analysis", (RWD analysis) there is no single design or practice that applies to every study.
-All the same, important data considerations can guide one’s analytic plans and decisions, which effectively become the pivot-points in any RWD investigation’s research lifecycle.
+All the same, important data considerations can guide one's analytic plans and decisions, which effectively become the pivot-points in any RWD investigation's research lifecycle.
 In this chapter, we will provide suggestions and pointers to resources that we hope will help the analyst in the majority of studies, and guide the content of discussions with their domain expert collaborators.
 Recognizing that any analyst may come from one of a wide range of backgrounds, we have structured the chapter to be self-guiding.
-Data scientists with  backgrounds in machine learning and computer science will benefit from  studying principles entailed in ‘RWD’ biomedical methods in and beyond the confines of N3C (and should look at the [Machine Learning chapter](#MachineLearning).
+Data scientists with  backgrounds in machine learning and computer science will benefit from  studying principles entailed in RWD biomedical methods in and beyond the confines of N3C (and should look at the [Machine Learning chapter](#MachineLearning)).
 Researchers trained in traditional data analysis from schools of epidemiology, biostatistics, or econometrics will be reminded of concerns such as  over-reliance on overly-simplified parametric models and pitfalls of overfitting.
-All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in scope of such findings’ generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
+All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in scope of such findings' generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource – noting that the resource itself was being actively refined as more was learned from applying methods to its data.
 Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods))) group established a number of principles (https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups  Our goals were to:
@@ -103,7 +103,7 @@ Important practices contributing to reproducible, reliable work include:
 
 
     **_Making methods and code findable and accessible (FA)._**
-    N3C’s key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
+    N3C's key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
 Accessibility currently depends on perusing titles and on a short taxonomy of artifact types ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code) . [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) support a folksonomy of tags of both domain and methodological bents.
 
 
@@ -121,7 +121,7 @@ The [Logic Liaison Templates](#LogicLiaisonTemplates), though, provide excellent
 
     **_Building on the experience across and within networks._**
     Outside N3C, the experience of OHDSI, in particular, will be referenced below.
-    Within N3C, discussions and work within Domain Teams enriched by individuals’ experiences in a wide variety of studies and research configurations.
+    Within N3C, discussions and work within Domain Teams enriched by individuals' experiences in a wide variety of studies and research configurations.
 
 
     **_Anticipate analytic problems before they arise._**
@@ -147,7 +147,7 @@ The high-level sequence of research below is based on experience in the Enclave 
 
 Figure image-010-researchlifecycle.png.
 The standard project-management life cycle, applied to research, from project start ("Development") to closure.
-From [All Children’s Hospital.] ([https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle)<span style="text-decoration:underline;">)</span>
+From [All Children's Hospital.] ([https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle)<span style="text-decoration:underline;">)</span>
 
 Part of articulating an answerable research question is tackling an analysis as a project, which means  following good [research-project management practices](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).
 The general project management phases defined by the [Project Management Institute](https://pmi.org) (project initiation, planning, execution, monitoring, closure)are shown in the Fig [xxx](image-010-researchlifecycle.png).
@@ -168,7 +168,7 @@ In the [Protocol Pad Detailed Instructions]([https://unite.nih.gov/workspace/not
     In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
     This process of research is also called by Stoudt and colleagues, the "data analysis workflow." [[ref](https://pubmed.ncbi.nlm.nih.gov/33735208/)]
 
-{Add a short paragraph here about what a protocol is, and if it’s different than the steps outlined above (I assume not, just specialized for RWD analyses)}
+{Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
 
 N3C has developed a tool to facilitate the development of protocols known as the [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).: In the following sections we walk through recommended components of a protocol.
 Briefly, they are:  Protocol Design, Development, and Completion:
@@ -213,7 +213,7 @@ Briefly, they are:  Protocol Design, Development, and Completion:
 
 
 Figure image-015-ProtocolPad.png.
-Home page for a researcher’s protocols.
+Home page for a researcher's protocols.
 The Protocol Design, Development, and Completion sections are accessible on the left.
 
 N3C Teams Addressing Good Research Practices
@@ -340,7 +340,7 @@ Data scientists and others work to understand how the data are modeled to best e
 Other common roles include leadership and project management–see Chapter [X](#onboarding-team-science) for a more thorough review of team science.
 
 **Documentation/Lab Notebook**.
-A "lab notebook" is an important part of any researchers’ repertoire, as a place to document thoughts, experiments, and results.
+A "lab notebook" is an important part of any researchers' repertoire, as a place to document thoughts, experiments, and results.
 The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view, while others must stay in the Enclave (see Chapter[X](#publishing-and-sharing) for details on what may be exported from the Enclave and how).
 This duality can lead to challenges in documentation and collaboration. [Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis (see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
 Whether ProtocolPad is used or not, each analyst should maintain a lab notebook.
@@ -356,7 +356,7 @@ See Chapter [X](#toolsnstuff) for more details.
 **Which tools are best for what**.
 The Knowledge Store, in particular, provides some analytic tools for use.
 Because of security concerns, not all code is sharable.
-Data partner IDs and patient IDs present in such code in one’s project should not be shared across projects or Data Use Requests (DURs), meaning that even programming code must be de-identified and templatized before being released to the Knowledge Store for general use or posted to repositories like GitHub for external review.
+Data partner IDs and patient IDs present in such code in one's project should not be shared across projects or Data Use Requests (DURs), meaning that even programming code must be de-identified and templatized before being released to the Knowledge Store for general use or posted to repositories like GitHub for external review.
 Chapter [X](#publications) describes processes and requirements for safe sharing of both results and code.
 
 **Take-away**
@@ -381,7 +381,7 @@ Ensure that the question being addressed is explicit.
 The research question is a natural-language expression of what the protocol is about.
 Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research, the "research question" takes a different form, and should be expressed as the question someone in the domain, or affected by the domain, might ask.
 
-It’s important to know what questions can and can_not_ be answered in the Enclave.
+It's important to know what questions can and can_not_ be answered in the Enclave.
 
 **Questions you cannot answer in N3C**.
 While the data are rich and the applications are broad, there are still questions that cannot be adequately answered in the Enclave.
@@ -389,7 +389,7 @@ We list that caveat, along with others, below:
 
 
 
-* Beware making estimates or predictions that rely on a random sample of ‘controls’ (as those in N3C are [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
+* Beware making estimates or predictions that rely on a random sample of "controls" (as those in N3C are [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
     * The COVID phenotype data partners use to generate N3C data match patients using 2 controls:1 case based on age, sex, race, and ethnicity
     * Therefore, age, sex, race, or ethnicity should never be features of a prediction model between COVID positive _and COVID negative patients_
 * Because each COVID-19 case is matched with two others, data come in with ostensible controls for each COVID-19 case, no population-targeted inference (prevalence or incidence) can be made, even with Level 3 data.
@@ -436,7 +436,7 @@ This is an early step in promoting replicable and clinically valuable work.
 Stoudt and colleagues identify 3 phases of a data-only research protocol: Explore, Refine, Produce.[cite] N3C provides many tools to support a protocol.
 By linking the resulting artifacts together, we aim to develop a self-documenting, computable protocol.
 We list here the basic steps in articulating—and specifying attributes of—a protocol, as part of the "Explore"  step.  (Note that the term "protocol" is used here in a more general way than in biology, for instance.)  This step is focused on the initial "natural language" view of the protocol; the code-based view comes in the next section.
-While the checklists seek text descriptions, we recommend **_linking the text as soon as possible to objects and datasets used in the Enclave_**, track what resources you’ve used, be specific with your team members, and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
+While the checklists seek text descriptions, we recommend **_linking the text as soon as possible to objects and datasets used in the Enclave_**, track what resources you've used, be specific with your team members, and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
 
 **Causal model positing before analyzing**.
 Create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.
@@ -619,7 +619,7 @@ Figure [xxx](#Figure image-022-BuildingBlock.png) shows the building blocks and 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
 Figure image-022-BuildingBlock.png.
-Relating data scientist’s work to that of the analyst.
+Relating data scientist's work to that of the analyst.
 
 One key role of the data scientist is to create datasets from the raw material of the EHR (concept ids, and such) engineering variables, used by the analyst in the analysis, shown as toy building blocks on the left.
 Terms are defined in the text.
@@ -627,7 +627,7 @@ This work of the data scientist is included in the set of tasks generally called
 _The importance of data cleaning and appropriate preprocessing cannot be overestimated, and often requires clinical domain expertise in addition to sound data science practices, such as a well-reasoned approach to missing values (see Section 2.3) and normalization of values in the context of certain machine learning algorithms.
 
 The simplest building block on the left of [Figure xxx](Figure image-040-BuildingBlock.png) is the [_concept id](_Understanding The Data#Vocabulary Concepts), the raw data of the OMOP tables.
-Next comes the [_concept set](_Understanding The Data#Concept Sets), which creates sets of concept ids that are semantically synonymous _for the purposes of this study’s Research Question_.
+Next comes the [_concept set](_Understanding The Data#Concept Sets), which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
 The next 4 columns all fall under the general category of [_derived variable](_Analyzing the Data#Using the Knowledge Store); the different columns suggest different roles.
 So a _Formula_ may be independent of the context of use (e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus)), regardless of the research question.
 A _Transformation_ may be more complex, such as "[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)",[ref] to indicate a hospital admission, or "[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)", used in defining a Covid-19 hospitalization.
@@ -643,7 +643,7 @@ Many DURs involve a number of related protocols; the steps laid out in that chap
 There are a variety of templates in the Knowledge Store that are produced by the Logic Liaisons and can facilitate this decision making process.
 The [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) and [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) templates provide a method by which researchers can assess data quality and density prior to starting variable generation.
 Depending on the cohort of interest (COVID-19+ or All Patients) and/or outcome of interest, it may be desirable to eliminate particular sites based on their lack of sufficient data in the corresponding domain.
-There are also two additional Logic Liaison data quality templates that allow researchers to assess the quality of the variables they’ve created using the OMOP data tables.
+There are also two additional Logic Liaison data quality templates that allow researchers to assess the quality of the variables they've created using the OMOP data tables.
 While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) template provides an all or nothing indication of fact presence by site, the [Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) template calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) and creates heatmaps to visualize the metrics.
 
 This back-and-forth work ("pre-processing"; "data cleaning") points to the fact that developing the final protocol entails a series of decisions.
@@ -1117,7 +1117,7 @@ The key tools for analysts are Contour analyses, [code workbooks](https://unite.
 Training is available for the Spark languages, [PySpark](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=21) and [SparkR](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=20).
 Examples of code workbooks and Contour analyses can be found in the [N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf).
 While the Enclave is a powerful environment, analysts have learned many "tricks of the trade" to do better work, such as dealing with [slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14).
-One issue is preference for code repositories as more ‘native’ to the Foundry (N3C environment) vs the benefits of code workbooks (which rely upon  R or leverage  data visualization steps, or DAG-viz of workflows) returning dataframes for R/Python (e.g., N3Community Note [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus)).
+One issue is preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks (which rely upon  R or leverage  data visualization steps, or DAG-viz of workflows) returning dataframes for R/Python (e.g., N3Community Note [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus)).
 
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML), points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability, to the special topics appendix chapter [here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).
@@ -1199,7 +1199,7 @@ Citation, description, link to Code Workbook
 
 *Based on Wang and colleagues[cite]
 
-While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it’s notable that what data are considered ‘missing’ depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin’s Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so.[cite] At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus), and variability of missingness across sites considered.
 Data imputation should be considered if there is a reason to believe that systematic missingness is independent of unknown extraneous factors not captured by the data and imputation can be safely predicated upon knowledge of other captured variables that fully or adequately explain missingness.
 
@@ -1340,7 +1340,7 @@ If a new protocol is suggested by the results of this run, it should be initiali
 A responsibility of any analyst is the extent to which quantities important to the question at hand may or may not be available or measured among the data at hand.
 Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts) to not be present to a degree that it impacts quantitative findings such that conclusions (e.g., "treatment reduces risk of outcome") actually change.
 It should be noted, however, that this assumption is – by dint of involving _unmeasured_ quantities/variables that are confounding a targeted association/effect – not verifiable from available data.
-Thus, there’s effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_; an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions (e.g., there exists an unmeasured confounding effect _U _that entails an impact of confounding of a degree deemed possible by a domain expert); the ‘plausibility’ of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
+Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_; an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions (e.g., there exists an unmeasured confounding effect _U _that entails an impact of confounding of a degree deemed possible by a domain expert); the "plausibility" of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
 We return to the broader topic of sensitivity analysis below.
 
 Sensitivity analysis ideally takes place after the final analysis, so one does not redo the analysis, taking the insight from sensitivity analysis into account.
@@ -1448,7 +1448,7 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
   Focuses on the Code Workbooks.
 
 
-    _Reproducible._ Having another researcher execute the Protocol is difficult only because anyone working with a project’s data must be on that project’s DUR.
+    _Reproducible._ Having another researcher execute the Protocol is difficult only because anyone working with a project's data must be on that project's DUR.
     This reproducibility entails a sort of code review, within the Project Team, however.
 
 
@@ -1500,7 +1500,7 @@ Suite of data partner heterogeneity assessment software tools
 
 	[GitHub of N3C LLs code](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
 
-	Carlos Saez’s [GitHub](#https://github.com/carlosjsaez)
+	Carlos Saez's [GitHub](#https://github.com/carlosjsaez)
 
 Suite of data quality assessment software tools
 

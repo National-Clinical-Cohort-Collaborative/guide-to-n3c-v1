@@ -371,8 +371,16 @@ Lastly, File Admin Ticket is where you can submit a ticket if you need help with
 In the Data Analysis and Result Export Resources section of the Enclave homepage, you can find, concept set browser, download dashboard, and the data access overview.
 Chapters [-@sec-understanding] and [-@sec-tools] discuss the effective use of the data and public resources.
 Other features available in this section are the data catalog, knowledge store, Release Notes, and FIle Technical Ticket.
-The Concept Set Browser is where you do just that, browse the concept sets or value sets that have been defined by N3C researchers.  **Data Access Overview** is where users can go if they are unsure where to find relevant data for research.
-These pages summarize the available data and describe how to get access.  **Data Catalog** has the most commonly accessed data sets and can be browsed including the LDS and De-Identified data tables, and externally-sourced data sets such as US Census data.  **Knowledge Store** has the N3C community-generated code workbook templates and derived datasets from LDS and De-Identified data tables to jump-start your research.  **Download Dashboard** has all the results including summary tables and futures and you can also submit and manage data requests from this tab as well.  **Release Notes** has the pertinent information and known data issues about N3C LDS and De-Identified data releases.  **File Technical Ticket** is where you can submit a ticket for support within the Enclave.
+
+The Concept Set Browser is where you do just that, browse the concept sets or value sets that have been defined by N3C researchers.
+
+* _Data Access Overview_ is where users can go if they are unsure where to find relevant data for research.
+  These pages summarize the available data and describe how to get access.
+* _Data Catalog_ has the most commonly accessed data sets and can be browsed including the LDS and De-Identified data tables, and externally-sourced data sets such as US Census data.
+* _Knowledge Store_ has the N3C community-generated code workbook templates and derived datasets from LDS and De-Identified data tables to jump-start your research.
+* _Download Dashboard_ has all the results including summary tables and futures and you can also submit and manage data requests from this tab as well.
+* _Release Notes_ has the pertinent information and known data issues about N3C LDS and De-Identified data releases.
+* _File Technical Ticket_ is where you can submit a ticket for support within the Enclave.
 
 [Here is a public-facing list of N3C projects including a search box.](https://covid.cd2h.org/projects)
 

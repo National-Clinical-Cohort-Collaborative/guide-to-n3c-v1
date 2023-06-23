@@ -1316,26 +1316,32 @@ The core of the chapter is the following graphic.
 
 Suggestions for demonstrating these attributes in the Enclave are as follows:
 
-    _Repeatable._ Re-execute the Final Protocol.
+1. _Repeatable_:
+  Re-execute the Final Protocol.
   Focuses on the Code Workbooks.
 
-    _Reproducible._ Having another researcher execute the Protocol is difficult only because anyone working with a project's data must be on that project's DUR.
-    This reproducibility entails a sort of code review, within the Project Team, however.
+1. _Reproducible_:
+  Having another researcher execute the Protocol is difficult only because anyone working with a project's data must be on that project's DUR.
+  This reproducibility entails a sort of code review, within the Project Team, however.
 
-    _Replicable._ Repeat the analysis with a later release of the Enclave data.
-    Alternatively, perform the analyses on different subsets of data partners.
-    This strategy is tricky, however, since the Final Protocol may have been developed, taking into account data peculiarities of specific sites.
+1. _Replicable_:
+  Repeat the analysis with a later release of the Enclave data.
+  Alternatively, perform the analyses on different subsets of data partners.
+  This strategy is tricky, however, since the Final Protocol may have been developed, taking into account data peculiarities of specific sites.
 
-    _Generalizable_: This attribute relates to generalizability to unseen data, both temporally and geographically and could be implemented, as well, with a later release of Enclave data.
+1. _Generalizable_:
+  This attribute relates to generalizability to unseen data, both temporally and geographically and could be implemented, as well, with a later release of Enclave data.
 
     Re-use of templatized code, shared via the Knowledge Store, provides some generalizability.
     However, with the Knowledge Store, the focus is on methodological re-use, not validation of specific research conclusions.
 
-    _Robust._ Sensitivity analysis is the primary strategy to establish robustness, as discussed above.
-    The Clinical Trials community (International Conference on Harmonization) are promoting the notion of "supplementary analysis".
+1. _Robust_:
+  Sensitivity analysis is the primary strategy to establish robustness, as discussed above.
+  The Clinical Trials community (International Conference on Harmonization) are promoting the notion of "supplementary analysis".
 
-    _Calibrated: _Applies to multiple-hypothesis analysis.
-    A novel approach to observational data is the LEGEND[cite] approach and the calibration of p values.[cite]
+1. _Calibrated_:
+  Applies to multiple-hypothesis analysis.
+  A novel approach to observational data is the LEGEND[cite] approach and the calibration of p values.[cite]
 
 ## Summary of Tools Available
 

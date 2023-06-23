@@ -56,13 +56,13 @@ Citizen scientists, researchers from foreign institutions, and researchers from 
 Everyone with an N3C Data Enclave account has access to the tools and public [datasets](https://covid.cd2h.org/external-datasets) that are available in the Enclave.
 
 There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave.
-For more information about the levels of data, see section [Description of Levels 1, 2, 3] ( From 'Getting & Managing Data Access' chapter).
+For more information about the levels of data, see @sec-access-background.
 
 If an individual is not affiliated with an institution, they are termed a "citizen scientist".   Citizen scientists are only eligible to access synthetic data (Level 1).
 This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.
 
 Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removal of protected health information (PHI) (Level 2).
-Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). (A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section '[The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html)'.)
+Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). ^[A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section [The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html).]
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
 
@@ -148,7 +148,7 @@ Then click the following boxes.
 ## Enclave Registration {#sec-onboarding-enclave}
 
 Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
-Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS - see [Data Use Agreements](#sec-onboarding-dua) below for details.
+Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --see [Data Use Agreements](#sec-onboarding-dua) below for details.
 There are four options you can use to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login. (See the image below for a screenshot of the login menu.)
 
 Most US universities participate in the InCommon authentication network; registering through this route enables you to use your existing Single Sign On to authenticate into the Enclave.
@@ -403,7 +403,8 @@ Navigate to the Results tab, click the name you are looking for, and from there 
 
 Another example could be to search for projects related to your scientific questions.
 Again, click on N3C Admin, then Research Projects.
-Next, you can type any keyword of interest in the search bar like "kidney". Navigate to the Results tab, and you will see a list of projects that contain the keyword in the title or description.
+Next, you can type any keyword of interest in the search bar like "kidney".
+Navigate to the Results tab, and you will see a list of projects that contain the keyword in the title or description.
 Click on any of these results to view the full record.
 
 ## Collaboration Tools {#sec-onboarding-tools}

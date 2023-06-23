@@ -229,86 +229,37 @@ Several tools provide checklists a researcher can follow to ensure their work wi
 The previously mentioned Protocol Pad, for example, guides researchers through protocol development, and is integrated with other N3C tooling to capture relationships to teams, researchers, and artifacts such as concept sets, analyses, and datasets. .
 STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more expansive methodological checklist. [Table 1](@tab-practices-map) below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
 
-Table 1. STaRT-RWE Table 1: Administrative Information*
 
-<table>
-  <tr>
-   <td><strong>Element</strong>
-   </td>
-   <td><strong>Sub Element</strong>
-   </td>
-   <td><strong>Source in the Enclave</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Protocol Title:
-<p>
-Objective Primary
-<p>
-Objective Secondary
-   </td>
-   <td>
-   </td>
-   <td>Manually entered
-   </td>
-  </tr>
-  <tr>
-   <td>Protocol registration:
-   </td>
-   <td>Registration identifier
-<p>
-Registration date
-<p>
-Registration site
-   </td>
-   <td>Supplied by Protocol Pad
-   </td>
-  </tr>
-  <tr>
-   <td>Protocol version
-   </td>
-   <td>Version number
-<p>
-Version date
-   </td>
-   <td>Supplied by Protocol Pad
-   </td>
-  </tr>
-  <tr>
-   <td>Funding:
-   </td>
-   <td>Grant identifier
-<p>
-Source
-   </td>
-   <td>Manually entered
-   </td>
-  </tr>
-  <tr>
-   <td>Data Use Agreement (DUA)
-   </td>
-   <td>DUA identifier
-<p>
-Data provider
-<p>
-Data provider contact for data use agreements
-   </td>
-   <td>Supplied by Protocol Pad
-   </td>
-  </tr>
-  <tr>
-   <td>Human Subjects/Ethics Approval
-   </td>
-   <td>Submission identifier
-<p>
-Name of human subjects/ethics approval committee
-   </td>
-   <td>Assumed by DUR
-   </td>
-  </tr>
-</table>
+<!-- https://www.tablesgenerator.com/markdown_tables -->
 
-*Based on Wang and colleagues[cite]
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Element                             | Sub Element                                                                          | Source in the Enclave    |
++=====================================+======================================================================================+==========================+
+| Protocol Title                      |                                                                                      | Manually entered         |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Objective Primary                   |                                                                                      | Manually entered         |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Objective Secondary                 |                                                                                      | Manually entered         |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Protocol registration               | - Registration identifier                                                            | Supplied by Protocol Pad |
+|                                     | - Registration date                                                                  |                          |
+|                                     | - Registration site                                                                  |                          |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Protocol version                    | - Version number                                                                     | Supplied by Protocol Pad |
+|                                     | - Version date                                                                       |                          |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Funding                             | - Grant identifier                                                                   | Manually entered         |
+|                                     | - Source                                                                             |                          |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Data Use Agreement (DUA)            | - DUA identifier                                                                     | Supplied by Protocol Pad |
+|                                     | - Data provider                                                                      |                          |
+|                                     | - Data provider contact for data use agreements                                      |                          |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+| Human Subjects/<br>Ethics Approval  | - Submission identifier                                                              | Assumed by DUR           |
+|                                     | - Name of human subjects/ethics approval committee                                   |                          |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+
+: STaRT-RWE: Administrative Information, based on Wang and colleagues [cite] {#tbl-practices-start tbl-colwidths="[30, 45, 25]"}
 
 Not everything you need to start, though, is included in this list.
 Here are a few additional things to consider:

@@ -415,14 +415,9 @@ Do note, however, that "documentation", the Extraction, Loading, and Transfer op
 
 The following simple example shows the power of a DAG in drawing attention to a specific confounder.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification..](images/practices/fig-practices-020-site-bias.png){#fig-practices-020-site-bias fig-alt="Effect of site (data partner)"}
 
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-020-SiteBias.png.
-Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification. [http://daggity.net](http://daggity.net)
-
-[Figure xxx]( image-020-SiteBias.png) shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of [Figure xxx](Figure image-022-BuildingBlock.png), above.
+@fig-practices-020-site-bias shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of [Figure xxx](Figure image-022-BuildingBlock.png), above.
 As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites. (For a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research, see Redelmeier et al.[cite])
 
 ### Describe PICOT Elements in Text
@@ -514,13 +509,8 @@ Link to various <a href="https://unite.nih.gov/workspace/module/view/latest/ri.w
 As suggested in Table 2, it is helpful to diagram the cohort definition.
 A well received model is that of [Schneeweiss and colleagues](https://pubmed.ncbi.nlm.nih.gov/30856654/).
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-019-SchneeweissGraphicalStudyDesign.png.
-Graphical study design for study with EHR–claims linked data.
-From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fwww.repeatinitiative.org%2Fuploads%2F1%2F0%2F8%2F4%2F108495483%2Fdesign_templates_2022.pptx).
+![Graphical study design for study with EHR–claims linked data.
+From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fwww.repeatinitiative.org%2Fuploads%2F1%2F0%2F8%2F4%2F108495483%2Fdesign_templates_2022.pptx).](images/practices/fig-practices-021-schneweiss-graphical-study-design.png){#fig-practices-021-schneweiss-graphical-study-design fig-alt="Graphical study design for study with EHR–claims linked data"}
 
 It is helpful to be precise in articulating the research question, so correct analytic methods will be chosen.
 Examples are differentiating classification from prediction from estimation, and association from temporal correlation from causal relationships.
@@ -561,26 +551,21 @@ Instantiate those core protocol elements.
 
 PICOT elements for analysis must be shaped from the raw data of the Enclave.
 The definition of a cohort is, in turn, based on key building blocks.
-Figure [xxx](#Figure image-022-BuildingBlock.png) shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.
+@fig-practices-022-building-block shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-022-BuildingBlock.png.
-Relating data scientist's work to that of the analyst.
+![Relating data scientist's work to that of the analyst.](images/practices/fig-practices-022-building-block.png){#fig-practices-022-building-block fig-alt="Relating data scientist's work to that of the analyst"}
 
 One key role of the data scientist is to create datasets from the raw material of the EHR (concept ids, and such) engineering variables, used by the analyst in the analysis, shown as toy building blocks on the left.
 Terms are defined in the text.
 This work of the data scientist is included in the set of tasks generally called _data cleaning.
 _The importance of data cleaning and appropriate preprocessing cannot be overestimated, and often requires clinical domain expertise in addition to sound data science practices, such as a well-reasoned approach to missing values (see Section 2.3) and normalization of values in the context of certain machine learning algorithms.
 
-The simplest building block on the left of [Figure xxx](Figure image-040-BuildingBlock.png) is the [_concept id](_Understanding The Data#Vocabulary Concepts), the raw data of the OMOP tables.
-Next comes the [_concept set](_Understanding The Data#Concept Sets), which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
+The simplest building block on the left of @fig-practices-022-building-block is the [_concept id_](Understanding The Data#Vocabulary Concepts), the raw data of the OMOP tables.
+Next comes the [_concept set_](Understanding The Data#Concept Sets), which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
 The next 4 columns all fall under the general category of [_derived variable](_Analyzing the Data#Using the Knowledge Store); the different columns suggest different roles.
 So a _Formula_ may be independent of the context of use (e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus)), regardless of the research question.
 A _Transformation_ may be more complex, such as "[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)",[ref] to indicate a hospital admission, or "[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)", used in defining a Covid-19 hospitalization.
-A [_Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct ("[covid-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)"; "[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)", "[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)"), while a _Cohort Definition_ gives the phenotype a [local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/) (e.g., in the past 5 years) or utilizes an algorithm (e.g., [long covid algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus)).
+A [Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct ("[covid-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)"; "[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)", "[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)"), while a _Cohort Definition_ gives the phenotype a [local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/) (e.g., in the past 5 years) or utilizes an algorithm (e.g., [long covid algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus)).
 
 The figure recognizes that the _role_ each construct plays depends on the context; "diabetes" could be the target cohort (are patients with diabetes at higher risk of developing Covid-19  sequelae, compared with those who do not?), the confounder (does a presumed treatment for Covid-19 have its effect weakened in the presence of diabetes?), the cause (are there specific outcomes for patients with diabetes?), or the outcome (are any patients with Covid-19 at risk for developing type 2 diabetes?).
 
@@ -1016,13 +1001,7 @@ If patients with the disease die, their data are missing.
 Imputation does not substitute for checking on mortality.
 While missingness patterns are difficult to verify with observational data alone, data _across_ sites—as we have in the Enclave—helps in assessing whether data are missing at random or not.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-050-MissingData.gif.
-Possible sources of missing data.
-Legend for icons is at the top of the figure (What…Mechanism..How Documented)
+![Possible sources of missing data.  Legend for icons is at the top of the figure (What…Mechanism..How Documented).](images/practices/fig-practices-050-missing-data.gif){#fig-practices-050-missing-data fig-alt="Possible sources of missing data"}
 
 ### Perform Initial Analysis
 
@@ -1032,7 +1011,9 @@ Perform the analysis efficiently, correctly, and reproducibly.
 
 #### Approach
 
-Analysis takes place in a specific _Environment._ The first phase is final data _Pre-Processing,_ which overlaps with the previous steps but is more focused on the specific research question within the DUR.
+Analysis takes place in a specific _Environment_.
+The first phase is final data _Pre-Processing_,
+which overlaps with the previous steps but is more focused on the specific research question within the DUR.
 The analysis itself must take into account issues that make challenging the generation of real-world evidence from the real-world data of the Enclave.
 There are _Recommended Methods_ for addressing those many issues.
 We also address the _External Data Sets_ you might use to supplement the EHR and other patient-specific data in the Enclave.
@@ -1053,18 +1034,14 @@ We defer other considerations for machine learning, including bias and generaliz
 
 #### Pre-Processing
 
-Pre-processing is, essentially, the decision-oriented process described around [Figure xxx](Figure image-022-BuildingBlock.png).
+Pre-processing is, essentially, the decision-oriented process described around @fig-practices-022-building-block.
 While machine learners can manipulate a training set, protocols covered by this chapter do not have that right.
 
 Instead, beyond the "cleaning of data", analysts must be concerned with selection bias and collider bias.[cite;cite] The latter is a causal-modeling concern that results from "selecting" patients whose records we have (as opposed to those whose information did not make it into our records).
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital—i.e., having data in the EHR—induces bias (magenta arrows) in the relationship between COVID and its sequela.](images/practices/fig-practices-060-collider-bias.png){#fig-practices-060-collider-bias fig-alt="Collider bias in N3C"}
 
-![drawing](https://docs.google.com/drawings/d/12345/export/png)Figure image-060-ColliderBias.png.
-Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital—i.e., having data in the EHR—induces bias (magenta arrows) in the relationship between COVID and its sequela.
-http://daggity.net
-
-[Figure xxx](image-060-ColliderBias.png) shows the potential for bias, just from limiting ourselves to (conditioning on) data in the EHR.
+@fig-practices-060-collider-bias shows the potential for bias, just from limiting ourselves to (conditioning on) data in the EHR.
 The situation could be aggravated by social determinants of health (SDoH) factors that confound the relationship between COVID and its sequela, influencing whether the patient comes to the hospital at all.
 
 Attempts by N3C analysts to address this selection bias include propensity score matching, inverse probability weighting, balanced weighting, and G-computation.
@@ -1294,9 +1271,9 @@ Lab Notebook
 
 *Based on Wang and colleagues[cite]
 
-## ❸ Protocol Completion
+## Protocol Completion ❸
 
-1. Gather Results; Publish
+### Gather Results; Publish
 
 While a [separate chapter](#Publishing and Sharing your Work ) is devoted to the process of publishing, here we would like to address _what_ should be published.
 
@@ -1335,12 +1312,7 @@ This entire chapter has been constructed to provide some guidance about performi
 The Book of OHDSI has a chapter on [Evidence Quality](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).
 The core of the chapter is the following graphic.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-070-OHDSIEvidenceQuality.png.
-OHDSI Scheme for Evidence Quality from the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).
+![OHDSI Scheme for Evidence Quality from the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).](images/practices/fig-practices-070-ohdsi-evidence-quality.png){#fig-practices-070-ohdsi-evidence-quality fig-alt="OHDSI Scheme for Evidence Quality"}
 
 Suggestions for demonstrating these attributes in the Enclave are as follows:
 

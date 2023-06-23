@@ -71,7 +71,6 @@ The current Markdown is for testing only.
 It is NOT the source of truth (yet).
 :::
 
-
 ## Overview
 
 While analyses within N3C fall under the general category of "Real World Data Analysis", (RWD analysis) there is no single design or practice that applies to every study.
@@ -85,9 +84,7 @@ All schools of thought could benefit from more careful consideration of how thei
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource – noting that the resource itself was being actively refined as more was learned from applying methods to its data.
 Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods))) group established a number of principles (https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups  Our goals were to:
 
-
     **_Make it easy to do the best analysis_.** Analysts from a wide range of projects have created a number of tools and resources (e.g., [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b), [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67), and [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) to work towards this goal.
-
 
     **_Encourage and disseminate best practice, but do not require specific approaches._** "Best practice" refers to guidelines, such as those outlined by the FDA[cite] and methodologists.[cite] While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
     ADMS, in particular, is a cross-cutting Domain Team that provides a forum for discussing analytic issues that are important across N3C.
@@ -97,37 +94,30 @@ Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://
 Most components of high-quality research lie with research teams themselves.
 Important practices contributing to reproducible, reliable work include:
 
-
     **_Ensuring validated or mature code_**.
     We do recommend peer review of code, as is suggested, prior to posting code workbooks to the Knowledge Store.
-
 
     **_Making methods and code findable and accessible (FA)._**
     N3C's key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
 Accessibility currently depends on perusing titles and on a short taxonomy of artifact types ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code) . [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) support a folksonomy of tags of both domain and methodological bents.
-
 
     **_Making clear both the intention of a method as well as how it works._**
     Documentation of code is left to the analyst.
   Given the diversity of tools and methods available in N3C, there is no recommended standard for documentation.
 The [Logic Liaison Templates](#LogicLiaisonTemplates), though, provide excellent models.
 
-
     **_Ensuring reproducibility and reuse (IR)._**
     [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
     We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates) that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
     Both Code Workbooks and Code Repositories can be exported as [Git repositories](#publishing-sharing-git-section) for hosting on GitHub or similar.
 
-
     **_Building on the experience across and within networks._**
     Outside N3C, the experience of OHDSI, in particular, will be referenced below.
     Within N3C, discussions and work within Domain Teams enriched by individuals' experiences in a wide variety of studies and research configurations.
 
-
     **_Anticipate analytic problems before they arise._**
     We encourage discussion of issues in advance of the analysis.
     For hypothesis-driven studies, we recommend finalizing the analytic protocol before outcomes are assessed.
-
 
     **_Ensure state-of-the-art analyses, appropriate to the real-world data of the Enclave._**
     We encourage conformance to methodology checklists.
@@ -135,13 +125,9 @@ The [Logic Liaison Templates](#LogicLiaisonTemplates), though, provide excellent
 
 The high-level sequence of research below is based on experience in the Enclave and addresses some of the "what" needs to be accomplished in a research project in parallel to the "how" of previous chapters.
 
-
 ## Protocols: A Framework for the Research Lifecycle
 
-
-
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -160,9 +146,7 @@ In human subjects research, it is the commitment of the researcher to how patien
 In Real World Data analysis, the meaning is a bit different.
 In the [Protocol Pad Detailed Instructions]([https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37)), we write
 
-
     In human subjects research, the protocol is what turns data into evidence: By following rules of methodology, we claim that the data we collect can support conclusions broader than the data set itself. "Protocol" can also refer to a specific set of steps that lead to reproducible results.
-
 
     Data-only research, like that in N3C, is different from prospective research, because we must make allowances for incomplete data, for selection bias, for access bias, for poor recording, for late recording, for differences in clinical practice across sites, for differences in documentation practice across sites...
     In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
@@ -173,12 +157,9 @@ In the [Protocol Pad Detailed Instructions]([https://unite.nih.gov/workspace/not
 N3C has developed a tool to facilitate the development of protocols known as the [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).: In the following sections we walk through recommended components of a protocol.
 Briefly, they are:  Protocol Design, Development, and Completion:
 
-
 ## Protocol Outline
 
 ❶ Protocol Design
-
-
 
 1. Articulate administrative information
 1. Articulate research question
@@ -186,8 +167,6 @@ Briefly, they are:  Protocol Design, Development, and Completion:
 1. Describe Patient, Intervention/Exposure, Comparator, Outcome (PI/ECO) elements in text
 
 ❷ Protocol Development
-
-
 
 1. Define PECOT elements as objects and data sets
 1. Assess data quality
@@ -199,18 +178,12 @@ Briefly, they are:  Protocol Design, Development, and Completion:
 
 ❸ Protocol Completion
 
-
-
 1. Gather results
 1. Publish
 
-
-
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image1.png "image_tooltip")
-
 
 Figure image-015-ProtocolPad.png.
 Home page for a researcher's protocols.
@@ -223,7 +196,6 @@ The [Data and Logic Liaisons](#data-logic-liaisons) provide general tools and ap
 The [Machine Learning & Pharmacoepidemiology](#domain-teams), besides working on specific projects, have generated protocols that can serve as models for analysis.
 Good Algorithmic Practice (GAP) Core Team; and various subject-matter domain teams).
 
-
 #### ❶ Protocol Design
 
 The Design is where the intention and information _about_ the protocol are placed.
@@ -231,14 +203,11 @@ A protocol design may be generated iteratively, as details are better honed and 
 By the point that the finally-established protocol is executed, the design should be fixed.
 At the very least, if substantive design modifications are to be implemented in research that is not strictly exploratory, we suggest documenting the reason for doing so.
 
-
-
 1. Articulate Administrative Information
 
 **Objective**
 
 Gathering administrative information, such as DUR number, team members, and research question ensures that all the necessary elements are established to successfully execute a publishable research project with a clear objective.
-
 
 #### Approach
 
@@ -247,7 +216,6 @@ The previously mentioned Protocol Pad, for example, guides researchers through p
 STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more expansive methodological checklist. [Table 1](@tab-practices-map) below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
 
 Table 1. STaRT-RWE Table 1: Administrative Information*
-
 
 <table>
   <tr>
@@ -326,7 +294,6 @@ Name of human subjects/ethics approval committee
   </tr>
 </table>
 
-
 *Based on Wang and colleagues[cite]
 
 Not everything you need to start, though, is included in this list.
@@ -366,15 +333,11 @@ Ideally, a project should have someone fulfilling the role of project manager, w
 Researchers should consider, ahead of time, documenting necessary project management information and assembling a team with the relevant expertise to maximize the likelihood of project success.
 Provided above, is a list of recommended information that should be documented, and additional organizational resources.
 
-
-
 1. Articulate Research Question
-
 
 #### Objective
 
 Ensure that the question being addressed is explicit.
-
 
 #### Research Question
 
@@ -386,8 +349,6 @@ It's important to know what questions can and can_not_ be answered in the Enclav
 **Questions you cannot answer in N3C**.
 While the data are rich and the applications are broad, there are still questions that cannot be adequately answered in the Enclave.
 We list that caveat, along with others, below:
-
-
 
 * Beware making estimates or predictions that rely on a random sample of "controls" (as those in N3C are [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
     * The COVID phenotype data partners use to generate N3C data match patients using 2 controls:1 case based on age, sex, race, and ethnicity
@@ -405,8 +366,6 @@ COVID positives and co-morbidities (or other covariates) that are associated wit
 **Special considerations**.
 There are other questions that may _potentially_ be answerable in N3C, depending on whether the required considerations are compatible with the research question of interest.
 
-
-
 * Outcomes involving overall mortality cannot be assessed using EHR data alone.
   Linkage with an external data source containing more complete mortality data is necessary.
   N3C contains ancillary patient-preserving record linkage ([PPRL](#https://www.google.com/url?q=https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/understanding.html%23sec-understanding-pprl&sa=D&source=docs&ust=1687184485271373&usg=AOvVaw3yxTTSJQgGJPvyjohe99Hn)) mortality data which is fully linked for a subset of data partners, and requires a separate DUR to access.
@@ -418,10 +377,7 @@ There are other questions that may _potentially_ be answerable in N3C, depending
 
 There are others, and we welcome suggestions to add to either list.
 
-
-
 1. Specify Protocol
-
 
 #### Objectives
 
@@ -429,7 +385,6 @@ Ensure your work is grounded in an initial "natural language" protocol that reso
 
 Gain early insights into how the natural language version of the protocol will be tethered to specific code and the existence of potential confounders.
 This is an early step in promoting replicable and clinically valuable work.
-
 
 #### Approach
 
@@ -446,10 +401,7 @@ Do note, however, that "documentation", the Extraction, Loading, and Transfer op
 
 The following simple example shows the power of a DAG in drawing attention to a specific confounder.
 
-
-
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -459,15 +411,11 @@ Effect of site (data partner). (a) Standard relationship between Cause (independ
 [Figure xxx]( image-020-SiteBias.png) shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of [Figure xxx](Figure image-022-BuildingBlock.png), above.
 As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites. (For a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research, see Redelmeier et al.[cite])
 
-
-
 1. Describe PICOT Elements in Text
-
 
 #### Objective
 
 Provide the core details for readers that define key elements of the study methodology.
-
 
 #### Approach
 
@@ -479,7 +427,6 @@ In associational, causal, and intervention studies, the following attributes are
 The DUR identifier should be supplied by the system.
 
 Table 2. STaRT-RWE Table 2 and Design (Based on Wang and colleagues)
-
 
 <table>
   <tr>
@@ -550,14 +497,10 @@ Link to various <a href="https://unite.nih.gov/workspace/module/view/latest/ri.w
   </tr>
 </table>
 
-
 As suggested in Table 2, it is helpful to diagram the cohort definition.
 A well received model is that of [Schneeweiss and colleagues](https://pubmed.ncbi.nlm.nih.gov/30856654/).
 
-
-
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -568,9 +511,7 @@ From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fww
 It is helpful to be precise in articulating the research question, so correct analytic methods will be chosen.
 Examples are differentiating classification from prediction from estimation, and association from temporal correlation from causal relationships.
 
-
 ## ❷ Protocol Development
-
 
 #### Objectives
 
@@ -579,7 +520,6 @@ Support team science during refinement and production of a detailed protocol.
 Provide an audit trail of how the protocol was developed.
 
 Support execution of the protocol.
-
 
 #### Approach
 
@@ -593,10 +533,7 @@ Even if the research is not performed with regulatory intent, choices made and a
 
 The remainder of this section lays out the elements of a data-only protocol.
 
-
-
 1. Define PICOT elements as objects and data sets
-
 
 #### Objectives
 
@@ -604,17 +541,13 @@ Provide computable definitions for core protocol PICOT elements.
 
 Instantiate those core protocol elements.
 
-
 #### Approach
 
 PICOT elements for analysis must be shaped from the raw data of the Enclave.
 The definition of a cohort is, in turn, based on key building blocks.
 Figure [xxx](#Figure image-022-BuildingBlock.png) shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.
 
-
-
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -653,7 +586,6 @@ These decisions should be documented in the lab notebook.
 The elements of this phase that go into the STaRT-RWE checklist are listed in Table 3.
 
 Table 3. STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION)*
-
 
 <table>
   <tr>
@@ -864,20 +796,15 @@ Other
   </tr>
 </table>
 
-
 *Based on Wang and colleagues[cite]
 
 [Chapter Analyzing The Data](#Analyzing The Data) discusses this process in more detail.
 
-
-
 1. Assess Data Quality
-
 
 #### Objective
 
 Address data quality issues through action that mitigates the risk of reaching erroneous conclusions.
-
 
 #### Approach
 
@@ -887,7 +814,6 @@ While providing an exhaustive list of the steps to this process is outside the s
 Many of the items in this list were borrowed from Sidky et al. which can be referred to for further detail.[cite]
 
 Table 4. Data Quality Issues
-
 
 <table>
   <tr>
@@ -1051,18 +977,13 @@ This also increases the likelihood of capturing medical history prior to, for ex
   </tr>
 </table>
 
-
 *For non-COVID-based datasets, beware of how controls are brought into the Enclave.
 
-
-
 1. Articulate missing-data plan
-
 
 #### Objective
 
 Prepare analysis to be generalizable despite missing data that ideally would be available.
-
 
 #### Approach
 
@@ -1079,10 +1000,7 @@ If patients with the disease die, their data are missing.
 Imputation does not substitute for checking on mortality.
 While missingness patterns are difficult to verify with observational data alone, data _across_ sites—as we have in the Enclave—helps in assessing whether data are missing at random or not.
 
-
-
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -1090,15 +1008,11 @@ Figure image-050-MissingData.gif.
 Possible sources of missing data.
 Legend for icons is at the top of the figure (What…Mechanism..How Documented)
 
-
-
 1. Perform Initial Analysis
-
 
 #### Objective
 
 Perform the analysis efficiently, correctly, and reproducibly.
-
 
 #### Approach
 
@@ -1106,7 +1020,6 @@ Analysis takes place in a specific _Environment._ The first phase is final data 
 The analysis itself must take into account issues that make challenging the generation of real-world evidence from the real-world data of the Enclave.
 There are _Recommended Methods_ for addressing those many issues.
 We also address the _External Data Sets_ you might use to supplement the EHR and other patient-specific data in the Enclave.
-
 
 #### Environment
 
@@ -1122,7 +1035,6 @@ One issue is preference for code repositories as more "native" to the Foundry (N
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML), points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability, to the special topics appendix chapter [here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).
 
-
 #### Pre-Processing
 
 Pre-processing is, essentially, the decision-oriented process described around [Figure xxx](Figure image-022-BuildingBlock.png).
@@ -1130,10 +1042,7 @@ While machine learners can manipulate a training set, protocols covered by this 
 
 Instead, beyond the "cleaning of data", analysts must be concerned with selection bias and collider bias.[cite;cite] The latter is a causal-modeling concern that results from "selecting" patients whose records we have (as opposed to those whose information did not make it into our records).
 
-
-
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)Figure image-060-ColliderBias.png.
 Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital—i.e., having data in the EHR—induces bias (magenta arrows) in the relationship between COVID and its sequela.
@@ -1147,7 +1056,6 @@ Attempts by N3C analysts to address this selection bias include propensity score
 The STaRT-RWE recommendations for the analysis phase itself are fewer; there are two phases: the primary analysis and the sensitivity analyses.
 
 Table 5. STaRT-RWE analysis specifications*
-
 
 <table>
   <tr>
@@ -1196,7 +1104,6 @@ Citation, description, link to Code Workbook
   </tr>
 </table>
 
-
 *Based on Wang and colleagues[cite]
 
 While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
@@ -1206,13 +1113,11 @@ Data imputation should be considered if there is a reason to believe that system
 It is during this final "data cleaning" phase that data quality issues arise that were not surfaced during the data ingestion, harmonization, or general-templating upstream work.
 Analysts are encouraged to report  "an Issue", notifying the N3C team of these issues.
 
-
 #### Recommended Methods for Data Analysis
 
 Study designs: See Franklin and colleagues for suggestions.[cite] The Book of OHDSI provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
 
 For associational/causal research questions, to address hypotheses and confounding, the FDA recommends a set of analyses that go beyond the typical regression types, yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
-
 
 <table>
   <tr>
@@ -1279,7 +1184,6 @@ Trimming
   </tr>
 </table>
 
-
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial.[cite]
 
@@ -1287,7 +1191,6 @@ PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-ou
 Standards of particular interest to analysts in N3C are Standards for [Data Integrity and Rigorous Analyses](#https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses), [Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),  [Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and [Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
 
 Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset.[cite]
-
 
 #### External Data Sets
 
@@ -1302,8 +1205,6 @@ Ways to use the external sets include census data[cite] and mix of spatial units
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to strengths and challenges of the specific code.
 Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
-
-
 1. Fairness and Bias
 
 Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed.
@@ -1312,8 +1213,6 @@ N3C has led a number of [seminars](https://docs.google.com/presentation/d/1yzi_2
 (Caton and Haas provide a comprehensive list of measures, corresponding to different notions of equity (e.g., statistical parity, impact disparity,[cite] equality of opportunity, calibration, and counterfactual fairness).[cite] A key point is that, as Kleinberg and colleagues showed, an analysis cannot satisfy all these notions simultaneously.[cite]
 
 Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)Competing risks, and time-dependent confounding.
-
-
 
 1. Iterate
 
@@ -1325,15 +1224,11 @@ As such, documenting what the "final analysis" consists of is crucial for believ
 
 Thus, running the algorithm blinded to the outcome or with a subset of data or with some surrogate for the final analysis is crucial to make sure that, in optimizing the analysis, you are not (consciously or not) tailoring the analysis to a pre-desired outcome.
 
-
-
 1. Commit to Final Run
 
 Once the elements are finalized, there is the "final run", which still requires diagnostics that should be documented, if not reported.
 The team should be clear that, when this run is initialized, variables will not be redesigned or errant data eliminated.
 If a new protocol is suggested by the results of this run, it should be initialized as its own, new protocol
-
-
 
 1. Perform Sensitivity Analysis
 
@@ -1349,7 +1244,6 @@ Sensitivity analyses are used to assess the robustness of the conclusions to unc
 Enabling such repeated analyses means automating a long chain of computing steps, so this strategy requires planning and engineering.
 
 Table 6. STaRT-RWE sensitivity analysis elements*
-
 
 <table>
   <tr>
@@ -1382,13 +1276,9 @@ Lab Notebook
   </tr>
 </table>
 
-
 *Based on Wang and colleagues[cite]
 
-
 ## ❸ Protocol Completion
-
-
 
 1. Gather Results; Publish
 
@@ -1409,7 +1299,6 @@ Fourth, consider generating [FHIR-based evidence resources](https://fevir.net/),
 
 As part of reporting on an analysis, be sure to identify the data release (number or date) on which the analysis was done and validated.
 
-
 ### Methodology Checklist
 
 As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher.
@@ -1425,16 +1314,12 @@ The most detailed is STaRT-RWE.[cite] Protocol Pad attempts to collect the infor
 Note that these are _reporting_ checklists, and not _research_ checklists.
 This entire chapter has been constructed to provide some guidance about performing the research itself.
 
-
 ### Evidence quality
 
 The Book of OHDSI has a chapter on [Evidence Quality](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).
 The core of the chapter is the following graphic.
 
-
-
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
@@ -1443,34 +1328,26 @@ OHDSI Scheme for Evidence Quality from the [Book of OHDSI](https://ohdsi.github.
 
 Suggestions for demonstrating these attributes in the Enclave are as follows:
 
-
     _Repeatable._ Re-execute the Final Protocol.
   Focuses on the Code Workbooks.
 
-
     _Reproducible._ Having another researcher execute the Protocol is difficult only because anyone working with a project's data must be on that project's DUR.
     This reproducibility entails a sort of code review, within the Project Team, however.
-
 
     _Replicable._ Repeat the analysis with a later release of the Enclave data.
     Alternatively, perform the analyses on different subsets of data partners.
     This strategy is tricky, however, since the Final Protocol may have been developed, taking into account data peculiarities of specific sites.
 
-
     _Generalizable_: This attribute relates to generalizability to unseen data, both temporally and geographically and could be implemented, as well, with a later release of Enclave data.
-
 
     Re-use of templatized code, shared via the Knowledge Store, provides some generalizability.
     However, with the Knowledge Store, the focus is on methodological re-use, not validation of specific research conclusions.
 
-
     _Robust._ Sensitivity analysis is the primary strategy to establish robustness, as discussed above.
     The Clinical Trials community (International Conference on Harmonization) are promoting the notion of "supplementary analysis".
 
-
     _Calibrated: _Applies to multiple-hypothesis analysis.
     A novel approach to observational data is the LEGEND[cite] approach and the calibration of p values.[cite]
-
 
 ## Summary of Tools Available
 

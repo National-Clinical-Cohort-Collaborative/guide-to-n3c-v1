@@ -149,13 +149,8 @@ The high-level sequence of research below is based on experience in the Enclave 
 
 ## Protocols: A Framework for the Research Lifecycle
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-Figure image-010-researchlifecycle.png.
-The standard project-management life cycle, applied to research, from project start ("Development") to closure.
-From [All Children's Hospital.] ([https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle)<span style="text-decoration:underline;">)</span>
+![The standard project-management life cycle, applied to research, from project start ("Development") to closure.
+Image from JHU [All Children's Hospital](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).](images/practices/fig-practices-010-research-lifecycle.png){#fig-practices-010-research-lifecycle fig-alt="The standard project-management life cycle"}
 
 Part of articulating an answerable research question is tackling an analysis as a project, which means  following good [research-project management practices](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).
 The general project management phases defined by the [Project Management Institute](https://pmi.org) (project initiation, planning, execution, monitoring, closure)are shown in the Fig [xxx](image-010-researchlifecycle.png).
@@ -168,11 +163,11 @@ In human subjects research, it is the commitment of the researcher to how patien
 In Real World Data analysis, the meaning is a bit different.
 In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37), we write
 
-    In human subjects research, the protocol is what turns data into evidence: By following rules of methodology, we claim that the data we collect can support conclusions broader than the data set itself. "Protocol" can also refer to a specific set of steps that lead to reproducible results.
+1. In human subjects research, the protocol is what turns data into evidence: By following rules of methodology, we claim that the data we collect can support conclusions broader than the data set itself. "Protocol" can also refer to a specific set of steps that lead to reproducible results.
 
-    Data-only research, like that in N3C, is different from prospective research, because we must make allowances for incomplete data, for selection bias, for access bias, for poor recording, for late recording, for differences in clinical practice across sites, for differences in documentation practice across sites...
-    In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
-    This process of research is also called by Stoudt and colleagues, the "data analysis workflow." [[ref](https://pubmed.ncbi.nlm.nih.gov/33735208/)]
+1. Data-only research, like that in N3C, is different from prospective research, because we must make allowances for incomplete data, for selection bias, for access bias, for poor recording, for late recording, for differences in clinical practice across sites, for differences in documentation practice across sites...
+  In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
+  This process of research is also called by Stoudt and colleagues, the "data analysis workflow." [ref](https://pubmed.ncbi.nlm.nih.gov/33735208/)
 
 {Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
 

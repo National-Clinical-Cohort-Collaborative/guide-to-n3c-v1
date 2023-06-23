@@ -144,7 +144,7 @@ Basic scientists use it for how a particular laboratory reagent should be used o
 In human subjects research, it is the commitment of the researcher to how patients, and their data, will be managed in a study.
 
 In Real World Data analysis, the meaning is a bit different.
-In the [Protocol Pad Detailed Instructions]([https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37)), we write
+In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37), we write
 
     In human subjects research, the protocol is what turns data into evidence: By following rules of methodology, we claim that the data we collect can support conclusions broader than the data set itself. "Protocol" can also refer to a specific set of steps that lead to reproducible results.
 
@@ -1303,7 +1303,7 @@ As part of reporting on an analysis, be sure to identify the data release (numbe
 
 As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher.
 Such submission is (1) considered best practice, (2) requested by publishers and (3) communicates that the author is aware of state-of-the-art practices in publication.
-Perhaps the best single repository of such checklists is the [Equator Network]([https://www.equator-network.org/reporting-guidelines/](https://www.equator-network.org/reporting-guidelines/)).
+Perhaps the best single repository of such checklists is the [Equator Network](https://www.equator-network.org/reporting-guidelines).
 
 Research in N3C falls under "Observational" research, so [STROBE](https://www.equator-network.org/wp-content/uploads/2015/10/STROBE_checklist_v4_combined.pdf) (Strengthening the Reporting of Observational Studies in Epidemiology[cite]) is the most generally appropriate.
 However, for EHR-based research, [RECORD](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885) (REporting of studies Conducted using Observational Routinely-collected health Data[cite]) is appropriate.

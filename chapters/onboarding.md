@@ -149,13 +149,22 @@ Then click the following boxes.
 
 Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
 Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --see [Data Use Agreements](#sec-onboarding-dua) below for details.
-There are four options you can use to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login. (See the image below for a screenshot of the login menu.)
+@fig-onboarding-030-login shows the four options to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login.
+
+![Login options for registration.
+Many organizations participate in InCommon, a federated login network linking to your institution's login.
+Other users will need to link a Login.gov account to their email for use in registration and login.
+](images/onboarding/fig-onboarding-030-login.png){#fig-onboarding-030-login fig-alt="Login options for registration"}
+
+### InCommon {#sec-onboarding-enclave-incommon}
 
 Most US universities participate in the InCommon authentication network; registering through this route enables you to use your existing Single Sign On to authenticate into the Enclave.
 There is a link on the registration page that leads to a list of organizations that participate in InCommon.
 You can also see it at <https://incommon.org/community-organizations/>.
 If your organization participates, you should use the InCommon option and your institution credentials.
 It can cause issues later if your institution does participate in InCommon, but you do not use this mechanism.
+
+### Login.gov {#sec-onboarding-enclave-logingov}
 
 If your institution does not participate with InCommon and you do not have an NIH or HHS login, you will need a Login.gov account.
 If you do not already have a Login.gov account associated with your institutional email address, click on the Login.gov option to create a Login.gov account.
@@ -169,17 +178,12 @@ When a new Login.gov account is created, you will be prompted to set up two-fact
 
 Once logged in, complete the required fields to create an account.
 
-![Login options for registration.
-Many organizations participate in InCommon, a federated login network linking to your institution's login.
-Other users will need to link a Login.gov account to their email for use in registration and login.
-](images/onboarding/fig-onboarding-030-login.png){#fig-onboarding-030-login fig-alt="Login options for registration"}
-
-Figure 1: Login options for registration.
-Many organizations participate in InCommon, a federated login network linking to your institution's login.
-Other users will need to link a Login.gov account to their email for use in registration and login.
-
 Once you know which pathway you will use to create an Enclave account there are other security measures that you need to complete.
 You will need to have an ORCID iD, complete NIH security training, and complete human subjects research training. [ORCiD](https://orcid.org/), which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
+
+## !missing heading & transition!
+
+!! _Is something missing.  It seemed to jump._ !!
 
 The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
 The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the 'Enter Public Training Portal' button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.

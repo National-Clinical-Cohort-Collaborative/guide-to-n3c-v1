@@ -148,7 +148,7 @@ Then click the following boxes.
 ## Enclave Registration {#sec-onboarding-enclave}
 
 Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
-Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS - see [Data Use Agreements](#data-use-agreements) below for details.
+Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS - see [Data Use Agreements](#sec-onboarding-dua) below for details.
 There are four options you can use to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login. (See the image below for a screenshot of the login menu.)
 
 Most US universities participate in the InCommon authentication network; registering through this route enables you to use your existing Single Sign On to authenticate into the Enclave.
@@ -162,7 +162,7 @@ If you do not already have a Login.gov account associated with your institutiona
 In order to confirm if your organization has a data use agreement on file, it is required that you use your institutional email rather than a personal email.
 When a new Login.gov account is created, you will be prompted to set up two-factor authentication with any of the following apps:
 
-* [DUO ](https://duo.com/)
+* [DUO](https://duo.com/)
 * [Free OTP](https://apps.apple.com/us/app/freeotp-authenticator/id872559395)
 * [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform=iOS&hl=en)
 * [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=en_US&pli=1)
@@ -205,9 +205,9 @@ For your Google-enabled account (if different from your primary onboarding addre
 
 Most institutions offer Google-enabled accounts.
 Some institutions that don't offer that, do allow individuals to set up free self-managed Google accounts using their existing work address.
-For instructions on how to do this, see [tislab.org/google-intro](http://tislab.org/google-intro)
+For instructions on how to do this, see <http://tislab.org/google-intro>.
 
-If you have any issues, please log a ticket at [covid.cd2h.org/support](http://covid.cd2h.org/support)
+If you have any issues, please log a ticket at <http://covid.cd2h.org/support>.
 
 ## Data Use Agreements {#sec-onboarding-dua}
 
@@ -237,7 +237,7 @@ The Project Lead provides overall guidance to the study and is the primary point
 The Project Lead has responsibilities that can not be delegated to other team members.
 
 N3C strongly encourages collaborations among investigators within institutions as well as between institutions.
-As discussed in the [Data Use Agreements](@DUA) section, individuals wishing access to the N3C Data Enclave must be at an institution that is covered by a DUA.
+As discussed in the [Data Use Agreements](#sec-onboarding-dua) section, individuals wishing access to the N3C Data Enclave must be at an institution that is covered by a DUA.
 Collaborators in a study are encouraged to request access to the Data Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.
@@ -287,11 +287,11 @@ This collaborator has a background in statistics and data sciences, often with a
 Table 2. N3C Projects: Common Roles and Expectations
 
 On the topic of diverse teams, N3C encourages appropriate attribution of work, including for support roles in projects.
-See Chapter [X](#publishing-and-sharing) for guidance on publishing and attribution.
+See @sec-publishing for guidance on publishing and attribution.
 
 ### Team Science {#sec-onboarding-team-science}
 
-As shown in Table X, an N3C investigation requires a team of individuals who brings together different skills, knowledge domains, and expertise.
+As described above in @sec-onboarding-team-role, an N3C investigation requires a team of individuals who brings together different skills, knowledge domains, and expertise.
 In this way, N3C studies naturally emphasize Team Science.
 
 'Team Science' is essentially collaborative research where studies are conducted by teams and groups (large and small) rather than individual investigators.
@@ -331,7 +331,7 @@ Examples of cross-cutting Domain Teams are Education and Training, Machine Learn
 If an existing Domain Team doesn't cover your interests, you can request to create a new Domain Team [here](https://n3c-help.atlassian.net/servicedesk/customer/portal/2/group/3/create/58).
 To start a Domain Team, you will need to identify one or more team leads responsible for facilitating project success, coordinating meetings and agendas, and being a resource for the team.
 Additional roles frequently contributing to Domain Team success are Subject Matter Experts or Clinicians, Informatics Leads, and Data Analysts.
-It is also advantageous for the team to have a Project Manager to assist with organization, helping team members onboard to N3C, and assisting in accessing and managing projects as described in Chapter [X](#getting-and-managing-data-access).
+It is also advantageous for the team to have a Project Manager to assist with organization, helping team members onboard to N3C, and assisting in accessing and managing projects as described in @sec-access.
 
 N3C does not provide virtual meeting rooms for domain teams, and the Project Manager or Team Lead will need to coordinate virtual meeting times and locations.
 As a reminder, virtual meetings may not be recorded or screenshotted if they show patient data, and all participants in a meeting showing patient data must be onboarded with N3C and approved to work with that data.
@@ -349,14 +349,14 @@ The home page has three categories of links: Educational Resources, Administrati
 The best way to learn about the resources on the homepage is to hover over the links to view a short description, and also to just explore the links to see where they go.
 Some of the most important are highlighted here.
 
-The _Training Material_ in the Educational Resources section has the training portal and self-guided tours–more detail about training and support resources can be found in Chapter [X](@sec-support).
+The _Training Material_ in the Educational Resources section has the training portal and self-guided tours–more detail about training and support resources can be found in @sec-support.
 Once you have an Enclave account, use the training material resources to understand how to navigate the Enclave.
 Also included in Educational Resources you will find N3C Community notes and Results Download.
 Community Notes are tips and short notes authored by N3C researchers.
 You can learn from others and also create your own notes in this section.
 Finally you can request to export figures or summary data from the Enclave for publication via the [Download Request Process](publishing.md#sec-publishing-tech-process).
 
-You can see the status of your DUR in _My Projects (DURs)_ in Administrative Resources–Chapter [X](#getting-and-managing-data-access) details this dashboard and other DUR-related tools.
+You can see the status of your DUR in _My Projects (DURs)_ in Administrative Resources --@sec-access details this dashboard and other DUR-related tools.
 The features under the Administrative Resources include: Data Use Requests, My Projects, Explore Projects (DUR), Domain Teams, COVID Publications, N3C Administrative FAQ, Public Health Proposals, and File Admin ticket.
 Data Use Request is where you can submit a DUR as the lead for a new project.
 My Projects is where you can view and manage your data use requests.
@@ -369,7 +369,7 @@ Public Health Proposals is part of an initiative covered { Chapter} where you ca
 Lastly, File Admin Ticket is where you can submit a ticket if you need help with the data, analysis, accessing the enclave, or something else.
 
 In the Data Analysis and Result Export Resources section of the Enclave homepage, you can find, concept set browser, download dashboard, and the data access overview.
-Chapters [X](#about-the-data) and [X](#analyzing-the-data) discuss the effective use of the data and public resources.
+Chapters [-@sec-understanding] and [-@sec-tools] discuss the effective use of the data and public resources.
 Other features available in this section are the data catalog, knowledge store, Release Notes, and FIle Technical Ticket.
 The Concept Set Browser is where you do just that, browse the concept sets or value sets that have been defined by N3C researchers.  **Data Access Overview** is where users can go if they are unsure where to find relevant data for research.
 These pages summarize the available data and describe how to get access.  **Data Catalog** has the most commonly accessed data sets and can be browsed including the LDS and De-Identified data tables, and externally-sourced data sets such as US Census data.  **Knowledge Store** has the N3C community-generated code workbook templates and derived datasets from LDS and De-Identified data tables to jump-start your research.  **Download Dashboard** has all the results including summary tables and futures and you can also submit and manage data requests from this tab as well.  **Release Notes** has the pertinent information and known data issues about N3C LDS and De-Identified data releases.  **File Technical Ticket** is where you can submit a ticket for support within the Enclave.

@@ -53,9 +53,9 @@ There are several steps that need to be completed in order for a researcher or N
 ## Researcher Eligibility {#sec-onboarding-eligibility}
 
 Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave.
-Everyone with an N3C Data Enclave account has access to the tools and public [datasets](https://covid.cd2h.org/external-datasets) that are available in the Enclave.
+Everyone with an Enclave account has access to the tools and public [datasets](https://covid.cd2h.org/external-datasets) that are available in the Enclave.
 
-There are several levels of Electronic Health Record (EHR) data that are available within the N3C Data Enclave.
+There are several levels of Electronic Health Record (EHR) data that are available within the Enclave.
 For more information about the levels of data, see @sec-access-background.
 
 If an individual is not affiliated with an institution, they are termed a "citizen scientist".   Citizen scientists are only eligible to access synthetic data (Level 1).
@@ -147,9 +147,9 @@ Then click the following boxes.
 
 ## Enclave Registration {#sec-onboarding-enclave}
 
-Due to the secure nature of the data that is available in the N3C Enclave, [registration](https://labs.cd2h.org/registration/)is required.
+Due to the secure nature of the data that is available in the N3C Data Enclave, [registration](https://labs.cd2h.org/registration/)is required.
 Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --see [Data Use Agreements](#sec-onboarding-dua) below for details.
-@fig-onboarding-030-login shows the four options to login and create an N3C Enclave account: InCommon, Login.gov, NIH login, or HHS login.
+@fig-onboarding-030-login shows the four options to login and create an Enclave account: InCommon, Login.gov, NIH login, or HHS login.
 
 ![Login options for registration.
 Many organizations participate in InCommon, a federated login network linking to your institution's login.
@@ -185,7 +185,7 @@ You will need to have an ORCID iD, complete NIH security training, and complete 
 
 !! _Is something missing.  It seemed to jump._ !!
 
-The N3C Data Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
+The Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
 The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the "Enter Public Training Portal" button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
 
 You need to complete Human Subjects Research training that aligns with your institution's guidelines.
@@ -222,8 +222,8 @@ By signing the agreement, an institutional official is assuring that users from 
 A DUA must be executed by the National Center for Advancing Translational Science (NCATS) and a research institution or private organization.
 The DUA must be signed by authorized officials who have the authority to bind all users at their organization to the terms of the DUA.  (A citizen scientist who is not affiliated with an institution must execute a DUA with NCATS individually in order to gain access to the Enclave.)  A DUA will be in effect for five years from the DUA Effective Date.
 
-Every individual who has access to the N3C Data Enclave must be covered by a DUA.
-This DUA must be in place before an account for the N3C Enclave is requested.
+Every individual who has access to the Enclave must be covered by a DUA.
+This DUA must be in place before an account for the Enclave is requested.
 If your institution has an active DUA, there is no additional action required with regard to the DUA.
 A list of institutions with DUAs can be found at <https://covid.cd2h.org/duas>.
 
@@ -241,14 +241,14 @@ The Project Lead provides overall guidance to the study and is the primary point
 The Project Lead has responsibilities that can not be delegated to other team members.
 
 N3C strongly encourages collaborations among investigators within institutions as well as between institutions.
-As discussed in the [Data Use Agreements](#sec-onboarding-dua) section, individuals wishing access to the N3C Data Enclave must be at an institution that is covered by a DUA.
-Collaborators in a study are encouraged to request access to the Data Enclave.
+As discussed in the [Data Use Agreements](#sec-onboarding-dua) section, individuals wishing access to the Enclave must be at an institution that is covered by a DUA.
+Collaborators in a study are encouraged to request access to the Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.
 
 ### Common roles and expectations (PIs, PMs, SMEs, Analysts, ...) {#sec-onboarding-team-role}
 
-The process of developing and conducting a study using the N3C Data Enclave can be complex.
+The process of developing and conducting a study using the Enclave can be complex.
 The Principal Investigator/Project Lead and the study team will be interacting with multiple individuals, each with a specific role designed to create a sound methodology, yielding reliable and valuable outcomes and information.
 While these are common roles for N3C researchers, the projects do not require that all these roles be filled.  [see Domain Team section for information on how to find collaborators]  This section identifies the common roles that are involved in developing and carrying out a study, along with typical expectations of each.
 
@@ -281,7 +281,7 @@ An SME typically has knowledge not readily available from others on the research
 
 #### Data Analyst {#sec-onboarding-team-role-analyst}
 
-This individual uses the N3C Data Enclave to identify, extract, and prepare data for analyses.
+This individual uses the Enclave to identify, extract, and prepare data for analyses.
 They work closely with the study team to clarify the hypotheses and extract relevant data elements
 
 #### Statistician {#sec-onboarding-team-role-statistician}
@@ -347,7 +347,7 @@ These resources are helpful for teams to post literature reviews, agendas, meeti
 
 ![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
 
-When you log into the Enclave, you will be presented with the home page and left sidebar.
+When you log into the N3C Data Enclave, you will be presented with the home page and left sidebar.
 These two sections give launching points into Enclave content.
 The home page has three categories of links: Educational Resources, Administrative Resources, and Data Analysis and Result Export Resources, along with a small dashboard of summary counts.
 The best way to learn about the resources on the homepage is to hover over the links to view a short description, and also to just explore the links to see where they go.
@@ -391,7 +391,7 @@ The Concept Set Browser is where you do just that, browse the concept sets or va
 There is also a [more detailed dashboard with lists of projects, publications, and more.](https://covid.cd2h.org/dashboard/exploration#projects)
 
 For additional training support, tutorials can be found here:
-<https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Enclave account" >}}.
+<https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
 ![Object Explorer.](images/onboarding/fig-onboarding-080-object-explorer.png){#fig-onboarding-080-object-explorer fig-alt="Object Explorer"}
 
@@ -415,7 +415,7 @@ Click on any of these results to view the full record.
 
 ### Google Drive {#sec-onboarding-tools-drive}
 
-During the onboarding process there is the option to request access to the N3C Enclave and there is a process to request access to participate in N3C Workstreams.
+During the onboarding process there is the option to request access to the N3C Data Enclave and there is a process to request access to participate in N3C Workstreams.
 One of the options under workstreams is GSuites (Gmail) ID.
 N3C uses Google Drive and Google Groups for storage of communications, recordings, and email notifications.
 In order to ensure that you are receiving all relative N3C communications it is important to enter your Google ID when onboarding.

@@ -1345,38 +1345,40 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
 
 ## Summary of Tools Available
 
-Specific to N3C Enclave capabilities (findable typically via [Knowledge Store](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b))
+### Specific to N3C Enclave capabilities
 
-Data Liaison resources
+  These are findable typically via [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b).
 
-		[Concept Set Browser / Editor](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.66c725b0-0ae9-4d03-9b3f-28d8f1e29528)
+### Data Liaison resources
 
-		[TermHub ](#http://bit.ly/termhub)
+1. [Concept Set Browser / Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.66c725b0-0ae9-4d03-9b3f-28d8f1e29528)
 
-Logic Liaison resources (See [Knowledge Store](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b),filtering by originating research project [RP-5C7806] [N3C Operational] Logic Liaison Team )
+1. [TermHub](http://bit.ly/termhub)
 
-		Templates
+1. Logic Liaison resources (See [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b), filtering by originating research project [RP-5C7806] [N3C Operational] Logic Liaison Team )
 
-		Tables
+1. Templates (! what is this line about? !)
 
-N3C [Community Notes](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
+1. Tables (! what is this line about? !)
 
-[Protocol Pad:RWE ](#[https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)) (i.e., for real-world evidence projects, like those in N3C)
+1. N3C [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
 
-Useful Resources more generally
+1. [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) for real-world evidence projects, like those in N3C.
 
-Suite of causal inference software tools
+### Useful Resources more generally
 
-Suite of data partner heterogeneity assessment software tools
+1. Suite of causal inference software tools
 
-	[GitHub of N3C LLs code](#https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
+1. Suite of data partner heterogeneity assessment software tools
 
-	Carlos Saez's [GitHub](#https://github.com/carlosjsaez)
+    1. [GitHub of N3C LLs code](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
 
-Suite of data quality assessment software tools
+    1. Carlos Saez's [GitHub](#https://github.com/carlosjsaez)
 
-Suite of measurement error software tools
+1. Suite of data quality assessment software tools
 
-Suite of missing data software tools
+1. Suite of measurement error software tools
 
-Create causal [Directed Acyclic Graphs](#http://dagitty.net)
+1. Suite of missing data software tools
+
+1. Create causal Directed Acyclic Graphs with <http://dagitty.net>.

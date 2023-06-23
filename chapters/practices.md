@@ -92,7 +92,7 @@ Our goals were to:
 
 Analysts from a wide range of projects have created a number of tools and resources (e.g., [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b), [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67), and [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) to work towards this goal.
 
-#### Encourage and disseminate best practice, but do not require specific approaches.
+#### Encourage and disseminate best practice, but do not require specific approaches
 
 "Best practice" refers to guidelines, such as those outlined by the FDA[cite] and methodologists.[cite] While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
 ADMS, in particular, is a cross-cutting Domain Team that provides a forum for discussing analytic issues that are important across N3C.
@@ -174,16 +174,16 @@ In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/note
 N3C has developed a tool to facilitate the development of protocols known as the [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).: In the following sections we walk through recommended components of a protocol.
 Briefly, they are:  Protocol Design, Development, and Completion:
 
-## Protocol Outline
+### Protocol Outline
 
-❶ Protocol Design
+Protocol Design ❶
 
 1. Articulate administrative information
 1. Articulate research question
 1. Specify protocol
 1. Describe Patient, Intervention/Exposure, Comparator, Outcome (PI/ECO) elements in text
 
-❷ Protocol Development
+Protocol Development ❷
 
 1. Define PECOT elements as objects and data sets
 1. Assess data quality
@@ -193,34 +193,31 @@ Briefly, they are:  Protocol Design, Development, and Completion:
 1. Commit to final run
 1. Peform sensitivity analysis
 
-❸ Protocol Completion
+Protocol Completion ❸
 
 1. Gather results
 1. Publish
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![Home page for a researcher's protocols.
+The Protocol Design, Development, and Completion sections are accessible on the left.](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
 
-![alt_text](images/image1.png "image_tooltip")
-
-Figure image-015-ProtocolPad.png.
-Home page for a researcher's protocols.
-The Protocol Design, Development, and Completion sections are accessible on the left.
-
-N3C Teams Addressing Good Research Practices
+<!-- N3C Teams Addressing Good Research Practices -->
 
 Several groups in N3C focus on the quality of the research process, in general, and analytics, in particular.
-The [Data and Logic Liaisons](#data-logic-liaisons) provide general tools and approaches to making data available to research teams and demonstrate good models for organizing research teams. [The Applicable Data Methods and Standards (ADMS)](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods)) provides a forum for discussion of cross-cutting analytic concerns.
-The [Machine Learning & Pharmacoepidemiology](#domain-teams), besides working on specific projects, have generated protocols that can serve as models for analysis.
+The [Data and Logic Liaisons](#data-logic-liaisons) provide general tools and approaches to making data available to research teams and demonstrate good models for organizing research teams.
+[The Applicable Data Methods and Standards (ADMS)](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods)) provides a forum for discussion of cross-cutting analytic concerns.
+The [Machine Learning & Pharmacoepidemiology](#domain-teams),
+besides working on specific projects, have generated protocols that can serve as models for analysis.
 Good Algorithmic Practice (GAP) Core Team; and various subject-matter domain teams).
 
-#### ❶ Protocol Design
+## Protocol Design ❶
 
 The Design is where the intention and information _about_ the protocol are placed.
 A protocol design may be generated iteratively, as details are better honed and even the intention becomes clearer.
 By the point that the finally-established protocol is executed, the design should be fixed.
 At the very least, if substantive design modifications are to be implemented in research that is not strictly exploratory, we suggest documenting the reason for doing so.
 
-1. Articulate Administrative Information
+### Articulate Administrative Information
 
 **Objective**
 
@@ -350,7 +347,7 @@ Ideally, a project should have someone fulfilling the role of project manager, w
 Researchers should consider, ahead of time, documenting necessary project management information and assembling a team with the relevant expertise to maximize the likelihood of project success.
 Provided above, is a list of recommended information that should be documented, and additional organizational resources.
 
-1. Articulate Research Question
+### Articulate Research Question
 
 #### Objective
 
@@ -394,7 +391,7 @@ There are other questions that may _potentially_ be answerable in N3C, depending
 
 There are others, and we welcome suggestions to add to either list.
 
-1. Specify Protocol
+### Specify Protocol
 
 #### Objectives
 
@@ -428,7 +425,7 @@ Effect of site (data partner). (a) Standard relationship between Cause (independ
 [Figure xxx]( image-020-SiteBias.png) shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of [Figure xxx](Figure image-022-BuildingBlock.png), above.
 As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites. (For a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research, see Redelmeier et al.[cite])
 
-1. Describe PICOT Elements in Text
+### Describe PICOT Elements in Text
 
 #### Objective
 
@@ -528,7 +525,9 @@ From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fww
 It is helpful to be precise in articulating the research question, so correct analytic methods will be chosen.
 Examples are differentiating classification from prediction from estimation, and association from temporal correlation from causal relationships.
 
-## ❷ Protocol Development
+## Protocol Development ❷
+
+### !! What is the H3 header here? !!
 
 #### Objectives
 
@@ -550,7 +549,7 @@ Even if the research is not performed with regulatory intent, choices made and a
 
 The remainder of this section lays out the elements of a data-only protocol.
 
-1. Define PICOT elements as objects and data sets
+### Define PICOT elements as objects and data sets
 
 #### Objectives
 
@@ -817,7 +816,7 @@ Other
 
 [Chapter Analyzing The Data](#Analyzing The Data) discusses this process in more detail.
 
-1. Assess Data Quality
+### Assess Data Quality
 
 #### Objective
 
@@ -996,7 +995,7 @@ This also increases the likelihood of capturing medical history prior to, for ex
 
 *For non-COVID-based datasets, beware of how controls are brought into the Enclave.
 
-1. Articulate missing-data plan
+### Articulate missing-data plan
 
 #### Objective
 
@@ -1025,7 +1024,7 @@ Figure image-050-MissingData.gif.
 Possible sources of missing data.
 Legend for icons is at the top of the figure (What…Mechanism..How Documented)
 
-1. Perform Initial Analysis
+### Perform Initial Analysis
 
 #### Objective
 
@@ -1215,14 +1214,14 @@ Over 50 external datasets are available for analysis via the Knowledge Store, su
 These datasets help in linking patients to Area-level Social Determinants of Health (SDoH), in particular, and for debiasing results based on EHR data from academic health centers.
 Of course, applying geographically-based measures to an individual can lead to its own sorts of bias.
 
-&lt;Link to #UnderstandingTheData>
+{Link to #UnderstandingTheData}
 
 Ways to use the external sets include census data[cite] and mix of spatial units available for linking (zip code, county).[cite] Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to strengths and challenges of the specific code.
 Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
-1. Fairness and Bias
+### Fairness and Bias
 
 Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed.
 The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,  is working on a list of over 200 [methodological biases](https://fevir.net/resources/CodeSystem/27270#SEVCO:01000).
@@ -1231,7 +1230,7 @@ N3C has led a number of [seminars](https://docs.google.com/presentation/d/1yzi_2
 
 Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)Competing risks, and time-dependent confounding.
 
-1. Iterate
+### Iterate
 
 As Stoudt points out, developing an observational-study protocol has elements of discovery, meaning, effectively, that the analyst iterates.
 The "earlier" in the protocol one goes, the more likely the entire protocol will change, hence, we try to iterate at one step (e.g., variable definition) before moving on to a next step.
@@ -1241,18 +1240,18 @@ As such, documenting what the "final analysis" consists of is crucial for believ
 
 Thus, running the algorithm blinded to the outcome or with a subset of data or with some surrogate for the final analysis is crucial to make sure that, in optimizing the analysis, you are not (consciously or not) tailoring the analysis to a pre-desired outcome.
 
-1. Commit to Final Run
+### Commit to Final Run
 
 Once the elements are finalized, there is the "final run", which still requires diagnostics that should be documented, if not reported.
 The team should be clear that, when this run is initialized, variables will not be redesigned or errant data eliminated.
 If a new protocol is suggested by the results of this run, it should be initialized as its own, new protocol
 
-1. Perform Sensitivity Analysis
+### Perform Sensitivity Analysis
 
 A responsibility of any analyst is the extent to which quantities important to the question at hand may or may not be available or measured among the data at hand.
 Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts) to not be present to a degree that it impacts quantitative findings such that conclusions (e.g., "treatment reduces risk of outcome") actually change.
 It should be noted, however, that this assumption is – by dint of involving _unmeasured_ quantities/variables that are confounding a targeted association/effect – not verifiable from available data.
-Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_; an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions (e.g., there exists an unmeasured confounding effect _U _that entails an impact of confounding of a degree deemed possible by a domain expert); the "plausibility" of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
+Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_; an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions (e.g., there exists an unmeasured confounding effect _U_ that entails an impact of confounding of a degree deemed possible by a domain expert); the "plausibility" of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
 We return to the broader topic of sensitivity analysis below.
 
 Sensitivity analysis ideally takes place after the final analysis, so one does not redo the analysis, taking the insight from sensitivity analysis into account.

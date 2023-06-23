@@ -82,46 +82,68 @@ Researchers trained in traditional data analysis from schools of epidemiology, b
 All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in scope of such findings' generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource – noting that the resource itself was being actively refined as more was learned from applying methods to its data.
-Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods))) group established a number of principles (https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups  Our goals were to:
+Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods))) group established a number of principles (https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
 
-    **_Make it easy to do the best analysis_.** Analysts from a wide range of projects have created a number of tools and resources (e.g., [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b), [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67), and [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) to work towards this goal.
+### Goals
 
-    **_Encourage and disseminate best practice, but do not require specific approaches._** "Best practice" refers to guidelines, such as those outlined by the FDA[cite] and methodologists.[cite] While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
-    ADMS, in particular, is a cross-cutting Domain Team that provides a forum for discussing analytic issues that are important across N3C.
-    Example issues include the he difficulty of defining study-specific "control" cohorts when needed.
-    The Good Algorithmic Practice (GAP) group is a forum that includes machine learning and other general discussions related to data and analysis quality.
+Our goals were to:
+
+#### Make it easy to do the best analysis
+
+Analysts from a wide range of projects have created a number of tools and resources (e.g., [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf), [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b), [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67), and [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) to work towards this goal.
+
+#### Encourage and disseminate best practice, but do not require specific approaches.
+
+"Best practice" refers to guidelines, such as those outlined by the FDA[cite] and methodologists.[cite] While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
+ADMS, in particular, is a cross-cutting Domain Team that provides a forum for discussing analytic issues that are important across N3C.
+Example issues include the he difficulty of defining study-specific "control" cohorts when needed.
+The Good Algorithmic Practice (GAP) group is a forum that includes machine learning and other general discussions related to data and analysis quality.
+
+### Practices
 
 Most components of high-quality research lie with research teams themselves.
 Important practices contributing to reproducible, reliable work include:
 
-    **_Ensuring validated or mature code_**.
-    We do recommend peer review of code, as is suggested, prior to posting code workbooks to the Knowledge Store.
+#### Ensuring validated or mature code
 
-    **_Making methods and code findable and accessible (FA)._**
-    N3C's key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
-Accessibility currently depends on perusing titles and on a short taxonomy of artifact types ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code) . [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) support a folksonomy of tags of both domain and methodological bents.
+We do recommend peer review of code, as is suggested, prior to posting code workbooks to the Knowledge Store.
 
-    **_Making clear both the intention of a method as well as how it works._**
-    Documentation of code is left to the analyst.
-  Given the diversity of tools and methods available in N3C, there is no recommended standard for documentation.
+#### Making methods and code findable and accessible (FA)
+
+N3C's key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
+Accessibility currently depends on perusing titles and on a short taxonomy of artifact types ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code) .
+[Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) support a folksonomy of tags of both domain and methodological bents.
+
+#### Making clear both the intention of a method as well as how it works
+
+Documentation of code is left to the analyst.
+Given the diversity of tools and methods available in N3C, there is no recommended standard for documentation.
 The [Logic Liaison Templates](#LogicLiaisonTemplates), though, provide excellent models.
 
-    **_Ensuring reproducibility and reuse (IR)._**
-    [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
-    We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates) that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
-    Both Code Workbooks and Code Repositories can be exported as [Git repositories](#publishing-sharing-git-section) for hosting on GitHub or similar.
+#### Ensuring reproducibility and reuse (IR)
 
-    **_Building on the experience across and within networks._**
-    Outside N3C, the experience of OHDSI, in particular, will be referenced below.
-    Within N3C, discussions and work within Domain Teams enriched by individuals' experiences in a wide variety of studies and research configurations.
+[ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
+We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates) that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
+Both Code Workbooks and Code Repositories can be exported as [Git repositories](#publishing-sharing-git-section) for hosting on GitHub or similar.
 
-    **_Anticipate analytic problems before they arise._**
-    We encourage discussion of issues in advance of the analysis.
-    For hypothesis-driven studies, we recommend finalizing the analytic protocol before outcomes are assessed.
+#### Building on the experience across and within networks
 
-    **_Ensure state-of-the-art analyses, appropriate to the real-world data of the Enclave._**
-    We encourage conformance to methodology checklists.
-    Relevant ones are [STROBE](https://www.equator-network.org/reporting-guidelines/strobe/), [RECORD](https://www.equator-network.org/reporting-guidelines/record/), [TRIPOD](https://www.equator-network.org/reporting-guidelines/tripod-statement/), [CERBOT](http://cerbot.org/), and [STaRT-RWE](https://pubmed.ncbi.nlm.nih.gov/33436424/).
+Outside N3C, the experience of OHDSI, in particular, will be referenced below.
+Within N3C, discussions and work within Domain Teams enriched by individuals' experiences in a wide variety of studies and research configurations.
+
+#### Anticipate analytic problems before they arise
+
+We encourage discussion of issues in advance of the analysis.
+For hypothesis-driven studies, we recommend finalizing the analytic protocol before outcomes are assessed.
+
+#### Ensure state-of-the-art analyses, appropriate to the real-world data of the Enclave
+
+We encourage conformance to methodology checklists.
+Relevant ones are [STROBE](https://www.equator-network.org/reporting-guidelines/strobe/),
+[RECORD](https://www.equator-network.org/reporting-guidelines/record/),
+[TRIPOD](https://www.equator-network.org/reporting-guidelines/tripod-statement/),
+[CERBOT](http://cerbot.org/), and
+[STaRT-RWE](https://pubmed.ncbi.nlm.nih.gov/33436424/).
 
 The high-level sequence of research below is based on experience in the Enclave and addresses some of the "what" needs to be accomplished in a research project in parallel to the "how" of previous chapters.
 

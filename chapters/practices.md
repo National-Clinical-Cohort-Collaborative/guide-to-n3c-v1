@@ -272,32 +272,38 @@ STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-
 Not everything you need to start, though, is included in this list.
 Here are a few additional things to consider:
 
-**Assemble a team.**
+**Assemble a team**.
 A lesson learned and relearned is that any analysis in an environment like N3C _requires_ interdisciplinary teamwork.
 Clinicians provide the all-important reality testing and substance of the research questions.
 Biostatisticians articulate the analytic design and sometimes novel data required for those analyses (e.g., negative controls) that clinicians might not think about.
 Data scientists and others work to understand how the data are modeled to best extract and format the data, communicating potential pitfalls to the rest of the team.
-Other common roles include leadership and project management–see Chapter [X](#onboarding-team-science) for a more thorough review of team science.
+Other common roles include leadership and project management -–see @sec-onboarding for a more thorough review of team science.
 
 **Documentation/Lab Notebook**.
 A "lab notebook" is an important part of any researchers' repertoire, as a place to document thoughts, experiments, and results.
-The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view, while others must stay in the Enclave (see Chapter[X](#publishing-and-sharing) for details on what may be exported from the Enclave and how).
-This duality can lead to challenges in documentation and collaboration. [Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis (see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
+The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view, while others must stay in the Enclave (see @sec-publishing for details on what may be exported from the Enclave and how).
+This duality can lead to challenges in documentation and collaboration.
+[Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis (see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
 Whether ProtocolPad is used or not, each analyst should maintain a lab notebook.
 
 **Project organization**.
 Before sitting down to code, core items and roles should be articulated.
-These include the research question (even if only "descriptive"), the hypotheses (if any), the identification level of data required, the PI, and, as much as possible, the identity of those filling roles of domain expert, informatician/data scientist, and statistician, even if individuals are filling multiple roles. [Methodology checklists](#MethodologyChecklists) help organize this information.
+These include the research question (even if only "descriptive"), the hypotheses (if any), the identification level of data required, the PI, and, as much as possible, the identity of those filling roles of domain expert, informatician/data scientist, and statistician, even if individuals are filling multiple roles. [Methodology checklists](tools.md#sec-tools-apps-protocol) help organize this information.
 
-**Code organization/formatting**. [Code Workbooks](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-workbook) and [Code Repositories](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-repo) are the heart of most N3C analyses and we recommend that researchers attentively format their code and documentation, like any modern software project.
-While these tools provide unique interfaces initial unfamiliar to most, they provide a host of features for organizing code, data, documentation, and metadata.
-See Chapter [X](#toolsnstuff) for more details.
+**Code organization/formatting**.
+[Code Workbooks](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-workbook) and
+[Code Repositories](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-repo) are the heart of most N3C analyses
+and we recommend that researchers attentively format their code and documentation,
+like any modern software project.
+While these tools provide unique interfaces initial unfamiliar to most,
+they provide a host of features for organizing code, data, documentation, and metadata.
+See @sec-tools for more details.
 
 **Which tools are best for what**.
 The Knowledge Store, in particular, provides some analytic tools for use.
 Because of security concerns, not all code is sharable.
 Data partner IDs and patient IDs present in such code in one's project should not be shared across projects or Data Use Requests (DURs), meaning that even programming code must be de-identified and templatized before being released to the Knowledge Store for general use or posted to repositories like GitHub for external review.
-Chapter [X](#publications) describes processes and requirements for safe sharing of both results and code.
+@sec-publishing describes processes and requirements for safe sharing of both results and code.
 
 **Take-away**
 
@@ -346,8 +352,10 @@ There are other questions that may _potentially_ be answerable in N3C, depending
   Claims data, such as CMS, can serve as an alternative source of mortality data within enrollment periods, but limits the study population to those with Medicare for whom CMS data are available.
   This may be undesirable as that population may not be representative of the study population of interest.
 * Analyses of patients with Long COVID.
-  The U09.9 diagnosis code for Long COVID was launched in late 2021; its use was not immediately adopted among all data partners in the enclave[cite], and its rate of uptake across sites varied.
-  Efforts have been expended to creatively identify patients in the Enclave who might have Long COVID but who lack a U09.9 diagnosis code, including computable phenotypes.[cite]
+  The U09.9 diagnosis code for Long COVID was launched in late 2021; its use was not immediately adopted among all data partners in the enclave [@pfaff_2023a],
+  and its rate of uptake across sites varied.
+  Efforts have been expended to creatively identify patients in the Enclave who might have Long COVID
+  but who lack a U09.9 diagnosis code, including computable phenotypes [@pfaff_2023a].
 
 There are others, and we welcome suggestions to add to either list.
 
@@ -362,10 +370,10 @@ This is an early step in promoting replicable and clinically valuable work.
 
 #### Approach
 
-Stoudt and colleagues identify 3 phases of a data-only research protocol: Explore, Refine, Produce.[cite] N3C provides many tools to support a protocol.
+Stoudt and colleagues identify 3 phases of a data-only research protocol: Explore, Refine, Produce [@stoudt_2021]. N3C provides many tools to support a protocol.
 By linking the resulting artifacts together, we aim to develop a self-documenting, computable protocol.
 We list here the basic steps in articulating—and specifying attributes of—a protocol, as part of the "Explore"  step.  (Note that the term "protocol" is used here in a more general way than in biology, for instance.)  This step is focused on the initial "natural language" view of the protocol; the code-based view comes in the next section.
-While the checklists seek text descriptions, we recommend **_linking the text as soon as possible to objects and datasets used in the Enclave_**, track what resources you've used, be specific with your team members, and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
+While the checklists seek text descriptions, we recommend _linking the text as soon as possible to objects and datasets used in the Enclave_, track what resources you've used, be specific with your team members, and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
 
 **Causal model positing before analyzing**.
 Create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.

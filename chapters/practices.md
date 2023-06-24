@@ -686,7 +686,7 @@ The STaRT-RWE recommendations for the analysis phase itself are fewer; there are
 | - Confounding adjustment method                            | Citation, description, link to Code Workbook               |
 | - Missing data methods                                     |                                                            |
 | - Subgroup Analysis                                        |                                                            |
-+-----------------------------------------------------------+------------------------------------------------------------+
++------------------------------------------------------------+------------------------------------------------------------+
 
 : STaRT-RWE analysis specifications, based on Wang and colleagues [cite]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
 
@@ -703,70 +703,25 @@ Study designs: See Franklin and colleagues for suggestions.[cite] The Book of OH
 
 For associational/causal research questions, to address hypotheses and confounding, the FDA recommends a set of analyses that go beyond the typical regression types, yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
 
-<table>
-  <tr>
-   <td>Active Comparator
-<p>
-Adjusting
-<p>
-Bayesian Twin Regression
-<p>
-Bias
-<p>
-Causal Inference
-<p>
-Confounding
-<p>
-DAG/ADMG
-<p>
-Depletion of Susceptible
-<p>
-Difference in Difference
-<p>
-Doubly Robust Methods
-   </td>
-   <td>Empirical Calibration
-<p>
-G-Estimation
-<p>
-High-dimensional Proxy Adjustment
-<p>
-Identification
-<p>
-Immortal Time
-<p>
-Instrumental Variable
-<p>
-Inverse Probability
-<p>
-Latent Class Growth Modeling (LCGM)
-<p>
-(Manski's) Partial Identification
-<p>
-Marginal Structure Models
-   </td>
-   <td>Negative Control
-<p>
-Non-adherence
-<p>
-Perturbation Variable
-<p>
-Propensity Score
-<p>
-Pseudo Treatment
-<p>
-Regression Discontinuity
-<p>
-Reverse Causation
-<p>
-Targeted Maximum Likelihood Estimation
-<p>
-Trend in Trend
-<p>
-Trimming
-   </td>
-  </tr>
-</table>
++------------------------------------------------------------+------------------------------------------------------------+
+| Active Comparator                                     <br> | Instrumental Variable                                 <br> |
+| Adjusting                                             <br> | Inverse Probability                                   <br> |
+| Bayesian Twin Regression                              <br> | Latent Class Growth Modeling (LCGM)                   <br> |
+| Bias                                                  <br> | (Manski's) Partial Identification                     <br> |
+| Causal Inference                                      <br> | Marginal Structure Models                             <br> |
+| Confounding                                           <br> | Negative Control                                      <br> |
+| DAG/ADMG                                              <br> | Non-adherence                                         <br> |
+| Depletion of Susceptible                              <br> | Perturbation Variable                                 <br> |
+| Difference in Difference                              <br> | Propensity Score                                      <br> |
+| Doubly Robust Methods                                 <br> | Pseudo Treatment                                      <br> |
+| Empirical Calibration                                 <br> | Regression Discontinuity                              <br> |
+| G-Estimation                                          <br> | Reverse Causation                                     <br> |
+| High-dimensional Proxy Adjustment                     <br> | Targeted Maximum Likelihood Estimation                <br> |
+| Identification                                        <br> | Trend in Trend                                        <br> |
+| Immortal Time                                         <br> | Trimming                                              <br> |
++------------------------------------------------------------+------------------------------------------------------------+
+
+: Recommended Data Analysis Methods. {#tbl-practices-methods}
 
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial.[cite]

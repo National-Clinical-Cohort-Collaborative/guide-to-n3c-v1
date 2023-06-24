@@ -782,40 +782,19 @@ However, any sensitivity to initial assumptions is crucial to report.
 Sensitivity analyses are used to assess the robustness of the conclusions to uncertainties in the input.[cite] While, as in the STaRT-RWE checklist, the focus is on varying values of key parameters, in N3C research (and other multi-EHR-based studies), attention should be paid to varying cohort definitions, and to definitions of other key variables and other constituents of an analytic model.
 Enabling such repeated analyses means automating a long chain of computing steps, so this strategy requires planning and engineering.
 
-Table 6. STaRT-RWE sensitivity analysis elements*
++--------------------------------------------------------------------+------------------------------------------------------------+
+| Element                                                            | Enclave Source                                             |
++====================================================================+============================================================+
+| What is the parameter being varied?                                | Protocol Step, Code Workbook                               |
++--------------------------------------------------------------------+------------------------------------------------------------+
+| Why? (What do you expect to learn?)                                | Protocol Step (Lab Notebook)                               |
++--------------------------------------------------------------------+------------------------------------------------------------+
+| Strengths of the sensitivity analysis compared to the primary?     | Lab Notebook                                               |
++--------------------------------------------------------------------+------------------------------------------------------------+
+| Weaknesses of the sensitivity analysis compared to the primary?    | Lab Notebook                                               |
++--------------------------------------------------------------------+------------------------------------------------------------+
 
-<table>
-  <tr>
-   <td><strong>Analysis</strong>
-   </td>
-   <td><strong>Element</strong>
-   </td>
-   <td><strong>Enclave Source</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>TABLE 5 SENSITIVITY ANALYSES
-   </td>
-   <td>What is the parameter being varied?
-<p>
-Why? (What do you expect to learn?)
-<p>
-Strengths of the sensitivity analysis compared to the primary?
-<p>
-Weaknesses of the sensitivity analysis compared to the primary?
-   </td>
-   <td>Protocol Step, Code Workbook
-<p>
-Protocol Step (Lab Notebook)
-<p>
-Lab Notebook
-<p>
-Lab Notebook
-   </td>
-  </tr>
-</table>
-
-*Based on Wang and colleagues[cite]
+: STaRT-RWE sensitivity analysis elements, based on Wang and colleagues [cite]. {#tbl-practices-start-sensitivity tbl-colwidths="[60, 40]"}
 
 ## Protocol Completion ❸
 

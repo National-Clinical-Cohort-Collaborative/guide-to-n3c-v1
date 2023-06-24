@@ -808,11 +808,12 @@ The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,
 is working on a list of over 200 [methodological biases](https://fevir.net/resources/CodeSystem/27270#SEVCO:01000).
 
 N3C has led a number of [seminars](https://docs.google.com/presentation/d/1yzi_2t8m7MOE-0fdHP6DF3B61YC-a6vGsur1mFMBnrg/edit#slide=id.gd4f8b365ff_0_0) on such biases.
-Caton and Haas provide a comprehensive list of measures, corresponding to different notions of equity
-(e.g., statistical parity, impact disparity,[cite] equality of opportunity, calibration, and counterfactual fairness).[cite]
-A key point is that, as Kleinberg and colleagues showed, an analysis cannot satisfy all these notions simultaneously.[cite]
+Caton and Haas [-@caton_2020] provide a comprehensive list of measures, corresponding to different notions of equity;
+these include statistical parity, impact disparity [@islam_2022],
+equality of opportunity, calibration, and counterfactual fairness.
+A key point is that, as Kleinberg and colleagues showed [-@kleinberg_2016], an analysis cannot satisfy all these notions simultaneously.
 
-Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)Competing risks, and time-dependent confounding.
+Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)competing risks, and time-dependent confounding.
 
 ### Iterate
 
@@ -840,7 +841,9 @@ We return to the broader topic of sensitivity analysis below.
 
 Sensitivity analysis ideally takes place after the final analysis, so one does not redo the analysis, taking the insight from sensitivity analysis into account.
 However, any sensitivity to initial assumptions is crucial to report.
-Sensitivity analyses are used to assess the robustness of the conclusions to uncertainties in the input.[cite] While, as in the STaRT-RWE checklist, the focus is on varying values of key parameters, in N3C research (and other multi-EHR-based studies), attention should be paid to varying cohort definitions, and to definitions of other key variables and other constituents of an analytic model.
+Sensitivity analyses are used to assess the robustness of the conclusions to uncertainties in the input [@franklin_2022].
+While, as in the STaRT-RWE checklist, the focus is on varying values of key parameters, in N3C research (and other multi-EHR-based studies),
+attention should be paid to varying cohort definitions, and to definitions of other key variables and other constituents of an analytic model.
 Enabling such repeated analyses means automating a long chain of computing steps, so this strategy requires planning and engineering.
 
 +--------------------------------------------------------------------+------------------------------------------------------------+
@@ -874,19 +877,25 @@ Any programming code that was used should, if possible, be templatized for shari
 If you used code from the Knowledge Store, be sure to link your project to that object and to leave comments in the Knowledge Store for later analysts.
 If you have worked out a process that would be helpful to others, even if it cannot be represented as shareable code, leave a Community Note about it.
 
-Fourth, consider generating [FHIR-based evidence resources](https://fevir.net/), for external computer systems to ingest, or for other research projects in the Enclave to take advantage of.[cite]
+Fourth, consider generating [FHIR-based evidence resources](https://fevir.net/), for external computer systems to ingest, or for other research projects in the Enclave to take advantage of
+[@alper_2023].
 
 As part of reporting on an analysis, be sure to identify the data release (number or date) on which the analysis was done and validated.
 
 ### Methodology Checklist
 
 As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher.
-Such submission is (1) considered best practice, (2) requested by publishers and (3) communicates that the author is aware of state-of-the-art practices in publication.
+Such submission is (1) considered best practice, (2) requested by publishers, and (3) communicates that the author is aware of state-of-the-art practices in publication.
 Perhaps the best single repository of such checklists is the [Equator Network](https://www.equator-network.org/reporting-guidelines).
 
-Research in N3C falls under "Observational" research, so [STROBE](https://www.equator-network.org/wp-content/uploads/2015/10/STROBE_checklist_v4_combined.pdf) (Strengthening the Reporting of Observational Studies in Epidemiology[cite]) is the most generally appropriate.
-However, for EHR-based research, [RECORD](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885) (REporting of studies Conducted using Observational Routinely-collected health Data[cite]) is appropriate.
-The most detailed is STaRT-RWE.[cite] Protocol Pad attempts to collect the information in the process of doing the research that you will need at the end, for publication.
+Research in N3C falls under "Observational" research, so
+[STROBE](https://www.equator-network.org/wp-content/uploads/2015/10/STROBE_checklist_v4_combined.pdf)
+(Strengthening the Reporting of Observational Studies in Epidemiology) is the most generally appropriate [@vonelm_2014].
+However, for EHR-based research,
+[RECORD](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885)
+(REporting of studies Conducted using Observational Routinely-collected health Data) is appropriate [@benchimol_2015].
+The most detailed is STaRT-RWE [@wang_2021].
+Protocol Pad attempts to collect the information in the process of doing the research that you will need at the end, for publication.
 
 (Predictive models, machine learning, and AI have their own checklists as well.)
 
@@ -927,7 +936,8 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
 
 1. _Calibrated_:
   Applies to multiple-hypothesis analysis.
-  A novel approach to observational data is the LEGEND[cite] approach and the calibration of p values.[cite]
+  A novel approach to observational data is the LEGEND [@schuemie_2020]
+  approach and the calibration of _p_ values [@schuemie_2018].
 
 ## Summary of Tools Available
 

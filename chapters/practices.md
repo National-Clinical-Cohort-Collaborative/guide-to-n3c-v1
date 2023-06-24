@@ -166,11 +166,15 @@ In human subjects research, it is the commitment of the researcher to how patien
 In Real World Data analysis, the meaning is a bit different.
 In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37), we write
 
-1. In human subjects research, the protocol is what turns data into evidence: By following rules of methodology, we claim that the data we collect can support conclusions broader than the data set itself. "Protocol" can also refer to a specific set of steps that lead to reproducible results.
-
-1. Data-only research, like that in N3C, is different from prospective research, because we must make allowances for incomplete data, for selection bias, for access bias, for poor recording, for late recording, for differences in clinical practice across sites, for differences in documentation practice across sites...
-  In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
-  This process of research is also called by Stoudt and colleagues, the "data analysis workflow." [ref](https://pubmed.ncbi.nlm.nih.gov/33735208/)
+> In human subjects research, the protocol is what turns data into evidence: By following rules of methodology,
+> we claim that the data we collect can support conclusions broader than the data set itself.
+> "Protocol" can also refer to a specific set of steps that lead to reproducible results.
+>
+> Data-only research, like that in N3C, is different from prospective research,
+> because we must make allowances for incomplete data, for selection bias, for access bias, for poor recording, for late recording,
+> for differences in clinical practice across sites, for differences in documentation practice across sites...
+> In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
+> This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
 {Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
 
@@ -207,9 +211,9 @@ The Protocol Design, Development, and Completion sections are accessible on the 
 <!-- N3C Teams Addressing Good Research Practices -->
 
 Several groups in N3C focus on the quality of the research process, in general, and analytics, in particular.
-The [Data and Logic Liaisons](#data-logic-liaisons) provide general tools and approaches to making data available to research teams and demonstrate good models for organizing research teams.
-[The Applicable Data Methods and Standards (ADMS)](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods)) provides a forum for discussion of cross-cutting analytic concerns.
-The [Machine Learning & Pharmacoepidemiology](#domain-teams),
+The [Data and Logic Liaisons](support.md#sec-support-liaisons) provide general tools and approaches to making data available to research teams and demonstrate good models for organizing research teams.
+The Applicable Data Methods and Standards ([ADMS](https://covid.cd2h.org/data-methods)) provides a forum for discussion of cross-cutting analytic concerns.
+The Machine Learning & Pharmacoepidemiology [domain team](onboarding.md#sec-onboarding-dts),
 besides working on specific projects, have generated protocols that can serve as models for analysis.
 Good Algorithmic Practice (GAP) Core Team; and various subject-matter domain teams).
 
@@ -229,8 +233,10 @@ Gathering administrative information, such as DUR number, team members, and rese
 #### Approach
 
 Several tools provide checklists a researcher can follow to ensure their work will be publishable.
-The previously mentioned Protocol Pad, for example, guides researchers through protocol development, and is integrated with other N3C tooling to capture relationships to teams, researchers, and artifacts such as concept sets, analyses, and datasets. .
-STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more expansive methodological checklist. [Table 1](@tab-practices-map) below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
+The previously mentioned Protocol Pad, for example, guides researchers through protocol development,
+and is integrated with other N3C tooling to capture relationships to teams, researchers,
+and artifacts such as concept sets, analyses, and datasets. .
+STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1 below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
 
 <!-- https://www.tablesgenerator.com/markdown_tables -->
 

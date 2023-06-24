@@ -469,7 +469,8 @@ Support execution of the protocol.
 
 #### Approach
 
-Team science, a transdisciplinary endeavor that entails both theory and application[cite], has its own mix of needs in "data-only" (e.g., RWE) studies, and, in particular, in distributed settings.
+Team science, a transdisciplinary endeavor that entails both theory and application [@klein_1996],
+has its own mix of needs in "data-only" (e.g., RWE) studies, and, in particular, in distributed settings.
 Communication is essential across distance in multicenter studies, as well as communication between and among disciplines.
 Regardless of the online tools, each team needs clarity on what the work is, why it is needed, and where it is heading.
 This clarity is especially needed around the protocol, because, while the Protocol Design specifies the outlines, Protocol Development fleshes out the details, which can change prior to protocol finalization, depending upon data availability and quality.
@@ -500,19 +501,26 @@ Terms are defined in the text.
 This work of the data scientist is included in the set of tasks generally called _data cleaning.
 _The importance of data cleaning and appropriate preprocessing cannot be overestimated, and often requires clinical domain expertise in addition to sound data science practices, such as a well-reasoned approach to missing values (see Section 2.3) and normalization of values in the context of certain machine learning algorithms.
 
-The simplest building block on the left of @fig-practices-022-building-block is the [_concept id_](Understanding The Data#Vocabulary Concepts), the raw data of the OMOP tables.
-Next comes the [_concept set_](Understanding The Data#Concept Sets), which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
-The next 4 columns all fall under the general category of [_derived variable](_Analyzing the Data#Using the Knowledge Store); the different columns suggest different roles.
-So a _Formula_ may be independent of the context of use (e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus)), regardless of the research question.
-A _Transformation_ may be more complex, such as "[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)",[ref] to indicate a hospital admission, or "[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)", used in defining a Covid-19 hospitalization.
+The simplest building block on the left of @fig-practices-022-building-block is the [_concept id_](understanding.md#sec-understanding-basics-omop-vocab),
+the raw data of the OMOP tables.
+Next comes the [_concept set_](understanding.md#sec-understanding-sets),
+which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
+The next 4 columns all fall under the general category of [derived variable](_Analyzing the Data#Using the Knowledge Store); the different columns suggest different roles.
+So a _Formula_ may be independent of the context of use
+(e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus)),
+regardless of the research question.
+A _Transformation_ may be more complex, such as
+"[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)" [@sidky_2023]
+to indicate a hospital admission, or "[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)", used in defining a Covid-19 hospitalization.
 A [Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct ("[covid-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)"; "[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)", "[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)"), while a _Cohort Definition_ gives the phenotype a [local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/) (e.g., in the past 5 years) or utilizes an algorithm (e.g., [long covid algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus)).
 
 The figure recognizes that the _role_ each construct plays depends on the context; "diabetes" could be the target cohort (are patients with diabetes at higher risk of developing Covid-19  sequelae, compared with those who do not?), the confounder (does a presumed treatment for Covid-19 have its effect weakened in the presence of diabetes?), the cause (are there specific outcomes for patients with diabetes?), or the outcome (are any patients with Covid-19 at risk for developing type 2 diabetes?).
 
 Iteration starts at the very outset of cohort definition.
-The double arrows in the center of Figure [xxx](#Figure image-022-BuildingBlock.png.) refer to just this back-and-forth work analysts have in deciding when they have the right variable definitions.
+The double arrows in the center of @fig-practices-022-building-block
+refer to just this back-and-forth work analysts have in deciding when they have the right variable definitions.
 
-The process of defining variables is laid out in Chapter [xxx](#AnalyzingTheData).
+The process of defining variables is laid out in @sec-tools.
 Many DURs involve a number of related protocols; the steps laid out in that chapter are directed at pre-processing that ultimately applies to a set of protocols.
 There are a variety of templates in the Knowledge Store that are produced by the Logic Liaisons and can facilitate this decision making process.
 The [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) and [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) templates provide a method by which researchers can assess data quality and density prior to starting variable generation.
@@ -598,7 +606,7 @@ Address data quality issues through action that mitigates the risk of reaching e
 A key component of the back-and-forth work is **data quality checks**.
 While the Data Quality Dashboard helps the Data Ingestion and Harmonization (DI&H) team decide on readiness of site data for release, _data quality checks for a specific analysis is the responsibility of the analyst_.
 While providing an exhaustive list of the steps to this process is outside the scope of this document, we highlight in @tbl-practices-dq some data quality issues that warrant special attention.
-Many of the items in this list were borrowed from Sidky et al. which can be referred to for further detail.[cite]
+Many of the items in this list were borrowed from Sidky et al. [-@sidky_2023] which can be referred to for further detail.
 
 +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 | Data quality issue                                           | Considerations and possible solutions                                                                                   |
@@ -638,7 +646,7 @@ Many of the items in this list were borrowed from Sidky et al. which can be refe
 | negative and positive patients.                              | - Patients initially COVID-19 negative may not always remain negative.                                                  |
 +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 
-: Data Quality Issues. *For non-COVID-based datasets, beware of how controls are brought into the Enclave. {#tbl-practices-dq tbl-colwidths="[25, 75]"}
+: Data Quality Issues.<br>*For non-COVID-based datasets, beware of how controls are brought into the Enclave. {#tbl-practices-dq tbl-colwidths="[25, 75]"}
 
 ### Articulate missing-data plan
 
@@ -649,19 +657,27 @@ Prepare analysis to be generalizable despite missing data that ideally would be 
 #### Approach
 
 There is a large literature on missing data.
-A strength of the centralized data of the Enclave is that one could assess whether missingness of a data item is a result of a "lesion" at the item (e.g., lab) level, visit level, patient level, or site level; see [Figure xx](#Figure image-025-MissingData.gif).
-Before finalizing a protocol, search out what data are missing (starting with cohort definition, then outcomes, then confounders), at what level, and decide how to address them.
+A strength of the centralized data of the Enclave is that one could assess whether missingness of a data item
+is a result of a "lesion" at the item (e.g., lab) level, visit level, patient level, or site level; see @fig-practices-050-missing-data.
+Before finalizing a protocol, search out what data are missing
+(starting with cohort definition, then outcomes, then confounders),
+at what level, and decide how to address them.
 The pattern of missingness is critical.
-Data may be missing "not at random" (MNAR, unrelated to factors that have been captured in the database), missing completely at random (MCAR, in which the missing and observed data have similar distributions), or missing at random (MAR, where there may be differences between missing and observed values, but these can be adequately explained by other captured variables).
+Data may be missing "not at random" (MNAR, unrelated to factors that have been captured in the database),
+missing completely at random (MCAR, in which the missing and observed data have similar distributions),
+or missing at random (MAR, where there may be differences between missing and observed values, but these can be adequately explained by other captured variables).
 
-Many techniques exist to deal with missing data (for example, restriction of analyses to complete data, which is acceptable in the context of data MCAR; imputation based on the average of observed values, etc.), _but the suitableness of available choices depends on the pattern of missingness_.
+Many techniques exist to deal with missing data
+(for example, restriction of analyses to complete data, which is acceptable in the context of data MCAR; imputation based on the average of observed values, etc.),
+_but the suitableness of available choices depends on the pattern of missingness_.
 Multiple imputation techniques based on machine learning, in which missing values are predicted based on other variables, may be appropriate if data are MAR.
-Note that assuming data are missing completely at random may be a very dangerous assumption, especially in the context of observational or EHR data, where, for example, variability among practitioners in follow-up practices or disease surveillance may be substantial.
+Note that assuming data are missing completely at random may be a very dangerous assumption, especially in the context of observational or EHR data, where,
+for example, variability among practitioners in follow-up practices or disease surveillance may be substantial.
 If patients with the disease die, their data are missing.
 Imputation does not substitute for checking on mortality.
 While missingness patterns are difficult to verify with observational data alone, data _across_ sites—as we have in the Enclave—helps in assessing whether data are missing at random or not.
 
-![Possible sources of missing data.  Legend for icons is at the top of the figure (What…Mechanism..How Documented).](images/practices/fig-practices-050-missing-data.gif){#fig-practices-050-missing-data fig-alt="Possible sources of missing data"}
+![Possible sources of missing data.  Legend for icons is at the top of the figure (What...Mechanism...How Documented).](images/practices/fig-practices-050-missing-data.gif){#fig-practices-050-missing-data fig-alt="Possible sources of missing data"}
 
 ### Perform Initial Analysis
 
@@ -697,7 +713,7 @@ We defer other considerations for machine learning, including bias and generaliz
 Pre-processing is, essentially, the decision-oriented process described around @fig-practices-022-building-block.
 While machine learners can manipulate a training set, protocols covered by this chapter do not have that right.
 
-Instead, beyond the "cleaning of data", analysts must be concerned with selection bias and collider bias.[cite;cite] The latter is a causal-modeling concern that results from "selecting" patients whose records we have (as opposed to those whose information did not make it into our records).
+Instead, beyond the "cleaning of data", analysts must be concerned with selection bias and collider bias [@griffith_2022; @weiskopf_2023]. The latter is a causal-modeling concern that results from "selecting" patients whose records we have (as opposed to those whose information did not make it into our records).
 
 ![Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital—i.e., having data in the EHR—induces bias (magenta arrows) in the relationship between COVID and its sequela.](images/practices/fig-practices-060-collider-bias.png){#fig-practices-060-collider-bias fig-alt="Collider bias in N3C"}
 
@@ -726,8 +742,10 @@ The STaRT-RWE recommendations for the analysis phase itself are fewer; there are
 
 : STaRT-RWE analysis specifications, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
 
-While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
-In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so.[cite] At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus), and variability of missingness across sites considered.
+While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing \[not\]\[completely\] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so [@tan_2023].
+At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus),
+and variability of missingness across sites considered.
 Data imputation should be considered if there is a reason to believe that systematic missingness is independent of unknown extraneous factors not captured by the data and imputation can be safely predicated upon knowledge of other captured variables that fully or adequately explain missingness.
 
 It is during this final "data cleaning" phase that data quality issues arise that were not surfaced during the data ingestion, harmonization, or general-templating upstream work.

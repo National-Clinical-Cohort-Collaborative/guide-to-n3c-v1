@@ -229,7 +229,6 @@ Several tools provide checklists a researcher can follow to ensure their work wi
 The previously mentioned Protocol Pad, for example, guides researchers through protocol development, and is integrated with other N3C tooling to capture relationships to teams, researchers, and artifacts such as concept sets, analyses, and datasets. .
 STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more expansive methodological checklist. [Table 1](@tab-practices-map) below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
 
-
 <!-- https://www.tablesgenerator.com/markdown_tables -->
 
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
@@ -259,7 +258,7 @@ STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more exp
 |                                     | - Name of human subjects/ethics approval committee                                   |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
 
-: STaRT-RWE: Administrative Information, based on Wang and colleagues [cite] {#tbl-practices-start tbl-colwidths="[30, 45, 25]"}
+: STaRT-RWE Table 1: Administrative Information, based on Wang and colleagues [cite] {#tbl-practices-start-1 tbl-colwidths="[30, 45, 25]"}
 
 Not everything you need to start, though, is included in this list.
 Here are a few additional things to consider:
@@ -316,13 +315,13 @@ While the data are rich and the applications are broad, there are still question
 We list that caveat, along with others, below:
 
 * Beware making estimates or predictions that rely on a random sample of "controls" (as those in N3C are [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
-    * The COVID phenotype data partners use to generate N3C data match patients using 2 controls:1 case based on age, sex, race, and ethnicity
-    * Therefore, age, sex, race, or ethnicity should never be features of a prediction model between COVID positive _and COVID negative patients_
+  * The COVID phenotype data partners use to generate N3C data match patients using 2 controls:1 case based on age, sex, race, and ethnicity
+  * Therefore, age, sex, race, or ethnicity should never be features of a prediction model between COVID positive _and COVID negative patients_
 * Because each COVID-19 case is matched with two others, data come in with ostensible controls for each COVID-19 case, no population-targeted inference (prevalence or incidence) can be made, even with Level 3 data.
 * In general, estimation of rates (of, for example COVID-19 infection) should be avoided.
 * Beware making estimates or predictions that rely on nationwide representative sampling (in order to generalize to the entire US population at risk for COVID-19)
-    * E.g., prevalence or incidence of COVID-19 in any geographic region
-    * Weighting analyses by zip-code-based populations might be possible, but beware (See [External Data Sets](#External Data Sets)
+  * E.g., prevalence or incidence of COVID-19 in any geographic region
+  * Weighting analyses by zip-code-based populations might be possible, but beware (See [External Data Sets](#External Data Sets)
 * Eligibility criteria defined using patient ICU status, as ICU status cannot be resolved from the visit-level information available, notwithstanding the possibility that some sites repurposed non-ICUs to serve as ICUs during surges in COVID-19 patients.
   In some cases, however, additional ADT (Admission-Discharge-Transfer) data may be available.
 * Questions regarding COVID negative vs.
@@ -386,78 +385,32 @@ In associational, causal, and intervention studies, the following attributes are
 **Other attributes include**: Design, Rationale, study objectives, which need to be manually entered.
 The DUR identifier should be supplied by the system.
 
-Table 2. STaRT-RWE Table 2 and Design (Based on Wang and colleagues)
++------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Section                                        | Element                                                                              | Where found in the Enclave                                                                                                                                                             |
++================================================+======================================================================================+========================================================================================================================================================================================+
+| TABLE 2. VERSION HISTORY                       | - Version date                                                                       | - Protocol Pad                                                                                                                                                                         |
+|                                                | - Version number                                                                     | - Manual entry of change log and rationale                                                                                                                                             |
+|                                                | - Change log                                                                         |                                                                                                                                                                                        |
+|                                                | - Rationale for change                                                               |                                                                                                                                                                                        |
++------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FIGURE 1. DESIGN DIAGRAM                       |                                                                                      | - Manual. Suggest use of Schneeweiss and colleagues.[cite]                                                                                                                             |
+|                                                |                                                                                      | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                                                            |
++------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| A. Meta-data about data source and software    | - Data Source(s)                                                                     | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                                                               |
++------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| {For each data source:}                        | - Study Period                                                                       | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                                                            |
+|                                                | - Eligible Cohort Entry Period                                                       | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)                                         |
+|                                                | - Data Extraction Date/Version                                                       | - Link to various [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) to PPRL-based linked data |
+|                                                | - Data sampling/extraction criteria                                                  |                                                                                                                                                                                        |
+|                                                | - Type(s) of data                                                                    |                                                                                                                                                                                        |
+|                                                | - Data linkage                                                                       |                                                                                                                                                                                        |
+|                                                | - Data conversion                                                                    |                                                                                                                                                                                        |
+|                                                | - Software to create study population                                                |                                                                                                                                                                                        |
++------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-<table>
-  <tr>
-   <td><strong>Section</strong>
-   </td>
-   <td><strong>Element</strong>
-   </td>
-   <td><strong>Where found in the Enclave</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>TABLE 2. VERSION HISTORY
-   </td>
-   <td>Version date
-<p>
-Version number
-<p>
-Change log
-<p>
-Rationale for change
-   </td>
-   <td>Protocol Pad
-<p>
-Manual entry of change log and rationale
-   </td>
-  </tr>
-  <tr>
-   <td>FIGURE 1. DESIGN DIAGRAM
-   </td>
-   <td>
-   </td>
-   <td>Manual. Suggest use of Schneeweiss and colleagues.[cite]
-   </td>
-  </tr>
-  <tr>
-   <td>A. Meta-data about data source and software
-   </td>
-   <td>Data Source(s)
-   </td>
-   <td><a href="https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview">Release notes</a>
-   </td>
-  </tr>
-  <tr>
-   <td>&lt;For each data source:>
-   </td>
-   <td>Study Period
-<p>
-Eligible Cohort Entry Period
-<p>
-Data Extraction Date/Version
-<p>
-Data sampling/extraction criteria
-<p>
-Type(s) of data
-<p>
-Data linkage
-<p>
-Data conversion
-<p>
-Software to create study population
-   </td>
-   <td>Entered manually in Lab Notebook of Protocol Pad, with links to data sets.
-<p>
-Link to <a href="https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype">N3C Phenotype Description</a>
-<p>
-Link to various <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23">Guides</a> to PPRL-based linked data
-   </td>
-  </tr>
-</table>
+: STaRT-RWE Table 2 and Design, based on Wang and colleagues [cite] {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
 
-As suggested in Table 2, it is helpful to diagram the cohort definition.
+As suggested in @tbl-practices-start-2, it is helpful to diagram the cohort definition.
 A well received model is that of [Schneeweiss and colleagues](https://pubmed.ncbi.nlm.nih.gov/30856654/).
 
 ![Graphical study design for study with EHR–claims linked data.

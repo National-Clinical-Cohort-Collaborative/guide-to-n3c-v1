@@ -485,223 +485,69 @@ There are also two additional Logic Liaison data quality templates that allow re
 While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) template provides an all or nothing indication of fact presence by site, the [Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) template calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) and creates heatmaps to visualize the metrics.
 
 This back-and-forth work ("pre-processing"; "data cleaning") points to the fact that developing the final protocol entails a series of decisions.
-Recognizing "data cleaning" as a decision-rich process helps to raise the profile of this work, helps the team to make those decisions explicitly, and helps to attract decision support to the process.
+Recognizing "data cleaning" as a decision-rich process helps to raise the profile of this work, helps the team to make those decisions explicitly,
+and helps to attract decision support to the process.
 These decisions should be documented in the lab notebook.
 
-The elements of this phase that go into the STaRT-RWE checklist are listed in Table 3.
+The elements of this phase that go into the STaRT-RWE checklist are listed in @tbl-practices-start-3. The elements can be found in the Enclave in the
+(a) README in Template, _or_
+(b) dataset description, _or_
+(c) Free text in Protocol pad.
 
-Table 3. STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION)*
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| PICOT                                    | Element                                                    |                                                            |
++==========================================+============================================================+============================================================+
+| B. Index Date (day 0) defining criterion | Study population name(s)                              <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Day 0 Description                                     <br> | Incident with respect to…                             <br> |
+|                                          | Number of entries                                     <br> | Pre-specified                                         <br> |
+|                                          | Type of entry                                         <br> | Varied for sensitivity                                <br> |
+|                                          | Washout window                                        <br> | Source of algorithm                                        |
+|                                          | Care Settings<sup>1</sup>                             <br> |                                                            |
+|                                          | Code Type                                                  |                                                            |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| C. Inclusion Criteria                    | Criterion                                             <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Details                                               <br> | Incident with respect to...                           <br> |
+|                                          | Order of application                                  <br> | Pre-specified                                         <br> |
+|                                          | Assessment window                                     <br> | Varied for sensitivity                                <br> |
+|                                          | Care Settings<sup>1</sup>                             <br> | Source of algorithm                                        |
+|                                          | Code Type                                                  |                                                            |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| D. Exclusion Criteria                    | Criterion                                             <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Details                                               <br> | Incident with respect to...                           <br> |
+|                                          | Order of application                                  <br> | Pre-specified                                         <br> |
+|                                          | Assessment window                                     <br> | Varied for sensitivity                                <br> |
+|                                          | Care Settings<sup>1</sup>                             <br> | Source of algorithm                                        |
+|                                          | Code Type                                                  |                                                            |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| E. Predefined Covariates                 | Criterion                                             <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Details                                               <br> | Incident with respect to...                           <br> |
+|                                          | Order of application                                  <br> | Pre-specified                                         <br> |
+|                                          | Assessment window                                     <br> | Varied for sensitivity                                <br> |
+|                                          | Care Settings<sup>1</sup>                             <br> | Source of algorithm                                        |
+|                                          | Code Type                                                  |                                                            |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| F. Empirically Defined Covariates        | Algorithm                                             <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Type of variable                                      <br> | Incident with respect to...                           <br> |
+|                                          | Assessment window                                     <br> | Pre-specified                                         <br> |
+|                                          | Care Settings<sup>1</sup>                             <br> | Varied for sensitivity                                <br> |
+|                                          | Code Type                                                  | Source/code of algorithm                                   |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| G. Outcome                               | Outcome name                                          <br> | Diagnosis position<sup>2</sup>                        <br> |
+|                                          | Outcome measurement characteristics                   <br> | Incident with respect to...                           <br> |
+|                                          | Primary outcome?                                      <br> | Pre-specified                                         <br> |
+|                                          | Type of outcome                                       <br> | Varied for sensitivity                                <br> |
+|                                          | Washout window                                        <br> | Source of algorithm                                        |
+|                                          | Care Settings<sup>1</sup>                             <br> |                                                            |
+|                                          | Code Category                                              |                                                            |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
+| H. Follow up                             | Begins                                                <br> | Day X following index date                            <br> |
+|                                          | Date of Outcome                                       <br> | End of study period                                   <br> |
+|                                          | Date of Death                                         <br> | End of exposure                                       <br> |
+|                                          | Date of Disenrollment                                 <br> | Date of add to/switch from exposure                   <br> |
+|                                          |                                                            | Other                                                      |
++------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
 
-<table>
-  <tr>
-   <td><strong>PICOT</strong>
-   </td>
-   <td colspan="2" ><strong>Element</strong>
-   </td>
-   <td><strong>Where found in the Enclave</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>B. Index Date (day 0) defining criterion
-   </td>
-   <td>Study population name(s)
-<p>
-Day 0 Description
-<p>
-Number of entries
-<p>
-Type of entry
-<p>
-Washout window
-<p>
-Care Setting¹
-<p>
-Code Type
-   </td>
-   <td>Diagnosis position²
-<p>
-Incident with respect to…
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source of algorithm
-   </td>
-   <td>README in Template
-<p>
-<em>Or </em>Dataset Description
-<p>
-<em>Or</em> Free text in Protocol Pad
-   </td>
-  </tr>
-  <tr>
-   <td>C. Inclusion Criteria
-   </td>
-   <td>Criterion
-<p>
-Details
-<p>
-Order of application
-<p>
-Assessment window
-<p>
-Care Settings¹
-<p>
-Code Type
-   </td>
-   <td>Diagnosis position²
-<p>
-Applied to study populations:
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source for algorithm
-   </td>
-   <td>Same
-   </td>
-  </tr>
-  <tr>
-   <td>D. Exclusion Criteria
-   </td>
-   <td>Criterion
-<p>
-Details
-<p>
-Order of application
-<p>
-Assessment window
-<p>
-Care Settings¹
-<p>
-Code Type
-   </td>
-   <td>Diagnosis position²
-<p>
-Applied to study populations:
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source for algorithm
-   </td>
-   <td>Same
-   </td>
-  </tr>
-  <tr>
-   <td>E. Predefined Covariates
-   </td>
-   <td>Characteristic
-<p>
-Details
-<p>
-Type of variable
-<p>
-Assessment window
-<p>
-Care Settings
-<p>
-Code Type
-   </td>
-   <td>Diagnosis position
-<p>
-Applied to study populations:
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source for algorithm
-   </td>
-   <td>Same
-   </td>
-  </tr>
-  <tr>
-   <td>F. Empirically Defined Covariates
-   </td>
-   <td>Algorithm
-<p>
-Type of variable
-<p>
-Assessment window
-<p>
-Care Settings¹
-<p>
-Code Type
-   </td>
-   <td>Diagnosis position²
-<p>
-Applied to study populations:
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source/code for algorithm
-   </td>
-   <td>Same
-   </td>
-  </tr>
-  <tr>
-   <td>G. Outcome
-   </td>
-   <td>Outcome name
-<p>
-Outcome measurement characteristics
-<p>
-Primary outcome?
-<p>
-Type of outcome
-<p>
-Washout window
-<p>
-Care Settings¹
-<p>
-Code Category
-   </td>
-   <td>Diagnosis position
-<p>
-Applied to study populations:
-<p>
-Pre-specified
-<p>
-Varied for sensitivity
-<p>
-Source of algorithm
-   </td>
-   <td>Same
-   </td>
-  </tr>
-  <tr>
-   <td>H. Follow up
-   </td>
-   <td>Begins
-<p>
-Date of Outcome
-<p>
-Date of Death
-<p>
-Date of Disenrollment
-   </td>
-   <td>Day X following index date
-<p>
-End of study period
-<p>
-End of exposure
-<p>
-Date of add to/switch from exposure
-<p>
-Other
-   </td>
-   <td>Same
-   </td>
-  </tr>
-</table>
-
-*Based on Wang and colleagues[cite]
+: STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION), based on Wang and colleagues [cite] {#tbl-practices-start-3 tbl-colwidths="[30, 35, 35]"}
 
 [Chapter Analyzing The Data](#Analyzing The Data) discusses this process in more detail.
 

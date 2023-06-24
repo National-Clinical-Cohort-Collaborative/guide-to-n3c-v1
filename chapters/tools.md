@@ -64,7 +64,7 @@ Because the N3C contains real-world EHR data that is harmonized from multiple da
 Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts.
 This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available.
 Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the Enclave, what is missing or sparse, and overall data quality (see @sec-practices).
-Some data quality aspects can be easily obtained through the use of [Logic Liaison Templates](tools.md#sec-tools-ll) accessible through the [N3C Knowledge Store](tools.md#sec-tools-store).
+Some data quality aspects can be easily obtained through the use of [Logic Liaison Templates](tools.md#sec-tools-store-ll) accessible through the [N3C Knowledge Store](tools.md#sec-tools-store).
 The Enclave application [Contour](tools.md#sec-tools-apps-contour) can be utilized at this stage, along with [Code Workbooks](tools.md#sec-tools-apps-workbook) for quick querying and visualizing of the data.
 Additionally, [Fusion](tools.md#sec-tools-apps-fusion) can be utilized to keep track of developed concept sets and utilized to easily input them into Logic Liaison Templates.
 

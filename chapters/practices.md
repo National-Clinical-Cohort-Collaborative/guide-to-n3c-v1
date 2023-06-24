@@ -375,18 +375,26 @@ By linking the resulting artifacts together, we aim to develop a self-documentin
 We list here the basic steps in articulating—and specifying attributes of—a protocol, as part of the "Explore"  step.  (Note that the term "protocol" is used here in a more general way than in biology, for instance.)  This step is focused on the initial "natural language" view of the protocol; the code-based view comes in the next section.
 While the checklists seek text descriptions, we recommend _linking the text as soon as possible to objects and datasets used in the Enclave_, track what resources you've used, be specific with your team members, and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
 
-**Causal model positing before analyzing**.
-Create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.
-Tools like [Daggity](http://dagitty.net)[cite] can (a) identify threats to validity earlier, (b) suggest appropriate controls, and (c) identify biases simply from the structure of the model.
+Before analyzing the data,
+create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.
+Tools like Daggity [@ankan_2021] can
+
+1. identify threats to validity earlier,
+1. suggest appropriate controls, and
+1. identify biases simply from the structure of the model.
+
 In addition, a causal model helps to identify sub-projects, making the overall analysis ultimately easier and doable.
-Do note, however, that "documentation", the Extraction, Loading, and Transfer operations (ETL), and data-representation issues are often _not_ represented in such models, although faults at each of those steps can contribute to (cause) data quality issues.
+Do note, however, that "documentation", the Extraction, Loading, and Transfer operations (ETL),
+and data-representation issues are often _not_ represented in such models,
+although faults at each of those steps can contribute to (cause) data quality issues.
 
 The following simple example shows the power of a DAG in drawing attention to a specific confounder.
 
-![Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification..](images/practices/fig-practices-020-site-bias.png){#fig-practices-020-site-bias fig-alt="Effect of site (data partner)"}
+![Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification.](images/practices/fig-practices-020-site-bias.png){#fig-practices-020-site-bias fig-alt="Effect of site (data partner)"}
 
-@fig-practices-020-site-bias shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of [Figure xxx](Figure image-022-BuildingBlock.png), above.
-As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites. (For a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research, see Redelmeier et al.[cite])
+@fig-practices-020-site-bias shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of @fig-practices-022-building-block, above.
+As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites.
+^[See @redelmeier_2023 for a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research.]
 
 ### Describe PICOT Elements in Text
 
@@ -398,7 +406,17 @@ Provide the core details for readers that define key elements of the study metho
 
 Even in methodological studies, there is a universe of populations and contexts for which the methods apply (or not).
 In descriptive studies, the focus is on a population and its attributes.
-In associational, causal, and intervention studies, the following attributes are important: **_Population (cohort and control), Intervention/Exposure (if any), Comparator, Outcome, Time Horizon, potential confounders_**.[cite] These should be articulated in text with proper intention so analysts and reviewers have a basis for assessing whether subsequent code matches the intention. (Of course, after confronting the data, these intentions often change prior to finalizing the protocol.)
+
+In associational, causal, and intervention studies, the following attributes are important [cite]:
+
+1. **P**opulation (cohort and control),
+1. **I**ntervention/Exposure (if any),
+1. **C**omparator,
+1. **O**utcome,
+1. **T**ime horizon, and
+1. potential confounders.
+
+These should be articulated in text with proper intention so analysts and reviewers have a basis for assessing whether subsequent code matches the intention. (Of course, after confronting the data, these intentions often change prior to finalizing the protocol.)
 
 **Other attributes include**: Design, Rationale, study objectives, which need to be manually entered.
 The DUR identifier should be supplied by the system.

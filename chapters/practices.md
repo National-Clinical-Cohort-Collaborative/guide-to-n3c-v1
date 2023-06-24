@@ -561,174 +561,48 @@ Address data quality issues through action that mitigates the risk of reaching e
 
 A key component of the back-and-forth work is **data quality checks**.
 While the Data Quality Dashboard helps the Data Ingestion and Harmonization (DI&H) team decide on readiness of site data for release, _data quality checks for a specific analysis is the responsibility of the analyst_.
-While providing an exhaustive list of the steps to this process is outside the scope of this document, we highlight in Table 4 some data quality issues that warrant special attention.
+While providing an exhaustive list of the steps to this process is outside the scope of this document, we highlight in @tbl-practices-dq some data quality issues that warrant special attention.
 Many of the items in this list were borrowed from Sidky et al. which can be referred to for further detail.[cite]
 
-Table 4. Data Quality Issues
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Data quality issue                                           | Considerations and possible solutions                                                                                   |
++==============================================================+=========================================================================================================================+
+| Site-specific variability in data availability               | - Cluster data sources based on relevant study variables and eliminate those with insufficient data.                    |
+|                                                              | - Investigate possible temporal missingness patterns and evidence of missing not at random (MNAR) data.                 |
+|                                                              | - Potentially leverage relevant techniques such as multiple imputation and inverse                                      |
+|                                                              |   probability weighting to handle remaining missing data or balance covariates.                                         |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Site is _always_ a confounder                                | - Stratify analysis by site.                                                                                            |
+|                                                              | - Include a site-specific random effect in your model.                                                                  |
+|                                                              | - Pool results across site-specific model estimates.                                                                    |
+|                                                              | - Use cluster-robust standard errors, with site as the clustering variable.                                             |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Drug exposure data are often unreconciled                    | - Aggregate contiguous drug exposure intervals into single presumed drug eras.                                          |
+|                                                              | - Residual open-ended intervals may simply not allow for time-varying analysis                                          |
+|                                                              |   and may only be suitable for analysis as point exposures.                                                             |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Lack of enrollment dates on patients                         | - For the main analysis, include only patients with a history of at least one visit prior to the index date.            |
+|                                                              |   This also increases the likelihood of capturing medical history prior to,                                             |
+|                                                              |   for example, a COVID-19 diagnosis index date.                                                                         |
+|                                                              | - Identify the end of follow-up as the last recorded patient interaction with a data partner.                           |
+|                                                              | - Perform a sensitivity analysis to understand the impact of continuity of care on the estimand.                        |
+|                                                              | - Consider incorporating prognostic factors proximal to the outcome into the model.                                     |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Limited availability of out-of-hospital mortality data       | - Leverage PPRL mortality data, available for a subset of sites.                                                        |
+|                                                              | - Consider a sensitivity analysis on censoring time for discharged patients.                                            |
+|                                                              | - Consider designs where in-hospital deaths only are needed.                                                            |
+|                                                              | - Employ competing risk analysis analysis with discharge and in-hospital mortality as competing risks.                  |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Previous medical history may be carried forward in EHR data  | - Calculate the number of events recorded per day throughout the visit                                                  |
+|                                                              |   for an outcome of interest to assess validity of such carry forward.                                                  |
+|                                                              | - Determine if treatment preceded the outcome or if it is an artifact.                                                  |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| N3C COVID*                                                   | - Consider research questions that are conditioned on COVID-19 positivity.                                              |
+| "phenotype" is a 2:1 control:case match on COVID-19          | - Secondary outcome analysis may be biased if the cohort spans cases and controls.                                      |
+| negative and positive patients.                              | - Patients initially COVID-19 negative may not always remain negative.                                                  |
++--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 
-<table>
-  <tr>
-   <td><strong>Data quality issue</strong>
-   </td>
-   <td><strong>Considerations and possible solutions</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Site-specific variability in data availability
-   </td>
-   <td>
-<ul>
-
-<li>Cluster data sources based on relevant study variables and eliminate those with insufficient data.
-<ul>
-
-<li>Investigate possible temporal missingness patterns and evidence of missing not at random (MNAR) data.
-<ul>
-
-<li>Potentially leverage relevant techniques such as multiple imputation and inverse probability weighting to handle remaining missing data or balance covariates.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Site is <em>always </em>a confounder
-   </td>
-   <td>
-<ul>
-
-<li>Stratify analysis by site.
-<ul>
-
-<li>Include a site-specific random effect in your model.
-<ul>
-
-<li>Pool results across site-specific model estimates.
-<ul>
-
-<li>Use cluster-robust standard errors, with site as the clustering variable.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Drug exposure data are often unreconciled
-   </td>
-   <td>
-<ul>
-
-<li>Aggregate contiguous drug exposure intervals into single presumed drug eras.
-<ul>
-
-<li>Residual open-ended intervals may simply not allow for time-varying analysis and may only be suitable for analysis as point exposures.
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Lack of enrollment dates on patients
-   </td>
-   <td>
-<ul>
-
-<li>For the main analysis, include only patients with a history of at least one visit prior to the index date.
-This also increases the likelihood of capturing medical history prior to, for example, a COVID-19 diagnosis index date.
-<ul>
-
-<li>Identify the end of follow-up as the last recorded patient interaction with a data partner.
-<ul>
-
-<li>Perform a sensitivity analysis to understand the impact of continuity of care on the estimand.
-<ul>
-
-<li>Consider incorporating prognostic factors proximal to the outcome into the model.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Limited availability of out-of-hospital mortality data
-   </td>
-   <td>
-<ul>
-
-<li>Leverage PPRL mortality data, available for a subset of sites.
-<ul>
-
-<li>Consider a sensitivity analysis on censoring time for discharged patients.
-<ul>
-
-<li>Consider designs where in-hospital deaths only are needed
-<ul>
-
-<li>Employ competing risk analysis analysis with discharge and in-hospital mortality as competing risks.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Previous medical history may be carried forward in EHR data
-   </td>
-   <td>
-<ul>
-
-<li>Calculate the number of events recorded per day throughout the visit for an outcome of interest to assess validity of such carry forward.
-<ul>
-
-<li>Determine if treatment preceded the outcome or if it is an artifact.
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>N3C COVID*  "phenotype" is a 2:1 control:case match on COVID-19 negative and positive patients.
-   </td>
-   <td>
-<ul>
-
-<li>Consider research questions that are conditioned on COVID-19 positivity.
-<ul>
-
-<li>Secondary outcome analysis may be biased if the cohort spans cases and controls.
-<ul>
-
-<li>Patients initially COVID-19 negative may not always remain negative.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
-*For non-COVID-based datasets, beware of how controls are brought into the Enclave.
+: Data Quality Issues. *For non-COVID-based datasets, beware of how controls are brought into the Enclave. {#tbl-practices-dq tbl-colwidths="[25, 75]"}
 
 ### Articulate missing-data plan
 

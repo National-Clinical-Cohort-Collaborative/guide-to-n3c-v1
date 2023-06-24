@@ -672,56 +672,23 @@ Attempts by N3C analysts to address this selection bias include propensity score
 
 The STaRT-RWE recommendations for the analysis phase itself are fewer; there are two phases: the primary analysis and the sensitivity analyses.
 
-Table 5. STaRT-RWE analysis specifications*
++------------------------------------------------------------+------------------------------------------------------------+
+| Element                                                    | Enclave Source                                             |
++============================================================+============================================================+
+| - Hypothesis                                               | Protocol PICO                                              |
+| - Study population(s)                                      |                                                            |
+| - Outcome                                                  |                                                            |
++------------------------------------------------------------+------------------------------------------------------------+
+| - Software                                                 | Code Workbook (SQL, python R)                              |
++------------------------------------------------------------+------------------------------------------------------------+
+| - Model(s)                                                 | Citation, link to Code Workbook                            |
++------------------------------------------------------------+------------------------------------------------------------+
+| - Confounding adjustment method                            | Citation, description, link to Code Workbook               |
+| - Missing data methods                                     |                                                            |
+| - Subgroup Analysis                                        |                                                            |
++-----------------------------------------------------------+------------------------------------------------------------+
 
-<table>
-  <tr>
-   <td><strong>Analysis</strong>
-   </td>
-   <td><strong>Element</strong>
-   </td>
-   <td><strong>Enclave Source</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>TABLE 4 ANALYSIS SPECIFICATIONS
-   </td>
-   <td>Hypothesis:
-<p>
-Study population(s)
-<p>
-Outcome:
-<p>
-Software:
-<p>
-Model(s):
-<p>
-Confounding adjustment method
-<p>
-Missing data methods
-<p>
-Subgroup Analysis
-   </td>
-   <td>Protocol PICO
-<p>
-Protocol PICO
-<p>
-Protocol PICO
-<p>
-Code Workbook (SQL, python R)
-<p>
-Citation, link to Code Workbook
-<p>
-Citation, description, link to Code Workbook
-<p>
-Citation, description, link to Code Workbook
-<p>
-Citation, description, link to Code Workbook
-   </td>
-  </tr>
-</table>
-
-*Based on Wang and colleagues[cite]
+: STaRT-RWE analysis specifications, based on Wang and colleagues [cite]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
 
 While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so.[cite] At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus), and variability of missingness across sites considered.

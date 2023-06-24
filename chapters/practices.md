@@ -153,7 +153,7 @@ The general project management phases defined by the [Project Management Institu
 In N3C terms:
 
 * _Development_ refers to Protocol Design,
-* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur)),
+* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectation](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
 * _Activation_ is assembling and running the research team,
 * _Conduct_ is the workflow described in Chapter [Analyzing the Data](Analyzing the Data),
 * _Oversight_ is the responsibility of the project PI,
@@ -358,7 +358,7 @@ There are other questions that may _potentially_ be answerable in N3C, depending
   Efforts have been expended to creatively identify patients in the Enclave who might have Long COVID
   but who lack a U09.9 diagnosis code, including computable phenotypes [@pfaff_2023a].
 
-There are others, and we welcome suggestions to add to either list.
+There are others, and we welcome suggestions to add to either list.  Please contact the chapter authors or see [How to Contribute](../index.html#sec-welcome-contribute).
 
 ### Specify Protocol
 
@@ -511,9 +511,20 @@ So a _Formula_ may be independent of the context of use
 (e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus)),
 regardless of the research question.
 A _Transformation_ may be more complex, such as
-"[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)" [@sidky_2023]
-to indicate a hospital admission, or "[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)", used in defining a Covid-19 hospitalization.
-A [Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct ("[covid-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)"; "[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)", "[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)"), while a _Cohort Definition_ gives the phenotype a [local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/) (e.g., in the past 5 years) or utilizes an algorithm (e.g., [long covid algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus)).
+"[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)"
+[@sidky_2023]
+to indicate a hospital admission, or
+"[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)",
+used in defining a Covid-19 hospitalization.
+A [Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct
+("[covid-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)";
+"[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)",
+"[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)"),
+while a _Cohort Definition_ gives the phenotype a
+[local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/)
+(e.g., in the past 5 years)
+or utilizes an algorithm
+(e.g., [long covid algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus)).
 
 The figure recognizes that the _role_ each construct plays depends on the context; "diabetes" could be the target cohort (are patients with diabetes at higher risk of developing Covid-19  sequelae, compared with those who do not?), the confounder (does a presumed treatment for Covid-19 have its effect weakened in the presence of diabetes?), the cause (are there specific outcomes for patients with diabetes?), or the outcome (are any patients with Covid-19 at risk for developing type 2 diabetes?).
 

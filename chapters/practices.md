@@ -94,18 +94,18 @@ This includes:
 * [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67), and
 * [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37)
 
-#### Encourage and disseminate best practice, but do not require specific approaches
+#### Encourage and disseminate best practices, but do not require specific approaches
 
 "Best practice" refers to guidelines, such as those outlined by the FDA [-@usfda_2021; -@usfda_2017] and methodologists [@franklin_2021].
 While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
 ADMS, in particular, is a cross-cutting [Domain Team](onboarding.md#sec-onboarding-dts)
 that provides a forum for discussing analytic issues that are important across N3C.
-Example issues include the he difficulty of defining study-specific "control" cohorts when needed.
+Example issues include the difficulty of defining study-specific "control" cohorts when needed.
 The Good Algorithmic Practice (GAP) group is a forum that includes machine learning and other general discussions related to data and analysis quality.
 
 ### Practices
 
-Most components of high-quality research lie with research teams themselves.
+Most components of high-quality research lie with the research teams themselves.
 Important practices contributing to reproducible, reliable work include:
 
 #### Ensuring validated or mature code
@@ -135,7 +135,7 @@ Both Code Workbooks and Code Repositories can be exported as [Git repositories](
 #### Building on the experience across and within networks
 
 Outside N3C, the experience of OHDSI, in particular, will be referenced below.
-Within N3C, discussions and work within Domain Teams enriched by individuals' experiences in a wide variety of studies and research configurations.
+Within N3C, discussions and work within Domain Teams are enriched by individuals' experiences in a wide variety of studies and research configurations.
 
 #### Anticipate analytic problems before they arise
 
@@ -171,7 +171,7 @@ In N3C terms:
 * _Publication_ is both formal (manuscript submission) and otherwise (preprints, conferences).
 
 The term "protocol" is used in many ways in science.
-Basic scientists use it for how a particular laboratory reagent should be used or process, implemented.
+Basic scientists use it for how a particular laboratory reagent should be used, processed, or implemented.
 In human subjects research, it is the commitment of the researcher to how patients, and their data, will be managed in a study.
 
 In Real World Data analysis, the meaning is a bit different.
@@ -210,7 +210,7 @@ Protocol Development ❷
 1. Perform initial analysis
 1. Iterate
 1. Commit to final run
-1. Preform sensitivity analysis
+1. Perform sensitivity analysis
 
 Protocol Completion ❸
 
@@ -250,8 +250,9 @@ Gathering administrative information, such as DUR number, team members, and rese
 Several tools provide checklists a researcher can follow to ensure their work will be publishable.
 The previously mentioned Protocol Pad, for example, guides researchers through protocol development,
 and is integrated with other N3C tooling to capture relationships to teams, researchers,
-and artifacts such as concept sets, analyses, and datasets. .
-STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1 below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
+and artifacts such as concept sets, analyses, and datasets.
+STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1
+below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
 
 <!-- https://www.tablesgenerator.com/markdown_tables -->
 
@@ -296,32 +297,38 @@ Other common roles include leadership and project management -–see @sec-onboar
 
 **Documentation/Lab Notebook**.
 A "lab notebook" is an important part of any researchers' repertoire, as a place to document thoughts, experiments, and results.
-The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view, while others must stay in the Enclave (see @sec-publishing for details on what may be exported from the Enclave and how).
+The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view,
+while others must stay in the Enclave (see @sec-publishing for details on what may be exported from the Enclave and how).
 This duality can lead to challenges in documentation and collaboration.
-[Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis (see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
+[Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis
+(see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
 Whether ProtocolPad is used or not, each analyst should maintain a lab notebook.
 
 **Project organization**.
 Before sitting down to code, core items and roles should be articulated.
-These include the research question (even if only "descriptive"), the hypotheses (if any), the identification level of data required, the PI, and, as much as possible, the identity of those filling roles of domain expert, informatician/data scientist, and statistician, even if individuals are filling multiple roles. [Methodology checklists](tools.md#sec-tools-apps-protocol) help organize this information.
+These include the research question (even if only "descriptive"), the hypotheses (if any), the identification level of data required, the PI,
+and, as much as possible, the identity of those filling roles of domain expert, informatician/data scientist, and statistician,
+even if individuals are filling multiple roles.
+[Methodology checklists](tools.md#sec-tools-apps-protocol) help organize this information.
 
 **Code organization/formatting**.
 [Code Workbooks](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-workbook) and
 [Code Repositories](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-repo) are the heart of most N3C analyses
 and we recommend that researchers attentively format their code and documentation,
 like any modern software project.
-While these tools provide unique interfaces initial unfamiliar to most,
+While these tools provide unique interfaces initially unfamiliar to most,
 they provide a host of features for organizing code, data, documentation, and metadata.
 See @sec-tools for more details.
 
 **Which tools are best for what**.
 The Knowledge Store, in particular, provides some analytic tools for use.
 Because of security concerns, not all code is sharable.
-Data partner IDs and patient IDs present in such code in one's project should not be shared across projects or Data Use Requests (DURs), meaning that even programming code must be de-identified and templatized before being released to the Knowledge Store for general use or posted to repositories like GitHub for external review.
+Data partner IDs and patient IDs present in such code in one's project should not be shared across projects or Data Use Requests (DURs),
+meaning that even programming code must be de-identified
+and templatized before being released to the Knowledge Store for general use or posted to repositories like GitHub for external review.
 @sec-publishing describes processes and requirements for safe sharing of both results and code.
 
-**Take-away**
-
+**Takeaway**.
 Ideally, a project should have someone fulfilling the role of project manager, who ensures good documentation, keeps the project on track, and convenes meetings as needed.
 
 Researchers should consider, ahead of time, documenting necessary project management information and assembling a team with the relevant expertise to maximize the likelihood of project success.
@@ -336,7 +343,8 @@ Ensure that the question being addressed is explicit.
 #### Research Question
 
 The research question is a natural-language expression of what the protocol is about.
-Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research, the "research question" takes a different form, and should be expressed as the question someone in the domain, or affected by the domain, might ask.
+Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research,
+the "research question" takes a different form, and should be expressed as the question someone in the domain, or affected by the domain, might ask.
 
 It's important to know what questions can and can*not* be answered in the Enclave.
 
@@ -385,14 +393,15 @@ This is an early step in promoting replicable and clinically valuable work.
 
 #### Approach
 
-Stoudt and colleagues identify 3 phases of a data-only research protocol: Explore, Refine, Produce [@stoudt_2021]. N3C provides many tools to support a protocol.
+Stoudt and colleagues [-@stoudt_2021] identify 3 phases of a data-only research protocol: Explore, Refine, and Produce. N3C provides many tools to support a protocol.
 By linking the resulting artifacts together, we aim to develop a self-documenting, computable protocol.
 We list here the basic steps in articulating—and specifying attributes of—a protocol, as part of the "Explore"  step.
 (Note that the term "protocol" is used here in a more general way than in biology, for instance.)
 This step is focused on the initial "natural language" view of the protocol; the code-based view comes in the next section.
 While the checklists seek text descriptions, we recommend _linking the text as soon as possible to objects and datasets used in the Enclave_,
-track what resources you've used, be specific with your team members,
-and enable Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
+tracking what resources you've used,
+being specific with your team members,
+and enabling Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
 
 Before analyzing the data,
 create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.
@@ -438,7 +447,7 @@ In associational, causal, and intervention studies, the following attributes are
 These should be articulated in text with proper intention so analysts and reviewers have a basis for assessing whether subsequent code matches the intention.
 (Of course, after confronting the data, these intentions often change prior to finalizing the protocol.)
 
-**Other attributes include**: Design, Rationale, study objectives, which need to be manually entered.
+**Other attributes include**: Design, Rationale, and study objectives, which need to be manually entered.
 The DUR identifier should be supplied by the system.
 
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -467,7 +476,7 @@ The DUR identifier should be supplied by the system.
 : STaRT-RWE Table 2 and Design, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
 
 As suggested in @tbl-practices-start-2, it is helpful to diagram the cohort definition.
-A well received model is that of [Schneeweiss and colleagues](https://pubmed.ncbi.nlm.nih.gov/30856654/).
+A well-received model is that of Schneeweiss and colleagues [-@schneeweiss_2019].
 
 ![Graphical study design for study with EHR–claims linked data.
 From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fwww.repeatinitiative.org%2Fuploads%2F1%2F0%2F8%2F4%2F108495483%2Fdesign_templates_2022.pptx).](images/practices/fig-practices-021-schneweiss-graphical-study-design.png){#fig-practices-021-schneweiss-graphical-study-design fig-alt="Graphical study design for study with EHR–claims linked data"}
@@ -556,11 +565,11 @@ refer to just this back-and-forth work analysts have in deciding when they have 
 
 The process of defining variables is laid out in @sec-tools.
 Many DURs involve a number of related protocols; the steps laid out in that chapter are directed at pre-processing that ultimately applies to a set of protocols.
-There are a variety of templates in the Knowledge Store that are produced by the Logic Liaisons and can facilitate this decision making process.
+There are a variety of templates in the Knowledge Store that are produced by the Logic Liaisons and can facilitate this decision-making process.
 The [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) and [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) templates provide a method by which researchers can assess data quality and density prior to starting variable generation.
 Depending on the cohort of interest (COVID-19+ or All Patients) and/or outcome of interest, it may be desirable to eliminate particular sites based on their lack of sufficient data in the corresponding domain.
 There are also two additional Logic Liaison data quality templates that allow researchers to assess the quality of the variables they've created using the OMOP data tables.
-While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) template provides an all or nothing indication of fact presence by site, the [Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) template calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) and creates heatmaps to visualize the metrics.
+While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) template provides an all-or-nothing indication of fact presence by site, the [Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus) template calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) and creates heatmaps to visualize the metrics.
 
 This back-and-forth work ("pre-processing"; "data cleaning") points to the fact that developing the final protocol entails a series of decisions.
 Recognizing "data cleaning" as a decision-rich process helps to raise the profile of this work, helps the team to make those decisions explicitly,
@@ -568,7 +577,7 @@ and helps to attract decision support to the process.
 These decisions should be documented in the lab notebook.
 
 The elements of this phase that go into the STaRT-RWE checklist are listed in @tbl-practices-start-3. The elements can be found in the Enclave in the
-(a) README in Template, _or_
+(a) README in Template,
 (b) dataset description, _or_
 (c) Free text in Protocol pad.
 
@@ -633,7 +642,7 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 #### Objective
 
-Address data quality issues through action that mitigates the risk of reaching erroneous conclusions.
+Address data quality issues through action that mitigate the risk of reaching erroneous conclusions.
 
 #### Approach
 
@@ -748,8 +757,8 @@ Examples of code workbooks and Contour analyses can be found in the
 [N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf).
 While the Enclave is a powerful environment, analysts have learned many "tricks of the trade" to do better work, such as dealing with
 [slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14).
-One issue is preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks
-(which rely upon  R or leverage  data visualization steps, or DAG-viz of workflows) returning data.frames for R/Python^[
+One issue is the preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks
+(which rely upon R or leverage data visualization steps, or DAG-viz of workflows) returning data.frames for R/Python^[
 See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus).
 ].
 
@@ -770,7 +779,7 @@ The situation could be aggravated by social determinants of health (SDoH) factor
 
 Attempts by N3C analysts to address this selection bias include propensity score matching, inverse probability weighting, balanced weighting, and G-computation.
 
-The STaRT-RWE recommendations for the analysis phase itself are fewer; there are two phases: the primary analysis and the sensitivity analyses.
+The STaRT-RWE recommendations for the analysis phase itself are fewer; there are two phases: the primary analysis and the sensitivity analysis.
 
 +------------------------------------------------------------+------------------------------------------------------------+
 | Element                                                    | Enclave Source                                             |
@@ -828,7 +837,7 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 | G-Estimation                                          <br> | Reverse Causation                                     <br> |
 | High-dimensional Proxy Adjustment                     <br> | Targeted Maximum Likelihood Estimation                <br> |
 | Identification                                        <br> | Trend in Trend                                        <br> |
-| Immortal Time                                         <br> | Trimming                                              <br> |
+| Immortal Time                                              | Trimming                                                   |
 +------------------------------------------------------------+------------------------------------------------------------+
 
 : Recommended Data Analysis Methods. {#tbl-practices-methods}
@@ -838,7 +847,7 @@ Other strategies include the simulated/emulated clinical trial [@hernan_2016; @k
 
 PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that,
 unlike the reporting guidelines described [below](practices.md#methodology-checklist),
-goes into details about analytic plans themselves.
+goes into detail about analytic plans themselves.
 Standards of particular interest to analysts in N3C are Standards for
 [Data Integrity and Rigorous Analyses](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses),
 [Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),
@@ -866,7 +875,7 @@ Ways to use the external sets include census data [@madlock_brown_2022a; @madloc
 and mix of spatial units available for linking (zip code, county) [@cutter_2014].
 Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
-Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to strengths and challenges of the specific code.
+Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
 Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
 ### Fairness and Bias

@@ -214,6 +214,10 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "chapters/understanding.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file"
         }
     ]
 }

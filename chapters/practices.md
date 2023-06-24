@@ -753,7 +753,8 @@ Analysts are encouraged to report  "an Issue", notifying the N3C team of these i
 
 #### Recommended Methods for Data Analysis
 
-Study designs: See Franklin and colleagues for suggestions.[cite] The Book of OHDSI provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
+Study designs: See Franklin and colleagues for suggestions [-@franklin_2021].
+_The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
 
 For associational/causal research questions, to address hypotheses and confounding, the FDA recommends a set of analyses that go beyond the typical regression types, yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
 
@@ -778,22 +779,24 @@ For associational/causal research questions, to address hypotheses and confoundi
 : Recommended Data Analysis Methods. {#tbl-practices-methods}
 
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
-Other strategies include the simulated/emulated clinical trial.[cite]
+Other strategies include the simulated/emulated clinical trial [@hernan_2016; @kuehne_2019; @sidky_2023].
 
 PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that, unlike the reporting guidelines described [below](#Methodology Checklists), goes into details about analytic plans themselves.
 Standards of particular interest to analysts in N3C are Standards for [Data Integrity and Rigorous Analyses](#https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses), [Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),  [Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and [Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
 
-Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset.[cite]
+Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset
+[@zhou_2022; @narrett_2023; @anderson_2022].
 
 #### External Data Sets
 
 Over 50 external datasets are available for analysis via the Knowledge Store, such as [mapping zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus), [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus), [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus),  [residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus), [air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus), and many others.
 These datasets help in linking patients to Area-level Social Determinants of Health (SDoH), in particular, and for debiasing results based on EHR data from academic health centers.
 Of course, applying geographically-based measures to an individual can lead to its own sorts of bias.
+See @sec-understanding for more information.
 
-{Link to #UnderstandingTheData}
-
-Ways to use the external sets include census data[cite] and mix of spatial units available for linking (zip code, county).[cite] Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
+Ways to use the external sets include census data [@madlock_brown_2022a; @madlock_brown_2022b]
+and mix of spatial units available for linking (zip code, county) [@cutter_2014].
+Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to strengths and challenges of the specific code.
 Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
@@ -801,9 +804,13 @@ Analysts are also encouraged to post a Community Note describing their strategy 
 ### Fairness and Bias
 
 Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed.
-The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,  is working on a list of over 200 [methodological biases](https://fevir.net/resources/CodeSystem/27270#SEVCO:01000).
+The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,
+is working on a list of over 200 [methodological biases](https://fevir.net/resources/CodeSystem/27270#SEVCO:01000).
+
 N3C has led a number of [seminars](https://docs.google.com/presentation/d/1yzi_2t8m7MOE-0fdHP6DF3B61YC-a6vGsur1mFMBnrg/edit#slide=id.gd4f8b365ff_0_0) on such biases.
-(Caton and Haas provide a comprehensive list of measures, corresponding to different notions of equity (e.g., statistical parity, impact disparity,[cite] equality of opportunity, calibration, and counterfactual fairness).[cite] A key point is that, as Kleinberg and colleagues showed, an analysis cannot satisfy all these notions simultaneously.[cite]
+Caton and Haas provide a comprehensive list of measures, corresponding to different notions of equity
+(e.g., statistical parity, impact disparity,[cite] equality of opportunity, calibration, and counterfactual fairness).[cite]
+A key point is that, as Kleinberg and colleagues showed, an analysis cannot satisfy all these notions simultaneously.[cite]
 
 Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)Competing risks, and time-dependent confounding.
 

@@ -199,7 +199,7 @@ Protocol Development ❷
 1. Perform initial analysis
 1. Iterate
 1. Commit to final run
-1. Peform sensitivity analysis
+1. Preform sensitivity analysis
 
 Protocol Completion ❸
 
@@ -700,11 +700,19 @@ We also address the _External Data Sets_ you might use to supplement the EHR and
 Tuning the analytic environment is crucial to making the analysis as efficient as possible.
 Many analysts come into the Enclave unfamiliar with Apache Spark.
 
-The key tools for analysts are Contour analyses, [code workbooks](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) and [code repositories](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=24).
-Training is available for the Spark languages, [PySpark](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=21) and [SparkR](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=20).
-Examples of code workbooks and Contour analyses can be found in the [N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf).
-While the Enclave is a powerful environment, analysts have learned many "tricks of the trade" to do better work, such as dealing with [slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14).
-One issue is preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks (which rely upon  R or leverage  data visualization steps, or DAG-viz of workflows) returning dataframes for R/Python (e.g., N3Community Note [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus)).
+The key tools for analysts are Contour analyses,
+[code workbooks](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) and
+[code repositories](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=24).
+Training is available for the Spark languages,
+[PySpark](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=21) and
+[SparkR](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=20).
+Examples of code workbooks and Contour analyses can be found in the
+[N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf).
+While the Enclave is a powerful environment, analysts have learned many "tricks of the trade" to do better work, such as dealing with
+[slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14).
+One issue is preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks
+(which rely upon  R or leverage  data visualization steps, or DAG-viz of workflows) returning data.frames for R/Python
+(e.g., N3Community Note [here](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus)).
 
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML), points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability, to the special topics appendix chapter [here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).

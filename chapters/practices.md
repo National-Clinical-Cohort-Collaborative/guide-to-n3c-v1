@@ -189,7 +189,8 @@ In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/note
 
 {Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
 
-N3C has developed a tool to facilitate the development of protocols known as the [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).: In the following sections we walk through recommended components of a protocol.
+N3C has developed a tool to facilitate the development of protocols known as the [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37).:
+In the following sections we walk through recommended components of a protocol.
 Briefly, they are:  Protocol Design, Development, and Completion:
 
 ### Protocol Outline
@@ -789,7 +790,12 @@ The STaRT-RWE recommendations for the analysis phase itself are fewer; there are
 
 : STaRT-RWE analysis specifications, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
 
-While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing \[not\]\[completely\] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol;
+it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations,
+one can rely on overarching frameworks like Rubin's Taxonomy (missing \[not\]\[completely\] at random)
+or on a structural missingness rubric recently-proposed in the machine learning literature
+[https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so [@tan_2023].
 At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus),
 and variability of missingness across sites considered.
@@ -803,7 +809,9 @@ Analysts are encouraged to report  "an Issue", notifying the N3C team of these i
 Study designs: See Franklin and colleagues for suggestions [-@franklin_2021].
 _The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
 
-For associational/causal research questions, to address hypotheses and confounding, the FDA recommends a set of analyses that go beyond the typical regression types, yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
+For associational/causal research questions, to address hypotheses and confounding,
+the FDA recommends a set of analyses that go beyond the typical regression types,
+yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
 
 +------------------------------------------------------------+------------------------------------------------------------+
 | Active Comparator                                     <br> | Instrumental Variable                                 <br> |
@@ -828,7 +836,9 @@ For associational/causal research questions, to address hypotheses and confoundi
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial [@hernan_2016; @kuehne_2019; @sidky_2023].
 
-PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that, unlike the reporting guidelines described [below](practices.md#methodology-checklist), goes into details about analytic plans themselves.
+PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that,
+unlike the reporting guidelines described [below](practices.md#methodology-checklist),
+goes into details about analytic plans themselves.
 Standards of particular interest to analysts in N3C are Standards for
 [Data Integrity and Rigorous Analyses](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses),
 [Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),
@@ -840,7 +850,14 @@ Several N3C studies have used propensity scores (matching or otherwise) to minim
 
 #### External Data Sets
 
-Over 50 external datasets are available for analysis via the Knowledge Store, such as [mapping zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus), [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus), [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus),  [residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus), [air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus), and many others.
+Over 50 external datasets are available for analysis via the Knowledge Store, such as:
+
+* [mapping zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus),
+* [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus),
+* [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus),
+* [residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus), and
+* [air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus).
+
 These datasets help in linking patients to Area-level Social Determinants of Health (SDoH), in particular, and for debiasing results based on EHR data from academic health centers.
 Of course, applying geographically-based measures to an individual can lead to its own sorts of bias.
 See @sec-understanding for more information.
@@ -874,7 +891,8 @@ The "earlier" in the protocol one goes, the more likely the entire protocol will
 It is crucial that the elements of the analysis are finalized before the "answer" is revealed (e.g., does the exposure in fact lead to a difference in outcome?).
 As such, documenting what the "final analysis" consists of is crucial for believability.
 
-Thus, running the algorithm blinded to the outcome or with a subset of data or with some surrogate for the final analysis is crucial to make sure that, in optimizing the analysis, you are not (consciously or not) tailoring the analysis to a pre-desired outcome.
+Thus, running the algorithm blinded to the outcome or with a subset of data or with some surrogate for the final analysis is crucial to make sure that,
+in optimizing the analysis, you are not (consciously or not) tailoring the analysis to a pre-desired outcome.
 
 ### Commit to Final Run
 
@@ -885,9 +903,13 @@ If a new protocol is suggested by the results of this run, it should be initiali
 ### Perform Sensitivity Analysis
 
 A responsibility of any analyst is the extent to which quantities important to the question at hand may or may not be available or measured among the data at hand.
-Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts) to not be present to a degree that it impacts quantitative findings such that conclusions (e.g., "treatment reduces risk of outcome") actually change.
+Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts)
+to not be present to a degree that it impacts quantitative findings such that conclusions (e.g., "treatment reduces risk of outcome") actually change.
 It should be noted, however, that this assumption is – by dint of involving _unmeasured_ quantities/variables that are confounding a targeted association/effect – not verifiable from available data.
-Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_; an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions (e.g., there exists an unmeasured confounding effect _U_ that entails an impact of confounding of a degree deemed possible by a domain expert); the "plausibility" of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
+Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_;
+an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions
+(e.g., there exists an unmeasured confounding effect _U_ that entails an impact of confounding of a degree deemed possible by a domain expert);
+the "plausibility" of this range is crucially dependent on domain-expert input, rather than any data-driven or data-derivable extent.
 We return to the broader topic of sensitivity analysis below.
 
 Sensitivity analysis ideally takes place after the final analysis, so one does not redo the analysis, taking the insight from sensitivity analysis into account.

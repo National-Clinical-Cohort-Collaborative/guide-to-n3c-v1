@@ -71,7 +71,8 @@ While analyses within N3C fall under the general category of "Real World Data An
 All the same, important data considerations can guide one's analytic plans and decisions, which effectively become the pivot-points in any RWD investigation's research lifecycle.
 In this chapter, we will provide suggestions and pointers to resources that we hope will help the analyst in the majority of studies, and guide the content of discussions with their domain expert collaborators.
 Recognizing that any analyst may come from one of a wide range of backgrounds, we have structured the chapter to be self-guiding.
-Data scientists with  backgrounds in machine learning and computer science will benefit from  studying principles entailed in RWD biomedical methods in and beyond the confines of N3C (and should look at the [Machine Learning chapter](#MachineLearning)).
+Data scientists with backgrounds in machine learning and computer science will benefit from studying principles entailed
+in RWD biomedical methods in and beyond the confines of N3C (and should look at the [Machine Learning chapter](ml.md)).
 Researchers trained in traditional data analysis from schools of epidemiology, biostatistics, or econometrics will be reminded of concerns such as  over-reliance on overly-simplified parametric models and pitfalls of overfitting.
 All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in scope of such findings' generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
@@ -105,7 +106,7 @@ We do recommend peer review of code, as is suggested, prior to posting code work
 
 #### Making methods and code findable and accessible (FA)
 
-N3C's key library of code is the Knowledge Store (see more [below](#KnowledgeStore)).
+N3C's key library of code is the [Knowledge Store](tools.md#sec-tools-store).
 Accessibility currently depends on perusing titles and on a short taxonomy of artifact types ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code) .
 [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) support a folksonomy of tags of both domain and methodological bents.
 
@@ -113,13 +114,13 @@ Accessibility currently depends on perusing titles and on a short taxonomy of ar
 
 Documentation of code is left to the analyst.
 Given the diversity of tools and methods available in N3C, there is no recommended standard for documentation.
-The [Logic Liaison Templates](#LogicLiaisonTemplates), though, provide excellent models.
+The [Logic Liaison Templates](tools.md#sec-tools-store-ll), though, provide excellent models.
 
 #### Ensuring reproducibility and reuse (IR)
 
 [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
 We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates) that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
-Both Code Workbooks and Code Repositories can be exported as [Git repositories](#publishing-sharing-git-section) for hosting on GitHub or similar.
+Both Code Workbooks and Code Repositories can be exported as [Git repositories](publishing.md#sec-publishing-tech-code) for hosting on GitHub or similar.
 
 #### Building on the experience across and within networks
 
@@ -593,7 +594,7 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 : STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION), based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-3 tbl-colwidths="[30, 35, 35]"}
 
-[Chapter Analyzing The Data](#Analyzing The Data) discusses this process in more detail.
+@sec-tools discusses this process in more detail.
 
 ### Assess Data Quality
 
@@ -781,8 +782,12 @@ For associational/causal research questions, to address hypotheses and confoundi
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial [@hernan_2016; @kuehne_2019; @sidky_2023].
 
-PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that, unlike the reporting guidelines described [below](#Methodology Checklists), goes into details about analytic plans themselves.
-Standards of particular interest to analysts in N3C are Standards for [Data Integrity and Rigorous Analyses](#https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses), [Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),  [Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and [Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
+PCORI has a [Methodology Standards list](https://www.pcori.org/research/about-our-research/research-methodology) of its own that, unlike the reporting guidelines described [below](practices.md#methodology-checklist), goes into details about analytic plans themselves.
+Standards of particular interest to analysts in N3C are Standards for
+[Data Integrity and Rigorous Analyses](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Data%20Integrity%20and%20Rigorous%20Analyses),
+[Preventing and Handling Missing Data](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Preventing%20and%20Handling%20Missing%20Data),
+[Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and
+[Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
 
 Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset
 [@zhou_2022; @narrett_2023; @anderson_2022].
@@ -864,7 +869,7 @@ Enabling such repeated analyses means automating a long chain of computing steps
 
 ### Gather Results; Publish
 
-While a [separate chapter](#Publishing and Sharing your Work ) is devoted to the process of publishing, here we would like to address _what_ should be published.
+While @sec-publishing is devoted to the process of publishing, here we would like to address _what_ should be published.
 
 First, do record your conclusion in an appropriate place in your documentation, so the link between your research question and your answer is clear.
 
@@ -969,7 +974,7 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
 
     1. [GitHub of N3C LLs code](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
 
-    1. Carlos Saez's [GitHub](#https://github.com/carlosjsaez)
+    1. Carlos Saez's [GitHub](https://github.com/carlosjsaez)
 
 1. Suite of data quality assessment software tools
 

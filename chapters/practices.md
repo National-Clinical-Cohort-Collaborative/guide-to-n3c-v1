@@ -147,9 +147,17 @@ The high-level sequence of research below is based on experience in the Enclave 
 ![The standard project-management life cycle, applied to research, from project start ("Development") to closure.
 Image from JHU [All Children's Hospital](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).](images/practices/fig-practices-010-research-lifecycle.png){#fig-practices-010-research-lifecycle fig-alt="The standard project-management life cycle"}
 
-Part of articulating an answerable research question is tackling an analysis as a project, which means  following good [research-project management practices](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).
-The general project management phases defined by the [Project Management Institute](https://pmi.org) (project initiation, planning, execution, monitoring, closure)are shown in the Fig [xxx](image-010-researchlifecycle.png).
-In N3C terms, "Development" refers to Protocol Design, "Submission" is obtaining a Data User Request ([DUR](#Onboarding, Enclave Access, N3C Team Science)), "Activation" is assembling and running the research team, "Conduct" is the workflow described in Chapter [Analyzing the Data](Analyzing the Data), "Oversight" is the responsibility of the project PI, "Analysis" is further workflow, and "Publication" is both formal (manuscript submission) and otherwise (preprints, conferences).
+Part of articulating an answerable research question is tackling an analysis as a project, which means following good [research-project management practices](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).
+The general project management phases defined by the [Project Management Institute](https://pmi.org) (project initiation, planning, execution, monitoring, closure) are shown in @fig-practices-022-building-block.
+In N3C terms:
+
+* _Development_ refers to Protocol Design,
+* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur)),
+* _Activation_ is assembling and running the research team,
+* _Conduct_ is the workflow described in Chapter [Analyzing the Data](Analyzing the Data),
+* _Oversight_ is the responsibility of the project PI,
+* _Analysis_ is further workflow, and
+* _Publication_ is both formal (manuscript submission) and otherwise (preprints, conferences).
 
 The term "protocol" is used in many ways in science.
 Basic scientists use it for how a particular laboratory reagent should be used or process, implemented.
@@ -316,7 +324,8 @@ We list that caveat, along with others, below:
 * In general, estimation of rates (of, for example COVID-19 infection) should be avoided.
 * Beware making estimates or predictions that rely on nationwide representative sampling (in order to generalize to the entire US population at risk for COVID-19)
   * E.g., prevalence or incidence of COVID-19 in any geographic region
-  * Weighting analyses by zip-code-based populations might be possible, but beware (See [External Data Sets](#External Data Sets)
+  * Weighting analyses by zip-code-based populations might be possible, but beware.
+    (See [External Data Sets](understanding.md#sec-understanding-public).)
 * Eligibility criteria defined using patient ICU status, as ICU status cannot be resolved from the visit-level information available, notwithstanding the possibility that some sites repurposed non-ICUs to serve as ICUs during surges in COVID-19 patients.
   In some cases, however, additional ADT (Admission-Discharge-Transfer) data may be available.
 * Questions regarding COVID negative vs.
@@ -327,7 +336,7 @@ There are other questions that may _potentially_ be answerable in N3C, depending
 
 * Outcomes involving overall mortality cannot be assessed using EHR data alone.
   Linkage with an external data source containing more complete mortality data is necessary.
-  N3C contains ancillary patient-preserving record linkage ([PPRL](#https://www.google.com/url?q=https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/understanding.html%23sec-understanding-pprl&sa=D&source=docs&ust=1687184485271373&usg=AOvVaw3yxTTSJQgGJPvyjohe99Hn)) mortality data which is fully linked for a subset of data partners, and requires a separate DUR to access.
+  N3C contains ancillary patient-preserving record linkage ([PPRL](understanding.md#sec-understanding-pprl)) mortality data which is fully linked for a subset of data partners, and requires a separate DUR to access.
   Claims data, such as CMS, can serve as an alternative source of mortality data within enrollment periods, but limits the study population to those with Medicare for whom CMS data are available.
   This may be undesirable as that population may not be representative of the study population of interest.
 * Analyses of patients with Long COVID.

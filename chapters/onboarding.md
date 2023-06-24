@@ -61,7 +61,7 @@ For more information about the levels of data, see @sec-access-background.
 If an individual is not affiliated with an institution, they are termed a "citizen scientist".   Citizen scientists are only eligible to access synthetic data (Level 1).
 This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.
 
-Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removal of protected health information (PHI) (Level 2).
+Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removing protected health information (PHI) (Level 2).
 Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). ^[A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section [The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html).]
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
@@ -186,7 +186,9 @@ You will need to have an ORCID iD, complete NIH security training, and complete 
 !! _Is something missing.  It seemed to jump._ !!
 
 The Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
-The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.  (Click on the "Enter Public Training Portal" button to see the course listing.) The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
+The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.
+(Click on the "Enter Public Training Portal" button to see the course listing.)
+The course takes approximately 60-90 minutes to complete and you should save your certificate of completion for your records.
 
 You need to complete Human Subjects Research training that aligns with your institution's guidelines.
 You will need to provide the date of completion when submitting or joining a DUR.
@@ -235,7 +237,7 @@ See <https://ncats.nih.gov/n3c/resources/data-access> for more information on ac
 
 ### Project Lead vs Collaborators {#sec-onboarding-team-lead}
 
-N3C projects must identify a "Project Lead" as a key person on studies using the N3C Data Enclave.
+N3C projects must identify a "Project Lead" as a key person in studies using the N3C Data Enclave.
 The Project Lead may be the Principal Investigator of the research project, but it may also be someone with a role that is similar to that of a Project Coordinator.
 The Project Lead provides overall guidance to the study and is the primary point of contact, linking, and communicating with all other players collaborating on the project.
 The Project Lead has responsibilities that can not be delegated to other team members.
@@ -277,7 +279,7 @@ This individual supports the PI/PL and study team, manages study-related documen
 #### Subject Matter Expert (SME) {#sec-onboarding-team-role-sme}
 
 This individual brings "specialized" knowledge to the study design, implementation, and data interpretation.
-An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19 related study) a cancer epidemiologist or medical anthropologist.
+An SME typically has knowledge not readily available from others on the research team, such as (depending on the focus of the COVID-19-related study) a cancer epidemiologist or medical anthropologist.
 
 #### Data Analyst {#sec-onboarding-team-role-analyst}
 
@@ -415,7 +417,7 @@ Click on any of these results to view the full record.
 
 ### Google Drive {#sec-onboarding-tools-drive}
 
-During the onboarding process there is the option to request access to the N3C Data Enclave and there is a process to request access to participate in N3C Workstreams.
+During the onboarding process, there is the option to request access to the N3C Data Enclave and there is a process to request access to participate in N3C Workstreams.
 One of the options under workstreams is GSuites (Gmail) ID.
 N3C uses Google Drive and Google Groups for storage of communications, recordings, and email notifications.
 In order to ensure that you are receiving all relative N3C communications it is important to enter your Google ID when onboarding.

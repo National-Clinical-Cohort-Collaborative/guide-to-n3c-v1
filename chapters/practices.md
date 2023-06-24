@@ -58,17 +58,11 @@ csl: ../assets/csl/apa-7e.csl
 **Chapter Leads:** Ken Wilkins, Harold Lehmann
 
 :::{.callout-note}
-This chapter is being drafted in Google Docs at
-<https://drive.google.com/drive/u/0/folders/1ExkYChsnO3hYZk6HCI5cEfQdQJ9F-ynw>
+This chapter is undergoing final edits, including formatting and cross-referencing.
+Edits are expected to complete by June 2023.
 
-See a draft of the chapter outline at
+This chapter was drafted in Google Docs at
 <https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/>
-:::
-
-:::{.callout-warning}
-At this point, any edits to this chapter should be made in Google Docs.
-The current Markdown is for testing only.
-It is NOT the source of truth (yet).
 :::
 
 ## Overview
@@ -82,7 +76,7 @@ Researchers trained in traditional data analysis from schools of epidemiology, b
 All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in scope of such findings' generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource – noting that the resource itself was being actively refined as more was learned from applying methods to its data.
-Early on, the resulting Applicable Data Methods and Standards ([ADMS](#[https://covid.cd2h.org/data-methods](https://covid.cd2h.org/data-methods))) group established a number of principles (https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
+Early on, the resulting Applicable Data Methods and Standards ([ADMS](https://covid.cd2h.org/data-methods)) group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
 
 ### Goals
 
@@ -94,7 +88,8 @@ Analysts from a wide range of projects have created a number of tools and resour
 
 #### Encourage and disseminate best practice, but do not require specific approaches
 
-"Best practice" refers to guidelines, such as those outlined by the FDA[cite] and methodologists.[cite] While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
+"Best practice" refers to guidelines, such as those outlined by the FDA [-@usfda_2021; -@usfda_2017] and methodologists [@franklin_2021].
+While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
 ADMS, in particular, is a cross-cutting Domain Team that provides a forum for discussing analytic issues that are important across N3C.
 Example issues include the he difficulty of defining study-specific "control" cohorts when needed.
 The Good Algorithmic Practice (GAP) group is a forum that includes machine learning and other general discussions related to data and analysis quality.
@@ -258,7 +253,7 @@ STaRT-RWE [[ref](https://pubmed.ncbi.nlm.nih.gov/33436424/)] provides a more exp
 |                                     | - Name of human subjects/ethics approval committee                                   |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
 
-: STaRT-RWE Table 1: Administrative Information, based on Wang and colleagues [cite] {#tbl-practices-start-1 tbl-colwidths="[30, 45, 25]"}
+: STaRT-RWE Table 1: Administrative Information, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-1 tbl-colwidths="[30, 45, 25]"}
 
 Not everything you need to start, though, is included in this list.
 Here are a few additional things to consider:
@@ -408,7 +403,7 @@ The DUR identifier should be supplied by the system.
 |                                                | - Software to create study population                                                |                                                                                                                                                                                        |
 +------------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-: STaRT-RWE Table 2 and Design, based on Wang and colleagues [cite] {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
+: STaRT-RWE Table 2 and Design, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
 
 As suggested in @tbl-practices-start-2, it is helpful to diagram the cohort definition.
 A well received model is that of [Schneeweiss and colleagues](https://pubmed.ncbi.nlm.nih.gov/30856654/).
@@ -547,7 +542,7 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 |                                          |                                                            | Other                                                      |
 +------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
 
-: STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION), based on Wang and colleagues [cite] {#tbl-practices-start-3 tbl-colwidths="[30, 35, 35]"}
+: STaRT-TWE Design elements (TABLE 3. SUMMARY SPECIFICATION FOR ANALYTIC STUDY POPULATION), based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-3 tbl-colwidths="[30, 35, 35]"}
 
 [Chapter Analyzing The Data](#Analyzing The Data) discusses this process in more detail.
 
@@ -688,7 +683,7 @@ The STaRT-RWE recommendations for the analysis phase itself are fewer; there are
 | - Subgroup Analysis                                        |                                                            |
 +------------------------------------------------------------+------------------------------------------------------------+
 
-: STaRT-RWE analysis specifications, based on Wang and colleagues [cite]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
+: STaRT-RWE analysis specifications, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-analysis tbl-colwidths="[45, 55]"}
 
 While STaRT-RWE places "missing data" in "Analysis Specifications", the absence of data is a key concern in developing the "Final" protocol; it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations, one can rely on overarching frameworks like Rubin's Taxonomy (missing [not][completely] at random) or on a structural missingness rubric recently-proposed in the machine learning literature [https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so.[cite] At the least, the data should be [explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus), and variability of missingness across sites considered.
@@ -794,7 +789,7 @@ Enabling such repeated analyses means automating a long chain of computing steps
 | Weaknesses of the sensitivity analysis compared to the primary?    | Lab Notebook                                               |
 +--------------------------------------------------------------------+------------------------------------------------------------+
 
-: STaRT-RWE sensitivity analysis elements, based on Wang and colleagues [cite]. {#tbl-practices-start-sensitivity tbl-colwidths="[60, 40]"}
+: STaRT-RWE sensitivity analysis elements, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-sensitivity tbl-colwidths="[60, 40]"}
 
 ## Protocol Completion ❸
 

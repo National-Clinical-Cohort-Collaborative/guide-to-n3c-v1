@@ -9,8 +9,8 @@ author:
       corresponding: true
 
   - name: Hythem Sidky
-    # affiliation: Johns Hopkins University School of Medicine
-    # affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
+    # affiliation:
+    # affiliation-url:
     email: hythem.sidky@nih.gov
     orcid: 0000-0003-3532-4809
 

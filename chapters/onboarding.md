@@ -343,9 +343,9 @@ As a reminder, virtual meetings may not be recorded or screenshotted if they sho
 N3C-supplied resources support team science by supporting Domain Teams: each team is given a dedicated webpage where the time of the meetings and the lead(s) are posted, a Google Drive workspace, a Google Group mailing list, and a dedicated Slack channel.
 These resources are helpful for teams to post literature reviews, agendas, meeting recordings, or other relevant documents.
 
-## Getting Oriented in the Enclave
+## Getting Oriented in the Enclave {#sec-onboarding-oriented}
 
-### Homepage
+### Homepage {#sec-onboarding-oriented-homepage}
 
 When you log into the N3C Data Enclave, you will be presented with the home page and left sidebar.
 These two sections give launching points into Enclave content.
@@ -395,7 +395,7 @@ There is also a [more detailed dashboard with lists of projects, publications, a
 For additional training support, tutorials can be found here:
 <https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
-### Browsing Researchers/Projects/Institutions {#sec-onboarding-browsing}
+### Browsing Researchers/Projects/Institutions {#sec-onboarding-oriented-browsing}
 
 The object explorer can be found on the left sidebar in the Apps section.
 As the name suggests, this gives more granular navigation of several object-type groups.

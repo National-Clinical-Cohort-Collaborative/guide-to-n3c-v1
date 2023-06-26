@@ -66,7 +66,7 @@ Protected health information includes 18 elements defined by the Health Insuranc
 
 Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.
 
-### Data Level 3
+### Data Level 3 {#sec-onboarding-eligibility-l3}
 
 * _Also known as_:
   * Limited Data Set (LDS)
@@ -88,7 +88,7 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * Human Subjects Research Protection training completion
   * Local Human Research Protection Program IRB determination letter
 
-### Data Level 2
+### Data Level 2 {#sec-onboarding-eligibility-l2}
 
 * _Also known as_:
   * De-identified Data Set
@@ -110,7 +110,7 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * Approved DUR
   * Human Subjects Research Protection training completion
 
-### Data Level 1
+### Data Level 1 {#sec-onboarding-eligibility-l1}
 
 * _Also known as_:
   * Synthetic Data Set

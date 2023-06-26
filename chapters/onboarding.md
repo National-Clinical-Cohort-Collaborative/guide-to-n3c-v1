@@ -371,7 +371,7 @@ For those that are open to join, submit a request to the project lead to join th
 Domain Teams lists the Domain Teams and their project affiliations.
 The COVID Publications tab is where you can browse publications produced by N3C research teams.
 N3C Administrative FAQ covers topics around registration and data access, tooling, domain teams, data transfer, harmonization, and other topics.
-Public Health Proposals is part of an initiative covered { Chapter} where you can apply to answer the posted public health question.
+Public Health Proposals is part of the PHASTR initiative where you can apply to answer the posted public health question.
 Lastly, File Admin Ticket is where you can submit a ticket if you need help with the data, analysis, accessing the enclave, or something else.
 
 In the Data Analysis and Result Export Resources section of the Enclave homepage, you can find, concept set browser, download dashboard, and the data access overview.
@@ -387,13 +387,10 @@ The Concept Set Browser is where you do just that, browse the concept sets or va
 * _Download Dashboard_ has all the results including summary tables and futures and you can also submit and manage data requests from this tab as well.
 * _Release Notes_ has the pertinent information and known data issues about N3C LDS and De-Identified data releases.
 * _File Technical Ticket_ is where you can submit a ticket for support within the Enclave.
-
-[Here is a public-facing list of N3C projects including a search box.](https://covid.cd2h.org/projects)
-
-There is also a [more detailed dashboard with lists of projects, publications, and more.](https://covid.cd2h.org/dashboard/exploration#projects)
-
-For additional training support, tutorials can be found here:
+* For additional training support, tutorials can be found here:
 <https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
+
+There is also a public-facing dashboard of searchable N3C projects, publications, and more: <https://covid.cd2h.org/dashboard>.
 
 ### Browsing Researchers/Projects/Institutions {#sec-onboarding-oriented-browsing}
 

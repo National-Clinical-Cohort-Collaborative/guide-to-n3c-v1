@@ -64,9 +64,9 @@ This data set is artificial but statistically-comparable to, and computationally
 Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removing protected health information (PHI) (Level 2).
 Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). ^[A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section [The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html).]
 
-Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Table 1 describes the data access levels, eligibility, and access requirements.
+Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.
 
-### Data Level 3
+### Data Level 3 {#sec-onboarding-eligibility-l3}
 
 * _Also known as_:
   * Limited Data Set (LDS)
@@ -88,7 +88,7 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * Human Subjects Research Protection training completion
   * Local Human Research Protection Program IRB determination letter
 
-### Data Level 2
+### Data Level 2 {#sec-onboarding-eligibility-l2}
 
 * _Also known as_:
   * De-identified Data Set
@@ -110,7 +110,7 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * Approved DUR
   * Human Subjects Research Protection training completion
 
-### Data Level 1
+### Data Level 1 {#sec-onboarding-eligibility-l1}
 
 * _Also known as_:
   * Synthetic Data Set
@@ -147,9 +147,9 @@ Then click the following boxes.
 
 ## Enclave Registration {#sec-onboarding-enclave}
 
-Due to the secure nature of the data that is available in the N3C Data Enclave, [registration](https://labs.cd2h.org/registration/)is required.
+Due to the secure nature of the data that is available in the N3C Data Enclave, [registration](https://labs.cd2h.org/registration/) is required.
 Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --see [Data Use Agreements](#sec-onboarding-dua) below for details.
-@fig-onboarding-030-login shows the four options to login and create an Enclave account: InCommon, Login.gov, NIH login, or HHS login.
+@fig-onboarding-030-login shows the four options to login and create an Enclave account: InCommon, Login.gov, NIH login, or HHS login. ^[This chapter focuses on InCommon and Login.gov.  If you are an NIH or HHS employee, talk to your supervisor about using your NIH/HHS login.]
 
 ![Login options for registration.
 Many organizations participate in InCommon, a federated login network linking to your institution's login.
@@ -284,13 +284,11 @@ An SME typically has knowledge not readily available from others on the research
 #### Data Analyst {#sec-onboarding-team-role-analyst}
 
 This individual uses the Enclave to identify, extract, and prepare data for analyses.
-They work closely with the study team to clarify the hypotheses and extract relevant data elements
+They work closely with the study team to clarify the hypotheses and extract relevant data elements.
 
 #### Statistician {#sec-onboarding-team-role-statistician}
 
 This collaborator has a background in statistics and data sciences, often with a primary disciplinary background such as public health, epidemiology, and an area of medicine.
-
-Table 2. N3C Projects: Common Roles and Expectations
 
 On the topic of diverse teams, N3C encourages appropriate attribution of work, including for support roles in projects.
 See @sec-publishing for guidance on publishing and attribution.
@@ -345,15 +343,17 @@ As a reminder, virtual meetings may not be recorded or screenshotted if they sho
 N3C-supplied resources support team science by supporting Domain Teams: each team is given a dedicated webpage where the time of the meetings and the lead(s) are posted, a Google Drive workspace, a Google Group mailing list, and a dedicated Slack channel.
 These resources are helpful for teams to post literature reviews, agendas, meeting recordings, or other relevant documents.
 
-## Browsing Researchers/Projects/Institutions {#sec-onboarding-browsing}
+## Getting Oriented in the Enclave {#sec-onboarding-oriented}
 
-![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
+### Homepage {#sec-onboarding-oriented-homepage}
 
 When you log into the N3C Data Enclave, you will be presented with the home page and left sidebar.
 These two sections give launching points into Enclave content.
 The home page has three categories of links: Educational Resources, Administrative Resources, and Data Analysis and Result Export Resources, along with a small dashboard of summary counts.
 The best way to learn about the resources on the homepage is to hover over the links to view a short description, and also to just explore the links to see where they go.
 Some of the most important are highlighted here.
+
+![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
 
 The _Training Material_ in the Educational Resources section has the training portal and self-guided tours–more detail about training and support resources can be found in @sec-support.
 Once you have an Enclave account, use the training material resources to understand how to navigate the Enclave.
@@ -371,7 +371,7 @@ For those that are open to join, submit a request to the project lead to join th
 Domain Teams lists the Domain Teams and their project affiliations.
 The COVID Publications tab is where you can browse publications produced by N3C research teams.
 N3C Administrative FAQ covers topics around registration and data access, tooling, domain teams, data transfer, harmonization, and other topics.
-Public Health Proposals is part of an initiative covered { Chapter} where you can apply to answer the posted public health question.
+Public Health Proposals is part of the PHASTR initiative where you can apply to answer the posted public health question.
 Lastly, File Admin Ticket is where you can submit a ticket if you need help with the data, analysis, accessing the enclave, or something else.
 
 In the Data Analysis and Result Export Resources section of the Enclave homepage, you can find, concept set browser, download dashboard, and the data access overview.
@@ -387,19 +387,18 @@ The Concept Set Browser is where you do just that, browse the concept sets or va
 * _Download Dashboard_ has all the results including summary tables and futures and you can also submit and manage data requests from this tab as well.
 * _Release Notes_ has the pertinent information and known data issues about N3C LDS and De-Identified data releases.
 * _File Technical Ticket_ is where you can submit a ticket for support within the Enclave.
-
-[Here is a public-facing list of N3C projects including a search box.](https://covid.cd2h.org/projects)
-
-There is also a [more detailed dashboard with lists of projects, publications, and more.](https://covid.cd2h.org/dashboard/exploration#projects)
-
-For additional training support, tutorials can be found here:
+* For additional training support, tutorials can be found here:
 <https://unite.nih.gov/workspace/slate/app/training> {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
-![Object Explorer.](images/onboarding/fig-onboarding-080-object-explorer.png){#fig-onboarding-080-object-explorer fig-alt="Object Explorer"}
+There is also a public-facing dashboard of searchable N3C projects, publications, and more: <https://covid.cd2h.org/dashboard>.
+
+### Browsing Researchers/Projects/Institutions {#sec-onboarding-oriented-browsing}
 
 The object explorer can be found on the left sidebar in the Apps section.
 As the name suggests, this gives more granular navigation of several object-type groups.
 Examples of object groupings are institutions, researchers, projects, and DURs.
+
+![Object Explorer.](images/onboarding/fig-onboarding-080-object-explorer.png){#fig-onboarding-080-object-explorer fig-alt="Object Explorer"}
 
 The object explorer can be helpful in finding information.
 For example, let's say you want to know if a certain researcher is a lead or collaborator on any projects.
@@ -415,6 +414,11 @@ Click on any of these results to view the full record.
 
 ## Collaboration Tools {#sec-onboarding-tools}
 
+In order to stay updated with N3C information, we recommend that you enter your (a) gmail address and (b) the email address you want associated with your Slack account.
+This will help you to collaborate with the N3C community.
+
+![Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.](images/onboarding/fig-onboarding-090-google-drive-and-slack.png){#fig-onboarding-090-google-drive-and-slack fig-alt="Options set during registration"}
+
 ### Google Drive {#sec-onboarding-tools-drive}
 
 During the onboarding process, there is the option to request access to the N3C Data Enclave and there is a process to request access to participate in N3C Workstreams.
@@ -424,8 +428,6 @@ In order to ensure that you are receiving all relative N3C communications it is 
 Your address is automatically added to the N3C-all hands Google group which will allow access to N3C shared drives.
 Each Domain Team has a Google Drive folder they can use to house agendas, meeting minutes, publication tracking, and other resources.
 If you do not have a Google account, the link to those instructions is <https://support.google.com/accounts/answer/27441>.
-
-![Options set during registration include whether you want to access the Enclave, keywords for expertise and therapeutic area, and contact information.](images/onboarding/fig-onboarding-090-google-drive-and-slack.png){#fig-onboarding-090-google-drive-and-slack fig-alt="Options set during registration"}
 
 ### Slack {#sec-onboarding-tools-slack}
 

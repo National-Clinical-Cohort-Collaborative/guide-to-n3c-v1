@@ -51,6 +51,8 @@ author:
     orcid: 0000-0002-4616-1171
 
 csl: ../assets/csl/apa-7e.csl
+
+toc-depth: 4
 ---
 
 # Best Practices for the Research Life Cycle {#sec-practices}
@@ -158,7 +160,7 @@ The high-level sequence of research below is based on experience in the Enclave 
 ## Protocols: A Framework for the Research Lifecycle
 
 ![The standard project-management life cycle, applied to research, from project start ("Development") to closure.
-Image from JHU [All Children's Hospital](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).](images/practices/fig-practices-010-research-lifecycle.png){#fig-practices-010-research-lifecycle fig-alt="The standard project-management life cycle"}
+Image from JHU [All Children's Hospital](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).](images/practices/fig-practices-010-research-lifecycle.png){#fig-practices-010-research-lifecycle fig-alt="The standard project-management life cycle" width=70%}
 
 Part of articulating an answerable research question is tackling an analysis as a project, which means following good [research-project management practices](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).
 The general project management phases defined by the [Project Management Institute](https://pmi.org) (project initiation, planning, execution, monitoring, closure) are shown in @fig-practices-022-building-block.
@@ -190,8 +192,6 @@ we write:
 > In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
 > This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
-{Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
-
 N3C has developed a tool to facilitate the development of protocols known as the
 [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.:
 In the following sections we walk through recommended components of a protocol.
@@ -221,8 +221,9 @@ Protocol Completion ❸
 1. Gather results
 1. Publish
 
-![Home page for a researcher's protocols.
-The Protocol Design, Development, and Completion sections are accessible on the left.](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
+![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}).
+The Protocol Design, Development, and Completion sections are accessible on the left.
+](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
 
 <!-- N3C Teams Addressing Good Research Practices -->
 
@@ -344,7 +345,7 @@ Provided above, is a list of recommended information that should be documented, 
 
 Ensure that the question being addressed is explicit.
 
-#### Research Question
+#### Research Questions you cannot answer in N3C
 
 The research question is a natural-language expression of what the protocol is about.
 Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research,
@@ -352,7 +353,6 @@ the "research question" takes a different form, and should be expressed as the q
 
 It's important to know what questions can and can*not* be answered in the Enclave.
 
-**Questions you cannot answer in N3C**.
 While the data are rich and the applications are broad, there are still questions that cannot be adequately answered in the Enclave.
 We list that caveat, along with others, below:
 
@@ -491,7 +491,7 @@ Examples are differentiating classification from prediction from estimation, and
 
 ## Protocol Development ❷
 
-### !! What is the H3 header here? !!
+### Manage the Protocol Development Process
 
 #### Objectives
 
@@ -652,9 +652,9 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 Address data quality issues through action that mitigate the risk of reaching erroneous conclusions.
 
-#### Approach
+#### Data Quality Checks
 
-A key component of the back-and-forth work is **data quality checks**.
+A key component of the back-and-forth work is data quality checks.
 While the Data Quality Dashboard helps the Data Ingestion and Harmonization (DI&H) team decide on readiness of site data for release, _data quality checks for a specific analysis is the responsibility of the analyst_.
 While providing an exhaustive list of the steps to this process is outside the scope of this document, we highlight in @tbl-practices-dq some data quality issues that warrant special attention.
 Many of the items in this list were borrowed from Sidky et al. [-@sidky_2023] which can be referred to for further detail.
@@ -811,7 +811,7 @@ While STaRT-RWE places "missing data" in "Analysis Specifications", the absence 
 it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations,
 one can rely on overarching frameworks like Rubin's Taxonomy (missing \[not\]\[completely\] at random)
 or on a structural missingness rubric recently-proposed in the machine learning literature
-[https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+[@mitra_2023].
 
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so [@tan_2023].
 At the least, the data should be
@@ -851,6 +851,9 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 
 : Recommended Data Analysis Methods. {#tbl-practices-methods}
 
+Many epidemiologically-minded analysts use the term "confounder" when only "covariate" is meant,
+a variable that is associated with the outcome.
+A causal "confounder" is one that is associated with the exposure as well.
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial [@hernan_2016; @kuehne_2019; @sidky_2023].
 
@@ -863,6 +866,8 @@ Standards of particular interest to analysts in N3C are Standards for
 [Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and
 [Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
 
+Unfortunately, to date, distressingly few studies based on EHR data report on missing data or sensitivity analysis, use these methods, or these reporting checklists [@li_2023].
+
 Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset
 [@zhou_2022; @narrett_2023; @anderson_2022].
 
@@ -870,22 +875,22 @@ Several N3C studies have used propensity scores (matching or otherwise) to minim
 
 Over 50 external datasets are available for analysis via the Knowledge Store, such as:
 
-* [mapping zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
+* [Mapping ZIP codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
 * [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
 * [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}, and
-* [air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+* [Residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}, and
+* [Air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
 
 These datasets help in linking patients to Area-level Social Determinants of Health (SDoH), in particular, and for debiasing results based on EHR data from academic health centers.
 Of course, applying geographically-based measures to an individual can lead to its own sorts of bias.
 See @sec-understanding for more information.
 
 Ways to use the external sets include census data [@madlock_brown_2022a; @madlock_brown_2022b]
-and mix of spatial units available for linking (zip code, county) [@cutter_2014].
-Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
+and a mix of spatial units available for linking (zip code, county) [@cutter_2014].
+The distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
-Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
+Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
 ### Fairness and Bias
 

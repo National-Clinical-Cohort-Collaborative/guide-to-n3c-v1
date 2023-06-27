@@ -6,7 +6,7 @@ Getting Started w/ N3C {#starting}
 Registration
 ---------------------------------------------
 
-1. For new investigators who want to access the [N3C Enclave](https://covid.cd2h.org/enclave), the first step is to register at <https://labs.cd2h.org/registration/> and log in using your institution's authentication information.  If your institution does not appear, please verify that your institution's data use agreement (DUA) is in place.  Email <NCATSPartnerships@mail.nih.gov> with questions.
+1. For new investigators who want to access the [N3C Data Enclave](https://covid.cd2h.org/enclave), the first step is to register at <https://labs.cd2h.org/registration/> and log in using your institution's authentication information.  If your institution does not appear, please verify that your institution's data use agreement (DUA) is in place.  Email <NCATSPartnerships@mail.nih.gov> with questions.
 
 1. Check the boxes for Enclave access and workstream access.
 

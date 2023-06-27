@@ -91,10 +91,10 @@ Analysts from a wide range of projects have created a number of tools and resour
 
 This includes:
 
-* [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Enclave account" >}}, and
-* [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}
+* [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+* [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+* [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}}, and
+* [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 
 #### Encourage and disseminate best practices, but do not require specific approaches
 
@@ -119,7 +119,7 @@ We do recommend peer review of code, as is suggested, prior to posting code work
 N3C's key library of code is the [Knowledge Store](tools.md#sec-tools-store).
 Accessibility currently depends on perusing titles and on a short taxonomy of artifact types
 ("artifacts" meaning figures, tables, concept sets, variable definitions, analytic code).
-[Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Enclave account" >}}
+[Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 support a folksonomy of tags of both domain and methodological bents.
 
 #### Making clear both the intention of a method as well as how it works
@@ -130,7 +130,7 @@ The [Logic Liaison Templates](tools.md#sec-tools-store-ll), though, provide exce
 
 #### Ensuring reproducibility and reuse (IR)
 
-[ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Enclave account" >}}
+[ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
 We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates)
 that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
@@ -179,7 +179,7 @@ Basic scientists use it for how a particular laboratory reagent should be used, 
 In human subjects research, it is the commitment of the researcher to how patients, and their data, will be managed in a study.
 
 In Real World Data analysis, the meaning is a bit different.
-In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}},
+In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 we write:
 
 > In human subjects research, the protocol is what turns data into evidence: By following rules of methodology,
@@ -193,7 +193,7 @@ we write:
 > This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
 N3C has developed a tool to facilitate the development of protocols known as the
-[Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.:
+[Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.:
 In the following sections we walk through recommended components of a protocol.
 Briefly, they are (a) Protocol Design, (b) Development, and (c) Completion:
 
@@ -221,7 +221,7 @@ Protocol Completion ❸
 1. Gather results
 1. Publish
 
-![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}).
+![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 The Protocol Design, Development, and Completion sections are accessible on the left.
 ](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
 
@@ -466,13 +466,13 @@ The DUR identifier should be supplied by the system.
 |                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                      |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | A. Meta-data about data source and software    | - Data Source(s)                                 | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                         |
-|                                                |                                                  |   {{< fa lock title="Link requires an N3C Enclave account" >}}                                                                                   |
+|                                                |                                                  |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                      |
 |                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
 |                                                | - Data Extraction Date/Version                   | - Link to various                                                                                                                                |
 |                                                | - Data sampling/extraction criteria              |   [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23)     |
-|                                                | - Type(s) of data                                |   {{< fa lock title="Link requires an N3C Enclave account" >}}                                                                                   |
+|                                                | - Type(s) of data                                |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
 |                                                | - Data linkage                                   |   to PPRL-based linked data                                                                                                                      |
 |                                                | - Data conversion                                |                                                                                                                                                  |
 |                                                | - Software to create study population            |                                                                                                                                                  |
@@ -544,23 +544,23 @@ Next comes the [_concept set_](understanding.md#sec-understanding-sets),
 which creates sets of concept ids that are semantically synonymous _for the purposes of this study's Research Question_.
 The next 4 columns all fall under the general category of [derived variable](_Analyzing the Data#Using the Knowledge Store); the different columns suggest different roles.
 So a _Formula_ may be independent of the context of use
-(e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}),
+(e.g., [BMI](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-2ED519D&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}),
 regardless of the research question.
 A _Transformation_ may be more complex, such as
-"[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)" {{< fa lock title="Link requires an N3C Enclave account" >}}
+"[macrovisit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B136507&view=focus)" {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 [@sidky_2023]
 to indicate a hospital admission, or
-"[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)" {{< fa lock title="Link requires an N3C Enclave account" >}},
+"[critical visit](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C368A83&view=focus)" {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 used in defining a COVID-19 hospitalization.
 A [Phenotype](Understanding the dat_a#Phenotype & Ingestion Review) defines a clinical construct
-("[COVID-19-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)" {{< fa lock title="Link requires an N3C Enclave account" >}};
-"[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)" {{< fa lock title="Link requires an N3C Enclave account" >}},
-"[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)" {{< fa lock title="Link requires an N3C Enclave account" >}}),
+("[COVID-19-positive](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus)" {{< fa lock title="Link requires an N3C Data Enclave account" >}};
+"[visits with invasive respiratory support](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8779684&view=focus)" {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+"[HIV patient](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1E14E73&view=focus)" {{< fa lock title="Link requires an N3C Data Enclave account" >}}),
 while a _Cohort Definition_ gives the phenotype a
 [local habitation and a name](https://shakespeare.folger.edu/shakespeares-works/a-midsummer-nights-dream/act-5-scene-1/)
 (e.g., in the past 5 years)
 or utilizes an algorithm
-(e.g., [Long COVID algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}).
+(e.g., [Long COVID algorithm-based classification](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-30757BE&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 
 The figure recognizes that the _role_ each construct plays depends on the context; "diabetes" could be the target cohort (are patients with diabetes at higher risk of developing COVID-19  sequelae, compared with those who do not?), the confounder (does a presumed treatment for COVID-19 have its effect weakened in the presence of diabetes?), the cause (are there specific outcomes for patients with diabetes?), or the outcome (are any patients with COVID-19 at risk for developing type 2 diabetes?).
 
@@ -571,12 +571,12 @@ refer to just this back-and-forth work analysts have in deciding when they have 
 The process of defining variables is laid out in @sec-tools.
 Many DURs involve a number of related protocols; the steps laid out in that chapter are directed at pre-processing that ultimately applies to a set of protocols.
 There are a variety of templates in the Knowledge Store that are produced by the Logic Liaisons and can facilitate this decision-making process.
-The [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} and [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}} templates provide a method by which researchers can assess data quality and density prior to starting variable generation.
+The [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}} and [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}} templates provide a method by which researchers can assess data quality and density prior to starting variable generation.
 Depending on the cohort of interest (COVID-19+ or All Patients) and/or outcome of interest, it may be desirable to eliminate particular sites based on their lack of sufficient data in the corresponding domain.
 There are also two additional Logic Liaison data quality templates that allow researchers to assess the quality of the variables they've created using the OMOP data tables.
-While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}
+While the [Systematic Missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 template provides an all-or-nothing indication of fact presence by site, the
-[Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus)  {{< fa lock title="Link requires an N3C Enclave account" >}}
+[Fact Density by Site](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&view=focus)  {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 template calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) and creates heatmaps to visualize the metrics.
 
 This back-and-forth work ("pre-processing"; "data cleaning") points to the fact that developing the final protocol entails a series of decisions.
@@ -756,18 +756,18 @@ Tuning the analytic environment is crucial to making the analysis as efficient a
 Many analysts come into the Enclave unfamiliar with Apache Spark.
 
 The key tools for analysts are Contour analyses,
-[code workbooks](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Enclave account" >}} and
-[code repositories](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=24) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+[code workbooks](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=22) {{< fa lock title="Link requires an N3C Data Enclave account" >}} and
+[code repositories](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=24) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 Training is available for the Spark languages,
-[PySpark](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=21) {{< fa lock title="Link requires an N3C Enclave account" >}} and
-[SparkR](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=20) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+[PySpark](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=21) {{< fa lock title="Link requires an N3C Data Enclave account" >}} and
+[SparkR](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=20) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 Examples of code workbooks and Contour analyses can be found in the
-[N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+[N3C Training Area](https://unite.nih.gov/workspace/compass/view/ri.compass.main.folder.6046cbcd-22e5-435e-98c2-bbadddf626cf) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 While the Enclave is a powerful environment, analysts have learned many "tricks of the trade" to do better work, such as dealing with
-[slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+[slow builds](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=14) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 One issue is the preference for code repositories as more "native" to the Foundry (N3C environment) vs the benefits of code workbooks
 (which rely upon R or leverage data visualization steps, or DAG-viz of workflows) returning data.frames for R/Python^[
-See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67?doc_node_uid=25be6b45-0786-4c66-8f34-f9647145867d&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 ].
 
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML), points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
@@ -815,7 +815,7 @@ or on a structural missingness rubric recently-proposed in the machine learning 
 
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so [@tan_2023].
 At the least, the data should be
-[explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
+[explored for missingness](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 and variability of missingness across sites considered.
 Data imputation should be considered if there is a reason to believe that systematic missingness is independent of unknown extraneous factors not captured by the data and imputation can be safely predicated upon knowledge of other captured variables that fully or adequately explain missingness.
 
@@ -875,11 +875,11 @@ Several N3C studies have used propensity scores (matching or otherwise) to minim
 
 Over 50 external datasets are available for analysis via the Knowledge Store, such as:
 
-* [Mapping ZIP codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}},
-* [Residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}, and
-* [Air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus) {{< fa lock title="Link requires an N3C Enclave account" >}}.
+* [Mapping ZIP codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+* [American Communities Survey](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-ECAB31C&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+* [Social Deprivation Index](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C11235B&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+* [Residential segregation indices](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-97D65D4&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}, and
+* [Air quality](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-7CBC299&view=focus) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
 These datasets help in linking patients to Area-level Social Determinants of Health (SDoH), in particular, and for debiasing results based on EHR data from academic health centers.
 Of course, applying geographically-based measures to an individual can lead to its own sorts of bias.
@@ -890,7 +890,7 @@ and a mix of spatial units available for linking (zip code, county) [@cutter_201
 The distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
-Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
+Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
 ### Fairness and Bias
 
@@ -1043,9 +1043,9 @@ We don't want to hold up the rest of the chapter.
 Edits are expected to complete by June 2023.
 :::
 
-### Specific to N3C Enclave capabilities
+### Specific to N3C Data Enclave capabilities
 
-  These are findable typically via [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b).
+These are findable typically via [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b).
 
 ### Data Liaison resources
 

@@ -420,7 +420,7 @@ Though specifics vary by the data model, the following apply to all sites comple
 * ADT transaction data does not require changes to the visit occurrence/encounter tables.
 * ADT transaction data must be mapped to one of three designated codes to represent ICU, Emergency Department, and all other inpatient transactions.
 * Sites should include raw/source values in the appropriate fields in their CDM.
-  These fields will be used for validation and harmonization purposes and will not be exposed to end users in the N3C Enclave.
+  These fields will be used for validation and harmonization purposes and will not be exposed to end users in the N3C Data Enclave.
 * If the site has observation visits captured in ADT transaction data, the related transactions do not need to be included in the data submitted to N3C.
   Should the site choose to include them, an appropriate code, other than the three chosen for N3C's ADT data, should be chosen.
 

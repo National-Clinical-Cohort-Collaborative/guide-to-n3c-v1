@@ -192,8 +192,6 @@ we write:
 > In other words, there are many issues with the data, before one gets to the analysis of scientific interest.
 > This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
-{Add a short paragraph here about what a protocol is, and if it's different than the steps outlined above (I assume not, just specialized for RWD analyses)}
-
 N3C has developed a tool to facilitate the development of protocols known as the
 [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}.:
 In the following sections we walk through recommended components of a protocol.

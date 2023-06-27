@@ -811,7 +811,7 @@ While STaRT-RWE places "missing data" in "Analysis Specifications", the absence 
 it's notable that what data are considered "missing" depends heavily on the question or analytic task at hand, yet given such domain-driven considerations,
 one can rely on overarching frameworks like Rubin's Taxonomy (missing \[not\]\[completely\] at random)
 or on a structural missingness rubric recently-proposed in the machine learning literature
-[https://doi.org/10.1038/s42256-022-00596-z](https://doi.org/10.1038/s42256-022-00596-z).
+[@mitra_2023].
 
 In analyzing EHR data, data should be assumed missing not at random (MNAR), unless there is a good reason not to do so [@tan_2023].
 At the least, the data should be

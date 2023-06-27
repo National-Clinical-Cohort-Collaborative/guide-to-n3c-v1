@@ -27,11 +27,9 @@ jobs:
           # version: 0.9.600
 
       # add software dependencies here
-      - name: add software dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages:
-            any::rmarkdown
+      - uses: actions/checkout@v2
+      - name: Install rmarkdown from CRAN
+        run: sudo apt-get install r-cran-rmarkdown
       # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
       # the appropriate block below
 

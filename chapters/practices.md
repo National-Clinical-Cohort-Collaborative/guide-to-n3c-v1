@@ -851,6 +851,9 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 
 : Recommended Data Analysis Methods. {#tbl-practices-methods}
 
+Many epidemiologically-minded analysts use the term "confounder" when only "covariate" is meant,
+a variable that is associated with the outcome.
+A causal "confounder" is one that is associated with the exposure as well.
 While not all EHR-based research is "causal", many studies seek "associations", "effect", or "impact", each of which requires attention to some of these methods or issues.
 Other strategies include the simulated/emulated clinical trial [@hernan_2016; @kuehne_2019; @sidky_2023].
 

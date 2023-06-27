@@ -355,7 +355,7 @@ Some of the most important are highlighted here.
 
 ![Enclave homepage.](images/onboarding/fig-onboarding-070-enclave-homepage.png){#fig-onboarding-070-enclave-homepage fig-alt="Enclave homepage"}
 
-The _Training Material_ in the Educational Resources section has the training portal and self-guided tours–more detail about training and support resources can be found in @sec-support.
+The _Training Material_ in the Educational Resources section has the training portal and self-guided tours-more detail about training and support resources can be found in @sec-support.
 Once you have an Enclave account, use the training material resources to understand how to navigate the Enclave.
 Also included in Educational Resources you will find N3C Community notes and Results Download.
 Community Notes are tips and short notes authored by N3C researchers.

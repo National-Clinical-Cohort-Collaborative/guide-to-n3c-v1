@@ -154,7 +154,7 @@ The Support option will redirect to a page linking to the two ticket systems des
 
 ### Training (Training Portal) {#sec-support-training-portal}
 
-The N3C Training Portal hosts training "modules." The list of training modules is roughly sorted by researchers' N3C journey–those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
+The N3C Training Portal hosts training "modules." The list of training modules is roughly sorted by researchers' N3C journey-those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
 
 Modules are searchable by keyword (from their title and description), and a brief list of Suggested Modules can be found in the orange button in the upper-right, though browsing through the full list is recommended.
 

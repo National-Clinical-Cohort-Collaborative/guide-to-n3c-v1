@@ -76,9 +76,9 @@ Recognizing that any analyst may come from one of a wide range of backgrounds, w
 Data scientists with backgrounds in machine learning and computer science will benefit from studying principles entailed
 in RWD biomedical methods in and beyond the confines of N3C (and should look at the [Machine Learning chapter](ml.md)).
 Researchers trained in traditional data analysis from schools of epidemiology, biostatistics, or econometrics will be reminded of concerns such as over-reliance on overly-simplified parametric models and pitfalls of overfitting.
-All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings – and the limits in the scope of such findings' generalizability – and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
+All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings - and the limits in the scope of such findings' generalizability - and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
-The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource – noting that the resource itself was being actively refined as more was learned from applying methods to its data.
+The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource - noting that the resource itself was being actively refined as more was learned from applying methods to its data.
 Early on, the resulting Applicable Data Methods and Standards ([ADMS](https://covid.cd2h.org/data-methods)) group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
 
 ### Goals
@@ -298,7 +298,7 @@ A lesson learned and relearned is that any analysis in an environment like N3C _
 Clinicians provide the all-important reality testing and substance of the research questions.
 Biostatisticians articulate the analytic design and sometimes novel data required for those analyses (e.g., negative controls) that clinicians might not think about.
 Data scientists and others work to understand how the data are modeled to best extract and format the data, communicating potential pitfalls to the rest of the team.
-Other common roles include leadership and project management -–see @sec-onboarding for a more thorough review of team science.
+Other common roles include leadership and project management --see @sec-onboarding for a more thorough review of team science.
 
 **Documentation/Lab Notebook**.
 A "lab notebook" is an important part of any researchers' repertoire, as a place to document thoughts, experiments, and results.
@@ -483,8 +483,8 @@ The DUR identifier should be supplied by the system.
 As suggested in @tbl-practices-start-2, it is helpful to diagram the cohort definition.
 A well-received model is that of Schneeweiss and colleagues [-@schneeweiss_2019].
 
-![Graphical study design for study with EHR–claims linked data.
-From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fwww.repeatinitiative.org%2Fuploads%2F1%2F0%2F8%2F4%2F108495483%2Fdesign_templates_2022.pptx).](images/practices/fig-practices-021-schneweiss-graphical-study-design.png){#fig-practices-021-schneweiss-graphical-study-design fig-alt="Graphical study design for study with EHR–claims linked data"}
+![Graphical study design for study with EHR-claims linked data.
+From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fwww.repeatinitiative.org%2Fuploads%2F1%2F0%2F8%2F4%2F108495483%2Fdesign_templates_2022.pptx).](images/practices/fig-practices-021-schneweiss-graphical-study-design.png){#fig-practices-021-schneweiss-graphical-study-design fig-alt="Graphical study design for study with EHR-claims linked data"}
 
 It is helpful to be precise in articulating the research question, so correct analytic methods will be chosen.
 Examples are differentiating classification from prediction from estimation, and association from temporal correlation from causal relationships.
@@ -928,7 +928,7 @@ If a new protocol is suggested by the results of this run, it should be initiali
 A responsibility of any analyst is the extent to which quantities important to the question at hand may or may not be available or measured among the data at hand.
 Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts)
 to not be present to a degree that it impacts quantitative findings such that conclusions (e.g., "treatment reduces risk of outcome") actually change.
-It should be noted, however, that this assumption is – by dint of involving _unmeasured_ quantities/variables that are confounding a targeted association/effect – not verifiable from available data.
+It should be noted, however, that this assumption is - by dint of involving _unmeasured_ quantities/variables that are confounding a targeted association/effect - not verifiable from available data.
 Thus, there's effectively a need to assess how _sensitive_ conclusions are to unverifiable assumptions via _sensitivity analysis_;
 an assessment of how quantitative findings (and thus conclusions) differ under a range of plausible departures from the unverifiable assumptions
 (e.g., there exists an unmeasured confounding effect _U_ that entails an impact of confounding of a degree deemed possible by a domain expert);

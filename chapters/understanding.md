@@ -452,7 +452,7 @@ As a result the data_partner_id column will only represent a subset of the data 
 See the [Intro to PPRL documentation](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.095ada1d-1a0c-48d6-80ba-2d4c547b362c) {{< fa lock title="Link requires an Enclave account" >}} for more information.
 
 Secondly, these data sources should not be considered comprehensive in the sense of providing full information on all deaths in the US.
-As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table–that's why N3C has collected this data in the first place!)
+As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table-that's why N3C has collected this data in the first place!)
 
 Different data sources lag in inclusion of mortality information from the actual date of death (e.g. if someone's date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18).
 This lag varies by data source type: government sources tend to lag longer than private sources.

@@ -221,8 +221,9 @@ Protocol Completion ❸
 1. Gather results
 1. Publish
 
-![Home page for a researcher's protocols.
-The Protocol Design, Development, and Completion sections are accessible on the left.](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
+![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Enclave account" >}}).
+The Protocol Design, Development, and Completion sections are accessible on the left.
+](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
 
 <!-- N3C Teams Addressing Good Research Practices -->
 

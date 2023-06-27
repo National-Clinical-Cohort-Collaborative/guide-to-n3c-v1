@@ -53,6 +53,34 @@ The N3C has galvanized sharing of data, methods, and artifacts; reproducibility 
 Furthermore, N3C connects to other patient data repositories through Patient Privacy Preserving Record Linkage (PPRL) and integrates with environmental, social, mortality evidence, viral variant genomic datasets, and CMS (Centers for Medicare & Medicaid Services) datasets to create a holistic view of the patient's healthcare journey.
 The availability of this data has catalyzed over 300+ institutions involving 3,800+ researchers.
 
+### N3C Overall Cohort Definition {#sec-cycle-intro-cohort}
+
+Each COVID-positive patient is matched to roughly control cohort patients.
+N3C defines _control cohort_ as a patient with one or more non-positive labs.
+
+A N3C COVID-19 patient is defined
+^[The exact LOINC, SNOMED-CT, and ICD-10CM codes are enumerated in this
+[N3C wiki](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)]
+as a person with:
+
+* one or more COVID-19 positive lab results,
+
+  _or_
+* one or more strong positive diagnosis codes,
+
+  _or_
+* two or more "weak positive" diagnosis codes during the same encounter
+  or on the same date on or prior to May 1, 2020 without age or demographic restrictions.
+
+The N3C cohort uses Jan 1, 2020 as the encounter start date.
+We recommend that an analyst manages control cohorts independently of the N3C controls.
+Each study may have criteria that is very specific to the research question
+and the control cohort decision may be different for each research
+and N3C control cohort may not be representative to meet the standards of each research group.
+
+Please see more advice in the "Articulate Research Question" section of the
+[Best Practices](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/practices.md) chapter.
+
 ## Overview {#sec-cycle-overview}
 
 Disparate data sources from over 75 data partners are ingested, harmonized and merged together to create a central electronic health record (EHR) data repository.

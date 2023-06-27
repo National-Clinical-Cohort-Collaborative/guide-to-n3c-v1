@@ -345,7 +345,7 @@ Provided above, is a list of recommended information that should be documented, 
 
 Ensure that the question being addressed is explicit.
 
-#### Research Question
+#### Research Questions you cannot answer in N3C
 
 The research question is a natural-language expression of what the protocol is about.
 Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research,
@@ -353,7 +353,6 @@ the "research question" takes a different form, and should be expressed as the q
 
 It's important to know what questions can and can*not* be answered in the Enclave.
 
-**Questions you cannot answer in N3C**.
 While the data are rich and the applications are broad, there are still questions that cannot be adequately answered in the Enclave.
 We list that caveat, along with others, below:
 

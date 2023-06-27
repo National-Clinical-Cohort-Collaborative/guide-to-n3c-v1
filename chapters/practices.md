@@ -885,7 +885,7 @@ and a mix of spatial units available for linking (zip code, county) [@cutter_201
 The distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
-Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
+Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
 ### Fairness and Bias
 

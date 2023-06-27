@@ -51,6 +51,8 @@ author:
     orcid: 0000-0002-4616-1171
 
 csl: ../assets/csl/apa-7e.csl
+
+toc-depth: 4
 ---
 
 # Best Practices for the Research Life Cycle {#sec-practices}
@@ -501,7 +503,7 @@ Provide an audit trail of how the protocol was developed.
 
 Support execution of the protocol.
 
-#### Data Quality Checks
+#### Approach
 
 Team science, a transdisciplinary endeavor that entails both theory and application [@klein_1996],
 has its own mix of needs in "data-only" (e.g., RWE) studies, and, in particular, in distributed settings.
@@ -652,9 +654,9 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 Address data quality issues through action that mitigate the risk of reaching erroneous conclusions.
 
-#### Approach
+#### Data Quality Checks
 
-A key component of the back-and-forth work is **data quality checks**.
+A key component of the back-and-forth work is data quality checks.
 While the Data Quality Dashboard helps the Data Ingestion and Harmonization (DI&H) team decide on readiness of site data for release, _data quality checks for a specific analysis is the responsibility of the analyst_.
 While providing an exhaustive list of the steps to this process is outside the scope of this document, we highlight in @tbl-practices-dq some data quality issues that warrant special attention.
 Many of the items in this list were borrowed from Sidky et al. [-@sidky_2023] which can be referred to for further detail.

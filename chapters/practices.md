@@ -491,7 +491,7 @@ Examples are differentiating classification from prediction from estimation, and
 
 ## Protocol Development ❷
 
-### !! What is the H3 header here? !!
+### Manage the Protocol Development Process
 
 #### Objectives
 

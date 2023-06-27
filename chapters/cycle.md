@@ -55,8 +55,8 @@ The availability of this data has catalyzed over 300+ institutions involving 3,8
 
 ### N3C Overall Cohort Definition {#sec-cycle-intro-cohort}
 
-Each COVID-positive patient is matched to roughly control cohort patients.
-N3C defines _control cohort_ as a patient with one or more non-positive labs.
+Each COVID-positive patient is matched to roughly two control cohort patients.
+N3C defines _control cohort_ as a patient with one or more non-positive COVID labs.
 
 A N3C COVID-19 patient is defined
 ^[The exact LOINC, SNOMED-CT, and ICD-10CM codes are enumerated in this
@@ -74,8 +74,8 @@ as a person with:
 
 The N3C cohort uses Jan 1, 2020 as the encounter start date.
 We recommend that an analyst manages control cohorts independently of the N3C controls.
-Each study may have criteria that is very specific to the research question
-and the control cohort decision may be different for each research
+Each study may have criteria that are very specific to the research question
+and the control cohort decision may be different for each research project
 and N3C control cohort may not be representative to meet the standards of each research group.
 
 Please see more advice in the "Articulate Research Question" section of the

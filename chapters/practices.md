@@ -501,7 +501,7 @@ Provide an audit trail of how the protocol was developed.
 
 Support execution of the protocol.
 
-#### Approach
+#### Data Quality Checks
 
 Team science, a transdisciplinary endeavor that entails both theory and application [@klein_1996],
 has its own mix of needs in "data-only" (e.g., RWE) studies, and, in particular, in distributed settings.

@@ -7,12 +7,16 @@ csl: ../assets/csl/apa-7e.csl
 [A. Jerrod Anzalone](https://orcid.org/0000-0000-0000-0000):
 University of Nebraska Medical Center, Department of Neurological Sciences.
 <br/>
-Great Plains IDeA-CTR, NIH/NIGMS 5 U54 GM115458.
+Great Plains IDeA-CTR,
+<br/>
+NIH/NIGMS 5 U54 GM115458.
 
 [William H. Beasley](https://orcid.org/0000-0002-5613-5006):
 University of Oklahoma Health Science Center, Biomedical and Behavioral Methodology Core.
 <br>
-Oklahoma Shared Clinical and Translational Resources, NIH/NIGMS 5 U54 GM104938
+Oklahoma Shared Clinical and Translational Resources,
+<br/>
+NIH/NIGMS 5 U54 GM104938
 
 [Karen M. Crowley](https://orcid.org/0000-0002-1995-6358):
 Brown University, Brown Center for Biomedical Informatics, RI Advance-CTR Biomedical Informatics, Bioinformatics, and Cyberinfrastructure Enhancement Core.

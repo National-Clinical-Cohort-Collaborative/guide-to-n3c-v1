@@ -167,7 +167,7 @@ For example, consider the following Code Workbook, into which we've imported the
 ![Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.](images/publishing/fig-publishing-020-dataset-branch.png){#fig-publishing-020-dataset-branch fig-alt="dataset-branch"}
 
 Clicking on the "Branch" tab of the dataset node shows that the master branch is currently being used in this workbook.
-Instead of master, we could use the dropdown to select another branch–on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are 'released' periodically after [quality checks and harmonization](cycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively 'pinning' the dataset to a point in time.
+Instead of master, we could use the dropdown to select another branch-on real N3C data, these branches will be named like `Release-v98-2022-10-27`. (We call them releases because new versions are 'released' periodically after [quality checks and harmonization](cycle.md).) Selecting such a branch will import the release of that table as of the date selected, effectively 'pinning' the dataset to a point in time.
 The `master` branch is configured to always match the latest release, and thus changes over time.
 
 When working with a Code Repository, the branch can be selected as a parameter to the `Input` entry in the `@transform` decorator, for example:
@@ -180,7 +180,7 @@ source_df = Input("/UNITE/LDS Release/datasets/condition_era", branch = "Release
 After changing the branch of an imported dataset, you will need to re-compute downstream results for their output to reflect the new input.
 
 Additionally, all primary N3C tables are versioned with similar release names; if you are using both the `condition_era` and `drug_exposure` tables, you should select the same branch for each.
-It is not recommended to mix data from different releases (or a pinned release with the master branch), because they may contain incompatible data–each N3C release is designed to be a self-contained set of datasets.
+It is not recommended to mix data from different releases (or a pinned release with the master branch), because they may contain incompatible data-each N3C release is designed to be a self-contained set of datasets.
 
 In fact, because downstream results are only updated when they are explicitly run, you may wish to avoid using the master branch altogether, or run the risk of one set of different sets of results being based on different releases, depending on when they were run.
 :::
@@ -190,7 +190,7 @@ This becomes cumbersome when writing about results!
 
 ### Download Request Process {#sec-publishing-tech-process}
 
-All research results derived from N3C data–including summary tables, figures, and logs–must be reviewed to ensure they don't inadvertently leak any patient-level data.
+All research results derived from N3C data-including summary tables, figures, and logs-must be reviewed to ensure they don't inadvertently leak any patient-level data.
 The review will check for the policy requirements described above (such as cell sizes less than 20 being masked), and when approved you will be able to download tabular data as a comma-separated-values (CSV) file, images as PDF or PNG, and logs as plain text.
 
 The submission and export process is described in detail in the [How to download results outside the Enclave training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=15) {{< fa lock title="Link requires an Enclave account" >}}, but we'll provide a brief overview here.
@@ -299,7 +299,7 @@ As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids re
 These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](tools.md#sec-tools-concepts) for details.
 
 When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials.
-Fortunately, the concept set browser supports this functionality–when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel." The provided Excel export includes the concept IDs and other relevant information.
+Fortunately, the concept set browser supports this functionality-when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel." The provided Excel export includes the concept IDs and other relevant information.
 
 ![The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).](images/publishing/fig-publishing-080-cset-excel-export.png){#fig-publishing-080-cset-excel-export fig-alt="cset-excel-export"}
 
@@ -314,7 +314,7 @@ Because the Knowledge Store is internal to the Enclave and protected to those wh
 
 If you've written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use.
 Details on this process are covered in the [Knowledge Store Guide](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=9) {{< fa lock title="Link requires an Enclave account" >}} training module, but we'll give an overview here.
-Note that the process can be cumbersome and sometimes requires administrator help–be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office) if you run into any issues or have questions.
+Note that the process can be cumbersome and sometimes requires administrator help-be sure to submit an [Enclave-internal support ticket](support.md#sec-support-internal) or visit [office hours](support.md#sec-support-office) if you run into any issues or have questions.
 
 Code sharing within N3C is usually accomplished by sharing Code Workbook "templates" in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user.
 Authoring workbook templates is covered in the [official documentation](https://www.palantir.com/docs/foundry/code-workbook/templates-overview/).

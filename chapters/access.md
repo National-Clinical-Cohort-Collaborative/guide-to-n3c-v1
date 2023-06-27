@@ -31,7 +31,7 @@ N3C registration and Enclave access are covered in @sec-onboarding, so we won't 
 
 ## Background: N3C Protected Data Levels {#sec-access-background}
 
-Not all data in the N3C Data Enclave requires an approved DUR to access–mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
+Not all data in the N3C Data Enclave requires an approved DUR to access-mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access.
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access are made available in three different "levels," each with different amounts of data obfuscation, and correspondingly different access requirements.
@@ -46,7 +46,7 @@ These are available alongside only Level 3 data as an optional add-on; we'll dis
 ### Level 3, Limited Data Set (LDS) {#sec-access-background-l3}
 
 Level 3, or LDS data is the most complete and protected (the term "limited data set" is defined by HIPAA and may contain a limited set of potentially identifying information).
-This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,^[There are some exceptions where five digit zip codes are not visible in Level 3 data: zip codes represented by fewer than 20,000 patients are removed altogether; sometimes only the first three digits of the zip code are displayed (such as zips with a predominantly American Indian/Alaskan Native population and zip codes from participating institutions who send only the first three digits).] and accurate dates of events and services (except for dates of birth which are limited to month and year).^[In actuality, a few data partners also perform small amounts of date shifting–randomly shifting all dates on a per-patient basis to further protect patient privacy–prior to sending their data to N3C.
+This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,^[There are some exceptions where five digit zip codes are not visible in Level 3 data: zip codes represented by fewer than 20,000 patients are removed altogether; sometimes only the first three digits of the zip code are displayed (such as zips with a predominantly American Indian/Alaskan Native population and zip codes from participating institutions who send only the first three digits).] and accurate dates of events and services (except for dates of birth which are limited to month and year).^[In actuality, a few data partners also perform small amounts of date shifting-randomly shifting all dates on a per-patient basis to further protect patient privacy-prior to sending their data to N3C.
 The manifest information (described below) indicates which data partners do so and the range of potential shift so researchers can remove data from these partners if they need highly-accurate date information.] Level 3 data are in the OMOP common data model, with some N3C-specific additions and conveniences, and are versioned as releases as described above.
 (OMOP and N3C-specific additions are covered in @sec-understanding.)
 
@@ -126,7 +126,7 @@ As we'll discuss below, there are special procedures for gaining access to PPRL 
 The N3C Data Enclave uses a fine-grained permissions model to manage researcher access to protected data.
 While researchers are not able to modify these permissions themselves, understanding them will help in navigating the DUR process and subsequent work.
 
-Data management in the Enclave is centered around "project workspaces" which act like folders–workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
+Data management in the Enclave is centered around "project workspaces" which act like folders-workspaces are indicated by a small filing-drawer icon and are listed under the "Projects & files" link in the left navigation menu.
 
 ![Project workspace browser. Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.](images/access/fig-access-040-projects-list.png){#fig-access-040-projects-list fig-alt='Project workspace browser.
 Note that the "Request access" buttons are not active and clicking one will suggest visiting the DUR dashboards described below.'}
@@ -346,7 +346,7 @@ If we scroll further to the right we see other important columns, particularly t
 
 ![Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options.](images/access/fig-access-190-my-projects-more.png){#fig-access-190-my-projects-more fig-alt="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options."}
 
-N3C DURs are valid for one year–continued access to the project workspace requires submitting a renewal DUR before the expiration date listed.
+N3C DURs are valid for one year-continued access to the project workspace requires submitting a renewal DUR before the expiration date listed.
 The Renew DUR link in the Renewal column opens up a renewal DUR: a copy of the DUR with almost all information uneditable, but requiring re-attestation of information like the Data Use Agreement, Code of Conduct, and human subjects research protection training.
 Renewal DURs are processed more quickly than other types, but if you miss the renewal deadline and you are a collaborator (not the lead) you will need to resubmit a collaborator DUR for a more thorough review.
 Leads who miss the renewal deadline will have their projects closed and will need to submit an [Enclave-external](support.md#sec-support-external) support ticket for help re-opening it.

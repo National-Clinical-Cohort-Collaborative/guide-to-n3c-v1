@@ -84,7 +84,7 @@ System access requires your institution to sign a Data Use Agreement ([DUA](gove
 and even with strong institutional support this can take several months in legal and administrative channels.^[On the other hand,
 hundreds of institutions have already done so;
 check the list at <https://covid.cd2h.org/duas>.
-This process is described in @sec-onboarding-enclave.]
+This process is described in the [Enclave Registration](onboarding.md#sec-onboarding-enclave) section of @sec-onboarding.]
 
 Yet after clearing that first (tall) hurdle for your site, data access for each specific project takes only a week or two to be processed by the N3C Data Access Committee ([DAC](access.md#sec-access-dur)).
 That's a remarkably short time considering the scale of available data.

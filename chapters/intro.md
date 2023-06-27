@@ -64,7 +64,7 @@ Mere access to the Enclave, however, doesn't automatically provide access to any
 Multiple "levels" of the data are available with different anonymization techniques applied, facilitating "just enough" access to research teams depending on their needs and ability to access protected health information.
 Accessing the most secure level, for example, requires obtaining approval from an Institutional Review Board (IRB) which validates the appropriateness of human subjects research, while the lowest level is heavily anonymized and accessible by private individuals (citizen scientists) with only certain legal and training requirements.
 
-Because effective analysis of EHR data requires a diverse set of skills–especially clinical and data science/statistical expertise–N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well.
+Because effective analysis of EHR data requires a diverse set of skills-especially clinical and data science/statistical expertise-N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well.
 As of February 2023, dozens of these "[Domain Teams](onboarding.md#sec-onboarding-dt)" have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations.
 Over seventy data partners provide EHR data for 17 million patients (a third of whom have had COVID-19), representing 10.5 billion lab results, 3.5 billion medication records, 2 billion clinical observations, and 1 billion clinical visits.
 For up-to-date information on these numbers and more, visit our dashboard at <https://covid.cd2h.org/dashboard>.
@@ -119,13 +119,13 @@ Signing an institutional Data Use Agreement provides Enclave access to all emplo
 Hundreds of institutions have done so, connecting their research community to a vast network of data, tools, and expertise.
 For more information about Data Use Agreements, see @sec-onboarding.
 
-Institutions that contribute data to N3C gain more than recognition–contributing sites get early access to new features and pilot programs.
+Institutions that contribute data to N3C gain more than recognition-contributing sites get early access to new features and pilot programs.
 More importantly, N3C provides data partners feedback on their data quality.
 While contributing sites implement their own data quality checks, N3C has discovered a number of issues that are only apparent in an environment with multiple organizations' data [@pfaff_2022b].
 
 Finally, N3C's governance structures may be of interest to other organizations embarking on large-scale, team-science efforts. @sec-governance introduces these perspectives.
 
-Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out–either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our Enclave-external help desk, or just stopping by office hours.
+Regardless of how you think your institution can work with N3C, getting started is as simple as reaching out-either by contacting [N3C leadership](https://covid.cd2h.org/team), submitting a ticket to our Enclave-external help desk, or just stopping by office hours.
 More information on these latter two options may be found in @sec-support.
 
 ::: {.callout-note appearance="simple"}

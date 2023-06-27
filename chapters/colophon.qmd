@@ -7,6 +7,10 @@ R Info
 sessionInfo()
 ```
 
+```{r}
+sessioninfo::session_info()
+```
+
 Quarto Info
 ------------------
 

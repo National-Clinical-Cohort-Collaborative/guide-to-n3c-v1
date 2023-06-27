@@ -881,8 +881,8 @@ Of course, applying geographically-based measures to an individual can lead to i
 See @sec-understanding for more information.
 
 Ways to use the external sets include census data [@madlock_brown_2022a; @madlock_brown_2022b]
-and mix of spatial units available for linking (zip code, county) [@cutter_2014].
-Distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
+and a mix of spatial units available for linking (zip code, county) [@cutter_2014].
+The distance between patient zip code and facility zip code is at times used as a proxy for rurality or difficulties in healthcare access.
 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
 Analysts are also encouraged to post a Community Note describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.

@@ -69,22 +69,22 @@ A N3C COVID-19 patient is defined as a person with:
 
   _or_
 * two or more "weak positive" diagnosis codes during the same encounter
-  or on the same date on or prior to 5/1/2020 without age or demographic restrictions.
+  or on the same date on or prior to May 1, 2020 without age or demographic restrictions.
 
 The specific LOINC, SNOMED-CT, and ICD-10CM codes are enumerated in this
 [N3C wiki](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype).
 
 N3C defines control cohort as patient with one or more lab test with non-positive results,
 at a ratio of 1:2 (cases:controls).
+In other words, each COVID-positive patient is matched to roughly control patients.
 
-The N3C cohort use 1/1/2020 as encounter start date.
+The N3C cohort uses Jan 1, 2020 as encounter start date.
 We recommend that analyst manage control cohorts independent of the N3C controls.
 Each study may have criteria that is very specific to the research question
 and the control cohort decision may be different for each research
 and N3C control cohort may not be representative to meet the standards of each research group.
-Here is a link to Best Practices section,
-which can be helpful.
-[see <https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/practices.html#research-question>].
+Please see more advice in the "Articulate Research Question" section of the
+[Best Practices](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/practices.md) chapter.
 
 ## Overview {#sec-cycle-overview}
 

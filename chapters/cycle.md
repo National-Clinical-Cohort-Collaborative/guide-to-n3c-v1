@@ -58,16 +58,25 @@ The N3C has galvanized sharing of data, methods, and artifacts; reproducibility 
 Furthermore, N3C connects to other patient data repositories through Patient Privacy Preserving Record Linkage (PPRL) and integrates with environmental, social, mortality evidence, viral variant genomic datasets, and CMS (Centers for Medicare & Medicaid Services) datasets to create a holistic view of the patient's healthcare journey.
 The availability of this data has catalyzed over 300+ institutions involving 3,800+ researchers.
 
-### N3C Overall Cohort Definition {#sec-cycle-intro-cohortdef}
+### N3C Overall Cohort Definition {#sec-cycle-intro-cohort}
 
-N3C COVID-19 patients are defined as patient with one or more COVID-19 positive lab results
-or one or more strong positive diagnosis codes from the ICD-10 or SNOMED CT
-listed in this [table <https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype>]
-or two or more "weak positive" diagnosis codes
-from the ICD-10 or SNOMED CT tables during the same encounter
-or on the same date on or prior to 5/1/2020 without age or demographic restrictions.
+A N3C COVID-19 patient is defined as a person with:
+
+* one or more COVID-19 positive lab results,
+
+  _or_
+* one or more strong positive diagnosis codes,
+
+  _or_
+* two or more "weak positive" diagnosis codes during the same encounter
+  or on the same date on or prior to 5/1/2020 without age or demographic restrictions.
+
+The specific LOINC, SNOMED-CT, and ICD-10CM codes are enumerated in this
+[N3C wiki](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype).
+
 N3C defines control cohort as patient with one or more lab test with non-positive results,
 at a ratio of 1:2 (cases:controls).
+
 The N3C cohort use 1/1/2020 as encounter start date.
 We recommend that analyst manage control cohorts independent of the N3C controls.
 Each study may have criteria that is very specific to the research question

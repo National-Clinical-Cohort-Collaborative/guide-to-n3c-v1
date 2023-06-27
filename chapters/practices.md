@@ -866,6 +866,8 @@ Standards of particular interest to analysts in N3C are Standards for
 [Heterogeneity of Treatment Effects (HTE)](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Heterogeneity%20of%20Treatment%20Effects), and
 [Standards for Causal Inference Methods](https://www.pcori.org/research/about-our-research/research-methodology/pcori-methodology-standards#Causal%20Inference%20Methods).
 
+Unfortunately, to date, distressingly few studies based on EHR data report on missing data or sensitivity analysis, use these methods, or these reporting checklists [@li_2023].
+
 Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset
 [@zhou_2022; @narrett_2023; @anderson_2022].
 

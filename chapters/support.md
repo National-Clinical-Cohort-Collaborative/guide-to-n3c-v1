@@ -222,7 +222,7 @@ Within this folder you will be able to create new analyses, and these will have 
 ## Notional Datasets {#sec-support-notional}
 
 OMOP-formatted N3C patient data are protected by a [Data Use Request](access.md#sec-access-dur) process, but researchers may wish to explore OMOP tables and Enclave tools prior to completing a DUR.
-The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
+The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e., fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
 They are both available via the [data catalog](access.md#sec-access-workspaces) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](access.md#sec-access-availability), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
 ![Two sets of synthetic data.](images/support/fig-support-190-synthetic-datasets.png){#fig-support-190-synthetic-datasets width=75% fig-alt="Two sets of synthetic data"}

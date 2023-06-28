@@ -106,10 +106,10 @@ Hover over a footnote to see the popup, without jumping to the bottom of the pag
 
 * **Navigator**:
   I'm glad you think the N3C might help your research.
-  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding.]
+  As I wrote in this morning's email, the agreement between the university and the NIH was established last year, so don't worry about that.^[Read about the institutional-level DUA in @sec-onboarding-dua.]
   There are two remaining steps.
-  First, complete your personal paperwork.^[See @sec-onboarding.]
-  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork is discussed in @sec-onboarding.]
+  First, complete your personal paperwork.^[See @sec-onboarding-enclave.]
+  Second, submit a DUR tailored to your hypotheses.^[Project-level paperwork is discussed in @sec-access-dur.]
 
 * **Investigator**:
   Remind me.  What is a [DUR](access.md#sec-access-dur)?

@@ -23,7 +23,9 @@ csl: ../assets/csl/apa-7e.csl
 
 N3C is strongly committed to patient privacy.
 After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who've placed their trust in N3C's ability to protect it.
-Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the Data Use Agreements, discussed in @sec-onboarding), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
+Some of these protections include agreeing to report a data leak incident within 2 business days
+(covered by the [Data Use Agreements](onboarding.md#sec-onboarding-dua), discussed in @sec-onboarding),
+a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.
 
 This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter.
 The DUR form is available only inside the N3C Data Enclave, so Enclave access is required to request data access.

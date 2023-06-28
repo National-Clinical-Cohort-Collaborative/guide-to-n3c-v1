@@ -117,7 +117,7 @@ There are two primary ways that institutions can participate in N3C: (1) by sign
 
 Signing an institutional Data Use Agreement provides Enclave access to all employees and students at your institution.
 Hundreds of institutions have done so, connecting their research community to a vast network of data, tools, and expertise.
-For more information about Data Use Agreements, see @sec-onboarding.
+For more information about Data Use Agreements, see @sec-onboarding-dua.
 
 Institutions that contribute data to N3C gain more than recognition-contributing sites get early access to new features and pilot programs.
 More importantly, N3C provides data partners feedback on their data quality.

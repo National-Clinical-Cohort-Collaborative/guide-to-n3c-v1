@@ -167,7 +167,7 @@ The general project management phases defined by the [Project Management Institu
 In N3C terms:
 
 * _Development_ refers to Protocol Design,
-* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectation](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
+* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectations](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
 * _Activation_ is assembling and running the research team,
 * _Conduct_ is the workflow described in Chapter [Analyzing the Data](Analyzing the Data),
 * _Oversight_ is the responsibility of the project PI,

@@ -27,6 +27,15 @@ jobs:
           # version: 0.9.600
 
       # add software dependencies here
+      - uses: actions/checkout@v2
+      - name: Install rmarkdown from CRAN
+        run: sudo apt-get install r-cran-rmarkdown
+      - name: Install sessioninfo from CRAN
+        run: sudo apt-get install r-cran-sessioninfo
+      # - name: Install quarto R package
+      #   run: |
+      #     install.packages('quarto')
+      #   shell: Rscript {0}
 
       # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
       # the appropriate block below

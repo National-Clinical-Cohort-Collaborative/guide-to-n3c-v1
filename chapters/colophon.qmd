@@ -7,10 +7,14 @@ R Info
 sessionInfo()
 ```
 
+```{r}
+sessioninfo::session_info()
+```
+
 Quarto Info
 ------------------
 
 ```{r}
 # quarto::quarto_inspect()
-quarto::quarto_version()
+# quarto::quarto_version()
 ```

@@ -156,7 +156,7 @@ Many organizations participate in InCommon, a federated login network linking to
 Other users will need to link a Login.gov account to their email for use in registration and login.
 ](images/onboarding/fig-onboarding-030-login.png){#fig-onboarding-030-login fig-alt="Login options for registration"}
 
-### InCommon {#sec-onboarding-enclave-incommon}
+### Authenticate with InCommon {#sec-onboarding-enclave-incommon}
 
 Most US universities participate in the InCommon authentication network; registering through this route enables you to use your existing Single Sign On to authenticate into the Enclave.
 There is a link on the registration page that leads to a list of organizations that participate in InCommon.
@@ -164,7 +164,7 @@ You can also see it at <https://incommon.org/community-organizations/>.
 If your organization participates, you should use the InCommon option and your institution credentials.
 It can cause issues later if your institution does participate in InCommon, but you do not use this mechanism.
 
-### Login.gov {#sec-onboarding-enclave-logingov}
+### Authenticate with Login.gov {#sec-onboarding-enclave-logingov}
 
 If your institution does not participate with InCommon and you do not have an NIH or HHS login, you will need a Login.gov account.
 If you do not already have a Login.gov account associated with your institutional email address, click on the Login.gov option to create a Login.gov account.
@@ -181,9 +181,7 @@ Once logged in, complete the required fields to create an account.
 Once you know which pathway you will use to create an Enclave account there are other security measures that you need to complete.
 You will need to have an ORCID iD, complete NIH security training, and complete human subjects research training. [ORCiD](https://orcid.org/), which stands for Open Researcher and Contributor ID, is a unique identifier free of charge to researchers.
 
-## !missing heading & transition!
-
-!! _Is something missing.  It seemed to jump._ !!
+### Required Training {#sec-onboarding-enclave-training}
 
 The Enclave is hosted by National Center for Advancing Translational Sciences (NCATS) and all researchers must complete the "Informational Security, Counterintelligence, Privacy Awareness, Records Management Refresher, Emergency Preparedness Refresher" course.
 The course can be accessed at <https://irtsectraining.nih.gov/public.aspx>.
@@ -194,7 +192,9 @@ You need to complete Human Subjects Research training that aligns with your inst
 You will need to provide the date of completion when submitting or joining a DUR.
 Overall, users will need to confirm if they use the InCommon or Login.gov pathway, register for an ORCiD, have completed NIH Security Training, and completed institution human subjects research training.
 
-If you've already registered, you'll see the option to update your profile
+### Complete Your Profile {#sec-onboarding-enclave-profile}
+
+If you've already registered, you'll see the option to update your profile.
 
 Then click the "edit this profile" at the bottom.
 

@@ -76,7 +76,7 @@
 
 ## Chapter: Checklist for Analysis/Submission
 
-Curated list of recommendations that should be considered before taking an analysis too seriously. Similar to R's [Checklist for CRAN submissions](https://cran.r-project.org/web/packages/submission_checklist.html).  David Sahner suggested to organize it by OMOP domain (or maybe source table).  Maybe there's a priority icon that identicates if this is potentially a huge problem if ignored (*eg*, the hypothesis direction could be flipped) or a minor problem (*eg*, the coefficients might be a little off).
+Curated list of recommendations that should be considered before taking an analysis too seriously. Similar to R's [Checklist for CRAN submissions](https://cran.r-project.org/web/packages/submission_checklist.html).  David Sahner suggested to organize it by OMOP domain (or maybe source table).  Maybe there's a priority icon that identicates if this is potentially a huge problem if ignored (e.g., the hypothesis direction could be flipped) or a minor problem (e.g., the coefficients might be a little off).
 
 * List of open issues to be addressed:
 

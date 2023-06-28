@@ -216,7 +216,7 @@ This workspace is also used to organize other training resources (like the Train
 
 ![Training Area.](images/support/fig-support-180-training-area.png){#fig-support-180-training-area width=75% fig-alt="Training Area"}
 
-If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data." Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g. "oneils").
+If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data." Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g., "oneils").
 Within this folder you will be able to create new analyses, and these will have access to the notional datasets described next.
 
 ## Notional Datasets {#sec-support-notional}
@@ -231,7 +231,7 @@ They are both available via the [data catalog](access.md#sec-access-workspaces) 
 
 SynPuf is short for "Synthetic Public Use Files," or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
 These SynPuf files originate from [SynPuf Medicare Claims data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs) and have been [converted to OMOP format](https://forums.ohdsi.org/t/synpuf/4936) by the OHDSI community.
-The content of these data differs from N3C data in many ways (e.g. records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
+The content of these data differs from N3C data in many ways (e.g., records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
 Lastly, the data are not recent, and so contain no COVID-19-related records such as diagnoses, lab tests, or vaccine records.
 The SynPuf data do not contain some N3C customizations to the OMOP data model, for example the `manifest` table used in N3C data to describe metadata about contributing data partners.
 

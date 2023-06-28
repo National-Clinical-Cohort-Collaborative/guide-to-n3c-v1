@@ -27,7 +27,7 @@ The National COVID Cohort Collaborative, or N3C, is an open-science community st
 
 Faced with the COVID-19 pandemic, the issue addressed by N3C is clear and direct: the US has no centralized data repository for health records and related information, hindering the response of the scientific community.^[These articles provide good overviews of N3C and the surrounding landscape: [It took a pandemic, but the US finally has (some) centralized medical data](https://www.technologyreview.com/2021/06/21/1026590/us-covid-database-n3c-nih-privacy/) (MIT Technology Review), and [The ambitious effort to piece together America's fragmented health data](https://www.theverge.com/2020/10/19/21522863/health-data-records-covid-coronavirus-model-nih-privacy-n3c) (The Verge)]
 Although healthcare providers are mandated by law to utilize electronic health records (EHR), little guidance coordinates how or exactly what information to collect and store.
-Commercial data-collection suites (e.g. Epic) are widely used in clinical settings, and controlled vocabularies (e.g. ICD10 and SNOMED) provide standards for representing medical information, but there are many such standards in use and software is highly configurable to the needs of individual organizations.
+Commercial data-collection suites (e.g., Epic) are widely used in clinical settings, and controlled vocabularies (e.g., ICD10 and SNOMED) provide standards for representing medical information, but there are many such standards in use and software is highly configurable to the needs of individual organizations.
 As a result, databases of EHR information across the US are largely non-interoperable, presenting challenges to researchers hoping to use this vast national store of information in practice.
 
 ## Common Data Models and N3C  {#sec-intro-cdm}
@@ -91,13 +91,13 @@ This range of work is only possible by the diversity of interests and expertise 
 Practicing clinicians, biostatisticians, machine-learning researchers, and others collaborate on projects inside the secure N3C Data Enclave.
 N3C supports team science in a variety of ways.
 Domain Teams, for example, serve to connect groups with similar interests for peer support, research coordination, and collaboration building.
-While most Domain Teams are clinically oriented (e.g. the Pregnancy Domain Team), others are more general (e.g. the Machine Learning Domain Team). @sec-onboarding covers Domain Teams in more detail.
+While most Domain Teams are clinically oriented (e.g., the Pregnancy Domain Team), others are more general (e.g., the Machine Learning Domain Team). @sec-onboarding covers Domain Teams in more detail.
 N3C provides a number of training and support venues, including regular office hours, training modules, and of course this book.
 See @sec-support for more information on these topics.
 
 Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information.
 Data are extensively quality-checked and harmonized for consistency with the OMOP common data model (see @sec-cycle), which supports sophisticated filtering and querying (Chapters [-@sec-understanding] and [-@sec-tools]).
-Other data are available as well, including publicly-available datasets (e.g. from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-cycle).
+Other data are available as well, including publicly-available datasets (e.g., from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-cycle).
 
 Big data is of little value without powerful analysis tools.
 Fortunately, N3C's Enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two.

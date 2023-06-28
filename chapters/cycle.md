@@ -121,7 +121,7 @@ The N3C Data ingestion pipeline consists of the following five categories of ste
 
 ![N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.](images/cycle/fig-cycle-015-workflow.png){#fig-cycle-015-workflow fig-alt="Pipeline Workflow"}
 
-Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g. UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm.
+Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g., UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm.
 We created a shareable set of crosswalk mappings that are used to convert the value sets, such as gender and race concept sets, from all source CDMs to OMOP concepts along with associated OMOP domain mapping information.
 Code map service is used to generate site-specific dynamic lists of terminology crosswalk mapping tables to accurately map the source terminology into OMOP concept ids.
 The OMOP relationship table is referenced to identify the codes or terms found in the source data with standard OMOP concept ids.

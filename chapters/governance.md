@@ -155,7 +155,7 @@ N3C governance includes considerations for protecting special populations and co
 N3C contains no Tribal affiliation.
 Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.
 
-![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
+![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project"}
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

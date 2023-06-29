@@ -151,7 +151,7 @@ from the `condition_occurrence` table:
 
 ![A subset of rows and columns for mock condition_occurrence data.
 Notice the N3C-added `data_partner_id`, these are anonymized identifiers for sites contributing data,
-labeling each record with a source.](images/access/fig-access-010-condition_occurrence.png){#fig-access-010-condition_occurrence fig-alt="A subset of rows and columns for mock condition_occurrence data."}
+labeling each record with a source.](images/access/fig-access-010-condition_occurrence.png){#fig-access-010-condition_occurrence fig-alt="A subset of rows and columns for mock condition_occurrence data"}
 
 Notice in particular the columns for
 `data_partner_id`
@@ -163,7 +163,7 @@ and `condition_concept_name`
 Other OMOP tables link records by shared columns;
 here are a few columns from the `person` table describing basic demographics of patients:
 
-![Example data for the OMOP `person` table.](images/access/fig-access-020-person.png){#fig-access-020-person fig-alt="Example data for the OMOP `person` table."}
+![Example data for the OMOP `person` table.](images/access/fig-access-020-person.png){#fig-access-020-person fig-alt="Example data for the OMOP `person` table"}
 
 Some other tables available with Level 3 data are specific to N3C;
 here are a few columns from a notional `manifest` table providing information about data partners,
@@ -174,7 +174,7 @@ and whether the data partner performs random date shifting prior to submission t
 ![An example of the N3C-specific `manifest` table.
 This table provides information about data partners, such as their source common data model (`cdm_name`),
 whether they pre-shift dates (see @sec-cycle),
-and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table."}
+and when their last submission was.](images/access/fig-access-030-manifest.png){#fig-access-030-manifest fig-alt="An example of the N3C-specific `manifest` table"}
 
 ### PPRL Data {#sec-access-background-pprl}
 
@@ -314,9 +314,9 @@ There are three primary dashboards used to create and manage DURs;
 all three are linked from the N3C Data Enclave homepage via buttons titled
 "Data Use Request (DUR)",
 "My Projects (DURs)", and
-"Explore Projects (DURs)."
+"Explore Projects (DURs)"
 
-![Enclave homepage. Highlighted are the three DUR-related dashboards.](images/access/fig-access-050-dur-dashboards-home.png){#fig-access-050-dur-dashboards-home fig-alt="Enclave homepage."}
+![Enclave homepage. Highlighted are the three DUR-related dashboards.](images/access/fig-access-050-dur-dashboards-home.png){#fig-access-050-dur-dashboards-home fig-alt="Enclave homepage"}
 
 Although there is some functionality overlap, the primary uses for these three dashboards are:
 
@@ -349,7 +349,7 @@ and Public Health Proposal opens the application form for the
 [N3C PHASTR](https://covid.cd2h.org/phastr) initiative
 (which utilizes a specialized variant of the DUR process discussed here).
 
-![New Data Use Request (DUR) form.](images/access/fig-access-060-new-dur.png){#fig-access-060-new-dur fig-alt="New Data Use Request (DUR) form."}
+![New Data Use Request (DUR) form.](images/access/fig-access-060-new-dur.png){#fig-access-060-new-dur fig-alt="New Data Use Request (DUR) form"}
 
 Moving to the main content of the DUR form, the first three questions prompt for a
 Title, Abstract, and Research Project Rationale.
@@ -370,7 +370,7 @@ it will be rejected, or approved for the Level 2 data even though Level 3 was re
 Similarly, if requesting access to any PPRL (see @sec-access-availability) datasets the rationale should include why.
 (You will also need to have the PPRL data mentioned in your IRB letter of determination - see below.)
 
-![DUR metadata fields.](images/access/fig-access-070-dur-metadata.png){#fig-access-070-dur-metadata fig-alt="DUR metadata fields."}
+![DUR metadata fields.](images/access/fig-access-070-dur-metadata.png){#fig-access-070-dur-metadata fig-alt="DUR metadata fields"}
 
 The next questions pertain to potential collaborations.
 The "Please associate your project with an existing N3C Domain Team"
@@ -381,7 +381,7 @@ to navigate domain teams and browse linked projects dynamically.
 It is possible to modify this linkage later,
 so if you aren't sure feel free to check the "need help choosing" check box.
 
-![DUR Domain Teams and collaborator fields.](images/access/fig-access-080-dur-collaborators.png){#fig-access-080-dur-collaborators fig-alt="DUR Domain Teams and collaborator fields."}
+![DUR Domain Teams and collaborator fields.](images/access/fig-access-080-dur-collaborators.png){#fig-access-080-dur-collaborators fig-alt="DUR Domain Teams and collaborator fields"}
 
 The next question, "Allow other researchers to join this project",
 configures the project so that others can request to join via the Explore Projects dashboard.
@@ -404,7 +404,7 @@ Next is the choice of data level to request.
 Levels 2 and 3 require additional information, so we'll start
 with the Level 1 data and return to see the differences for Levels 2 and 3.
 
-![DUR data level request.](images/access/fig-access-090-dur-data-level.png){#fig-access-090-dur-data-level fig-alt="DUR data level request."}
+![DUR data level request.](images/access/fig-access-090-dur-data-level.png){#fig-access-090-dur-data-level fig-alt="DUR data level request"}
 
 ### Level 1 DUR Requirements {#sec-access-request-l1}
 
@@ -414,7 +414,7 @@ and that you have completed the required NIH IT Security training course within 
 Both of these are also required as part of onboarding,
 so we won't cover them here (see @sec-onboarding).
 
-![DUR attestations.](images/access/fig-access-100-dur-attestations.png){#fig-access-100-dur-attestations fig-alt="DUR attestations."}
+![DUR attestations.](images/access/fig-access-100-dur-attestations.png){#fig-access-100-dur-attestations fig-alt="DUR attestations"}
 
 Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above),
 that you have read and understood the [N3C download policy](publishing.md)
@@ -425,7 +425,7 @@ that you are aware of your institutions' policies around doing so.
 including [publicly available](understanding.md) data ingested for use by N3C researchers.)
 <!-- TODO: like the last section of the "Understanding the Data" chapter -->
 
-![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgments.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments."}
+![DUR attestations and acknowledgments.](images/access/fig-access-110-dur-acknowledgments.png){#fig-access-110-dur-acknowledgments fig-alt="DUR attestations and acknowledgments"}
 
 With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.
 
@@ -445,7 +445,7 @@ you can utilize the
 provided by Health and Human Services.
 
 ![DUR Human Subjects Research Protection (HSRP) training attestation.
-HSRP training must have been completed within the last three years.](images/access/fig-access-120-dur-hsrp.png){#fig-access-120-dur-hsrp fig-alt="HSRP training attestation."}
+HSRP training must have been completed within the last three years.](images/access/fig-access-120-dur-hsrp.png){#fig-access-120-dur-hsrp fig-alt="HSRP training attestation"}
 
 In addition to human subjects research protection training,
 you will need to consider whether your institution requires a letter of determination
@@ -454,7 +454,7 @@ If so, you'll be prompted to upload the letter as a PDF before you can submit th
 
 ![DUR IRB letter upload.
 For a Level 2 DUR, this is required only if your local institution requires IRB approval
-for de-identified data access.](images/access/fig-access-130-dur-level2-irb.png){#fig-access-130-dur-level2-irb fig-alt="DUR IRB letter upload."}
+for de-identified data access.](images/access/fig-access-130-dur-level2-irb.png){#fig-access-130-dur-level2-irb fig-alt="DUR IRB letter upload"}
 
 ### Level 3 DUR Requirements {#sec-access-request-l3}
 
@@ -471,14 +471,14 @@ and claims data from the Centers for Medicare and Medicaid Services,
 but are available only for subsets of N3C patients
 (see @sec-understanding for details about PPRL).
 
-![DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.](images/access/fig-access-140-dur-level3-pprl.png){#fig-access-140-dur-level3-pprl fig-alt="DUR Privacy-Preserving Record Linkage (PPRL)."}
+![DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.](images/access/fig-access-140-dur-level3-pprl.png){#fig-access-140-dur-level3-pprl fig-alt="DUR Privacy-Preserving Record Linkage (PPRL)"}
 
 A Level 3 DUR additionally requires a letter of determination from the submitter's local IRB:
 
 ![The lead (submitting) investigator must supply an IRB letter of determination from their local institution.
 Collaborators from the same institution as the lead aren't required to,
 but collaborators from other institutions must also obtain
-and submit a determination letter from their own local IRB.](images/access/fig-access-150-dur-level3-irb.png){#fig-access-150-dur-level3-irb fig-alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution."}
+and submit a determination letter from their own local IRB.](images/access/fig-access-150-dur-level3-irb.png){#fig-access-150-dur-level3-irb fig-alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution"}
 
 Note that when requesting access to PPRL datasets,
 _both the Research Project Rationale (reviewed by the DAC) and the IRB letter of determination should address the need for the PPRL datasets requested_.
@@ -523,7 +523,7 @@ which can be useful in identifying potential overlapping research.
 Finally, "Closed Projects" lists non-active projects,
 for example those whose 1-year expiry has passed without renewal.
 
-![The Explore Projects dashboard.](images/access/fig-access-160-explore-projects.png){#fig-access-160-explore-projects fig-alt="The Explore Projects dashboard."}
+![The Explore Projects dashboard.](images/access/fig-access-160-explore-projects.png){#fig-access-160-explore-projects fig-alt="The Explore Projects dashboard"}
 
 To request to join a project, simply click its Request to Join link from the list.
 This opens up a collaborator DUR: a copy of the DUR submitted by the project lead,
@@ -540,7 +540,7 @@ in this case it is assumed that the lead's already-submitted letter covers you a
 
 ![Requesting to join a project from the Explore Projects dashboard
 opens a collaborator DUR for the project,
-where metadata fields such as title and abstract are fixed.](images/access/fig-access-170-collaborator-dur.png){#fig-access-170-collaborator-dur fig-alt="Requesting to join a project."}
+where metadata fields such as title and abstract are fixed.](images/access/fig-access-170-collaborator-dur.png){#fig-access-170-collaborator-dur fig-alt="Requesting to join a project"}
 
 Collaborator DURs must first be approved by the project lead
 (via their My Projects dashboard, see below).
@@ -559,7 +559,7 @@ As with new project DURs, the status of your submitted collaborator DURs can be 
 The My Projects dashboard, linked from the N3C Data Enclave homepage,
 shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.
 
-![The My Projects dashboard.](images/access/fig-access-180-my-projects.png){#fig-access-180-my-projects fig-alt="The My Projects dashboard."}
+![The My Projects dashboard.](images/access/fig-access-180-my-projects.png){#fig-access-180-my-projects fig-alt="The My Projects dashboard"}
 
 Along the left are the various projects you've requested access to,
 either as a lead who's submitted a new project DUR, or as a collaborator who's requested to join a project.
@@ -597,7 +597,7 @@ and "Complete" for fully approved DURs with enabled data access.
 If we scroll further to the right we see other important columns, particularly the Action and Renewal columns.
 
 ![Scrolling rightward when reviewing a project in the My Projects dashboard
-reveals more information and options.](images/access/fig-access-190-my-projects-more.png){#fig-access-190-my-projects-more fig-alt="Scrolling rightward when reviewing a project."}
+reveals more information and options.](images/access/fig-access-190-my-projects-more.png){#fig-access-190-my-projects-more fig-alt="Scrolling rightward when reviewing a project"}
 
 N3C DURs are valid for one year-continued access to the project workspace requires submitting a renewal DUR before the expiration date listed.
 The Renew DUR link in the Renewal column opens up a renewal DUR:
@@ -628,7 +628,7 @@ The projects for which you are a lead are listed along the left, and the request
 You can choose to approve or deny each request by selecting it and clicking the large blue "Approve Selected Collaborator Request" button.
 Collaborator access cannot be revoked this way, however.
 
-![Reviewing collaborator requests to join my projects.](images/access/fig-access-200-review-collaborator-requests.png){#fig-access-200-review-collaborator-requests fig-alt="Reviewing collaborator requests."}
+![Reviewing collaborator requests to join my projects.](images/access/fig-access-200-review-collaborator-requests.png){#fig-access-200-review-collaborator-requests fig-alt="Reviewing collaborator requests"}
 
 Back in the My Projects dashboard, we can select the "Manage My Projects" button to see more project configuration options.
 The main configuration options are
@@ -639,7 +639,7 @@ which opens the collaborator approval dashboard above,
 and "Allow or Disallow Collaborator Requests".
 This last option enables or disables the "Request to Join" link for the project in the Explore Projects dashboard.
 
-![Adjusting other project settings.](images/access/fig-access-210-other-project-settings.png){#fig-access-210-other-project-settings fig-alt="Adjusting other project settings."}
+![Adjusting other project settings.](images/access/fig-access-210-other-project-settings.png){#fig-access-210-other-project-settings fig-alt="Adjusting other project settings"}
 
 ::: {.callout-note appearance="simple"}
 

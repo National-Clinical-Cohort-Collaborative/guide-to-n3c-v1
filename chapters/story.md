@@ -62,7 +62,7 @@ However, with this comes challenges of interpreting differences in care delivery
 ## Voice of Narrator
 
 Our story begins in your own piece of heaven: your office.
-As a researcher of scurvy, you have wondered, "Do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?"
+As a researcher of scurvy, you have wondered, "Do patients receiving the newest medications have more favorable COVID-19 outcomes than patients receiving the previous generation?".
 Given that scurvy is a rare disease with few opportunities for industry funding, you decide to use observational data from the EHR.
 You expect a modest improvement based on the medications' relationships with other diseases.
 But a large sample is required to detect a modest effect size, and your local institution has only a small population.

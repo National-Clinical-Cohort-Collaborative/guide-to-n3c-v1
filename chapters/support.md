@@ -60,7 +60,7 @@ This opens a dialog requisition information about the ticket.
 Notice that the RESOURCE is identified as the `condition_era` table we had opened.
 Since we are asking a question about the data, we'll select "Data quality".
 
-![New Issue: What kind of help do you need?](images/support/fig-support-040-issue-kind-of-help.png){#fig-support-040-issue-kind-of-help width=50% fig-alt="New Issue: What kind of help do you need?"}
+![New Issue: What kind of help do you need?](images/support/fig-support-040-issue-kind-of-help.png){#fig-support-040-issue-kind-of-help width=50% fig-alt="New Issue: What kind of help do you need"}
 
 Once we click Next, we'll be prompted to change the resource of interest or application being used (if desired).
 Since we are reporting an issue on a dataset, we even have the option of selecting the specific column we are interested in.

@@ -367,12 +367,6 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/colophon.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colophon</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -666,7 +660,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </tbody>
 </table>
 </div>
-<p>As shown in <a href="#tbl-understanding-concept-set">Table&nbsp;<span>7.1</span></a>, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants. In total, this concept set expression implies nearly a hundred Standard Concepts. These Standard Concepts in turn reflect hundreds of source codes (e.g.&nbsp;ICD-9 and ICD-10 codes) that may appear in the various databases.</p>
+<p>As shown in <a href="#tbl-understanding-concept-set">Table&nbsp;<span>7.1</span></a>, this will include “Myocardial infarction” and all of its descendants except “Old myocardial infarction” and its descendants. In total, this concept set expression implies nearly a hundred Standard Concepts. These Standard Concepts in turn reflect hundreds of source codes (e.g., ICD-9 and ICD-10 codes) that may appear in the various databases.</p>
 <div id="fig-understanding-080-mi-hierarchy" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><a href="images/understanding/fig-understanding-080-mi-hierarchy.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts."><img src="images/understanding/fig-understanding-080-mi-hierarchy.png" class="img-fluid figure-img" alt=""></a></p>
@@ -806,7 +800,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <h4 data-number="7.5.3.2" class="anchored" data-anchor-id="sec-understanding-pprl-mortality-caveats"><span class="header-section-number">7.5.3.2</span> Mortality Data Completeness and Caveats</h4>
 <p>First, note that mortality information is available for only those data partners who have opted in to linkage of their records against the mortality data. As a result the data_partner_id column will only represent a subset of the data partner IDs found in other N3C OMOP tables. See the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.095ada1d-1a0c-48d6-80ba-2d4c547b362c">Intro to PPRL documentation</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> for more information.</p>
 <p>Secondly, these data sources should not be considered comprehensive in the sense of providing full information on all deaths in the US. As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table-that’s why N3C has collected this data in the first place!)</p>
-<p>Different data sources lag in inclusion of mortality information from the actual date of death (e.g.&nbsp;if someone’s date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18). This lag varies by data source type: government sources tend to lag longer than private sources. For detailed information on mortality data latency, data completeness, and other considerations, see the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.e45cd20e-9da9-44c7-b1d1-747e7c56102f">N3C PPRL Mortality Data Guide</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> and the <a href="https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE#MORTALITY">N3C Mortality Data FAQs</a>.</p>
+<p>Different data sources lag in inclusion of mortality information from the actual date of death (e.g., if someone’s date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18). This lag varies by data source type: government sources tend to lag longer than private sources. For detailed information on mortality data latency, data completeness, and other considerations, see the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.e45cd20e-9da9-44c7-b1d1-747e7c56102f">N3C PPRL Mortality Data Guide</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> and the <a href="https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE#MORTALITY">N3C Mortality Data FAQs</a>.</p>
 </section>
 </section>
 <section id="sec-understanding-pprl-variants" class="level3" data-number="7.5.4">
@@ -829,8 +823,8 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The summary data currently available in N3C includes:</p>
 <ul>
 <li>Sample Date</li>
-<li>WHO label (e.g.&nbsp;alpha, delta, omicron)</li>
-<li>PANGO lineage (e.g.&nbsp;B.1.1.7)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li>WHO label (e.g., alpha, delta, omicron)</li>
+<li>PANGO lineage (e.g., B.1.1.7)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
 </ul>
 </section>
 <section id="sec-understanding-pprl-variants-omop" class="level4" data-number="7.5.4.5">
@@ -838,7 +832,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Summary PPRL viral variant data is available as an enriched OMOP measurement table available in the PPRL Datasets data. The following columns are used:</p>
 <ul>
 <li><code>measurement_concept_id</code> contains OMOP <code>concept_id</code> 36033667, “SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing”, for all viral variant samples.</li>
-<li><code>value_as_concept_id</code> will be encoded with the OMOP concept representing the WHO label (e.g.&nbsp;<code>concept_id</code> 4228611 for “Omicron”).</li>
+<li><code>value_as_concept_id</code> will be encoded with the OMOP concept representing the WHO label (e.g., <code>concept_id</code> 4228611 for “Omicron”).</li>
 <li>A new column outside the standard OMOP schema includes the PANGO lineage.</li>
 </ul>
 </section>
@@ -966,7 +960,7 @@ Richesson, R. L., Hammond, W. E., Nahm, M., Wixted, D., Simon, G. E., Robinson, 
 <hr>
 <ol>
 <li id="fn1"><p>This translation is automated with software, as opposed to manually performed by a human.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>A <em>phenotype</em> is general and a <em>cohort</em> is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code.” A related <em>cohort</em> would be, “Must have _2 _outpatient visits without diabetes <em>since Jan 1, 2017</em> without a diabetes diagnostic code, followed by at least one visit with such a code <em>before Jan 1, 2020</em>.” However, in OHDSI the two terms are used interchangeably. See the <a href="https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html">Cohorts chapter</a> in <span class="citation" data-cites="ohdsi_2019">OHDSI (<a href="../references.html#ref-ohdsi_2019" role="doc-biblioref">2019</a>)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A <em>phenotype</em> is general and a <em>cohort</em> is specific. Thus, a new-onset diabetes phenotype might say, “Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code”. A related <em>cohort</em> would be, “Must have _2 _outpatient visits without diabetes <em>since Jan 1, 2017</em> without a diabetes diagnostic code, followed by at least one visit with such a code <em>before Jan 1, 2020</em>”. However, in OHDSI the two terms are used interchangeably. See the <a href="https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html">Cohorts chapter</a> in <span class="citation" data-cites="ohdsi_2019">OHDSI (<a href="../references.html#ref-ohdsi_2019" role="doc-biblioref">2019</a>)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>See <a href="https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/" class="uri">https://www.medicareresources.org/glossary/centers-for-medicare-and-medicaid-services/</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
@@ -1357,7 +1351,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});</script>
 
 
 

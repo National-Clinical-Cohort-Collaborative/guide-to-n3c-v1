@@ -94,7 +94,7 @@ This includes:
 * [Concept Set Editor](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 * [Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 * [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}}, and
-* [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
+* [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 
 #### Encourage and disseminate best practices, but do not require specific approaches {#sec-practices-overview-encourage}
 
@@ -179,7 +179,7 @@ Basic scientists use it for how a particular laboratory reagent should be used, 
 In human subjects research, it is the commitment of the researcher to how patients, and their data, will be managed in a study.
 
 In Real World Data analysis, the meaning is a bit different.
-In the [Protocol Pad Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
+In the [Protocol Pad:RWE Detailed Instructions](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}},
 we write:
 
 > In human subjects research, the protocol is what turns data into evidence: By following rules of methodology,
@@ -193,7 +193,7 @@ we write:
 > This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
 N3C has developed a tool to facilitate the development of protocols known as the
-[Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.:
+[Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.:
 In the following sections we walk through recommended components of a protocol.
 Briefly, they are (a) Protocol Design, (b) Development, and (c) Completion:
 
@@ -223,7 +223,7 @@ Protocol Completion ❸
 1. Fill out methodology checklist
 2. Review evidence quality
 
-![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
+![Home page for a researcher's protocols ([Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 The Protocol Design, Development, and Completion sections are accessible on the left.
 ](images/practices/fig-practices-015-protocol-pad.png){#fig-practices-015-protocol-pad fig-alt="Home page for a researcher's protocols"}
 
@@ -255,7 +255,7 @@ Gathering administrative information, such as DUR number, team members, and rese
 #### Approach {#sec-practices-design-admin-approach}
 
 Several tools provide checklists a researcher can follow to ensure their work will be publishable.
-The previously mentioned Protocol Pad, for example, guides researchers through protocol development,
+The previously mentioned [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f), for example, guides researchers through protocol development,
 and is integrated with other N3C tooling to capture relationships to teams, researchers,
 and artifacts such as concept sets, analyses, and datasets.
 STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1
@@ -272,17 +272,17 @@ below lists the elements and sub-elements in the checklist, along with suggestio
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
 | Objective Secondary                 |                                                                                      | Manually entered         |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Protocol registration               | - Registration identifier                                                            | Supplied by Protocol Pad |
+| Protocol registration               | - Registration identifier                                                            | Supplied by Protocol Pad:RWE |
 |                                     | - Registration date                                                                  |                          |
 |                                     | - Registration site                                                                  |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Protocol version                    | - Version number                                                                     | Supplied by Protocol Pad |
+| Protocol version                    | - Version number                                                                     | Supplied by Protocol Pad:RWE |
 |                                     | - Version date                                                                       |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
 | Funding                             | - Grant identifier                                                                   | Manually entered         |
 |                                     | - Source                                                                             |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Data Use Agreement (DUA)            | - DUA identifier                                                                     | Supplied by Protocol Pad |
+| Data Use Agreement (DUA)            | - DUA identifier                                                                     | Supplied by Protocol Pad:RWE |
 |                                     | - Data provider                                                                      |                          |
 |                                     | - Data provider contact for data use agreements                                      |                          |
 +-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
@@ -307,7 +307,7 @@ A "lab notebook" is an important part of any researchers' repertoire, as a place
 The protected nature of N3C data complicates documentation, however: some study details need to be available outside of the Enclave for others to view,
 while others must stay in the Enclave (see @sec-publishing for details on what may be exported from the Enclave and how).
 This duality can lead to challenges in documentation and collaboration.
-[Protocol Pad](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis
+[Protocol Pad:RWE](tools.html#sec-tools-apps-protocol) is designed as an environment to map out the intended analysis
 (see [OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)) and to document the analysis and resulting artifacts that were actually created.
 Whether ProtocolPad is used or not, each analyst should maintain a lab notebook.
 
@@ -407,7 +407,7 @@ This step is focused on the initial "natural language" view of the protocol; the
 While the checklists seek text descriptions, we recommend _linking the text as soon as possible to objects and datasets used in the Enclave_,
 tracking what resources you've used,
 being specific with your team members,
-and enabling Protocol Pad to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
+and enabling Protocol Pad:RWE to collect attributions across those resources to populate your Publication Intent Form and your manuscript, at the appropriate time.
 
 Before analyzing the data,
 create a Directed Acyclic Graph (DAG) of the research question that reflects the causal model.
@@ -459,18 +459,18 @@ The DUR identifier should be supplied by the system.
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | Section                                        | Element                                          | Where found in the Enclave                                                                                                                       |
 +================================================+==================================================+==================================================================================================================================================+
-| TABLE 2. VERSION HISTORY                       | - Version date                                   | - Protocol Pad                                                                                                                                   |
+| TABLE 2. VERSION HISTORY                       | - Version date                                   | - Protocol Pad:RWE                                                                                                                                   |
 |                                                | - Version number                                 | - Manual entry of change log and rationale                                                                                                       |
 |                                                | - Change log                                     |                                                                                                                                                  |
 |                                                | - Rationale for change                           |                                                                                                                                                  |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | FIGURE 1. DESIGN DIAGRAM                       |                                                  | - Manual. [Suggest use of @schneeweiss_2019]                                                                                                     |
-|                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                      |
+|                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                      |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | A. Meta-data about data source and software    | - Data Source(s)                                 | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                         |
 |                                                |                                                  |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad, with links to data sets                                                                      |
+| {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                      |
 |                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
 |                                                | - Data Extraction Date/Version                   | - Link to various                                                                                                                                |
 |                                                | - Data sampling/extraction criteria              |   [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23)     |
@@ -589,7 +589,7 @@ These decisions should be documented in the lab notebook.
 The elements of this phase that go into the STaRT-RWE checklist are listed in @tbl-practices-start-3. The elements can be found in the Enclave in the
 (a) README in Template,
 (b) dataset description, _or_
-(c) Free text in Protocol pad.
+(c) Free text in Protocol Pad:RWE.
 
 +------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
 | PECOT                                    | Element                                                    |                                                            |
@@ -993,7 +993,7 @@ However, for EHR-based research,
 [RECORD](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885)
 (REporting of studies Conducted using Observational Routinely-collected health Data) is appropriate [@benchimol_2015].
 The most detailed is STaRT-RWE [@wang_2021].
-Protocol Pad attempts to collect the information in the process of doing the research that you will need at the end, for publication.
+Protocol Pad:RWE attempts to collect the information in the process of doing the research that you will need at the end, for publication.
 
 (Predictive models, machine learning, and AI have their own checklists as well.)
 

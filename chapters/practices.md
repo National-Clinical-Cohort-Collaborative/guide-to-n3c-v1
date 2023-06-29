@@ -259,7 +259,7 @@ The previously mentioned [Protocol Pad:RWE](https://unite.nih.gov/workspace/modu
 and is integrated with other N3C tooling to capture relationships to teams, researchers,
 and artifacts such as concept sets, analyses, and datasets.
 STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1
-below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
+below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found. The [RWE Protocol Browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.57ad723a-a436-496a-bb95-65ee94658e4f) shows completed protocol Overviews of some available protocols. 
 
 <!-- https://www.tablesgenerator.com/markdown_tables -->
 
@@ -1064,6 +1064,7 @@ These are findable typically via [Knowledge Store](https://unite.nih.gov/workspa
 1. N3C [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67)
 
 1. [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) for real-world evidence projects, like those in N3C.
+1. [RWE Protocol Browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.57ad723a-a436-496a-bb95-65ee94658e4f) for Protocol Overviews of Enclave-publicly available Protocols.
 
 ### Useful Resources more generally
 

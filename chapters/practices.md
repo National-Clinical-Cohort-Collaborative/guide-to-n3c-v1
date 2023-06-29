@@ -2,35 +2,29 @@
 author:
   - name: Harold P. Lehmann
     affiliation: Johns Hopkins University School of Medicine
-    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
+    affiliation-url: [https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/](http://dhsi.med.jhmi.edu/People)
     email: lehmann@jhmi.edu
     orcid: 0000-0002-7698-219X
     attributes:
       corresponding: true
 
   - name: Hythem Sidky
-    # affiliation:
-    # affiliation-url:
+    # affiliation: National Center for Advancing Translational Science
+    # affiliation-url: https://sidky.io/
     email: hythem.sidky@nih.gov
     orcid: 0000-0003-3532-4809
 
   - name: Jimmy Phuong
-    # affiliation:
-    # affiliation-url:
-    # email:
-    orcid: 0000-0003-0956-8404
-
-  - name: Jimmy Phuong
-    # affiliation:
-    # affiliation-url:
-    # email:
+    # affiliation: University of Washington
+    # affiliation-url: 
+    # email: jphuong@uw.edu
     orcid: 0000-0003-0956-8404
 
   - name: Kate Bradwell
-    # affiliation: Palantir
+    # affiliation: Palantir Technologies
     # affiliation-url:
-    # email:
-    # orcid:
+    # email: kbradwell@palantir.com
+    # orcid: 0000-0002-9730-1808
 
   - name: Kenneth J. Wilkins
     affiliation: National Institutes of Health
@@ -43,6 +37,12 @@ author:
     affiliation-url: https://www.ithriv.org/directory
     email: agz5de@virginia.edu
     orcid: 0000-0003-1845-5620
+    
+  - name: Johanna Loomba
+    affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
+    affiliation-url: https://www.ithriv.org/directory
+    email: jjl4d@uvahealth.org
+    orcid: 0000-0003-3673-5423
 
   - name: David Sahner
     affiliation: Senior Data Advisor to NCATS (Contracted through Axle Research and Technologies)

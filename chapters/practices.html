@@ -9,10 +9,10 @@
 <meta name="author" content="Harold P. Lehmann">
 <meta name="author" content="Hythem Sidky">
 <meta name="author" content="Jimmy Phuong">
-<meta name="author" content="Jimmy Phuong">
 <meta name="author" content="Kate Bradwell">
 <meta name="author" content="Kenneth J. Wilkins">
 <meta name="author" content="Andrea G. Zhou">
+<meta name="author" content="Johanna Loomba">
 <meta name="author" content="David Sahner">
 
 <title>The Researcher’s Guide to N3C - 9&nbsp; Best Practices for the Research Life Cycle</title>
@@ -113,10 +113,10 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <meta name="citation_author" content="Harold P. Lehmann">
 <meta name="citation_author" content="Hythem Sidky">
 <meta name="citation_author" content="Jimmy Phuong">
-<meta name="citation_author" content="Jimmy Phuong">
 <meta name="citation_author" content="Kate Bradwell">
 <meta name="citation_author" content="Kenneth J. Wilkins">
 <meta name="citation_author" content="Andrea G. Zhou">
+<meta name="citation_author" content="Johanna Loomba">
 <meta name="citation_author" content="David Sahner">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Reflections on defining a standard for computable expression of scientific knowledge: What teach us yoda can;,citation_author=B. S. Alper;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url=https://www.ncbi.nlm.nih.gov/pubmed/36654808;,citation_issue=1;,citation_doi=10.1002/lrh2.10312;,citation_issn=2379-6146 (Electronic) 2379-6146 (Linking);,citation_volume=7;,citation_journal_title=Learn Health Syst;">
@@ -458,7 +458,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#recommended-methods-for-data-analysis" id="toc-recommended-methods-for-data-analysis" class="nav-link" data-scroll-target="#recommended-methods-for-data-analysis"><span class="header-section-number">9.4.5.5</span> Recommended Methods for Data Analysis</a></li>
   <li><a href="#external-data-sets" id="toc-external-data-sets" class="nav-link" data-scroll-target="#external-data-sets"><span class="header-section-number">9.4.5.6</span> External Data Sets</a></li>
   </ul></li>
-  <li><a href="#fairness-and-bias" id="toc-fairness-and-bias" class="nav-link" data-scroll-target="#fairness-and-bias"><span class="header-section-number">9.4.6</span> Fairness and Bias</a></li>
+  <li><a href="#incorporate-fairness-and-debiasing" id="toc-incorporate-fairness-and-debiasing" class="nav-link" data-scroll-target="#incorporate-fairness-and-debiasing"><span class="header-section-number">9.4.6</span> Incorporate Fairness and Debiasing</a></li>
   <li><a href="#iterate" id="toc-iterate" class="nav-link" data-scroll-target="#iterate"><span class="header-section-number">9.4.7</span> Iterate</a></li>
   <li><a href="#commit-to-final-run" id="toc-commit-to-final-run" class="nav-link" data-scroll-target="#commit-to-final-run"><span class="header-section-number">9.4.8</span> Commit to Final Run</a></li>
   <li><a href="#perform-sensitivity-analysis" id="toc-perform-sensitivity-analysis" class="nav-link" data-scroll-target="#perform-sensitivity-analysis"><span class="header-section-number">9.4.9</span> Perform Sensitivity Analysis</a></li>
@@ -466,8 +466,8 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#protocol-completion-❸" id="toc-protocol-completion-❸" class="nav-link" data-scroll-target="#protocol-completion-❸"><span class="header-section-number">9.5</span> Protocol Completion ❸</a>
   <ul>
   <li><a href="#gather-results-publish" id="toc-gather-results-publish" class="nav-link" data-scroll-target="#gather-results-publish"><span class="header-section-number">9.5.1</span> Gather Results; Publish</a></li>
-  <li><a href="#methodology-checklist" id="toc-methodology-checklist" class="nav-link" data-scroll-target="#methodology-checklist"><span class="header-section-number">9.5.2</span> Methodology Checklist</a></li>
-  <li><a href="#evidence-quality" id="toc-evidence-quality" class="nav-link" data-scroll-target="#evidence-quality"><span class="header-section-number">9.5.3</span> Evidence quality</a></li>
+  <li><a href="#fill-out-methodology-checklist" id="toc-fill-out-methodology-checklist" class="nav-link" data-scroll-target="#fill-out-methodology-checklist"><span class="header-section-number">9.5.2</span> Fill Out Methodology Checklist</a></li>
+  <li><a href="#review-evidence-quality" id="toc-review-evidence-quality" class="nav-link" data-scroll-target="#review-evidence-quality"><span class="header-section-number">9.5.3</span> Review Evidence quality</a></li>
   </ul></li>
   <li><a href="#summary-of-tools-available" id="toc-summary-of-tools-available" class="nav-link" data-scroll-target="#summary-of-tools-available"><span class="header-section-number">9.6</span> Summary of Tools Available</a>
   <ul>
@@ -496,7 +496,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/">
+            <a href="http://dhsi.med.jhmi.edu/People">
             Johns Hopkins University School of Medicine
             </a>
           </p>
@@ -504,15 +504,29 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
       <div class="quarto-title-meta-contents">
     <p class="author">Hythem Sidky <a href="https://orcid.org/0000-0003-3532-4809" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://sidky.io/">
+            National Center for Advancing Translational Science
+            </a>
+          </p>
+      </div>
       <div class="quarto-title-meta-contents">
     <p class="author">Jimmy Phuong <a href="https://orcid.org/0000-0003-0956-8404" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Washington
+          </p>
+      </div>
       <div class="quarto-title-meta-contents">
-    <p class="author">Jimmy Phuong <a href="https://orcid.org/0000-0003-0956-8404" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author">Kate Bradwell <a href="https://orcid.org/0000-0002-9730-1808" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Kate Bradwell </p>
-  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Palantir Technologies
+          </p>
+      </div>
       <div class="quarto-title-meta-contents">
     <p class="author">Kenneth J. Wilkins <a href="https://orcid.org/0000-0003-0531-7165" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
@@ -525,6 +539,16 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
       </div>
       <div class="quarto-title-meta-contents">
     <p class="author">Andrea G. Zhou <a href="https://orcid.org/0000-0003-1845-5620" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.ithriv.org/directory">
+            University of Virginia, integrated Translational Health Research Institute of Virginia
+            </a>
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Johanna Loomba <a href="https://orcid.org/0000-0003-3673-5423" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -659,7 +683,7 @@ Note
 <li>Articulate administrative information</li>
 <li>Articulate research question</li>
 <li>Specify protocol</li>
-<li>Describe Patient, Intervention/Exposure, Comparator, Outcome (PI/ECO) elements in text</li>
+<li>Describe Patient, Exposure/Intervention, Comparator, Outcome, Time (PECOT) elements in text</li>
 </ol>
 <p>Protocol Development ❷</p>
 <ol type="1">
@@ -667,14 +691,16 @@ Note
 <li>Assess data quality</li>
 <li>Articulate missing data plan</li>
 <li>Perform initial analysis</li>
+<li>Incorporate fairness and debiasing</li>
 <li>Iterate</li>
 <li>Commit to final run</li>
 <li>Perform sensitivity analysis</li>
 </ol>
 <p>Protocol Completion ❸</p>
 <ol type="1">
-<li>Gather results</li>
-<li>Publish</li>
+<li>Gather results; Publish</li>
+<li>Fill out methodology checklist</li>
+<li>Review evidence quality</li>
 </ol>
 <div id="fig-practices-015-protocol-pad" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -858,7 +884,7 @@ Note
 <p>In associational, causal, and intervention studies, the following attributes are important [cite]:</p>
 <ol type="1">
 <li><strong>P</strong>opulation (cohort and control),</li>
-<li><strong>I</strong>ntervention/Exposure (if any),</li>
+<li><strong>E</strong>xposure/Intervention (if any),</li>
 <li><strong>C</strong>omparator,</li>
 <li><strong>O</strong>utcome,</li>
 <li><strong>T</strong>ime horizon, and</li>
@@ -965,12 +991,12 @@ Note
 <h3 data-number="9.4.2" class="anchored" data-anchor-id="sec-practices-development-pecot"><span class="header-section-number">9.4.2</span> Define PECOT elements as objects and data sets</h3>
 <section id="sec-practices-development-pecot-objectives" class="level4" data-number="9.4.2.1">
 <h4 data-number="9.4.2.1" class="anchored" data-anchor-id="sec-practices-development-pecot-objectives"><span class="header-section-number">9.4.2.1</span> Objectives</h4>
-<p>Provide computable definitions for core protocol PICOT elements.</p>
+<p>Provide computable definitions for core protocol PECOT elements.</p>
 <p>Instantiate those core protocol elements.</p>
 </section>
 <section id="sec-practices-development-pecot-approach" class="level4" data-number="9.4.2.2">
 <h4 data-number="9.4.2.2" class="anchored" data-anchor-id="sec-practices-development-pecot-approach"><span class="header-section-number">9.4.2.2</span> Approach</h4>
-<p>PICOT elements for analysis must be shaped from the raw data of the Enclave. The definition of a cohort is, in turn, based on key building blocks. <a href="#fig-practices-022-building-block">Figure&nbsp;<span>9.5</span></a> shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.</p>
+<p>PECOT elements for analysis must be shaped from the raw data of the Enclave. The definition of a cohort is, in turn, based on key building blocks. <a href="#fig-practices-022-building-block">Figure&nbsp;<span>9.5</span></a> shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.</p>
 <div id="fig-practices-022-building-block" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><a href="images/practices/fig-practices-022-building-block.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Relating data scientist’s work to that of the analyst."><img src="images/practices/fig-practices-022-building-block.png" class="img-fluid figure-img" alt="Relating data scientist's work to that of the analyst"></a></p>
@@ -994,7 +1020,7 @@ Note
 </colgroup>
 <thead>
 <tr class="header">
-<th>PICOT</th>
+<th>PECOT</th>
 <th>Element</th>
 <th></th>
 </tr>
@@ -1200,7 +1226,7 @@ Note
 <li>Study population(s)</li>
 <li>Outcome</li>
 </ul></td>
-<td>Protocol PICO</td>
+<td>Protocol PECO</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -1268,8 +1294,8 @@ Note
 <p>Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code. Analysts are also encouraged to post a <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67">Community Note</a> <i class="fa-solid fa-lock" title="Link requires an N3C Data Enclave account" aria-label="lock"></i> describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.</p>
 </section>
 </section>
-<section id="fairness-and-bias" class="level3" data-number="9.4.6">
-<h3 data-number="9.4.6" class="anchored" data-anchor-id="fairness-and-bias"><span class="header-section-number">9.4.6</span> Fairness and Bias</h3>
+<section id="incorporate-fairness-and-debiasing" class="level3" data-number="9.4.6">
+<h3 data-number="9.4.6" class="anchored" data-anchor-id="incorporate-fairness-and-debiasing"><span class="header-section-number">9.4.6</span> Incorporate Fairness and Debiasing</h3>
 <p>Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed. The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR, is working on a list of over 200 <a href="https://fevir.net/resources/CodeSystem/27270#SEVCO:01000">methodological biases</a>.</p>
 <p>N3C has led a number of <a href="https://docs.google.com/presentation/d/1yzi_2t8m7MOE-0fdHP6DF3B61YC-a6vGsur1mFMBnrg/edit#slide=id.gd4f8b365ff_0_0">seminars</a> on such biases. Caton and Haas <span class="citation" data-cites="caton_2020">(<a href="../references.html#ref-caton_2020" role="doc-biblioref">2020</a>)</span> provide a comprehensive list of measures, corresponding to different notions of equity; these include statistical parity, impact disparity <span class="citation" data-cites="islam_2022">(<a href="../references.html#ref-islam_2022" role="doc-biblioref">Islam et al., 2022</a>)</span>, equality of opportunity, calibration, and counterfactual fairness. A key point is that, as Kleinberg and colleagues showed <span class="citation" data-cites="kleinberg_2016">(<a href="../references.html#ref-kleinberg_2016" role="doc-biblioref">2016</a>)</span>, an analysis cannot satisfy all these notions simultaneously.</p>
 <p>Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)competing risks, and time-dependent confounding.</p>
@@ -1334,15 +1360,15 @@ Note
 <p>Fourth, consider generating <a href="https://fevir.net/">FHIR-based evidence resources</a>, for external computer systems to ingest, or for other research projects in the Enclave to take advantage of <span class="citation" data-cites="alper_2023">(<a href="../references.html#ref-alper_2023" role="doc-biblioref">Alper, 2023</a>)</span>.</p>
 <p>As part of reporting on an analysis, be sure to identify the data release (number or date) on which the analysis was done and validated.</p>
 </section>
-<section id="methodology-checklist" class="level3" data-number="9.5.2">
-<h3 data-number="9.5.2" class="anchored" data-anchor-id="methodology-checklist"><span class="header-section-number">9.5.2</span> Methodology Checklist</h3>
+<section id="fill-out-methodology-checklist" class="level3" data-number="9.5.2">
+<h3 data-number="9.5.2" class="anchored" data-anchor-id="fill-out-methodology-checklist"><span class="header-section-number">9.5.2</span> Fill Out Methodology Checklist</h3>
 <p>As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher. Such submission is (1) considered best practice, (2) requested by publishers, and (3) communicates that the author is aware of state-of-the-art practices in publication. Perhaps the best single repository of such checklists is the <a href="https://www.equator-network.org/reporting-guidelines">Equator Network</a>.</p>
 <p>Research in N3C falls under “Observational” research, so <a href="https://www.equator-network.org/wp-content/uploads/2015/10/STROBE_checklist_v4_combined.pdf">STROBE</a> (Strengthening the Reporting of Observational Studies in Epidemiology) is the most generally appropriate <span class="citation" data-cites="vonelm_2014">(<a href="../references.html#ref-vonelm_2014" role="doc-biblioref">Elm et al., 2014</a>)</span>. However, for EHR-based research, <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885">RECORD</a> (REporting of studies Conducted using Observational Routinely-collected health Data) is appropriate <span class="citation" data-cites="benchimol_2015">(<a href="../references.html#ref-benchimol_2015" role="doc-biblioref">Benchimol et al., 2015</a>)</span>. The most detailed is STaRT-RWE <span class="citation" data-cites="wang_2021">(<a href="../references.html#ref-wang_2021" role="doc-biblioref">Wang et al., 2021</a>)</span>. Protocol Pad attempts to collect the information in the process of doing the research that you will need at the end, for publication.</p>
 <p>(Predictive models, machine learning, and AI have their own checklists as well.)</p>
 <p>Note that these are <em>reporting</em> checklists, and not <em>research</em> checklists. This entire chapter has been constructed to provide some guidance about performing the research itself.</p>
 </section>
-<section id="evidence-quality" class="level3" data-number="9.5.3">
-<h3 data-number="9.5.3" class="anchored" data-anchor-id="evidence-quality"><span class="header-section-number">9.5.3</span> Evidence quality</h3>
+<section id="review-evidence-quality" class="level3" data-number="9.5.3">
+<h3 data-number="9.5.3" class="anchored" data-anchor-id="review-evidence-quality"><span class="header-section-number">9.5.3</span> Review Evidence quality</h3>
 <p>The Book of OHDSI has a chapter on <a href="https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html">Evidence Quality</a>. The core of the chapter is the following graphic.</p>
 <div id="fig-practices-070-ohdsi-evidence-quality" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1909,7 +1935,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":true,"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});</script>
 
 
 

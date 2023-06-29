@@ -52,13 +52,13 @@ Let's suppose we have a question about this data, or perhaps have discovered a p
 
 ![Synthea Preview.](images/support/fig-support-020-synthea-preview.png){#fig-support-020-synthea-preview width=50% fig-alt="Synthea Preview"}
 
-To submit a ticket about the currently opened dataset, we'll open the Help menu near the top, and select "Report Issue."
+To submit a ticket about the currently opened dataset, we'll open the Help menu near the top, and select "Report Issue".
 
 ![New Issue.](images/support/fig-support-030-issue-report.png){#fig-support-030-issue-report fig-alt="New Issue"}
 
 This opens a dialog requisition information about the ticket.
 Notice that the RESOURCE is identified as the `condition_era` table we had opened.
-Since we are asking a question about the data, we'll select "Data quality."
+Since we are asking a question about the data, we'll select "Data quality".
 
 ![New Issue: What kind of help do you need?](images/support/fig-support-040-issue-kind-of-help.png){#fig-support-040-issue-kind-of-help width=50% fig-alt="New Issue: What kind of help do you need?"}
 
@@ -75,7 +75,7 @@ We'll just click Next here.
 Using "Report Issue" from the Help menu of an Enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from.
 While most Enclave applications have a Help menu near the top left, not all do.
 In these cases you can alternatively submit an issue by finding the "Help & support" option in the lower part of the left navigation bar and choosing the "Help Center".
-This will open a sidebar to the right, with a large blue button at the bottom for "Report an Issue."
+This will open a sidebar to the right, with a large blue button at the bottom for "Report an Issue".
 :::
 
 Finally, we are prompted to submit our issue, including a title and description with pre-filled questions depending on the issue type selected.
@@ -123,7 +123,7 @@ Here you will find a link to "Submit a Support Request" that directs you to sele
 
 ![Ticket details.](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options is described, and range from Enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options is described, and range from Enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else". In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request.
 The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
@@ -154,7 +154,7 @@ The Support option will redirect to a page linking to the two ticket systems des
 
 ### Training (Training Portal) {#sec-support-training-portal}
 
-The N3C Training Portal hosts training "modules." The list of training modules is roughly sorted by researchers' N3C journey-those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
+The N3C Training Portal hosts training "modules". The list of training modules is roughly sorted by researchers' N3C journey-those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
 
 Modules are searchable by keyword (from their title and description), and a brief list of Suggested Modules can be found in the orange button in the upper-right, though browsing through the full list is recommended.
 
@@ -216,7 +216,8 @@ This workspace is also used to organize other training resources (like the Train
 
 ![Training Area.](images/support/fig-support-180-training-area.png){#fig-support-180-training-area width=75% fig-alt="Training Area"}
 
-If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data." Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g., "oneils").
+If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data".
+Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g., "oneils").
 Within this folder you will be able to create new analyses, and these will have access to the notional datasets described next.
 
 ## Notional Datasets {#sec-support-notional}

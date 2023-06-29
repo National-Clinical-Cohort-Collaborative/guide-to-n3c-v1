@@ -197,7 +197,7 @@ The submission and export process is described in detail in the [How to download
 
 #### Submitting a Download Request {#sec-publishing-tech-process-submit}
 
-The download request dashboard may be accessed from the Enclave homepage under "Download Dashboard." This interface shows your previous requests, and you can submit a new one via the "Submit a new Download Request" button.
+The download request dashboard may be accessed from the Enclave homepage under "Download Dashboard". This interface shows your previous requests, and you can submit a new one via the "Submit a new Download Request" button.
 
 ![The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.](images/publishing/fig-publishing-030-download-dashboard.png){#fig-publishing-030-download-dashboard fig-alt="download-dashboard"}
 
@@ -245,7 +245,7 @@ The most common use case for such hard-coded data is `data_partner_id` values ad
 These should be removed or masked to comply with N3C policy.
 :::
 
-Code Workbook code can be exported via the "Gear" icon in the interface, under "Export git repository." Selecting this item will open the workbook in a new browser tab, with a new "Export Code Workbook" panel on the right, providing the git command to use to clone the repo to your local computer.
+Code Workbook code can be exported via the "Gear" icon in the interface, under "Export git repository". Selecting this item will open the workbook in a new browser tab, with a new "Export Code Workbook" panel on the right, providing the git command to use to clone the repo to your local computer.
 As described in the panel text, the link contains an authentication token that you should keep private.
 
 ![Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.](images/publishing/fig-publishing-060-workbook-git.png){#fig-publishing-060-workbook-git fig-alt="workbook-git"}
@@ -299,7 +299,7 @@ As discussed in @sec-understanding, concept sets are sets of OMOP concept_ids re
 These are organized and curated as shared resources in N3C, see the section on the [Concept Set Browser](tools.md#sec-tools-concepts) for details.
 
 When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials.
-Fortunately, the concept set browser supports this functionality-when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel." The provided Excel export includes the concept IDs and other relevant information.
+Fortunately, the concept set browser supports this functionality-when viewing a specific version of a concept set, the "OMOP Concepts" tab lists the individual concepts and provides an "Export list of Concepts as Excel". The provided Excel export includes the concept IDs and other relevant information.
 
 ![The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).](images/publishing/fig-publishing-080-cset-excel-export.png){#fig-publishing-080-cset-excel-export fig-alt="cset-excel-export"}
 

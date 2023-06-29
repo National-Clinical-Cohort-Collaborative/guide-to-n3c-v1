@@ -404,7 +404,9 @@ The results are found in the Measurement table, as `harmonized_value_as_number`,
 ### Phenotype and cohort {#sec-understanding-ehr-cohort}
 
 A _phenotype_ is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
-Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
+Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code".
+A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_".
+However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
 
 A _cohort_ is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.

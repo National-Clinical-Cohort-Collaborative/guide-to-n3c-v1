@@ -204,7 +204,7 @@ Protocol Design ❶
 1. Articulate administrative information
 1. Articulate research question
 1. Specify protocol
-1. Describe Patient, Intervention/Exposure, Comparator, Outcome (PI/ECO) elements in text
+1. Describe Patient, Exposure/Intervention, Comparator, Outcome, Time (PECOT) elements in text
 
 Protocol Development ❷
 
@@ -212,14 +212,16 @@ Protocol Development ❷
 1. Assess data quality
 1. Articulate missing data plan
 1. Perform initial analysis
+1. Incorporate fairness and debiasing
 1. Iterate
 1. Commit to final run
 1. Perform sensitivity analysis
 
 Protocol Completion ❸
 
-1. Gather results
-1. Publish
+1. Gather results; Publish
+1. Fill out methodology checklist
+2. Review evidence quality
 
 ![Home page for a researcher's protocols ([Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 The Protocol Design, Development, and Completion sections are accessible on the left.
@@ -442,7 +444,7 @@ In descriptive studies, the focus is on a population and its attributes.
 In associational, causal, and intervention studies, the following attributes are important [cite]:
 
 1. **P**opulation (cohort and control),
-1. **I**ntervention/Exposure (if any),
+1. **E**xposure/Intervention (if any),
 1. **C**omparator,
 1. **O**utcome,
 1. **T**ime horizon, and
@@ -519,13 +521,13 @@ The remainder of this section lays out the elements of a data-only protocol.
 
 #### Objectives {#sec-practices-development-pecot-objectives}
 
-Provide computable definitions for core protocol PICOT elements.
+Provide computable definitions for core protocol PECOT elements.
 
 Instantiate those core protocol elements.
 
 #### Approach {#sec-practices-development-pecot-approach}
 
-PICOT elements for analysis must be shaped from the raw data of the Enclave.
+PECOT elements for analysis must be shaped from the raw data of the Enclave.
 The definition of a cohort is, in turn, based on key building blocks.
 @fig-practices-022-building-block shows the building blocks and their relationship to the typical notion of analytic variables in statistical models.
 
@@ -590,7 +592,7 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 (c) Free text in Protocol pad.
 
 +------------------------------------------+------------------------------------------------------------+------------------------------------------------------------+
-| PICOT                                    | Element                                                    |                                                            |
+| PECOT                                    | Element                                                    |                                                            |
 +==========================================+============================================================+============================================================+
 | B. Index Date (day 0) defining criterion | Study population name(s)                              <br> | Diagnosis position<sup>2</sup>                        <br> |
 |                                          | Day 0 Description                                     <br> | Incident with respect to…                             <br> |
@@ -792,7 +794,7 @@ The STaRT-RWE recommendations for the analysis phase itself are fewer; there are
 +------------------------------------------------------------+------------------------------------------------------------+
 | Element                                                    | Enclave Source                                             |
 +============================================================+============================================================+
-| - Hypothesis                                               | Protocol PICO                                              |
+| - Hypothesis                                               | Protocol PECO                                              |
 | - Study population(s)                                      |                                                            |
 | - Outcome                                                  |                                                            |
 +------------------------------------------------------------+------------------------------------------------------------+
@@ -892,7 +894,7 @@ The distance between patient zip code and facility zip code is at times used as 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
 Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
-### Fairness and Bias
+### Incorporate Fairness and Debiasing
 
 Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed.
 The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,
@@ -978,7 +980,7 @@ Fourth, consider generating [FHIR-based evidence resources](https://fevir.net/),
 
 As part of reporting on an analysis, be sure to identify the data release (number or date) on which the analysis was done and validated.
 
-### Methodology Checklist
+### Fill Out Methodology Checklist
 
 As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher.
 Such submission is (1) considered best practice, (2) requested by publishers, and (3) communicates that the author is aware of state-of-the-art practices in publication.
@@ -998,7 +1000,7 @@ Protocol Pad attempts to collect the information in the process of doing the res
 Note that these are _reporting_ checklists, and not _research_ checklists.
 This entire chapter has been constructed to provide some guidance about performing the research itself.
 
-### Evidence quality
+### Review Evidence quality
 
 The Book of OHDSI has a chapter on [Evidence Quality](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).
 The core of the chapter is the following graphic.

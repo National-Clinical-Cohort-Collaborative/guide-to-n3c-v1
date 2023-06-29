@@ -67,7 +67,7 @@ This chapter was drafted in Google Docs at
 <https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/>
 :::
 
-## Overview
+## Overview {#sec-practices-overview}
 
 While analyses within N3C fall under the general category of "Real World Data Analysis" (RWD analysis), there is no single design or practice that applies to every study.
 All the same, important data considerations can guide one's analytic plans and decisions, which effectively become the pivot points in any RWD investigation's research lifecycle.
@@ -81,11 +81,11 @@ All schools of thought could benefit from more careful consideration of how thei
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource - noting that the resource itself was being actively refined as more was learned from applying methods to its data.
 Early on, the resulting Applicable Data Methods and Standards ([ADMS](https://covid.cd2h.org/data-methods)) group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
 
-### Goals
+### Goals {#sec-practices-overview-goals}
 
 Our goals were to:
 
-#### Make it easy to do the best analysis
+#### Make it easy to do the best analysis {#sec-practices-overview-goals-easy}
 
 Analysts from a wide range of projects have created a number of tools and resources to work towards this goal.
 
@@ -96,7 +96,7 @@ This includes:
 * [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}}, and
 * [Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 
-#### Encourage and disseminate best practices, but do not require specific approaches
+#### Encourage and disseminate best practices, but do not require specific approaches {#sec-practices-overview-encourage}
 
 "Best practice" refers to guidelines, such as those outlined by the FDA [-@usfda_2021; -@usfda_2017] and methodologists [@franklin_2021].
 While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
@@ -105,16 +105,16 @@ that provides a forum for discussing analytic issues that are important across N
 Example issues include the difficulty of defining study-specific "control" cohorts when needed.
 The Good Algorithmic Practice (GAP) group is a forum that includes machine learning and other general discussions related to data and analysis quality.
 
-### Practices
+### Practices {#sec-practices-practices}
 
 Most components of high-quality research lie with the research teams themselves.
 Important practices contributing to reproducible, reliable work include:
 
-#### Ensuring validated or mature code
+#### Ensuring validated or mature code {#sec-practices-practices-validated}
 
 We do recommend peer review of code, as is suggested, prior to posting code workbooks to the Knowledge Store.
 
-#### Making methods and code findable and accessible (FA)
+#### Making methods and code findable and accessible (FA) {#sec-practices-practices-findable}
 
 N3C's key library of code is the [Knowledge Store](tools.md#sec-tools-store).
 Accessibility currently depends on perusing titles and on a short taxonomy of artifact types
@@ -122,13 +122,13 @@ Accessibility currently depends on perusing titles and on a short taxonomy of ar
 [Community Notes](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 support a folksonomy of tags of both domain and methodological bents.
 
-#### Making clear both the intention of a method as well as how it works
+#### Making clear both the intention of a method as well as how it works {#sec-practices-practices-clear}
 
 Documentation of code is left to the analyst.
 Given the diversity of tools and methods available in N3C, there is no recommended standard for documentation.
 The [Logic Liaison Templates](tools.md#sec-tools-store-ll), though, provide excellent models.
 
-#### Ensuring reproducibility and reuse (IR)
+#### Ensuring reproducibility and reuse (IR) {#sec-practices-practices-reproducibility}
 
 [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
@@ -136,17 +136,17 @@ We are developing [Templates](https://national-covid-cohort-collaborative.github
 that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
 Both Code Workbooks and Code Repositories can be exported as [Git repositories](publishing.md#sec-publishing-tech-code) for hosting on GitHub or similar.
 
-#### Building on the experience across and within networks
+#### Building on the experience across and within networks {#sec-practices-practices-experience}
 
 Outside N3C, the experience of OHDSI, in particular, will be referenced below.
 Within N3C, discussions and work within Domain Teams are enriched by individuals' experiences in a wide variety of studies and research configurations.
 
-#### Anticipate analytic problems before they arise
+#### Anticipate analytic problems before they arise {#sec-practices-practices-anticipate}
 
 We encourage discussion of issues in advance of the analysis.
 For hypothesis-driven studies, we recommend finalizing the analytic protocol before outcomes are assessed.
 
-#### Ensure state-of-the-art analyses, appropriate to the real-world data of the Enclave
+#### Ensure state-of-the-art analyses, appropriate to the real-world data of the Enclave {#sec-practices-practices-rwd}
 
 We encourage conformance to methodology checklists.
 Relevant ones are [STROBE](https://www.equator-network.org/reporting-guidelines/strobe/),
@@ -157,7 +157,7 @@ Relevant ones are [STROBE](https://www.equator-network.org/reporting-guidelines/
 
 The high-level sequence of research below is based on experience in the Enclave and addresses some of the "what" needs to be accomplished in a research project in parallel to the "how" of previous chapters.
 
-## Protocols: A Framework for the Research Lifecycle
+## Protocols: A Framework for the Research Lifecycle {#sec-practices-protocols}
 
 ![The standard project-management life cycle, applied to research, from project start ("Development") to closure.
 Image from JHU [All Children's Hospital](https://www.hopkinsallchildrens.org/Academics/Research/Clinical-Research-Lifecycle).](images/practices/fig-practices-010-research-lifecycle.png){#fig-practices-010-research-lifecycle fig-alt="The standard project-management life cycle" width=70%}
@@ -167,7 +167,7 @@ The general project management phases defined by the [Project Management Institu
 In N3C terms:
 
 * _Development_ refers to Protocol Design,
-* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectation](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
+* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectations](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
 * _Activation_ is assembling and running the research team,
 * _Conduct_ is the workflow described in Chapter [Analyzing the Data](Analyzing the Data),
 * _Oversight_ is the responsibility of the project PI,
@@ -197,7 +197,7 @@ N3C has developed a tool to facilitate the development of protocols known as the
 In the following sections we walk through recommended components of a protocol.
 Briefly, they are (a) Protocol Design, (b) Development, and (c) Completion:
 
-### Protocol Outline
+### Protocol Outline {#sec-practices-protocols-outline}
 
 Protocol Design ❶
 
@@ -237,20 +237,20 @@ domain teams,
 besides working on specific projects, have generated protocols that can serve as models for analysis.
 Good Algorithmic Practice (GAP) Core Team; and various subject-matter domain teams.
 
-## Protocol Design ❶
+## Protocol Design ❶ {#sec-practices-design}
 
 The Design is where the intention and information _about_ the protocol are placed.
 A protocol design may be generated iteratively, as details are better honed and even the intention becomes clearer.
 By the point that the finally-established protocol is executed, the design should be fixed.
 At the very least, if substantive design modifications are to be implemented in research that is not strictly exploratory, we suggest documenting the reason for doing so.
 
-### Articulate Administrative Information
+### Articulate Administrative Information {#sec-practices-design-admin}
 
 **Objective**
 
 Gathering administrative information, such as DUR number, team members, and research question ensures that all the necessary elements are established to successfully execute a publishable research project with a clear objective.
 
-#### Approach
+#### Approach {#sec-practices-design-admin-approach}
 
 Several tools provide checklists a researcher can follow to ensure their work will be publishable.
 The previously mentioned Protocol Pad, for example, guides researchers through protocol development,
@@ -339,13 +339,13 @@ Ideally, a project should have someone fulfilling the role of project manager, w
 Researchers should consider, ahead of time, documenting necessary project management information and assembling a team with the relevant expertise to maximize the likelihood of project success.
 Provided above, is a list of recommended information that should be documented, and additional organizational resources.
 
-### Articulate Research Question
+### Articulate Research Question {#sec-practices-design-question}
 
-#### Objective
+#### Objective {#sec-practices-design-question-objective}
 
 Ensure that the question being addressed is explicit.
 
-#### Research Questions you cannot answer in N3C
+#### Research Questions you cannot answer in N3C {#sec-practices-design-question-cannot}
 
 The research question is a natural-language expression of what the protocol is about.
 Although prospective delineation of a hypothesis with a null and alternative options is both standard and recommended in research,
@@ -386,16 +386,16 @@ There are other questions that may _potentially_ be answerable in N3C, depending
 
 There are others, and we welcome suggestions to add to either list.  Please contact the chapter authors or see [How to Contribute](../index.html#sec-welcome-contribute).
 
-### Specify Protocol
+### Specify Protocol {#sec-practices-design-protocol}
 
-#### Objectives
+#### Objectives {#sec-practices-design-protocol-objectives}
 
 Ensure your work is grounded in an initial "natural language" protocol that resonates with subject matter experts (e.g., clinicians, etc.) and stakeholders.
 
 Gain early insights into how the natural language version of the protocol will be tethered to specific code and the existence of potential confounders.
 This is an early step in promoting replicable and clinically valuable work.
 
-#### Approach
+#### Approach {#sec-practices-design-protocol-approach}
 
 Stoudt and colleagues [-@stoudt_2021] identify 3 phases of a data-only research protocol: Explore, Refine, and Produce. N3C provides many tools to support a protocol.
 By linking the resulting artifacts together, we aim to develop a self-documenting, computable protocol.
@@ -424,17 +424,17 @@ The following simple example shows the power of a DAG in drawing attention to a 
 
 ![Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification.](images/practices/fig-practices-020-site-bias.png){#fig-practices-020-site-bias fig-alt="Effect of site (data partner)"}
 
-@fig-practices-020-site-bias shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of @fig-practices-022-building-block, above.
+@fig-practices-020-site-bias shows how data partner ID (i.e., "Site") is _always_ a confounder, in the sense of @fig-practices-022-building-block, above.
 As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites.
 ^[See @redelmeier_2023 for a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research.]
 
-### Describe PICOT Elements in Text
+### Describe PECOT Elements in Text {#sec-practices-design-pecot}
 
-#### Objective
+#### Objective {#sec-practices-design-pecot-objective}
 
 Provide the core details for readers that define key elements of the study methodology.
 
-#### Approach
+#### Approach {#sec-practices-design-pecot-approach}
 
 Even in methodological studies, there is a universe of populations and contexts for which the methods apply (or not).
 In descriptive studies, the focus is on a population and its attributes.
@@ -489,11 +489,11 @@ From the [Repeat Initiative](https://docs.google.com/viewer?url=https%3A%2F%2Fww
 It is helpful to be precise in articulating the research question, so correct analytic methods will be chosen.
 Examples are differentiating classification from prediction from estimation, and association from temporal correlation from causal relationships.
 
-## Protocol Development ❷
+## Protocol Development ❷ {#sec-practices-development}
 
-### Manage the Protocol Development Process
+### Manage the Protocol Development Process {#sec-practices-development-manage}
 
-#### Objectives
+#### Objectives {#sec-practices-development-manage-objectives}
 
 Support team science during refinement and production of a detailed protocol.
 
@@ -501,7 +501,7 @@ Provide an audit trail of how the protocol was developed.
 
 Support execution of the protocol.
 
-#### Approach
+#### Approach {#sec-practices-development-manage-approach}
 
 Team science, a transdisciplinary endeavor that entails both theory and application [@klein_1996],
 has its own mix of needs in "data-only" (e.g., RWE) studies, and, in particular, in distributed settings.
@@ -515,15 +515,15 @@ Even if the research is not performed with regulatory intent, choices made and a
 
 The remainder of this section lays out the elements of a data-only protocol.
 
-### Define PICOT elements as objects and data sets
+### Define PECOT elements as objects and data sets {#sec-practices-development-pecot}
 
-#### Objectives
+#### Objectives {#sec-practices-development-pecot-objectives}
 
 Provide computable definitions for core protocol PICOT elements.
 
 Instantiate those core protocol elements.
 
-#### Approach
+#### Approach {#sec-practices-development-pecot-approach}
 
 PICOT elements for analysis must be shaped from the raw data of the Enclave.
 The definition of a cohort is, in turn, based on key building blocks.
@@ -646,7 +646,7 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 @sec-tools discusses this process in more detail.
 
-### Assess Data Quality
+### Assess Data Quality  {#sec-practices-development-dq}
 
 #### Objective
 

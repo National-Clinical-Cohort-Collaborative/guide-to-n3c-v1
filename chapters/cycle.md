@@ -121,7 +121,7 @@ The N3C Data ingestion pipeline consists of the following five categories of ste
 
 ![N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.](images/cycle/fig-cycle-015-workflow.png){#fig-cycle-015-workflow fig-alt="Pipeline Workflow"}
 
-Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g. UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm.
+Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g., UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm.
 We created a shareable set of crosswalk mappings that are used to convert the value sets, such as gender and race concept sets, from all source CDMs to OMOP concepts along with associated OMOP domain mapping information.
 Code map service is used to generate site-specific dynamic lists of terminology crosswalk mapping tables to accurately map the source terminology into OMOP concept ids.
 The OMOP relationship table is referenced to identify the codes or terms found in the source data with standard OMOP concept ids.
@@ -179,7 +179,7 @@ SNOMED CT is also used to encode clinical diagnoses which have internal hierarch
 Logical Observation Identifiers Names and Codes (LOINC) are used to represent laboratory tests.
 ICD-10-PCS, HCPCS, and CPT4 codes are used for procedures.
 CVX codes are used for vaccines and RxNorm codes are used to specify the medications prescribed and administered.
-The string text used to indicate the code system categories are not uniform across the CDM models and some are case sensitive, i.e. "RxNorm" vs. "RXNORM".^[See <https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf>.]
+The string text used to indicate the code system categories are not uniform across the CDM models and some are case sensitive, i.e., "RxNorm" vs. "RXNORM".^[See <https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf>.]
 
 All of the coded data found in the submitted payload are collected and translated into OMOP concept ids using the OMOP vocabulary, concept and concept relationship tables.
 Two categories of crosswalk mapping tables are generated to perform the translation; a static list of common data elements that are specific to CDM tables and a dynamic list of codes/code systems that can contain a varied list of values from payload to payload.

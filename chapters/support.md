@@ -52,15 +52,15 @@ Let's suppose we have a question about this data, or perhaps have discovered a p
 
 ![Synthea Preview.](images/support/fig-support-020-synthea-preview.png){#fig-support-020-synthea-preview width=50% fig-alt="Synthea Preview"}
 
-To submit a ticket about the currently opened dataset, we'll open the Help menu near the top, and select "Report Issue."
+To submit a ticket about the currently opened dataset, we'll open the Help menu near the top, and select "Report Issue".
 
 ![New Issue.](images/support/fig-support-030-issue-report.png){#fig-support-030-issue-report fig-alt="New Issue"}
 
 This opens a dialog requisition information about the ticket.
 Notice that the RESOURCE is identified as the `condition_era` table we had opened.
-Since we are asking a question about the data, we'll select "Data quality."
+Since we are asking a question about the data, we'll select "Data quality".
 
-![New Issue: What kind of help do you need?](images/support/fig-support-040-issue-kind-of-help.png){#fig-support-040-issue-kind-of-help width=50% fig-alt="New Issue: What kind of help do you need?"}
+![New Issue: What kind of help do you need?](images/support/fig-support-040-issue-kind-of-help.png){#fig-support-040-issue-kind-of-help width=50% fig-alt="New Issue: What kind of help do you need"}
 
 Once we click Next, we'll be prompted to change the resource of interest or application being used (if desired).
 Since we are reporting an issue on a dataset, we even have the option of selecting the specific column we are interested in.
@@ -75,7 +75,7 @@ We'll just click Next here.
 Using "Report Issue" from the Help menu of an Enclave application is the preferred way to submit a ticket, as this option keeps the best track of the resource being reported from.
 While most Enclave applications have a Help menu near the top left, not all do.
 In these cases you can alternatively submit an issue by finding the "Help & support" option in the lower part of the left navigation bar and choosing the "Help Center".
-This will open a sidebar to the right, with a large blue button at the bottom for "Report an Issue."
+This will open a sidebar to the right, with a large blue button at the bottom for "Report an Issue".
 :::
 
 Finally, we are prompted to submit our issue, including a title and description with pre-filled questions depending on the issue type selected.
@@ -87,8 +87,8 @@ Nevertheless, when excluding patient data is possible, a screenshot may help dia
 ![More details.](images/support/fig-support-060-issue-more-details.png){#fig-support-060-issue-more-details width=50% fig-alt="More details"}
 
 We can scroll down in this panel to see more advanced information pertaining to the ticket.
-Priority should generally be left to "Medium," since "High" priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users.
-The default assignee is the "N3C: Issues Triage Team," who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow-up from support may take longer).
+Priority should generally be left to "Medium", since "High" priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users.
+The default assignee is the "N3C: Issues Triage Team", who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow-up from support may take longer).
 Followers allow you to specify other users who will receive alerts about this issue.
 Adding labels to the ticket is optional as well, since the triage team usually applies relevant labels for tracking purposes.
 
@@ -123,7 +123,7 @@ Here you will find a link to "Submit a Support Request" that directs you to sele
 
 ![Ticket details.](images/support/fig-support-100-ticket-details.png){#fig-support-100-ticket-details width=50% fig-alt="Ticket details"}
 
-Each of the options is described, and range from Enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else." In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
+Each of the options is described, and range from Enclave access support (commonly used for login issues), [Domain Team](onboarding.md#sec-onboarding-dt) creation or support, questions about [Data Use Requests](access.md#sec-access-dur) or the Data Access Committee (commonly used to check on DUR review status), [PPRL](understanding.md#sec-understanding-pprl) data, and "everything else". In general, this help desk is staffed by a broader range of core N3C administrators, and so is generally the best option outside of technical or data questions.
 
 After selecting a support area, you will be given the option to select sub-categorizations, enter a description of the issue or question, provide a summary title for tracking and select the user (usually you) submitting the request.
 The list of users is pre-populated based on N3C data, but you can also type an email address in the same field.
@@ -154,7 +154,7 @@ The Support option will redirect to a page linking to the two ticket systems des
 
 ### Training (Training Portal) {#sec-support-training-portal}
 
-The N3C Training Portal hosts training "modules." The list of training modules is roughly sorted by researchers' N3C journey-those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
+The N3C Training Portal hosts training "modules". The list of training modules is roughly sorted by researchers' N3C journey-those new to N3C will likely find the first modules of most interest, while those preparing to publish their results should scroll to the end.
 
 Modules are searchable by keyword (from their title and description), and a brief list of Suggested Modules can be found in the orange button in the upper-right, though browsing through the full list is recommended.
 
@@ -216,22 +216,23 @@ This workspace is also used to organize other training resources (like the Train
 
 ![Training Area.](images/support/fig-support-180-training-area.png){#fig-support-180-training-area width=75% fig-alt="Training Area"}
 
-If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data." Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g. "oneils").
+If you wish to create a practice folder, you are free to do so inside the "Practice Area - Public and Example Data".
+Simply open it up, and using the green +New button create a new subfolder with a unique name (many use shortened usernames, e.g., "oneils").
 Within this folder you will be able to create new analyses, and these will have access to the notional datasets described next.
 
 ## Notional Datasets {#sec-support-notional}
 
 OMOP-formatted N3C patient data are protected by a [Data Use Request](access.md#sec-access-dur) process, but researchers may wish to explore OMOP tables and Enclave tools prior to completing a DUR.
-The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e. fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
+The N3C Training Area is the place to do such practice, and N3C provides two notional (i.e., fake) datasets formatted similarly to the [Level 2 and Level 3](access.md) data that do not require a DUR to access.
 They are both available via the [data catalog](access.md#sec-access-workspaces) under "Synpuf Synthetic Data" and "Synthea Notional Data".^[Note that these should not be confused with the [Level 1 Synthetic Data](access.md#sec-access-availability), which are derived from N3C patient data and protected by a Data Use Request.] The data they contain differ in some important ways, described next.
 
 ![Two sets of synthetic data.](images/support/fig-support-190-synthetic-datasets.png){#fig-support-190-synthetic-datasets width=75% fig-alt="Two sets of synthetic data"}
 
 ### SynPuf Synthetic Data {#sec-support-notional-synpuf}
 
-SynPuf is short for "Synthetic Public Use Files," or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
+SynPuf is short for "Synthetic Public Use Files", or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
 These SynPuf files originate from [SynPuf Medicare Claims data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs) and have been [converted to OMOP format](https://forums.ohdsi.org/t/synpuf/4936) by the OHDSI community.
-The content of these data differs from N3C data in many ways (e.g. records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
+The content of these data differs from N3C data in many ways (e.g., records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
 Lastly, the data are not recent, and so contain no COVID-19-related records such as diagnoses, lab tests, or vaccine records.
 The SynPuf data do not contain some N3C customizations to the OMOP data model, for example the `manifest` table used in N3C data to describe metadata about contributing data partners.
 
@@ -300,8 +301,9 @@ You may have noticed the data & logic liaisons have appeared several times in th
 
 * Fact Tables and Templates (@sec-tools-store-ll),
 * Curated Concept Sets (@sec-tools-concepts),
-* Published Concepts Sets (@sec-understanding-sets-library-published), and
-* Data Quality [@pfaff_2022b].
+* Published Concepts Sets (@sec-understanding-sets-library-published)
+* Data Quality during analyses (@sec-practices-development), and
+* Data Quality [during ingestion](cycle.html#sec-cycle-harmonization-dqc) [@pfaff_2022b].
 
 They also provide support services as described below.
 

@@ -25,6 +25,6 @@ For each workbook:
 
 1. Provide starter code that can be pasted directly into transform.  Including the Global Code panel.
 
-1. Detail the input object for each transform (eg, Spark DataFrame, R Transform Object, R data.frame, Pandas data frame)
+1. Detail the input object for each transform (e.g., Spark DataFrame, R Transform Object, R data.frame, Pandas data frame)
 
-1. Recommended Enclave environment (eg, driver count, executor count, RAM, Spark/Python/R packages)
+1. Recommended Enclave environment (e.g., driver count, executor count, RAM, Spark/Python/R packages)

@@ -29,7 +29,7 @@ You don't have to understand the rest to contribute, but for those interested:
 Contributing Content
 ------------------
 
-The N3C and its [domain teams](https://covid.cd2h.org/domain-teams) are healthiest when assimilating contributions from reseachers of different skills (*e.g.*, clinicians & informaticians), specialties (*e.g.*, endocrinology & gerontology), programming languages (*e.g.*, Python, R, & SQL) and experiences (*e.g.*, students & PIs).
+The N3C and its [domain teams](https://covid.cd2h.org/domain-teams) are healthiest when assimilating contributions from reseachers of different skills (e.g., clinicians & informaticians), specialties (e.g., endocrinology & gerontology), programming languages (e.g., Python, R, & SQL) and experiences (e.g., students & PIs).
 
 Accordingly, the [guide-to-n3c-v1](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1) repository welcomes input from you.
 

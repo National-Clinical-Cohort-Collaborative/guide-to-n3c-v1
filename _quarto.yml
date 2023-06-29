@@ -97,4 +97,4 @@ book:
     chapters:
     - chapters/funding.md
     - references.qmd
-    - chapters/colophon.qmd
+    # - chapters/colophon.qmd

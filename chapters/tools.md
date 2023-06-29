@@ -59,7 +59,7 @@ Managing these collaborative and multi-faceted projects requires good recordkeep
 The [N3C Protocol Pad](tools.md#sec-tools-apps-protocol) is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner [@wilkinson_2016] (see also <https://www.go-fair.org/fair-principles/>).
 Thus it is recommended that you utilize this tool throughout the implementation of your project.
 
-A research project in N3C starts with organizing a team with the required expertise (clinical, informatics, statistical, etc), followed by defining clinical questions around COVID-19 and characterizing the cohorts needed to answer each, i.e. clinical phenotyping.
+A research project in N3C starts with organizing a team with the required expertise (clinical, informatics, statistical, etc), followed by defining clinical questions around COVID-19 and characterizing the cohorts needed to answer each, i.e., clinical phenotyping.
 Because the N3C contains real-world EHR data that is harmonized from multiple data models and dozens of institutions, some information needed to identify an ideal clinical phenotype may be missing or incomplete.
 Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts.
 This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available.
@@ -72,7 +72,7 @@ The generation of a computational phenotype overlaps with the generation of conc
 Well-vetted concept sets are key to obtaining robust cohorts, thus, having a team member familiar with the organization of data and the OMOP vocabulary, such as a data liaison, who can work closely with a clinician is beneficial.
 Concept set generation can be done using the Enclave Concept Set Browser, or externally through OHDSI ATLAS.
 
-Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e. datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment.
+Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e., datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment.
 Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions.
 Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc.  Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C-vetted concept sets and peer-reviewed code as a starter table.
 You can then append this base fact table to include project-specific facts needed for analyses.  @fig-tools-060-ll-template-1 and @fig-tools-070-ll-template-2 in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation.
@@ -172,7 +172,7 @@ The data quality templates provide a variety of data tables and visualizations.
 The first two of which provide a method for evaluating overall quality of the harmonized data ingested from sites.
 
 * [Data Density by Site and Domain](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-C3B0BBE&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
-  Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the number of unique patient/concept/days for each of the major OMOP tables (i.e. condition_occurrence, drug_exposure, etc) and uses them to create a heatmap displaying how many MADs each site is from the median for each OMOP table.
+  Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the number of unique patient/concept/days for each of the major OMOP tables (i.e., condition_occurrence, drug_exposure, etc) and uses them to create a heatmap displaying how many MADs each site is from the median for each OMOP table.
 The template also scores the site's date-shifting practices.
 * [Whitelist Filtering](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-D00A6DC&view=focus) {{< fa lock title="Link requires an Enclave account" >}}:
   Creates a bar plot showing whitelisted data partners that have, at minimum, a certain percentage of COVID patients associated with a specified measurement, condition, drug, procedure, etc.
@@ -336,7 +336,7 @@ Custom configurations require more time for initialization as instances of these
 For this reason, it is recommended to use default configurations when possible.
 
 Following best practices for collaborative software development, Code Workbook allows for [branching](https://www.palantir.com/docs/foundry/code-workbook/branching-overview/) of the logic within a workbook.
-As with other popular version control technologies (i.e. [Git](https://git-scm.com/)), branching allows you to make copies of a workbook which your team members can develop independently of the source workbook.
+As with other popular version control technologies (i.e., [Git](https://git-scm.com/)), branching allows you to make copies of a workbook which your team members can develop independently of the source workbook.
 Once the development in a particular branch is deemed complete, it can be merged back into the originating branch.
 Prior to the merge, you can preview both line-level differences within each node, as well as node-level differences of nodes that have been added/removed.
 Good practice dictates that you perform all development on individual branches, which are then merged back into a common _master_ branch.

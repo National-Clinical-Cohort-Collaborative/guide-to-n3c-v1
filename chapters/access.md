@@ -40,7 +40,7 @@ and publicly-available data (e.g., US census data) are accessible by everyone wi
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access
-are made available in three different "levels," each with different amounts of data obfuscation,
+are made available in three different "levels", each with different amounts of data obfuscation,
 and correspondingly different access requirements.
 Deciding which level of data is appropriate for your study is important,
 because accessing Level 3 data is more work and restrictive than accessing Level 2 data.
@@ -178,7 +178,7 @@ and when their last submission was.](images/access/fig-access-030-manifest.png){
 
 ### PPRL Data {#sec-access-background-pprl}
 
-PPRL, short for "Privacy-Preserving Record Linkage," is a strong cryptographic data handling technique
+PPRL, short for "Privacy-Preserving Record Linkage", is a strong cryptographic data handling technique
 allowing for the matching of records about individuals from different data sources,
 _without_ revealing to any party except the data sources themselves any identifying information about the individual.
 While we won't describe how the process works here,

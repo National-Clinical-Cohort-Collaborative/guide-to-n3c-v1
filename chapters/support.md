@@ -87,8 +87,8 @@ Nevertheless, when excluding patient data is possible, a screenshot may help dia
 ![More details.](images/support/fig-support-060-issue-more-details.png){#fig-support-060-issue-more-details width=50% fig-alt="More details"}
 
 We can scroll down in this panel to see more advanced information pertaining to the ticket.
-Priority should generally be left to "Medium," since "High" priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users.
-The default assignee is the "N3C: Issues Triage Team," who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow-up from support may take longer).
+Priority should generally be left to "Medium", since "High" priority is used to alert infrastructure support of system-wide issues or outages likely to affect a majority of users.
+The default assignee is the "N3C: Issues Triage Team", who will further route the ticket to the appropriate support group (issues are triaged most business days, but follow-up from support may take longer).
 Followers allow you to specify other users who will receive alerts about this issue.
 Adding labels to the ticket is optional as well, since the triage team usually applies relevant labels for tracking purposes.
 
@@ -230,7 +230,7 @@ They are both available via the [data catalog](access.md#sec-access-workspaces) 
 
 ### SynPuf Synthetic Data {#sec-support-notional-synpuf}
 
-SynPuf is short for "Synthetic Public Use Files," or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
+SynPuf is short for "Synthetic Public Use Files", or EHR records that have been scrubbed of personally identifiable information and released for public educational use.
 These SynPuf files originate from [SynPuf Medicare Claims data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs) and have been [converted to OMOP format](https://forums.ohdsi.org/t/synpuf/4936) by the OHDSI community.
 The content of these data differs from N3C data in many ways (e.g., records prior to Jan. 1, 2018 are included), and they represent a distinctive population of Medicare-eligible patients.
 Lastly, the data are not recent, and so contain no COVID-19-related records such as diagnoses, lab tests, or vaccine records.

@@ -47,10 +47,10 @@ Achieving the goals of a shared data resource involves deciding how the resource
 Critical considerations for establishing a data-sharing governance framework include:
 
 * Developing a data-sharing strategy (i.e., deciding what data will be shared and whether sharing will be bilateral or multilateral, whether the data will be centralized or distributed /decentralized),
-* Understanding the legal, regulatory, and organizational compliance requirements and establishing the data sharing agreements (i.e. identifying potential restrictions on data sharing and use due to laws, regulations, or ancillary agreements, and understanding party's legitimate interests)
-* Selecting the technical environment where sharing will occur (i.e. selecting the technical infrastructure and the security measures to be implemented to protect data integrity, assessing risks and managing data access)
-* Preparing the data for sharing, retention and disposition (i.e. optimizing data usability, selecting data processing methods and adopting FAIR principles)
-* Monitoring data sharing (i.e. establishing a monitoring and reporting plan, enforcing policies and procedures, and resolving disputes)
+* Understanding the legal, regulatory, and organizational compliance requirements and establishing the data sharing agreements (i.e., identifying potential restrictions on data sharing and use due to laws, regulations, or ancillary agreements, and understanding party's legitimate interests)
+* Selecting the technical environment where sharing will occur (i.e., selecting the technical infrastructure and the security measures to be implemented to protect data integrity, assessing risks and managing data access)
+* Preparing the data for sharing, retention and disposition (i.e., optimizing data usability, selecting data processing methods and adopting FAIR principles)
+* Monitoring data sharing (i.e., establishing a monitoring and reporting plan, enforcing policies and procedures, and resolving disputes)
 
 [The Data Partnership and Governance Workstream](https://covid.cd2h.org/N3C_governance) established by the N3C PIs with participation from NCATS and the scientific and ethics community is responsible for (1) establishing and refining the principles, policies, and procedures to support N3C, (2) determining the roles and functions to support the governance strategy, and (3) making recommendations to NIH for their implementation.
 The workstream convenes representatives of contributing organizations, researchers, and institutions that support them, NCATS, ethicists, and anyone interested in advancing N3C.
@@ -155,7 +155,7 @@ N3C governance includes considerations for protecting special populations and co
 N3C contains no Tribal affiliation.
 Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.
 
-![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."}
+![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project"}
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

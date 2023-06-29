@@ -227,7 +227,7 @@ Here we include concept [4329847](https://athena.ohdsi.org/search-terms/terms/43
 
 As shown in @tbl-understanding-concept-set, this will include "Myocardial infarction" and all of its descendants except "Old myocardial infarction" and its descendants.
 In total, this concept set expression implies nearly a hundred Standard Concepts.
-These Standard Concepts in turn reflect hundreds of source codes (e.g. ICD-9 and ICD-10 codes) that may appear in the various databases.
+These Standard Concepts in turn reflect hundreds of source codes (e.g., ICD-9 and ICD-10 codes) that may appear in the various databases.
 
 ![Representation, from Book of OHDSI, of the Myocardial Infarction subtree of standard concepts.](images/understanding/fig-understanding-080-mi-hierarchy.png){#fig-understanding-080-mi-hierarchy fig-alt=""}
 
@@ -404,7 +404,9 @@ The results are found in the Measurement table, as `harmonized_value_as_number`,
 ### Phenotype and cohort {#sec-understanding-ehr-cohort}
 
 A _phenotype_ is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
-Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code." A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_." However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
+Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code".
+A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_".
+However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
 
 A _cohort_ is a set of persons who satisfy one or more inclusion criteria for a duration of time.
 Data ingestion is the process of importing data meeting a phenotype definition into a database which can then be used for research.
@@ -454,7 +456,7 @@ See the [Intro to PPRL documentation](https://unite.nih.gov/workspace/notepad/vi
 Secondly, these data sources should not be considered comprehensive in the sense of providing full information on all deaths in the US.
 As a result, there may well be mortality records in the OMOP death table that are not represented in the supplemental PPRL data. (And certainly there are mortality records in the PPRL data that are not present in the OMOP death table-that's why N3C has collected this data in the first place!)
 
-Different data sources lag in inclusion of mortality information from the actual date of death (e.g. if someone's date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18).
+Different data sources lag in inclusion of mortality information from the actual date of death (e.g., if someone's date_of_death is 2022-04-05, that record may not show up in the mortality source data until 2022-04-18).
 This lag varies by data source type: government sources tend to lag longer than private sources.
 For detailed information on mortality data latency, data completeness, and other considerations, see the [N3C PPRL Mortality Data Guide](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.e45cd20e-9da9-44c7-b1d1-747e7c56102f) {{< fa lock title="Link requires an Enclave account" >}} and the [N3C Mortality Data FAQs](https://discovery.biothings.io/faq/n3c#VIRAL_VARIANCE#MORTALITY).
 
@@ -482,8 +484,8 @@ The number of viral variant data sets will increase as more sites from Clinical 
 The summary data currently available in N3C includes:
 
 * Sample Date
-* WHO label (e.g. alpha, delta, omicron)
-* PANGO lineage (e.g. B.1.1.7)^[Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples]
+* WHO label (e.g., alpha, delta, omicron)
+* PANGO lineage (e.g., B.1.1.7)^[Note that while WHO label should always be available, PANGO lineage may only be available for a subset of samples]
 
 #### Viral Variant Data in OMOP {#sec-understanding-pprl-variants-omop}
 
@@ -491,7 +493,7 @@ Summary PPRL viral variant data is available as an enriched OMOP measurement tab
 The following columns are used:
 
 * `measurement_concept_id` contains OMOP `concept_id` 36033667, "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing", for all viral variant samples.
-* `value_as_concept_id` will be encoded with the OMOP concept representing the WHO label (e.g. `concept_id` 4228611 for "Omicron").
+* `value_as_concept_id` will be encoded with the OMOP concept representing the WHO label (e.g., `concept_id` 4228611 for "Omicron").
 * A new column outside the standard OMOP schema includes the PANGO lineage.
 
 ### Centers for Medicare and Medicaid Services (CMS) {#sec-understanding-pprl-cms}

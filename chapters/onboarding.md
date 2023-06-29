@@ -39,14 +39,6 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Sharon Patrick, Suzanne McCahan, Jonathan Emery
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross-referencing.
-Edits are expected to complete by June 2023.
-
-This chapter was drafted in Google Docs at
-<https://drive.google.com/drive/u/0/folders/1zOGR2rGGgr1lxP8mV5XmtkuxEZI_R7II>
-:::
-
 The N3C has an extensive secure onboarding process due to the sensitivity of the data within the N3C Data Enclave.
 There are several steps that need to be completed in order for a researcher or N3C user to gain access to the Enclave.
 
@@ -436,6 +428,10 @@ Slack is a quick and convenient communication method for teams and N3C users.
 You can request a Slack invitation by completing a three-question form at <https://bit.ly/n3c-request-slack>.
 There are channels that are specific to different teams as well as a general N3C channel.
 
-:::{.callout-note}
-This chapter is still being written.
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published June 2023.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
 :::

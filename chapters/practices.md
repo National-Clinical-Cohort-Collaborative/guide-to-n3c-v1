@@ -167,7 +167,7 @@ The general project management phases defined by the [Project Management Institu
 In N3C terms:
 
 * _Development_ refers to Protocol Design,
-* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectation](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
+* _Submission_ is obtaining a Data User Request ([DUR](access.md#sec-access-dur))^[Also see the [Common roles and expectations](onboarding.md#sec-onboarding-team) section in @sec-onboarding.],
 * _Activation_ is assembling and running the research team,
 * _Conduct_ is the workflow described in Chapter [Analyzing the Data](Analyzing the Data),
 * _Oversight_ is the responsibility of the project PI,
@@ -424,7 +424,7 @@ The following simple example shows the power of a DAG in drawing attention to a 
 
 ![Effect of site (data partner). (a) Standard relationship between Cause (independent variable) and Effect (dependent variable), allowing site as a potential covariate. (b) Recognizing that Site may have an impact on the Cause (for real or on its documentation), we see that Site is a confounder (shaded magenta) and must be addressed, for instance, by stratification.](images/practices/fig-practices-020-site-bias.png){#fig-practices-020-site-bias fig-alt="Effect of site (data partner)"}
 
-@fig-practices-020-site-bias shows how data partner ID (i.e. "Site") is _always_ a confounder, in the sense of @fig-practices-022-building-block, above.
+@fig-practices-020-site-bias shows how data partner ID (i.e., "Site") is _always_ a confounder, in the sense of @fig-practices-022-building-block, above.
 As such, stratification or some other strategy is _always_ required first, on the way to deciding whether data can be pooled across sites.
 ^[See @redelmeier_2023 for a more involved example of a [DAG](https://ars.els-cdn.com/content/image/1-s2.0-S0002934322008221-gr3_lrg.jpg) in COVID research.]
 

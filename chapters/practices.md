@@ -250,45 +250,49 @@ At the very least, if substantive design modifications are to be implemented in 
 
 **Objective**
 
-Gathering administrative information, such as DUR number, team members, and research question ensures that all the necessary elements are established to successfully execute a publishable research project with a clear objective.
+Gathering administrative information, such as DUR number, team members, and research question ensures
+that all the necessary elements are established to successfully execute a publishable research project with a clear objective.
 
 #### Approach {#sec-practices-design-admin-approach}
 
 Several tools provide checklists a researcher can follow to ensure their work will be publishable.
-The previously mentioned [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f), for example, guides researchers through protocol development,
+The previously mentioned [Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f),
+for example, guides researchers through protocol development,
 and is integrated with other N3C tooling to capture relationships to teams, researchers,
 and artifacts such as concept sets, analyses, and datasets.
 STaRT-RWE [@wang_2021] provides a more expansive methodological checklist. @tbl-practices-start-1
-below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found. The [RWE Protocol Browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.57ad723a-a436-496a-bb95-65ee94658e4f) shows completed protocol Overviews of some available protocols. 
+below lists the elements and sub-elements in the checklist, along with suggestions for where in the Enclave the information may be found.
+The [RWE Protocol Browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.57ad723a-a436-496a-bb95-65ee94658e4f)
+shows completed protocol Overviews of some available protocols.
 
 <!-- https://www.tablesgenerator.com/markdown_tables -->
 
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Element                             | Sub Element                                                                          | Source in the Enclave    |
-+=====================================+======================================================================================+==========================+
-| Protocol Title                      |                                                                                      | Manually entered         |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Objective Primary                   |                                                                                      | Manually entered         |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Objective Secondary                 |                                                                                      | Manually entered         |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
+| Element                             | Sub Element                                                                          | Source in the Enclave        |
++=====================================+======================================================================================+==============================+
+| Protocol Title                      |                                                                                      | Manually entered             |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
+| Objective Primary                   |                                                                                      | Manually entered             |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
+| Objective Secondary                 |                                                                                      | Manually entered             |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
 | Protocol registration               | - Registration identifier                                                            | Supplied by Protocol Pad:RWE |
-|                                     | - Registration date                                                                  |                          |
-|                                     | - Registration site                                                                  |                          |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+|                                     | - Registration date                                                                  |                              |
+|                                     | - Registration site                                                                  |                              |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
 | Protocol version                    | - Version number                                                                     | Supplied by Protocol Pad:RWE |
-|                                     | - Version date                                                                       |                          |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Funding                             | - Grant identifier                                                                   | Manually entered         |
-|                                     | - Source                                                                             |                          |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+|                                     | - Version date                                                                       |                              |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
+| Funding                             | - Grant identifier                                                                   | Manually entered             |
+|                                     | - Source                                                                             |                              |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
 | Data Use Agreement (DUA)            | - DUA identifier                                                                     | Supplied by Protocol Pad:RWE |
-|                                     | - Data provider                                                                      |                          |
-|                                     | - Data provider contact for data use agreements                                      |                          |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
-| Human Subjects/<br>Ethics Approval  | - Submission identifier                                                              | Assumed by DUR           |
-|                                     | - Name of human subjects/ethics approval committee                                   |                          |
-+-------------------------------------+--------------------------------------------------------------------------------------+--------------------------+
+|                                     | - Data provider                                                                      |                              |
+|                                     | - Data provider contact for data use agreements                                      |                              |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
+| Human Subjects/<br>Ethics Approval  | - Submission identifier                                                              | Assumed by DUR               |
+|                                     | - Name of human subjects/ethics approval committee                                   |                              |
++-------------------------------------+--------------------------------------------------------------------------------------+------------------------------+
 
 : STaRT-RWE Table 1: Administrative Information, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-1 tbl-colwidths="[30, 45, 25]"}
 
@@ -459,18 +463,18 @@ The DUR identifier should be supplied by the system.
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | Section                                        | Element                                          | Where found in the Enclave                                                                                                                       |
 +================================================+==================================================+==================================================================================================================================================+
-| TABLE 2. VERSION HISTORY                       | - Version date                                   | - Protocol Pad:RWE                                                                                                                                   |
+| TABLE 2. VERSION HISTORY                       | - Version date                                   | - Protocol Pad:RWE                                                                                                                               |
 |                                                | - Version number                                 | - Manual entry of change log and rationale                                                                                                       |
 |                                                | - Change log                                     |                                                                                                                                                  |
 |                                                | - Rationale for change                           |                                                                                                                                                  |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | FIGURE 1. DESIGN DIAGRAM                       |                                                  | - Manual. [Suggest use of @schneeweiss_2019]                                                                                                     |
-|                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                      |
+|                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                  |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | A. Meta-data about data source and software    | - Data Source(s)                                 | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                         |
 |                                                |                                                  |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                      |
+| {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                  |
 |                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
 |                                                | - Data Extraction Date/Version                   | - Link to various                                                                                                                                |
 |                                                | - Data sampling/extraction criteria              |   [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23)     |

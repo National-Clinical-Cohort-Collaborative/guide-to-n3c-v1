@@ -445,7 +445,7 @@ Provide the core details for readers that define key elements of the study metho
 Even in methodological studies, there is a universe of populations and contexts for which the methods apply (or not).
 In descriptive studies, the focus is on a population and its attributes.
 
-In associational, causal, and intervention studies, the following attributes are important [cite]:
+In associational, causal, and intervention studies, the following attributes are important [@morgan_2018]:
 
 1. **P**opulation (cohort and control),
 1. **E**xposure/Intervention (if any),
@@ -835,7 +835,7 @@ _The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/
 
 For associational/causal research questions, to address hypotheses and confounding,
 the FDA recommends a set of analyses that go beyond the typical regression types,
-yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [cite]:
+yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [@usfda_2023]:
 
 +------------------------------------------------------------+------------------------------------------------------------+
 | Active Comparator                                     <br> | Instrumental Variable                                 <br> |
@@ -855,7 +855,7 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 | Immortal Time                                              | Trimming                                                   |
 +------------------------------------------------------------+------------------------------------------------------------+
 
-: Recommended Data Analysis Methods. {#tbl-practices-methods}
+: Recommended Data Analysis Methods -- see the conference presented by the @usfda_2019. {#tbl-practices-methods}
 
 Many epidemiologically-minded analysts use the term "confounder" when only "covariate" is meant,
 a variable that is associated with the outcome.

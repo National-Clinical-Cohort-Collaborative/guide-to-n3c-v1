@@ -234,7 +234,7 @@ In order to protect the privacy of these individuals, all zip codes that represe
 This announcement can be found in the [N3C Training Area](https://unite.nih.gov/workspace/notepad/view-read-only/ri.notepad.main.notepad.8cef6f46-aac3-48ca-ae16-5b0acb5b597e) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 
 Furthermore, data is scanned to remove any "Never Events" codes that may be left in the submitted data.
-The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors --such as wrong-site surgery --that should never occur.
+The term "Never Events" was first introduced in 2001 by Ken Kizer, MD, former CEO of the National Quality Forum (NQF), in reference to particularly shocking medical errors -- such as wrong-site surgery -- that should never occur.
 AHRQ codes are "Never Events" that are used by AHRQ to identify specific healthcare treatments, procedures, and diagnoses in data sets.
 "Never Events" consists of 29 "serious reportable events" grouped into the following seven categories:
 

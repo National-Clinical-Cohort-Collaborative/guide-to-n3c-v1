@@ -56,7 +56,7 @@ Because we are working in a secure NCATS Enclave environment, we cannot rely on 
 We next present the notion and management of concept sets.
 These are concept ids that are taken as synonymous, for a given research purpose, and have their own set of tools.
 
-We turn next to constructs --derived variables and facts --derived from concept sets and the raw data, including N3C OMOP additions that build on the OMOP data.
+We turn next to constructs -- derived variables and facts -- derived from concept sets and the raw data, including N3C OMOP additions that build on the OMOP data.
 
 We round out this discussion with an introduction to external datasets that have been brought into the Enclave and the process to bring further datasets in.
 
@@ -296,7 +296,7 @@ The browse screen allows you to filter to concept sets relevant to you.
 Once you have identified a concept set that you might use, drilling into it provides data about that concept set: versions, metadata, concept expressions, concepts.
 In reviewing the concept set (generally by drilling to the most recent version), it may be worth exploring similar concept sets using the concept set Overlap tab.
 At this point, you may be satisfied that an existing concept set serves your needs.
-If not, you can create a new one --either an entirely new concept set, or a new version of an existing concept set, modifying it to meet your requirements.
+If not, you can create a new one -- either an entirely new concept set, or a new version of an existing concept set, modifying it to meet your requirements.
 If you are creating a new version within an existing container, please contact the concept set owner to ensure that your update is in the right spirit.
 If not, clone the existing version into a new container, naming the container with a name that connotes the difference between the existing and the new concept sets.
 

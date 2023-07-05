@@ -140,7 +140,7 @@ Then click the following boxes.
 ## Enclave Registration {#sec-onboarding-enclave}
 
 Due to the secure nature of the data that is available in the N3C Data Enclave, [registration](https://labs.cd2h.org/registration/) is required.
-Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --see [Data Use Agreements](#sec-onboarding-dua) below for details.
+Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS -- see [Data Use Agreements](#sec-onboarding-dua) below for details.
 @fig-onboarding-030-login shows the four options to login and create an Enclave account: InCommon, Login.gov, NIH login, or HHS login. ^[This chapter focuses on InCommon and Login.gov.  If you are an NIH or HHS employee, talk to your supervisor about using your NIH/HHS login.]
 
 ![Login options for registration.
@@ -354,7 +354,7 @@ Community Notes are tips and short notes authored by N3C researchers.
 You can learn from others and also create your own notes in this section.
 Finally you can request to export figures or summary data from the Enclave for publication via the [Download Request Process](publishing.md#sec-publishing-tech-process).
 
-You can see the status of your DUR in _My Projects (DURs)_ in Administrative Resources --@sec-access details this dashboard and other DUR-related tools.
+You can see the status of your DUR in _My Projects (DURs)_ in Administrative Resources -- @sec-access details this dashboard and other DUR-related tools.
 The features under the Administrative Resources include: Data Use Requests, My Projects, Explore Projects (DUR), Domain Teams, COVID Publications, N3C Administrative FAQ, Public Health Proposals, and File Admin ticket.
 Data Use Request is where you can submit a DUR as the lead for a new project.
 My Projects is where you can view and manage your data use requests.

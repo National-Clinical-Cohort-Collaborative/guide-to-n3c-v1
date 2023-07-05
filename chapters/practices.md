@@ -855,7 +855,7 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 | Immortal Time                                              | Trimming                                                   |
 +------------------------------------------------------------+------------------------------------------------------------+
 
-: Recommended Data Analysis Methods -- see @usfda_2019. {#tbl-practices-methods}
+: Recommended Data Analysis Methods -- see the conference presented by the @usfda_2019. {#tbl-practices-methods}
 
 Many epidemiologically-minded analysts use the term "confounder" when only "covariate" is meant,
 a variable that is associated with the outcome.

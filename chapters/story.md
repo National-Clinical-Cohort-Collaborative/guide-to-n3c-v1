@@ -283,7 +283,7 @@ The first discussion is usually a variation of the following exchange, with the 
   See you in two weeks.
   Wait.
   I can't believe I forgot.
-  Sorry --our Navigator is sick this week and I'm almost worthless in her absence.
+  Sorry -- our Navigator is sick this week and I'm almost worthless in her absence.
   Is everyone still on the call?  For our secondary hypothesis, we want everything to connect to a patient's diagnoses.  ...before, during, and after their covid hospitalization.
 * **LL**:
   Bad news.
@@ -390,7 +390,7 @@ you turn to OMOP and N3C tools to define the variables.
 
 The Observational Health Data Sciences and Informatics ([OHDSI](https://www.ohdsi.org/)) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
 OMOP was funded by the US Food and Drug Administration in 2008, primarily for adverse drug events surveillance, but it has expanded to become the de-facto global research CDM.
-Detecting a small signal requires a large dataset --larger than any single healthcare database [@ohdsi_2019, Chapter 1].
+Detecting a small signal requires a large dataset -- larger than any single healthcare database [@ohdsi_2019, Chapter 1].
 Given its ubiquity and active research community, OMOP is well-suited for N3C.
 OMOP has extensive tooling to support researchers,
 including two tools that directly support the curation of concept sets from the OHDSI program and one tool that is specific to N3C:
@@ -577,8 +577,6 @@ Which produces the following @tbl-story-demographics.
 | Medication B                               | 1,661<br>(8%)       | 173<br>(8%)         |
 
 : Characteristics of Patients with and without Scurvy {#tbl-story-demographics}
-
-<!--,<br>January 2020 - December 2022-->
 
 After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
 

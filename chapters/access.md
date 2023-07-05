@@ -509,7 +509,7 @@ to request to join projects that allow for it as collaborators.
 
 First, let's explore the dashboard.
 The initial list of projects shown is "Projects to join"
---these have been configured by the project lead to allow any N3C researcher
+-- these have been configured by the project lead to allow any N3C researcher
 to request access to the project for collaboration.
 Below this list are two expandable sections,
 "Projects to Explore" listing projects that do not allow requests to join,
@@ -564,7 +564,7 @@ shows the status of your Data Use Requests and allows leads to configure some pa
 Along the left are the various projects you've requested access to,
 either as a lead who's submitted a new project DUR, or as a collaborator who's requested to join a project.
 Notice along the bottom the "Invitations to Submit a Project Collaborator DUR"
---this section may be expanded, and if any leads have added you to their DUR as invited collaborators,
+-- this section may be expanded, and if any leads have added you to their DUR as invited collaborators,
 you will see a link to fill out a collaborator DUR here.
 (This is the same process as requesting to join a project as described above.)
 A quick link to the [Download Requests Dashboard](access.md#sec-access-dashboards)

@@ -578,7 +578,7 @@ Which produces the following @tbl-story-demographics.
 
 : Characteristics of Patients with and without Scurvy {#tbl-story-demographics}
 
-<!--,<br>January 2020 - December 2022-->
+<!--,<br>January 2020 - December 2022 -->
 
 After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
 

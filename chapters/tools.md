@@ -218,7 +218,7 @@ Further explanation as to why these Knowledge Store objects are highly applicabl
 ## Enclave Applications {#sec-tools-apps}
 
 This section will cover the usage of various applications made available in the N3C Data Enclave, including Protocol Pad, Contour, Code Workbooks, and more ([a complete list of Foundry applications can be found here](https://www.palantir.com/docs/foundry/getting-started/application-reference/)).
-Before designing and running an analysis utilizing data in the Enclave, it helps to understand the concepts of a "[data pipeline](https://www.palantir.com/docs/foundry/data-integration/data-pipeline/)" and a "[data transform](https://www.palantir.com/docs/foundry/pipeline-builder/core-concepts/)" as well as how the data are stored and accessed via Apache Spark on a distributed file system.  <!--For those unfamiliar with these concepts a high-level overview, along with links to documentation on code optimization in the Enclave, can be found in Section [QQQ] of Chapter [QQQ].-->
+Before designing and running an analysis utilizing data in the Enclave, it helps to understand the concepts of a "[data pipeline](https://www.palantir.com/docs/foundry/data-integration/data-pipeline/)" and a "[data transform](https://www.palantir.com/docs/foundry/pipeline-builder/core-concepts/)" as well as how the data are stored and accessed via Apache Spark on a distributed file system.  <!--For those unfamiliar with these concepts a high-level overview, along with links to documentation on code optimization in the Enclave, can be found in Section [QQQ] of Chapter [QQQ]. -->
 
 ### N3C Protocol Pad {#sec-tools-apps-protocol}
 
@@ -238,7 +238,7 @@ As a result of this organization and tracking, the tool facilitates easy transla
 Protocol Pad is the foundation for performing reproducible and repeatable science within the Enclave.
 The templates, checklists, and links to key resources provided within the tool guide you along the path of a well-structured division of labor and use of best practices when performing research using the observational data in the Enclave.
 The tool also assists your team in keeping the work in alignment with the project.
-A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices).-->
+A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!--can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices). -->
 Documentation on the tool's functionality can be found in the
 [QuickStart Users' Guide to Protocol Pad](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26) {{< fa lock title="Link requires an Enclave account" >}}
 as well as the

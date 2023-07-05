@@ -86,7 +86,7 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
   * De-identified Data Set
 
 * _Data Description_:
-  Patient data from the LDS with the following changes —
+  Patient data from the LDS with the following changes
   * Dates of service are algorithmically shifted to protect patient privacy.
   * Patient ZIP codes are truncated to the first three digits or removed entirely if the ZIP code represents fewer than 20,000 individuals.
 

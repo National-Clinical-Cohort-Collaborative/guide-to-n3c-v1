@@ -401,7 +401,7 @@ This is an early step in promoting replicable and clinically valuable work.
 
 Stoudt and colleagues [-@stoudt_2021] identify 3 phases of a data-only research protocol: Explore, Refine, and Produce. N3C provides many tools to support a protocol.
 By linking the resulting artifacts together, we aim to develop a self-documenting, computable protocol.
-We list here the basic steps in articulating—and specifying attributes of—a protocol, as part of the "Explore"  step.
+We list here the basic steps in articulating--and specifying attributes of--a protocol, as part of the "Explore"  step.
 (Note that the term "protocol" is used here in a more general way than in biology, for instance.)
 This step is focused on the initial "natural language" view of the protocol; the code-based view comes in the next section.
 While the checklists seek text descriptions, we recommend _linking the text as soon as possible to objects and datasets used in the Enclave_,
@@ -733,7 +733,7 @@ for example, variability among practitioners in follow-up practices or disease s
 If patients with the disease die, their data are missing.
 Imputation does not substitute for checking on mortality.
 While missingness patterns are difficult to verify with observational data alone,
-data _across_ sites—as we have in the Enclave—helps in assessing whether data are missing at random or not.
+data _across_ sites --as we have in the Enclave-- helps in assessing whether data are missing at random or not.
 
 ![Possible sources of missing data.  Legend for icons is at the top of the figure (What...Mechanism...How Documented).](images/practices/fig-practices-050-missing-data.gif){#fig-practices-050-missing-data fig-alt="Possible sources of missing data"}
 
@@ -782,7 +782,7 @@ While machine learners can manipulate a training set, protocols covered by this 
 
 Instead, beyond the "cleaning of data", analysts must be concerned with selection bias and collider bias [@griffith_2022; @weiskopf_2023]. The latter is a causal-modeling concern that results from "selecting" patients whose records we have (as opposed to those whose information did not make it into our records).
 
-![Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital—i.e., having data in the EHR—induces bias (magenta arrows) in the relationship between COVID and its sequela.](images/practices/fig-practices-060-collider-bias.png){#fig-practices-060-collider-bias fig-alt="Collider bias in N3C"}
+![Collider bias in N3C. (a) Assumes that each node is observed; no biases are induced. (b) "Conditioning" on coming to the hospital --i.e., having data in the EHR-- induces bias (magenta arrows) in the relationship between COVID and its sequela.](images/practices/fig-practices-060-collider-bias.png){#fig-practices-060-collider-bias fig-alt="Collider bias in N3C"}
 
 @fig-practices-060-collider-bias shows the potential for bias, just from limiting ourselves to (conditioning on) data in the EHR.
 The situation could be aggravated by social determinants of health (SDoH) factors that confound the relationship between COVID and its sequela, influencing whether the patient comes to the hospital at all.

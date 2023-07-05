@@ -835,7 +835,7 @@ _The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/
 
 For associational/causal research questions, to address hypotheses and confounding,
 the FDA recommends a set of analyses that go beyond the typical regression types,
-yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [@fda_2023]:
+yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [@usfda_2023]:
 
 +------------------------------------------------------------+------------------------------------------------------------+
 | Active Comparator                                     <br> | Instrumental Variable                                 <br> |
@@ -855,7 +855,7 @@ yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) att
 | Immortal Time                                              | Trimming                                                   |
 +------------------------------------------------------------+------------------------------------------------------------+
 
-: Recommended Data Analysis Methods -- see @fda_2019. {#tbl-practices-methods}
+: Recommended Data Analysis Methods -- see @usfda_2019. {#tbl-practices-methods}
 
 Many epidemiologically-minded analysts use the term "confounder" when only "covariate" is meant,
 a variable that is associated with the outcome.

@@ -834,8 +834,7 @@ Study designs: See Franklin and colleagues for suggestions [-@franklin_2021].
 _The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
 
 For associational/causal research questions, to address hypotheses and confounding,
-the FDA recommends a set of analyses that go beyond the typical regression types,
-yet is framed targeting a specific estimand that makes all five (ICH-E9[R1]) attributes [@usfda_2023]:
+the FDA recommends a set of analyses that go beyond the typical regression types.[@usfda_2023]:
 
 +------------------------------------------------------------+------------------------------------------------------------+
 | Active Comparator                                     <br> | Instrumental Variable                                 <br> |

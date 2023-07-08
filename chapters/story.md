@@ -346,7 +346,6 @@ Developing a research protocol is both familiar and vague in the context of EHR 
 even when researchers have several years of graduate-level courses and real-world experience.
 Tradeoffs are inevitable when selecting variables,
 and an investigator's first choice is not always available.
-
 :::
 
 Realistically an investigation can use only a fraction of the terabytes of information in an EHR.
@@ -385,7 +384,6 @@ and @sec-practices describes the best practices.
 
 After you have created a research protocol,
 you turn to OMOP and N3C tools to define the variables.
-
 :::
 
 The Observational Health Data Sciences and Informatics ([OHDSI](https://www.ohdsi.org/)) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).

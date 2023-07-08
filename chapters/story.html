@@ -938,26 +938,20 @@ Voice of Narrator
 </div>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>descriptive_statistics <span class="ot">&lt;-</span> <span class="cf">function</span>(analytic_dataset) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(gtsummary)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(dplyr)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  patient_characteristics <span class="ot">&lt;-</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    analytic_dataset <span class="sc">%&gt;%</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      Scurvy_Indicator_Before_COVID,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      Age,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      Race_Ethnicity,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      Medication_A,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      Medication_B,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    gtsummary<span class="sc">::</span><span class="fu">tbl_summary</span>(</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> Scurvy_Indicator_Before_COVID</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  table1 <span class="ot">&lt;-</span> patient_characteristics <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(table1, <span class="at">col_labels =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(table1)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">requireNamespace</span>(<span class="st">"gtsummary"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   analytic_dataset <span class="sc">|&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      scurvy_indicator_before_covid,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      gender,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      medication_a,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      medication_b,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    gtsummary<span class="sc">::</span><span class="fu">tbl_summary</span>(</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> scurvy_indicator_before_covid</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    tibble<span class="sc">::</span><span class="fu">as_tibble</span>(<span class="at">col_labels =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Which produces the following <a href="#tbl-story-demographics">Table&nbsp;<span>2.2</span></a>.</p>
 <div id="tbl-story-demographics" class="anchored">
 <table class="table">
@@ -1023,7 +1017,7 @@ Voice of Narrator
 </tbody>
 </table>
 </div>
-<p>After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the <a href="../chapters/publishing.html">N3C Download Review Committee</a></p>
+<p>After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the <a href="../chapters/publishing.html#sec-publishing-tech-process">N3C Download Review Committee</a>.</p>
 <ul>
 <li><strong>Statistician</strong>: Good afternoon! I just received notification from N3C that my download review request was approved. What happens now?</li>
 <li><strong>Navigator</strong>: That’s great! Now that it’s been approved, you can go into the Download Review Dashboard and there’s an area where you can safely download the results. The review comes with a <a href="../chapters/publishing.html#sec-publishing-tech-process-download">DRR ID</a>, which is required to download the associated results.</li>
@@ -1533,7 +1527,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});</script>
 
 
 

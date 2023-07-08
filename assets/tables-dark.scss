@@ -3,6 +3,6 @@
 table {
   border: 1px solid purple;
 }
-tr:nth-child(even){
+thead, tr:nth-child(even){
   background-color: #4b4b4b
 }

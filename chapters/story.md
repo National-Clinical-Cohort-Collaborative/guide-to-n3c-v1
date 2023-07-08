@@ -193,12 +193,12 @@ N3C teams have some differences from conventional research teams at single sites
 Some trends we have noticed are:
 
 1. Most N3C teams have researchers from multiple institutions.
-  In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism.
-  Researchers from a single institution/lab are sometimes more reluctant to generate contrary views.
+   In the experience of the authors and editors, this encourages more diverse opinions and more willingness to express constructive criticism.
+   Researchers from a single institution/lab are sometimes more reluctant to generate contrary views.
 
 1. The role of the navigator is often the most important member of a successful team.
-  Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls.
-  N3C is bigger and younger than your site's EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
+   Your local investigations are likely guided by someone with years of experience with institutional safeguards and the personnel who can help when something stalls.
+   N3C is bigger and younger than your site's EHR research team, so an N3C project will benefit when guided by a bright, patient, and persistent navigator.
 
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.^[See @sec-support-liaisons.]
@@ -346,7 +346,6 @@ Developing a research protocol is both familiar and vague in the context of EHR 
 even when researchers have several years of graduate-level courses and real-world experience.
 Tradeoffs are inevitable when selecting variables,
 and an investigator's first choice is not always available.
-
 :::
 
 Realistically an investigation can use only a fraction of the terabytes of information in an EHR.
@@ -385,7 +384,6 @@ and @sec-practices describes the best practices.
 
 After you have created a research protocol,
 you turn to OMOP and N3C tools to define the variables.
-
 :::
 
 The Observational Health Data Sciences and Informatics ([OHDSI](https://www.ohdsi.org/)) program maintains the Observational Medical Outcomes Partnership (OMOP) common data model (CDM).
@@ -396,7 +394,7 @@ OMOP has extensive tooling to support researchers,
 including two tools that directly support the curation of concept sets from the OHDSI program and one tool that is specific to N3C:
 
 1. [Atlas](https://github.com/OHDSI/Atlas/wiki) provides a user-friendly interface for querying and analyzing data in the OMOP CDM.
-  In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.
+   In the context of N3C, it supports browsing medical terminology and supports the development of concept sets.
 
 1. [Athena](https://athena.ohdsi.org/) is a centralized repository of standardized clinical vocabularies.
 
@@ -409,10 +407,19 @@ They point to standardized vocabularies and clinically organized domains in the 
 
 In general, the overall process involved in developing concepts is as follows:
 
-1. _Define the research question_: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.
-1. _Explore the data_: Using Atlas or the N3C Concept Set Browser, the team member filling as the data liaison will explore the data available or existing concept sets to identify relevant clinical concepts.
-1. _Refine the concept set_: The data liaison works with the SME to refine the concept set, which is usually an iterative process, to include clinically relevant and exclude clinically irrelevant concepts.
-1. _Validate the concept set_: Once the concept set has been defined, the SME and logic liaison validate the concept set and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.
+1. _Define the research question_:
+   The first step is for the research team to clearly define the research question and population of interest,
+   which will guide the selection of relevant clinical concepts.
+1. _Explore the data_:
+   Using Atlas or the N3C Concept Set Browser,
+   the team member filling as the data liaison will explore the data available
+   or existing concept sets to identify relevant clinical concepts.
+1. _Refine the concept set_:
+   The data liaison works with the SME to refine the concept set, which is usually an iterative process,
+   to include clinically relevant and exclude clinically irrelevant concepts.
+1. _Validate the concept set_:
+   Once the concept set has been defined, the SME and logic liaison validate the concept set
+   and publish it in the N3C Concept Set Browser, which allows for reuse across the N3C community.
 
 :::{.callout-note icon=false}
 
@@ -540,25 +547,19 @@ Within a code workbook, they develop the following code to produce a table added
 
 ```r
 descriptive_statistics <- function(analytic_dataset) {
-  library(gtsummary)
-  library(dplyr)
+  requireNamespace("gtsummary")
 
-  patient_characteristics <-
-    analytic_dataset %>%
+   analytic_dataset |>
     dplyr::select(
-      Scurvy_Indicator_Before_COVID,
-      Age,
-      Race_Ethnicity,
-      Medication_A,
-      Medication_B,
-    ) %>%
+      scurvy_indicator_before_covid,
+      gender,
+      medication_a,
+      medication_b,
+    ) |>
     gtsummary::tbl_summary(
-      by = Scurvy_Indicator_Before_COVID
-    )
-
-  table1 <- patient_characteristics <- as_tibble(table1, col_labels = FALSE)
-
-  return(table1)
+      by = scurvy_indicator_before_covid
+    ) |>
+    tibble::as_tibble(col_labels = FALSE)
 }
 ```
 
@@ -578,7 +579,7 @@ Which produces the following @tbl-story-demographics.
 
 : Characteristics of Patients with and without Scurvy {#tbl-story-demographics}
 
-After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md)
+After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the [N3C Download Review Committee](publishing.md#sec-publishing-tech-process).
 
 * **Statistician**:
   Good afternoon! I just received notification from N3C that my download review request was approved.

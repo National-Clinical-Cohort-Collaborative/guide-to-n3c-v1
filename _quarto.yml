@@ -11,12 +11,12 @@ google-scholar: true
 format:
   html:
     theme:
-      light: [zephyr, ../assets/light-theme.scss, ../assets/tables-light.scss]
-      dark:  [slate , ../assets/dark-theme.scss , ../assets/tables-dark.scss]
+      light: [assets/light-theme.scss, assets/tables-light.scss, zephyr]
+      dark:  [assets/dark-theme.scss , assets/tables-dark.scss , slate ]
     # css: assets/citation.css
     css:
     - assets/font-awesome.css
-    - ../assets/tables.css
+    - assets/tables.css
     link-external-newwindow: true
     template-partials:
       - title-block.html

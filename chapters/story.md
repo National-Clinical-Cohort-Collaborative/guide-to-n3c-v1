@@ -540,25 +540,19 @@ Within a code workbook, they develop the following code to produce a table added
 
 ```r
 descriptive_statistics <- function(analytic_dataset) {
-  library(gtsummary)
-  library(dplyr)
+  requireNamespace("gtsummary")
 
-  patient_characteristics <-
-    analytic_dataset %>%
+   analytic_dataset |>
     dplyr::select(
-      Scurvy_Indicator_Before_COVID,
-      Age,
-      Race_Ethnicity,
-      Medication_A,
-      Medication_B,
-    ) %>%
+      scurvy_indicator_before_covid,
+      gender,
+      medication_a,
+      medication_b,
+    ) |>
     gtsummary::tbl_summary(
-      by = Scurvy_Indicator_Before_COVID
-    )
-
-  table1 <- patient_characteristics <- as_tibble(table1, col_labels = FALSE)
-
-  return(table1)
+      by = scurvy_indicator_before_covid
+    ) |>
+    tibble::as_tibble(col_labels = FALSE)
 }
 ```
 

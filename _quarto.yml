@@ -11,8 +11,8 @@ google-scholar: true
 format:
   html:
     theme:
-      light: [assets/light-theme.scss, assets/tables-light.scss, zephyr]
-      dark:  [assets/dark-theme.scss , assets/tables-dark.scss , slate ]
+      light: [assets/theme-light.scss, assets/tables-light.scss, zephyr]
+      dark:  [assets/theme-dark.scss , assets/tables-dark.scss , slate ]
     # css: assets/citation.css
     css:
     - assets/font-awesome.css

@@ -4,7 +4,7 @@ csl: ../assets/csl/apa-7e.csl
 
 # Funding and Institutional Support {#sec-funding}
 
-[A. Jerrod Anzalone](https://orcid.org/0000-0000-0000-0000):
+[A. Jerrod Anzalone](https://orcid.org/0000-0002-3212-7845):
 University of Nebraska Medical Center, Department of Neurological Sciences.
 <br/>
 Great Plains IDeA-CTR,
@@ -23,7 +23,7 @@ Brown University, Brown Center for Biomedical Informatics, RI Advance-CTR Biomed
 <br>
 NIH/NIGMS 5 U54 GM115677.
 
-[Lisa C. Eskenazi](https://orcid.org/0000-0000-0000-0000):
+[Lisa C. Eskenazi](https://orcid.org/0000-0001-8693-7838):
 Johns Hopkins University, School of Medicine, Biomedical Informatics & Data Science.
 <br>
 NCATS-P00438-B.
@@ -38,7 +38,7 @@ Johns Hopkins University, School of Medicine, Biomedical Informatics & Data Scie
 <br>
 NCATS-P00438-B.
 
-[Bryan J Laraway](https://orcid.org/0000-0002-0450-7074):
+[Bryan J. Laraway](https://orcid.org/0000-0002-0450-7074):
 University of Colorado, Department of Biomedical Informatics, Translational and Integrative Biology Lab.
 <br>
 NCATS U24 TR002306.
@@ -48,12 +48,12 @@ Johns Hopkins University, School of Medicine, Biomedical Informatics & Data Scie
 <br>
 NCATS-P00438-B.
 
-[Mary H. Mays](https://orcid.org/0000-0000-0000-0000):
+[Mary H. Mays](https://orcid.org/0000-0001-6624-2238):
 University of Puerto Rico Medical Sciences Campus, Hispanic Alliance for Clinical and Translational Research.
 <br>
 NIH/NIGMS 5 U54 GM133807.
 
-[Julie A McMurry](https://orcid.org/0000-0002-9353-5498):
+[Julie A. McMurry](https://orcid.org/0000-0002-9353-5498):
 University of Colorado, Anschutz Medical Campus.
 <br>
 NCATS U24 TR002306, Axel Informatics Subcontract NCATS-P00438-B

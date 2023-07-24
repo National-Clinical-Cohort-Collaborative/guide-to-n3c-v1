@@ -1041,6 +1041,9 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
   A novel approach to observational data is the LEGEND [@schuemie_2020]
   approach and the calibration of _p_ values [@schuemie_2018].
 
+<!--@hlehmann17, we're temporarily commenting this section.  The markdown coe is still there.  When it's ready, we'll uncomment it and it will be rendered.-->
+
+<!--
 ## Summary of Tools Available
 
 :::{.callout-note}
@@ -1087,3 +1090,5 @@ These are findable typically via [Knowledge Store](https://unite.nih.gov/workspa
 1. Suite of missing data software tools
 
 1. Create causal Directed Acyclic Graphs with <http://dagitty.net>.
+
+-->

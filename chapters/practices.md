@@ -199,29 +199,30 @@ Briefly, they are (a) Protocol Design, (b) Development, and (c) Completion:
 
 ### Protocol Outline {#sec-practices-protocols-outline}
 
-Protocol Design ❶
+_Protocol Design_ [❶](practices.md#sec-practices-design6)
 
-1. Articulate administrative information
-1. Articulate research question
-1. Specify protocol
-1. Describe Patient, Exposure/Intervention, Comparator, Outcome, Time (PECOT) elements in text
+1. [Articulate administrative information](practices.md#sec-practices-design-admin)
+1. [Articulate research question](practices.md#sec-practices-design-question)
+1. [Specify protocol](practices.md#sec-practices-design-protocol)
+1. [Describe Patient, Exposure/Intervention, Comparator, Outcome, Time (PECOT) elements in text](practices.md#sec-practices-design-pecot)
 
-Protocol Development ❷
+_Protocol Development_ [❷](practices.md#sec-practices-development)
 
-1. Define PECOT elements as objects and data sets
-1. Assess data quality
-1. Articulate missing data plan
-1. Perform initial analysis
-1. Incorporate fairness and debiasing
-1. Iterate
-1. Commit to final run
-1. Perform sensitivity analysis
+1. [Manage the protocol development process](practices.md#sec-practices-development-manage)
+1. [Define PECOT elements as objects and data sets](practices.md#sec-practices-development-pecot)
+1. [Assess data quality](practices.md#sec-practices-development-dq)
+1. [Articulate missing data plan](practices.md#sec-practices-development-articulate)
+1. [Perform initial analysis](practices.md#sec-practices-development-analysis)
+1. [Incorporate fairness and debiasing](practices.md#sec-practices-development-debias)
+1. [Iterate](practices.md#sec-practices-development-iterate)
+1. [Commit to final run](practices.md#sec-practices-development-commit)
+1. [Perform sensitivity analysis](practices.md#sec-practices-development-sensitivity)
 
-Protocol Completion ❸
+_Protocol Completion_ [❸](practices.md#sec-practices-completion)
 
-1. Gather results; Publish
-1. Fill out methodology checklist
-1. Review evidence quality
+1. [Gather results; Publish](practices.md#sec-practices-completion-publish)
+1. [Fill out methodology checklist](practices.md#sec-practices-completion-checklist)
+1. [Review evidence quality](practices.md#sec-practices-completion-evidence)
 
 ![Home page for a researcher's protocols ([Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 The Protocol Design, Development, and Completion sections are accessible on the left.
@@ -248,7 +249,7 @@ At the very least, if substantive design modifications are to be implemented in 
 
 ### Articulate Administrative Information {#sec-practices-design-admin}
 
-**Objective**
+#### Objective {#sec-practices-design-admin-objective}
 
 Gathering administrative information, such as DUR number, team members, and research question ensures
 that all the necessary elements are established to successfully execute a publishable research project with a clear objective.

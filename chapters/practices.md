@@ -59,14 +59,6 @@ toc-depth: 4
 
 **Chapter Leads:** Ken Wilkins, Harold Lehmann
 
-:::{.callout-note}
-This chapter is undergoing final edits, including formatting and cross-referencing.
-Edits are expected to complete by June 2023.
-
-This chapter was drafted in Google Docs at
-<https://docs.google.com/document/d/1ttUKgwVcIZHM87elrlUNV6Qi9thzOwKBg8GegKObEtg/>
-:::
-
 ## Overview {#sec-practices-overview}
 
 While analyses within N3C fall under the general category of "Real World Data Analysis" (RWD analysis),
@@ -215,7 +207,7 @@ we write:
 > This process of research is also called by Stoudt and colleagues, the "data analysis workflow" [-@stoudt_2021].
 
 N3C has developed a tool to facilitate the development of protocols known as the
-[Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.:
+[Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 In the following sections we walk through recommended components of a protocol.
 Briefly, they are (a) Protocol Design, (b) Development, and (c) Completion:
 
@@ -1130,6 +1122,14 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
    Applies to multiple-hypothesis analysis.
    A novel approach to observational data is the LEGEND [@schuemie_2020]
    approach and the calibration of _p_ values [@schuemie_2018].
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was first published July 2023.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's initial page.
+:::
 
 <!-- @hlehmann17, we're temporarily commenting this section.  The markdown coe is still there.  When it's ready, we'll uncomment it and it will be rendered. -->
 

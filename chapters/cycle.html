@@ -339,12 +339,6 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Help and Support</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/ml.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Machine Learning</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -359,13 +353,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/funding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Funding and Institutional Support</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funding and Institutional Support</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -521,7 +515,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The N3C’s central data repository also supports the N3C’s data integrity, security, accessibility, and governance objectives. The contributing sites submit data in one of four CDM formats through SSH File Transfer Protocol (sFTP) to the secure cloud platform in a compressed data file zip format. The zip file structure must conform to a predefined payload structure for efficient processing. The zip file is then transferred to the Enclave. All access to the sFTP site is audited and monitored. It is Federal Risk and Authorization Management Program (FedRAMP) compliant. As data is transferred into the Enclave for processing, the governance team receives secure messages regarding this process for audit purposes. Once the data is transferred to the Enclave the automated pipeline is triggered to process the data through the data ingestion and harmonization pipeline.</p>
 <div id="fig-cycle-010-pipeline" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-010-pipeline.png" class="lightbox" title="N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM." data-gallery="quarto-lightbox-gallery-1"><img src="images/cycle/fig-cycle-010-pipeline.png" class="img-fluid figure-img" alt="Data Pipeline"></a></p>
+<p><a href="images/cycle/fig-cycle-010-pipeline.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM."><img src="images/cycle/fig-cycle-010-pipeline.png" class="img-fluid figure-img" alt="Data Pipeline"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.1: N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM.</figcaption>
 </figure>
 </div>
@@ -538,7 +532,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </ol>
 <div id="fig-cycle-015-workflow" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-015-workflow.png" class="lightbox" title="N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages." data-gallery="quarto-lightbox-gallery-2"><img src="images/cycle/fig-cycle-015-workflow.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
+<p><a href="images/cycle/fig-cycle-015-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages."><img src="images/cycle/fig-cycle-015-workflow.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.2: N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.</figcaption>
 </figure>
 </div>
@@ -567,14 +561,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Static crosswalk common data element mappings are based on permissible values for a given column within a CDM table and they are well defined by the CDM specifications. CDE are uniform across different sites and data payloads. These CDE mappings include categories such as race, ethnicity, and gender. CDM-specific CDE values are reviewed and the corresponding list of OMOP concept ids is identified to create a crosswalk mapping table that can be used in the vocabulary transformation step in the pipeline. The curated crosswalk mapping table is available in the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic/reference_tables">N3C GitHub repository</a>.</p>
 <div id="fig-cycle-020-mapping-static" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-020-mapping-static.png" class="lightbox" title="Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications." data-gallery="quarto-lightbox-gallery-3"><img src="images/cycle/fig-cycle-020-mapping-static.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
+<p><a href="images/cycle/fig-cycle-020-mapping-static.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications."><img src="images/cycle/fig-cycle-020-mapping-static.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.3: Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications.</figcaption>
 </figure>
 </div>
 <p>Dynamic crosswalk mapping tables, on the other hand, are created during the transformation process in the pipeline based on the existence of codes that are found in the sites’ submitted payload. These mappings are created for each data payload to maximize the efficiency of the transformation process. For example some sites only submit a handful of distinct COVID-19 lab tests and would only need a short list of entries in the mapping table for the laboratory tests. The code used to generate the crosswalk mapping table is also available in the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic">N3C GitHub repository</a>.</p>
 <div id="fig-cycle-030-mapping-dynamic" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-030-mapping-dynamic.png" class="lightbox" title="Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner." data-gallery="quarto-lightbox-gallery-4"><img src="images/cycle/fig-cycle-030-mapping-dynamic.png" class="img-fluid figure-img" alt="Dynamic N3C Mapping Table"></a></p>
+<p><a href="images/cycle/fig-cycle-030-mapping-dynamic.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner."><img src="images/cycle/fig-cycle-030-mapping-dynamic.png" class="img-fluid figure-img" alt="Dynamic N3C Mapping Table"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.4: Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.</figcaption>
 </figure>
 </div>
@@ -624,7 +618,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>For data with missing units for all the results within a lab test for a particular data partner, N3C compares the values to pooled values from all data partners using the Kolmogorov-Smirnov test.</p>
 <div id="fig-cycle-040-conversion" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-040-conversion.png" class="lightbox" title="Unit conversion example for degree Fahrenheit to degree Celsius." data-gallery="quarto-lightbox-gallery-5"><img src="images/cycle/fig-cycle-040-conversion.png" class="img-fluid figure-img" alt="Unit conversion example for degree Fahrenheit to degree Celsius"></a></p>
+<p><a href="images/cycle/fig-cycle-040-conversion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Unit conversion example for degree Fahrenheit to degree Celsius."><img src="images/cycle/fig-cycle-040-conversion.png" class="img-fluid figure-img" alt="Unit conversion example for degree Fahrenheit to degree Celsius"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.5: Unit conversion example for degree Fahrenheit to degree Celsius.</figcaption>
 </figure>
 </div>
@@ -637,20 +631,20 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <h4 data-number="3.3.2.1" class="anchored" data-anchor-id="sec-cycle-harmonization-dqc-automated"><span class="header-section-number">3.3.2.1</span> Automated Data Health Checks</h4>
 <div id="fig-cycle-050-checks-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-050-checks-1.png" class="lightbox" title="A visual representation of the many ingestion and harmonization steps with data health checks." data-gallery="quarto-lightbox-gallery-6"><img src="images/cycle/fig-cycle-050-checks-1.png" class="img-fluid figure-img" alt="A visual representation of the many ingestion and harmonization steps"></a></p>
+<p><a href="images/cycle/fig-cycle-050-checks-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="A visual representation of the many ingestion and harmonization steps with data health checks."><img src="images/cycle/fig-cycle-050-checks-1.png" class="img-fluid figure-img" alt="A visual representation of the many ingestion and harmonization steps"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.6: A visual representation of the many ingestion and harmonization steps with data health checks.</figcaption>
 </figure>
 </div>
 <p>When the data ingestion pipeline is deployed for a new site, it includes a set of automated data health checks. The DI&amp;H pipeline is run every time a data payload is submitted to N3C, and if the new data doesn’t meet the desired data health expectations, the pipeline automatically logs an issue and the pipeline administrators are immediately notified. The logged issues are triaged by the DI&amp;H team, and if the issue requires communication with the site to correct, a site buddy is assigned to review the issue details for communication with the site to aid in correcting the site data that raised the data expectation failure.</p>
 <div id="fig-cycle-055-checks-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-055-checks-2.png" class="lightbox" title="Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners." data-gallery="quarto-lightbox-gallery-7"><img src="images/cycle/fig-cycle-055-checks-2.png" class="img-fluid figure-img" alt="Data Health Checks 2"></a></p>
+<p><a href="images/cycle/fig-cycle-055-checks-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners."><img src="images/cycle/fig-cycle-055-checks-2.png" class="img-fluid figure-img" alt="Data Health Checks 2"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.7: Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.</figcaption>
 </figure>
 </div>
 <div id="fig-cycle-060-checks-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-060-checks-3.png" class="lightbox" title="Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked." data-gallery="quarto-lightbox-gallery-8"><img src="images/cycle/fig-cycle-060-checks-3.png" class="img-fluid figure-img" alt="Data Health Checks 3"></a></p>
+<p><a href="images/cycle/fig-cycle-060-checks-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked."><img src="images/cycle/fig-cycle-060-checks-3.png" class="img-fluid figure-img" alt="Data Health Checks 3"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.8: Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked.</figcaption>
 </figure>
 </div>
@@ -661,7 +655,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The N3C Data Quality Portal (DQP) is a comprehensive tool and interface developed by the N3C Data Ingestion and Harmonization workstream to review the quality of the transformed data once the data ingestion pipeline is finished but prior to final data release to the N3C research community. The DQP is only accessible to the ingestion and harmonization team. It covers all aspects of data quality across different OMOP domain tables.</p>
 <div id="fig-cycle-070-dqp-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-070-dqp-1.png" class="lightbox" title="Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions." data-gallery="quarto-lightbox-gallery-9"><img src="images/cycle/fig-cycle-070-dqp-1.png" class="img-fluid figure-img" alt="Data Quality Portal"></a></p>
+<p><a href="images/cycle/fig-cycle-070-dqp-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions."><img src="images/cycle/fig-cycle-070-dqp-1.png" class="img-fluid figure-img" alt="Data Quality Portal"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.9: Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions.</figcaption>
 </figure>
 </div>
@@ -670,7 +664,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The DQP is used to determine the coding completeness of the site’s data and its overall fitness for use by the research community and whether further data improvement is required before the data can be released for research. The combination of both automated and continual assessment of manual data quality checks through DQP enables the scale and rigor required for the N3C research community. In addition to the capabilities provided by the DQD, the N3C DQP includes a set of COVID-19-specific data quality checks that focus on the coding of COVID-19 labs, patient encounters, and other data relevant to the SARS-CoV-2 pandemic. These checks help to ensure that the data is accurate, reliable, consistent, and support more comprehensive and informed analysis of the data.</p>
 <div id="fig-cycle-075-dqp-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-075-dqp-2.png" class="lightbox" title="DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners." data-gallery="quarto-lightbox-gallery-10"><img src="images/cycle/fig-cycle-075-dqp-2.png" class="img-fluid figure-img" alt="DQP"></a></p>
+<p><a href="images/cycle/fig-cycle-075-dqp-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners."><img src="images/cycle/fig-cycle-075-dqp-2.png" class="img-fluid figure-img" alt="DQP"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.10: DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners.</figcaption>
 </figure>
 </div>
@@ -682,7 +676,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The DI&amp;H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&amp;H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the Enclave. The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses. Figures and tables were created using Palantir’s Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.</p>
 <div id="fig-cycle-078-scorecard-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-078-scorecard-1.png" class="lightbox" title="Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission." data-gallery="quarto-lightbox-gallery-11"><img src="images/cycle/fig-cycle-078-scorecard-1.png" class="img-fluid figure-img" alt="Site Scorecard 1"></a></p>
+<p><a href="images/cycle/fig-cycle-078-scorecard-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission."><img src="images/cycle/fig-cycle-078-scorecard-1.png" class="img-fluid figure-img" alt="Site Scorecard 1"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.11: Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.</figcaption>
 </figure>
 </div>
@@ -691,7 +685,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Scorecards focus on several data quality areas including demographics, COVID-19 metrics, visits/encounters, measurements/labs, non-plausible dates such as dates in the distant past or future, use of non-standard concepts, and N3C-specific data enhancements such as social determinants of health and oxygen supplementation device data. Sites are also provided with contact information should they have further questions about their scorecard or need help troubleshooting data discrepancies.</p>
 <div id="fig-cycle-079-scorecard-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-079-scorecard-2.png" class="lightbox" title="Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites." data-gallery="quarto-lightbox-gallery-12"><img src="images/cycle/fig-cycle-079-scorecard-2.png" class="img-fluid figure-img" alt="Site Scorecard 2"></a></p>
+<p><a href="images/cycle/fig-cycle-079-scorecard-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites."><img src="images/cycle/fig-cycle-079-scorecard-2.png" class="img-fluid figure-img" alt="Site Scorecard 2"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.12: Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites.</figcaption>
 </figure>
 </div>
@@ -722,7 +716,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>As part of N3C’s efforts to support COVID-19 and long COVID research, N3C requested sites that are able to add new data elements to their common data models (CDMs). These data elements help to create a more comprehensive and rich dataset that can support more in-depth and informative analyses of the SARS-CoV-2 pandemic. By adding these data elements, sites can contribute to the collective knowledge about COVID-19 and help to inform the development of effective treatments, policies, and strategies to address the pandemic. N3C is committed to working closely with participating sites to ensure that the data collection process is efficient and straightforward and that the data is accurately and reliably captured and integrated into the N3C dataset.</p>
 <div id="fig-cycle-080-enhancements" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="images/cycle/fig-cycle-080-enhancements.png" class="lightbox" title="N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research." data-gallery="quarto-lightbox-gallery-13"><img src="images/cycle/fig-cycle-080-enhancements.png" class="img-fluid figure-img" alt="Data Enhancements"></a></p>
+<p><a href="images/cycle/fig-cycle-080-enhancements.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research."><img src="images/cycle/fig-cycle-080-enhancements.png" class="img-fluid figure-img" alt="Data Enhancements"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.13: N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.</figcaption>
 </figure>
 </div>
@@ -1188,7 +1182,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom"});</script>
 
 
 

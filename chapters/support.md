@@ -25,8 +25,9 @@ author:
   - name: Lisa Eskenazi
     affiliation: Johns Hopkins University
     affiliation-url: https://www.jhu.edu/
-    # email: leskena2@jh.edu
-    # orcid:
+    email: leskena2@jh.edu
+    orcid: 0000-0001-8693-7838
+
 
 csl: ../assets/csl/apa-7e.csl
 ---

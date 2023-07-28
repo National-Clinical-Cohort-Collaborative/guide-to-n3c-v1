@@ -81,7 +81,7 @@ and are versioned as releases as described above.
 Level 2 data, also known as De-Identified data, contains nearly the same information as the Level 3 data,
 but the two PHI-containing fields are further anonymized.
 Zip codes available in Level 3 are truncated to just the first 3 digits,
-and all recorded dates are shifted randomly, where the range of the random shift is &plusmn;180 days.
+and all recorded dates are shifted randomly, where the range of the random shift is &plusmn;180 days.^[See @sec-cycle-releases-lds.]
 This is not as dramatic a research limitation as it may seem,
 because the random shift amount is determined _per patient_:
 all dates for a given patient are shifted by the same (unknown, random) amount,

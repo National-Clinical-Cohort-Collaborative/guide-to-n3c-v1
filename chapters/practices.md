@@ -221,7 +221,7 @@ Protocol Completion ❸
 
 1. Gather results; Publish
 1. Fill out methodology checklist
-2. Review evidence quality
+1. Review evidence quality
 
 ![Home page for a researcher's protocols ([Protocol Pad:RWE](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}).
 The Protocol Design, Development, and Completion sections are accessible on the left.
@@ -652,13 +652,13 @@ The elements of this phase that go into the STaRT-RWE checklist are listed in @t
 
 @sec-tools discusses this process in more detail.
 
-### Assess Data Quality  {#sec-practices-development-dq}
+### Assess Data Quality {#sec-practices-development-dq}
 
-#### Objective
+#### Objective {#sec-practices-development-dq-objective}
 
 Address data quality issues through action that mitigate the risk of reaching erroneous conclusions.
 
-#### Data Quality Checks
+#### Data Quality Checks {#sec-practices-development-dq-checks}
 
 A key component of the back-and-forth work is data quality checks.
 While the Data Quality Dashboard helps the Data Ingestion and Harmonization (DI&H) team decide on readiness of site data for release, _data quality checks for a specific analysis is the responsibility of the analyst_.
@@ -705,13 +705,13 @@ Many of the items in this list were borrowed from Sidky et al. [-@sidky_2023] wh
 
 : Data Quality Issues.<br>*For non-COVID-based datasets, beware of how controls are brought into the Enclave. {#tbl-practices-dq tbl-colwidths="[25, 75]"}
 
-### Articulate missing-data plan
+### Articulate missing-data plan {#sec-practices-development-articulate}
 
-#### Objective
+#### Objective {#sec-practices-development-articulate-objective}
 
 Prepare analysis to be generalizable despite missing data that ideally would be available.
 
-#### Approach
+#### Approach {#sec-practices-development-articulate-approach}
 
 There is a large literature on missing data.
 A strength of the centralized data of the Enclave is that one could assess whether missingness of a data item
@@ -741,13 +741,13 @@ data _across_ sites -- as we have in the Enclave -- helps in assessing whether d
 
 ![Possible sources of missing data.  Legend for icons is at the top of the figure (What...Mechanism...How Documented).](images/practices/fig-practices-050-missing-data.gif){#fig-practices-050-missing-data fig-alt="Possible sources of missing data"}
 
-### Perform Initial Analysis
+### Perform Initial Analysis {#sec-practices-development-analysis}
 
-#### Objective
+#### Objective {#sec-practices-development-analysis-objective}
 
 Perform the analysis efficiently, correctly, and reproducibly.
 
-#### Approach
+#### Approach {#sec-practices-development-analysis-approach}
 
 Analysis takes place in a specific _Environment_.
 The first phase is final data _Pre-Processing_,
@@ -756,7 +756,7 @@ The analysis itself must take into account issues that make challenging the gene
 There are _Recommended Methods_ for addressing those many issues.
 We also address the _External Data Sets_ you might use to supplement the EHR and other patient-specific data in the Enclave.
 
-#### Environment
+#### Environment {#sec-practices-development-analysis-environment}
 
 Tuning the analytic environment is crucial to making the analysis as efficient as possible.
 Many analysts come into the Enclave unfamiliar with Apache Spark.
@@ -779,7 +779,7 @@ See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML), points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability, to the special topics appendix chapter [here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).
 
-#### Pre-Processing
+#### Pre-Processing {#sec-practices-development-analysis-preprocessing}
 
 Pre-processing is, essentially, the decision-oriented process described around @fig-practices-022-building-block.
 While machine learners can manipulate a training set, protocols covered by this chapter do not have that right.
@@ -828,7 +828,7 @@ Data imputation should be considered if there is a reason to believe that system
 It is during this final "data cleaning" phase that data quality issues arise that were not surfaced during the data ingestion, harmonization, or general-templating upstream work.
 Analysts are encouraged to report  "an Issue", notifying the N3C team of these issues.
 
-#### Recommended Methods for Data Analysis
+#### Recommended Methods for Data Analysis {#sec-practices-development-analysis-methods}
 
 Study designs: See Franklin and colleagues for suggestions [-@franklin_2021].
 _The Book of OHDSI_ [-@ohdsi_2019] provides a [chapter](https://ohdsi.github.io/TheBookOfOhdsi/MethodValidity.html) introducing methods validity and fitting of method to the research question.
@@ -877,7 +877,7 @@ Unfortunately, to date, distressingly few studies based on EHR data report on mi
 Several N3C studies have used propensity scores (matching or otherwise) to minimize selection bias and treatment-assignment bias in this observational dataset
 [@zhou_2022; @narrett_2023; @anderson_2022].
 
-#### External Data Sets
+#### External Data Sets {#sec-practices-development-analysis-external}
 
 Over 50 external datasets are available for analysis via the Knowledge Store, such as:
 
@@ -898,7 +898,7 @@ The distance between patient zip code and facility zip code is at times used as 
 Analysts re-using code from the Knowledge Store are encouraged to post comments on those Knowledge Store items to alert later analysts to the strengths and challenges of the specific code.
 Analysts are also encouraged to post a [Community Note](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.452c6c44-36d0-49d5-b96f-b8bcefab9d67) {{< fa lock title="Link requires an N3C Data Enclave account" >}} describing their strategy and approach, if that approach cannot be templatized in a Knowledge Store item.
 
-### Incorporate Fairness and Debiasing
+### Incorporate Fairness and Debiasing {#sec-practices-development-debias}
 
 Analysts have become more sensitive to the issues of methodological and social bias and fairness implicitly or explicitly reflected in the data and analyses performed.
 The Health Evidence Knowledge Accelerator (HEvKA) Project, as part of EBMonFHIR,
@@ -912,7 +912,7 @@ A key point is that, as Kleinberg and colleagues showed [-@kleinberg_2016], an a
 
 Methodological biases of specific concern involve time, such as Immortal time bias, (semi-)competing risks, and time-dependent confounding.
 
-### Iterate
+### Iterate {#sec-practices-development-iterate}
 
 As Stoudt points out, developing an observational-study protocol has elements of discovery, meaning, effectively, that the analyst iterates.
 The "earlier" in the protocol one goes, the more likely the entire protocol will change, hence, we try to iterate at one step (e.g., variable definition) before moving on to a next step.
@@ -923,13 +923,13 @@ As such, documenting what the "final analysis" consists of is crucial for believ
 Thus, running the algorithm blinded to the outcome or with a subset of data or with some surrogate for the final analysis is crucial to make sure that,
 in optimizing the analysis, you are not (consciously or not) tailoring the analysis to a pre-desired outcome.
 
-### Commit to Final Run
+### Commit to Final Run {#sec-practices-development-commit}
 
 Once the elements are finalized, there is the "final run", which still requires diagnostics that should be documented, if not reported.
 The team should be clear that, when this run is initialized, variables will not be redesigned or errant data eliminated.
-If a new protocol is suggested by the results of this run, it should be initialized as its own, new protocol
+If a new protocol is suggested by the results of this run, it should be initialized as its own, new protocol.
 
-### Perform Sensitivity Analysis
+### Perform Sensitivity Analysis {#sec-practices-development-sensitivity}
 
 A responsibility of any analyst is the extent to which quantities important to the question at hand may or may not be available or measured among the data at hand.
 Unmeasured confounding is a lurking concern in all clinical research, yet is typically assumed (under the guidance of domain experts)
@@ -962,9 +962,9 @@ Enabling such repeated analyses means automating a long chain of computing steps
 
 : STaRT-RWE sensitivity analysis elements, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-sensitivity tbl-colwidths="[60, 40]"}
 
-## Protocol Completion ❸
+## Protocol Completion ❸ {#sec-practices-completion}
 
-### Gather Results; Publish
+### Gather Results; Publish {#sec-practices-completion-publish}
 
 While @sec-publishing is devoted to the process of publishing, here we would like to address _what_ should be published.
 
@@ -984,7 +984,7 @@ Fourth, consider generating [FHIR-based evidence resources](https://fevir.net/),
 
 As part of reporting on an analysis, be sure to identify the data release (number or date) on which the analysis was done and validated.
 
-### Fill Out Methodology Checklist
+### Fill Out Methodology Checklist {#sec-practices-completion-checklist}
 
 As mentioned earlier, researchers are encouraged to submit a methodology checklist, or reporting guideline, to the publisher.
 Such submission is (1) considered best practice, (2) requested by publishers, and (3) communicates that the author is aware of state-of-the-art practices in publication.
@@ -1004,7 +1004,7 @@ Protocol Pad:RWE attempts to collect the information in the process of doing the
 Note that these are _reporting_ checklists, and not _research_ checklists.
 This entire chapter has been constructed to provide some guidance about performing the research itself.
 
-### Review Evidence quality
+### Review Evidence Quality {#sec-practices-completion-evidence}
 
 The Book of OHDSI has a chapter on [Evidence Quality](https://ohdsi.github.io/TheBookOfOhdsi/EvidenceQuality.html).
 The core of the chapter is the following graphic.
@@ -1041,7 +1041,7 @@ Suggestions for demonstrating these attributes in the Enclave are as follows:
   A novel approach to observational data is the LEGEND [@schuemie_2020]
   approach and the calibration of _p_ values [@schuemie_2018].
 
-<!--@hlehmann17, we're temporarily commenting this section.  The markdown coe is still there.  When it's ready, we'll uncomment it and it will be rendered.-->
+<!-- @hlehmann17, we're temporarily commenting this section.  The markdown coe is still there.  When it's ready, we'll uncomment it and it will be rendered. -->
 
 <!--
 ## Summary of Tools Available

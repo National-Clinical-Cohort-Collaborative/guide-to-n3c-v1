@@ -395,7 +395,7 @@ There are others, and we welcome suggestions to add to either list.  Please cont
 
 ### Specify Protocol {#sec-practices-design-protocol}
 
-#### Objectives {#sec-practices-design-protocol-objectives}
+#### Objective {#sec-practices-design-protocol-objective}
 
 Ensure your work is grounded in an initial "natural language" protocol that resonates with subject matter experts (e.g., clinicians, etc.) and stakeholders.
 
@@ -500,7 +500,7 @@ Examples are differentiating classification from prediction from estimation, and
 
 ### Manage the Protocol Development Process {#sec-practices-development-manage}
 
-#### Objectives {#sec-practices-development-manage-objectives}
+#### Objective {#sec-practices-development-manage-objective}
 
 Support team science during refinement and production of a detailed protocol.
 
@@ -524,7 +524,7 @@ The remainder of this section lays out the elements of a data-only protocol.
 
 ### Define PECOT elements as objects and data sets {#sec-practices-development-pecot}
 
-#### Objectives {#sec-practices-development-pecot-objectives}
+#### Objective {#sec-practices-development-pecot-objective}
 
 Provide computable definitions for core protocol PECOT elements.
 

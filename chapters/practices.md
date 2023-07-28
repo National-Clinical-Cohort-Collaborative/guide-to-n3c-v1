@@ -79,7 +79,10 @@ Researchers trained in traditional data analysis from schools of epidemiology, b
 All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings - and the limits in the scope of such findings' generalizability - and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.
 
 The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource - noting that the resource itself was being actively refined as more was learned from applying methods to its data.
-Early on, the resulting Applicable Data Methods and Standards ([ADMS](https://covid.cd2h.org/data-methods)) group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu), that have since been refined by cross-collaboration with other groups
+Early on, the resulting Applicable Data Methods and Standards
+([ADMS](https://covid.cd2h.org/data-methods), sometimes written as ADM&S)
+group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu),
+that have since been refined by cross-collaboration with other groups.
 
 ### Goals {#sec-practices-overview-goals}
 
@@ -99,7 +102,11 @@ This includes:
 #### Encourage and disseminate best practices, but do not require specific approaches {#sec-practices-overview-encourage}
 
 "Best practice" refers to guidelines, such as those outlined by the FDA [-@usfda_2021; -@usfda_2017] and methodologists [@franklin_2021].
-While a number of groups are available for consulting (Logic Liaisons, ADMS, Machine Learning Domain Team), there is no policing of analyses.
+While a number of groups are available for consulting
+(Logic Liaisons,
+[ADMS](https://covid.cd2h.org/data-methods),
+[Machine Learning Domain Team](https://covid.cd2h.org/machine-learning)),
+there is no policing of analyses.
 ADMS, in particular, is a cross-cutting [Domain Team](onboarding.md#sec-onboarding-dts)
 that provides a forum for discussing analytic issues that are important across N3C.
 Example issues include the difficulty of defining study-specific "control" cohorts when needed.

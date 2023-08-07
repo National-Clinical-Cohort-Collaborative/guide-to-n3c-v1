@@ -12,14 +12,14 @@ format:
   html:
     theme:
       light: [assets/theme-light.scss, assets/tables-light.scss, zephyr]
-      dark:  [assets/theme-dark.scss , assets/tables-dark.scss , slate ]
-    # css: assets/citation.css
+      dark: [assets/theme-dark.scss, assets/tables-dark.scss, slate]
     css:
     - assets/font-awesome.css
     - assets/tables.css
+    # - assets/citation.css
     link-external-newwindow: true
     template-partials:
-      - title-block.html
+    - title-block.html
     filters:
     - lightbox
     lightbox:
@@ -60,16 +60,16 @@ book:
       Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.
 
   editor:
-    - name: William H Beasley
-      affiliation: University of Oklahoma Health Sciences Center
-      affiliation-url: https://ouhsc.edu/bbmc/
-      email: wibeasley@hotmail.com
-      orcid: 0000-0002-5613-5006
-    - name: Shawn O'Neil
-      affiliation: University of Colorado, Anschutz
-      affiliation-url: https://oneilsh.github.io/
-      email: oneilsh@gmail.com
-      orcid: 0000-0001-6220-7080
+  - name: William H Beasley
+    affiliation: University of Oklahoma Health Sciences Center
+    affiliation-url: https://ouhsc.edu/bbmc/
+    email: wibeasley@hotmail.com
+    orcid: 0000-0002-5613-5006
+  - name: Shawn O'Neil
+    affiliation: University of Colorado, Anschutz
+    affiliation-url: https://oneilsh.github.io/
+    email: oneilsh@gmail.com
+    orcid: 0000-0001-6220-7080
 
   chapters:
   - index.qmd

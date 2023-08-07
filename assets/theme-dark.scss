@@ -3,11 +3,16 @@
 // $title-color: #f02; // From https://bootswatch.com/slate/
 $title-color: #b6b7b9; // From https://bootswatch.com/slate/
 
-h1.title.d-none.d-lg-block, h1.title, h1.unnumbered, h2, h3 {
+h1.title.d-none.d-lg-block,
+h1.title,
+h1.unnumbered,
+h2,
+h3 {
   color: #b6b7b9;
 }
 
-.chapter-number, .chapter-title {
+.chapter-number,
+.chapter-title {
   color: #b6b7b9;
   // color: burlywood
 }

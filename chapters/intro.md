@@ -25,7 +25,14 @@ csl: ../assets/csl/apa-7e.csl
 
 The National COVID Cohort Collaborative, or N3C, is an open-science community stewarded by the National Center for Data To Health (CD2H) and the NIH National Center for Advancing Translational Sciences (NCATS), with significant contributions from many partners including the Clinical and Translational Science Awards (CTSA) program, Centers for Translational Research (CTRs), and thousands of researchers from hundreds of participating institutions in the US and abroad.
 
-Faced with the COVID-19 pandemic, the issue addressed by N3C is clear and direct: the US has no centralized data repository for health records and related information, hindering the response of the scientific community.^[These articles provide good overviews of N3C and the surrounding landscape: [It took a pandemic, but the US finally has (some) centralized medical data](https://www.technologyreview.com/2021/06/21/1026590/us-covid-database-n3c-nih-privacy/) (MIT Technology Review), and [The ambitious effort to piece together America's fragmented health data](https://www.theverge.com/2020/10/19/21522863/health-data-records-covid-coronavirus-model-nih-privacy-n3c) (The Verge)]
+Faced with the COVID-19 pandemic, the issue addressed by N3C is clear and direct:
+the US has no centralized data repository for health records and related information,
+hindering the response of the scientific community.^[These
+articles provide good overviews of N3C and the surrounding landscape:
+[It took a pandemic, but the US finally has (some) centralized medical data](https://www.technologyreview.com/2021/06/21/1026590/us-covid-database-n3c-nih-privacy/)
+(MIT Technology Review), and
+[The ambitious effort to piece together America's fragmented health data](https://www.theverge.com/2020/10/19/21522863/health-data-records-covid-coronavirus-model-nih-privacy-n3c)
+(The Verge)]
 Although healthcare providers are mandated by law to utilize electronic health records (EHR), little guidance coordinates how or exactly what information to collect and store.
 Commercial data-collection suites (e.g., Epic) are widely used in clinical settings, and controlled vocabularies (e.g., ICD10 and SNOMED) provide standards for representing medical information, but there are many such standards in use and software is highly configurable to the needs of individual organizations.
 As a result, databases of EHR information across the US are largely non-interoperable, presenting challenges to researchers hoping to use this vast national store of information in practice.

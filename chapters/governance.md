@@ -30,7 +30,16 @@ The novel governance procedures and structures described here may benefit other 
 
 ## N3C Leadership {#sec-governance-leadership}
 
-N3C is a public-private-government partnership among the Clinical and Translational Science Awards (CTSA) Program hubs supported by the National Center for Advancing Translational Sciences (NCATS) as the overall data steward; the National Center for Data to Health (CD2H); the Institutional Development Award Networks for Clinical and Translational Research (IdeA-CTR); data contributing organizations (e.g., public health Health Information Exchanges, hospitals/health systems, academic medicine, and clinical research); distributed clinical data networks (PCORnet, OHDSI, Act, TriNetX); multiple commercial partners; and a large community of researchers.
+N3C is a public-private-government partnership among the Clinical and Translational Science Awards (CTSA)
+Program hubs supported by the National Center for Advancing Translational Sciences (NCATS)
+as the overall data steward;
+the National Center for Data to Health (CD2H);
+the Institutional Development Award Networks for Clinical and Translational Research (IdeA-CTR);
+data contributing organizations
+(e.g., public health Health Information Exchanges, hospitals/health systems,
+academic medicine, and clinical research);
+distributed clinical data networks (PCORnet, OHDSI, Act, TriNetX);
+multiple commercial partners; and a large community of researchers.
 
 Four [co-leads](https://covid.cd2h.org/team) (two from the researcher community and two from NCATS) developed the vision for N3C and led its implementation with extensive community consultation.
 Their vision was to bridge the traditional silos of biomedical research to rapidly enable team science while respecting the rights of data subjects, institutions, and researchers.
@@ -155,7 +164,11 @@ N3C governance includes considerations for protecting special populations and co
 N3C contains no Tribal affiliation.
 Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.
 
-![Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project"}
+![Data Access Governance Process.
+To lower the burden on participation, user authentication and eligibility are established once
+during account registration.
+Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee.
+A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process."}
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

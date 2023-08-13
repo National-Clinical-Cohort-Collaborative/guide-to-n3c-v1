@@ -341,7 +341,12 @@ These concept sets are in queue to be published as pdf (Properties) and json (co
 Once published, their Zenodo DOI will be posted to the Zenodo Property of the version that was published.
 The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
 
-The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}} and [All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an Enclave account" >}} which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an Enclave account" >}} and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
+The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates
+[COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}}
+and
+[All Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an Enclave account" >}}
+which then populate the [N3C Phenotype Explorer](https://unite.nih.gov/workspace/slate/documents/phenotype-dashboard) {{< fa lock title="Link requires an Enclave account" >}}
+and [N3C Public Health Dashboards](https://covid.cd2h.org/dashboard/).
 
 #### Concept set reviews and validation {#sec-understanding-sets-library-review}
 
@@ -405,7 +410,7 @@ The results are found in the Measurement table, as `harmonized_value_as_number`,
 
 A _phenotype_ is a grouping of related terms, or observable characteristics that could be applied to a person, disease trait, medical condition or events [@richesson_2013].
 Examples would be, "has Acute COVID"; "treated with ampicillin".^[A _phenotype_ is general and a _cohort_ is specific. Thus, a new-onset diabetes phenotype might say, "Must have some number of outpatient visits without a diabetes diagnostic code, followed by at least one visit with such a code".
-A related _cohort_ would be, "Must have _2 _outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_".
+A related _cohort_ would be, "Must have 2 outpatient visits without diabetes _since Jan 1, 2017_ without a diabetes diagnostic code, followed by at least one visit with such a code _before Jan 1, 2020_".
 However, in OHDSI the two terms are used interchangeably.  See the [Cohorts chapter](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html) in @ohdsi_2019.]
 
 A _cohort_ is a set of persons who satisfy one or more inclusion criteria for a duration of time.
@@ -580,7 +585,13 @@ A detailed CMS training webinar is available on [YouTube](https://www.youtube.co
 
 Because our data are not representative of the geographic locations whence they come, it is important for many analyses to attempt to "correct" the results due to this selection bias.
 Data sets, called _external datasets_, are available outside the N3C Data Enclave that provide information about such locations.
-There are datasets about the locations themselves (e.g., [zip code distances](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8BCEA01&view=focus) {{< fa lock title="Link requires an Enclave account" >}}), about the demographics in those locations (e.g., [zip code census](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-595A20D&view=focus) {{< fa lock title="Link requires an Enclave account" >}}),  or about COVID, in those locations (e.g., [COVID-19 vaccine hesitancy in the US by county](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-EEA964E&view=focus), [state policy by date](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B1CD234&view=focus) {{< fa lock title="Link requires an Enclave account" >}}).
+There are datasets about the locations themselves
+(e.g., [zip code distances](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-8BCEA01&view=focus) {{< fa lock title="Link requires an Enclave account" >}}),
+about the demographics in those locations
+(e.g., [zip code census](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-595A20D&view=focus) {{< fa lock title="Link requires an Enclave account" >}}),
+or about COVID, in those locations
+(e.g., [COVID-19 vaccine hesitancy in the US by county](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-EEA964E&view=focus),
+[state policy by date](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-B1CD234&view=focus) {{< fa lock title="Link requires an Enclave account" >}}).
 There are also datasets to help in mapping from zip codes (data available in Level 3 Enclave datasets), such as [Mapping Zip codes to states and geolocations](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-AA5C326&view=focus) {{< fa lock title="Link requires an Enclave account" >}}.
 All available datasets are available at [The Data Discovery Engine](https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset) (outside the Enclave) and in [The Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b) {{< fa lock title="Link requires an Enclave account" >}} (inside the Enclave; filter on "External Dataset").
 

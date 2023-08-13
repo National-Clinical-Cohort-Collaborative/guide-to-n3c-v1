@@ -153,7 +153,11 @@ A few helpful starter templates are those produced by the Logic Liaisons (see th
 
 The Logic Liaison Fact Tables and Templates are specifically designed to provide a validated and community agreed-upon method for calculating particular facts at the date level and/or the patient level.
 Through surveying the Domain Team Leads to establish a list of commonly derived variables and continuous feedback from the N3C Community to refine and update this list, the Logic Liaisons have developed, disseminated, and maintain two main fact table templates and an additional fact table template for SDoH variables.
-These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for [all N3C patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an Enclave account" >}} as well as a subset who have an index date for their acute COVID-19 infection, the [confirmed COVID-19 positive patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}} (PCR/AG positive or U07.1 COVID-19 diagnosed).
+These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for
+[all N3C patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&view=focus) {{< fa lock title="Link requires an Enclave account" >}}
+as well as a subset who have an index date for their acute COVID-19 infection, the
+[confirmed COVID-19 positive patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}}
+(PCR/AG positive or U07.1 COVID-19 diagnosed).
 These day-level and person-level datasets are commonly referred to as the Logic Liaison Fact Tables and can be imported directly into a workbook for use without modifying the template.
 These fact tables are produced using a default set of concept sets from the N3C Recommended Concept Sets list and a set of default values for the template's parameters.
 

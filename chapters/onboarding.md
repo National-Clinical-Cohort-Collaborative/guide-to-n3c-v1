@@ -140,7 +140,8 @@ Then click the following boxes.
 ## Enclave Registration {#sec-onboarding-enclave}
 
 Due to the secure nature of the data that is available in the N3C Data Enclave, [registration](https://labs.cd2h.org/registration/) is required.
-Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS -- see [Data Use Agreements](#sec-onboarding-dua) below for details.
+Your institution or organization will need to have a Data Use Agreement (DUA) on record with NCATS --
+see [Data Use Agreements](onboarding.md#sec-onboarding-dua) below for details.
 @fig-onboarding-030-login shows the four options to login and create an Enclave account: InCommon, Login.gov, NIH login, or HHS login. ^[This chapter focuses on InCommon and Login.gov.  If you are an NIH or HHS employee, talk to your supervisor about using your NIH/HHS login.]
 
 ![Login options for registration.
@@ -235,7 +236,7 @@ The Project Lead provides overall guidance to the study and is the primary point
 The Project Lead has responsibilities that can not be delegated to other team members.
 
 N3C strongly encourages collaborations among investigators within institutions as well as between institutions.
-As discussed in the [Data Use Agreements](#sec-onboarding-dua) section, individuals wishing access to the Enclave must be at an institution that is covered by a DUA.
+As discussed in the [Data Use Agreements](onboarding.md#sec-onboarding-dua) section, individuals wishing access to the Enclave must be at an institution that is covered by a DUA.
 Collaborators in a study are encouraged to request access to the Enclave.
 
 Although collaboration on projects is promoted and encouraged, individuals can work on their own projects.   Collaborators are not required.

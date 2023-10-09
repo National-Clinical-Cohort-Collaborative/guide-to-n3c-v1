@@ -615,11 +615,8 @@ under the Action column to appeal a DUR rejected by the DAC.
 The appeal DUR is a copy of the submitted DUR, but all fields are editable,
 including Title, Abstract, data access level, and research project rationale.
 When appealing a rejected DUR, you will likely want to update at least the research project rationale.
-Finally, for active projects there will be an "Update DUR" option
-to request a significant change to an approved DUR requiring DAC review,
-such as updating a project to a higher level of data access.
 
-### Project Management for Leads {#sec-access-my-leads}
+### For Leads: Managing Collaborator Access and Domain Teams {#sec-access-my-leads}
 
 The My Projects dashboard provides some additional functionality
 for project leads not available to collaborators in addition to the Appeal link.
@@ -640,6 +637,25 @@ and "Allow or Disallow Collaborator Requests".
 This last option enables or disables the "Request to Join" link for the project in the Explore Projects dashboard.
 
 ![Adjusting other project settings.](images/access/fig-access-210-other-project-settings.png){#fig-access-210-other-project-settings fig-alt="Adjusting other project settings"}
+
+### For Leads: Revising a DUR (Upgrading Data Access) {#sec-revising-dur}
+
+Projects that have been approved for Level 2 (De-Identified) data access may find that they need to upgrade to 
+Level 3 (Limited Data Set), for example to gain access to a non-date-shifted version of the data. Rather than 
+submitting a new DUR request, it is possible to Revise a DUR to update access within a project workspace, keeping other work in place. 
+Only the project lead can initiate this request via the My Projects dashboard, by selecting the project of interest and scrolling
+to find the Revise DUR link.
+
+![Leads can Revise a DUR to upgrade access to a higher level of data.](images/access/fig-access-220-revise-dur.png){$fig-access-220-revise-dur fig-alt="Leads can Revise a DUR to upgrade access to a higher level of data."}
+
+Opening this link will open an editable version of the DUR form, where the new level of data access can be requested, along with any PPRL datasets.
+
+There are several things to note before doing so:
+
+*. When upgrading to Level 3 (Limited Data Set) access, the lead will be required to submit an IRB letter of determination as with new requests to Level 3 data (see [Level 3 DUR Requirements](#sec-access-request-l3) above).
+*. After the Data Access Committee approves the request for the lead, collaborators will need to re-sign the now updated DUR by finding it in the Explore Projects dashboard (see [Browse and Join Projects](#sec-access-explore) above). They will also need to submit an IRB determination letter from their local institution, unless they are from the same institution as the lead, and their access will be re-reviewed by the Data Access Committee.
+*. **The lead and all collaborators with project access must be approved with a submitted IRB letter before the updated data can be made available in the project workspace.** Leads have a choice here: remove access to the project for everyone, and re-enable access as they are approved individually, or wait until everyone is approved for the new data access to make the switch in the project workspace. In the former, collaborators temporarily lose project access, while the lead and local collaborators can begin work with the upgraded data more quickly. In the latter, everyone keeps project access, but availability of the upgraded data is delayed for the lead and local collaborators. When a lead submits and is approved for a Revised DUR, N3C support will reach out to determine which path they would prefer.
+
 
 ::: {.callout-note appearance="simple"}
 

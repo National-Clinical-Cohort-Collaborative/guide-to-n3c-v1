@@ -19,7 +19,7 @@ format:
     # - assets/citation.css
     link-external-newwindow: true
     template-partials:
-    - title-block.html
+    - assets/title-block.html
     filters:
     - lightbox
     lightbox:

@@ -89,6 +89,32 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 1.  Reusable ML library package
 
-    a.  **Create a folder in a workspace** Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder
+    a.  **Create a folder in a workspace** Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder ![Figure 1](../images/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
 
-    Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
+    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](../images/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
+
+    This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
+
+    c.  **Adding dependencies to code repository** See the N3C documentation on discovering and using Python libraries in code repositories.
+
+    d.  **Implementation of classification algorithms** The scikit-learn and pyspark implementations have the following code organization -
+
+    <!-- -->
+
+    i)  **dataset_preprocessor.py** Methods to drop column(s) from the input dataset, split the dataset into training and test datasets based on a given ratio, sample the training and/or testing datasets to have approximately equal number of positive and negative samples (if required), standardize the datasets. The pyspark implementation contains an additional method to assemble the input into libsvm format.
+
+    ii) **classification_model.py** The ClassificationModel class implements a classification pipeline. First, preprocess the dataset and compute training and testing datasets using the methods in dataset_preprocessor.py. Second, perform hyperparameter search and train classification models using k-fold cross validation. Third, evaluate the trained models on test datasets. Finally, perform multiple iterations of these three steps to generalize the results.
+
+    iii) **classification algorithms** The logistic_regression.py, multi_layer_perceptron.py, random_forest.py, and svm.py files implement the respective classification algorithms with model instantiation and definition of the hyperparameter search. The classes defined in each of these files extend the ClassificationModel class defined in classification_model.py and leverage the pipeline implemented in the parent class.
+
+2.  Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html -->
+
+    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](../images/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
+
+    b.  **Define cohort and features using COVID patient facts table**\* Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](../images/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository. XXXX We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
+
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure 5: Search for a custom-created python library in the code repository. ![Figure 6](../images/image-06-add-custom-library.png) Figure 6: Add a custom-created python library in the code repository. XXX Click “Add library” ![Figure 7](../images/image-07-n3c-access-error-custom-library.png) Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error XXX Go back to the ‘files’ tab on the left sidebar, and commit your changes.
+
+    d.  **Implement a random forest model for the prediction task**
+
+NOTE: The error message similar to the one below is sometimes encountered during this step:

@@ -111,9 +111,19 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
     a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](../images/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
 
-    b.  **Define cohort and features using COVID patient facts table**\* Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](../images/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository. XXXX We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
+    b.  **Define cohort and features using COVID patient facts table**\* Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](../images/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
 
-    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure 5: Search for a custom-created python library in the code repository. XXX ![Figure 6](../images/image-06-add-custom-library.png) Figure 6: Add a custom-created python library in the code repository. XXX Click “Add library” XXX ![Figure 7](../images/image-07-n3c-access-error-custom-library.png)Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error XXX Go back to the ‘files’ tab on the left sidebar, and commit your changes.
+        We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
+
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure 5: Search for a custom-created python library in the code repository.
+
+        ![Figure 6](../images/image-06-add-custom-library.png) Figure 6: Add a custom-created python library in the code repository.
+
+        Click “Add library”
+
+        ![Figure 7](../images/image-07-n3c-access-error-custom-library.png)Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
+
+        Go back to the ‘files’ tab on the left sidebar, and commit your changes.
 
     d.  **Implement a random forest model for the prediction task**
 

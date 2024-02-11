@@ -115,15 +115,15 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
-    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure 5: Search for a custom-created python library in the code repository.
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
 
-        ![Figure 6](../images/image-06-add-custom-library.png) Figure 6: Add a custom-created python library in the code repository.
+        ![Figure 6](../images/image-06-add-custom-library.png) Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
 
         Click “Add library”
 
         NOTE: The error message similar to the one below is sometimes encountered during this step:
 
-        ![Figure 7](../images/image-07-n3c-access-error-custom-library.png)Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
+        ![Figure 7](../images/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
 
         Go back to the ‘files’ tab on the left sidebar, and commit your changes.
 
@@ -245,11 +245,13 @@ For the basics of creating a code repository and using its debugger, see \[the t
           ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
           plt.title("Area under Precision-Recall Curve : All Patients")
           plt.show()
+
         ```
 
-Select the ‘visualization’ tab at the bottom to view the output of this node.
 
-![Figure 11](../images/) Figure 11: Viewing visualization outputs in codeworkbook.
+        Select the ‘visualization’ tab at the bottom to view the output of this node.
+
+        ![Figure 11](../images/image-11-viewing-visualization-outputs.png) Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
 
 
 ## Other topics
@@ -266,7 +268,7 @@ You can use the code above in your project by following these steps:
 ```
 5. In your DUR, create an empty code repository
 6. In the empty code repository, open the pulldown menu by the “Clone” button and copy the git remote URL to your clipboard as above in steps (2) and (3)
-7. In the cloned repository on your local machine, run these commands (see [Chapter X](#pushing-to-github)here for details on how to do this):
+7. In the cloned repository on your local machine, run these commands (see [Chapter X](#pushing-to-github) here for details on how to do this):
 ```
     git remote add mynewrepo [paste remote URL of new repository]
     git push mynewrepo master

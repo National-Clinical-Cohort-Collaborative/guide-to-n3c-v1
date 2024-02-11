@@ -121,10 +121,10 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Click “Add library”
 
+        NOTE: The error message similar to the one below is sometimes encountered during this step:
+
         ![Figure 7](../images/image-07-n3c-access-error-custom-library.png)Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
 
         Go back to the ‘files’ tab on the left sidebar, and commit your changes.
 
     d.  **Implement a random forest model for the prediction task**
-
-NOTE: The error message similar to the one below is sometimes encountered during this step:

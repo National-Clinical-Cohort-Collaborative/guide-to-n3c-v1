@@ -43,6 +43,10 @@ You don't have to understand the rest to contribute, but for those interested:
 
 * GitHub Pages serves the contents of the [`gh-pages` branch](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/tree/gh-pages) to anyone with a browser.
 
+* The book can be previewed or locally rendered from the command line, avoiding complexities of RStudio if/when they get in the way. The commands are simply "quarto preview" and "quarto render". The first creates a server for the HTML and the second just generates the html files. Detail in the [Quarto docs on books](https://quarto.org/docs/books/) under "Publishing".
+    * individual chapters can be rendered with: $ quarto render <chapter file> --to html  
+
+
 Assets
 ------------------
 

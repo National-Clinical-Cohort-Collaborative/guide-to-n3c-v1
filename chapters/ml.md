@@ -278,7 +278,7 @@ You can use the code above in your project by following these steps:
 The examples above use standard Python to train and apply ML models. For ML tasks that are more compute intensive, consider using Apache Spark’s MLlib ML/pyspark.ml instead. A full discussion of Spark ML is beyond the scope of this chapter, but an implementation of a Spark ML model is provided in the same codebase as above, under the module named pysparkml. The official MLlib guide to SparkML is a good resource, and there are specific integrations with the Enclave documented here.
 
 ### Using R in code workbooks
-In the examples code reported above, we reported Python code, which works within [Code Rrepositories](#code-repos). 
-However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir [Code Wworkbooks](#code-workbooks) (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful "Enclave ML Resources Overview" with links to various resources related to this is available here.
+In the examples code reported above, we reported Python code, which works within [Code Repositories](#code-repos). 
+However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir [Code Workbooks](#code-workbooks) (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful "Enclave ML Resources Overview" with links to various resources related to this is available here.
 
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,7 +55,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -64,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -159,12 +166,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/governance.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/governance.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -174,13 +181,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -346,7 +353,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -362,52 +369,18 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-governance-access" id="toc-sec-governance-access" class="nav-link" data-scroll-target="#sec-governance-access"><span class="header-section-number">4.7</span> Data Access by Researchers</a></li>
   <li><a href="#sec-governance-incident" id="toc-sec-governance-incident" class="nav-link" data-scroll-target="#sec-governance-incident"><span class="header-section-number">4.8</span> Incident Notification and Escalation procedure</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/governance.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/governance.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/governance.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/governance.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-governance" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Christine Suver <a href="https://orcid.org/0000-0002-2986-385X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://sagebionetworks.org/">
-            Sage Bionetworks
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Johanna Loomba <a href="https://orcid.org/0000-0003-3673-5423" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.ithriv.org/directory">
-            University of Virginia, integrated Translational Health Research Institute of Virginia
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-governance" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></span></h1>
+            <p class="author">Christine Suver</p>
+        <p class="author">Johanna Loomba</p>
     
-  </div>
-  
+        </header>
 
-</header>
 
 <p><strong>Chapter Leads</strong>: Christine Suver, Johanna Loomba</p>
 <section id="sec-governance-preamble" class="level2" data-number="4.1">
@@ -430,7 +403,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Monitoring data sharing (i.e., establishing a monitoring and reporting plan, enforcing policies and procedures, and resolving disputes)</li>
 </ul>
 <p><a href="https://covid.cd2h.org/N3C_governance">The Data Partnership and Governance Workstream</a> established by the N3C PIs with participation from NCATS and the scientific and ethics community is responsible for (1) establishing and refining the principles, policies, and procedures to support N3C, (2) determining the roles and functions to support the governance strategy, and (3) making recommendations to NIH for their implementation. The workstream convenes representatives of contributing organizations, researchers, and institutions that support them, NCATS, ethicists, and anyone interested in advancing N3C.</p>
-<p>At the start, the Partnership and Governance workstream met twice weekly to rapidly align on an N3C governance vision and establish the universal conditions governing the use of N3C data. These conditions are that data protection is adopted by default, contributing sites are not identified, and workspaces must be provisioned on a per-project basis only for COVID-19-related research. Also, data cannot be extracted or downloaded from the data N3C Data Enclave, with the exception of publishable summary results or figures, each of which must be reviewed prior to export (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a> for details on this process).</p>
+<p>At the start, the Partnership and Governance workstream met twice weekly to rapidly align on an N3C governance vision and establish the universal conditions governing the use of N3C data. These conditions are that data protection is adopted by default, contributing sites are not identified, and workspaces must be provisioned on a per-project basis only for COVID-19-related research. Also, data cannot be extracted or downloaded from the data N3C Data Enclave, with the exception of publishable summary results or figures, each of which must be reviewed prior to export (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a> for details on this process).</p>
 <p>The workstream split into a smaller subgroup to draft the supporting governance documents while continuing to meet with the whole Workstream for ideation, context, and feedback weekly. Onward, the workstream adjusted the frequency of the meetings to the work cadence.</p>
 </section>
 <section id="sec-governance-bridges" class="level2" data-number="4.4">
@@ -448,10 +421,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li><strong>Security</strong>: All activities are conducted in a secure, controlled access cloud-based environment and are recorded for auditing and attribution purposes.</li>
 <li><strong>Mutual respect</strong>: Communications should be professional, concise, clear, and relevant. Follow proper communication etiquette. Avoid excessive conflict, unprofessional arguments, ad hominem attacks, and/or ridicule over chat and in messaging.</li>
 </ol>
-<div id="fig-governance-010-shared" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/governance/fig-governance-010-shared.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="N3C shared Governance initiatives with sign-off responsibility represented."><img src="images/governance/fig-governance-010-shared.png" class="img-fluid figure-img" alt="N3C shared Governance initiatives with sign-off responsibility represented"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;4.1: N3C shared Governance initiatives with sign-off responsibility represented.</figcaption>
+<div id="fig-governance-010-shared" class="quarto-figure quarto-figure-center quarto-float anchored" alt="N3C shared Governance initiatives with sign-off responsibility represented">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-governance-010-shared-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/governance/fig-governance-010-shared.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/governance/fig-governance-010-shared.png" class="img-fluid figure-img" alt="N3C shared Governance initiatives with sign-off responsibility represented"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-governance-010-shared-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: N3C shared Governance initiatives with sign-off responsibility represented.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -469,20 +446,28 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </section>
 <section id="sec-governance-access" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="sec-governance-access"><span class="header-section-number">4.7</span> Data Access by Researchers</h2>
-<p>First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the <a href="https://zenodo.org/record/3979610">Community Guiding Principles</a> and complete the Information Security and Management Refresher course of the <a href="https://irtsectraining.nih.gov/FYR/00_005.aspx">NIH Information Security and Information Management Training series</a>. Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See Chapters <a href="onboarding.html"><span>5</span></a> and <a href="access.html"><span>6</span></a> for details.)</p>
-<p>There are three levels of data access commensurate with the sensitivity of the data. See <a href="access.html"><span>Chapter&nbsp;6</span></a> for more details about these levels.</p>
-<div id="fig-governance-020-tiers" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/governance/fig-governance-020-tiers.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Data Tiers."><img src="images/governance/fig-governance-020-tiers.png" class="img-fluid figure-img" alt="Data Tiers"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;4.2: Data Tiers.</figcaption>
+<p>First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS. Then users must register an account with N3C, including agreeing to the <a href="https://zenodo.org/record/3979610">Community Guiding Principles</a> and complete the Information Security and Management Refresher course of the <a href="https://irtsectraining.nih.gov/FYR/00_005.aspx">NIH Information Security and Information Management Training series</a>. Only then can users submit a Data Use Request (DUR). NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions. Users must submit a new DUR for every separate study. (See Chapters <a href="onboarding.html" class="quarto-xref"><span>5</span></a> and <a href="access.html" class="quarto-xref"><span>6</span></a> for details.)</p>
+<p>There are three levels of data access commensurate with the sensitivity of the data. See <a href="access.html" class="quarto-xref"><span>Chapter 6</span></a> for more details about these levels.</p>
+<div id="fig-governance-020-tiers" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Tiers">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-governance-020-tiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/governance/fig-governance-020-tiers.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/governance/fig-governance-020-tiers.png" class="img-fluid figure-img" alt="Data Tiers"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-governance-020-tiers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Data Tiers.
+</figcaption>
 </figure>
 </div>
 <p>Access to each data level requires approval from the Data Access Committee. In addition, investigators requesting access to level 3 data must submit proof of IRB approval from their institution or an independent accredited IRB for their intended use. Note that PPRL data is only available by special request in level 3 projects with appropriate additional IRB approval.</p>
 <p>N3C governance includes considerations for protecting special populations and communities, and respect for tribal sovereignty. N3C contains no Tribal affiliation. Using ZIP code information to make assumptions about Tribal affiliation is not valid or appropriate.</p>
-<div id="fig-governance-030-process" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images//governance/fig-governance-030-process.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project."><img src="images//governance/fig-governance-030-process.png" class="img-fluid figure-img" alt="Data Access Governance Process."></a></p>
-<figcaption class="figure-caption">Figure&nbsp;4.3: Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.</figcaption>
+<div id="fig-governance-030-process" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Access Governance Process.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-governance-030-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images//governance/fig-governance-030-process.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="images//governance/fig-governance-030-process.png" class="img-fluid figure-img" alt="Data Access Governance Process."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-governance-030-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -505,6 +490,11 @@ Additional Chapter Details
 </div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;4.1: N3C shared Governance initiatives with sign-off responsibility represented.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;4.2: Data Tiers.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;4.3: Data Access Governance Process. To lower the burden on participation, user authentication and eligibility are established once during account registration. Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee. A new request must be submitted for each specific project.</span>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -549,6 +539,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -617,13 +634,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -702,10 +721,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -715,8 +751,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -729,6 +774,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -772,6 +936,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -797,6 +962,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -854,30 +1045,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/cycle.html" class="pagination-link">
+      <a href="../chapters/cycle.html" class="pagination-link  aria-label=" &lt;span="" life="" cycle="" -="" from="" patients="" to="" n3c="" researchers&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/onboarding.html" class="pagination-link">
+      <a href="../chapters/onboarding.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Onboarding, Enclave Access, N3C Team Science</span>">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -885,14 +1062,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/governance.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/governance.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":true,"openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

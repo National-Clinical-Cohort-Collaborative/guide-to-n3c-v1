@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -68,18 +69,24 @@ div.csl-indent {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -88,6 +95,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -186,12 +194,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/cycle.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/cycle.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -201,13 +209,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -373,7 +381,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -416,82 +424,21 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-cycle-enhancements-cms" id="toc-sec-cycle-enhancements-cms" class="nav-link" data-scroll-target="#sec-cycle-enhancements-cms"><span class="header-section-number">3.5.7</span> CMS</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/cycle.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/cycle.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/cycle.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/cycle.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-cycle" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Stephanie S. Hong <a href="https://orcid.org/0000-0002-0795-1293" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="http://dhsi.med.jhmi.edu/index.php">
-            Johns Hopkins School of Medicine, Department of General Internal Medicine, Biomedical Informatics and Data Science Section
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Bryan Laraway <a href="https://orcid.org/0000-0002-0450-7074" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://medschool.cuanschutz.edu/dbmi">
-            University of Colorado - Anschutz Medical Campus
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Xiaohan Tanner Zhang <a href="https://orcid.org/0000-0002-4843-9077" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="http://dhsi.med.jhmi.edu/index.php">
-            Johns Hopkins School of Medicine, Department of General Internal Medicine, Biomedical Informatics and Data Science Section
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Maya Choudhury <a href="https://orcid.org/0000-0001-5654-8997" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.linkedin.com/in/maya-choudhury">
-            Palantir Technologies
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Sofia Z. Dard <a href="https://orcid.org/0000-0002-0286-2515" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://tracs.unc.edu/index.php/services/informatics-and-data-science">
-            University of North Carolina School of Medicine, NC Translational and Clinical Sciences Institute
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-cycle" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></span></h1>
+            <p class="author">Stephanie S. Hong</p>
+        <p class="author">Bryan Laraway</p>
+        <p class="author">Xiaohan Tanner Zhang</p>
+        <p class="author">Maya Choudhury</p>
+        <p class="author">Sofia Z. Dard</p>
     
-  </div>
-  
+        </header>
 
-</header>
 
 <p><strong>Chapter Leads:</strong> Stephanie Hong, Bryan Laraway</p>
 <section id="sec-cycle-intro" class="level2" data-number="3.1">
@@ -519,10 +466,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Disparate data sources from over 75 data partners are ingested, harmonized and merged together to create a central electronic health record (EHR) data repository. Manual curation of 2,000 mappings was scaled into a fully automated data pipeline that includes common data model (CDM) schema checks, data conformance checks, correction for missing COVID test measurement codes and data expectation checks within the data ingestion and harmonization process. Each data partner’s ingested data is merged to create a central data repository, which allows for consistent and efficient data quality reviews.</p>
 <p>Beyond well-recognized data quality issues, we discovered heuristics relating to each CDM conformance, demographics, COVID tests and associated results, conditions, encounters, measurements, observations, coding completeness, and fitness for use. The results of the data quality issues were communicated back to the participating sites and the sites improved their data quality after feedback. Furthermore, the N3C central data repository, referred to as the N3C Data Enclave or Enclave, is able to infer missing measurement units as well as correct invalid units of measure for certain laboratory test results through unit inference algorithms. Unified Code for Units of Measure is used to harmonize the measurement units.</p>
 <p>The N3C’s central data repository also supports the N3C’s data integrity, security, accessibility, and governance objectives. The contributing sites submit data in one of four CDM formats through SSH File Transfer Protocol (sFTP) to the secure cloud platform in a compressed data file zip format. The zip file structure must conform to a predefined payload structure for efficient processing. The zip file is then transferred to the Enclave. All access to the sFTP site is audited and monitored. It is Federal Risk and Authorization Management Program (FedRAMP) compliant. As data is transferred into the Enclave for processing, the governance team receives secure messages regarding this process for audit purposes. Once the data is transferred to the Enclave the automated pipeline is triggered to process the data through the data ingestion and harmonization pipeline.</p>
-<div id="fig-cycle-010-pipeline" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-010-pipeline.png" class="lightbox" title="N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM." data-gallery="quarto-lightbox-gallery-1"><img src="images/cycle/fig-cycle-010-pipeline.png" class="img-fluid figure-img" alt="Data Pipeline"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.1: N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM.</figcaption>
+<div id="fig-cycle-010-pipeline" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Pipeline">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-010-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-010-pipeline.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/cycle/fig-cycle-010-pipeline.png" class="img-fluid figure-img" alt="Data Pipeline"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-010-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM.
+</figcaption>
 </figure>
 </div>
 <section id="sec-cycle-overview-ingestion" class="level3" data-number="3.2.1">
@@ -536,10 +487,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>OMOP CDM conformance check which structures and organizes the data into common domains using common terminology.</li>
 <li>Data quality check where the source data terminology is converted to OMOP concepts using the OMOP concept relationships to ensure that the data is consistent and accurate across the domain.</li>
 </ol>
-<div id="fig-cycle-015-workflow" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-015-workflow.png" class="lightbox" title="N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages." data-gallery="quarto-lightbox-gallery-2"><img src="images/cycle/fig-cycle-015-workflow.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.2: N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.</figcaption>
+<div id="fig-cycle-015-workflow" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Pipeline Workflow">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-015-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-015-workflow.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/cycle/fig-cycle-015-workflow.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-015-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.
+</figcaption>
 </figure>
 </div>
 <p>Source terminology is largely classified into two groups; a defined series of valued sets permissible within each source CDM and a varied dynamic list of codes and respective code systems that exist in the source CDM, e.g., UCUM, LOINC, HCPCS, ICD10CM, ICD10PCS, CPT4 and RxNorm. We created a shareable set of crosswalk mappings that are used to convert the value sets, such as gender and race concept sets, from all source CDMs to OMOP concepts along with associated OMOP domain mapping information. Code map service is used to generate site-specific dynamic lists of terminology crosswalk mapping tables to accurately map the source terminology into OMOP concept ids. The OMOP relationship table is referenced to identify the codes or terms found in the source data with standard OMOP concept ids. This terminology translation is a critical component of the data ingestion process as it allows the data from different sources with varying terminology to be used together, enabling more consistent, comprehensive and accurate analyses and insights. The following sections will describe the data ingestion steps in more detail.</p>
@@ -565,17 +520,25 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Technically, terminology, vocabulary, and code system are not synonyms, but the community often uses these phrases interchangeably. The incoming data sets use well-defined terminology to encode clinical meanings in the data. For example, the International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) is used for diagnoses which have complex ideas that include multiple, nuanced sub-elements. SNOMED CT is also used to encode clinical diagnoses which have internal hierarchies built upon increasing specificity (IS-A) and may also include relationships among the concepts (e.g., caused-by or finding-site). Logical Observation Identifiers Names and Codes (LOINC) are used to represent laboratory tests. ICD-10-PCS, HCPCS, and CPT4 codes are used for procedures. CVX codes are used for vaccines and RxNorm codes are used to specify the medications prescribed and administered. The string text used to indicate the code system categories are not uniform across the CDM models and some are case sensitive, i.e., “RxNorm” vs.&nbsp;“RXNORM”.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <p>All of the coded data found in the submitted payload are collected and translated into OMOP concept ids using the OMOP vocabulary, concept and concept relationship tables. Two categories of crosswalk mapping tables are generated to perform the translation; a static list of common data elements that are specific to CDM tables and a dynamic list of codes/code systems that can contain a varied list of values from payload to payload.</p>
 <p>Static crosswalk common data element mappings are based on permissible values for a given column within a CDM table and they are well defined by the CDM specifications. CDE are uniform across different sites and data payloads. These CDE mappings include categories such as race, ethnicity, and gender. CDM-specific CDE values are reviewed and the corresponding list of OMOP concept ids is identified to create a crosswalk mapping table that can be used in the vocabulary transformation step in the pipeline. The curated crosswalk mapping table is available in the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic/reference_tables">N3C GitHub repository</a>.</p>
-<div id="fig-cycle-020-mapping-static" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-020-mapping-static.png" class="lightbox" title="Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications." data-gallery="quarto-lightbox-gallery-3"><img src="images/cycle/fig-cycle-020-mapping-static.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.3: Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications.</figcaption>
+<div id="fig-cycle-020-mapping-static" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Pipeline Workflow">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-020-mapping-static-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-020-mapping-static.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="images/cycle/fig-cycle-020-mapping-static.png" class="img-fluid figure-img" alt="Pipeline Workflow"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-020-mapping-static-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications.
+</figcaption>
 </figure>
 </div>
 <p>Dynamic crosswalk mapping tables, on the other hand, are created during the transformation process in the pipeline based on the existence of codes that are found in the sites’ submitted payload. These mappings are created for each data payload to maximize the efficiency of the transformation process. For example some sites only submit a handful of distinct COVID-19 lab tests and would only need a short list of entries in the mapping table for the laboratory tests. The code used to generate the crosswalk mapping table is also available in the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic">N3C GitHub repository</a>.</p>
-<div id="fig-cycle-030-mapping-dynamic" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-030-mapping-dynamic.png" class="lightbox" title="Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner." data-gallery="quarto-lightbox-gallery-4"><img src="images/cycle/fig-cycle-030-mapping-dynamic.png" class="img-fluid figure-img" alt="Dynamic N3C Mapping Table"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.4: Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.</figcaption>
+<div id="fig-cycle-030-mapping-dynamic" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Dynamic N3C Mapping Table">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-030-mapping-dynamic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-030-mapping-dynamic.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="images/cycle/fig-cycle-030-mapping-dynamic.png" class="img-fluid figure-img" alt="Dynamic N3C Mapping Table"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-030-mapping-dynamic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -622,10 +585,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Remove any rows containing harmonized values that fall outside of accepted value ranges for the measurement.</li>
 </ol>
 <p>For data with missing units for all the results within a lab test for a particular data partner, N3C compares the values to pooled values from all data partners using the Kolmogorov-Smirnov test.</p>
-<div id="fig-cycle-040-conversion" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-040-conversion.png" class="lightbox" title="Unit conversion example for degree Fahrenheit to degree Celsius." data-gallery="quarto-lightbox-gallery-5"><img src="images/cycle/fig-cycle-040-conversion.png" class="img-fluid figure-img" alt="Unit conversion example for degree Fahrenheit to degree Celsius"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.5: Unit conversion example for degree Fahrenheit to degree Celsius.</figcaption>
+<div id="fig-cycle-040-conversion" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Unit conversion example for degree Fahrenheit to degree Celsius">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-040-conversion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-040-conversion.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="images/cycle/fig-cycle-040-conversion.png" class="img-fluid figure-img" alt="Unit conversion example for degree Fahrenheit to degree Celsius"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-040-conversion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: Unit conversion example for degree Fahrenheit to degree Celsius.
+</figcaption>
 </figure>
 </div>
 <p>In order to help sites locally leverage the centralized information on measurement units from N3C, a useful unit harmonization and inference tool is published in the N3C GitHub repository. For more details please refer to the <a href="https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/pipeline_logic/v2/unit-harmonization-and-inference/UHI-tool-for-sites">UHI-tool-for-sites page</a>.</p>
@@ -635,23 +602,35 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The N3C Data Enclave performs two types of data quality checks: automated data health checks during the ingestion phase, and manual data quality assessment checks with the help of the Data Quality Portal tool after the data ingestion pipeline steps are complete.</p>
 <section id="sec-cycle-harmonization-dqc-automated" class="level4" data-number="3.3.2.1">
 <h4 data-number="3.3.2.1" class="anchored" data-anchor-id="sec-cycle-harmonization-dqc-automated"><span class="header-section-number">3.3.2.1</span> Automated Data Health Checks</h4>
-<div id="fig-cycle-050-checks-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-050-checks-1.png" class="lightbox" title="A visual representation of the many ingestion and harmonization steps with data health checks." data-gallery="quarto-lightbox-gallery-6"><img src="images/cycle/fig-cycle-050-checks-1.png" class="img-fluid figure-img" alt="A visual representation of the many ingestion and harmonization steps"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.6: A visual representation of the many ingestion and harmonization steps with data health checks.</figcaption>
+<div id="fig-cycle-050-checks-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="A visual representation of the many ingestion and harmonization steps">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-050-checks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-050-checks-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="images/cycle/fig-cycle-050-checks-1.png" class="img-fluid figure-img" alt="A visual representation of the many ingestion and harmonization steps"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-050-checks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.6: A visual representation of the many ingestion and harmonization steps with data health checks.
+</figcaption>
 </figure>
 </div>
 <p>When the data ingestion pipeline is deployed for a new site, it includes a set of automated data health checks. The DI&amp;H pipeline is run every time a data payload is submitted to N3C, and if the new data doesn’t meet the desired data health expectations, the pipeline automatically logs an issue and the pipeline administrators are immediately notified. The logged issues are triaged by the DI&amp;H team, and if the issue requires communication with the site to correct, a site buddy is assigned to review the issue details for communication with the site to aid in correcting the site data that raised the data expectation failure.</p>
-<div id="fig-cycle-055-checks-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-055-checks-2.png" class="lightbox" title="Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners." data-gallery="quarto-lightbox-gallery-7"><img src="images/cycle/fig-cycle-055-checks-2.png" class="img-fluid figure-img" alt="Data Health Checks 2"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.7: Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.</figcaption>
+<div id="fig-cycle-055-checks-2" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Health Checks 2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-055-checks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-055-checks-2.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="images/cycle/fig-cycle-055-checks-2.png" class="img-fluid figure-img" alt="Data Health Checks 2"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-055-checks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.7: Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.
+</figcaption>
 </figure>
 </div>
-<div id="fig-cycle-060-checks-3" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-060-checks-3.png" class="lightbox" title="Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked." data-gallery="quarto-lightbox-gallery-8"><img src="images/cycle/fig-cycle-060-checks-3.png" class="img-fluid figure-img" alt="Data Health Checks 3"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.8: Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked.</figcaption>
+<div id="fig-cycle-060-checks-3" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Health Checks 3">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-060-checks-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-060-checks-3.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="images/cycle/fig-cycle-060-checks-3.png" class="img-fluid figure-img" alt="Data Health Checks 3"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-060-checks-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.8: Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked.
+</figcaption>
 </figure>
 </div>
 <p>Within N3C, template technology is utilized to deploy the data ingestion pipeline. The CDM-specific DI&amp;H pipeline is deployed for a new site using the same data ingestion template written for each source CDM. Once deployed the data checks run automatically and are tracked within the Enclave. The data pipeline is refreshed within roughly 30 minutes whenever source data is updated at the sFTP site. The data ingestion pipeline templates are utilized to ingest over 75 data partners’ data. The ingested data that pass the data quality checks are available to be merged to the limited dataset (LDS) where they then become available to the research community.</p>
@@ -659,19 +638,27 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-cycle-harmonization-dqc-manual" class="level4" data-number="3.3.2.2">
 <h4 data-number="3.3.2.2" class="anchored" data-anchor-id="sec-cycle-harmonization-dqc-manual"><span class="header-section-number">3.3.2.2</span> Manual Data Quality Checks through Data Quality Portal</h4>
 <p>The N3C Data Quality Portal (DQP) is a comprehensive tool and interface developed by the N3C Data Ingestion and Harmonization workstream to review the quality of the transformed data once the data ingestion pipeline is finished but prior to final data release to the N3C research community. The DQP is only accessible to the ingestion and harmonization team. It covers all aspects of data quality across different OMOP domain tables.</p>
-<div id="fig-cycle-070-dqp-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-070-dqp-1.png" class="lightbox" title="Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions." data-gallery="quarto-lightbox-gallery-9"><img src="images/cycle/fig-cycle-070-dqp-1.png" class="img-fluid figure-img" alt="Data Quality Portal"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.9: Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions.</figcaption>
+<div id="fig-cycle-070-dqp-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Quality Portal">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-070-dqp-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-070-dqp-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="images/cycle/fig-cycle-070-dqp-1.png" class="img-fluid figure-img" alt="Data Quality Portal"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-070-dqp-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.9: Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions.
+</figcaption>
 </figure>
 </div>
 <p>The figure above shows a screenshot of the Data Quality Portal (showing the checks for the measurement domain).</p>
 <p>The N3C DQP is based on the OHDSI OMOP Data Quality Dashboard (DQD), which provides a range of features and tools for identifying and addressing data quality issues. Through queries implemented in the N3C DQP, we are able to quickly assess after every new data build each site’s number of COVID-19 tests and their results, demographic counts by gender, race and ethnicity, counts of visit types, counts and percentages of non-standard concepts found in each domain, implausible death and birth dates, and visits with negative duration.</p>
 <p>The DQP is used to determine the coding completeness of the site’s data and its overall fitness for use by the research community and whether further data improvement is required before the data can be released for research. The combination of both automated and continual assessment of manual data quality checks through DQP enables the scale and rigor required for the N3C research community. In addition to the capabilities provided by the DQD, the N3C DQP includes a set of COVID-19-specific data quality checks that focus on the coding of COVID-19 labs, patient encounters, and other data relevant to the SARS-CoV-2 pandemic. These checks help to ensure that the data is accurate, reliable, consistent, and support more comprehensive and informed analysis of the data.</p>
-<div id="fig-cycle-075-dqp-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-075-dqp-2.png" class="lightbox" title="DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners." data-gallery="quarto-lightbox-gallery-10"><img src="images/cycle/fig-cycle-075-dqp-2.png" class="img-fluid figure-img" alt="DQP"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.10: DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners.</figcaption>
+<div id="fig-cycle-075-dqp-2" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DQP">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-075-dqp-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-075-dqp-2.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="images/cycle/fig-cycle-075-dqp-2.png" class="img-fluid figure-img" alt="DQP"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-075-dqp-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.10: DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners.
+</figcaption>
 </figure>
 </div>
 <p>One unique feature of the DQP is the ability to check distributions and patterns across different sites, which can help to identify and fix any abnormal patterns or anomalies in the data. This is particularly important for the N3C centralized data repository, as it enables the team to quickly identify and correct the data issues.</p>
@@ -680,19 +667,27 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-cycle-harmonization-scorecard" class="level3" data-number="3.3.3">
 <h3 data-number="3.3.3" class="anchored" data-anchor-id="sec-cycle-harmonization-scorecard"><span class="header-section-number">3.3.3</span> Site Scorecard</h3>
 <p>The DI&amp;H team has created site feedback reports called scorecards that could not only be sent to all sites but could also be used by the DI&amp;H team in conjunction with the DQP to monitor and maintain optimal data quality for research across the Enclave. The scorecards were developed for sites by utilizing the DQP as a starting point for the development of analyses. Figures and tables were created using Palantir’s Contour application to provide indicators of site data quality, and to give sites greater visibility into their data.</p>
-<div id="fig-cycle-078-scorecard-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-078-scorecard-1.png" class="lightbox" title="Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission." data-gallery="quarto-lightbox-gallery-11"><img src="images/cycle/fig-cycle-078-scorecard-1.png" class="img-fluid figure-img" alt="Site Scorecard 1"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.11: Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.</figcaption>
+<div id="fig-cycle-078-scorecard-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Site Scorecard 1">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-078-scorecard-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-078-scorecard-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="images/cycle/fig-cycle-078-scorecard-1.png" class="img-fluid figure-img" alt="Site Scorecard 1"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-078-scorecard-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.11: Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.
+</figcaption>
 </figure>
 </div>
 <p>Site scorecards provide reports to all sites that are released in the Enclave. These reports are sent on a biweekly cadence, via the sFTP outgoing folder. They are created in an automated fashion and based on the latest data available for the site in the Enclave.</p>
 <p>Each site receives two scorecards: a site-specific report and a site-comparison report. The <em>site-specific</em> scorecard provides data quality information specific to the site’s latest payload. The <em>site-comparison</em> scorecard provides useful context via comparisons between the site and other anonymized sites on various metrics. Sites submitting data in the OMOP or PEDSnet CDM receive scorecards with comparisons to other OMOP sites, while sites submitting data in ACT, TriNetX, or PCORnet CDM receive scorecards with comparisons to sites with these non-OMOP data models.</p>
 <p>Scorecards focus on several data quality areas including demographics, COVID-19 metrics, visits/encounters, measurements/labs, non-plausible dates such as dates in the distant past or future, use of non-standard concepts, and N3C-specific data enhancements such as social determinants of health and oxygen supplementation device data. Sites are also provided with contact information should they have further questions about their scorecard or need help troubleshooting data discrepancies.</p>
-<div id="fig-cycle-079-scorecard-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-079-scorecard-2.png" class="lightbox" title="Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites." data-gallery="quarto-lightbox-gallery-12"><img src="images/cycle/fig-cycle-079-scorecard-2.png" class="img-fluid figure-img" alt="Site Scorecard 2"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.12: Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites.</figcaption>
+<div id="fig-cycle-079-scorecard-2" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Site Scorecard 2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-079-scorecard-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-079-scorecard-2.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="images/cycle/fig-cycle-079-scorecard-2.png" class="img-fluid figure-img" alt="Site Scorecard 2"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-079-scorecard-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.12: Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites.
+</figcaption>
 </figure>
 </div>
 <p>The scorecards allow sites to be directly involved in the data quality improvement process by highlighting areas for targeted improvement in their local source data, which would ultimately result in data quality improvements in their N3C payloads. Additionally, the scorecards allow the DI&amp;H team to monitor and maintain data quality across subsequent N3C data submissions and prevent any regression on those metrics. If the scorecards reveal that a released site is no longer passing key data quality metrics, then the site is unreleased until they are able to remediate their data quality issues.</p>
@@ -720,10 +715,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-cycle-enhancements" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="sec-cycle-enhancements"><span class="header-section-number">3.5</span> N3C Data Enhancements</h2>
 <p>As part of N3C’s efforts to support COVID-19 and long COVID research, N3C requested sites that are able to add new data elements to their common data models (CDMs). These data elements help to create a more comprehensive and rich dataset that can support more in-depth and informative analyses of the SARS-CoV-2 pandemic. By adding these data elements, sites can contribute to the collective knowledge about COVID-19 and help to inform the development of effective treatments, policies, and strategies to address the pandemic. N3C is committed to working closely with participating sites to ensure that the data collection process is efficient and straightforward and that the data is accurately and reliably captured and integrated into the N3C dataset.</p>
-<div id="fig-cycle-080-enhancements" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/cycle/fig-cycle-080-enhancements.png" class="lightbox" title="N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research." data-gallery="quarto-lightbox-gallery-13"><img src="images/cycle/fig-cycle-080-enhancements.png" class="img-fluid figure-img" alt="Data Enhancements"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;3.13: N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.</figcaption>
+<div id="fig-cycle-080-enhancements" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Data Enhancements">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cycle-080-enhancements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/cycle/fig-cycle-080-enhancements.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="images/cycle/fig-cycle-080-enhancements.png" class="img-fluid figure-img" alt="Data Enhancements"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cycle-080-enhancements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.13: N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.
+</figcaption>
 </figure>
 </div>
 <section id="sec-cycle-enhancements-long" class="level3" data-number="3.5.1">
@@ -757,17 +756,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </section>
 <section id="sec-cycle-enhancements-sdoh" class="level3" data-number="3.5.5">
 <h3 data-number="3.5.5" class="anchored" data-anchor-id="sec-cycle-enhancements-sdoh"><span class="header-section-number">3.5.5</span> Social Determinants of Health</h3>
-<p>Social Determinants of Health (SDOH) refer to the social, economic, and environmental factors that can impact an individual’s health and well-being. These factors can include things like income and education level, housing and transportation, and access to healthcare and other resources. While N3C has made available several external datasets containing SDOH data that can be incorporated into a research project (<a href="https://docs.google.com/document/d/1cgQItN3dYY3HJDTkYz0YgOgaK5FDU1lGDSFdeE8Cc8s/edit#heading=h.olgqg22wdn4y">See the Public/External Datasets section of the Understanding The Data chapter</a>), N3C has also requested that data partners that routinely collect SDOH data provide that data as part of their data submissions, if they are able.</p>
+<p>Social Determinants of Health (SDOH) refer to the social, economic, and environmental factors that can impact an individual’s health and well-being. These factors can include things like income and education level, housing and transportation, and access to healthcare and other resources. While N3C has made available several external datasets containing SDOH data that can be incorporated into a research project (<a href="../chapters/understanding.html#sec-understanding-public">See the Public/External Datasets section of the Understanding The Data chapter</a>, N3C has also requested that data partners that routinely collect SDOH data provide that data as part of their data submissions, if they are able.</p>
 <p>For more details about the N3C SDOH data please refer to this <a href="https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/New-Data-Element:-Social-Determinants-of-Health">GitHub page</a>.</p>
 </section>
 <section id="sec-cycle-enhancements-pprl" class="level3" data-number="3.5.6">
 <h3 data-number="3.5.6" class="anchored" data-anchor-id="sec-cycle-enhancements-pprl"><span class="header-section-number">3.5.6</span> PPRL</h3>
-<p>Additional datasets beyond those submitted by N3C clinical data partners are available within N3C and linked through Privacy Preserving Record Linkage (PPRL). More information about PPRL and the datasets available through this linkage can be found in the <a href="https://docs.google.com/document/d/1cgQItN3dYY3HJDTkYz0YgOgaK5FDU1lGDSFdeE8Cc8s/edit#heading=h.ter2k3zf5e9">Understanding The Data chapter</a>.</p>
+<p>Additional datasets beyond those submitted by N3C clinical data partners are available within N3C and linked through Privacy Preserving Record Linkage (PPRL). More information about PPRL and the datasets available through this linkage can be found in the <a href="../chapters/understanding.html">Understanding The Data chapter</a>.</p>
 </section>
 <section id="sec-cycle-enhancements-cms" class="level3" data-number="3.5.7">
 <h3 data-number="3.5.7" class="anchored" data-anchor-id="sec-cycle-enhancements-cms"><span class="header-section-number">3.5.7</span> CMS</h3>
 <p>The Enclave is a continuously refreshed data resource following the Observational Medical Outcomes Partnership (OMOP) Common Data Model. However a patient’s data from the EHR may be missing data from the patient’s healthcare journey outside of hospital settings. The missing portion of health care received by the patient may include visits to the pharmacy, visits to the outpatient clinic as well as the non-hospital institutional care facilities. It may also be missing telehealth visits and the purchasing of equipment or devices to be used at home. Often data from these outside-of-hospital visit settings are not captured via the EHR. Using PPRL technology, we linked N3C patients with CMS patients and supplemented N3C EHR information using a comprehensive CMS claims dataset. For the PPRL-linked patients we provide additional datasets that can be referenced to render a more holistic view of the patient’s healthcare journey. This work is currently ongoing. The approach and methods to construct the claims data with encounters will be updated soon. The CMS data is used to complement and augment the N3C OMOP datasets.</p>
-<p>Additional details on the CMS datasets can be found in the <a href="https://docs.google.com/document/d/1cgQItN3dYY3HJDTkYz0YgOgaK5FDU1lGDSFdeE8Cc8s/edit#heading=h.ter2k3zf5e9">Understanding The Data chapter</a>.</p>
+<p>Additional details on the CMS datasets can be found in the <a href="../chapters/understanding.html">Understanding The Data chapter</a></p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -783,7 +782,22 @@ Additional Chapter Details
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;3.1: N3C Data Pipeline. Limited data sets submitted by participating data partners in their source CDMs are ingested into the N3C Data Enclave and harmonized into the OMOP CDM.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;3.2: N3C Data Pipeline Workflow. Data submitted by participating data partners undergo multiple steps prior to data release, including multiple transformations, harmonizations, data quality checks, filters, and data linkages.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;3.3: Static ValueSet N3C Mapping Table. A static value set mapping table is utilized to map values that are well-defined by CDM specifications.</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;3.4: Dynamic N3C Mapping Table. A dynamic code and code system mapping table is utilized for mapping values that are not defined by the CDM specifications, and code and code system can vary by data partner.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;3.5: Unit conversion example for degree Fahrenheit to degree Celsius.</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;3.6: A visual representation of the many ingestion and harmonization steps with data health checks.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;3.7: Automated Data Health Checks. Issues identified by the automated data health checks are resolved through issue tracking and communication with data partners.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure&nbsp;3.8: Data Health Checks and Code Templates. Templates are utilized to easily deploy ingestion logics and data health checks for new sites upon submission of data to N3C. Data provenance for over 5000+ transformation across 76+ sites datasets are automatically tracked.</span>
+<span class="glightbox-desc lightbox-desc-9">Figure&nbsp;3.9: Data Quality Portal. The Data Quality Portal provides a graphical user interface for assessing data quality of data partner data submissions.</span>
+<span class="glightbox-desc lightbox-desc-10">Figure&nbsp;3.10: DQP Metrics. The Data Quality Portal also allows for comparison of data quality metric results between data partners.</span>
+<span class="glightbox-desc lightbox-desc-11">Figure&nbsp;3.11: Site Scorecard. Site scorecards utilize charts and graphical representations of data partner’s submitted data to provide up-to-date data quality metrics that can be deployed in response to a successful ingestion of data from a data partner’s data submission.</span>
+<span class="glightbox-desc lightbox-desc-12">Figure&nbsp;3.12: Inpatient Length of Stay Distribution Scorecard. This line graph displays the length of stay for inpatient visits in days using a log scale across all OMOP and PEDsnet sites.</span>
+<span class="glightbox-desc lightbox-desc-13">Figure&nbsp;3.13: N3C Data Enhancements. N3C has also sought to expand the clinical data provided by data partners by requesting data enhancements to data partner data submissions, including long COVID clinic visits, ADT transactions, oxygen devices, NLP, and SDoH datasets. In addition to N3C data sets, PPRL linked external sources such as CMS and mortality evidence datasets have been added and currently available for research.</span>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-dong_2020" class="csl-entry" role="listitem">
 Dong, X., Li, J., Soysal, E., Bian, J., DuVall, S. L., Hanchrow, E., Liu, H., Lynch, K. E., Matheny, M., Natarajan, K., et al. (2020). COVID-19 TestNorm: A tool to normalize COVID-19 testing names to LOINC codes. <em>Journal of the American Medical Informatics Association</em>, <em>27</em>(9), 1437–1442. <a href="https://doi.org/10.1093/jamia/ocaa145">https://doi.org/10.1093/jamia/ocaa145</a>
 </div>
@@ -845,6 +859,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -913,13 +954,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -998,10 +1041,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1011,8 +1071,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1025,6 +1094,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1068,6 +1256,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1093,6 +1282,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1150,30 +1365,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/story.html" class="pagination-link">
+      <a href="../chapters/story.html" class="pagination-link  aria-label=" &lt;span="" research="" story&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/governance.html" class="pagination-link">
+      <a href="../chapters/governance.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Governance, Leadership, and Operations Structures</span>">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Governance, Leadership, and Operations Structures</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1181,14 +1382,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/cycle.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/cycle.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":true,"closeEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

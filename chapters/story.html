@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -26,7 +26,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -62,6 +62,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -110,7 +111,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -119,6 +126,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -217,12 +225,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/story.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../chapters/story.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -232,13 +240,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -404,7 +412,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -420,88 +428,38 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-story-analyses" id="toc-sec-story-analyses" class="nav-link" data-scroll-target="#sec-story-analyses"><span class="header-section-number">2.7</span> Analyses</a></li>
   <li><a href="#sec-story-manuscript" id="toc-sec-story-manuscript" class="nav-link" data-scroll-target="#sec-story-manuscript"><span class="header-section-number">2.8</span> Manuscript Preparation</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/story.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/story.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/story.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/story.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-story" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">William H Beasley <a href="https://orcid.org/0000-0002-5613-5006" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://ouhsc.edu/bbmc/">
-            University of Oklahoma Health Sciences Center
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">A Jerrod Anzalone <a href="https://orcid.org/0000-0002-3212-7845" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://gpctr.unmc.edu/">
-            University of Nebraska Medical Center
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Sharon Patrick <a href="https://orcid.org/0000-0001-6535-2013" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.wvctsi.org/">
-            West Virginia Clinical and Translational Science Institute
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Shawn O’Neil <a href="https://orcid.org/0000-0001-6220-7080" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://oneilsh.github.io/">
-            University of Colorado Anschutz
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-story" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Research Story</span></span></h1>
+            <p class="author">William H Beasley</p>
+        <p class="author">A Jerrod Anzalone</p>
+        <p class="author">Sharon Patrick</p>
+        <p class="author">Shawn O’Neil</p>
     
-  </div>
-  
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
+            <div class="abstract">
+    <div class="abstract-title">How to Cite </div>
     40,000-foot view of a research project, from onboarding to publishing
-  </div>
-</div>
+    </div>
+    </header>
 
-</header>
 
 <p><strong>Chapter Leads</strong>: Will Beasley, Jerrod Anzalone</p>
 <p>Now that we have introduced N3C and described its motivation and importance, we’ll walk through the life cycle of an example project from onboarding to publishing. It isn’t easy to do yourself, but fortunately N3C has attracted a large and diverse set of researchers. Coupled with a large and diverse set of robust patient records, it is possible to complete an investigation within 6 to 12 months.</p>
-<div id="fig-story-010-intro-to-story" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" title="Path of a typical N3C project." data-gallery="quarto-lightbox-gallery-1"><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;2.1: Path of a typical N3C project.</figcaption>
+<div id="fig-story-010-intro-to-story" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Path of a typical N3C project">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-story-010-intro-to-story-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/story/fig-story-010-intro-to-story.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/story/fig-story-010-intro-to-story.png" class="img-fluid figure-img" alt="Path of a typical N3C project"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-story-010-intro-to-story-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Path of a typical N3C project.
+</figcaption>
 </figure>
 </div>
-<p>Suppose you are starting a project by yourself. The N3C ecosystem of researchers and resources is at your fingertips. You’ll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as <a href="../chapters/support.html">instructional material</a> and <a href="../chapters/support.html#sec-support-office">office hours</a>). If you would like to join an existing project, there are <a href="../chapters/onboarding.html#sec-onboarding-dt">domain teams</a> and ongoing projects that likely will fit your interests and benefit from your abilities. <a href="#fig-story-010-intro-to-story">Figure&nbsp;<span>2.1</span></a> provides a high-level overview of the path of a typical N3C project from clinical question to research product.</p>
+<p>Suppose you are starting a project by yourself. The N3C ecosystem of researchers and resources is at your fingertips. You’ll likely be able to recruit collaborators with complementary skills (in addition to N3C-wide resources such as <a href="../chapters/support.html">instructional material</a> and <a href="../chapters/support.html#sec-support-office">office hours</a>). If you would like to join an existing project, there are <a href="../chapters/onboarding.html#sec-onboarding-dt">domain teams</a> and ongoing projects that likely will fit your interests and benefit from your abilities. <a href="#fig-story-010-intro-to-story" class="quarto-xref">Figure&nbsp;<span>2.1</span></a> provides a high-level overview of the path of a typical N3C project from clinical question to research product.</p>
 <p>Electronic Health Record (EHR) research has become an increasingly important tool to evaluate real-world evidence (RWE) to understand insights into treatment effectiveness, the impact of healthcare interventions, and our understanding of rare diseases. EHRs provide access to large, diverse patient populations and longitudinal data that allows observations of health changes over time or in cross-section. The strength of the EHR is that it reflects real-world care and is often a better representation of clinical care than the controlled settings of a traditional clinical trial. However, with this comes challenges of interpreting differences in care delivery, data standards, and merging expertise from clinical subject matter experts, clinical informaticists, biostatisticians and epidemiologists, medical terminologists, and other experts as healthcare data is linked with other health assets to move toward a more comprehensive representation of a patient’s lived experience relative their health outcomes.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -556,11 +514,15 @@ Voice of Narrator
 <li><p><strong>N</strong>: No. If needed, you can request a workspace to be updated from Level 2 to Level 3 and receive IRB approval.</p></li>
 <li><p><strong>I</strong>: That’s great. I think we’ll start with Level 2. I’ll work on the research protocol now.</p></li>
 </ul>
-<p>After some thought, the investigator develops a research protocol and submits the DUR in <a href="#fig-story-020-dur">Figure&nbsp;<span>2.2</span></a>.</p>
-<div id="fig-story-020-dur" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/story/fig-story-020-dur.png" class="lightbox" title="Submitted Data Use Request." data-gallery="quarto-lightbox-gallery-2"><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;2.2: Submitted Data Use Request.</figcaption>
+<p>After some thought, the investigator develops a research protocol and submits the DUR in <a href="#fig-story-020-dur" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>.</p>
+<div id="fig-story-020-dur" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Submitted Data Use Request">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-story-020-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/story/fig-story-020-dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/story/fig-story-020-dur.png" class="img-fluid figure-img" alt="Submitted Data Use Request"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-story-020-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Submitted Data Use Request.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -587,11 +549,15 @@ Voice of Narrator
 <li>a <strong>data liaison</strong> who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and</li>
 <li>a <strong>principal investigator</strong> who knows the literature and can testable hypotheses and write the manuscript.</li>
 </ol>
-<p><a href="#fig-story-030-team-formation">Figure&nbsp;<span>2.3</span></a> depicts these roles. Depending on the investigation and the personnel, sometimes one person can serve multiple roles.</p>
-<div id="fig-story-030-team-formation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/story/fig-story-030-team-formation.png" class="lightbox" title="Typical N3C Team Composition." data-gallery="quarto-lightbox-gallery-3"><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;2.3: Typical N3C Team Composition.</figcaption>
+<p><a href="#fig-story-030-team-formation" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> depicts these roles. Depending on the investigation and the personnel, sometimes one person can serve multiple roles.</p>
+<div id="fig-story-030-team-formation" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Typical N3C Team Composition">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-story-030-team-formation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/story/fig-story-030-team-formation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="images/story/fig-story-030-team-formation.png" class="img-fluid figure-img" alt="Typical N3C Team Composition"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-story-030-team-formation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Typical N3C Team Composition.
+</figcaption>
 </figure>
 </div>
 <p>N3C teams have some differences from conventional research teams at single sites. Some trends we have noticed are:</p>
@@ -698,7 +664,7 @@ Voice of Narrator
 <li><p><a href="https://athena.ohdsi.org/">Athena</a> is a centralized repository of standardized clinical vocabularies.</p></li>
 <li><p>The <a href="../chapters/tools.html#sec-tools-concepts">N3C Concept Set Browser</a> is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs.</p></li>
 </ol>
-<p>Concept sets, described in detail in <a href="understanding.html"><span>Chapter&nbsp;7</span></a> and <a href="tools.html"><span>Chapter&nbsp;8</span></a>, are the basic building blocks of an analytic dataset. They contain lists of medical codes, usually restricted to a very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research question. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).</p>
+<p>Concept sets, described in detail in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> and <a href="tools.html" class="quarto-xref"><span>Chapter 8</span></a>, are the basic building blocks of an analytic dataset. They contain lists of medical codes, usually restricted to a very specific definition or computable phenotype. In N3C, they are used to identify cohorts or exposures to answer a research question. They point to standardized vocabularies and clinically organized domains in the OMOP CDM (e.g., drug, condition, measurement).</p>
 <p>In general, the overall process involved in developing concepts is as follows:</p>
 <ol type="1">
 <li><em>Define the research question</em>: The first step is for the research team to clearly define the research question and population of interest, which will guide the selection of relevant clinical concepts.</li>
@@ -747,9 +713,13 @@ Voice of Narrator
 <p>Using the previously defined protocol, the informaticist will use the <a href="../chapters/tools.html#sec-tools-concepts">concept set browser</a> to identify or create relevant concept sets and prepare the analytic dataset in a <a href="../chapters/tools.html#sec-tools-apps-workbook">code workbook</a> or <a href="../chapters/tools.html#sec-tools-apps-repo">code repository</a> in the N3C Data Enclave. This time-intensive process produces a dataset that the team’s statistician will analyze. <a href="../chapters/tools.html#sec-tools-store-ll">N3C Logic Liaison fact tables and templates</a> are available to help build these datasets more quickly using defined pipelines where the custom concept sets can quickly be added as inputs.</p>
 <p>The <a href="../chapters/support.html#sec-support-liaisons">N3C Logic Liaisons</a> also provide tools that assess the quality of your derived dataset. These tools inform decisions such as dropping specific sites or variables from the analysis (for example, if a site appears to be systematically missing a variable that is important to your hypothesis).<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
 <div style="overflow-x:auto;">
-<div id="tbl-story-analytic" class="anchored">
+<div id="tbl-story-analytic" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-story-analytic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Scurvy Analytic Dataset
+</figcaption>
+<div aria-describedby="tbl-story-analytic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;2.1: Scurvy Analytic Dataset</caption>
 <colgroup>
 <col style="width: 1%">
 <col style="width: 1%">
@@ -896,6 +866,8 @@ Voice of Narrator
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 </div>
 </section>
 <section id="sec-story-analyses" class="level2" data-number="2.7">
@@ -952,10 +924,14 @@ Voice of Narrator
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    tibble<span class="sc">::</span><span class="fu">as_tibble</span>(<span class="at">col_labels =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Which produces the following <a href="#tbl-story-demographics">Table&nbsp;<span>2.2</span></a>.</p>
-<div id="tbl-story-demographics" class="anchored">
+<p>Which produces the following <a href="#tbl-story-demographics" class="quarto-xref">Table&nbsp;<span>2.2</span></a>.</p>
+<div id="tbl-story-demographics" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-story-demographics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: Characteristics of Patients with and without Scurvy
+</figcaption>
+<div aria-describedby="tbl-story-demographics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;2.2: Characteristics of Patients with and without Scurvy</caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 23%">
@@ -1016,6 +992,8 @@ Voice of Narrator
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
 </div>
 <p>After repeating this for the remaining analyses for the project, the statistician creates a report and requests it be reviewed by the <a href="../chapters/publishing.html#sec-publishing-tech-process">N3C Download Review Committee</a>.</p>
 <ul>
@@ -1103,7 +1081,12 @@ Additional Chapter Details
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;2.1: Path of a typical N3C project.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2.2: Submitted Data Use Request.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;2.3: Typical N3C Team Composition.</span>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-ohdsi_2019" class="csl-entry" role="listitem">
 OHDSI. (2019). <em>The book of OHDSI: Observational health data sciences and informatics</em>. OHDSI. <a href="https://ohdsi.github.io/TheBookOfOhdsi/">https://ohdsi.github.io/TheBookOfOhdsi/</a>
 </div>
@@ -1115,29 +1098,29 @@ Pfaff, E. R., Girvin, A. T., Gabriel, D. L., Kostka, K., Morris, M., Palchuk, M.
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On the other hand, hundreds of institutions have already done so; check the list at <a href="https://covid.cd2h.org/duas" class="uri">https://covid.cd2h.org/duas</a>. This process is described in the <a href="../chapters/onboarding.html#sec-onboarding-enclave">Enclave Registration</a> section of <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p> This “navigator” role may be called something differently at your institution; the roles are defined below in <a href="#sec-story-team"><span>Section&nbsp;2.2</span></a>. If your institution doesn’t support this position, we suggest starting with the <a href="../chapters/support.html#sec-support-office">N3C Office Hours</a> or other avenues of <a href="../chapters/support.html">support</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Read about the institutional-level DUA in <a href="onboarding.html#sec-onboarding-dua"><span>Section&nbsp;5.4</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>See <a href="onboarding.html#sec-onboarding-enclave"><span>Section&nbsp;5.3</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Project-level paperwork is discussed in <a href="access.html#sec-access-dur"><span>Section&nbsp;6.4</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>The N3C Data Enclave is detailed in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>DURs are the topic of <a href="access.html"><span>Chapter&nbsp;6</span></a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>See <a href="support.html#sec-support-liaisons"><span>Section&nbsp;11.9</span></a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>On the other hand, hundreds of institutions have already done so; check the list at <a href="https://covid.cd2h.org/duas" class="uri">https://covid.cd2h.org/duas</a>. This process is described in the <a href="../chapters/onboarding.html#sec-onboarding-enclave">Enclave Registration</a> section of <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p> This “navigator” role may be called something differently at your institution; the roles are defined below in <a href="#sec-story-team" class="quarto-xref"><span>Section 2.2</span></a>. If your institution doesn’t support this position, we suggest starting with the <a href="../chapters/support.html#sec-support-office">N3C Office Hours</a> or other avenues of <a href="../chapters/support.html">support</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Read about the institutional-level DUA in <a href="onboarding.html#sec-onboarding-dua" class="quarto-xref"><span>Section 5.4</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>See <a href="onboarding.html#sec-onboarding-enclave" class="quarto-xref"><span>Section 5.3</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Project-level paperwork is discussed in <a href="access.html#sec-access-dur" class="quarto-xref"><span>Section 6.4</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The N3C Data Enclave is detailed in <a href="tools.html" class="quarto-xref"><span>Chapter 8</span></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>DURs are the topic of <a href="access.html" class="quarto-xref"><span>Chapter 6</span></a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>See <a href="support.html#sec-support-liaisons" class="quarto-xref"><span>Section 11.9</span></a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p> <!-- Read about the OMOP Standard Tables in @sec-understanding,
   specifically the medications are in the [`drug_exposure`](https://ohdsi.github.io/CommonDataModel/cdm60.html#DRUG_EXPOSURE) table. --> OMOP tables are designed to represent data from many sources but typically need to be transformed before analysis.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Conformance is a topic in <a href="cycle.html"><span>Chapter&nbsp;3</span></a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>See <a href="access.html"><span>Chapter&nbsp;6</span></a> for accessing the N3C Data Enclave.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p> See <a href="understanding.html#sec-understanding-sets-library-published"><span>Section&nbsp;7.3.3.1</span></a> and <a href="support.html#sec-support-liaisons-logic"><span>Section&nbsp;11.9.2</span></a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="tools.html"><span>Chapter&nbsp;8</span></a>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Conformance is a topic in <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>See <a href="access.html" class="quarto-xref"><span>Chapter 6</span></a> for accessing the N3C Data Enclave.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p> See <a href="understanding.html#sec-understanding-sets-library-published" class="quarto-xref"><span>Section 7.3.3.1</span></a> and <a href="support.html#sec-support-liaisons-logic" class="quarto-xref"><span>Section 11.9.2</span></a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Read about SQL, Python, and R transforms in Code Workbooks in <a href="tools.html" class="quarto-xref"><span>Chapter 8</span></a>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p>There is a brief discussion of SME’s cat.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p>There is a brief discussion of S’s daughter strutting in the background wearing a cowboy hat and waving a fairy wand.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn16"><p>An <a href="https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/health-information-exchange">HIE</a> is a health information exchange.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html"><span>Chapter&nbsp;9</span></a>.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p>Authoring and using concept sets is described in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn19"><p>Mortality records are discussed in <a href="understanding.html#sec-understanding-pprl-mortality"><span>Section&nbsp;7.5.3</span></a>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>The benefits and caveats of real-world data are a theme throughout the book, particularly in the best practices discussed in <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Authoring and using concept sets is described in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>. Mapping an ICD to SNOMED diagnosis code is an example of mapping a “non-standard” to a “standard” concept, discussed in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Mortality records are discussed in <a href="understanding.html#sec-understanding-pprl-mortality" class="quarto-xref"><span>Section 7.5.3</span></a>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn20"><p>Everyone says goodbye to the cat.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn21"><p> The conversation gets really technical. More technical than the editors want for this chapter.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn22"><p> <a href="tools.html#sec-tools-apps-protocol"><span>Section&nbsp;8.4.1</span></a> describes the tool and <a href="practices.html"><span>Chapter&nbsp;9</span></a> describes the best practices.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p> <a href="tools.html#sec-tools-apps-protocol" class="quarto-xref"><span>Section 8.4.1</span></a> describes the tool and <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a> describes the best practices.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn23"><p>See also <span class="citation" data-cites="pfaff_2022b">Pfaff et al. (<a href="../references.html#ref-pfaff_2022b" role="doc-biblioref">2022</a>)</span>.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
@@ -1184,6 +1167,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1252,13 +1262,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1337,10 +1349,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1350,8 +1379,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1364,6 +1402,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1407,6 +1564,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1432,6 +1590,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1489,30 +1673,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/intro.html" class="pagination-link">
+      <a href="../chapters/intro.html" class="pagination-link  aria-label=" &lt;span="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/cycle.html" class="pagination-link">
+      <a href="../chapters/cycle.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Data Life Cycle - From Patients to N3C Researchers</span>">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Life Cycle - From Patients to N3C Researchers</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1520,14 +1690,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/story.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/story.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

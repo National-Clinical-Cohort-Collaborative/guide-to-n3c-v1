@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,18 +46,24 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -66,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -161,12 +168,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/access.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/access.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -176,13 +183,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -348,7 +355,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -382,64 +389,30 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-access-my-leads" id="toc-sec-access-my-leads" class="nav-link" data-scroll-target="#sec-access-my-leads"><span class="header-section-number">6.8.1</span> Project Management for Leads</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/access.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/access.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/access.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/access.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-access" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Shawn O’Neil <a href="https://orcid.org/0000-0001-6220-7080" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://oneilsh.github.io/">
-            University of Colorado, Anschutz
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Mariam Deacy <a href="https://orcid.org/0000-0001-8307-5208" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://ncats.nih.gov/">
-            NIH NCATS
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-access" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Getting &amp; Managing Data Access</span></span></h1>
+            <p class="author">Shawn O’Neil</p>
+        <p class="author">Mariam Deacy</p>
     
-  </div>
-  
+        </header>
 
-</header>
 
 <p><strong>Chapter Leads:</strong> Shawn O’Neil, Mariam Deacy</p>
-<p>N3C is strongly committed to patient privacy. After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who’ve placed their trust in N3C’s ability to protect it. Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the <a href="../chapters/onboarding.html#sec-onboarding-dua">Data Use Agreements</a>, discussed in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.</p>
-<p>This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter. The DUR form is available only inside the N3C Data Enclave, so Enclave access is required to request data access. N3C registration and Enclave access are covered in <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>, so we won’t cover those topics here.</p>
+<p>N3C is strongly committed to patient privacy. After all, N3C is the steward for EHR data on millions of patients from dozens of healthcare organizations who’ve placed their trust in N3C’s ability to protect it. Some of these protections include agreeing to report a data leak incident within 2 business days (covered by the <a href="../chapters/onboarding.html#sec-onboarding-dua">Data Use Agreements</a>, discussed in <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>), a formal review process to export any results derived from the data, and a formal per-project, per-person application process for data access.</p>
+<p>This last protection, known as a Data Use Request or DUR, will be the main focus of this chapter. The DUR form is available only inside the N3C Data Enclave, so Enclave access is required to request data access. N3C registration and Enclave access are covered in <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>, so we won’t cover those topics here.</p>
 <section id="sec-access-background" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="sec-access-background"><span class="header-section-number">6.1</span> Background: N3C Protected Data Levels</h2>
-<p>Not all data in the N3C Data Enclave requires an approved DUR to access-mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access. These low-risk data are covered more in Chapters <a href="understanding.html"><span>7</span></a> and <a href="publishing.html"><span>10</span></a>.</p>
+<p>Not all data in the N3C Data Enclave requires an approved DUR to access-mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access. These low-risk data are covered more in Chapters <a href="understanding.html" class="quarto-xref"><span>7</span></a> and <a href="publishing.html" class="quarto-xref"><span>10</span></a>.</p>
 <p>The harmonized EHR data that <em>do</em> require an approved DUR to access are made available in three different “levels”, each with different amounts of data obfuscation, and correspondingly different access requirements. Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data. On the other hand, some studies can be accomplished with only Level 3 data. Note that if you start with a lower level of data, it is possible to “upgrade” a project’s access level, though all participants in the project will need to complete another DUR for the new level.</p>
 <p>In addition to the primary Level 1, 2, and 3 datasets are “PPRL” data. PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information. These are available alongside only Level 3 data as an optional add-on; we’ll discuss PPRL in more detail below.</p>
 <section id="sec-access-background-l3" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="sec-access-background-l3"><span class="header-section-number">6.1.1</span> Level 3, Limited Data Set (LDS)</h3>
-<p>Level 3, or LDS data is the most complete and protected (the term “limited data set” is defined by HIPAA and may contain a limited set of potentially identifying information). This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and accurate dates of events and services (except for dates of birth which are limited to month and year).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Level 3 data are in the OMOP common data model, with some N3C-specific additions and conveniences, and are versioned as releases as described above. (OMOP and N3C-specific additions are covered in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>.)</p>
+<p>Level 3, or LDS data is the most complete and protected (the term “limited data set” is defined by HIPAA and may contain a limited set of potentially identifying information). This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and accurate dates of events and services (except for dates of birth which are limited to month and year).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Level 3 data are in the OMOP common data model, with some N3C-specific additions and conveniences, and are versioned as releases as described above. (OMOP and N3C-specific additions are covered in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>.)</p>
 </section>
 <section id="sec-access-background-l2" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="sec-access-background-l2"><span class="header-section-number">6.1.2</span> Level 2, De-Identified</h3>
@@ -464,52 +437,68 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-background-l1-example" class="level4" data-number="6.1.3.1">
 <h4 data-number="6.1.3.1" class="anchored" data-anchor-id="sec-access-background-l1-example"><span class="header-section-number">6.1.3.1</span> Example N3C OMOP Data Format</h4>
 <p>To give a sneak preview of the primary N3C data format, here’s a snapshot of a few columns of notional (<em>fake</em>) data in OMOP format from the <code>condition_occurrence</code> table:</p>
-<div id="fig-access-010-condition_occurrence" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-010-condition_occurrence.png" class="lightbox" title="A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added data_partner_id, these are anonymized identifiers for sites contributing data, labeling each record with a source." data-gallery="quarto-lightbox-gallery-1"><img src="images/access/fig-access-010-condition_occurrence.png" class="img-fluid figure-img" alt="A subset of rows and columns for mock condition_occurrence data"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.1: A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added <code>data_partner_id</code>, these are anonymized identifiers for sites contributing data, labeling each record with a source.</figcaption>
+<div id="fig-access-010-condition_occurrence" class="quarto-figure quarto-figure-center quarto-float anchored" alt="A subset of rows and columns for mock condition_occurrence data">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-010-condition_occurrence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-010-condition_occurrence.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/access/fig-access-010-condition_occurrence.png" class="img-fluid figure-img" alt="A subset of rows and columns for mock condition_occurrence data"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-010-condition_occurrence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added <code>data_partner_id</code>, these are anonymized identifiers for sites contributing data, labeling each record with a source.
+</figcaption>
 </figure>
 </div>
 <p>Notice in particular the columns for <code>data_partner_id</code> (a pseudo-random identifier assigned to each data partner), <code>condition_concept_id</code> (the OMOP identifier uniquely describing the condition used for data filtering and analysis), and <code>condition_concept_name</code> (the human-readable version of <code>condition_concept_id</code>, used for convenience but not for data filtering). Other OMOP tables link records by shared columns; here are a few columns from the <code>person</code> table describing basic demographics of patients:</p>
-<div id="fig-access-020-person" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-020-person.png" class="lightbox" title="Example data for the OMOP person table." data-gallery="quarto-lightbox-gallery-2"><img src="images/access/fig-access-020-person.png" class="img-fluid figure-img" alt="Example data for the OMOP `person` table"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.2: Example data for the OMOP <code>person</code> table.</figcaption>
+<div id="fig-access-020-person" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example data for the OMOP `person` table">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-020-person-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-020-person.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/access/fig-access-020-person.png" class="img-fluid figure-img" alt="Example data for the OMOP `person` table"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-020-person-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Example data for the OMOP <code>person</code> table.
+</figcaption>
 </figure>
 </div>
 <p>Some other tables available with Level 3 data are specific to N3C; here are a few columns from a notional <code>manifest</code> table providing information about data partners, including the source CDM used by the data partner, the dates of data extraction and submission to N3C, and whether the data partner performs random date shifting prior to submission to N3C:</p>
-<div id="fig-access-030-manifest" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-030-manifest.png" class="lightbox" title="An example of the N3C-specific manifest table. This table provides information about data partners, such as their source common data model (cdm_name), whether they pre-shift dates (see @sec-cycle), and when their last submission was." data-gallery="quarto-lightbox-gallery-3"><img src="images/access/fig-access-030-manifest.png" class="img-fluid figure-img" alt="An example of the N3C-specific `manifest` table"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.3: An example of the N3C-specific <code>manifest</code> table. This table provides information about data partners, such as their source common data model (<code>cdm_name</code>), whether they pre-shift dates (see <a href="cycle.html"><span>Chapter&nbsp;3</span></a>), and when their last submission was.</figcaption>
+<div id="fig-access-030-manifest" class="quarto-figure quarto-figure-center quarto-float anchored" alt="An example of the N3C-specific `manifest` table">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-030-manifest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-030-manifest.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="images/access/fig-access-030-manifest.png" class="img-fluid figure-img" alt="An example of the N3C-specific `manifest` table"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-030-manifest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: An example of the N3C-specific <code>manifest</code> table. This table provides information about data partners, such as their source common data model (<code>cdm_name</code>), whether they pre-shift dates (see <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a>), and when their last submission was.
+</figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="sec-access-background-pprl" class="level3" data-number="6.1.4">
 <h3 data-number="6.1.4" class="anchored" data-anchor-id="sec-access-background-pprl"><span class="header-section-number">6.1.4</span> PPRL Data</h3>
-<p>PPRL, short for “Privacy-Preserving Record Linkage”, is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, <em>without</em> revealing to any party except the data sources themselves any identifying information about the individual. While we won’t describe how the process works here, researchers with Enclave access can read more about it in <a href="understanding.html"><span>Chapter&nbsp;7</span></a> and the Introduction section of the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=23">PPRL training module</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> in the Training Portal (see <a href="support.html#sec-support-training"><span>Section&nbsp;11.4</span></a>).</p>
+<p>PPRL, short for “Privacy-Preserving Record Linkage”, is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, <em>without</em> revealing to any party except the data sources themselves any identifying information about the individual. While we won’t describe how the process works here, researchers with Enclave access can read more about it in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> and the Introduction section of the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=23">PPRL training module</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> in the Training Portal (see <a href="support.html#sec-support-training" class="quarto-xref"><span>Section 11.4</span></a>).</p>
 </section>
 </section>
 <section id="sec-access-availability" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="sec-access-availability"><span class="header-section-number">6.2</span> Level 1/2/3 (and PPRL) Availability</h2>
 <p>Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we’ll discuss below, the most significant access requirement for Level 3 data is a letter of determination from the researchers’ local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).</p>
-<p>Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see <a href="cycle.html"><span>Chapter&nbsp;3</span></a>).</p>
+<p>Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a>).</p>
 <p>Level 1 Synthetic data are available to researchers at US and approved foreign organizations (though note the update about Level 1 data generation above), as well as individuals without any affiliation with a research organization, i.e., “citizen scientists”. This level of data thus provides opportunities for public outreach and engagement with topics in clinical science. Citizen scientists must nevertheless complete some training requirements and sign the legal Data Use Agreement document. Minors may apply for access, but only via their parents’ or legal guardians’ consent and with explicit N3C consent.</p>
-<p>Since the registration process is non-trivial for those not affiliated with a research institution, citizen scientists hoping to work with Level 1 Synthetic data should reach out to one of the N3C support venues to get started (see <a href="support.html"><span>Chapter&nbsp;11</span></a>).</p>
+<p>Since the registration process is non-trivial for those not affiliated with a research institution, citizen scientists hoping to work with Level 1 Synthetic data should reach out to one of the N3C support venues to get started (see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>).</p>
 <p>PPRL data can be accessed alongside only Level 3 (LDS) data, and as such has the same access availability. As we’ll discuss below, there are special procedures for gaining access to PPRL data as part of a Level 3 access request.</p>
 </section>
 <section id="sec-access-workspaces" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="sec-access-workspaces"><span class="header-section-number">6.3</span> Workspaces, Permissions, and the Data Catalog</h2>
 <p>The N3C Data Enclave uses a fine-grained permissions model to manage researcher access to protected data. While researchers are not able to modify these permissions themselves, understanding them will help in navigating the DUR process and subsequent work.</p>
 <p>Data management in the Enclave is centered around “project workspaces” which act like folders-workspaces are indicated by a small filing-drawer icon and are listed under the “Projects &amp; files” link in the left navigation menu.</p>
-<div id="fig-access-040-projects-list" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-040-projects-list.png" class="lightbox" title="Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below." data-gallery="quarto-lightbox-gallery-4"><img src="images/access/fig-access-040-projects-list.png" class="img-fluid figure-img" alt="Project workspace browser."></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.4: Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below.</figcaption>
+<div id="fig-access-040-projects-list" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Project workspace browser.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-040-projects-list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-040-projects-list.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="images/access/fig-access-040-projects-list.png" class="img-fluid figure-img" alt="Project workspace browser."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-040-projects-list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.4: Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below.
+</figcaption>
 </figure>
 </div>
-<p>Workspaces are used for multiple purposes. Some store the Level 1/2/3 data; the “LDS Release” workspace for example stores the tables for the Level 3 LDS data. (The Data Catalog provides a more efficient way to access these tables however, more on that below.) Some are used to store “external” datasets such as publicly-available US Census data (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>). The “N3C Training Area” workspace can be accessed by anyone as a place to practice on notional data (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a>). Most, however, house research projects, and these are indicated with an <code>RP-XXXXXX</code> prefix.</p>
+<p>Workspaces are used for multiple purposes. Some store the Level 1/2/3 data; the “LDS Release” workspace for example stores the tables for the Level 3 LDS data. (The Data Catalog provides a more efficient way to access these tables however, more on that below.) Some are used to store “external” datasets such as publicly-available US Census data (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>). The “N3C Training Area” workspace can be accessed by anyone as a place to practice on notional data (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>). Most, however, house research projects, and these are indicated with an <code>RP-XXXXXX</code> prefix.</p>
 <p>Work in one project workspace can access only data or files from another project workspace if a “reference” has been added from the former to the latter. Researchers do not have permission to add such references. Thus, access from a research project workspace to protected datasets is possible only if the appropriate references have been added by administrators, which is done after a corresponding Data Use Request has been approved. Said another way, rather than providing researchers access to data, researchers are provided access to project workspaces, and these are in turn provided access to data.</p>
 <p>This reference-based permission scheme supports a number of useful features for N3C. Naturally, restricting workspace access to a subset of data affords the possibility of different levels of data access with correspondingly different access requirements. A single researcher may be involved with multiple research projects of different levels but cannot share data or files across them, thus it is impossible for a researcher with access to Level 3 data to share it with their colleagues in another project with Level 2 data.</p>
 </section>
@@ -529,10 +518,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-dashboards" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="sec-access-dashboards"><span class="header-section-number">6.5</span> DUR Dashboards</h2>
 <p>There are three primary dashboards used to create and manage DURs; all three are linked from the N3C Data Enclave homepage via buttons titled “Data Use Request (DUR)”, “My Projects (DURs)”, and “Explore Projects (DURs)”</p>
-<div id="fig-access-050-dur-dashboards-home" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-050-dur-dashboards-home.png" class="lightbox" title="Enclave homepage. Highlighted are the three DUR-related dashboards." data-gallery="quarto-lightbox-gallery-5"><img src="images/access/fig-access-050-dur-dashboards-home.png" class="img-fluid figure-img" alt="Enclave homepage"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.5: Enclave homepage. Highlighted are the three DUR-related dashboards.</figcaption>
+<div id="fig-access-050-dur-dashboards-home" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Enclave homepage">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-050-dur-dashboards-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-050-dur-dashboards-home.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="images/access/fig-access-050-dur-dashboards-home.png" class="img-fluid figure-img" alt="Enclave homepage"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-050-dur-dashboards-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.5: Enclave homepage. Highlighted are the three DUR-related dashboards.
+</figcaption>
 </figure>
 </div>
 <p>Although there is some functionality overlap, the primary uses for these three dashboards are:</p>
@@ -545,50 +538,74 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-request" class="level2" data-number="6.6">
 <h2 data-number="6.6" class="anchored" data-anchor-id="sec-access-request"><span class="header-section-number">6.6</span> Data Use Request (DUR): Initiate a New Research Project</h2>
 <p>This first dashboard is really just the DUR form itself, and is used to request the creation of, and access to, a brand-new research project with access to one of the levels of protected N3C data. The form has a number of sections, and some of these are dynamic, depending on choices to earlier questions. The left side of the DUR form provides quick links to other dashboards or actions; “Create a New Project” simply refreshes the page (since we are already creating a new project DUR), “Request to become a collaborator on an existing project” opens the Explore Projects dashboard (discussed below), and Public Health Proposal opens the application form for the <a href="https://covid.cd2h.org/phastr">N3C PHASTR</a> initiative (which utilizes a specialized variant of the DUR process discussed here).</p>
-<div id="fig-access-060-new-dur" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-060-new-dur.png" class="lightbox" title="New Data Use Request (DUR) form." data-gallery="quarto-lightbox-gallery-6"><img src="images/access/fig-access-060-new-dur.png" class="img-fluid figure-img" alt="New Data Use Request (DUR) form"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.6: New Data Use Request (DUR) form.</figcaption>
+<div id="fig-access-060-new-dur" class="quarto-figure quarto-figure-center quarto-float anchored" alt="New Data Use Request (DUR) form">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-060-new-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-060-new-dur.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="images/access/fig-access-060-new-dur.png" class="img-fluid figure-img" alt="New Data Use Request (DUR) form"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-060-new-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.6: New Data Use Request (DUR) form.
+</figcaption>
 </figure>
 </div>
 <p>Moving to the main content of the DUR form, the first three questions prompt for a Title, Abstract, and Research Project Rationale. (The green Submit button is always visible, and will be clickable when all fields for the DUR are properly completed.) Title and Abstract are self-descriptive, but know that these entries will be listed for others to see, both inside the N3C Data Enclave via the Explore Projects dashboard, and outside at <a href="https://covid.cd2h.org/dashboard/" class="uri">https://covid.cd2h.org/dashboard/</a>.</p>
-<p>The Research Project Rationale deserves special attention. This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request. The project rationale should describe for the DAC why data access is being requested in light of the goals of the research project. The rationale should include a justification for the level of data being requested, especially if requesting the Level 3 Limited Data Set (LDS). If your project doesn’t require the accurate dates or full patient zip codes provided by Level 3 data, it will be rejected, or approved for the Level 2 data even though Level 3 was requested. Similarly, if requesting access to any PPRL (see <a href="#sec-access-availability"><span>Section&nbsp;6.2</span></a>) datasets the rationale should include why. (You will also need to have the PPRL data mentioned in your IRB letter of determination - see below.)</p>
-<div id="fig-access-070-dur-metadata" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-070-dur-metadata.png" class="lightbox" title="DUR metadata fields." data-gallery="quarto-lightbox-gallery-7"><img src="images/access/fig-access-070-dur-metadata.png" class="img-fluid figure-img" alt="DUR metadata fields"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.7: DUR metadata fields.</figcaption>
+<p>The Research Project Rationale deserves special attention. This information will be visible only to you (the submitter) and the Data Access Committee (DAC) who will approve or deny the request. The project rationale should describe for the DAC why data access is being requested in light of the goals of the research project. The rationale should include a justification for the level of data being requested, especially if requesting the Level 3 Limited Data Set (LDS). If your project doesn’t require the accurate dates or full patient zip codes provided by Level 3 data, it will be rejected, or approved for the Level 2 data even though Level 3 was requested. Similarly, if requesting access to any PPRL (see <a href="#sec-access-availability" class="quarto-xref"><span>Section 6.2</span></a>) datasets the rationale should include why. (You will also need to have the PPRL data mentioned in your IRB letter of determination - see below.)</p>
+<div id="fig-access-070-dur-metadata" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR metadata fields">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-070-dur-metadata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-070-dur-metadata.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="images/access/fig-access-070-dur-metadata.png" class="img-fluid figure-img" alt="DUR metadata fields"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-070-dur-metadata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.7: DUR metadata fields.
+</figcaption>
 </figure>
 </div>
 <p>The next questions pertain to potential collaborations. The “Please associate your project with an existing N3C Domain Team” prompts you to select a domain team that best fits your project. Domain Teams are N3C working groups encompassing multiple research projects and are used to facilitate collaboration. Linking your project to a domain team this way in the Enclave allows others to navigate domain teams and browse linked projects dynamically. It is possible to modify this linkage later, so if you aren’t sure feel free to check the “need help choosing” check box.</p>
-<div id="fig-access-080-dur-collaborators" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-080-dur-collaborators.png" class="lightbox" title="DUR Domain Teams and collaborator fields." data-gallery="quarto-lightbox-gallery-8"><img src="images/access/fig-access-080-dur-collaborators.png" class="img-fluid figure-img" alt="DUR Domain Teams and collaborator fields"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.8: DUR Domain Teams and collaborator fields.</figcaption>
+<div id="fig-access-080-dur-collaborators" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR Domain Teams and collaborator fields">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-080-dur-collaborators-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-080-dur-collaborators.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="images/access/fig-access-080-dur-collaborators.png" class="img-fluid figure-img" alt="DUR Domain Teams and collaborator fields"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-080-dur-collaborators-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.8: DUR Domain Teams and collaborator fields.
+</figcaption>
 </figure>
 </div>
 <p>The next question, “Allow other researchers to join this project”, configures the project so that others can request to join via the Explore Projects dashboard. If this is enabled, other researchers will be able to fill out a collaborator DUR (a copy of this DUR but with the title, abstract, and data level fixed). As the lead submitting this primary DUR, you will have the opportunity to approve or deny such requests (via the My Projects dashboard); if you approve, their request will be forwarded to the DAC for final approval of the workspace and data. This option can be changed later.</p>
 <p>The Collaborators section allows you to send invites to potential collaborators to join the project. Added collaborators will receive an email notification (with instructions to register for N3C in case they don’t already have access), and will see the invite in their My Projects dashboard with a link to fill out a collaboration DUR (much like those who request to join described above). These invites are sent regardless of the earlier choice to Allow/Do not allow others to join the project.</p>
 <p>Next is the choice of data level to request. Levels 2 and 3 require additional information, so we’ll start with the Level 1 data and return to see the differences for Levels 2 and 3.</p>
-<div id="fig-access-090-dur-data-level" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-090-dur-data-level.png" class="lightbox" title="DUR data level request." data-gallery="quarto-lightbox-gallery-9"><img src="images/access/fig-access-090-dur-data-level.png" class="img-fluid figure-img" alt="DUR data level request"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.9: DUR data level request.</figcaption>
+<div id="fig-access-090-dur-data-level" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR data level request">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-090-dur-data-level-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-090-dur-data-level.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="images/access/fig-access-090-dur-data-level.png" class="img-fluid figure-img" alt="DUR data level request"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-090-dur-data-level-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.9: DUR data level request.
+</figcaption>
 </figure>
 </div>
 <section id="sec-access-request-l1" class="level3" data-number="6.6.1">
 <h3 data-number="6.6.1" class="anchored" data-anchor-id="sec-access-request-l1"><span class="header-section-number">6.6.1</span> Level 1 DUR Requirements</h3>
-<p>For Level 1 access, the first requirements are that you have read and attested to the <a href="../chapters/onboarding.html#data-use-agreements">Data Use Agreement</a>, and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of onboarding, so we won’t cover them here (see <a href="onboarding.html"><span>Chapter&nbsp;5</span></a>).</p>
-<div id="fig-access-100-dur-attestations" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-100-dur-attestations.png" class="lightbox" title="DUR attestations." data-gallery="quarto-lightbox-gallery-10"><img src="images/access/fig-access-100-dur-attestations.png" class="img-fluid figure-img" alt="DUR attestations"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.10: DUR attestations.</figcaption>
+<p>For Level 1 access, the first requirements are that you have read and attested to the <a href="../chapters/onboarding.html#data-use-agreements">Data Use Agreement</a>, and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of onboarding, so we won’t cover them here (see <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>).</p>
+<div id="fig-access-100-dur-attestations" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR attestations">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-100-dur-attestations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-100-dur-attestations.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="images/access/fig-access-100-dur-attestations.png" class="img-fluid figure-img" alt="DUR attestations"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-100-dur-attestations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.10: DUR attestations.
+</figcaption>
 </figure>
 </div>
 <p>Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the <a href="../chapters/publishing.html">N3C download policy</a> (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions’ policies around doing so. (Some institutions restrict how and when EHR data can be linked to other datasets, including <a href="../chapters/understanding.html">publicly available</a> data ingested for use by N3C researchers.) <!-- TODO: like the last section of the "Understanding the Data" chapter --></p>
-<div id="fig-access-110-dur-acknowledgments" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-110-dur-acknowledgments.png" class="lightbox" title="DUR attestations and acknowledgments." data-gallery="quarto-lightbox-gallery-11"><img src="images/access/fig-access-110-dur-acknowledgments.png" class="img-fluid figure-img" alt="DUR attestations and acknowledgments"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.11: DUR attestations and acknowledgments.</figcaption>
+<div id="fig-access-110-dur-acknowledgments" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR attestations and acknowledgments">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-110-dur-acknowledgments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-110-dur-acknowledgments.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="images/access/fig-access-110-dur-acknowledgments.png" class="img-fluid figure-img" alt="DUR attestations and acknowledgments"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-110-dur-acknowledgments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.11: DUR attestations and acknowledgments.
+</figcaption>
 </figure>
 </div>
 <p>With all of this information provided, you will be able to click Submit and send the request to the Data Access Committee for review.</p>
@@ -596,35 +613,51 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-request-l2" class="level3" data-number="6.6.2">
 <h3 data-number="6.6.2" class="anchored" data-anchor-id="sec-access-request-l2"><span class="header-section-number">6.6.2</span> Level 2 DUR Requirements</h3>
 <p>Requesting access to Level 2, De-Identified data requires additional information. First, when selecting the Level 2 request option, you will be asked to confirm that you have taken Human Subjects Research Protection training within the last three years and provide the date of completion. Most research institutions provide specific training courses to satisfy this requirement, for example via the <a href="https://citiprogram.org">CITI Program</a>. The specific courses required vary from institution to institution, so check with your research office or equivalent authority for guidance. If your institution does not offer or recommend specific courses, you can utilize the <a href="https://www.hhs.gov/ohrp/education-and-outreach/human-research-protection-training/human-research-protection-foundational-training">free course</a> provided by Health and Human Services.</p>
-<div id="fig-access-120-dur-hsrp" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-120-dur-hsrp.png" class="lightbox" title="DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years." data-gallery="quarto-lightbox-gallery-12"><img src="images/access/fig-access-120-dur-hsrp.png" class="img-fluid figure-img" alt="HSRP training attestation"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.12: DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years.</figcaption>
+<div id="fig-access-120-dur-hsrp" class="quarto-figure quarto-figure-center quarto-float anchored" alt="HSRP training attestation">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-120-dur-hsrp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-120-dur-hsrp.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="images/access/fig-access-120-dur-hsrp.png" class="img-fluid figure-img" alt="HSRP training attestation"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-120-dur-hsrp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.12: DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years.
+</figcaption>
 </figure>
 </div>
 <p>In addition to human subjects research protection training, you will need to consider whether your institution requires a letter of determination from your local IRB when using De-Identified data. If so, you’ll be prompted to upload the letter as a PDF before you can submit the DUR.</p>
-<div id="fig-access-130-dur-level2-irb" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-130-dur-level2-irb.png" class="lightbox" title="DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access." data-gallery="quarto-lightbox-gallery-13"><img src="images/access/fig-access-130-dur-level2-irb.png" class="img-fluid figure-img" alt="DUR IRB letter upload"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.13: DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access.</figcaption>
+<div id="fig-access-130-dur-level2-irb" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR IRB letter upload">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-130-dur-level2-irb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-130-dur-level2-irb.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="images/access/fig-access-130-dur-level2-irb.png" class="img-fluid figure-img" alt="DUR IRB letter upload"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-130-dur-level2-irb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.13: DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access.
+</figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-access-request-l3" class="level3" data-number="6.6.3">
 <h3 data-number="6.6.3" class="anchored" data-anchor-id="sec-access-request-l3"><span class="header-section-number">6.6.3</span> Level 3 DUR Requirements</h3>
-<p>The Level 3, Limited Data Set (LDS) offers the most complete view of N3C data. Unlike Level 2 De-Identified data, dates are not shifted (for most contributing data partners) and 5-digit patient zip codes are available (for most zip codes). See <a href="cycle.html"><span>Chapter&nbsp;3</span></a> for more details</p>
-<p>Level 3 DURs require the same attestations and human subjects research protection training as Level 2 DURs. A Level 3 DUR also allows researchers to request access to one or more supplemental PPRL datasets providing additional information about patients. These provide additional mortality information, viral variant records, and claims data from the Centers for Medicare and Medicaid Services, but are available only for subsets of N3C patients (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a> for details about PPRL).</p>
-<div id="fig-access-140-dur-level3-pprl" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-140-dur-level3-pprl.png" class="lightbox" title="DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests." data-gallery="quarto-lightbox-gallery-14"><img src="images/access/fig-access-140-dur-level3-pprl.png" class="img-fluid figure-img" alt="DUR Privacy-Preserving Record Linkage (PPRL)"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.14: DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.</figcaption>
+<p>The Level 3, Limited Data Set (LDS) offers the most complete view of N3C data. Unlike Level 2 De-Identified data, dates are not shifted (for most contributing data partners) and 5-digit patient zip codes are available (for most zip codes). See <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a> for more details</p>
+<p>Level 3 DURs require the same attestations and human subjects research protection training as Level 2 DURs. A Level 3 DUR also allows researchers to request access to one or more supplemental PPRL datasets providing additional information about patients. These provide additional mortality information, viral variant records, and claims data from the Centers for Medicare and Medicaid Services, but are available only for subsets of N3C patients (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> for details about PPRL).</p>
+<div id="fig-access-140-dur-level3-pprl" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR Privacy-Preserving Record Linkage (PPRL)">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-140-dur-level3-pprl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-140-dur-level3-pprl.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14"><img src="images/access/fig-access-140-dur-level3-pprl.png" class="img-fluid figure-img" alt="DUR Privacy-Preserving Record Linkage (PPRL)"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-140-dur-level3-pprl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.14: DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.
+</figcaption>
 </figure>
 </div>
 <p>A Level 3 DUR additionally requires a letter of determination from the submitter’s local IRB:</p>
-<div id="fig-access-150-dur-level3-irb" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-150-dur-level3-irb.png" class="lightbox" title="The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB." data-gallery="quarto-lightbox-gallery-15"><img src="images/access/fig-access-150-dur-level3-irb.png" class="img-fluid figure-img" alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.15: The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.</figcaption>
+<div id="fig-access-150-dur-level3-irb" class="quarto-figure quarto-figure-center quarto-float anchored" alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-150-dur-level3-irb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-150-dur-level3-irb.png" class="lightbox" data-glightbox="description: .lightbox-desc-15" data-gallery="quarto-lightbox-gallery-15"><img src="images/access/fig-access-150-dur-level3-irb.png" class="img-fluid figure-img" alt="The lead (submitting) investigator must supply an IRB letter of determination from their local institution"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-150-dur-level3-irb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.15: The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.
+</figcaption>
 </figure>
 </div>
 <p>Note that when requesting access to PPRL datasets, <em>both the Research Project Rationale (reviewed by the DAC) and the IRB letter of determination should address the need for the PPRL datasets requested</em>. Failure to adequately justify the use of PPRL datasets may result in denial of the DUR, or approval with lack of PPRL dataset access.</p>
@@ -640,17 +673,25 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Although all N3C research projects are listed in the <a href="https://covid.cd2h.org/dashboard/exploration#projects">public dashboard</a>, the Explore Projects dashboard within the N3C Data Enclave allows researchers to request to join projects that allow for it as collaborators.</p>
 <p>First, let’s explore the dashboard. The initial list of projects shown is “Projects to join” – these have been configured by the project lead to allow any N3C researcher to request access to the project for collaboration. Below this list are two expandable sections, “Projects to Explore” listing projects that do not allow requests to join, and “Operational Projects (N3C Technical Development)” listing DURs used by the data ingestion and harmonization teams and others.</p>
 <p>The “Search Projects” field is helpful in finding one of the many N3C projects and supports searching in any of the shown text columns. The “Projects by N3C Domain Team” button shows the project list organized by domain team, which can be useful in identifying potential overlapping research. Finally, “Closed Projects” lists non-active projects, for example those whose 1-year expiry has passed without renewal.</p>
-<div id="fig-access-160-explore-projects" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-160-explore-projects.png" class="lightbox" title="The Explore Projects dashboard." data-gallery="quarto-lightbox-gallery-16"><img src="images/access/fig-access-160-explore-projects.png" class="img-fluid figure-img" alt="The Explore Projects dashboard"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.16: The Explore Projects dashboard.</figcaption>
+<div id="fig-access-160-explore-projects" class="quarto-figure quarto-figure-center quarto-float anchored" alt="The Explore Projects dashboard">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-160-explore-projects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-160-explore-projects.png" class="lightbox" data-glightbox="description: .lightbox-desc-16" data-gallery="quarto-lightbox-gallery-16"><img src="images/access/fig-access-160-explore-projects.png" class="img-fluid figure-img" alt="The Explore Projects dashboard"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-160-explore-projects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.16: The Explore Projects dashboard.
+</figcaption>
 </figure>
 </div>
 <p>To request to join a project, simply click its Request to Join link from the list. This opens up a collaborator DUR: a copy of the DUR submitted by the project lead, but the Title, Abstract, selected data level, and domain-team linkage are not changeable. You will need to complete the other requirements for the data level however (see above), including submitting a letter of determination from your local IRB if needed. If the DUR indicates that PPRL data are requested, your IRB letter should also reference these datasets. IRB determination letters are required for all Level 3 DURs, or if the DUR is Level 2 and your institution requires IRB review. (Note that the DUR form will not ask for an IRB letter if you are registered with N3C as being from the same institution as the project lead; in this case it is assumed that the lead’s already-submitted letter covers you as well.)</p>
-<div id="fig-access-170-collaborator-dur" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-170-collaborator-dur.png" class="lightbox" title="Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed." data-gallery="quarto-lightbox-gallery-17"><img src="images/access/fig-access-170-collaborator-dur.png" class="img-fluid figure-img" alt="Requesting to join a project"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.17: Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed.</figcaption>
+<div id="fig-access-170-collaborator-dur" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Requesting to join a project">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-170-collaborator-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-170-collaborator-dur.png" class="lightbox" data-glightbox="description: .lightbox-desc-17" data-gallery="quarto-lightbox-gallery-17"><img src="images/access/fig-access-170-collaborator-dur.png" class="img-fluid figure-img" alt="Requesting to join a project"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-170-collaborator-dur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.17: Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed.
+</figcaption>
 </figure>
 </div>
 <p>Collaborator DURs must first be approved by the project lead (via their My Projects dashboard, see below). You may thus want to reach out to the lead prior to requesting access to their project so they can expect the request. Once approved by the lead the DUR is sent to the DAC for final approval. After DAC approval you will be given access to the project workspace (see <a href="../chapters/access.html#sec-access-workspaces">Workspaces, Permissions, and the Data Catalog</a> above). Collaborator DURs are generally faster to approve than new project DURs, but as with new project DURs if no progress is made in two weeks you should submit a request for follow-up to the <a href="../chapters/support.html#sec-support-external">Enclave-external</a> ticket support system.</p>
@@ -659,20 +700,28 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-my" class="level2" data-number="6.8">
 <h2 data-number="6.8" class="anchored" data-anchor-id="sec-access-my"><span class="header-section-number">6.8</span> My Projects (DURs): DUR Invitations, Status, and Management for Leads</h2>
 <p>The My Projects dashboard, linked from the N3C Data Enclave homepage, shows the status of your Data Use Requests and allows leads to configure some parameters of their projects.</p>
-<div id="fig-access-180-my-projects" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-180-my-projects.png" class="lightbox" title="The My Projects dashboard." data-gallery="quarto-lightbox-gallery-18"><img src="images/access/fig-access-180-my-projects.png" class="img-fluid figure-img" alt="The My Projects dashboard"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.18: The My Projects dashboard.</figcaption>
+<div id="fig-access-180-my-projects" class="quarto-figure quarto-figure-center quarto-float anchored" alt="The My Projects dashboard">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-180-my-projects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-180-my-projects.png" class="lightbox" data-glightbox="description: .lightbox-desc-18" data-gallery="quarto-lightbox-gallery-18"><img src="images/access/fig-access-180-my-projects.png" class="img-fluid figure-img" alt="The My Projects dashboard"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-180-my-projects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.18: The My Projects dashboard.
+</figcaption>
 </figure>
 </div>
 <p>Along the left are the various projects you’ve requested access to, either as a lead who’s submitted a new project DUR, or as a collaborator who’s requested to join a project. Notice along the bottom the “Invitations to Submit a Project Collaborator DUR” – this section may be expanded, and if any leads have added you to their DUR as invited collaborators, you will see a link to fill out a collaborator DUR here. (This is the same process as requesting to join a project as described above.) A quick link to the <a href="../chapters/access.html#sec-access-dashboards">Download Requests Dashboard</a> is also provided near the top, which we won’t discuss further here. Nearby are two buttons for project leads, “Review Collaborator Requests for My Projects”, and “Manage My Projects”, both discussed below.</p>
 <p>Having selected a project from the list, the interface shows a variety of information about the project, including the data access level, project lead, and a direct link to the project workspace. If you are a collaborator on the project rather than the lead, you will also see a button to voluntarily withdraw from the project, which will remove your access to the project workspace but leave intact your work within that workspace for your collaborators.</p>
 <p>The table below shows the DURs you have submitted pertaining to the project. Usually this will list a single DUR, but as noted at the beginning of this chapter in theory you may have multiple outstanding DURs pertaining to the same project. The “DUR Review Status” column shows the state of the DUR, and may contain one of several values indicating its progress: “Pending Lead Investigator Approval” if the DUR still needs to be approved by the project lead (“Denied by Lead Investigator” if they deny the request), “Pending DAC Review” for DURs that have been approved by the lead and are awaiting DAC review (“Denied” for those DURs that have been denied by the DAC), “Reviewed and Pending Workspace Access” for DURs that are fully approved but awaiting permissions to be applied for project workspace access, and “Complete” for fully approved DURs with enabled data access.</p>
 <p>If we scroll further to the right we see other important columns, particularly the Action and Renewal columns.</p>
-<div id="fig-access-190-my-projects-more" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-190-my-projects-more.png" class="lightbox" title="Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options." data-gallery="quarto-lightbox-gallery-19"><img src="images/access/fig-access-190-my-projects-more.png" class="img-fluid figure-img" alt="Scrolling rightward when reviewing a project"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.19: Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options.</figcaption>
+<div id="fig-access-190-my-projects-more" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Scrolling rightward when reviewing a project">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-190-my-projects-more-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-190-my-projects-more.png" class="lightbox" data-glightbox="description: .lightbox-desc-19" data-gallery="quarto-lightbox-gallery-19"><img src="images/access/fig-access-190-my-projects-more.png" class="img-fluid figure-img" alt="Scrolling rightward when reviewing a project"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-190-my-projects-more-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.19: Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options.
+</figcaption>
 </figure>
 </div>
 <p>N3C DURs are valid for one year-continued access to the project workspace requires submitting a renewal DUR before the expiration date listed. The Renew DUR link in the Renewal column opens up a renewal DUR: a copy of the DUR with almost all information uneditable, but requiring re-attestation of information like the Data Use Agreement, Code of Conduct, and human subjects research protection training. Renewal DURs are processed more quickly than other types, but if you miss the renewal deadline and you are a collaborator (not the lead) you will need to resubmit a collaborator DUR for a more thorough review. Leads who miss the renewal deadline will have their projects closed and will need to submit an <a href="../chapters/support.html#sec-support-external">Enclave-external</a> support ticket for help re-opening it.</p>
@@ -680,17 +729,25 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-access-my-leads" class="level3" data-number="6.8.1">
 <h3 data-number="6.8.1" class="anchored" data-anchor-id="sec-access-my-leads"><span class="header-section-number">6.8.1</span> Project Management for Leads</h3>
 <p>The My Projects dashboard provides some additional functionality for project leads not available to collaborators in addition to the Appeal link. First is the dashboard accessed via the “Review Collaborator Requests for My Projects” button. The projects for which you are a lead are listed along the left, and the requests to access that project are listed along the right. You can choose to approve or deny each request by selecting it and clicking the large blue “Approve Selected Collaborator Request” button. Collaborator access cannot be revoked this way, however.</p>
-<div id="fig-access-200-review-collaborator-requests" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-200-review-collaborator-requests.png" class="lightbox" title="Reviewing collaborator requests to join my projects." data-gallery="quarto-lightbox-gallery-20"><img src="images/access/fig-access-200-review-collaborator-requests.png" class="img-fluid figure-img" alt="Reviewing collaborator requests"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.20: Reviewing collaborator requests to join my projects.</figcaption>
+<div id="fig-access-200-review-collaborator-requests" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Reviewing collaborator requests">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-200-review-collaborator-requests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-200-review-collaborator-requests.png" class="lightbox" data-glightbox="description: .lightbox-desc-20" data-gallery="quarto-lightbox-gallery-20"><img src="images/access/fig-access-200-review-collaborator-requests.png" class="img-fluid figure-img" alt="Reviewing collaborator requests"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-200-review-collaborator-requests-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.20: Reviewing collaborator requests to join my projects.
+</figcaption>
 </figure>
 </div>
 <p>Back in the My Projects dashboard, we can select the “Manage My Projects” button to see more project configuration options. The main configuration options are “Configure N3C Domain Teams” to modify the listed linkage between the project and domain teams, “Review Collaborator Requests for this Project” which opens the collaborator approval dashboard above, and “Allow or Disallow Collaborator Requests”. This last option enables or disables the “Request to Join” link for the project in the Explore Projects dashboard.</p>
-<div id="fig-access-210-other-project-settings" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/access/fig-access-210-other-project-settings.png" class="lightbox" title="Adjusting other project settings." data-gallery="quarto-lightbox-gallery-21"><img src="images/access/fig-access-210-other-project-settings.png" class="img-fluid figure-img" alt="Adjusting other project settings"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;6.21: Adjusting other project settings.</figcaption>
+<div id="fig-access-210-other-project-settings" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Adjusting other project settings">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-210-other-project-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/access/fig-access-210-other-project-settings.png" class="lightbox" data-glightbox="description: .lightbox-desc-21" data-gallery="quarto-lightbox-gallery-21"><img src="images/access/fig-access-210-other-project-settings.png" class="img-fluid figure-img" alt="Adjusting other project settings"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-210-other-project-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.21: Adjusting other project settings.
+</figcaption>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled">
@@ -708,6 +765,29 @@ Additional Chapter Details
 </div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;6.1: A subset of rows and columns for mock condition_occurrence data. Notice the N3C-added <code>data_partner_id</code>, these are anonymized identifiers for sites contributing data, labeling each record with a source.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;6.2: Example data for the OMOP <code>person</code> table.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;6.3: An example of the N3C-specific <code>manifest</code> table. This table provides information about data partners, such as their source common data model (<code>cdm_name</code>), whether they pre-shift dates (see <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a>), and when their last submission was.</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;6.4: Project workspace browser. Note that the “Request access” buttons are not active and clicking one will suggest visiting the DUR dashboards described below.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;6.5: Enclave homepage. Highlighted are the three DUR-related dashboards.</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;6.6: New Data Use Request (DUR) form.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;6.7: DUR metadata fields.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure&nbsp;6.8: DUR Domain Teams and collaborator fields.</span>
+<span class="glightbox-desc lightbox-desc-9">Figure&nbsp;6.9: DUR data level request.</span>
+<span class="glightbox-desc lightbox-desc-10">Figure&nbsp;6.10: DUR attestations.</span>
+<span class="glightbox-desc lightbox-desc-11">Figure&nbsp;6.11: DUR attestations and acknowledgments.</span>
+<span class="glightbox-desc lightbox-desc-12">Figure&nbsp;6.12: DUR Human Subjects Research Protection (HSRP) training attestation. HSRP training must have been completed within the last three years.</span>
+<span class="glightbox-desc lightbox-desc-13">Figure&nbsp;6.13: DUR IRB letter upload. For a Level 2 DUR, this is required only if your local institution requires IRB approval for de-identified data access.</span>
+<span class="glightbox-desc lightbox-desc-14">Figure&nbsp;6.14: DUR Privacy-Preserving Record Linkage (PPRL) options for Level 3 requests.</span>
+<span class="glightbox-desc lightbox-desc-15">Figure&nbsp;6.15: The lead (submitting) investigator must supply an IRB letter of determination from their local institution. Collaborators from the same institution as the lead aren’t required to, but collaborators from other institutions must also obtain and submit a determination letter from their own local IRB.</span>
+<span class="glightbox-desc lightbox-desc-16">Figure&nbsp;6.16: The Explore Projects dashboard.</span>
+<span class="glightbox-desc lightbox-desc-17">Figure&nbsp;6.17: Requesting to join a project from the Explore Projects dashboard opens a collaborator DUR for the project, where metadata fields such as title and abstract are fixed.</span>
+<span class="glightbox-desc lightbox-desc-18">Figure&nbsp;6.18: The My Projects dashboard.</span>
+<span class="glightbox-desc lightbox-desc-19">Figure&nbsp;6.19: Scrolling rightward when reviewing a project in the My Projects dashboard reveals more information and options.</span>
+<span class="glightbox-desc lightbox-desc-20">Figure&nbsp;6.20: Reviewing collaborator requests to join my projects.</span>
+<span class="glightbox-desc lightbox-desc-21">Figure&nbsp;6.21: Adjusting other project settings.</span>
+</div>
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -715,9 +795,9 @@ Additional Chapter Details
 <ol>
 <li id="fn1"><p>There are some exceptions where five digit zip codes are not visible in Level 3 data: zip codes represented by fewer than 20,000 patients are removed altogether; sometimes only the first three digits of the zip code are displayed (such as zips with a predominantly American Indian/Alaskan Native population and zip codes from participating institutions who send only the first three digits).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>In actuality, a few data partners also perform small amounts of date shifting-randomly shifting all dates on a per-patient basis to further protect patient privacy-prior to sending their data to N3C. The manifest information (described below) indicates which data partners do so and the range of potential shift so researchers can remove data from these partners if they need highly-accurate date information.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>See <a href="cycle.html#sec-cycle-releases-lds"><span>Section&nbsp;3.4.1</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>See <a href="cycle.html#sec-cycle-releases-lds" class="quarto-xref"><span>Section 3.4.1</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Like Level 3 data, birth dates are available only at the year and month level, and these are similarly shifted along with other patient-associated dates. In Level 2 data birth date information is removed entirely for patients who are more than 90 years old, and a separate <code>is_age_90_or_older</code> column identifies these individuals as a group.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>The Synthetic data discussed here should not be confused with the notional (fake) datasets described in <a href="publishing.html"><span>Chapter&nbsp;10</span></a>. These happen to have similar sounding names: SynPuf and Synthea.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The Synthetic data discussed here should not be confused with the notional (fake) datasets described in <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>. These happen to have similar sounding names: SynPuf and Synthea.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -763,6 +843,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -831,13 +938,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -916,10 +1025,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -929,8 +1055,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -943,6 +1078,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -986,6 +1240,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1011,6 +1266,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1068,30 +1349,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/onboarding.html" class="pagination-link">
+      <a href="../chapters/onboarding.html" class="pagination-link  aria-label=" &lt;span="" enclave="" access,="" n3c="" team="" science&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Onboarding, Enclave Access, N3C Team Science</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/understanding.html" class="pagination-link">
+      <a href="../chapters/understanding.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>Understanding the Data</span>">
         <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1099,14 +1366,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/access.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/access.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":true,"selector":".lightbox","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

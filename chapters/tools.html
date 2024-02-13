@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -69,18 +70,24 @@ div.csl-indent {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,6 +96,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -188,12 +196,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/tools.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/tools.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -203,13 +211,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -375,7 +383,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -401,126 +409,68 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <li><a href="#sec-tools-apps-lineage" id="toc-sec-tools-apps-lineage" class="nav-link" data-scroll-target="#sec-tools-apps-lineage"><span class="header-section-number">8.4.7</span> Data Lineage (aka Monocle)</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-tools" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Amy Olex <a href="https://orcid.org/0000-0001-8064-521X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://cctr.vcu.edu/">
-            Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Andrea G. Zhou <a href="https://orcid.org/0000-0003-1845-5620" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.ithriv.org/directory">
-            University of Virginia, integrated Translational Health Research Institute of Virginia
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Johanna Loomba <a href="https://orcid.org/0000-0003-3673-5423" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.ithriv.org/directory">
-            University of Virginia, integrated Translational Health Research Institute of Virginia
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Evan French <a href="https://orcid.org/0000-0002-5809-5810" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://cctr.vcu.edu/">
-            Virginia Commonwealth University, C. Kenneth and Dianne Wright Center for Clinical and Translational Research
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Shawn O’Neil <a href="https://orcid.org/0000-0001-6220-7080" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://oneilsh.github.io/">
-            University of Colorado Anschutz
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Steven G. Johnson <a href="https://orcid.org/0000-0002-2983-6384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://healthinformatics.umn.edu/staff/steven-johnson">
-            University of Minnesota, Institute of Informatics
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-tools" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></span></h1>
+            <p class="author">Amy Olex</p>
+        <p class="author">Andrea G. Zhou</p>
+        <p class="author">Johanna Loomba</p>
+        <p class="author">Evan French</p>
+        <p class="author">Shawn O’Neil</p>
+        <p class="author">Steven G. Johnson</p>
     
-  </div>
-  
+        </header>
 
-</header>
 
 <p><strong>Chapter Leads</strong>: Amy Olex, Andrea Zhou</p>
 <section id="sec-tools-intro" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="sec-tools-intro"><span class="header-section-number">8.1</span> Introduction</h2>
-<p>This chapter introduces tools in the N3C Data Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community. The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward. It is expected that you know how data are organized in the Enclave, including the OMOP data model, vocabulary, and concept sets (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a> for details).</p>
-<div id="fig-tools-010-intro-to-tools" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" title="High-level overview of an N3C project." data-gallery="quarto-lightbox-gallery-1"><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.1: High-level overview of an N3C project.</figcaption>
+<p>This chapter introduces tools in the N3C Data Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community. The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward. It is expected that you know how data are organized in the Enclave, including the OMOP data model, vocabulary, and concept sets (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> for details).</p>
+<div id="fig-tools-010-intro-to-tools" class="quarto-figure quarto-figure-center quarto-float anchored" alt="High-level overview of an N3C project">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-010-intro-to-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-010-intro-to-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: High-level overview of an N3C project.
+</figcaption>
 </figure>
 </div>
-<p>Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question. <a href="#fig-tools-010-intro-to-tools">Figure&nbsp;<span>8.1</span></a> provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase. It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases. Managing these collaborative and multi-faceted projects requires good recordkeeping. The <a href="../chapters/tools.html#sec-tools-apps-protocol">N3C Protocol Pad</a> is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner <span class="citation" data-cites="wilkinson_2016">(<a href="../references.html#ref-wilkinson_2016" role="doc-biblioref">Wilkinson et al., 2016</a>)</span> (see also <a href="https://www.go-fair.org/fair-principles/" class="uri">https://www.go-fair.org/fair-principles/</a>). Thus it is recommended that you utilize this tool throughout the implementation of your project.</p>
-<p>A research project in N3C starts with organizing a team with the required expertise (clinical, informatics, statistical, etc), followed by defining clinical questions around COVID-19 and characterizing the cohorts needed to answer each, i.e., clinical phenotyping. Because the N3C contains real-world EHR data that is harmonized from multiple data models and dozens of institutions, some information needed to identify an ideal clinical phenotype may be missing or incomplete. Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts. This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available. Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the Enclave, what is missing or sparse, and overall data quality (see <a href="practices.html"><span>Chapter&nbsp;9</span></a>). Some data quality aspects can be easily obtained through the use of <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Templates</a> accessible through the <a href="../chapters/tools.html#sec-tools-store">N3C Knowledge Store</a>. The Enclave application <a href="../chapters/tools.html#sec-tools-apps-contour">Contour</a> can be utilized at this stage, along with <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> for quick querying and visualizing of the data. Additionally, <a href="../chapters/tools.html#sec-tools-apps-fusion">Fusion</a> can be utilized to keep track of developed concept sets and utilized to easily input them into Logic Liaison Templates.</p>
-<p>The generation of a computational phenotype overlaps with the generation of concept sets (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a> for details), and is often a cyclical process. Well-vetted concept sets are key to obtaining robust cohorts, thus, having a team member familiar with the organization of data and the OMOP vocabulary, such as a data liaison, who can work closely with a clinician is beneficial. Concept set generation can be done using the Enclave Concept Set Browser, or externally through OHDSI ATLAS.</p>
-<p>Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e., datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment. Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions. Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc. Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C-vetted concept sets and peer-reviewed code as a starter table. You can then append this base fact table to include project-specific facts needed for analyses. <a href="#fig-tools-060-ll-template-1">Figure&nbsp;<span>8.6</span></a> and <a href="#fig-tools-070-ll-template-2">Figure&nbsp;<span>8.7</span></a> in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation. The generation of the original fact tables from raw OMOP tables can be done using Code Workbooks (<a href="#sec-tools-apps-workbook"><span>Section&nbsp;8.4.3</span></a>) or Code Repositories (<a href="#sec-tools-apps-repo"><span>Section&nbsp;8.4.4</span></a>).</p>
+<p>Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question. <a href="#fig-tools-010-intro-to-tools" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase. It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases. Managing these collaborative and multi-faceted projects requires good recordkeeping. The <a href="../chapters/tools.html#sec-tools-apps-protocol">N3C Protocol Pad</a> is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner <span class="citation" data-cites="wilkinson_2016">(<a href="../references.html#ref-wilkinson_2016" role="doc-biblioref">Wilkinson et al., 2016</a>)</span> (see also <a href="https://www.go-fair.org/fair-principles/" class="uri">https://www.go-fair.org/fair-principles/</a>). Thus it is recommended that you utilize this tool throughout the implementation of your project.</p>
+<p>A research project in N3C starts with organizing a team with the required expertise (clinical, informatics, statistical, etc), followed by defining clinical questions around COVID-19 and characterizing the cohorts needed to answer each, i.e., clinical phenotyping. Because the N3C contains real-world EHR data that is harmonized from multiple data models and dozens of institutions, some information needed to identify an ideal clinical phenotype may be missing or incomplete. Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts. This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available. Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the Enclave, what is missing or sparse, and overall data quality (see <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>). Some data quality aspects can be easily obtained through the use of <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Templates</a> accessible through the <a href="../chapters/tools.html#sec-tools-store">N3C Knowledge Store</a>. The Enclave application <a href="../chapters/tools.html#sec-tools-apps-contour">Contour</a> can be utilized at this stage, along with <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> for quick querying and visualizing of the data. Additionally, <a href="../chapters/tools.html#sec-tools-apps-fusion">Fusion</a> can be utilized to keep track of developed concept sets and utilized to easily input them into Logic Liaison Templates.</p>
+<p>The generation of a computational phenotype overlaps with the generation of concept sets (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> for details), and is often a cyclical process. Well-vetted concept sets are key to obtaining robust cohorts, thus, having a team member familiar with the organization of data and the OMOP vocabulary, such as a data liaison, who can work closely with a clinician is beneficial. Concept set generation can be done using the Enclave Concept Set Browser, or externally through OHDSI ATLAS.</p>
+<p>Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e., datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment. Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions. Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc. Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C-vetted concept sets and peer-reviewed code as a starter table. You can then append this base fact table to include project-specific facts needed for analyses. <a href="#fig-tools-060-ll-template-1" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> and <a href="#fig-tools-070-ll-template-2" class="quarto-xref">Figure&nbsp;<span>8.7</span></a> in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation. The generation of the original fact tables from raw OMOP tables can be done using Code Workbooks (<a href="#sec-tools-apps-workbook" class="quarto-xref"><span>Section 8.4.3</span></a>) or Code Repositories (<a href="#sec-tools-apps-repo" class="quarto-xref"><span>Section 8.4.4</span></a>).</p>
 <p>Data scientists and statisticians can then analyze the extracted and formatted fact tables. This includes statistical tests, summary tables, visualizations, and reports for the team to discuss. Data analysis is also a cyclical process with all team members engaged in assessing results and circling back to further refine the computational phenotype and concept sets if needed. Depending on the type of analysis needed, <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> or <a href="../chapters/tools.html#sec-tools-apps-contour">Contour</a> can be utilized at this step, followed by <a href="../chapters/tools.html#sec-tools-apps-notepad">Foundry’s Notepad</a> for reporting results for secure team dissemination within the Enclave environment.</p>
-<p>Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a>). The download request is meant to ensure no prohibited data is being downloaded as per the <a href="https://covid.cd2h.org/download">N3C Data Download Policy</a> summarized in the Publishing and Sharing Your Work chapter. After approval, your results can be included in research outputs, such as publications, and then submitted to the Publication Review Committee (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a>). This step is necessary to ensure data are being reported properly in the context of the research project and that proper attribution is being given to all those who contributed to the success of the research, either directly or indirectly. Upon approval, you are free to submit to the venue of choice and freely present the approved data to anyone at any time. Data download requests are performed within the Enclave environment, followed by submitting a <a href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&amp;sa=D&amp;source=docs&amp;ust=1677168810532504&amp;usg=AOvVaw12T-1ZD5cVj92DGadpr1IN">Google Form to the Publication Review Committee</a>.</p>
-<p>The following sections of this chapter discuss each of the features and applications needed to perform research in the Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices. This chapter is best utilized alongside the information provided in the next chapter, Best Practices for the Research Life Cycle (see <a href="practices.html"><span>Chapter&nbsp;9</span></a>), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.</p>
+<p>Once you obtain results that you wish to share with others, all tables, figures, and other data needed for reporting in publications, conference submissions, presentations, or any other activity outside the Enclave environment must be submitted as a Data Download Request for a download review by NCATS (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>). The download request is meant to ensure no prohibited data is being downloaded as per the <a href="https://covid.cd2h.org/download">N3C Data Download Policy</a> summarized in the Publishing and Sharing Your Work chapter. After approval, your results can be included in research outputs, such as publications, and then submitted to the Publication Review Committee (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>). This step is necessary to ensure data are being reported properly in the context of the research project and that proper attribution is being given to all those who contributed to the success of the research, either directly or indirectly. Upon approval, you are free to submit to the venue of choice and freely present the approved data to anyone at any time. Data download requests are performed within the Enclave environment, followed by submitting a <a href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe8cezMX5KMXyo8DRb9qmgr95rAPEKcvIWIdZv72rIUxlcpIA/viewform&amp;sa=D&amp;source=docs&amp;ust=1677168810532504&amp;usg=AOvVaw12T-1ZD5cVj92DGadpr1IN">Google Form to the Publication Review Committee</a>.</p>
+<p>The following sections of this chapter discuss each of the features and applications needed to perform research in the Enclave, and include links to external Foundry documentation, as well as direct the reader to other chapters of this book that contain a deeper dive into various N3C topics, such as the organization of data and best practices. This chapter is best utilized alongside the information provided in the next chapter, Best Practices for the Research Life Cycle (see <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>), which includes information on recommended data workflows, such as scheduling automatic data builds, to keep your research current, managing your projects using the Protocol Pad, and much more.</p>
 </section>
 <section id="sec-tools-concepts" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="sec-tools-concepts"><span class="header-section-number">8.2</span> Using Concept Sets</h2>
-<p>As discussed in the previous chapter Understanding the Data (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model. By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.</p>
-<div id="fig-tools-020-concept-home" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" title="Concept Set Browser Homepage." data-gallery="quarto-lightbox-gallery-2"><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.2: Concept Set Browser Homepage.</figcaption>
+<p>As discussed in the previous chapter Understanding the Data (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model. By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.</p>
+<div id="fig-tools-020-concept-home" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Concept Set Browser Homepage">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-020-concept-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-020-concept-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Concept Set Browser Homepage.
+</figcaption>
 </figure>
 </div>
-<p>The Concept Set Browser shown in <a href="#fig-tools-020-concept-home">Figure&nbsp;<span>8.2</span></a> is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs. For more details around the process of concept set creation, read the Concept Sets section in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>. It is recommended that, if you are a new researcher, you start your search for a concept set with the list of N3C Recommended concept sets. These concept sets have been frozen in their validated state by the <a href="../chapters/support.html#sec-support-liaisons">Logic Liaisons and the Data Liaisons</a> after obtaining clinician and informatic reviews (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>). They are also the ones used to identify common comorbidities and other facts on the Phenotype Explorer and in the Logic Liaison Fact Table templates. The recommended other method of finding commonly used concept sets is by exploring bundles within the Concept Set Browser. These are groups of concept sets that are often used together. Further exploration of all other concept sets in the Concept Set Browser is also an option, though only advised when proceeding with the understanding that many of the existing concept sets that are not part of the N3C Recommended or bundles are crafted to be specific to one particular study team’s requirements.</p>
-<p>Once concept sets have been identified for use in your analysis through the Concept Set Browser, the concept set members table becomes the link between concepts and the encompassing concept set as shown by <a href="#fig-tools-030-concept-table">Figure&nbsp;<span>8.3</span></a>. You then have to “point” the code to the concept set members table to access this linkage. Once this has been accomplished, the choice becomes using the most recent version of a concept set (<code>concept_set_members.concept_set_name where most_recent_version = TRUE</code>) or using a specific version of the concept set (<code>concept_set_members.codeset_id = {codeset id value}</code>). While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.</p>
-<div id="fig-tools-030-concept-table" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" title="concept_set_members table." data-gallery="quarto-lightbox-gallery-3"><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.3: <code>concept_set_members</code> table.</figcaption>
+<p>The Concept Set Browser shown in <a href="#fig-tools-020-concept-home" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs. For more details around the process of concept set creation, read the Concept Sets section in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>. It is recommended that, if you are a new researcher, you start your search for a concept set with the list of N3C Recommended concept sets. These concept sets have been frozen in their validated state by the <a href="../chapters/support.html#sec-support-liaisons">Logic Liaisons and the Data Liaisons</a> after obtaining clinician and informatic reviews (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>). They are also the ones used to identify common comorbidities and other facts on the Phenotype Explorer and in the Logic Liaison Fact Table templates. The recommended other method of finding commonly used concept sets is by exploring bundles within the Concept Set Browser. These are groups of concept sets that are often used together. Further exploration of all other concept sets in the Concept Set Browser is also an option, though only advised when proceeding with the understanding that many of the existing concept sets that are not part of the N3C Recommended or bundles are crafted to be specific to one particular study team’s requirements.</p>
+<p>Once concept sets have been identified for use in your analysis through the Concept Set Browser, the concept set members table becomes the link between concepts and the encompassing concept set as shown by <a href="#fig-tools-030-concept-table" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>. You then have to “point” the code to the concept set members table to access this linkage. Once this has been accomplished, the choice becomes using the most recent version of a concept set (<code>concept_set_members.concept_set_name where most_recent_version = TRUE</code>) or using a specific version of the concept set (<code>concept_set_members.codeset_id = {codeset id value}</code>). While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.</p>
+<div id="fig-tools-030-concept-table" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Concept_set_members">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-030-concept-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-030-concept-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: <code>concept_set_members</code> table.
+</figcaption>
 </figure>
 </div>
 <p>Referring to a concept set by name and using the most recent version is often the preferred method for concept sets marked as N3C Recommended since these concept sets can only be updated by N3C core contributors after they have gone through a validation process which has been described in the previous chapter, <a href="../chapters/understanding.html">Understanding the Data</a>.</p>
@@ -532,33 +482,45 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>The N3C Knowledge Store is an application where you, as an N3C Data Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated. Most Knowledge Store (KS) objects come about as core contributors and researchers alike develop resources they believe may be useful for others either within or outside of their research project team and wish to share them with the broader community. If you find yourself in this situation, you can easily create, submit, and share a KS resource by following this <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.1d9ad825-30d1-475c-b77b-88836af5ea2c">Code Workbook Template Quick Start Guide</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>. Otherwise, more specifics on how to navigate the KS can be found in this <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.7ac7904d-bbc3-4678-a224-8b8b7c12d40e">Knowledge Store Guide</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> within the Enclave.</p>
 <section id="sec-tools-store-data" class="level3" data-number="8.3.1">
 <h3 data-number="8.3.1" class="anchored" data-anchor-id="sec-tools-store-data"><span class="header-section-number">8.3.1</span> Datasets</h3>
-<p>Of the many types of Knowledge Objects, the most common are datasets and code templates. Datasets in the Knowledge Store can be internal or external. Internal datasets are generated from data inside the Enclave, typically by researchers as part of their project, and are often of patient or row-level granularity. As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person-level data at various levels of granularity (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>). Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.</p>
+<p>Of the many types of Knowledge Objects, the most common are datasets and code templates. Datasets in the Knowledge Store can be internal or external. Internal datasets are generated from data inside the Enclave, typically by researchers as part of their project, and are often of patient or row-level granularity. As described in the previous chapter Understanding the Data, external datasets found in the Knowledge Store provide a wealth of information from public datasets that have been brought into the Enclave along with the crosswalks necessary for joining these aggregate data to person-level data at various levels of granularity (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>). Either type of dataset can be imported into a workbook or code repository of the appropriate data access level to be used as a starting point for further transformation or analysis.</p>
 </section>
 <section id="sec-tools-store-templates" class="level3" data-number="8.3.2">
 <h3 data-number="8.3.2" class="anchored" data-anchor-id="sec-tools-store-templates"><span class="header-section-number">8.3.2</span> Code Templates</h3>
-<p>Depending on the author’s intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset. The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding. Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts. A few helpful starter templates are those produced by the Logic Liaisons (see the <a href="../chapters/support.html#sec-support-liaisons-logic">Logic Liaison Services</a> section in <a href="support.html"><span>Chapter&nbsp;11</span></a>), some of which can be seen in <a href="#fig-tools-040-knowledge-store-homepage">Figure&nbsp;<span>8.4</span></a>.</p>
-<div id="fig-tools-040-knowledge-store-homepage" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" title="N3C Knowledge Store Homepage." data-gallery="quarto-lightbox-gallery-4"><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.4: N3C Knowledge Store Homepage.</figcaption>
+<p>Depending on the author’s intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset. The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding. Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts. A few helpful starter templates are those produced by the Logic Liaisons (see the <a href="../chapters/support.html#sec-support-liaisons-logic">Logic Liaison Services</a> section in <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>), some of which can be seen in <a href="#fig-tools-040-knowledge-store-homepage" class="quarto-xref">Figure&nbsp;<span>8.4</span></a>.</p>
+<div id="fig-tools-040-knowledge-store-homepage" class="quarto-figure quarto-figure-center quarto-float anchored" alt="N3C Knowledge Store Homepage">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-040-knowledge-store-homepage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-040-knowledge-store-homepage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: N3C Knowledge Store Homepage.
+</figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-tools-store-ll" class="level3" data-number="8.3.3">
 <h3 data-number="8.3.3" class="anchored" data-anchor-id="sec-tools-store-ll"><span class="header-section-number">8.3.3</span> Logic Liaison Fact Tables and Templates</h3>
 <p>The Logic Liaison Fact Tables and Templates are specifically designed to provide a validated and community agreed-upon method for calculating particular facts at the date level and/or the patient level. Through surveying the Domain Team Leads to establish a list of commonly derived variables and continuous feedback from the N3C Community to refine and update this list, the Logic Liaisons have developed, disseminated, and maintain two main fact table templates and an additional fact table template for SDoH variables. These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&amp;view=focus">all N3C patients</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> as well as a subset who have an index date for their acute COVID-19 infection, the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&amp;view=focus">confirmed COVID-19 positive patients</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> (PCR/AG positive or U07.1 COVID-19 diagnosed). These day-level and person-level datasets are commonly referred to as the Logic Liaison Fact Tables and can be imported directly into a workbook for use without modifying the template. These fact tables are produced using a default set of concept sets from the N3C Recommended Concept Sets list and a set of default values for the template’s parameters.</p>
-<p>The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by <a href="#fig-tools-050-knowledge-store-example">Figure&nbsp;<span>8.5</span></a>. It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project-specific version of the fact tables. The <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&amp;view=focus">SDoH Variables ALL PATIENTS</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient. Because joining this data requires a valid five-digit zip code, these fields are only available for patients with a five-digit zip code in Level 3 (LDS) data.</p>
-<div id="fig-tools-050-knowledge-store-example" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" title="Example Logic Liaison Fact Table Template Knowledge Object." data-gallery="quarto-lightbox-gallery-5"><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.</figcaption>
+<p>The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by <a href="#fig-tools-050-knowledge-store-example" class="quarto-xref">Figure&nbsp;<span>8.5</span></a>. It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project-specific version of the fact tables. The <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&amp;view=focus">SDoH Variables ALL PATIENTS</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient. Because joining this data requires a valid five-digit zip code, these fields are only available for patients with a five-digit zip code in Level 3 (LDS) data.</p>
+<div id="fig-tools-050-knowledge-store-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Logic Liaison Fact Table Template Knowledge Object">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-050-knowledge-store-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-050-knowledge-store-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.
+</figcaption>
 </figure>
 </div>
-<p>The Logic Liaisons have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. <a href="#fig-tools-060-ll-template-1">Figure&nbsp;<span>8.6</span></a> depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.</p>
-<div id="fig-tools-060-ll-template-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" title="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates." data-gallery="quarto-lightbox-gallery-6"><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.</figcaption>
+<p>The Logic Liaisons have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. <a href="#fig-tools-060-ll-template-1" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.</p>
+<div id="fig-tools-060-ll-template-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-060-ll-template-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-060-ll-template-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.
+</figcaption>
 </figure>
 </div>
 <p>The data quality templates provide a variety of data tables and visualizations. The first two of which provide a method for evaluating overall quality of the harmonized data ingested from sites.</p>
@@ -574,11 +536,15 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li><a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DA00725&amp;view=focus">Combined Variables COVID PATIENTS</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>: Same as above except for patients with facts found based on their covid index date.</li>
 <li><a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-06D5DA0&amp;view=focus">CCI Score</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>: Provides an all-time score or a before-or-day-of-covid score (depending on your selection in the template) per patient based on the CCI weights <span class="citation" data-cites="charlson_1987">(<a href="../references.html#ref-charlson_1987" role="doc-biblioref">Charlson et al., 1987</a>)</span>.</li>
 </ul>
-<p><a href="#fig-tools-070-ll-template-2">Figure&nbsp;<span>8.7</span></a> is a continuation of <a href="#fig-tools-030-concept-table">Figure&nbsp;<span>8.3</span></a> to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.</p>
-<div id="fig-tools-070-ll-template-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" title="Example Application of Logic Liaison Ancillary Quality Templates." data-gallery="quarto-lightbox-gallery-7"><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates.</figcaption>
+<p><a href="#fig-tools-070-ll-template-2" class="quarto-xref">Figure&nbsp;<span>8.7</span></a> is a continuation of <a href="#fig-tools-030-concept-table" class="quarto-xref">Figure&nbsp;<span>8.3</span></a> to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.</p>
+<div id="fig-tools-070-ll-template-2" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Application of Logic Liaison Ancillary Quality Templates">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-070-ll-template-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-070-ll-template-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates.
+</figcaption>
 </figure>
 </div>
 <p>The ancillary data quality templates are intended to be applied to fact tables after cohort creation and initial variable creation to stratify question-specific facts by site.</p>
@@ -586,8 +552,8 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li><a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-E8BD195&amp;view=focus">Systematic Missingness by Site and Study Variable</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>: Produces a final visualization that has a binary indicator for whether or not a site is systematically missing meaningful data for the study variables in the input dataset</li>
 <li><a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-9901C7E&amp;view=focus">Fact Density by Site Visualization</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>: Calculates the Standardized Density, Median Absolute Deviation (MAD), and Directional Median Deviations (DMD) with respect to the numerical values in each column of the input table (any non-numerical field is converted to a binary value using the isNotNull() function) and creates heatmaps to visualize the metrics.</li>
 </ul>
-<p>Once you obtain results you wish to share outside of the Enclave for a project, the results must undergo a Data Download Request before being available to export outside of the Enclave. Additional details around exporting results can be found in the Publishing and Sharing Your Work chapter (see <a href="publishing.html"><span>Chapter&nbsp;10</span></a>). Training materials for getting started with Logic Liaison Templates are available <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=26">here</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> within the Enclave. Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.</p>
-<p>While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump-start on gathering and understanding the data by avoiding effort duplication and providing a general starting point. You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks. The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site. Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (<a href="practices.html"><span>Chapter&nbsp;9</span></a>).</p>
+<p>Once you obtain results you wish to share outside of the Enclave for a project, the results must undergo a Data Download Request before being available to export outside of the Enclave. Additional details around exporting results can be found in the Publishing and Sharing Your Work chapter (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>). Training materials for getting started with Logic Liaison Templates are available <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=26">here</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> within the Enclave. Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.</p>
+<p>While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump-start on gathering and understanding the data by avoiding effort duplication and providing a general starting point. You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks. The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site. Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (<a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>).</p>
 </section>
 </section>
 <section id="sec-tools-apps" class="level2" data-number="8.4">
@@ -601,13 +567,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Promote collaboration, organize work, and translation to final manuscript</li>
 <li>Methodology checklist</li>
 </ul>
-<div id="fig-tools-080-protocol-pad" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" title="N3C Protocol Pad Homepage." data-gallery="quarto-lightbox-gallery-8"><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.8: N3C Protocol Pad Homepage.</figcaption>
+<div id="fig-tools-080-protocol-pad" class="quarto-figure quarto-figure-center quarto-float anchored" alt="N3C Protocol Pad Homepage">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-080-protocol-pad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-080-protocol-pad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.8: N3C Protocol Pad Homepage.
+</figcaption>
 </figure>
 </div>
-<p>Before diving into an analysis, it is highly recommended that you use N3C’s Protocol Pad shown in <a href="#fig-tools-080-protocol-pad">Figure&nbsp;<span>8.8</span></a> to organize your thoughts and path forward. Research studies can span many months and pass through the hands of many team members before reaching a stage where you may want to share the results through publication or other approved means. The Protocol Pad serves as an electronic lab notebook to help organize tasks, track progress, and document results in a cohesive format throughout the process of reaching a study’s final state. As a result of this organization and tracking, the tool facilitates easy translation of the work, decisions, and contributors to producing a final manuscript if that is the goal of the protocol.</p>
+<p>Before diving into an analysis, it is highly recommended that you use N3C’s Protocol Pad shown in <a href="#fig-tools-080-protocol-pad" class="quarto-xref">Figure&nbsp;<span>8.8</span></a> to organize your thoughts and path forward. Research studies can span many months and pass through the hands of many team members before reaching a stage where you may want to share the results through publication or other approved means. The Protocol Pad serves as an electronic lab notebook to help organize tasks, track progress, and document results in a cohesive format throughout the process of reaching a study’s final state. As a result of this organization and tracking, the tool facilitates easy translation of the work, decisions, and contributors to producing a final manuscript if that is the goal of the protocol.</p>
 <p>Protocol Pad is the foundation for performing reproducible and repeatable science within the Enclave. The templates, checklists, and links to key resources provided within the tool guide you along the path of a well-structured division of labor and use of best practices when performing research using the observational data in the Enclave. The tool also assists your team in keeping the work in alignment with the project. A more in-depth explanation of how Protocol Pad can facilitate research will be available in the future. <!-- can be found in the Best Practices for the Research Life Cycle chapter (see @sec-practices). --> Documentation on the tool’s functionality can be found in the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.8e97750f-d764-4df9-bb25-42ab32fcaa26">QuickStart Users’ Guide to Protocol Pad</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> as well as the <a href="https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.9d509aa3-7c76-42b3-a891-076a6f450f37">Protocol Pad White Paper and Detailed Instructions</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
 </section>
 <section id="sec-tools-apps-contour" class="level3" data-number="8.4.2">
@@ -620,13 +590,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Allows customization with Contour’s expression language</li>
 <li>Dashboard development</li>
 </ul>
-<div id="fig-tools-090-contour" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-090-contour.png" class="lightbox" title="Example Contour Analysis." data-gallery="quarto-lightbox-gallery-9"><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.9: Example Contour Analysis.</figcaption>
+<div id="fig-tools-090-contour" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Contour Analysis">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-090-contour-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-090-contour.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-090-contour-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.9: Example Contour Analysis.
+</figcaption>
 </figure>
 </div>
-<p>The Contour application is a programming-free interface to the Enclave that allows those with limited knowledge of Python, R, and SQL to create top-down analysis pipelines in a point-and-click fashion, as well as generate dynamically updated dashboards. A Contour analysis starts by specifying the path to the input dataset as shown in <a href="#fig-tools-090-contour">Figure&nbsp;<span>8.9</span></a>. Subsequent transforms of that dataset are then specified, which can include adding/calculating new columns, filtering rows or columns, joining with other datasets, creating summary figures and charts, summarizing tables through pivoting, and more. Contour’s <a href="https://www.palantir.com/docs/foundry/contour/expressions-overview/">expression language</a> also allows for more complex querying and data aggregation beyond the default operations provided. Once an analysis is complete, resulting datasets can be saved to the Enclave for use in additional Contour pipelines or other Enclave applications, like <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a>. Contour can also quickly create summary figures from source tables without code, and has a variety of visualization options, including bar charts, histograms, and heatmaps.</p>
+<p>The Contour application is a programming-free interface to the Enclave that allows those with limited knowledge of Python, R, and SQL to create top-down analysis pipelines in a point-and-click fashion, as well as generate dynamically updated dashboards. A Contour analysis starts by specifying the path to the input dataset as shown in <a href="#fig-tools-090-contour" class="quarto-xref">Figure&nbsp;<span>8.9</span></a>. Subsequent transforms of that dataset are then specified, which can include adding/calculating new columns, filtering rows or columns, joining with other datasets, creating summary figures and charts, summarizing tables through pivoting, and more. Contour’s <a href="https://www.palantir.com/docs/foundry/contour/expressions-overview/">expression language</a> also allows for more complex querying and data aggregation beyond the default operations provided. Once an analysis is complete, resulting datasets can be saved to the Enclave for use in additional Contour pipelines or other Enclave applications, like <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a>. Contour can also quickly create summary figures from source tables without code, and has a variety of visualization options, including bar charts, histograms, and heatmaps.</p>
 <p>Figures or summary tables created in Contour can be exported to a dashboard within Contour. A Contour Dashboard allows chart-to-chart filtering, and an easy drag-and-drop interface to build the dashboard while iterating on an analysis. A dashboard is dynamic and interactive, allowing the reader to adjust the graphs to better explore analysis results in a guided and structured way. Figures generated in a Contour analysis can also be exported to other Enclave applications like Notepad for reporting results. The main difference between <a href="../chapters/tools.html#sec-tools-apps-notepad">Notepad</a> and a Contour Dashboard is that Notepad provides a static report with figures that cannot be dynamically changed by the reader. A detailed orientation to Contour can be found in the Foundry Documentation <a href="https://www.palantir.com/docs/foundry/contour/overview/">here</a>.</p>
 </section>
 <section id="sec-tools-apps-workbook" class="level3" data-number="8.4.3">
@@ -644,17 +618,25 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Workspace to reuse templatized logic</li>
 <li>Exporting code to GitHub</li>
 </ul>
-<p>Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. <a href="#fig-tools-100-transforms-abstract">Figure&nbsp;<span>8.10</span></a> shows an abstract version of a Code Workbook, while <a href="#fig-tools-110-transforms-example">Figure&nbsp;<span>8.11</span></a> is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation <em>one or more tables are specified as the input</em> and are transformed into a single output table (<a href="#fig-tools-100-transforms-abstract">Figure&nbsp;<span>8.10</span></a>). Multiple transformations can also be strung together (<a href="#fig-tools-110-transforms-example">Figure&nbsp;<span>8.11</span></a>) to create an analysis pipeline (see Foundry’s <a href="https://www.palantir.com/docs/foundry/building-pipelines/overview/">Anatomy of a Data Pipeline</a> module for more detailed information, as well as <a href="practices.html"><span>Chapter&nbsp;9</span></a>). In Code Workbook, <em>the primary and required output of a transformation is always a single table</em>; however, visualizations such as graphs and charts can also be generated and saved along the way. Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.</p>
-<div id="fig-tools-100-transforms-abstract" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" title="Abstracted view of data transforms." data-gallery="quarto-lightbox-gallery-10"><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.10: Abstracted view of data transforms.</figcaption>
+<p>Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. <a href="#fig-tools-100-transforms-abstract" class="quarto-xref">Figure&nbsp;<span>8.10</span></a> shows an abstract version of a Code Workbook, while <a href="#fig-tools-110-transforms-example" class="quarto-xref">Figure&nbsp;<span>8.11</span></a> is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation <em>one or more tables are specified as the input</em> and are transformed into a single output table (<a href="#fig-tools-100-transforms-abstract" class="quarto-xref">Figure&nbsp;<span>8.10</span></a>). Multiple transformations can also be strung together (<a href="#fig-tools-110-transforms-example" class="quarto-xref">Figure&nbsp;<span>8.11</span></a>) to create an analysis pipeline (see Foundry’s <a href="https://www.palantir.com/docs/foundry/building-pipelines/overview/">Anatomy of a Data Pipeline</a> module for more detailed information, as well as <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>). In Code Workbook, <em>the primary and required output of a transformation is always a single table</em>; however, visualizations such as graphs and charts can also be generated and saved along the way. Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.</p>
+<div id="fig-tools-100-transforms-abstract" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Abstracted view of data transforms">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-100-transforms-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10"><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-100-transforms-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.10: Abstracted view of data transforms.
+</figcaption>
 </figure>
 </div>
-<div id="fig-tools-110-transforms-example" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" title="Example Data Transformation Pipeline in Code Workbook." data-gallery="quarto-lightbox-gallery-11"><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.</figcaption>
+<div id="fig-tools-110-transforms-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Data Transformation Pipeline in Code Workbook">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-110-transforms-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-glightbox="description: .lightbox-desc-11"><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-110-transforms-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.
+</figcaption>
 </figure>
 </div>
 <section id="sec-tools-apps-workbook-transform" class="level4" data-number="8.4.3.1">
@@ -672,11 +654,15 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <p>Many Python and R transforms rely on external libraries and packages which can be made available via the <a href="https://www.palantir.com/docs/foundry/code-workbook/environment-overview/">Environment Configuration</a>. The Enclave provides default configurations tailored to common use cases. For instance, the <em>default</em> profile includes common packages like pandas and tidyverse for routine analysis, whereas the <em>profile-high-memory</em> profile includes packages like <a href="https://www.palantir.com/docs/foundry/develop-models/python-models/">foundry_ml</a> for machine learning. You can create your own Environment Configurations which include packages meeting your project’s specific needs.</p>
 <p>Not all libraries and packages are included in the list of options, but you can submit a ticket within the Enclave by clicking on <em>Help &amp; Support &gt; Help Center &gt; Report an Issue</em> to request additional packages be made available. The Enclave maintains instances of the default configurations on warm standby, allowing them to be quickly initialized when you request a new environment. Custom configurations require more time for initialization as instances of these must be started from scratch rather than merely assigned. For this reason, it is recommended to use default configurations when possible.</p>
 <p>Following best practices for collaborative software development, Code Workbook allows for <a href="https://www.palantir.com/docs/foundry/code-workbook/branching-overview/">branching</a> of the logic within a workbook. As with other popular version control technologies (i.e., <a href="https://git-scm.com/">Git</a>), branching allows you to make copies of a workbook which your team members can develop independently of the source workbook. Once the development in a particular branch is deemed complete, it can be merged back into the originating branch. Prior to the merge, you can preview both line-level differences within each node, as well as node-level differences of nodes that have been added/removed. Good practice dictates that you perform all development on individual branches, which are then merged back into a common <em>master</em> branch.</p>
-<p>Because the <em>master</em> branch can change in the interval between you creating a branch and merging it back in, it is important to preview merge changes to ensure that the branch’s contributions are both correct and compatible with the current state of the <em>master</em> branch. However, note that your branch will be automatically deleted after it is merged, which is an important difference from the normal Git behavior. Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, you can create a code branch in which all input datasets are set to the same version release (as shown in <a href="#fig-tools-120-release-pin">Figure&nbsp;<span>8.12</span></a>) to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User-generated datasets are set to the same branch as the Code Workbook in which they were created. Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.</p>
-<div id="fig-tools-120-release-pin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" title="Pinning to an input dataset’s release version." data-gallery="quarto-lightbox-gallery-12"><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.12: Pinning to an input dataset’s release version.</figcaption>
+<p>Because the <em>master</em> branch can change in the interval between you creating a branch and merging it back in, it is important to preview merge changes to ensure that the branch’s contributions are both correct and compatible with the current state of the <em>master</em> branch. However, note that your branch will be automatically deleted after it is merged, which is an important difference from the normal Git behavior. Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, you can create a code branch in which all input datasets are set to the same version release (as shown in <a href="#fig-tools-120-release-pin" class="quarto-xref">Figure&nbsp;<span>8.12</span></a>) to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User-generated datasets are set to the same branch as the Code Workbook in which they were created. Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.</p>
+<div id="fig-tools-120-release-pin" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Pinning to an input dataset's release version">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-120-release-pin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12"><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-120-release-pin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.12: Pinning to an input dataset’s release version.
+</figcaption>
 </figure>
 </div>
 <p>Palantir has created extensive <a href="https://www.palantir.com/docs/foundry/code-workbook/overview/">documentation</a> of the Code Workbook application including tutorials. N3C has also published <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=22">training materials</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
@@ -690,13 +676,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Code reuse across projects</li>
 <li>Built-in version control</li>
 </ul>
-<div id="fig-tools-130-code-repo" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" title="Example Code Repository." data-gallery="quarto-lightbox-gallery-13"><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.13: Example Code Repository.</figcaption>
+<div id="fig-tools-130-code-repo" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Code Repository">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-130-code-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13"><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-130-code-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.13: Example Code Repository.
+</figcaption>
 </figure>
 </div>
-<p>Code Repositories shown in <a href="#fig-tools-130-code-repo">Figure&nbsp;<span>8.13</span></a> are available within the Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline. Code Repositories <em>do not support</em> data visualization, coding in R, or point-and-click templates. Additional <a href="https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/">differences between Code Repositories and Code Workbooks</a> can be found in the Foundry Documentation. Palantir has also compiled several <a href="https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1">tutorials on how to create, publish, and maintain Code Repositories</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
+<p>Code Repositories shown in <a href="#fig-tools-130-code-repo" class="quarto-xref">Figure&nbsp;<span>8.13</span></a> are available within the Enclave and should be used when you wish to share code across multiple Code Workbooks or projects, or need to develop a robust production pipeline. Code Repositories <em>do not support</em> data visualization, coding in R, or point-and-click templates. Additional <a href="https://www.palantir.com/docs/foundry/code-workbook/code-repositories-comparison/">differences between Code Repositories and Code Workbooks</a> can be found in the Foundry Documentation. Palantir has also compiled several <a href="https://unite.nih.gov/workspace/documentation/product/foundry-training-portal/de_code-repo-environment_module1">tutorials on how to create, publish, and maintain Code Repositories</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
 <p>For any large analytic project, there are many pieces of code and other artifacts that should be shared between different components within the project. Some code is useful enough that it should be shared across projects. Code Repositories provide a standard mechanism for encapsulating reusable components and allowing them to be reused within projects.</p>
 <p>Underlying the Code Repository is the Git version control system. You can edit and maintain code using all of the capabilities of Git including comparing versions, branching, and pull requests. Versions that are tagged in Git will be automatically published in the Enclave as a shared library, which allows you and others that have access to your project space to import that code into other Code Workbooks (note this requires you to create a customized environment that imports your code specifically, which may increase workbook initialization time). If you want to make your repository public so others outside of your project workspace can use it you can do one of the following:</p>
 <ul>
@@ -716,14 +706,18 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Create charts</li>
 <li>Allow customization and flexibility</li>
 </ul>
-<div id="fig-tools-140-fusion" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-140-fusion.png" class="lightbox" title="Example Fusion Sheet." data-gallery="quarto-lightbox-gallery-14"><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.14: Example Fusion Sheet.</figcaption>
+<div id="fig-tools-140-fusion" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Fusion Sheet">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-140-fusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-140-fusion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14"><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-140-fusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.14: Example Fusion Sheet.
+</figcaption>
 </figure>
 </div>
-<p>Fusion, shown in <a href="#fig-tools-140-fusion">Figure&nbsp;<span>8.14</span></a>, is a spreadsheet application within the Enclave analogous to Microsoft Excel or Google Sheets. Palantir provides <a href="https://www.palantir.com/docs/foundry/fusion/overview/">extensive documentation</a>. Fusion allows you to <a href="https://www.palantir.com/docs/foundry/fusion/sync-table-dataset/">sync specific cell ranges within a spreadsheet to Spark datasets</a>, which can subsequently be imported into any other Enclave application. Fusion is an excellent option for use cases which require manual data entry, such as curating lists of concept sets (see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>) to configure the <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Fact Tables and Templates</a>. Unlike many other Enclave applications, Fusion is not suitable for large datasets; each document has a maximum size of 50 MB. Similar to Google Sheets, multiple users can simultaneously view and edit the same document.</p>
-<p>Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few. While you cannot directly import external .xls/.xlsx formatted files into the Enclave, you can copy/paste external dataset values into Fusion. For example, you can copy and paste concept IDs from <a href="https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas">ATLAS</a> to use in an analysis or in metadata manually curated for a dataset. To import larger external datasets into the Enclave see <a href="understanding.html"><span>Chapter&nbsp;7</span></a>, and <a href="https://zenodo.org/record/4574608#.Y6IeG-zMJTZ">N3C procedures and protocols around importing large external datasets</a>. In addition to standard spreadsheet functionality, Fusion has additional features which allow it to integrate with the rest of your Enclave environment. Objects created within Fusion, such as formatted tables, can be embedded in <a href="../chapters/tools.html#sec-tools-apps-notepad">Notepad</a>. Finally, Fusion sheets can be templatized to facilitate replication of similar functionality.</p>
+<p>Fusion, shown in <a href="#fig-tools-140-fusion" class="quarto-xref">Figure&nbsp;<span>8.14</span></a>, is a spreadsheet application within the Enclave analogous to Microsoft Excel or Google Sheets. Palantir provides <a href="https://www.palantir.com/docs/foundry/fusion/overview/">extensive documentation</a>. Fusion allows you to <a href="https://www.palantir.com/docs/foundry/fusion/sync-table-dataset/">sync specific cell ranges within a spreadsheet to Spark datasets</a>, which can subsequently be imported into any other Enclave application. Fusion is an excellent option for use cases which require manual data entry, such as curating lists of concept sets (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>) to configure the <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Fact Tables and Templates</a>. Unlike many other Enclave applications, Fusion is not suitable for large datasets; each document has a maximum size of 50 MB. Similar to Google Sheets, multiple users can simultaneously view and edit the same document.</p>
+<p>Fusion provides many features familiar to other spreadsheet applications such as cell-referencing formulas, formatting, and a charting library to name a few. While you cannot directly import external .xls/.xlsx formatted files into the Enclave, you can copy/paste external dataset values into Fusion. For example, you can copy and paste concept IDs from <a href="https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#atlas">ATLAS</a> to use in an analysis or in metadata manually curated for a dataset. To import larger external datasets into the Enclave see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>, and <a href="https://zenodo.org/record/4574608#.Y6IeG-zMJTZ">N3C procedures and protocols around importing large external datasets</a>. In addition to standard spreadsheet functionality, Fusion has additional features which allow it to integrate with the rest of your Enclave environment. Objects created within Fusion, such as formatted tables, can be embedded in <a href="../chapters/tools.html#sec-tools-apps-notepad">Notepad</a>. Finally, Fusion sheets can be templatized to facilitate replication of similar functionality.</p>
 </section>
 <section id="sec-tools-apps-notepad" class="level3" data-number="8.4.6">
 <h3 data-number="8.4.6" class="anchored" data-anchor-id="sec-tools-apps-notepad"><span class="header-section-number">8.4.6</span> Notepad</h3>
@@ -735,13 +729,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Monthly status reports using template function</li>
 <li>Unable to create dashboard or complex page-based text editing</li>
 </ul>
-<div id="fig-tools-150-notepad" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-150-notepad.png" class="lightbox" title="Example Notepad Document." data-gallery="quarto-lightbox-gallery-15"><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.15: Example Notepad Document.</figcaption>
+<div id="fig-tools-150-notepad" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Notepad Document">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-150-notepad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-150-notepad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" data-glightbox="description: .lightbox-desc-15"><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-150-notepad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.15: Example Notepad Document.
+</figcaption>
 </figure>
 </div>
-<p>Many research projects in the Enclave are complex, involving multiple summary datasets, statistical analyses, and visualizations scattered across multiple applications and documents. Notepad is a tool that is often used for consolidating various research artifacts from multiple sources within the Enclave into a single coherent document as shown in <a href="#fig-tools-150-notepad">Figure&nbsp;<span>8.15</span></a>. Formatted Fusion tables, Contour charts, Python/R-generated images from Code Workbooks, and more are all embeddable in a Notepad document, with the option to add a title and caption for each artifact. Users can also create sections and provide narrative structure to their documents using <a href="https://www.markdownguide.org/">Markdown</a>. A Notepad document can be arranged and configured using a point-and-click interface.</p>
+<p>Many research projects in the Enclave are complex, involving multiple summary datasets, statistical analyses, and visualizations scattered across multiple applications and documents. Notepad is a tool that is often used for consolidating various research artifacts from multiple sources within the Enclave into a single coherent document as shown in <a href="#fig-tools-150-notepad" class="quarto-xref">Figure&nbsp;<span>8.15</span></a>. Formatted Fusion tables, Contour charts, Python/R-generated images from Code Workbooks, and more are all embeddable in a Notepad document, with the option to add a title and caption for each artifact. Users can also create sections and provide narrative structure to their documents using <a href="https://www.markdownguide.org/">Markdown</a>. A Notepad document can be arranged and configured using a point-and-click interface.</p>
 <p>All embedded objects can be configured to remain static or refresh automatically when the underlying data sources update. Notepad is also useful for annotating documents, presenting an executive summary of results for internal stakeholders, or external presentations after being approved for download request and export as PDF. A <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Template</a> in the Knowledge Store generally includes a README which is created using Notepad. The tool does have limitations in that it cannot be used to create dashboards that include chart-to-chart filtering; however, a <a href="https://www.palantir.com/docs/foundry/contour/dashboards-overview/">Contour Dashboard</a> can provide this feature for tabular data and a <a href="https://www.palantir.com/docs/foundry/quiver/dashboards-overview/">Quiver Dashboard</a> can provide this feature for object or time series data. Palantir has curated documentation for creating and editing <a href="https://www.palantir.com/docs/foundry/notepad/overview/">Notepad</a> documents. Palantir also has documentation for their application known as <a href="https://www.palantir.com/docs/foundry/reports/overview/">Reports</a> that was previously used in a similar fashion though with less functionality compared to Notepad.</p>
 </section>
 <section id="sec-tools-apps-lineage" class="level3" data-number="8.4.7">
@@ -753,13 +751,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Visualize a data pipeline and its details</li>
 <li>Facilitate dataset build scheduling</li>
 </ul>
-<div id="fig-tools-160-data-lineage" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" title="Example Data Lineage Visualization." data-gallery="quarto-lightbox-gallery-16"><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;8.16: Example Data Lineage Visualization.</figcaption>
+<div id="fig-tools-160-data-lineage" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Data Lineage Visualization">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tools-160-data-lineage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-16" data-glightbox="description: .lightbox-desc-16"><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-160-data-lineage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.16: Example Data Lineage Visualization.
+</figcaption>
 </figure>
 </div>
-<p>Whether you’re creating a data pipeline for your research project or investigating one from the Knowledge Store, you’ll likely want to holistically assess the dataset’s origins with the Data Lineage tool shown in <a href="#fig-tools-160-data-lineage">Figure&nbsp;<span>8.16</span></a>. The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants. Views are enhanced with color coding and grouping. The Data Lineage tool allows you to view details such as a dataset’s schema, last build datetime, and the code that generated the dataset. You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis. The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules. Foundry Documentation provides <a href="https://www.palantir.com/docs/foundry/data-lineage/overview/">additional instructions and descriptions</a> of Data Lineage.</p>
+<p>Whether you’re creating a data pipeline for your research project or investigating one from the Knowledge Store, you’ll likely want to holistically assess the dataset’s origins with the Data Lineage tool shown in <a href="#fig-tools-160-data-lineage" class="quarto-xref">Figure&nbsp;<span>8.16</span></a>. The data pipeline flows from left to right, which is an intuitive way to visualize the relationships between datasets and their ancestors or descendants. Views are enhanced with color coding and grouping. The Data Lineage tool allows you to view details such as a dataset’s schema, last build datetime, and the code that generated the dataset. You can use this lineage tracing tool to understand and verify the data curation methods when using Knowledge Objects and other shared datasets as part of their study analysis. The Data Lineage tool also allows you to see upstream dataset(s) aka potential triggers and downstream dataset(s) aka potential targets for setting up dataset build schedules. Foundry Documentation provides <a href="https://www.palantir.com/docs/foundry/data-lineage/overview/">additional instructions and descriptions</a> of Data Lineage.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -775,7 +777,25 @@ Additional Chapter Details
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;8.1: High-level overview of an N3C project.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;8.2: Concept Set Browser Homepage.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;8.3: <code>concept_set_members</code> table.</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;8.4: N3C Knowledge Store Homepage.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure&nbsp;8.8: N3C Protocol Pad Homepage.</span>
+<span class="glightbox-desc lightbox-desc-9">Figure&nbsp;8.9: Example Contour Analysis.</span>
+<span class="glightbox-desc lightbox-desc-10">Figure&nbsp;8.10: Abstracted view of data transforms.</span>
+<span class="glightbox-desc lightbox-desc-11">Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.</span>
+<span class="glightbox-desc lightbox-desc-12">Figure&nbsp;8.12: Pinning to an input dataset’s release version.</span>
+<span class="glightbox-desc lightbox-desc-13">Figure&nbsp;8.13: Example Code Repository.</span>
+<span class="glightbox-desc lightbox-desc-14">Figure&nbsp;8.14: Example Fusion Sheet.</span>
+<span class="glightbox-desc lightbox-desc-15">Figure&nbsp;8.15: Example Notepad Document.</span>
+<span class="glightbox-desc lightbox-desc-16">Figure&nbsp;8.16: Example Data Lineage Visualization.</span>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-charlson_1987" class="csl-entry" role="listitem">
 Charlson, M. E., Pompei, P., Ales, K. L., &amp; MacKenzie, C. R. (1987). A new method of classifying prognostic comorbidity in longitudinal studies: Development and validation. <em>Journal of Chronic Diseases</em>, <em>40</em>(5), 373–383. <a href="https://doi.org/10.1016/0021-9681(87)90171-8">https://doi.org/10.1016/0021-9681(87)90171-8</a>
 </div>
@@ -831,6 +851,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -899,13 +946,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -984,10 +1033,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -997,8 +1063,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1011,6 +1086,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1054,6 +1248,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1079,6 +1274,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1136,30 +1357,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/understanding.html" class="pagination-link">
+      <a href="../chapters/understanding.html" class="pagination-link  aria-label=" &lt;span="" the="" data&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Understanding the Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/practices.html" class="pagination-link">
+      <a href="../chapters/practices.html" class="pagination-link" aria-label="<span class='chapter-number'>9</span>&nbsp; <span class='chapter-title'>Best Practices for the Research Life Cycle</span>">
         <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Best Practices for the Research Life Cycle</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1167,14 +1374,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

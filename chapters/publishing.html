@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -86,18 +86,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -106,6 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -207,12 +214,12 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/publishing.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/publishing.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -222,13 +229,13 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" rel="" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -394,7 +401,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -418,112 +425,24 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#sec-publishing-ks" id="toc-sec-publishing-ks" class="nav-link" data-scroll-target="#sec-publishing-ks"><span class="header-section-number">10.4</span> Submitting to the Knowledge Store</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/publishing.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/publishing.md" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/publishing.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/publishing.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-publishing" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></span></h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Julie A McMurry <a href="https://orcid.org/0000-0002-9353-5498" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://tislab.org/">
-            University of Colorado, Anschutz Medical Campus
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Jeremy Richard Harper <a href="https://orcid.org/0000-0003-1244-8948" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.linkedin.com/in/jeremyharper1/">
-            Owl Health Works
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Christine Suver <a href="https://orcid.org/0000-0002-2986-385X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.linkedin.com/in/christine-suver-451233b">
-            Sage Bionetworks
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Carolyn T Bramante <a href="https://orcid.org/0000-0001-5858-2080" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://med.umn.edu/bio/carolyn-bramante">
-            University of Minnesota
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Mary K Emmett <a href="https://orcid.org/0000-0002-8551-8655" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.linkedin.com/in/mary-emmett-6673529">
-            CAMC Institute for Academic Medicine
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Amit K Saha <a href="https://orcid.org/0000-0002-3542-4319" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://school.wakehealth.edu/faculty/s/amit-saha">
-            Wake Forest School of Medicine
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Farrukh M. Koraishy <a href="https://orcid.org/0000-0001-6974-5674" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research">
-            Department of Medicine/Nephrology, Stony Brook University, NY
-            </a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">A Jerrod Anzalone <a href="https://orcid.org/0000-0002-3212-7845" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://gpctr.unmc.edu/">
-            University of Nebraska Medical Center
-            </a>
-          </p>
-      </div>
-    </div>
-
-<div class="quarto-title-meta">
-
-      
-  
+<header id="title-block-header">
+    <h1 class="title display-7"><span id="sec-publishing" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Publishing and Sharing Your Work</span></span></h1>
+            <p class="author">Julie A McMurry</p>
+        <p class="author">Jeremy Richard Harper</p>
+        <p class="author">Christine Suver</p>
+        <p class="author">Carolyn T Bramante</p>
+        <p class="author">Mary K Emmett</p>
+        <p class="author">Amit K Saha</p>
+        <p class="author">Farrukh M. Koraishy</p>
+        <p class="author">A Jerrod Anzalone</p>
     
-  </div>
-  
+        </header>
 
-</header>
 
 <p><strong>Chapter Leads</strong>: Julie McMurry, Jeremy Harper</p>
 <section id="sec-publishing-committee" class="level2" data-number="10.1">
@@ -536,13 +455,17 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <li>Consistent with the approved Data Use Request (<strong>DUR</strong>)</li>
 <li>Consistent with policies to protect the identity of individuals, data partners, and marginalized groups</li>
 </ol></li>
-<li><p><strong>Individual consortial contributors</strong>: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see <a href="#tbl-publishing-authorship">Table&nbsp;<span>10.1</span></a>).</p></li>
+<li><p><strong>Individual consortial contributors</strong>: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see <a href="#tbl-publishing-authorship" class="quarto-xref">Table&nbsp;<span>10.1</span></a>).</p></li>
 <li><p><strong>N3C collaborative</strong>: Assure that information about the N3C is represented accurately</p></li>
 <li><p><strong>Authors</strong>: Serve as a resource for authors</p></li>
 </ol>
-<div id="tbl-publishing-authorship" class="anchored">
+<div id="tbl-publishing-authorship" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-publishing-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.1: Authorship tiers designed to accurately represent publication contributions
+</figcaption>
+<div aria-describedby="tbl-publishing-authorship-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
-<caption>Table&nbsp;10.1: Authorship tiers designed to accurately represent publication contributions</caption>
 <colgroup>
 <col style="width: 30%">
 <col style="width: 35%">
@@ -563,6 +486,8 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
 </div>
 <p>The first two tiers are indexed in Medline, which is an important way for contributions to acknowledge those who made them. Tier 1 and 2 authors must satisfy <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">ICMJE criteria</a>:</p>
 <blockquote class="blockquote">
@@ -592,12 +517,16 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 </section>
 <section id="sec-publishing-drr-small" class="level3" data-number="10.2.2">
 <h3 data-number="10.2.2" class="anchored" data-anchor-id="sec-publishing-drr-small"><span class="header-section-number">10.2.2</span> Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’)</h3>
-<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html"><span>Chapter&nbsp;11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.</p>
+<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.</p>
 <p>Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV). In their original form (left) these would violate the policy, as there are several values reported below 20. Even if these values are simply replaced with <code>&lt; 20</code> (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents. A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.</p>
-<div id="fig-publishing-010-masking-example" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-010-masking-example.png" class="lightbox" title="An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as < 20, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the ‘other gender’ and HIV categories." data-gallery="quarto-lightbox-gallery-1"><img src="images/publishing/fig-publishing-010-masking-example.png" class="img-fluid figure-img" style="width:100.0%" alt="masking-example"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.1: An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as <code>&lt; 20</code>, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the ‘other gender’ and HIV categories.</figcaption>
+<div id="fig-publishing-010-masking-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="masking-example">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-010-masking-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-010-masking-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/publishing/fig-publishing-010-masking-example.png" class="img-fluid figure-img" style="width:100.0%" alt="masking-example"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-010-masking-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as <code>&lt; 20</code>, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the ‘other gender’ and HIV categories.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -621,10 +550,14 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <section id="sec-publishing-tech-pin" class="level3" data-number="10.3.1">
 <h3 data-number="10.3.1" class="anchored" data-anchor-id="sec-publishing-tech-pin"><span class="header-section-number">10.3.1</span> Pinning to a Release</h3>
 <p>All datasets in the Enclave are capable of being versioned with branches, meaning that previous versions of a dataset remain available under a different branch name. N3C uses this mechanism to provide researchers access to the most recent version of the data via the ‘master’ branch, which is selected by default when importing datasets to <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> or <a href="../chapters/tools.html#code-repositories-sec-tools-apps-repo">Code Repositories</a>. For example, consider the following Code Workbook, into which we’ve imported the <a href="support.html#sec-support-notional-synthea">Synthea notional <code>condition_era</code> table</a>.</p>
-<div id="fig-publishing-020-dataset-branch" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-020-dataset-branch.png" class="lightbox" title="Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis." data-gallery="quarto-lightbox-gallery-2"><img src="images/publishing/fig-publishing-020-dataset-branch.png" class="img-fluid figure-img" alt="dataset-branch"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.2: Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.</figcaption>
+<div id="fig-publishing-020-dataset-branch" class="quarto-figure quarto-figure-center quarto-float anchored" alt="dataset-branch">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-020-dataset-branch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-020-dataset-branch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/publishing/fig-publishing-020-dataset-branch.png" class="img-fluid figure-img" alt="dataset-branch"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-020-dataset-branch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.
+</figcaption>
 </figure>
 </div>
 <p>Clicking on the “Branch” tab of the dataset node shows that the master branch is currently being used in this workbook. Instead of master, we could use the dropdown to select another branch-on real N3C data, these branches will be named like <code>Release-v98-2022-10-27</code>. (We call them releases because new versions are ‘released’ periodically after <a href="../chapters/cycle.html">quality checks and harmonization</a>.) Selecting such a branch will import the release of that table as of the date selected, effectively ‘pinning’ the dataset to a point in time. The <code>master</code> branch is configured to always match the latest release, and thus changes over time.</p>
@@ -654,17 +587,25 @@ Note
 <section id="sec-publishing-tech-process-submit" class="level4" data-number="10.3.2.1">
 <h4 data-number="10.3.2.1" class="anchored" data-anchor-id="sec-publishing-tech-process-submit"><span class="header-section-number">10.3.2.1</span> Submitting a Download Request</h4>
 <p>The download request dashboard may be accessed from the Enclave homepage under “Download Dashboard”. This interface shows your previous requests, and you can submit a new one via the “Submit a new Download Request” button.</p>
-<div id="fig-publishing-030-download-dashboard" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-030-download-dashboard.png" class="lightbox" title="The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests." data-gallery="quarto-lightbox-gallery-3"><img src="images/publishing/fig-publishing-030-download-dashboard.png" class="img-fluid figure-img" alt="download-dashboard"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.3: The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.</figcaption>
+<div id="fig-publishing-030-download-dashboard" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-dashboard">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-030-download-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-030-download-dashboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="images/publishing/fig-publishing-030-download-dashboard.png" class="img-fluid figure-img" alt="download-dashboard"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-030-download-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.
+</figcaption>
 </figure>
 </div>
 <p>When submitting a new download request, you will first be asked to complete a short quiz to ensure you understand the requirements. Subsequently, you will be prompted to enter information about the request, and select one or more “Resources” that you wish to export. A single download request may include multiple resources, such as multiple summary tables saved as datasets. To export figures you should include them in a Report, which can be done from either the Code Workbook or Contour interfaces. Desired log information (such as textual results from statistical tests) should also be copied and pasted into the report so that it can be reviewed.</p>
-<div id="fig-publishing-040-download-form" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-040-download-form.png" class="lightbox" title="The download review request form." data-gallery="quarto-lightbox-gallery-4"><img src="images/publishing/fig-publishing-040-download-form.png" class="img-fluid figure-img" alt="download-form"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.4: The download review request form.</figcaption>
+<div id="fig-publishing-040-download-form" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-form">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-040-download-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-040-download-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="images/publishing/fig-publishing-040-download-form.png" class="img-fluid figure-img" alt="download-form"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-040-download-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: The download review request form.
+</figcaption>
 </figure>
 </div>
 <p>If you need the review request to be expedited, you have the option of entering a Need By Date and providing a justification.</p>
@@ -673,10 +614,14 @@ Note
 <h4 data-number="10.3.2.2" class="anchored" data-anchor-id="sec-publishing-tech-process-download"><span class="header-section-number">10.3.2.2</span> Downloading an Approved Request</h4>
 <p>When a request is approved, behind the scenes a read-only copy of the materials you requested is created in a location that you will have access to download from. This is to prevent modification of export materials post-review.</p>
 <p>When your request is approved, you will see it listed as Approved in the Download Dashboard (see above). Each approved request is provided with a DRR ID (which stands for Data Review Request), for example “DRR-E5C4B6C” shown above. If we scroll down further in the specific request, we can use the “View all…” link to see the individual approved “Resource(s) To Download”:</p>
-<div id="fig-publishing-050-download-approved" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-050-download-approved.png" class="lightbox" title="A view of exportable datasets and a report from an approved download request." data-gallery="quarto-lightbox-gallery-5"><img src="images/publishing/fig-publishing-050-download-approved.png" class="img-fluid figure-img" alt="download-approved"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.5: A view of exportable datasets and a report from an approved download request.</figcaption>
+<div id="fig-publishing-050-download-approved" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-approved">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-050-download-approved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-050-download-approved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="images/publishing/fig-publishing-050-download-approved.png" class="img-fluid figure-img" alt="download-approved"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-050-download-approved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: A view of exportable datasets and a report from an approved download request.
+</figcaption>
 </figure>
 </div>
 <p>To export one of the datasets as CSV, we can open it by clicking on it, and in the resulting new tab select “Download as CSV” from the “Actions” menu - this will prompt you to enter the corresponding DRR ID, after which the file will be downloaded to your local computer.</p>
@@ -701,10 +646,14 @@ Note
 </div>
 </div>
 <p>Code Workbook code can be exported via the “Gear” icon in the interface, under “Export git repository”. Selecting this item will open the workbook in a new browser tab, with a new “Export Code Workbook” panel on the right, providing the git command to use to clone the repo to your local computer. As described in the panel text, the link contains an authentication token that you should keep private.</p>
-<div id="fig-publishing-060-workbook-git" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-060-workbook-git.png" class="lightbox" title="Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export." data-gallery="quarto-lightbox-gallery-6"><img src="images/publishing/fig-publishing-060-workbook-git.png" class="img-fluid figure-img" alt="workbook-git"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.6: Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.</figcaption>
+<div id="fig-publishing-060-workbook-git" class="quarto-figure quarto-figure-center quarto-float anchored" alt="workbook-git">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-060-workbook-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-060-workbook-git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="images/publishing/fig-publishing-060-workbook-git.png" class="img-fluid figure-img" alt="workbook-git"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-060-workbook-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.6: Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
+</figcaption>
 </figure>
 </div>
 <p>The resulting git repo will contain three files, <code>pipeline.R</code>, <code>pipeline.py</code>, and <code>pipeline.sql</code>, containing all of the workbooks’ R, Python, and SQL transform code respectively. These files are not very reader-friendly, and as of this writing, N3C is working on parsing tools to help researchers publish their work in an accessible manner.</p>
@@ -720,10 +669,14 @@ Note
 <li>commits to a repo in the Enclave are made manually, rather than automatically when a transform is run or created, and</li>
 <li>the Clone button provides only the git URL with the embedded token, you will need to use this URL in combination with <code>git clone</code> or other git commands as usual. Code Repos similarly support branching.</li>
 </ol>
-<div id="fig-publishing-070-repo-git" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-070-repo-git.png" class="lightbox" title="Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export." data-gallery="quarto-lightbox-gallery-7"><img src="images/publishing/fig-publishing-070-repo-git.png" class="img-fluid figure-img" alt="repo-git"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.7: Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.</figcaption>
+<div id="fig-publishing-070-repo-git" class="quarto-figure quarto-figure-center quarto-float anchored" alt="repo-git">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-070-repo-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-070-repo-git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="images/publishing/fig-publishing-070-repo-git.png" class="img-fluid figure-img" alt="repo-git"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-070-repo-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.7: Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -735,12 +688,16 @@ Note
 </section>
 <section id="sec-publishing-tech-concepts" class="level3" data-number="10.3.4">
 <h3 data-number="10.3.4" class="anchored" data-anchor-id="sec-publishing-tech-concepts"><span class="header-section-number">10.3.4</span> Exporting Concept Sets</h3>
-<p>As discussed in <a href="understanding.html"><span>Chapter&nbsp;7</span></a>, concept sets are sets of OMOP concept_ids representing clinical concepts. These are organized and curated as shared resources in N3C, see the section on the <a href="../chapters/tools.html#sec-tools-concepts">Concept Set Browser</a> for details.</p>
+<p>As discussed in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>, concept sets are sets of OMOP concept_ids representing clinical concepts. These are organized and curated as shared resources in N3C, see the section on the <a href="../chapters/tools.html#sec-tools-concepts">Concept Set Browser</a> for details.</p>
 <p>When publishing work utilizing a concept set, you will likely want to download the concept set in a tabular format for inclusion in supplemental materials. Fortunately, the concept set browser supports this functionality-when viewing a specific version of a concept set, the “OMOP Concepts” tab lists the individual concepts and provides an “Export list of Concepts as Excel”. The provided Excel export includes the concept IDs and other relevant information.</p>
-<div id="fig-publishing-080-cset-excel-export" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-080-cset-excel-export.png" class="lightbox" title="The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text)." data-gallery="quarto-lightbox-gallery-8"><img src="images/publishing/fig-publishing-080-cset-excel-export.png" class="img-fluid figure-img" alt="cset-excel-export"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.8: The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).</figcaption>
+<div id="fig-publishing-080-cset-excel-export" class="quarto-figure quarto-figure-center quarto-float anchored" alt="cset-excel-export">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-080-cset-excel-export-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-080-cset-excel-export.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="images/publishing/fig-publishing-080-cset-excel-export.png" class="img-fluid figure-img" alt="cset-excel-export"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-080-cset-excel-export-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.8: The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).
+</figcaption>
 </figure>
 </div>
 <p>Some concept sets, notably those properly reviewed and marked N3C Recommended, are already published externally and referenceable via a DOI at the <a href="https://zenodo.org/communities/cd2h-covid/">N3C Zenodo community</a>.</p>
@@ -752,17 +709,25 @@ Note
 <p>If you’ve written an analysis pipeline that would be of benefit to others, you should consider submitting it to the Knowledge Store for others to find and use. Details on this process are covered in the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=9">Knowledge Store Guide</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> training module, but we’ll give an overview here. Note that the process can be cumbersome and sometimes requires administrator help-be sure to submit an <a href="../chapters/support.html#sec-support-internal">Enclave-internal support ticket</a> or visit <a href="../chapters/support.html#sec-support-office">office hours</a> if you run into any issues or have questions.</p>
 <p>Code sharing within N3C is usually accomplished by sharing Code Workbook “templates” in the knowledge store, which provide a set of workbook nodes that can be imported into a workbook and configured via parameters for the end user. Authoring workbook templates is covered in the <a href="https://www.palantir.com/docs/foundry/code-workbook/templates-overview/">official documentation</a>. Templates are typically accompanied by a README (as a Report) with documentation, an example workbook using the template on N3C data, and potentially the derived dataset created by the example workbook. We suggest placing these resources in a single folder prior to submitting them to the Knowledge Store.</p>
 <p>To submit your new “knowledge object” to the store, first find the “Publish New Knowledge Object” item under the … menu in the upper right of the Knowledge Store:</p>
-<div id="fig-publishing-090-knowledge-store-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-090-knowledge-store-1.png" class="lightbox" title="The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access." data-gallery="quarto-lightbox-gallery-9"><img src="images/publishing/fig-publishing-090-knowledge-store-1.png" class="img-fluid figure-img" alt="knowledge-store-1"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.9: The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.</figcaption>
+<div id="fig-publishing-090-knowledge-store-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="knowledge-store-1">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-090-knowledge-store-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-090-knowledge-store-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="images/publishing/fig-publishing-090-knowledge-store-1.png" class="img-fluid figure-img" alt="knowledge-store-1"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-090-knowledge-store-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.9: The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.
+</figcaption>
 </figure>
 </div>
 <p>This will open a form where you are able to select your knowledge object (you should select the folder containing your template and other materials) and add details such as a title and description.</p>
-<div id="fig-publishing-100-knowledge-store-form" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="images/publishing/fig-publishing-100-knowledge-store-form.png" class="lightbox" title="Knowledge Store contribution form." data-gallery="quarto-lightbox-gallery-10"><img src="images/publishing/fig-publishing-100-knowledge-store-form.png" class="img-fluid figure-img" alt="knowledge-store-form"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;10.10: Knowledge Store contribution form.</figcaption>
+<div id="fig-publishing-100-knowledge-store-form" class="quarto-figure quarto-figure-center quarto-float anchored" alt="knowledge-store-form">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publishing-100-knowledge-store-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/publishing/fig-publishing-100-knowledge-store-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10"><img src="images/publishing/fig-publishing-100-knowledge-store-form.png" class="img-fluid figure-img" alt="knowledge-store-form"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-100-knowledge-store-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.10: Knowledge Store contribution form.
+</figcaption>
 </figure>
 </div>
 <p>Once the form is completed the submission will be sent to a queue for system administrators to finalize the creation of the knowledge object (which requires creating read-only copies in a place where other researchers can access them) and listing them in the store. Depending on the complexity and goals of your template, administrators may help create multiple versions of your example workbook with pre-configured access to different levels of N3C data and set up a schedule so that they produce new derived datasets whenever a new release of N3C data is available. This allows other researchers to use the computed datasets directly, or import the template for customization.</p>
@@ -781,6 +746,18 @@ Additional Chapter Details
 </div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;10.1: An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as <code>&lt; 20</code>, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the ‘other gender’ and HIV categories.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;10.2: Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;10.3: The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;10.4: The download review request form.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;10.5: A view of exportable datasets and a report from an approved download request.</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;10.6: Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;10.7: Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure&nbsp;10.8: The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).</span>
+<span class="glightbox-desc lightbox-desc-9">Figure&nbsp;10.9: The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.</span>
+<span class="glightbox-desc lightbox-desc-10">Figure&nbsp;10.10: Knowledge Store contribution form.</span>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -825,6 +802,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -893,13 +897,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -978,10 +984,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -991,8 +1014,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1005,6 +1037,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1048,6 +1199,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1073,6 +1225,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1130,30 +1308,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/practices.html" class="pagination-link">
+      <a href="../chapters/practices.html" class="pagination-link  aria-label=" &lt;span="" practices="" for="" the="" research="" life="" cycle&lt;="" span&gt;"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Best Practices for the Research Life Cycle</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/support.html" class="pagination-link">
+      <a href="../chapters/support.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Help and Support</span>">
         <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Help and Support</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1161,14 +1325,43 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></div>   
+    <div class="nav-footer-left">
+<p><a href="https://ncats.nih.gov/n3c/">N3C</a> © <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/publishing.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/publishing.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
+</div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
 
 
 

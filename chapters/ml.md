@@ -21,6 +21,16 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Peter Robinson, Justin Reese, Blessy Antony, T.M. Murali, Elena Casiraghi, Hannah Blau
 
+:::{.callout-note}
+This material for this chapter is mostly complete,
+and we're adding the final touches before officially publishing it.
+
+In the meantime, please enjoy this pre-release version.
+
+If you have comments, please file a [New Issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues)
+and tag [Chris Roeder](https://github.com/chrisroederucdenver) (GitHub username is `@chrisroederucdenver`).
+:::
+
 ## Introduction {#sec-ml-introduction}
 
 Machine learning (ML) is a method of teaching computers to learn a classification or regression function from data, or detect patterns (e.g., clusters) in data, without explicitly programming the model. Machine learning is a powerful tool for solving complex problems, and it is widely used in biomedicine and many other fields.
@@ -135,7 +145,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You’ll need to change this line to be a path to somewhere you can write a dataset:
 
-        ```         
+        ```
             allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),
         ```
 
@@ -143,14 +153,14 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         ```
         allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
-        
-        
+
+
         from transforms.api import transform, configure, Input, Output
         from models.sklearn import random_forest
-        
-        
-        
-        
+
+
+
+
         @configure(profile=['DRIVER_MEMORY_EXTRA_LARGE'])
         @transform(
           allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),       allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
@@ -169,8 +179,8 @@ For the basics of creating a code repository and using its debugger, see \[the t
             train_test_ratio,
             preprocess_exclude_columns,
             standardize_exclude_columns))
-        
-        
+
+
         def run(dataset, n_iterations, train_test_ratio, \
         preprocess_exclude_columns, standardize_exclude_columns):
            random_forest_model = random_forest.RandomForestModel(
@@ -198,7 +208,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
-        ```         
+        ```
         # AUPRC Computation def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"): from sklearn.metrics import precision_recall_curve, auc import pandas as pd
 
          df = aff_allpatients_lr_output
@@ -237,10 +247,10 @@ For the basics of creating a code repository and using its debugger, see \[the t
         from matplotlib import pyplot as plt
         import seaborn as sns
         import pandas as pd
-        
-        
+
+
         def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc):
-            
+
         df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc])
           ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
           plt.title("Area under Precision-Recall Curve : All Patients")
@@ -259,8 +269,8 @@ For the basics of creating a code repository and using its debugger, see \[the t
 ### Deploying this ML code to your project/DUR
 You can use the code above in your project by following these steps:
 
-1. Open the code repository containing the code you would like to copy 
-2. Open the pulldown menu by the “Clone” button 
+1. Open the code repository containing the code you would like to copy
+2. Open the pulldown menu by the “Clone” button
 3. Copy the git remote URL to your clipboard
 4. On your local machine, open a command line and run this command:
 ```
@@ -278,7 +288,5 @@ You can use the code above in your project by following these steps:
 The examples above use standard Python to train and apply ML models. For ML tasks that are more compute intensive, consider using Apache Spark’s MLlib ML/pyspark.ml instead. A full discussion of Spark ML is beyond the scope of this chapter, but an implementation of a Spark ML model is provided in the same codebase as above, under the module named pysparkml. The official MLlib guide to SparkML is a good resource, and there are specific integrations with the Enclave documented here.
 
 ### Using R in code workbooks
-In the examples code reported above, we reported Python code, which works within [Code Repositories](#code-repos). 
+In the examples code reported above, we reported Python code, which works within [Code Repositories](#code-repos).
 However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir [Code Workbooks](#code-workbooks) (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful "Enclave ML Resources Overview" with links to various resources related to this is available here.
-
-

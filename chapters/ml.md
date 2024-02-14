@@ -99,9 +99,9 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 1.  Reusable ML library package
 
-    a.  **Create a folder in a workspace** Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder ![Figure 1](../images/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
+    a.  **Create a folder in a workspace** Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder ![Figure 1](images/ml/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
 
-    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](../images/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
+    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](images/ml/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
 
     This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
@@ -119,21 +119,21 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 2.  Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html -->
 
-    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](../images/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
+    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](images/ml/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
 
-    b.  **Define cohort and features using COVID patient facts table** Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](../images/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
+    b.  **Define cohort and features using COVID patient facts table** Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](images/ml/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
 
         We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
-    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](images/ml/image-05-search-custom-library.png) Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
 
-        ![Figure 6](../images/image-06-add-custom-library.png) Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
+        ![Figure 6](images/ml/image-06-add-custom-library.png) Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
 
         Click “Add library”
 
         NOTE: The error message similar to the one below is sometimes encountered during this step:
 
-        ![Figure 7](../images/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
+        ![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
 
         Go back to the ‘files’ tab on the left sidebar, and commit your changes.
 
@@ -141,7 +141,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Create a new transform that trains a random forest on this cohort:
 
-        ![Figure 8](../images/image-08-create-python-script-file.png)Figure 8: Create python script file.
+        ![Figure 8](images/ml/image-08-create-python-script-file.png)Figure 8: Create python script file.
 
         Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You’ll need to change this line to be a path to somewhere you can write a dataset:
 
@@ -196,7 +196,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
     a.  **Create a code workbook** Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.
 
-        ![Figure 9](../images/image-09-create-codeworkbook.png)Figure 9: Create a new code workbook.
+        ![Figure 9](images/ml/image-09-create-codeworkbook.png)Figure 9: Create a new code workbook.
 
         Additional details about the usage, customization, and features of Code Workbooks are available in the N3C documentation.
 
@@ -204,7 +204,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Nodes are the atomic units of a code workbook in which we implement individual functions. Each function takes in one or more input datasets and produces one output dataset. We can import datasets into code workbooks. When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.
 
-        ![Figure 10](../images/image-10-referencing-nodes-codeworkbook.png)Figure 10: Referencing nodes in a code workbook.
+        ![Figure 10](images/ml/image-10-referencing-nodes-codeworkbook.png)Figure 10: Referencing nodes in a code workbook.
 
         Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
@@ -261,7 +261,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Select the ‘visualization’ tab at the bottom to view the output of this node.
 
-        ![Figure 11](../images/image-11-viewing-visualization-outputs.png) Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
+        ![Figure 11](images/ml/image-11-viewing-visualization-outputs.png) Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
 
 
 ## Other topics

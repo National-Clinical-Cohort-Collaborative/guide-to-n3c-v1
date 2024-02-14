@@ -833,8 +833,7 @@ See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML),
 points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability,
-to the special topics appendix chapter
-[here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).
+to the [Machine Learning chapter](ml.md).
 
 #### Pre-Processing {#sec-practices-development-analysis-preprocessing}
 

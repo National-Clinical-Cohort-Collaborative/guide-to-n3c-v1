@@ -133,7 +133,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         NOTE: The error message similar to the one below is sometimes encountered during this step:
 
-        ![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
+        ![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.
 
         Go back to the 'files' tab on the left sidebar, and commit your changes.
 

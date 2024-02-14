@@ -21,6 +21,16 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads:** Peter Robinson, Justin Reese, Blessy Antony, T.M. Murali, Elena Casiraghi, Hannah Blau
 
+:::{.callout-note}
+This material for this chapter is mostly complete,
+and we're adding the final touches before officially publishing it.
+
+In the meantime, please enjoy this pre-release version.
+
+If you have comments, please file a [New Issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues)
+and tag [Chris Roeder](https://github.com/chrisroederucdenver) (GitHub username is `@chrisroederucdenver`).
+:::
+
 ## Introduction {#sec-ml-introduction}
 
 Machine learning (ML) is a method of teaching computers to learn a classification or regression function from data, or detect patterns (e.g., clusters) in data, without explicitly programming the model. Machine learning is a powerful tool for solving complex problems, and it is widely used in biomedicine and many other fields.

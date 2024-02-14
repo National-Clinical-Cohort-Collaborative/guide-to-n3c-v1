@@ -236,7 +236,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         **Templates**
 
-        To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial). See also the ["Introducing Enclave Analysis Tools"](tools.md) chapter.
+        To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial) {{< fa lock title="Link requires an N3C Data Enclave account" >}}. See also the ["Introducing Enclave Analysis Tools"](tools.md) chapter.
 
     c.  **Create visualizations**
 

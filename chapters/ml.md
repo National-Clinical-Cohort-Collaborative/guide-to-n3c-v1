@@ -42,7 +42,7 @@ Knowledge of GAP is crucial to the successful application of machine learning to
     -   **Missingness** - Your data will likely have missingness, sometimes quite often. How you deal with this can greatly affect your ML results. [-@mitra_2023] See also Casiraghi, et al.[-@casiraghi_2023] for a detailed description of missingness specifically in N3C, and strategies for dealing with it, such as imputation. Ultimately, how you deal with missingness is subject to how reasonable your assumptions are concerning relationships between observed data and desired-yet-missing information, assumptions best guided by engaging with subject matter experts familiar with the data relationships at hand (see below).
     -   **Features for ML:** In the example use case we describe here, we will leverage the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table as a source of features. If this table does not contain the data you need for your ML task, you can explore other available datasets or use the Logic Liaison templates to construct additional derived variables, or create your own custom derived variables. Appropriate data pre-processing, feature selection and/or feature engineering is a crucial step in the machine learning process. Depending upon the type of algorithm, data may also need to be normalized [-@muhammad_2014] to reduce the risk of excessive influence of features in certain classifiers. See [-@sahner_2020]
 -   **Engaging with subject matter experts:** Your ML project will greatly benefit from subject matter experts to guide your experimental design and to help interpret your results. If you are performing ML on data from people with, for example, diabetes, you should engage at least one clinical diabetes expert with whom you can collaborate. One of the strengths of N3C is the large and diverse community of scientists, and it is likely that there is an expert in almost any field of interest who can help. Subject matter experts can provide important help in feature selection, assessments of windows for variables, choice of feature transformations and interaction terms in a model, and definition of model performance goals (sensitivity versus specificity trade-off). N3C [Domain Teams](#onboarding-domain-teams) are an excellent source of such expertise, as many are organized around clinical topics such as Diabetes, Kidney Injury, Pregnancy, and many more.
--   **Explainability:** Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like “black boxes,” especially to those who are not versed in machine learning. Tools are available to help assess feature importance (e.g., SHAP values [-@lundburg_2018] [-@shapley_1953]
+-   **Explainability:** Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like "black boxes," especially to those who are not versed in machine learning. Tools are available to help assess feature importance (e.g., SHAP values [-@lundburg_2018] [-@shapley_1953]
 -   **Adequate Documentation:** Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research. In addition, The N3C Enclave provides a feature called Protocol Pad which can explain exactly how a study was conducted in N3C.
 
 ## ML in N3C
@@ -70,13 +70,13 @@ To demonstrate how to implement ML software in N3C, we will walk through a speci
 #### Strategy
 
 1.  **Create a reusable ML library package.** This library contains the implementations of standard machine learning classification algorithms such as logistic regression, naïve Bayes, random forest, support vector machine, and multi-layer perceptron. This package can be imported and used for any downstream classification applications.
-2.  **Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table** (see also the [“Introducing Enclave Analysis Tools”](tools.md) chapter.) This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.
-3.  **Choose one post-COVID indicator column as a label to predict.** Here we will predict cardiovascular sequelae following acute COVID. In this example, we will use ‘Atrial Fibrillation Flutter (AFF)’ post COVID-19 as an indicator for cardiovascular sequelae.
+2.  **Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table** (see also the ["Introducing Enclave Analysis Tools"](tools.md) chapter.) This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.
+3.  **Choose one post-COVID indicator column as a label to predict.** Here we will predict cardiovascular sequelae following acute COVID. In this example, we will use 'Atrial Fibrillation Flutter (AFF)' post COVID-19 as an indicator for cardiovascular sequelae.
 4.  **Predict this label using a single ML model.** We will use the random forest model from the ML library created in step 1 to predict AFF post COVID. One can use as an alternative any of the classification models available in the library.
 
 #### Walkthrough:
 
-We implemented the above strategy using code repositories. Code repositories greatly facilitate software development in the Enclave. Useful features include a debugger, a GitHub-like workflow (pull requests, branches, diffs, etc.) to coordinate among developers, and a convenient method to export code to GitHub. In addition, the process for specifying Python packages to be used is much more convenient, and (in the authors’ experience) code repositories are also more stable and less prone to runtime issues than code workbooks. Two notable limitations of code repositories should be noted:
+We implemented the above strategy using code repositories. Code repositories greatly facilitate software development in the Enclave. Useful features include a debugger, a GitHub-like workflow (pull requests, branches, diffs, etc.) to coordinate among developers, and a convenient method to export code to GitHub. In addition, the process for specifying Python packages to be used is much more convenient, and (in the authors' experience) code repositories are also more stable and less prone to runtime issues than code workbooks. Two notable limitations of code repositories should be noted:
 
 1.  plots/visualization must be done separately in a code workbook (as in step 3 below) and
 2.  the R language is not supported in code repositories as of July 2023, so performing statistical analyses with R packages also requires a code workbook.
@@ -89,9 +89,9 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 1.  Reusable ML library package
 
-    a.  **Create a folder in a workspace** Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder ![Figure 1](../images/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
+    a.  **Create a folder in a workspace** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder ![Figure 1](images/ml/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
 
-    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](../images/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
+    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](images/ml/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
 
     This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
@@ -109,84 +109,77 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 2.  Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html -->
 
-    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](../images/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
+    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](images/ml/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
 
-    b.  **Define cohort and features using COVID patient facts table** Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (\*.py)’ from the drop down → Create ![Figure 4](../images/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
+    b.  **Define cohort and features using COVID patient facts table** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create ![Figure 4](images/ml/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
 
-        We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
+        We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
-    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](../images/image-05-search-custom-library.png) Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](images/ml/image-05-search-custom-library.png) Figure 5: Search for a custom-created python library in the code repository.
 
-        ![Figure 6](../images/image-06-add-custom-library.png) Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
+        ![Figure 6](images/ml/image-06-add-custom-library.png) Figure 6: Add a custom-created python library in the code repository.
 
-        Click “Add library”
+        Click "Add library"
 
         NOTE: The error message similar to the one below is sometimes encountered during this step:
 
-        ![Figure 7](../images/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
+        ![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png) <br>Figure 7: Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error
 
-        Go back to the ‘files’ tab on the left sidebar, and commit your changes.
+        Go back to the 'files' tab on the left sidebar, and commit your changes.
 
     d.  **Implement a random forest model for the prediction task**
 
         Create a new transform that trains a random forest on this cohort:
 
-        ![Figure 8](../images/image-08-create-python-script-file.png)Figure 8: Create python script file.
+        ![Figure 8](images/ml/image-08-create-python-script-file.png)Figure 8: Create python script file.
 
-        Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You’ll need to change this line to be a path to somewhere you can write a dataset:
+        Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You'll need to change this line to be a path to somewhere you can write a dataset:
 
-        ```         
-            allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),
-        ```
+                allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),
 
-        And change this line to the path or the Resource Identifier (RID) of the dataset you saved above in “aff_create_cohort.py”:
+        And change this line to the path or the Resource Identifier (RID) of the dataset you saved above in "aff_create_cohort.py":
 
-        ```
-        allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
-        
-        
-        from transforms.api import transform, configure, Input, Output
-        from models.sklearn import random_forest
-        
-        
-        
-        
-        @configure(profile=['DRIVER_MEMORY_EXTRA_LARGE'])
-        @transform(
-          allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),       allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
-        )
-        def compute(allpatients_df, allpatients_output):
-          n_iterations = 5
-          train_test_ratio = [0.8, 0.2]
-          preprocess_exclude_columns = \
-            ["COVID_associated_hospitalization_indicator",
-            "COVID_index_date"]
-          standardize_exclude_columns = ["person_id", "label"]
-          allpatients_df = allpatients_df.dataframe()
-          allpatients_output.write_dataframe(
-            run(allpatients_df,
-            n_iterations,
-            train_test_ratio,
-            preprocess_exclude_columns,
-            standardize_exclude_columns))
-        
-        
-        def run(dataset, n_iterations, train_test_ratio, \
-        preprocess_exclude_columns, standardize_exclude_columns):
-           random_forest_model = random_forest.RandomForestModel(
-               dataset, n_iterations, train_test_ratio, \
-               preprocess_exclude_columns, standardize_exclude_columns)
-           return random_forest_model.run()
+            allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
+
+
+            from transforms.api import transform, configure, Input, Output
+            from models.sklearn import random_forest
 
 
 
-        ```
+
+            @configure(profile=['DRIVER_MEMORY_EXTRA_LARGE'])
+            @transform(
+              allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),       allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
+            )
+            def compute(allpatients_df, allpatients_output):
+              n_iterations = 5
+              train_test_ratio = [0.8, 0.2]
+              preprocess_exclude_columns = \
+                ["COVID_associated_hospitalization_indicator",
+                "COVID_index_date"]
+              standardize_exclude_columns = ["person_id", "label"]
+              allpatients_df = allpatients_df.dataframe()
+              allpatients_output.write_dataframe(
+                run(allpatients_df,
+                n_iterations,
+                train_test_ratio,
+                preprocess_exclude_columns,
+                standardize_exclude_columns))
+
+
+            def run(dataset, n_iterations, train_test_ratio, \
+            preprocess_exclude_columns, standardize_exclude_columns):
+               random_forest_model = random_forest.RandomForestModel(
+                   dataset, n_iterations, train_test_ratio, \
+                   preprocess_exclude_columns, standardize_exclude_columns)
+               return random_forest_model.run()
 
 3.  **Visualize the results** Code repositories do not support creating and viewing visualizations. Hence, we will use code workbooks to create visualizations.
 
     a.  **Create a code workbook** Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.
 
-        ![Figure 9](../images/image-09-create-codeworkbook.png)Figure 9: Create a new code workbook.
+        ![Figure 9](images/ml/image-09-create-codeworkbook.png)Figure 9: Create a new code workbook.
 
         Additional details about the usage, customization, and features of Code Workbooks are available in the N3C documentation.
 
@@ -194,91 +187,89 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Nodes are the atomic units of a code workbook in which we implement individual functions. Each function takes in one or more input datasets and produces one output dataset. We can import datasets into code workbooks. When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.
 
-        ![Figure 10](../images/image-10-referencing-nodes-codeworkbook.png)Figure 10: Referencing nodes in a code workbook.
+        ![Figure 10](images/ml/image-10-referencing-nodes-codeworkbook.png)Figure 10: Referencing nodes in a code workbook.
 
         Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
-        ```         
-        # AUPRC Computation def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"): from sklearn.metrics import precision_recall_curve, auc import pandas as pd
+            # AUPRC Computation def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"): from sklearn.metrics import precision_recall_curve, auc import pandas as pd
 
-         df = aff_allpatients_lr_output
-         iterations = df.run.unique()
-         model_name = "Logistic Regression"
-         cohort_name = "All Patients"
+             df = aff_allpatients_lr_output
+             iterations = df.run.unique()
+             model_name = "Logistic Regression"
+             cohort_name = "All Patients"
 
-         auprc_list = []
-         for itr in iterations:
-             df_itr = df[df["run"] == itr]
-             y_test = df_itr.loc[:,"test_label"].values
-             y_pred = df_itr.loc[:,"test_prediction"].values
+             auprc_list = []
+             for itr in iterations:
+                 df_itr = df[df["run"] == itr]
+                 y_test = df_itr.loc[:,"test_label"].values
+                 y_pred = df_itr.loc[:,"test_prediction"].values
 
-             precision, recall, thresholds = \
-                 precision_recall_curve(y_test, y_pred)
-             auprc = auc(recall, precision)
-             auprc_list.append({"auprc": auprc,
-                                "run": itr,
-                                "model": model_name,
-                                "cohort": cohort_name})
-         return pd.DataFrame(auprc_list)
-        ```
+                 precision, recall, thresholds = \
+                     precision_recall_curve(y_test, y_pred)
+                 auprc = auc(recall, precision)
+                 auprc_list.append({"auprc": auprc,
+                                    "run": itr,
+                                    "model": model_name,
+                                    "cohort": cohort_name})
+             return pd.DataFrame(auprc_list)
 
         Similarly, create multiple copies of this node with the same code but different inputs and outputs to generate AUPRC scores for Random Forest, SVM,  and MLP models.
 
         **Templates**
 
-        To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial). See also the “Introducing Enclave Analysis Tools” chapter.
+        To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial). See also the "Introducing Enclave Analysis Tools" chapter.
 
     c.  **Create visualizations**
 
         Create another node in the workbook to draw Box plots of the AUPRC scores of the Logistic Regression, Random Forest, SVM, MLP models computed for ten iterations of the classification of cardiovascular sequelae. The inputs to this node will be the outputs generated from the nodes in the previous step that computed the AUPRC scores for each of the prediction methods.
 
-        ```
-        # AUPRC Distribution Boxplot Visualization
-        from matplotlib import pyplot as plt
-        import seaborn as sns
-        import pandas as pd
-        
-        
-        def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc):
-            
-        df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc])
-          ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
-          plt.title("Area under Precision-Recall Curve : All Patients")
-          plt.show()
-
-        ```
+            # AUPRC Distribution Boxplot Visualization
+            from matplotlib import pyplot as plt
+            import seaborn as sns
+            import pandas as pd
 
 
-        Select the ‘visualization’ tab at the bottom to view the output of this node.
+            def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc):
 
-        ![Figure 11](../images/image-11-viewing-visualization-outputs.png) Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
+            df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc])
+              ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
+              plt.title("Area under Precision-Recall Curve : All Patients")
+              plt.show()
 
+        Select the 'visualization' tab at the bottom to view the output of this node.
+
+        ![Figure 11](images/ml/image-11-viewing-visualization-outputs.png) Figure 11: Viewing visualization outputs in codeworkbook.
 
 ## Other topics
 
 ### Deploying this ML code to your project/DUR
+
 You can use the code above in your project by following these steps:
 
-1. Open the code repository containing the code you would like to copy 
-2. Open the pulldown menu by the “Clone” button 
-3. Copy the git remote URL to your clipboard
-4. On your local machine, open a command line and run this command:
+1.  Open the code repository containing the code you would like to copy
+2.  Open the pulldown menu by the "Clone" button
+3.  Copy the git remote URL to your clipboard
+4.  On your local machine, open a command line and run this command:
+
+```{=html}
+<!-- -->
 ```
-    git clone [paste the remote URL]
+        git clone [paste the remote URL]
+
+5.  In your DUR, create an empty code repository
+6.  In the empty code repository, open the pulldown menu by the "Clone" button and copy the git remote URL to your clipboard as above in steps (2) and (3)
+7.  In the cloned repository on your local machine, run these commands (see [Chapter X](#pushing-to-github) here for details on how to do this):
+
+```{=html}
+<!-- -->
 ```
-5. In your DUR, create an empty code repository
-6. In the empty code repository, open the pulldown menu by the “Clone” button and copy the git remote URL to your clipboard as above in steps (2) and (3)
-7. In the cloned repository on your local machine, run these commands (see [Chapter X](#pushing-to-github) here for details on how to do this):
-```
-    git remote add mynewrepo [paste remote URL of new repository]
-    git push mynewrepo master
-```
+        git remote add mynewrepo [paste remote URL of new repository]
+        git push mynewrepo master
 
 ### Using Spark ML pyspark.ml for time and compute intensive tasks
-The examples above use standard Python to train and apply ML models. For ML tasks that are more compute intensive, consider using Apache Spark’s MLlib ML/pyspark.ml instead. A full discussion of Spark ML is beyond the scope of this chapter, but an implementation of a Spark ML model is provided in the same codebase as above, under the module named pysparkml. The official MLlib guide to SparkML is a good resource, and there are specific integrations with the Enclave documented here.
+
+The examples above use standard Python to train and apply ML models. For ML tasks that are more compute intensive, consider using Apache Spark's MLlib ML/pyspark.ml instead. A full discussion of Spark ML is beyond the scope of this chapter, but an implementation of a Spark ML model is provided in the same codebase as above, under the module named pysparkml. The official MLlib guide to SparkML is a good resource, and there are specific integrations with the Enclave documented here.
 
 ### Using R in code workbooks
-In the examples code reported above, we reported Python code, which works within [Code Repositories](#code-repos). 
-However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir [Code Workbooks](#code-workbooks) (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful "Enclave ML Resources Overview" with links to various resources related to this is available here.
 
-
+In the examples code reported above, we reported Python code, which works within [Code Repositories](#code-repos). However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir [Code Workbooks](#code-workbooks) (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful "Enclave ML Resources Overview" with links to various resources related to this is available here.

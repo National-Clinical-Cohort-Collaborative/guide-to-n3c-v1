@@ -506,19 +506,18 @@ The DUR identifier should be supplied by the system.
 |                                                |                                                  | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                  |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | A. Meta-data about data source and software    | - Data Source(s)                                 | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                         |
-|                                                |                                                  |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                  |
 |                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
 |                                                | - Data Extraction Date/Version                   | - Link to various                                                                                                                                |
 |                                                | - Data sampling/extraction criteria              |   [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23)     |
-|                                                | - Type(s) of data                                |   {{< fa lock title="Link requires an N3C Data Enclave account" >}}                                                                              |
-|                                                | - Data linkage                                   |   to PPRL-based linked data                                                                                                                      |
+|                                                | - Type(s) of data                                |   to PPRL-based linked data                                                                                                                      |
+|                                                | - Data linkage                                   |                                                                                                                                                  |
 |                                                | - Data conversion                                |                                                                                                                                                  |
 |                                                | - Software to create study population            |                                                                                                                                                  |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
-: STaRT-RWE Table 2 and Design, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
+: STaRT-RWE Table 2 and Design, based on Wang and colleagues [-@wang_2021].  Note that two links in this table are in the Enclave {{< fa lock title="Link requires an N3C Data Enclave account" >}} {#tbl-practices-start-2 tbl-colwidths="[30, 25, 45]"}
 
 As suggested in @tbl-practices-start-2, it is helpful to diagram the cohort definition.
 A well-received model is that of Schneeweiss and colleagues [-@schneeweiss_2019].
@@ -833,8 +832,7 @@ See this [N3C Community Note](https://unite.nih.gov/workspace/module/view/latest
 Caton, in his [review of fairness](https://arxiv.org/abs/2010.04053) in machine learning (ML),
 points to 3 phases of analysis: Pre-processing, Processing, and Post-processing.
 We defer other considerations for machine learning, including bias and generalizability,
-to the special topics appendix chapter
-[here](https://docs.google.com/document/d/1YLsu1AWK86b93ak-uHKn5_10PNcxY0dkKEmLH48IQT4/edit?usp=share_link).
+to the [Machine Learning chapter](ml.md).
 
 #### Pre-Processing {#sec-practices-development-analysis-preprocessing}
 

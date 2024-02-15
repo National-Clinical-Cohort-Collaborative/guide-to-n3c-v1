@@ -91,9 +91,8 @@ We implemented the above strategy using code repositories. Code repositories gre
 1.  plots/visualization must be done separately in a code workbook (as in step 3 below) and
 2.  the R language is not supported in code repositories as of July 2023, so performing statistical analyses with R packages also requires a code workbook.
 
-For our walkthrough, we will be creating and using a Python library repository [ml-classification-pipeline Python library](https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline) and a data transform code repository that Blessy Antony (Virginia Tech, blessyantony\@vt.edu) developed to do machine learning in N3C.
-
-Source code: [Github repo containing ml-classification-pipeline python library](https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline)
+For our walkthrough, we will be creating and using a Python library repository [ml-classification-pipeline Python library](https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline) and a [data transform code repository](https://unite.nih.gov/workspace/data-integration/code/repos/ri.stemma.main.repository.aee54470-95fb-4d9c-b694-94480f171c74/contents/refs%2Fheads%2Fmaster/src/models/sklearn/classification_model.py)  {{< fa lock title="Link requires an N3C Data Enclave account" >}}
+that Blessy Antony (Virginia Tech, blessyantony\@vt.edu) developed to do machine learning in N3C.
 
 For the basics of creating a code repository and using its debugger, see \[the tools chapter\[(tools.html#sec-tools-apps-repo)
 

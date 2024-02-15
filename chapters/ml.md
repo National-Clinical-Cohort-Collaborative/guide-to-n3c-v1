@@ -135,27 +135,31 @@ For the basics of creating a code repository and using its debugger, see Chapter
           allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
         )
         def compute(allpatients_df, allpatients_output):
-          n_iterations = 5
-          train_test_ratio = [0.8, 0.2]
-          preprocess_exclude_columns = \
-            ["COVID_associated_hospitalization_indicator",
-            "COVID_index_date"]
-          standardize_exclude_columns = ["person_id", "label"]
-          allpatients_df = allpatients_df.dataframe()
-          allpatients_output.write_dataframe(
-            run(allpatients_df,
-            n_iterations,
-            train_test_ratio,
-            preprocess_exclude_columns,
-            standardize_exclude_columns))
+            n_iterations = 5
+            train_test_ratio = [0.8, 0.2]
+            preprocess_exclude_columns = ["COVID_associated_hospitalization_indicator",
+                                          "COVID_index_date"]
+            standardize_exclude_columns = ["person_id", "label"]
+            allpatients_df = allpatients_df.dataframe()
+            allpatients_output.write_dataframe(run(allpatients_df,
+                                                   n_iterations,
+                                                   train_test_ratio,
+                                                   preprocess_exclude_columns,
+                                                   standardize_exclude_columns))
 
 
-        def run(dataset, n_iterations, train_test_ratio, \
-        preprocess_exclude_columns, standardize_exclude_columns):
-           random_forest_model = random_forest.RandomForestModel(
-               dataset, n_iterations, train_test_ratio, \
-               preprocess_exclude_columns, standardize_exclude_columns)
-           return random_forest_model.run()
+        def run(dataset, 
+                n_iterations, 
+                train_test_ratio,
+                preprocess_exclude_columns, 
+                standardize_exclude_columns):
+
+             random_forest_model = random_forest.RandomForestModel(dataset, 
+                                                                   n_iterations, 
+                                                                   train_test_ratio, 
+                                                                   preprocess_exclude_columns, 
+                                                                   standardize_exclude_columns)
+             return random_forest_model.run()
         ```
 
 3.  **Visualize the results** Code repositories do not support creating and viewing visualizations. Hence, we will use code workbooks to create visualizations.
@@ -171,7 +175,8 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
         def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"): 
 
-            from sklearn.metrics import precision_recall_curve, auc import pandas as pd
+            from sklearn.metrics import precision_recall_curve, auc 
+            import pandas as pd
 
             df = aff_allpatients_lr_output
             iterations = df.run.unique()
@@ -180,17 +185,16 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
             auprc_list = []
             for itr in iterations:
-               df_itr = df[df["run"] == itr]
-               y_test = df_itr.loc[:,"test_label"].values
-               y_pred = df_itr.loc[:,"test_prediction"].values
+                df_itr = df[df["run"] == itr]
+                y_test = df_itr.loc[:,"test_label"].values
+                y_pred = df_itr.loc[:,"test_prediction"].values
 
-               precision, recall, thresholds = \
-                   precision_recall_curve(y_test, y_pred)
-               auprc = auc(recall, precision)
-               auprc_list.append({"auprc": auprc,
-                                  "run": itr,
-                                  "model": model_name,
-                                  "cohort": cohort_name})
+                precision, recall, thresholds = precision_recall_curve(y_test, y_pred)
+                auprc = auc(recall, precision)
+                auprc_list.append({"auprc": auprc,
+                                   "run": itr,
+                                   "model": model_name,
+                                   "cohort": cohort_name})
             return pd.DataFrame(auprc_list)
         ```
 

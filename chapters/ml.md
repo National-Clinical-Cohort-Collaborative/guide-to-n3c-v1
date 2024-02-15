@@ -55,15 +55,15 @@ Knowledge of GAP is crucial to the successful application of machine learning to
 -   **Explainability:** Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like "black boxes," especially to those who are not versed in machine learning. Tools are available to help assess feature importance (e.g., SHAP values [-@lundburg_2018] [-@shapley_1953]
 -   **Adequate Documentation:** Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research. In addition, The N3C Enclave provides a feature called Protocol Pad which can explain exactly how a study was conducted in N3C.
 
-## ML in N3C
+## ML in N3C {#sec-ml-in-n3c}
 
 Developing ML pipelines in the N3C platform is similar to developing code to solve other tasks, e.g., statistical analyses. The main challenges involve preparing the data to form cohorts, selecting features, and understanding how to develop your code.
 
-### Languages and libraries available in N3C
+### Languages and libraries available in N3C {#sec-languages-and-libraries}
 
 ML in N3C is typically performed using Python or R. Pipelines are also sometimes mixed-language (R, Python, SQL, Java). Most major ML libraries in Python and R are already installed and additional libraries can be made available on a project-specific basis. The examples in this chapter will use Python. For long-running and memory-intensive machine learning jobs, pyspark provides the library [pyspark.ml](https://spark.apache.org/docs/2.2.0/api/python/pyspark.ml.html).
 
-#### What you should know before reading this chapter:
+#### What you should know before reading this chapter: {#sec-what-you-should-know}
 
 -   Understanding of GAP (see GAP section above)
 -   Basic proficiency in software development
@@ -73,18 +73,18 @@ ML in N3C is typically performed using Python or R. Pipelines are also sometimes
 -   Basic familiarity with code repositories (see [Code Repositories](tools.md#sec-tools-apps-repo) for N3C documentation)
 -   Basic familiarity with code workbooks (see [Code Workbooks](tools.md#sec-tools-apps-workbook) for N3C documentation)
 
-### Example project
+### Example project {#sec-example-project}
 
 To demonstrate how to implement ML software in N3C, we will walk through a specific example: predicting cardiovascular sequelae (specifically, atrial fibrillation/flutter) from acute COVID.
 
-#### Strategy
+#### Strategy {#sec-strategy}
 
 1.  **Create a reusable ML library package.** This library contains the implementations of standard machine learning classification algorithms such as logistic regression, naïve Bayes, random forest, support vector machine, and multi-layer perceptron. This package can be imported and used for any downstream classification applications.
 2.  **Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table** (see also the ["Introducing Enclave Analysis Tools"](tools.md) chapter.) This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.
 3.  **Choose one post-COVID indicator column as a label to predict.** Here we will predict cardiovascular sequelae following acute COVID. In this example, we will use 'Atrial Fibrillation Flutter (AFF)' post COVID-19 as an indicator for cardiovascular sequelae.
 4.  **Predict this label using a single ML model.** We will use the random forest model from the ML library created in step 1 to predict AFF post COVID. One can use as an alternative any of the classification models available in the library.
 
-#### Walkthrough:
+#### Walkthrough: {#sec-walkthrough}
 
 We implemented the above strategy using code repositories. Code repositories greatly facilitate software development in the Enclave. Useful features include a debugger, a GitHub-like workflow (pull requests, branches, diffs, etc.) to coordinate among developers, and a convenient method to export code to GitHub. In addition, the process for specifying Python packages to be used is much more convenient, and (in the authors' experience) code repositories are also more stable and less prone to runtime issues than code workbooks. Two notable limitations of code repositories should be noted:
 
@@ -99,9 +99,10 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 1.  Reusable ML library package
 
-    a.  **Create a folder in a workspace** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder ![Figure 1](images/ml/image-01-create-folder-in-workspace.png) Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
+    a.  **Create a folder in a workspace** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder 
+![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/image-01-create-folder-in-workspace.png){.lightbox} Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
 
-    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2](images/ml/image-02-create-python-lib-code-repo.png) Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
+    b.  **Creafte a Python library code repository to implement the ML algorithms** New → code repository → Python Library → initialize repository ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/image-02-create-python-lib-code-repo.png){.lightbox} Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
 
     This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
@@ -119,21 +120,21 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
 2.  Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html -->
 
-    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3.](images/ml/image-03-create-python-data-transforms-code-repo.png) Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
+    a.  **Create a Python transforms code repository** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.](images/ml/image-03-create-python-data-transforms-code-repo.png){.lightbox } Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
 
-    b.  **Define cohort and features using COVID patient facts table** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create ![Figure 4](images/ml/image-04-create-python-transformation-file.png) Figure 4: Create a new python transformation script file within a code repository.
+    b.  **Define cohort and features using COVID patient facts table** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create ![Figure 4: Create a new python transformation script file within a code repository.](images/ml/image-04-create-python-transformation-file.png){.lightbox } Figure 4: Create a new python transformation script file within a code repository.
 
         We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
-    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure 5](images/ml/image-05-search-custom-library.png) Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
+    c.  **Add the ml-classification-pipeline library** Sidebar -\> Libraries -\> search for ml-classification-pipeline ![Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.](images/ml/image-05-search-custom-library.png){.lightbox } Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
 
-        ![Figure 6](images/ml/image-06-add-custom-library.png) Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
+        ![Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.](images/ml/image-06-add-custom-library.png){.lightbox } Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
 
         Click "Add library"
 
         NOTE: The error message similar to the one below is sometimes encountered during this step:
 
-        ![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png) <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.
+        ![Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/image-07-n3c-access-error-custom-library.png){.lightbox } <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.
 
         Go back to the 'files' tab on the left sidebar, and commit your changes.
 
@@ -141,7 +142,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Create a new transform that trains a random forest on this cohort:
 
-        ![Figure 8](images/ml/image-08-create-python-script-file.png)Figure 8: Create python script file.
+        ![Figure 8: Create python script file.](images/ml/image-08-create-python-script-file.png){.lightbox }Figure 8: Create python script file.
 
         Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You'll need to change this line to be a path to somewhere you can write a dataset:
 
@@ -196,7 +197,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
     a.  **Create a code workbook** Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.
 
-        ![Figure 9](images/ml/image-09-create-codeworkbook.png)Figure 9: Create a new code workbook.
+        ![Figure 9: Create a new code workbook.](images/ml/image-09-create-codeworkbook.png){.lightbox } Figure 9: Create a new code workbook.
 
         Additional details about the usage, customization, and features of Code Workbooks are available in the N3C documentation.
 
@@ -204,7 +205,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Nodes are the atomic units of a code workbook in which we implement individual functions. Each function takes in one or more input datasets and produces one output dataset. We can import datasets into code workbooks. When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.
 
-        ![Figure 10](images/ml/image-10-referencing-nodes-codeworkbook.png)Figure 10: Referencing nodes in a code workbook.
+        ![Figure 10: Referencing nodes in a code workbook. ](images/ml/image-10-referencing-nodes-codeworkbook.png){.lightbox } Figure 10: Referencing nodes in a code workbook.
 
         Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
@@ -261,7 +262,7 @@ For the basics of creating a code repository and using its debugger, see \[the t
 
         Select the 'visualization' tab at the bottom to view the output of this node.
 
-        ![Figure 11](images/ml/image-11-viewing-visualization-outputs.png) Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
+        ![Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.](images/ml/image-11-viewing-visualization-outputs.png){.lightbox } Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.
 
 
 ## Other topics

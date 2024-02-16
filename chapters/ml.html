@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -66,11 +100,6 @@ div.csl-indent {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -456,16 +485,16 @@ Note
 <h2 data-number="13.2" class="anchored" data-anchor-id="sec-ml-gap"><span class="header-section-number">13.2</span> Good Algorithmic Practice (GAP)</h2>
 <p>Knowledge of GAP is crucial to the successful application of machine learning to biomedical data. We intend to demonstrate GAP in this chapter by example. A full discussion of this is beyond the scope of this document, but a partial list of important considerations, with references for further reading, is as follows:</p>
 <ul>
-<li><strong>Generalizability</strong> - models trained on one set of data often do not perform well on data originating from other places (e.g., other hospital systems) or other times (e.g., in a different period of time in the COVID pandemic) <span class="citation" data-cites="roberts_2021">(<a href="../references.html#ref-roberts_2021" role="doc-biblioref">2021</a>)</span>. Since the goal of supervised machine learning is to develop generalizable algorithms that perform well on completely unseen (i.e., independent) test data, practitioners must be familiar with various techniques and considerations that mitigate the risk of failure to generalize (i.e., model overfitting) in the appropriate context, such as regularization, dimensionality reduction, feature extraction, cross-validation, and use of a model type that is appropriate given the amount of available data (e.g., deep learning algorithms may require relatively large training sets) <span class="citation" data-cites="chollet_2021">Géron (<a href="../references.html#ref-geron_2022" role="doc-biblioref">2022</a>)</span>. The machine learning practitioner should thoroughly understand the potential trade-off between under-fitting and overfitting a predictive model <span class="citation" data-cites="hastie_2009">(<a href="../references.html#ref-hastie_2009" role="doc-biblioref">2009</a>)</span>. In addition, N3C data is not a random sample, and it worth familiarizing yourself with the data as described in Chapters <a href="understanding.html" class="quarto-xref"><span>7</span></a> and <a href="cycle.html" class="quarto-xref"><span>3</span></a>.</li>
+<li><strong>Generalizability</strong> - models trained on one set of data often do not perform well on data originating from other places (e.g.&nbsp;other hospital systems) or other times (e.g.&nbsp;in a different period of time in the COVID pandemic) <span class="citation" data-cites="roberts_2021">(<a href="../references.html#ref-roberts_2021" role="doc-biblioref">2021</a>)</span>. Since the goal of supervised machine learning is to develop generalizable algorithms that perform well on completely unseen (i.e., independent) test data, practitioners must be familiar with various techniques and considerations that mitigate the risk of failure to generalize (i.e., model overfitting) in the appropriate context, such as regularization, dimensionality reduction, feature extraction, cross-validation, and use of a model type that is appropriate given the amount of available data (e.g., deep learning algorithms may require relatively large training sets) <span class="citation" data-cites="chollet_2021 geron_2022">(<a href="../references.html#ref-chollet_2021" role="doc-biblioref">2021</a>; <a href="../references.html#ref-geron_2022" role="doc-biblioref">2022</a>)</span>. The machine learning practitioner should thoroughly understand the potential trade-off between under-fitting and overfitting a predictive model <span class="citation" data-cites="hastie_2009">(<a href="../references.html#ref-hastie_2009" role="doc-biblioref">2009</a>)</span>. In addition, N3C data is not a random sample, and it worth familiarizing yourself with the data as described in Chapters <a href="understanding.html" class="quarto-xref"><span>7</span></a> and <a href="cycle.html" class="quarto-xref"><span>3</span></a>.</li>
 <li><strong>Social bias</strong> - scientific literature abounds with ML models and results that contain bias with respect to factors such as gender, ethnicity, and race. It is critical to realize that the choice of data or ML model may reinforce harmful bias in scientific literature <span class="citation" data-cites="roberts_2021">(<a href="../references.html#ref-roberts_2021" role="doc-biblioref">2021</a>)</span>. This can happen even if you do not intend to introduce such a bias.</li>
 <li><strong>Data Considerations</strong>
 <ul>
 <li><strong>Site-Level Heterogeneity</strong> - N3C contains data from a large number of different hospital/healthcare systems (identified by the variable <code>data_parter_id</code> in the N3C <code>person</code> table) with several distinct common data models (ACT, OMOP, PCORNET, TRINETX). Features can vary wildly between data partners due to factors such as differing data models, patient populations, coding practices, and ETL code required for harmonization of data. This can negsatively affect ML models, for example by limiting generalizability of models that depend on features that differ between sites <span class="citation" data-cites="fu_2020">(<a href="../references.html#ref-fu_2020" role="doc-biblioref">2020</a>)</span>. It is thus helpful to understand the N3C data ingestion and harmonization processes described in Chapter <a href="cycle.html" class="quarto-xref"><span>3</span></a>.</li>
-<li><strong>Missingness</strong> - Your data will likely have missingness, sometimes quite often. How you deal with this can greatly affect your ML results. <span class="citation" data-cites="mitra_2023">(<a href="../references.html#ref-mitra_2023" role="doc-biblioref">2023</a>)</span> See also Casiraghi, et al.<span class="citation" data-cites="casiraghi_2023">(<a href="../references.html#ref-casiraghi_2023" role="doc-biblioref">2023</a>)</span> for a detailed description of missingness specifically in N3C, and strategies for dealing with it, such as imputation. Ultimately, how you deal with missingness is subject to how reasonable your assumptions are concerning relationships between observed data and desired-yet-missing information, assumptions best guided by engaging with subject matter experts familiar with the data relationships at hand (see below).</li>
-<li><strong>Features for ML:</strong> In the example use case we describe here, we will leverage the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table as a source of features. If this table does not contain the data you need for your ML task, you can explore other available datasets or use the Logic Liaison templates to construct additional derived variables, or create your own custom derived variables. Appropriate data pre-processing, feature selection and/or feature engineering is a crucial step in the machine learning process. Depending upon the type of algorithm, data may also need to be normalized <span class="citation" data-cites="muhammad_2014">(<a href="../references.html#ref-muhammad_2014" role="doc-biblioref">2014</a>)</span> to reduce the risk of excessive influence of features in certain classifiers. See <span class="citation" data-cites="sahner_2020">(<a href="../references.html#ref-sahner_2020" role="doc-biblioref">2020</a>)</span></li>
+<li><strong>Missingness</strong> - Your data will likely have missingness, sometimes quite often. How you deal with this can greatly affect your ML results <span class="citation" data-cites="mitra_2023">(<a href="../references.html#ref-mitra_2023" role="doc-biblioref">2023</a>)</span>. See also <span class="citation" data-cites="casiraghi_2023">(<a href="../references.html#ref-casiraghi_2023" role="doc-biblioref">Casiraghi et al., 2023</a>)</span> for a detailed description of missingness specifically in N3C, and strategies for dealing with it, such as imputation. Ultimately, how you deal with missingness is subject to how reasonable your assumptions are concerning relationships between observed data and desired-yet-missing information, assumptions best guided by engaging with subject matter experts familiar with the data relationships at hand (see below).</li>
+<li><strong>Features for ML:</strong> In the example use case we describe here, we will leverage the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table as a source of features. If this table does not contain the data you need for your ML task, you can explore other available datasets or use the Logic Liaison templates to construct additional derived variables, or create your own custom derived variables. Appropriate data pre-processing, feature selection and/or feature engineering is a crucial step in the machine learning process. Depending upon the type of algorithm, data may also need to be normalized to reduce the risk of excessive influence of features in certain classifiers <span class="citation" data-cites="muhammad_2014 sahner_2020">(<a href="../references.html#ref-muhammad_2014" role="doc-biblioref">2014</a>; <a href="../references.html#ref-sahner_2020" role="doc-biblioref">2020</a>)</span>.</li>
 </ul></li>
-<li><strong>Engaging with subject matter experts:</strong> Your ML project will greatly benefit from subject matter experts to guide your experimental design and to help interpret your results. If you are performing ML on data from people with, for example, diabetes, you should engage at least one clinical diabetes expert with whom you can collaborate. One of the strengths of N3C is the large and diverse community of scientists, and it is likely that there is an expert in almost any field of interest who can help. Subject matter experts can provide important help in feature selection, assessments of windows for variables, choice of feature transformations and interaction terms in a model, and definition of model performance goals (sensitivity versus specificity trade-off). N3C <a href="onboarding.html#sec-onboarding-dts">Domain Teams</a> are an excellent source of such expertise, as many are organized around clinical topics such as Diabetes, Kidney Injury, Pregnancy, and many more.</li>
-<li><strong>Explainability:</strong> Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like “black boxes,” especially to those who are not versed in machine learning. Tools are available to help assess feature importance (e.g., SHAP values <span class="citation" data-cites="lundburg_2018">(<a href="../references.html#ref-lundburg_2018" role="doc-biblioref">2018</a>)</span> <span class="citation" data-cites="shapley_1953">(<a href="../references.html#ref-shapley_1953" role="doc-biblioref">1953</a>)</span></li>
+<li><strong>Engaging with subject matter experts:</strong> Your ML project will greatly benefit from subject matter experts to guide your experimental design and to help interpret your results. If you are performing ML on data from people with, for example, diabetes, you should engage at least one clinical diabetes expert with whom you can collaborate. One of the strengths of N3C is the large and diverse community of scientists, and it is likely that there is an expert in almost any field of interest who can help. Subject matter experts can provide important help in feature selection, assessments of windows for variables, choice of feature transformations and interaction terms in a model, and definition of model performance goals (sensitivity versus specificity trade-off). N3C <a href="#onboarding-domain-teams">Domain Teams</a> are an excellent source of such expertise, as many are organized around clinical topics such as Diabetes, Kidney Injury, Pregnancy, and many more.</li>
+<li><strong>Explainability:</strong> Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like “black boxes,” especially to those who are not versed in machine learning. Tools are available to help assess feature importance, e.g.&nbsp;SHAP values <span class="citation" data-cites="lundburg_2018 shapley_1953">(<a href="../references.html#ref-lundburg_2018" role="doc-biblioref">2018</a>; <a href="../references.html#ref-shapley_1953" role="doc-biblioref">1953</a>)</span>.</li>
 <li><strong>Adequate Documentation:</strong> Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research. In addition, The N3C Enclave provides a feature called Protocol Pad which can explain exactly how a study was conducted in N3C.</li>
 </ul>
 </section>
@@ -495,8 +524,8 @@ Note
 <h4 data-number="13.3.2.1" class="anchored" data-anchor-id="sec-strategy"><span class="header-section-number">13.3.2.1</span> Strategy</h4>
 <ol type="1">
 <li><strong>Create a reusable ML library package.</strong> This library contains the implementations of standard machine learning classification algorithms such as logistic regression, naïve Bayes, random forest, support vector machine, and multi-layer perceptron. This package can be imported and used for any downstream classification applications.</li>
-<li><strong>Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table</strong> (see also the <a href="../chapters/tools.html">“Introducing Enclave Analysis Tools”</a> chapter.) This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.</li>
-<li><strong>Choose one post-COVID indicator column as a label to predict.</strong> Here we will predict cardiovascular sequelae following acute COVID. In this example, we will use ‘Atrial Fibrillation Flutter (AFF)’ post COVID-19 as an indicator for cardiovascular sequelae.</li>
+<li><strong>Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table</strong> (See also Chapter <a href="tools.html" class="quarto-xref"><span>8</span></a>.) This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.</li>
+<li><strong>Choose one post-COVID indicator column as a label to predict.</strong> Here we will predict cardiovascular sequelae following acute COVID. In this example, we will use “Atrial Fibrillation Flutter (AFF)” post COVID-19 as an indicator for cardiovascular sequelae.</li>
 <li><strong>Predict this label using a single ML model.</strong> We will use the random forest model from the ML library created in step 1 to predict AFF post COVID. One can use as an alternative any of the classification models available in the library.</li>
 </ol>
 </section>
@@ -504,134 +533,125 @@ Note
 <h4 data-number="13.3.2.2" class="anchored" data-anchor-id="sec-walkthrough"><span class="header-section-number">13.3.2.2</span> Walkthrough:</h4>
 <p>We implemented the above strategy using code repositories. Code repositories greatly facilitate software development in the Enclave. Useful features include a debugger, a GitHub-like workflow (pull requests, branches, diffs, etc.) to coordinate among developers, and a convenient method to export code to GitHub. In addition, the process for specifying Python packages to be used is much more convenient, and (in the authors’ experience) code repositories are also more stable and less prone to runtime issues than code workbooks. Two notable limitations of code repositories should be noted:</p>
 <ol type="1">
-<li>plots/visualization must be done separately in a code workbook (as in step 3 below) and</li>
-<li>the R language is not supported in code repositories as of July 2023, so performing statistical analyses with R packages also requires a code workbook.</li>
+<li>Plots/visualization must be done separately in a code workbook (as in step 3 below) and</li>
+<li>The R language is not supported in code repositories as of July 2023, so performing statistical analyses with R packages also requires a code workbook.</li>
 </ol>
-<p>For our walkthrough, we will be creating and using a Python library repository <a href="https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline">ml-classification-pipeline Python library</a> and a <a href="https://unite.nih.gov/workspace/data-integration/code/repos/ri.stemma.main.repository.aee54470-95fb-4d9c-b694-94480f171c74/contents/refs%2Fheads%2Fmaster/src/models/sklearn/classification_model.py">data transform code repository</a> <i class="fa-solid fa-lock" title="Link requires an N3C Data Enclave account" aria-label="lock"></i> that Blessy Antony (Virginia Tech, blessyantony@vt.edu) developed to do machine learning in N3C.</p>
-<p>For the basics of creating a code repository and using its debugger, see [the tools chapter[(tools.html#sec-tools-apps-repo)</p>
+<p>For our walkthrough, we will be creating and using a Python library repository <a href="https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline">ml-classification-pipeline Python library</a> and a data transform code repository that Blessy Antony (Virginia Tech, blessyantony@vt.edu) developed to do machine learning in N3C.</p>
+<p>For the basics of creating a code repository and using its debugger, see Chapter <a href="tools.html" class="quarto-xref"><span>8</span></a>.</p>
 <ol type="1">
 <li><p>Reusable ML library package</p>
 <ol type="a">
-<li><p><strong>Create a folder in a workspace</strong> Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder <a href="images/ml/image-01-create-folder-in-workspace.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located."><img src="images/ml/image-01-create-folder-in-workspace.png" class="img-fluid" alt="Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located."></a> Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.</p></li>
-<li><p><strong>Creafte a Python library code repository to implement the ML algorithms</strong> New → code repository → Python Library → initialize repository <a href="images/ml/image-02-create-python-lib-code-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories."><img src="images/ml/image-02-create-python-lib-code-repo.png" class="img-fluid" alt="Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories."></a> Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.</p></li>
-</ol>
-<p>This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.</p>
-<ol start="3" type="a">
+<li><p><strong>Create a folder in a workspace</strong> Go to your DUR workspace or “Practice Area - Public and Example Data” Left sidebar → Search → “Practice Area - Public and Example Data” → click on first hit → make a new folder.<br><br><img src="images/ml/image-01-create-folder-in-workspace.png" class="img-fluid" alt="Figure 1"><br>Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.</p></li>
+<li><p><strong>Creafte a Python library code repository to implement the ML algorithms</strong> New → code repository → Python Library → initialize repository.<br><br><img src="images/ml/image-02-create-python-lib-code-repo.png" class="img-fluid" alt="Figure 2"><br>Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.<br><br>This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.</p></li>
 <li><p><strong>Adding dependencies to code repository</strong> See the N3C documentation on discovering and using Python libraries in code repositories.</p></li>
-<li><p><strong>Implementation of classification algorithms</strong> The scikit-learn and pyspark implementations have the following code organization -</p></li>
-</ol>
-<!-- -->
-<ol type="i">
-<li><p><strong>dataset_preprocessor.py</strong> Methods to drop column(s) from the input dataset, split the dataset into training and test datasets based on a given ratio, sample the training and/or testing datasets to have approximately equal number of positive and negative samples (if required), standardize the datasets. The pyspark implementation contains an additional method to assemble the input into libsvm format.</p></li>
-<li><p><strong>classification_model.py</strong> The ClassificationModel class implements a classification pipeline. First, preprocess the dataset and compute training and testing datasets using the methods in dataset_preprocessor.py. Second, perform hyperparameter search and train classification models using k-fold cross validation. Third, evaluate the trained models on test datasets. Finally, perform multiple iterations of these three steps to generalize the results.</p></li>
-<li><p><strong>classification algorithms</strong> The logistic_regression.py, multi_layer_perceptron.py, random_forest.py, and svm.py files implement the respective classification algorithms with model instantiation and definition of the hyperparameter search. The classes defined in each of these files extend the ClassificationModel class defined in classification_model.py and leverage the pipeline implemented in the parent class.</p></li>
+<li><p><strong>Implementation of classification algorithms</strong> The scikit-learn and pyspark implementations have the following code organization:</p>
+<ul>
+<li><p><strong><code>dataset_preprocessor.py</code></strong> Methods to drop column(s) from the input dataset, split the dataset into training and test datasets based on a given ratio, sample the training and/or testing datasets to have approximately equal number of positive and negative samples (if required), standardize the datasets. The pyspark implementation contains an additional method to assemble the input into libsvm format.</p></li>
+<li><p><strong><code>classification_model.py</code></strong> The ClassificationModel class implements a classification pipeline. First, preprocess the dataset and compute training and testing datasets using the methods in <code>dataset_preprocessor.py</code>. Second, perform hyperparameter search and train classification models using k-fold cross validation. Third, evaluate the trained models on test datasets. Finally, perform multiple iterations of these three steps to generalize the results.</p></li>
+<li><p><strong>classification algorithms</strong> The <code>logistic_regression.py</code>, <code>multi_layer_perceptron.py</code>, <code>random_forest.py</code>, and <code>svm.py</code> files implement the respective classification algorithms with model instantiation and definition of the hyperparameter search. The classes defined in each of these files extend the ClassificationModel class defined in <code>classification_model.py</code> and leverage the pipeline implemented in the parent class.</p></li>
+</ul></li>
 </ol></li>
 <li><p>Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html --></p>
 <ol type="a">
-<li><p><strong>Create a Python transforms code repository</strong> Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: <a href="images/ml/image-03-create-python-data-transforms-code-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1."><img src="images/ml/image-03-create-python-data-transforms-code-repo.png" class="img-fluid" alt="Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1."></a> Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.</p></li>
-<li><p><strong>Define cohort and features using COVID patient facts table</strong> Create a new transform called “aff_create_cohort.py” Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (*.py)’ from the drop down → Create <a href="images/ml/image-04-create-python-transformation-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 4: Create a new python transformation script file within a code repository."><img src="images/ml/image-04-create-python-transformation-file.png" class="img-fluid" alt="Figure 4: Create a new python transformation script file within a code repository."></a> Figure 4: Create a new python transformation script file within a code repository.</p>
-<p>We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):</p></li>
-<li><p><strong>Add the ml-classification-pipeline library</strong> Sidebar -&gt; Libraries -&gt; search for ml-classification-pipeline <a href="images/ml/image-05-search-custom-library.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository."><img src="images/ml/image-05-search-custom-library.png" class="img-fluid" alt="Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository."></a> Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.</p>
-<p><a href="images/ml/image-06-add-custom-library.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository."><img src="images/ml/image-06-add-custom-library.png" class="img-fluid" alt="Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository."></a> Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.</p>
-<p>Click “Add library”</p>
-<p>NOTE: The error message similar to the one below is sometimes encountered during this step:</p>
-<p><a href="images/ml/image-07-n3c-access-error-custom-library.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error."><img src="images/ml/image-07-n3c-access-error-custom-library.png" class="img-fluid" alt="Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error."></a> <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.</p>
-<p>Go back to the ‘files’ tab on the left sidebar, and commit your changes.</p></li>
+<li><p><strong>Create a Python transforms code repository</strong> Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository.<br><br><img src="images/ml/image-03-create-python-data-transforms-code-repo.png" class="img-fluid" alt="Figure 3."><br>Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.</p></li>
+<li><p><strong>Define cohort and features using COVID patient facts table</strong> Create a new transform called <code>aff_create_cohort.py</code> via Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select ‘Python Transformation (*.py)’ from the drop down → Create.<br><br><img src="images/ml/image-04-create-python-transform-file.png" class="img-fluid" alt="Figure 4"><br>Figure 4: Create a new python transformation script file within a code repository.</p></li>
+<li><p><strong>Add the ml-classification-pipeline library</strong> We’ve created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks). First, we need to add the library, by navigating to the Sidebar -&gt; Libraries -&gt; search for ml-classification-pipeline.<br><br><img src="images/ml/image-05-search-custom-library.png" class="img-fluid" alt="Figure 5"><br>Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.<br><br>Next, add the library by clicking “Add and install library”:<br><br> <img src="images/ml/image-06-add-custom-library.png" class="img-fluid" alt="Figure 6"><br>Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.<br><br>NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter <a href="support.html" class="quarto-xref"><span>11</span></a>.<br><br> <img src="images/ml/image-07-n3c-access-error-custom-library.png" class="img-fluid" alt="Figure 7"><br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories.<br><br>Next, go back to the ‘files’ tab on the left sidebar, and commit your changes.</p></li>
 <li><p><strong>Implement a random forest model for the prediction task</strong></p>
 <p>Create a new transform that trains a random forest on this cohort:</p>
-<p><a href="images/ml/image-08-create-python-script-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure 8: Create python script file."><img src="images/ml/image-08-create-python-script-file.png" class="img-fluid" alt="Figure 8: Create python script file."></a>Figure 8: Create python script file.</p>
-<p>Now some code - this uses the output of aff_create_cohort.py as input, and runs a random forest on it. You’ll need to change this line to be a path to somewhere you can write a dataset:</p>
-<pre><code>    allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),</code></pre>
-<p>And change this line to the path or the Resource Identifier (RID) of the dataset you saved above in “aff_create_cohort.py”:</p>
-<pre><code>allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
-
-
-from transforms.api import transform, configure, Input, Output
-from models.sklearn import random_forest
-
-
-
-
-@configure(profile=['DRIVER_MEMORY_EXTRA_LARGE'])
-@transform(
-  allpatients_output=Output("PATH_TO_YOUR_OUTPUT_DATASET"),       allpatients_df=Input("PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"),
-)
-def compute(allpatients_df, allpatients_output):
-  n_iterations = 5
-  train_test_ratio = [0.8, 0.2]
-  preprocess_exclude_columns = \
-    ["COVID_associated_hospitalization_indicator",
-    "COVID_index_date"]
-  standardize_exclude_columns = ["person_id", "label"]
-  allpatients_df = allpatients_df.dataframe()
-  allpatients_output.write_dataframe(
-    run(allpatients_df,
-    n_iterations,
-    train_test_ratio,
-    preprocess_exclude_columns,
-    standardize_exclude_columns))
-
-
-def run(dataset, n_iterations, train_test_ratio, \
-preprocess_exclude_columns, standardize_exclude_columns):
-   random_forest_model = random_forest.RandomForestModel(
-       dataset, n_iterations, train_test_ratio, \
-       preprocess_exclude_columns, standardize_exclude_columns)
-   return random_forest_model.run()
-
-
-</code></pre></li>
+<p><img src="images/ml/image-08-create-python-script-file.png" class="img-fluid" alt="Figure 8">Figure 8: Create python script file.</p>
+<p>Now some code - this uses the output of <code>aff_create_cohort.py</code> as input, and runs a random forest on it. You’ll need to change this line to be a path to somewhere you can write a dataset:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>allpatients_output<span class="op">=</span>Output(<span class="st">"PATH_TO_YOUR_OUTPUT_DATASET"</span>),</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And change this line to the path or the Resource Identifier (RID) of the dataset you saved above in <code>aff_create_cohort.py</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>allpatients_df<span class="op">=</span>Input(<span class="st">"PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"</span>),</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transforms.api <span class="im">import</span> transform, configure, Input, Output</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> models.sklearn <span class="im">import</span> random_forest</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">@configure</span>(profile<span class="op">=</span>[<span class="st">'DRIVER_MEMORY_EXTRA_LARGE'</span>])</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">@transform</span>(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  allpatients_output<span class="op">=</span>Output(<span class="st">"PATH_TO_YOUR_OUTPUT_DATASET"</span>),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  allpatients_df<span class="op">=</span>Input(<span class="st">"PUT IN PATH OR RID FOR OUTPUT OF aff_create_cohort.py"</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute(allpatients_df, allpatients_output):</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    n_iterations <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    train_test_ratio <span class="op">=</span> [<span class="fl">0.8</span>, <span class="fl">0.2</span>]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    preprocess_exclude_columns <span class="op">=</span> [<span class="st">"COVID_associated_hospitalization_indicator"</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">"COVID_index_date"</span>]</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    standardize_exclude_columns <span class="op">=</span> [<span class="st">"person_id"</span>, <span class="st">"label"</span>]</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    allpatients_df <span class="op">=</span> allpatients_df.dataframe()</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    allpatients_output.write_dataframe(run(allpatients_df,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                                           n_iterations,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>                                           train_test_ratio,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>                                           preprocess_exclude_columns,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                                           standardize_exclude_columns))</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run(dataset, </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        n_iterations, </span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        train_test_ratio,</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        preprocess_exclude_columns, </span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        standardize_exclude_columns):</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>     random_forest_model <span class="op">=</span> random_forest.RandomForestModel(dataset, </span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>                                                           n_iterations, </span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>                                                           train_test_ratio, </span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>                                                           preprocess_exclude_columns, </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>                                                           standardize_exclude_columns)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>     <span class="cf">return</span> random_forest_model.run()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol></li>
 <li><p><strong>Visualize the results</strong> Code repositories do not support creating and viewing visualizations. Hence, we will use code workbooks to create visualizations.</p>
 <ol type="a">
-<li><p><strong>Create a code workbook</strong> Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.</p>
-<p><a href="images/ml/image-09-create-codeworkbook.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure 9: Create a new code workbook."><img src="images/ml/image-09-create-codeworkbook.png" class="img-fluid" alt="Figure 9: Create a new code workbook."></a> Figure 9: Create a new code workbook.</p>
-<p>Additional details about the usage, customization, and features of Code Workbooks are available in the N3C documentation.</p></li>
+<li><p><strong>Create a code workbook</strong> Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.<br><br><img src="images/ml/image-09-create-codeworkbook.png" class="img-fluid" alt="Figure 9"><br>Figure 9: Create a new code workbook.<br><br> Additional details about the usage, customization, and features of Code Workbooks are discussed in Chapter <a href="tools.html" class="quarto-xref"><span>8</span></a>.</p></li>
 <li><p><strong>Compute metrics to evaluate prediction models</strong> Create a new Python transform node: New transform(top left) → Python code The name of the node is the name of the function to be implemented within the node and it is also the name of the output dataset generated by this node.</p>
-<p>Nodes are the atomic units of a code workbook in which we implement individual functions. Each function takes in one or more input datasets and produces one output dataset. We can import datasets into code workbooks. When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.</p>
-<p><a href="images/ml/image-10-referencing-nodes-codeworkbook.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure 10: Referencing nodes in a code workbook."><img src="images/ml/image-10-referencing-nodes-codeworkbook.png" class="img-fluid" alt="Figure 10: Referencing nodes in a code workbook."></a> Figure 10: Referencing nodes in a code workbook.</p>
-<p>Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.</p>
-<pre><code># AUPRC Computation def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g., aff_allpatients_lr_output)"): from sklearn.metrics import precision_recall_curve, auc import pandas as pd
-
- df = aff_allpatients_lr_output
- iterations = df.run.unique()
- model_name = "Logistic Regression"
- cohort_name = "All Patients"
-
- auprc_list = []
- for itr in iterations:
-     df_itr = df[df["run"] == itr]
-     y_test = df_itr.loc[:,"test_label"].values
-     y_pred = df_itr.loc[:,"test_prediction"].values
-
-     precision, recall, thresholds = \
-         precision_recall_curve(y_test, y_pred)
-     auprc = auc(recall, precision)
-     auprc_list.append({"auprc": auprc,
-                        "run": itr,
-                        "model": model_name,
-                        "cohort": cohort_name})
- return pd.DataFrame(auprc_list)</code></pre>
+<p>Nodes are the atomic units of a code workbook in which we implement individual functions. Each function takes in one or more input datasets and produces one output dataset. We can import datasets into code workbooks. When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.<br><br><img src="images/ml/image-10-referencing-nodes-codeworkbook.png" class="img-fluid" alt="Figure 10"><br>Figure 10: Referencing nodes in a code workbook.<br><br>Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AUPRC Computation </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> logistic_regression_allpatients_auprc(<span class="st">"REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"</span>): </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn.metrics <span class="im">import</span> precision_recall_curve, auc </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> aff_allpatients_lr_output</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    iterations <span class="op">=</span> df.run.unique()</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    model_name <span class="op">=</span> <span class="st">"Logistic Regression"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    cohort_name <span class="op">=</span> <span class="st">"All Patients"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    auprc_list <span class="op">=</span> []</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> itr <span class="kw">in</span> iterations:</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        df_itr <span class="op">=</span> df[df[<span class="st">"run"</span>] <span class="op">==</span> itr]</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        y_test <span class="op">=</span> df_itr.loc[:,<span class="st">"test_label"</span>].values</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> df_itr.loc[:,<span class="st">"test_prediction"</span>].values</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        precision, recall, thresholds <span class="op">=</span> precision_recall_curve(y_test, y_pred)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        auprc <span class="op">=</span> auc(recall, precision)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        auprc_list.append({<span class="st">"auprc"</span>: auprc,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>                           <span class="st">"run"</span>: itr,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>                           <span class="st">"model"</span>: model_name,</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>                           <span class="st">"cohort"</span>: cohort_name})</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.DataFrame(auprc_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Similarly, create multiple copies of this node with the same code but different inputs and outputs to generate AUPRC scores for Random Forest, SVM,&nbsp; and MLP models.</p>
 <p><strong>Templates</strong></p>
-<p>To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about <a href="https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial">creation and usage of templates is found in the N3C documentation</a> <i class="fa-solid fa-lock" title="Link requires an N3C Data Enclave account" aria-label="lock"></i>. See also the <a href="../chapters/tools.html">“Introducing Enclave Analysis Tools”</a> chapter.</p></li>
+<p>To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about <a href="https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial">creation and usage of templates is found in the N3C documentation</a>. More information about Code Workbooks and Templates may be found in Section <a href="tools.html#sec-tools-store-templates" class="quarto-xref"><span>8.3.2</span></a>.</p></li>
 <li><p><strong>Create visualizations</strong></p>
 <p>Create another node in the workbook to draw Box plots of the AUPRC scores of the Logistic Regression, Random Forest, SVM, MLP models computed for ten iterations of the classification of cardiovascular sequelae. The inputs to this node will be the outputs generated from the nodes in the previous step that computed the AUPRC scores for each of the prediction methods.</p>
-<pre><code># AUPRC Distribution Boxplot Visualization
-from matplotlib import pyplot as plt
-import seaborn as sns
-import pandas as pd
-
-
-def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc):
-
-df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, mlp_allpatients_auprc, rf_allpatients_auprc])
-  ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
-  plt.title("Area under Precision-Recall Curve : All Patients")
-  plt.show()
-</code></pre>
-<p>Select the ‘visualization’ tab at the bottom to view the output of this node.</p>
-<p><a href="images/ml/image-11-viewing-visualization-outputs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook."><img src="images/ml/image-11-viewing-visualization-outputs.png" class="img-fluid" alt="Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook."></a> Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.</p></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AUPRC Distribution Boxplot Visualization</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                              svm_allpatients_auprc, </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                              mlp_allpatients_auprc, </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                              rf_allpatients_auprc):</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.concat([logistic_regression_allpatients_auprc, </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                    svm_allpatients_auprc, </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                    mlp_allpatients_auprc, </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                    rf_allpatients_auprc])</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> sns.boxplot(x<span class="op">=</span><span class="st">"model"</span>, y<span class="op">=</span><span class="st">"auprc"</span>, data<span class="op">=</span>df, notch<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Area under Precision-Recall Curve : All Patients"</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Select the ‘visualization’ tab at the bottom to view the output of this node.<br><br> <img src="images/ml/image-11-viewing-visualization-outputs.png" class="img-fluid" alt="Figure 11"><br> Figure&nbsp;11:&nbsp;Viewing visualization outputs in codeworkbook.</p></li>
 </ol></li>
 </ol>
 </section>
@@ -643,19 +663,17 @@ df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, ml
 <h3 data-number="13.4.1" class="anchored" data-anchor-id="deploying-this-ml-code-to-your-projectdur"><span class="header-section-number">13.4.1</span> Deploying this ML code to your project/DUR</h3>
 <p>You can use the code above in your project by following these steps:</p>
 <ol type="1">
-<li>Open the code repository containing the code you would like to copy</li>
-<li>Open the pulldown menu by the “Clone” button</li>
-<li>Copy the git remote URL to your clipboard</li>
-<li>On your local machine, open a command line and run this command:</li>
+<li><p>Open the code repository containing the code you would like to copy</p></li>
+<li><p>Open the pulldown menu by the “Clone” button</p></li>
+<li><p>Copy the git remote URL to your clipboard</p></li>
+<li><p>On your local machine, open a command line and run this command:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone [paste the remote URL]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>In your DUR, create an empty code repository</p></li>
+<li><p>In the empty code repository, open the pulldown menu by the “Clone” button and copy the git remote URL to your clipboard as above in steps (2) and (3)</p></li>
+<li><p>In the cloned repository on your local machine, run these commands:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add mynewrepo [paste remote URL of new repository]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push mynewrepo master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
-<pre><code>    git clone [paste the remote URL]</code></pre>
-<ol start="5" type="1">
-<li>In your DUR, create an empty code repository</li>
-<li>In the empty code repository, open the pulldown menu by the “Clone” button and copy the git remote URL to your clipboard as above in steps (2) and (3)</li>
-<li>In the cloned repository on your local machine, run these commands. See <a href="publishing.html#sec-publishing-tech-code-github">Pulling Changes, Pushing to GitHub, Branches and Code Repositories</a> for details on how to do this.</li>
-</ol>
-<pre><code>    git remote add mynewrepo [paste remote URL of new repository]
-    git push mynewrepo master</code></pre>
 </section>
 <section id="using-spark-ml-pyspark.ml-for-time-and-compute-intensive-tasks" class="level3" data-number="13.4.2">
 <h3 data-number="13.4.2" class="anchored" data-anchor-id="using-spark-ml-pyspark.ml-for-time-and-compute-intensive-tasks"><span class="header-section-number">13.4.2</span> Using Spark ML pyspark.ml for time and compute intensive tasks</h3>
@@ -663,7 +681,7 @@ df = pd.concat([logistic_regression_allpatients_auprc, svm_allpatients_auprc, ml
 </section>
 <section id="using-r-in-code-workbooks" class="level3" data-number="13.4.3">
 <h3 data-number="13.4.3" class="anchored" data-anchor-id="using-r-in-code-workbooks"><span class="header-section-number">13.4.3</span> Using R in code workbooks</h3>
-<p>In the examples code reported above, we reported Python code, which works within <a href="../chapters/tools.html#sec-tools-apps-repo">Code Repositories</a>. However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Palantir <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> (see here for details). Note also that the Enclave very recently enabled support for R Studio in the Enclave. Finally, a useful “Enclave ML Resources Overview” with links to various resources related to this is available here.</p>
+<p>In the examples code reported above, we reported Python code, which works within Code Repositories (see <a href="tools.html#sec-tools-apps-repo" class="quarto-xref"><span>Section 8.4.4</span></a>). However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R. If you prefer to use R, you can use code within Code Workbooks (see <a href="tools.html#sec-tools-apps-workbook" class="quarto-xref"><span>Section 8.4.3</span></a>). Finally, a useful “Enclave ML Resources Overview” with links to various resources is available in the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-3D8340A&amp;view=focus">N3C Knowledge Store</a>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
@@ -1286,31 +1304,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

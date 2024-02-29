@@ -638,7 +638,7 @@ Note
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.DataFrame(auprc_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Similarly, create multiple copies of this node with the same code but different inputs and outputs to generate AUPRC scores for Random Forest, SVM,&nbsp; and MLP models.</p>
 <p><strong>Templates</strong></p>
-<p>To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about <a href="https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial">creation and usage of templates is found in the N3C documentation</a> <i class="fa-solid fa-lock" title="Link requires an N3C Data Enclave account" aria-label="lock"></i>. More information about Code Workbooks and Templates may be found in Section <a href="tools.html#sec-tools-store-templates" class="quarto-xref"><span>8.3.2</span></a>.</p></li>
+<p>To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes. More details and examples about <a href="https://unite.nih.gov/docs/foundry/code-workbook/templates-getting-started">creation and usage of templates is found in the N3C documentation</a> <i class="fa-solid fa-lock" title="Link requires an N3C Data Enclave account" aria-label="lock"></i>. More information about Code Workbooks and Templates may be found in Section <a href="tools.html#sec-tools-store-templates" class="quarto-xref"><span>8.3.2</span></a>.</p></li>
 <li><p><strong>Create visualizations.</strong> Create another node in the workbook to draw Box plots of the AUPRC scores of the Logistic Regression, Random Forest, SVM, MLP models computed for ten iterations of the classification of cardiovascular sequelae. The inputs to this node will be the outputs generated from the nodes in the previous step that computed the AUPRC scores for each of the prediction methods.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AUPRC Distribution Boxplot Visualization</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
@@ -1310,7 +1310,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

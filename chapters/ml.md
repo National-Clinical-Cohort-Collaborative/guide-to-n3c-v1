@@ -170,7 +170,7 @@ The classes defined in each of these files extend the ClassificationModel class 
 
         We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
-    c.  **Add the ml-classification-pipeline library** We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks). First, we need to add the library, by navigating to the Sidebar -\> Libraries -\> search for ml-classification-pipeline.<br /><br />
+    c.  **Add the ml-classification-pipeline library.** We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks). First, we need to add the library, by navigating to the Sidebar -\> Libraries -\> search for ml-classification-pipeline.<br /><br />
 ![Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.](images/ml/image-05-search-custom-library.png){.lightbox } Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
 <br/><br/>Next, add the library by clicking "Add and install library":<br />
 ![Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.](images/ml/image-06-add-custom-library.png){.lightbox } Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.

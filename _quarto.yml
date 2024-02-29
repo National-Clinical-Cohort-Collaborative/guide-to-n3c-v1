@@ -90,10 +90,10 @@ book:
   - part: Special Topics
     chapters:
     - chapters/support.md
-    - chapters/upcoming.md
     - chapters/ml.md
     # - chapters/advanced.md
     # - chapters/examples.md
+    - chapters/upcoming.md
   - part: Back Matter
     chapters:
     - chapters/funding.md

@@ -564,6 +564,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <ol type="1">
 <li>Consistent with the approved Data Use Request (<strong>DUR</strong>)</li>
 <li>Consistent with policies to protect the identity of individuals, data partners, and marginalized groups</li>
+<li>Focused on COVID-19</li>
 </ol></li>
 <li><p><strong>Individual consortial contributors</strong>: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see <a href="#tbl-publishing-authorship" class="quarto-xref">Table&nbsp;<span>10.1</span></a>).</p></li>
 <li><p><strong>N3C collaborative</strong>: Assure that information about the N3C is represented accurately</p></li>
@@ -627,12 +628,12 @@ Table&nbsp;10.1: Authorship tiers designed to accurately represent publication c
 </section>
 <section id="sec-publishing-drr-small" class="level3" data-number="10.2.2">
 <h3 data-number="10.2.2" class="anchored" data-anchor-id="sec-publishing-drr-small"><span class="header-section-number">10.2.2</span> Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’)</h3>
-<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.</p>
+<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee. For gender categories such as <em>missing/unknown</em>, a single level of masking is sufficient. See the example below.</p>
 <p>Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV). In their original form (left) these would violate the policy, as there are several values reported below 20. Even if these values are simply replaced with <code>&lt; 20</code> (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents. A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.</p>
 <div id="fig-publishing-010-masking-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="masking-example">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-010-masking-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-010-masking-example.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/publishing/fig-publishing-010-masking-example.png" class="img-fluid figure-img" style="width:100.0%" alt="masking-example"></a>
+<a href="images/publishing/fig-publishing-010-masking-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/publishing/fig-publishing-010-masking-example.png" class="img-fluid figure-img" style="width:100.0%" alt="masking-example"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-010-masking-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.1: An example of summary results that require masking prior to export for publication. To comply with N3C policy, counts below 20 are displayed as <code>&lt; 20</code>, and in this case, additional values must be skewed by up to 5 in order to render it impossible to back-calculate precise counts fewer than 20 in the ‘other gender’ and HIV categories.
@@ -663,7 +664,7 @@ Figure&nbsp;10.1: An example of summary results that require masking prior to ex
 <div id="fig-publishing-020-dataset-branch" class="quarto-figure quarto-figure-center quarto-float anchored" alt="dataset-branch">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-020-dataset-branch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-020-dataset-branch.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/publishing/fig-publishing-020-dataset-branch.png" class="img-fluid figure-img" alt="dataset-branch"></a>
+<a href="images/publishing/fig-publishing-020-dataset-branch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/publishing/fig-publishing-020-dataset-branch.png" class="img-fluid figure-img" alt="dataset-branch"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-020-dataset-branch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.2: Selecting the branch for a dataset imported into a code workbook. Branches allow researchers to ensure that the same data is used for further analysis.
@@ -700,7 +701,7 @@ Note
 <div id="fig-publishing-030-download-dashboard" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-dashboard">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-030-download-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-030-download-dashboard.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="images/publishing/fig-publishing-030-download-dashboard.png" class="img-fluid figure-img" alt="download-dashboard"></a>
+<a href="images/publishing/fig-publishing-030-download-dashboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="images/publishing/fig-publishing-030-download-dashboard.png" class="img-fluid figure-img" alt="download-dashboard"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-030-download-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.3: The download request dashboard, where researchers can submit requests to export summary data and figures and see the status of those requests.
@@ -711,7 +712,7 @@ Figure&nbsp;10.3: The download request dashboard, where researchers can submit r
 <div id="fig-publishing-040-download-form" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-form">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-040-download-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-040-download-form.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="images/publishing/fig-publishing-040-download-form.png" class="img-fluid figure-img" alt="download-form"></a>
+<a href="images/publishing/fig-publishing-040-download-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="images/publishing/fig-publishing-040-download-form.png" class="img-fluid figure-img" alt="download-form"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-040-download-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.4: The download review request form.
@@ -727,7 +728,7 @@ Figure&nbsp;10.4: The download review request form.
 <div id="fig-publishing-050-download-approved" class="quarto-figure quarto-figure-center quarto-float anchored" alt="download-approved">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-050-download-approved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-050-download-approved.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="images/publishing/fig-publishing-050-download-approved.png" class="img-fluid figure-img" alt="download-approved"></a>
+<a href="images/publishing/fig-publishing-050-download-approved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="images/publishing/fig-publishing-050-download-approved.png" class="img-fluid figure-img" alt="download-approved"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-050-download-approved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.5: A view of exportable datasets and a report from an approved download request.
@@ -759,7 +760,7 @@ Note
 <div id="fig-publishing-060-workbook-git" class="quarto-figure quarto-figure-center quarto-float anchored" alt="workbook-git">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-060-workbook-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-060-workbook-git.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="images/publishing/fig-publishing-060-workbook-git.png" class="img-fluid figure-img" alt="workbook-git"></a>
+<a href="images/publishing/fig-publishing-060-workbook-git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="images/publishing/fig-publishing-060-workbook-git.png" class="img-fluid figure-img" alt="workbook-git"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-060-workbook-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.6: Code workbooks can be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
@@ -782,7 +783,7 @@ Figure&nbsp;10.6: Code workbooks can be exported as Git repositories for externa
 <div id="fig-publishing-070-repo-git" class="quarto-figure quarto-figure-center quarto-float anchored" alt="repo-git">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-070-repo-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-070-repo-git.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="images/publishing/fig-publishing-070-repo-git.png" class="img-fluid figure-img" alt="repo-git"></a>
+<a href="images/publishing/fig-publishing-070-repo-git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="images/publishing/fig-publishing-070-repo-git.png" class="img-fluid figure-img" alt="repo-git"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-070-repo-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.7: Code workbooks can also be exported as Git repositories for external publishing. Researchers must ensure that no identifying information, including pseudonymous identifiers like data_partner_id values, are present in the code prior to export.
@@ -803,7 +804,7 @@ Figure&nbsp;10.7: Code workbooks can also be exported as Git repositories for ex
 <div id="fig-publishing-080-cset-excel-export" class="quarto-figure quarto-figure-center quarto-float anchored" alt="cset-excel-export">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-080-cset-excel-export-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-080-cset-excel-export.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="images/publishing/fig-publishing-080-cset-excel-export.png" class="img-fluid figure-img" alt="cset-excel-export"></a>
+<a href="images/publishing/fig-publishing-080-cset-excel-export.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="images/publishing/fig-publishing-080-cset-excel-export.png" class="img-fluid figure-img" alt="cset-excel-export"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-080-cset-excel-export-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.8: The N3C Concept Set Browser supports exporting a concept set version as an Excel spreadsheet for inclusions in supplementary materials. Concept sets are referenceable via DOI (see text).
@@ -822,7 +823,7 @@ Figure&nbsp;10.8: The N3C Concept Set Browser supports exporting a concept set v
 <div id="fig-publishing-090-knowledge-store-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="knowledge-store-1">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-090-knowledge-store-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-090-knowledge-store-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="images/publishing/fig-publishing-090-knowledge-store-1.png" class="img-fluid figure-img" alt="knowledge-store-1"></a>
+<a href="images/publishing/fig-publishing-090-knowledge-store-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="images/publishing/fig-publishing-090-knowledge-store-1.png" class="img-fluid figure-img" alt="knowledge-store-1"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-090-knowledge-store-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.9: The N3C Knowledge Store is a repository of community-developed code and derived datasets for use by other researchers with sufficient access.
@@ -833,7 +834,7 @@ Figure&nbsp;10.9: The N3C Knowledge Store is a repository of community-developed
 <div id="fig-publishing-100-knowledge-store-form" class="quarto-figure quarto-figure-center quarto-float anchored" alt="knowledge-store-form">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-publishing-100-knowledge-store-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/publishing/fig-publishing-100-knowledge-store-form.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="images/publishing/fig-publishing-100-knowledge-store-form.png" class="img-fluid figure-img" alt="knowledge-store-form"></a>
+<a href="images/publishing/fig-publishing-100-knowledge-store-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10"><img src="images/publishing/fig-publishing-100-knowledge-store-form.png" class="img-fluid figure-img" alt="knowledge-store-form"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-publishing-100-knowledge-store-form-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.10: Knowledge Store contribution form.
@@ -1446,7 +1447,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

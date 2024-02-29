@@ -79,7 +79,7 @@ Depending upon the type of algorithm, data may also need to be normalized to red
 If you are performing ML on data from people with, for example, diabetes, you should engage at least one clinical diabetes expert with whom you can collaborate.
 One of the strengths of N3C is the large and diverse community of scientists, and it is likely that there is an expert in almost any field of interest who can help.
 Subject matter experts can provide important help in feature selection, assessments of windows for variables, choice of feature transformations and interaction terms in a model, and definition of model performance goals (sensitivity versus specificity trade-off).
-N3C [Domain Teams](#onboarding-domain-teams) are an excellent source of such expertise, as many are organized around clinical topics such as Diabetes, Kidney Injury, Pregnancy, and many more.
+N3C [Domain Teams](onboarding.md#sec-onboarding-dts) are an excellent source of such expertise, as many are organized around clinical topics such as Diabetes, Kidney Injury, Pregnancy, and many more.
 -   **Explainability** -- Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like "black boxes," especially to those who are not versed in machine learning.
 Tools are available to help assess feature importance (e.g., SHAP values [-@lundburg_2018] [-@shapley_1953]
 -   **Adequate Documentation** -- Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research.
@@ -141,7 +141,7 @@ For the basics of creating a code repository and using its debugger, see Chapter
 1.  Reusable ML library package
 
     a.  **Create a folder in a workspace.** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder 
-![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/image-01-create-folder-in-workspace.png){.lightbox} Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
+![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/image-01-create-folder-in-workspace.png){.lightbox}&nbsp;Figure&nbsp;1:&nbsp;Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
     b.  **Create a Python library code repository to implement the ML algorithms.** New → code repository → Python Library → initialize repository ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/image-02-create-python-lib-code-repo.png){.lightbox} Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
     This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
@@ -172,18 +172,16 @@ The classes defined in each of these files extend the ClassificationModel class 
 
     c.  **Add the ml-classification-pipeline library** We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks). First, we need to add the library, by navigating to the Sidebar -\> Libraries -\> search for ml-classification-pipeline.<br /><br />
 ![Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.](images/ml/image-05-search-custom-library.png){.lightbox } Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
-Next, add the library by clicking "Add and install library":<br /><br /> 
-![Figure 6](images/ml/image-06-add-custom-library.png)<br />Figure 6: Add a custom-created python library in the code repository.<br /><br />
-NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter [-@sec-support].<br /><br /> 
+<br/><br/>Next, add the library by clicking "Add and install library":<br />
 ![Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.](images/ml/image-06-add-custom-library.png){.lightbox } Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
-![Figure 7](images/ml/image-07-n3c-access-error-custom-library.png)<br />Figure 7: Access error while adding custom-created libraries in code repositories.<br /><br />
-![Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/image-07-n3c-access-error-custom-library.png){.lightbox } <br>Figure&nbsp;7:&nbsp;
-Next, go back to the 'files' tab on the left sidebar, and commit your changes.
+<br/><br/>NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter [-@sec-support].<br /><br /> 
+![Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/image-07-n3c-access-error-custom-library.png){.lightbox } <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories.
+<br/><br/>Next, go back to the 'files' tab on the left sidebar, and commit your changes.
 
 
     d.  **Implement a random forest model for the prediction task.** Create a new transform that trains a random forest on this cohort:
 
-        ![Figure 8](images/ml/image-08-create-python-script-file.png)Figure 8: Create python script file.
+        ![Figure 8: Create python script file.](images/ml/image-08-create-python-script-file.png){.lightbox }Figure 8: Create python script file.
 
         Now some code - this uses the output of `aff_create_cohort.py` as input, and runs a random forest on it. You'll need to change this line to be a path to somewhere you can write a dataset:
 
@@ -247,7 +245,8 @@ Hence, we will use code workbooks to create visualizations.
 Each function takes in one or more input datasets and produces one output dataset.
 We can import datasets into code workbooks.
 When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.
-<br /><br />![Figure 10](images/ml/image-10-referencing-nodes-codeworkbook.png)<br />Figure 10: Referencing nodes in a code workbook.<br /><br />Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
+![Figure 10: Referencing nodes in a code workbook.](images/ml/image-10-referencing-nodes-codeworkbook.png){.lightbox }<br/>Figure 10: Referencing nodes in a code workbook.<br/>
+<br/>Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
         ``` python
         # AUPRC Computation 
@@ -308,7 +307,8 @@ The inputs to this node will be the outputs generated from the nodes in the prev
             plt.show()
         ```
 
-        Select the 'visualization' tab at the bottom to view the output of this node.<br /><br /> ![Figure 11](images/ml/image-11-viewing-visualization-outputs.png)<br /> Figure 11: Viewing visualization outputs in codeworkbook.
+        Select the 'visualization' tab at the bottom to view the output of this node.<br />
+<br /> ![Figure 11: Viewing visualization outputs in codeworkbook.](images/ml/image-11-viewing-visualization-outputs.png){.lightbox }<br /> Figure 11: Viewing visualization outputs in codeworkbook.
 
 ## Other topics
 
@@ -333,7 +333,8 @@ You can use the code above in your project by following these steps:
 6.  In the empty code repository, open the pulldown menu by the "Clone" button and copy the git remote URL to your clipboard as above in steps (2) and (3)
 
 7.  In the cloned repository on your local machine, run these commands:
-See [Pulling Changes, Pushing to GitHub, Branches and Code Repositories](#sec-publishing-tech-code-github) for details on how to do this.
+See [Pulling Changes, Pushing to GitHub, Branches and Code Repositories](#sec-publishing-tech-code-github) for details on how to do this. <br>
+
     ``` bash
     git remote add mynewrepo [paste remote URL of new repository]
     git push mynewrepo master

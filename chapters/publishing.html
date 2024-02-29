@@ -564,6 +564,7 @@ gtag('config', 'G-5F685V8M7X', { 'anonymize_ip': true});
 <ol type="1">
 <li>Consistent with the approved Data Use Request (<strong>DUR</strong>)</li>
 <li>Consistent with policies to protect the identity of individuals, data partners, and marginalized groups</li>
+<li>Focused on COVID-19</li>
 </ol></li>
 <li><p><strong>Individual consortial contributors</strong>: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication. Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work. Thus, a tiered approach to authorship has been developed (see <a href="#tbl-publishing-authorship" class="quarto-xref">Table&nbsp;<span>10.1</span></a>).</p></li>
 <li><p><strong>N3C collaborative</strong>: Assure that information about the N3C is represented accurately</p></li>
@@ -627,7 +628,7 @@ Table&nbsp;10.1: Authorship tiers designed to accurately represent publication c
 </section>
 <section id="sec-publishing-drr-small" class="level3" data-number="10.2.2">
 <h3 data-number="10.2.2" class="anchored" data-anchor-id="sec-publishing-drr-small"><span class="header-section-number">10.2.2</span> Constraints with aggregated data pertaining to small groups of patients (aka small ‘cell sizes’)</h3>
-<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.</p>
+<p>To protect patient’s data confidentiality, aggregations pertaining to fewer than 20 persons, unless the value is zero, must be identified with a symbol (best represented as <code>&lt; 20</code> with a corresponding statement that group size below 20 has been obscured in accordance with the N3C Data Use Agreement). Users may apply for an appeal to reduce the reportable threshold down to 10 (via the Enclave-external help desk, see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>). A strong scientific rationale for this must be provided. NCATS makes the final decision about whether to approve the appeal. In no cases may group sizes below 10 be considered. Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee. For gender categories such as <em>missing/unknown</em>, a single level of masking is sufficient. See the example below.</p>
 <p>Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the ‘other’ gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV). In their original form (left) these would violate the policy, as there are several values reported below 20. Even if these values are simply replaced with <code>&lt; 20</code> (middle), the masking is still insufficient, because marginal totals can be used to calculate some of their contents. A fully-masked example is shown on the right, modifying the reported values to satisfy the policy constraints, and including a note of the changes made.</p>
 <div id="fig-publishing-010-masking-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="masking-example">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1446,7 +1447,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -280,7 +280,7 @@ It should include any authorities consulted (the literature, the Value Set Autho
 
 ### N3C Concept Set Library {#sec-understanding-sets-library}
 
-The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an Enclave account" >}}, illustrated in @fig-understanding-090-concept-set-versions. This is the first step for deciding whether a new concept is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition.
+The concept sets already created in the Enclave can be browsed in the [concept set browser](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.5a6c64c0-e82b-4cf8-ba5b-645cd77a1dbf) {{< fa lock title="Link requires an Enclave account" >}}, illustrated in @fig-understanding-090-concept-set-versions. This is the first step for deciding whether a new concept set is needed or if an existing concept set can be chosen for inclusion into an analysis as a building block for an analytic variable or cohort definition.
 We recommend that you use or build from existing concept sets, especially the N3C Recommended concepts sets, if they serve your research question.
 A workflow for performing this series of tasks is shown in @fig-understanding-090-concept-set-versions.
 

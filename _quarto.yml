@@ -18,8 +18,8 @@ format:
     - assets/tables.css
     # - assets/citation.css
     link-external-newwindow: true
-    template-partials:
-    - title-block.html
+    # template-partials:
+    # - title-block.html
     filters:
     - lightbox
     lightbox:

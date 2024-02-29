@@ -17,4 +17,4 @@ StripTrailingWhitespace: Yes
 
 UseNativePipeOperator: Yes
 
-MarkdownCanonical: Yes
+MarkdownCanonical: No

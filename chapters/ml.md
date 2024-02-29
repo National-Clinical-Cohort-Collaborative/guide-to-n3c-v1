@@ -281,7 +281,7 @@ When the output of a node is provided as an input to another node within the sam
         **Templates**
 
         To overcome the cumbersome task of creating copies of the same piece of code in multiple nodes to perform the same function over different inputs (for example, computation of AUPRC scores for the outputs of different prediction models), we can create a reusable template which allows parameterization of the inputs for nodes.
-More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/workspace/documentation/product/code-workbook/templates-charts-tutorial) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
+More details and examples about [creation and usage of templates is found in the N3C documentation](https://unite.nih.gov/docs/foundry/code-workbook/templates-getting-started) {{< fa lock title="Link requires an N3C Data Enclave account" >}}.
 More information about Code Workbooks and Templates may be found in Section [-@sec-tools-store-templates].
 
     c.  **Create visualizations.** Create another node in the workbook to draw Box plots of the AUPRC scores of the Logistic Regression, Random Forest, SVM, MLP models computed for ten iterations of the classification of cardiovascular sequelae.

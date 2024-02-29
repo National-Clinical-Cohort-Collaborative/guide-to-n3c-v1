@@ -336,7 +336,11 @@ Recorded trainings are provided in the "Logic Liaison Templates" module of the N
 Personalized help is provided during N3C Office Hours.
 Support for issues and errors encountered when using a Logic Liaison Template can be received by submitting a technical support ticket in the Enclave.
 Team members are also active in the `#n3c-analytics` Slack channel.
-The Logic Liaison team will send a representative to your domain team meetings on an as-needed basis for general consultation.
+The Logic Liaison team will send a representative to your domain team meetings on an as-needed basis for general consultation.[^support-3]
+
+[^support-3]: **Scavenger Hunt:** This footnote is the last clue in the N3C Enclave Scavenger Hunt! If you want to do the hunt yourself, the first clue can be found [here](https://unite.nih.gov/workspace/notepad/view/ri.notepad.main.notepad.575f9794-c043-4a3c-a648-1c222d2d8ed9) {{< fa lock title="Link requires an Enclave account" >}}.
+
+    Each clue in the hunt asks that you find specific resources and provides a brief description of each once found. This resource--the Guide to N3C--is designed as a comprehensive reference for N3C, and provides information and links to many other resources in its chapters.
 
 ::: {.callout-note appearance="simple"}
 

@@ -8,7 +8,7 @@ author:
 
   - name: Lisa Eskenazi
     affiliation: Johns Hopkins University
-    affiliation-url:
+    affiliation-url: https://e-catalogue.jhu.edu/medicine/medical-students/subjects-instruction/health-sciences-informatics/
     email: leskena2@jh.edu
     orcid: 0000-0001-8693-7838
     attributes:

@@ -16,13 +16,13 @@ author:
 
   - name: Jimmy Phuong
     affiliation: University of Washington
-    # affiliation-url:
+    affiliation-url: https://www.washington.edu/
     email: jphuong@uw.edu
     orcid: 0000-0003-0956-8404
 
   - name: Kate Bradwell
     affiliation: Palantir Technologies
-    affiliation-url:
+    affiliation-url: https://www.palantir.com/
     email: kbradwell@palantir.com
     orcid: 0000-0002-9730-1808
 

@@ -20,6 +20,9 @@ format:
     link-external-newwindow: true
     # template-partials:
     # - title-block.html
+    # title-block-banner: "#64296B" # N3C purple
+    title-block-banner: images/g2n3c-banner-1.png
+    title-block-banner-color: "#FCB754" # N3C gold
     filters:
     - lightbox
     lightbox:

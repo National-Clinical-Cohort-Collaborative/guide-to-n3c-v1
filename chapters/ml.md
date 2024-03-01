@@ -142,11 +142,11 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
     a.  **Create a folder in a workspace.** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder
 
-        ![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/fig-ml-01-create-folder-in-workspace.png){#fig-ml-01-create-folder-in-workspace fig-alt="Create a folder in your workspace of choice"}
+        ![Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/fig-ml-01-create-folder-in-workspace.png){#fig-ml-01-create-folder-in-workspace fig-alt="Create a folder in your workspace of choice"}
 
     a.  **Create a Python library code repository to implement the ML algorithms.** New → code repository → Python Library → initialize repository
 
-        ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/fig-ml-02-create-python-lib-code-repo.png){#fig-ml-02-create-python-lib-code-repo fig-alt="Create a python library code repository"}
+        ![Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/fig-ml-02-create-python-lib-code-repo.png){#fig-ml-02-create-python-lib-code-repo fig-alt="Create a python library code repository"}
 
         This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and multi-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 

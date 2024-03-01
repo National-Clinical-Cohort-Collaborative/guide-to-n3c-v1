@@ -169,7 +169,9 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
 1.  Post COVID cardiovascular sequelae prediction <!-- https://serial-comma.com/blog/posts/2020-09-13-hanging-paragraphs-in-markdown.html -->
 
-    a.  **Create a Python transforms code repository.** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository: ![Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.](images/ml/image-03-create-python-data-transforms-code-repo.png){.lightbox } Figure 3: Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.
+    a.  **Create a Python transforms code repository.** Go to the folder that you had created in step 1a and create a new python transforms code repository - New → code repository → Data transforms (Python) → initialize repository:
+
+        ![Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.](images/ml/fig-ml-03-create-python-data-transforms-code-repo.png){#fig-ml-03-create-python-data-transforms-code-repo fig-alt="Create a python data transforms code repository"}
 
     a.  **Define cohort and features using COVID patient facts table.** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create ![Figure 4: Create a new python transformation script file within a code repository.](images/ml/image-04-create-python-transformation-file.png){.lightbox } Figure 4: Create a new python transformation script file within a code repository.
 

@@ -116,7 +116,7 @@ To demonstrate how to implement ML software in N3C, we will walk through a speci
 
 1.  **Create a reusable ML library package.** This library contains the implementations of standard machine learning classification algorithms such as logistic regression, naïve Bayes, random forest, support vector machine, and multi-layer perceptron.
 This package can be imported and used for any downstream classification applications.
-2.  **Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table** (See also Chapter [-@sec-tools].) 
+2.  **Define cohort and features using the N3C Logic Liaison COVID-19 Diagnosed or Lab Confirmed Patients fact table** (See also Chapter [-@sec-tools].)
 This table provides many variables (including records for COVID-associated conditions such as diabetes or acute kidney injury by the timing of each: before, during and after acute COVID-19 infection) for each patient and is useful for ML tasks.
 3.  **Choose one post-COVID indicator column as a label to predict.** Here we will predict cardiovascular sequelae following acute COVID.
 In this example, we will use 'Atrial Fibrillation Flutter (AFF)' post COVID-19 as an indicator for cardiovascular sequelae.
@@ -140,7 +140,7 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
 1.  Reusable ML library package
 
-    a.  **Create a folder in a workspace.** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder 
+    a.  **Create a folder in a workspace.** Go to your DUR workspace or "Practice Area - Public and Example Data" Left sidebar → Search → "Practice Area - Public and Example Data" → click on first hit → make a new folder
 ![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/image-01-create-folder-in-workspace.png){.lightbox}&nbsp;Figure&nbsp;1:&nbsp;Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located.
     b.  **Create a Python library code repository to implement the ML algorithms.** New → code repository → Python Library → initialize repository ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/image-02-create-python-lib-code-repo.png){.lightbox} Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
     This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
@@ -174,7 +174,7 @@ The classes defined in each of these files extend the ClassificationModel class 
 ![Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.](images/ml/image-05-search-custom-library.png){.lightbox } Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
 <br/><br/>Next, add the library by clicking "Add and install library":<br />
 ![Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.](images/ml/image-06-add-custom-library.png){.lightbox } Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
-<br/><br/>NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter [-@sec-support].<br /><br /> 
+<br/><br/>NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter [-@sec-support].<br /><br />
 ![Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/image-07-n3c-access-error-custom-library.png){.lightbox } <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories.
 <br/><br/>Next, go back to the 'files' tab on the left sidebar, and commit your changes.
 
@@ -216,16 +216,16 @@ The classes defined in each of these files extend the ClassificationModel class 
                                                    standardize_exclude_columns))
 
 
-        def run(dataset, 
-                n_iterations, 
+        def run(dataset,
+                n_iterations,
                 train_test_ratio,
-                preprocess_exclude_columns, 
+                preprocess_exclude_columns,
                 standardize_exclude_columns):
 
-             random_forest_model = random_forest.RandomForestModel(dataset, 
-                                                                   n_iterations, 
-                                                                   train_test_ratio, 
-                                                                   preprocess_exclude_columns, 
+             random_forest_model = random_forest.RandomForestModel(dataset,
+                                                                   n_iterations,
+                                                                   train_test_ratio,
+                                                                   preprocess_exclude_columns,
                                                                    standardize_exclude_columns)
              return random_forest_model.run()
         ```
@@ -249,11 +249,11 @@ When the output of a node is provided as an input to another node within the sam
 <br/>Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
         ``` python
-        # AUPRC Computation 
+        # AUPRC Computation
 
-        def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"): 
+        def logistic_regression_allpatients_auprc("REFERENCE TO THE LOGISTIC REGRESSION OUTPUT DATASET (e.g. aff_allpatients_lr_output)"):
 
-            from sklearn.metrics import precision_recall_curve, auc 
+            from sklearn.metrics import precision_recall_curve, auc
             import pandas as pd
 
             df = aff_allpatients_lr_output
@@ -293,14 +293,14 @@ The inputs to this node will be the outputs generated from the nodes in the prev
         import seaborn as sns
         import pandas as pd
 
-        def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc, 
-                                      svm_allpatients_auprc, 
-                                      mlp_allpatients_auprc, 
+        def allpatients_auprc_boxplot(logistic_regression_allpatients_auprc,
+                                      svm_allpatients_auprc,
+                                      mlp_allpatients_auprc,
                                       rf_allpatients_auprc):
 
-            df = pd.concat([logistic_regression_allpatients_auprc, 
-                            svm_allpatients_auprc, 
-                            mlp_allpatients_auprc, 
+            df = pd.concat([logistic_regression_allpatients_auprc,
+                            svm_allpatients_auprc,
+                            mlp_allpatients_auprc,
                             rf_allpatients_auprc])
             ax = sns.boxplot(x="model", y="auprc", data=df, notch=False)
             plt.title("Area under Precision-Recall Curve : All Patients")
@@ -347,8 +347,8 @@ A full discussion of Spark ML is beyond the scope of this chapter, but an implem
 The official MLlib guide to SparkML is a good resource, and there are specific integrations with the Enclave documented here.
 
 ### Using R in code workbooks
-In the examples code reported above, we reported Python code, which works within Code Repositories (see @sec-tools-apps-repo). 
+In the examples code reported above, we reported Python code, which works within Code Repositories (see @sec-tools-apps-repo).
 However, some ML algorithms make use of statistical inference/univariate statistics or multiple-imputation techniques, whose more reliable implementation (with underlying C/C++ engine) is available in R.
-If you prefer to use R, you can use code within Code Workbooks (see @sec-tools-apps-workbook). 
+If you prefer to use R, you can use code within Code Workbooks (see @sec-tools-apps-workbook).
 Note also that the Enclave very recently enabled support for R Studio in the Enclave.
 Finally, a useful "Enclave ML Resources Overview" with links to various resources is available in the [N3C Knowledge Store](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-3D8340A&view=focus).

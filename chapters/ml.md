@@ -1,18 +1,48 @@
 ---
 author:
-  - name: Peter Robinson
-    affiliation: The Jackson Laboratory
-    affiliation-url: https://robinsongroup.github.io/
-    # email: Peter.Robinson@jax.org
-    # orcid:
+  - name: Peter N Robinson
+    affiliation: Berlin Institute of Health at Charité
+    affiliation-url: https://www.bihealth.org/
+    email: peter.robinson@bih-charite.de
+    orcid: 0000-0002-0736-9199
     attributes:
-      corresponding: true
+      corresponding: true    
 
   - name: Justin Reese
-    affiliation: Lawrence Berkeley National Lab
-    affiliation-url: https://www.lbl.gov/
-    # email: justaddcoffee@gmail.com
-    # orcid:
+    affiliation: Lawrence Berkeley National Laboratory
+    affiliation-url: https://biosciences.lbl.gov/profiles/justin-reese/
+    email: justinreese@lbl.gov
+    orcid: 0000-0002-2170-2250
+
+  - name: Blessy Antony
+    affiliation: Virginia Tech
+    affiliation-url: https://cs.vt.edu/
+    email: blessyantony@vt.edu
+    orcid: 0000-0002-1269-5191
+
+  - name: Elena Casiraghi
+    affiliation: Università degli Studi di Milano
+    affiliation-url: https://casiraghi.di.unimi.it/
+    email: elena.casiraghi@unimi.com
+    orcid: 0000-0003-2024-7572
+
+  - name: David Sahner
+    affiliation: National Center for Advancing Translational Sciences
+    affiliation-url: https://ncats.nih.gov/
+    email: david.sahner@nih.gov
+    orcid: 0000-0002-4616-1171
+
+  - name: T. M. Murali
+    affiliation: Virginia Tech
+    affiliation-url: https://bioinformatics.cs.vt.edu/~murali/
+    email: murali@cs.vt.edu
+    orcid: 0000-0003-3688-4672
+
+  - name: Hannah Blau
+    affiliation: The Jackson Laboratory for Genomic Medicine
+    affiliation-url: https://www.jax.org/
+    email: hannah.blau@jax.org
+    orcid: 0000-0003-4557-5492
 
 csl: ../assets/csl/apa-7e.csl
 ---

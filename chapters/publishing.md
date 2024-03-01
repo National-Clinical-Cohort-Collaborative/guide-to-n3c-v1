@@ -74,6 +74,7 @@ The guiding principle of the Publication Committee is to be a steward of the fol
 1. **Data partners and individual patients**: Assure that the publication is:
     1. Consistent with the approved Data Use Request (**DUR**)
     1. Consistent with policies to protect the identity of individuals, data partners, and marginalized groups
+    1. Focused on COVID-19
 
 1. **Individual consortial contributors**: Assure inclusive and appropriate attribution of the work that went into the data elements used for a given analysis or publication.
 Many individuals contribute time and expertise into building the N3C, and it is important to acknowledge their work.
@@ -129,6 +130,7 @@ A strong scientific rationale for this must be provided.
 NCATS makes the final decision about whether to approve the appeal.
 In no cases may group sizes below 10 be considered.
 Authors must include an asterisk or footnote in their manuscript to indicate that the values as low as 10 are reported with approval from the N3C Download Committee.
+For gender categories such as _missing/unknown_, a single level of masking is sufficient. See the example below.
 
 Example: Consider the following fictional table, which reports several aggregations of fewer than 20 patients in the 'other' gender category, race (AI/AN, black), and in comorbidities (Dementia, HIV).
 In their original form (left) these would violate the policy, as there are several values reported below 20.

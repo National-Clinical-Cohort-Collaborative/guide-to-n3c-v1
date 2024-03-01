@@ -57,7 +57,7 @@ A full discussion of this is beyond the scope of this document, but a partial li
 
 -   **Generalizability** -- models trained on one set of data often do not perform well on data originating from other places (e.g., other hospital systems) or other times (e.g., in a different period of time in the COVID pandemic) [-@roberts_2021].
 Since the goal of supervised machine learning is to develop generalizable algorithms that perform well on completely unseen (i.e., independent) test data, practitioners must be familiar with various techniques and considerations that mitigate the risk of failure to generalize (i.e., model overfitting) in the appropriate context, such as regularization, dimensionality reduction, feature extraction, cross-validation, and use of a model type that is appropriate given the amount of available data (e.g., deep learning algorithms may require relatively large training sets) [-@chollet_2021, @geron_2022].
-The machine learning practitioner should thoroughly understand the potential trade-off between under-fitting and overfitting a predictive model [-@hastie_2009].
+The machine learning practitioner should thoroughly understand the potential trade-off between under-fitting and over-fitting a predictive model [-@hastie_2009].
 In addition, N3C data is not a random sample, and it worth familiarizing yourself with the data as described in Chapters [-@sec-understanding] and [-@sec-cycle].
 -   **Social bias** -- scientific literature abounds with ML models and results that contain bias with respect to factors such as gender, ethnicity, and race.
 It is critical to realize that the choice of data or ML model may reinforce harmful bias in scientific literature [-@roberts_2021].
@@ -65,7 +65,7 @@ This can happen even if you do not intend to introduce such a bias.
 -   **Data Considerations**
     -   **Site-Level Heterogeneity** -- N3C contains data from a large number of different hospital/healthcare systems (identified by the variable `data_parter_id` in the N3C `person` table) with several distinct common data models (ACT, OMOP, PCORNET, TRINETX).
 Features can vary wildly between data partners due to factors such as differing data models, patient populations, coding practices, and ETL code required for harmonization of data.
-This can negsatively affect ML models, for example by limiting generalizability of models that depend on features that differ between sites [-@fu_2020].
+This can negatively affect ML models, for example by limiting generalizability of models that depend on features that differ between sites [-@fu_2020].
 It is thus helpful to understand the N3C data ingestion and harmonization processes described in Chapter [-@sec-cycle].
     -   **Missingness** -- Your data will likely have missingness, sometimes quite often.
 How you deal with this can greatly affect your ML results.
@@ -148,7 +148,7 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
         ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/fig-ml-02-create-python-lib-code-repo.png){#fig-ml-02-create-python-lib-code-repo fig-alt="Create a python library code repository"}
 
-        This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
+        This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and multi-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
     c.  **Adding dependencies to code repository** -- See the N3C documentation on discovering and using Python libraries in code repositories.
 
@@ -313,7 +313,7 @@ The inputs to this node will be the outputs generated from the nodes in the prev
         ```
 
         Select the 'visualization' tab at the bottom to view the output of this node.<br />
-<br /> ![Figure 11: Viewing visualization outputs in codeworkbook.](images/ml/image-11-viewing-visualization-outputs.png){.lightbox }<br /> Figure 11: Viewing visualization outputs in codeworkbook.
+<br /> ![Figure 11: Viewing visualization outputs in Code Workbook.](images/ml/image-11-viewing-visualization-outputs.png){.lightbox }<br /> Figure 11: Viewing visualization outputs in Code Workbook.
 
 ## Other topics
 

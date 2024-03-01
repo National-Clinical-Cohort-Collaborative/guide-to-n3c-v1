@@ -144,8 +144,11 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
         ![Figure 1: Create a folder in your workspace of choice (private DUR or public practice area) where all your code will be located. ](images/ml/fig-ml-01-create-folder-in-workspace.png){#fig-ml-01-create-folder-in-workspace fig-alt="Create a folder in your workspace of choice"}
 
-    b.  **Create a Python library code repository to implement the ML algorithms.** New → code repository → Python Library → initialize repository ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/image-02-create-python-lib-code-repo.png){.lightbox} Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.
-    This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
+    b.  **Create a Python library code repository to implement the ML algorithms.** New → code repository → Python Library → initialize repository
+
+        ![Figure 2: Create a python library code repository that will contain all reusable code to be later used in other downstream code repositories.](images/ml/fig-ml-02-create-python-lib-code-repo.png){#fig-ml-02-create-python-lib-code-repo fig-alt="Create a python library code repository"}
+
+        This repository provides two frameworks that implement logistic regression, random forest, support vector machine, and muli-layer perceptron - scikit-learn and pyspark.ml at ml-classification-pipeline/src/models/.
 
     c.  **Adding dependencies to code repository** -- See the N3C documentation on discovering and using Python libraries in code repositories.
 

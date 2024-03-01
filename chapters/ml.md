@@ -49,7 +49,7 @@ csl: ../assets/csl/apa-7e.csl
 
 # Machine Learning {#sec-ml}
 
-**Chapter Leads:** Peter Robinson, Justin Reese, Blessy Antony, T.M. Murali, Elena Casiraghi, Hannah Blau
+**Chapter Leads:** Peter Robinson, Justin Reese
 
 :::{.callout-note}
 This material for this chapter is mostly complete,

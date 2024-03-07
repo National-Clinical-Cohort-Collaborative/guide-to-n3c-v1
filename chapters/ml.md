@@ -203,22 +203,29 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
         ![Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.](images/ml/fig-ml-03-create-python-data-transforms-code-repo.png){#fig-ml-03-create-python-data-transforms-code-repo fig-alt="Create a python data transforms code repository"}
 
-    a.  **Define cohort and features using COVID patient facts table.** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create ![Figure 4: Create a new python transformation script file within a code repository.](images/ml/image-04-create-python-transformation-file.png){.lightbox } Figure 4: Create a new python transformation script file within a code repository.
+    a.  **Define cohort and features using COVID patient facts table.** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create 
+
+        ![Create a new python transformation script file within a code repository.](images/ml/fig-ml-04-create-python-transformation-file.png){#fig-ml-04-create-python-transformation-file fig-alt="Create a new python transformation script file within a code repository."}
 
         We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks):
 
     a.  **Add the ml-classification-pipeline library.** We've created a code repository, now we can create a transform to build a random forest model using the ml-classification-pipeline library (note that this library can also be used in code workbooks). First, we need to add the library, by navigating to the Sidebar -\> Libraries -\> search for ml-classification-pipeline.<br /><br />
 
-        ![Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.](images/ml/image-05-search-custom-library.png){.lightbox } Figure&nbsp;5:&nbsp;Search for a custom-created python library in the code repository.
+        ![Search for a custom-created python library in the code repository.](images/ml/fig-ml-05-search-custom-library.png){#fig-ml-05-search-custom-library fig-alt="Search for a custom-created python library in the code repository."}
+
         <br/><br/>Next, add the library by clicking "Add and install library":<br />
-        ![Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.](images/ml/image-06-add-custom-library.png){.lightbox } Figure&nbsp;6:&nbsp;Add a custom-created python library in the code repository.
+
+        ![Add a custom-created python library in the code repository.](images/ml/fig-ml-06-add-custom-library.png){#fig-ml-06-add-custom-library fig-alt="Add a custom-created python library in the code repository."}
+
         <br/><br/>NOTE: An error message similar to the one below is sometimes encountered during this step. N3C support may be necessary to resolve this error, see Chapter [-@sec-support].<br /><br />
-        ![Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/image-07-n3c-access-error-custom-library.png){.lightbox } <br>Figure&nbsp;7:&nbsp;Access error while adding custom-created libraries in code repositories.
+
+        ![Access error while adding custom-created libraries in code repositories. N3C support may be necessary to resolve this error.](images/ml/fig-ml-07-n3c-access-error-custom-library.png){#fig-ml-07-n3c-access-error-custom-library fig-alt="Access error while adding custom-created libraries in code repositories."}
+
         <br/><br/>Next, go back to the 'files' tab on the left sidebar, and commit your changes.
 
     a.  **Implement a random forest model for the prediction task.** Create a new transform that trains a random forest on this cohort:
 
-        ![Figure 8: Create python script file.](images/ml/image-08-create-python-script-file.png){.lightbox }Figure 8: Create python script file.
+        ![Create python script file.](images/ml/fig-ml-08-create-python-script-file.png){#fig-ml-08-create-python-script-file fig-alt="Create python script file."}
 
         Now some code - this uses the output of `aff_create_cohort.py` as input, and runs a random forest on it. You'll need to change this line to be a path to somewhere you can write a dataset:
 
@@ -271,7 +278,7 @@ Hence, we will use code workbooks to create visualizations.
 
     a.  **Create a code workbook.** Navigate to the folder location where you want to create the code workbook → Right Click → New →Code Workbook.
 
-        ![Figure 9: Create a new code workbook.](images/ml/image-09-create-codeworkbook.png){.lightbox } Figure 9: Create a new code workbook.
+        ![Create a new code workbook.](images/ml/fig-ml-09-create-codeworkbook.png){#fig-ml-09-create-codeworkbook fig-alt="Create a new code workbook."}
 
         Additional details about the usage, customization, and features of Code Workbooks are discussed in Chapter [-@sec-tools].
 
@@ -282,7 +289,9 @@ Hence, we will use code workbooks to create visualizations.
         Each function takes in one or more input datasets and produces one output dataset.
         We can import datasets into code workbooks.
         When the output of a node is provided as an input to another node within the same code workbook, a dependency edge is established from the former to the latter node.
-        ![Figure 10: Referencing nodes in a code workbook.](images/ml/image-10-referencing-nodes-codeworkbook.png){.lightbox }<br/>Figure 10: Referencing nodes in a code workbook.<br/>
+
+        ![Referencing nodes in a code workbook.](images/ml/fig-ml-10-referencing-nodes-codeworkbook.png){#fig-ml-10-referencing-nodes-codeworkbook fig-alt="Referencing nodes in a code workbook."}
+
         <br/>Example: Implement the computation of area under precision recall curve (AUPRC) for the predictions of Logistic Regression models.
 
         ``` python
@@ -346,7 +355,8 @@ Hence, we will use code workbooks to create visualizations.
         ```
 
         Select the 'visualization' tab at the bottom to view the output of this node.<br />
-        <br /> ![Figure 11: Viewing visualization outputs in Code Workbook.](images/ml/image-11-viewing-visualization-outputs.png){.lightbox }<br /> Figure 11: Viewing visualization outputs in Code Workbook.
+
+        ![Viewing visualization outputs in Code Workbook.](images/ml/fig-ml-11-viewing-visualization-outputs.png){#fig-ml-11-viewing-visualization-outputs fig-alt="Viewing visualization outputs in Code Workbook."}
 
 ## Other topics
 

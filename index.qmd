@@ -27,38 +27,41 @@ Individual chapter lead and contributor affiliations are also provided in each c
 _Editorial Committee_<br>
 Shawn T. O'Neil, Will Beasley, Johanna Loomba, Sharon Patrick, Kenneth J. Wilkins, Karen M. Crowley
 
-@sec-intro -- _Introduction_<br>
+@sec-intro <br>
 Karen M. Crowley, Shawn T. O'Neil
 
-@sec-story -- _A Research Story_<br>
+@sec-story <br>
 Will Beasley, A. Jerrod Anzalone, Sharon Patrick
 
-@sec-cycle -- _Data Life Cycle - From Patients to N3C Researchers_<br>
+@sec-cycle <br>
 Stephanie Hong, Bryan Laraway, Xiaohan Tanner Zhang, Maya Choudhury, Sofia Z. Dard
 
-@sec-governance -- _Governance, Leadership, and Operations Structures_<br>
+@sec-governance <br>
 Christine Suver, Johanna Loomba
 
-@sec-onboarding -- _Onboarding, Enclave Access, N3C Team Science_<br>
+@sec-onboarding <br>
 Sharon Patrick, Jonathan F. Emery, Suzanne McCahan, Mary Helen Mays
 
-@sec-access -- _Getting & Managing Data Access_<br>
+@sec-access <br>
 Shawn T. O'Neil, Mariam Deacy
 
-@sec-understanding -- _Understanding the Data_<br>
+@sec-understanding <br>
 Harold P. Lehmann, Lisa Eskanazi, Sigfried Gold, Shawn T. O'Neil, Thomas Richards, Kristin Kostka
 
-@sec-tools -- _Introducing Enclave Analysis Tools_<br>
+@sec-tools <br>
 Amy Olex, Andrea G. Zhou, Johanna Loomba, Evan French, Shawn T. O'Neil, Steven G. Johnson
 
-@sec-practices -- _Best Practices for Research Life Cycle_<br>
+@sec-practices <br>
 Harold P. Lehmann, Hytham Sidky, Jimmy Phuong, Kate Bradwell, Kenneth J. Wilkins, Andrea G. Zhou, David Sahner
 
-@sec-publishing -- _Publishing and Sharing Your Work_<br>
+@sec-publishing <br>
 Julie A. McMurry, Jeremy R. Harper, Christine Suver, Carolyn T. Bramante, Mary K. Emmett, Amit K. Saha, Farrukh M. Koraishy, A. Jerrod Anzalone, Shawn T. O'Neil
 
-@sec-support -- _Special Topic: Help and Support_<br>
+@sec-support <br>
 Shawn T. O'Neil, Saad Ljazouli, Johanna Loomba, Lisa Eskanazi
+
+@sec-ml <br>
+Peter Robinson, Justin Reese
 
 ## How to Contribute {#sec-welcome-contribute}
 

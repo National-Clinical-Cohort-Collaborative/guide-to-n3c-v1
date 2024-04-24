@@ -232,8 +232,8 @@ and clicking one will suggest visiting the DUR dashboards described below.](imag
 Workspaces are used for multiple purposes.
 Some store the Level 1/2/3 data; the "LDS Release" workspace for example stores the tables for the Level 3 LDS data.
 (The Data Catalog provides a more efficient way to access these tables however, more on that below.)
-Some are used to store "external" datasets such as publicly-available US Census data (see @sec-understanding).
-The "N3C Training Area" workspace can be accessed by anyone as a place to practice on notional data (see @sec-publishing).
+Some are used to store "external" datasets such as publicly-available US Census data (see @sec-understanding-public).
+The "N3C Training Area" workspace can be accessed by anyone as a place to practice on notional data (see @sec-support-notional).
 Most, however, house research projects, and these are indicated with an `RP-XXXXXX` prefix.
 
 Work in one project workspace can access only data or files from another project workspace

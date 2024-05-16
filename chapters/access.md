@@ -105,7 +105,7 @@ Level 1 data are no longer available. Previously, these data
 contained "synthetic" data generated via statistical processes to match specific
 aspects of the Level 3 data. We include this section here for historical context.
 
-#### Example N3C OMOP Data Format {#sec-access-background-l1-example}
+### Example N3C OMOP Data Format {#sec-access-background-l1-example}
 
 To give a sneak preview of the primary N3C data format,
 here's a snapshot of a few columns of notional (_fake_) data in OMOP format

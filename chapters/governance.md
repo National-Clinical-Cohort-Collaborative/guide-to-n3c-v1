@@ -150,10 +150,10 @@ Only then can users submit a Data Use Request (DUR).
 NCATS established a Data Access Committee (DAC) responsible for reviewing and approving DURs and addressing user questions.
 Users must submit a new DUR for every separate study. (See Chapters [-@sec-onboarding] and [-@sec-access] for details.)
 
-There are three levels of data access commensurate with the sensitivity of the data.
-See @sec-access for more details about these levels.
+There are two levels of data access commensurate with the sensitivity of the data (Level 1 is no longer available, 
+see @sec-access for more details about these levels.)
 
-![Data Tiers.](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
+![Data Tiers. Note that Level 1 data are deprecated.](images/governance/fig-governance-020-tiers.png){#fig-governance-020-tiers fig-alt="Data Tiers"}
 
 Access to each data level requires approval from the Data Access Committee.
 In addition, investigators requesting access to level 3 data must submit proof of IRB approval from their institution or an independent accredited IRB for their intended use.

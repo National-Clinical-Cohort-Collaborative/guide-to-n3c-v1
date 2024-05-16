@@ -44,19 +44,16 @@ There are several steps that need to be completed in order for a researcher or N
 
 ## Researcher Eligibility {#sec-onboarding-eligibility}
 
-Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave.
+Researchers from both foreign and U.S.-based institutions are eligible to have access to the N3C Data Enclave.
 Everyone with an Enclave account has access to the tools and public [datasets](https://covid.cd2h.org/external-datasets) that are available in the Enclave.
 
-There are several levels of Electronic Health Record (EHR) data that are available within the Enclave.
+There are two levels of Electronic Health Record (EHR) data that are available within the Enclave, termed "Level 2" and "Level 3" for historical reasons.
 For more information about the levels of data, see @sec-access-background.
 
-If an individual is not affiliated with an institution, they are termed a "citizen scientist".   Citizen scientists are only eligible to access synthetic data (Level 1).
-This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.
-
-Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removing protected health information (PHI) (Level 2).
+Researchers from institutions outside the U.S. are eligible to access patient data that has been de-identified by removing protected health information (PHI) (Level 2).
 Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). ^[A list of identifiers that the HIPAA Privacy Rule applies to is available on the U.S. Department of Health & Human Services website in the section [The second is the "Safe Harbor" method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html).]
 
-Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.
+Researchers from U.S.-based institutions are eligible to access de-identified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a _limited_ dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.
 
 ### Data Level 3 {#sec-onboarding-eligibility-l3}
 
@@ -104,23 +101,9 @@ Researchers from U.S.-based institutions are eligible to access synthetic data (
 
 ### Data Level 1 {#sec-onboarding-eligibility-l1}
 
-* _Also known as_:
-  * Synthetic Data Set
-
-* _Data Description_:
-  Data that are computationally derived from the LDS that resemble patient information statistically but are not actual patient data.
-
-* _Eligible Users_:
-  * Researchers from U.S.-based institutions
-  * Researchers from foreign institutions
-  * Citizen scientists
-
-* _Access Requirements_:
-  * N3C registration
-  * N3C Data Enclave account
-  * DUA executed with NCATS
-  * NIH IT training completion
-  * Approved DUR
+Level 1 data are no longer available. Previously, these data 
+contained "synthetic" data generated via statistical processes to match specific
+aspects of the Level 3 data. We include this section here for historical context.
 
 ## Program Registration {#sec-onboarding-program}
 
@@ -215,16 +198,18 @@ A data use agreement (DUA) establishes the permitted uses of the data in the N3C
 By signing the agreement, an institutional official is assuring that users from their institution will abide by the terms defined in the agreement.
 
 A DUA must be executed by the National Center for Advancing Translational Science (NCATS) and a research institution or private organization.
-The DUA must be signed by authorized officials who have the authority to bind all users at their organization to the terms of the DUA.  (A citizen scientist who is not affiliated with an institution must execute a DUA with NCATS individually in order to gain access to the Enclave.)  A DUA will be in effect for five years from the DUA Effective Date.
+The DUA must be signed by authorized officials who have the authority to bind all users at their organization to the terms of the DUA. A DUA will be in effect for five years from the DUA Effective Date.
 
 Every individual who has access to the Enclave must be covered by a DUA.
 This DUA must be in place before an account for the Enclave is requested.
 If your institution has an active DUA, there is no additional action required with regard to the DUA.
 A list of institutions with DUAs can be found at <https://covid.cd2h.org/duas>.
 
-The [Institutional DUA form](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) is available on the web.
-If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to <NCATSPartnerships@mail.nih.gov>.
-See <https://ncats.nih.gov/n3c/resources/data-access> for more information on access forms and resources.
+:::{.callout-warning}
+The original Data Use Agreement is set to expire in early 2025. Researchers wishing to continue access to N3C COVID data beyond 4/1/2025
+**must** have their institution sign the new N3C COVID Data Use Agreement *Extension*. More
+information and instructions can be found [here](https://covid.cd2h.org/covid-extension/).
+:::
 
 ## Research Project Teams {#sec-onboarding-team}
 

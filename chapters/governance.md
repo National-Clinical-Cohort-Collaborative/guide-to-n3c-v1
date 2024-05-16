@@ -44,8 +44,7 @@ multiple commercial partners; and a large community of researchers.
 Four [co-leads](https://covid.cd2h.org/team) (two from the researcher community and two from NCATS) developed the vision for N3C and led its implementation with extensive community consultation.
 Their vision was to bridge the traditional silos of biomedical research to rapidly enable team science while respecting the rights of data subjects, institutions, and researchers.
 To accomplish this at record speed, the N3C leadership established five community [workstreams](https://covid.cd2h.org/n3c).
-Five Community workstreams were rapidly organized: Data Partnership & Governance, Phenotype & Data Acquisition, Data Ingestion & Harmonization, Collaborative Analytics, and Synthetic Data.
-focusing on specific N3C components.
+Five Community workstreams were rapidly organized: Data Partnership & Governance, Phenotype & Data Acquisition, Data Ingestion & Harmonization, Collaborative Analytics, and Synthetic Data, focusing on specific N3C components.
 The workstreams are supported by dedicated administrative staff, with virtual workspaces and communication channels (Slack) to share materials and reduce barriers to participation.
 The workstreams meet regularly, and meetings are open to anyone interested in participating or monitoring activities.
 Early on, the N3C conducted [general webinars](https://www.youtube.com/watch?v=O8dZAl9nSds&list=PLE4bNBEGV4OW6UBwCaJzurbQNFhz48TKn&index=7OW6UBwCaJzurbQNFhz48TKn) and Questions and Answers sessions to inform potential partners and created a Welcome Partnership Packet to help initiate participation.
@@ -96,7 +95,7 @@ Seven principles summarize the Community Guiding Principles:
 1. **Partnership**:
   N3C community members are trusted partners committed to honoring the [N3C community guiding principles](https://zenodo.org/record/3979610) and [N3C User Code of Conduct](https://ncats.nih.gov/n3c/resources/data-user-code-of-conduct)
 1. **Inclusivity**:
-  N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19-related research, including citizen/community scientists
+  N3C is open to any organization that wishes to contribute data, code, and ideas, as well as anyone who registers to use N3C data to conduct COVID-19-related research.
 1. **Transparency**:
   Open processes and reproducible research is the hallmark of N3C and good scientific practice.
   Access to data is project-based and focused on COVID-19 research questions.

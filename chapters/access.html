@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -445,10 +445,11 @@ background-size: cover;
   <ul class="collapse">
   <li><a href="#sec-access-background-l3" id="toc-sec-access-background-l3" class="nav-link" data-scroll-target="#sec-access-background-l3"><span class="header-section-number">6.1.1</span> Level 3, Limited Data Set (LDS)</a></li>
   <li><a href="#sec-access-background-l2" id="toc-sec-access-background-l2" class="nav-link" data-scroll-target="#sec-access-background-l2"><span class="header-section-number">6.1.2</span> Level 2, De-Identified</a></li>
-  <li><a href="#sec-access-background-l1" id="toc-sec-access-background-l1" class="nav-link" data-scroll-target="#sec-access-background-l1"><span class="header-section-number">6.1.3</span> Level 1, Synthetic</a></li>
-  <li><a href="#sec-access-background-pprl" id="toc-sec-access-background-pprl" class="nav-link" data-scroll-target="#sec-access-background-pprl"><span class="header-section-number">6.1.4</span> PPRL Data</a></li>
+  <li><a href="#sec-access-background-l1" id="toc-sec-access-background-l1" class="nav-link" data-scroll-target="#sec-access-background-l1"><span class="header-section-number">6.1.3</span> Level 1, (Synthetic, Deprecated)</a></li>
+  <li><a href="#sec-access-background-l1-example" id="toc-sec-access-background-l1-example" class="nav-link" data-scroll-target="#sec-access-background-l1-example"><span class="header-section-number">6.1.4</span> Example N3C OMOP Data Format</a></li>
+  <li><a href="#sec-access-background-pprl" id="toc-sec-access-background-pprl" class="nav-link" data-scroll-target="#sec-access-background-pprl"><span class="header-section-number">6.1.5</span> PPRL Data</a></li>
   </ul></li>
-  <li><a href="#sec-access-availability" id="toc-sec-access-availability" class="nav-link" data-scroll-target="#sec-access-availability"><span class="header-section-number">6.2</span> Level 1/2/3 (and PPRL) Availability</a></li>
+  <li><a href="#sec-access-availability" id="toc-sec-access-availability" class="nav-link" data-scroll-target="#sec-access-availability"><span class="header-section-number">6.2</span> Level 2/3 (and PPRL) Availability</a></li>
   <li><a href="#sec-access-workspaces" id="toc-sec-access-workspaces" class="nav-link" data-scroll-target="#sec-access-workspaces"><span class="header-section-number">6.3</span> Workspaces, Permissions, and the Data Catalog</a></li>
   <li><a href="#sec-access-dur" id="toc-sec-access-dur" class="nav-link" data-scroll-target="#sec-access-dur"><span class="header-section-number">6.4</span> The DUR - Data Use Request</a>
   <ul class="collapse">
@@ -457,7 +458,7 @@ background-size: cover;
   <li><a href="#sec-access-dashboards" id="toc-sec-access-dashboards" class="nav-link" data-scroll-target="#sec-access-dashboards"><span class="header-section-number">6.5</span> DUR Dashboards</a></li>
   <li><a href="#sec-access-request" id="toc-sec-access-request" class="nav-link" data-scroll-target="#sec-access-request"><span class="header-section-number">6.6</span> Data Use Request (DUR): Initiate a New Research Project</a>
   <ul class="collapse">
-  <li><a href="#sec-access-request-l1" id="toc-sec-access-request-l1" class="nav-link" data-scroll-target="#sec-access-request-l1"><span class="header-section-number">6.6.1</span> Level 1 DUR Requirements</a></li>
+  <li><a href="#sec-access-request-l1" id="toc-sec-access-request-l1" class="nav-link" data-scroll-target="#sec-access-request-l1"><span class="header-section-number">6.6.1</span> Base DUR Requirements</a></li>
   <li><a href="#sec-access-request-l2" id="toc-sec-access-request-l2" class="nav-link" data-scroll-target="#sec-access-request-l2"><span class="header-section-number">6.6.2</span> Level 2 DUR Requirements</a></li>
   <li><a href="#sec-access-request-l3" id="toc-sec-access-request-l3" class="nav-link" data-scroll-target="#sec-access-request-l3"><span class="header-section-number">6.6.3</span> Level 3 DUR Requirements</a></li>
   <li><a href="#sec-access-request-creation" id="toc-sec-access-request-creation" class="nav-link" data-scroll-target="#sec-access-request-creation"><span class="header-section-number">6.6.4</span> Project Workspace Creation and Data Access</a></li>
@@ -483,8 +484,8 @@ background-size: cover;
 <section id="sec-access-background" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="sec-access-background"><span class="header-section-number">6.1</span> Background: N3C Protected Data Levels</h2>
 <p>Not all data in the N3C Data Enclave requires an approved DUR to access-mock datasets and publicly-available data (e.g., US census data) are accessible by everyone with Enclave access. These low-risk data are covered more in Chapters <a href="understanding.html" class="quarto-xref"><span>7</span></a> and <a href="publishing.html" class="quarto-xref"><span>10</span></a>.</p>
-<p>The harmonized EHR data that <em>do</em> require an approved DUR to access are made available in three different “levels”, each with different amounts of data obfuscation, and correspondingly different access requirements. Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data. On the other hand, some studies can be accomplished with only Level 3 data. Note that if you start with a lower level of data, it is possible to “upgrade” a project’s access level, though all participants in the project will need to complete another DUR for the new level.</p>
-<p>In addition to the primary Level 1, 2, and 3 datasets are “PPRL” data. PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information. These are available alongside only Level 3 data as an optional add-on; we’ll discuss PPRL in more detail below.</p>
+<p>The harmonized EHR data that <em>do</em> require an approved DUR to access are made available in two different “levels” (known as Level 2 and Level 3 for historical reasons–see below), each with different amounts of data obfuscation, and correspondingly different access requirements. Deciding which level of data is appropriate for your study is important, because accessing Level 3 data is more work and restrictive than accessing Level 2 data. On the other hand, some studies can be accomplished with only Level 3 data. Note that if you start with a lower level of data, it is possible to “upgrade” a project’s access level, though all participants in the project will need to complete another DUR for the new level.</p>
+<p>In addition to the primary Level 2 and 3 datasets are “PPRL” data. PPRL data includes extra non-EHR sources of information such as obituary-based mortality records and viral variant sequencing information. These are available alongside only Level 3 data as an optional add-on; we’ll discuss PPRL in more detail below.</p>
 <section id="sec-access-background-l3" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="sec-access-background-l3"><span class="header-section-number">6.1.1</span> Level 3, Limited Data Set (LDS)</h3>
 <p>Level 3, or LDS data is the most complete and protected (the term “limited data set” is defined by HIPAA and may contain a limited set of potentially identifying information). This dataset contains two pieces of Protected Health Information (PHI) defined by HIPAA: full, 5-digit patient zip codes,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and accurate dates of events and services (except for dates of birth which are limited to month and year).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Level 3 data are in the OMOP common data model, with some N3C-specific additions and conveniences, and are versioned as releases as described above. (OMOP and N3C-specific additions are covered in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>.)</p>
@@ -495,22 +496,11 @@ background-size: cover;
 <p>The Level 2 data are also in OMOP format and versioned as releases. We’ll forgo examples of notional data because the format is exactly the same as for Level 3, LDS data.</p>
 </section>
 <section id="sec-access-background-l1" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="sec-access-background-l1"><span class="header-section-number">6.1.3</span> Level 1, Synthetic</h3>
-<p>Level 1, or Synthetic,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> data provide the most anonymous view of the harmonized data, and are quite different from the Level 2 and 3 datasets in both format and content. Rather, Level 1 data were <em>generated</em> from a statistical model of a <em>researcher-defined subset</em> of the Level 3 data. This means Level 1 data contain no real patient records at all, but only a synthetic derivative designed to be statistically similar. The generation process is handled by a private company, MDClone, whose proprietary algorithms also look for resulting information that is too similar to real patient information, potentially resulting in a loss of patient privacy. Such records are masked with “censored” values in the resulting dataset.</p>
-<p>Because this statistical-modeling approach doesn’t scale to the entirety of an EHR database, it is generated on subsets of data of interest to researchers, with the assistance of MDClone representatives. To take an example, consider a research team interested in outcomes of COVID-19 in diabetic vs.&nbsp;non-diabetic individuals. Inside the Enclave, the team initiates a request with an MDClone liaison, suggesting that they would like to collect a set of patient information (with one row per patient in the resulting table), with columns for <code>patient_age</code> (at the date of their first COVID-positive PCR test result), <code>has_diabetes</code> (indicating if their record contains a diabetes diagnosis), <code>days_until_ventilation</code> (number of days elapsed between their COVID-positive test and subsequent mechanical ventilation, or <code>null</code> if they were not ventilated within 30 days), and several other potential confounding variables. The MDClone liaison then collects this requested information from the Level 3 data, develops a representative statistical model, and delivers a table of synthesized rows from the model with the columns requested to the team.</p>
-<p>Level 1 datasets are generated from the most recent Level 3 release at the time of generation, and not automatically updated as new primary N3C data arrives. Notes for each Level 1 dataset describe the date of generation and information included for future reference.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Update: As of mid-2022, N3C is no longer able to generate new synthetic datasets at researcher request. The previously-generated datasets are still available for use however, and gaining access to Level 1 data provides access to all generated synthetic datasets.</p>
-</div>
-</div>
-</div>
-<section id="sec-access-background-l1-example" class="level4" data-number="6.1.3.1">
-<h4 data-number="6.1.3.1" class="anchored" data-anchor-id="sec-access-background-l1-example"><span class="header-section-number">6.1.3.1</span> Example N3C OMOP Data Format</h4>
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="sec-access-background-l1"><span class="header-section-number">6.1.3</span> Level 1, (Synthetic, Deprecated)</h3>
+<p>Level 1 data are no longer available. Previously, these data contained “synthetic” data generated via statistical processes to match specific aspects of the Level 3 data. We include this section here for historical context.</p>
+</section>
+<section id="sec-access-background-l1-example" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="sec-access-background-l1-example"><span class="header-section-number">6.1.4</span> Example N3C OMOP Data Format</h3>
 <p>To give a sneak preview of the primary N3C data format, here’s a snapshot of a few columns of notional (<em>fake</em>) data in OMOP format from the <code>condition_occurrence</code> table:</p>
 <div id="fig-access-010-condition_occurrence" class="quarto-figure quarto-figure-center quarto-float anchored" alt="A subset of rows and columns for mock condition_occurrence data">
 <figure class="quarto-float quarto-float-fig figure">
@@ -545,18 +535,15 @@ Figure&nbsp;6.3: An example of the N3C-specific <code>manifest</code> table. Thi
 </figure>
 </div>
 </section>
-</section>
-<section id="sec-access-background-pprl" class="level3" data-number="6.1.4">
-<h3 data-number="6.1.4" class="anchored" data-anchor-id="sec-access-background-pprl"><span class="header-section-number">6.1.4</span> PPRL Data</h3>
+<section id="sec-access-background-pprl" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="sec-access-background-pprl"><span class="header-section-number">6.1.5</span> PPRL Data</h3>
 <p>PPRL, short for “Privacy-Preserving Record Linkage”, is a strong cryptographic data handling technique allowing for the matching of records about individuals from different data sources, <em>without</em> revealing to any party except the data sources themselves any identifying information about the individual. While we won’t describe how the process works here, researchers with Enclave access can read more about it in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> and the Introduction section of the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=23">PPRL training module</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> in the Training Portal (see <a href="support.html#sec-support-training" class="quarto-xref"><span>Section 11.4</span></a>).</p>
 </section>
 </section>
 <section id="sec-access-availability" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="sec-access-availability"><span class="header-section-number">6.2</span> Level 1/2/3 (and PPRL) Availability</h2>
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-access-availability"><span class="header-section-number">6.2</span> Level 2/3 (and PPRL) Availability</h2>
 <p>Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools. As we’ll discuss below, the most significant access requirement for Level 3 data is a letter of determination from the researchers’ local Institutional Review Board (IRB), so this level of data is also available to other US-based organizations with the ability to work with an Institutional Review Board, or IRB (e.g., pharmaceutical companies).</p>
 <p>Level 2, De-Identified data are available to researchers at both US and approved foreign organizations (those that can sign an institutional Data Use Agreement (DUA), see <a href="cycle.html" class="quarto-xref"><span>Chapter 3</span></a>).</p>
-<p>Level 1 Synthetic data are available to researchers at US and approved foreign organizations (though note the update about Level 1 data generation above), as well as individuals without any affiliation with a research organization, i.e., “citizen scientists”. This level of data thus provides opportunities for public outreach and engagement with topics in clinical science. Citizen scientists must nevertheless complete some training requirements and sign the legal Data Use Agreement document. Minors may apply for access, but only via their parents’ or legal guardians’ consent and with explicit N3C consent.</p>
-<p>Since the registration process is non-trivial for those not affiliated with a research institution, citizen scientists hoping to work with Level 1 Synthetic data should reach out to one of the N3C support venues to get started (see <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>).</p>
 <p>PPRL data can be accessed alongside only Level 3 (LDS) data, and as such has the same access availability. As we’ll discuss below, there are special procedures for gaining access to PPRL data as part of a Level 3 access request.</p>
 </section>
 <section id="sec-access-workspaces" class="level2" data-number="6.3">
@@ -660,8 +647,8 @@ Figure&nbsp;6.9: DUR data level request.
 </figure>
 </div>
 <section id="sec-access-request-l1" class="level3" data-number="6.6.1">
-<h3 data-number="6.6.1" class="anchored" data-anchor-id="sec-access-request-l1"><span class="header-section-number">6.6.1</span> Level 1 DUR Requirements</h3>
-<p>For Level 1 access, the first requirements are that you have read and attested to the <a href="../chapters/onboarding.html#data-use-agreements">Data Use Agreement</a>, and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of onboarding, so we won’t cover them here (see <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>).</p>
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="sec-access-request-l1"><span class="header-section-number">6.6.1</span> Base DUR Requirements</h3>
+<p>For both level 2 and Level 3 access, the first requirements are that you have read and attested to the <a href="../chapters/onboarding.html#data-use-agreements">Data Use Agreement</a>, and that you have completed the required NIH IT Security training course within the past year. Both of these are also required as part of onboarding, so we won’t cover them here (see <a href="onboarding.html" class="quarto-xref"><span>Chapter 5</span></a>).</p>
 <div id="fig-access-100-dur-attestations" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR attestations">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-access-100-dur-attestations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -672,7 +659,7 @@ Figure&nbsp;6.10: DUR attestations.
 </figcaption>
 </figure>
 </div>
-<p>Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the <a href="../chapters/publishing.html">N3C download policy</a> (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions’ policies around doing so. (Some institutions restrict how and when EHR data can be linked to other datasets, including <a href="../chapters/understanding.html">publicly available</a> data ingested for use by N3C researchers.) <!-- TODO: like the last section of the "Understanding the Data" chapter --></p>
+<p>Next, you will need to attest to having read the N3C Code of Conduct (with the text provided above), that you have read and understood the <a href="../chapters/publishing.html">N3C download policy</a> (a link is provided via the more information icon), and that if you choose to use any additional data sources in connection with N3C protected data that you are aware of your institutions’ policies around doing so. (Some institutions restrict how and when EHR data can be linked to other datasets, including <a href="../chapters/understanding.html">publicly available</a> data ingested for use by N3C researchers.) <!-- TODO: like the last section of the "Understanding the Data" chapter --></p>
 <div id="fig-access-110-dur-acknowledgments" class="quarto-figure quarto-figure-center quarto-float anchored" alt="DUR attestations and acknowledgments">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-access-110-dur-acknowledgments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -872,7 +859,6 @@ Additional Chapter Details
 <li id="fn2"><p>In actuality, a few data partners also perform small amounts of date shifting-randomly shifting all dates on a per-patient basis to further protect patient privacy-prior to sending their data to N3C. The manifest information (described below) indicates which data partners do so and the range of potential shift so researchers can remove data from these partners if they need highly-accurate date information.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>See <a href="cycle.html#sec-cycle-releases-lds" class="quarto-xref"><span>Section 3.4.1</span></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Like Level 3 data, birth dates are available only at the year and month level, and these are similarly shifted along with other patient-associated dates. In Level 2 data birth date information is removed entirely for patients who are more than 90 years old, and a separate <code>is_age_90_or_older</code> column identifies these individuals as a group.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>The Synthetic data discussed here should not be confused with the notional (fake) datasets described in <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>. These happen to have similar sounding names: SynPuf and Synthea.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1461,7 +1447,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

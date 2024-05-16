@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -523,11 +523,10 @@ background-size: cover;
 <p>The N3C has an extensive secure onboarding process due to the sensitivity of the data within the N3C Data Enclave. There are several steps that need to be completed in order for a researcher or N3C user to gain access to the Enclave.</p>
 <section id="sec-onboarding-eligibility" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="sec-onboarding-eligibility"><span class="header-section-number">5.1</span> Researcher Eligibility</h2>
-<p>Citizen scientists, researchers from foreign institutions, and researchers from U.S.-based institutions are all eligible to have access to the N3C Data Enclave. Everyone with an Enclave account has access to the tools and public <a href="https://covid.cd2h.org/external-datasets">datasets</a> that are available in the Enclave.</p>
-<p>There are several levels of Electronic Health Record (EHR) data that are available within the Enclave. For more information about the levels of data, see <a href="access.html#sec-access-background" class="quarto-xref"><span>Section 6.1</span></a>.</p>
-<p>If an individual is not affiliated with an institution, they are termed a “citizen scientist”. Citizen scientists are only eligible to access synthetic data (Level 1). This data set is artificial but statistically-comparable to, and computationally derived from, the original EHR data.</p>
-<p>Researchers from institutions outside the U.S. are eligible to access synthetic data (Level 1) and patient data that has been deidentified by removing protected health information (PHI) (Level 2). Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Researchers from U.S.-based institutions are eligible to access synthetic data (Level 1), deidentified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a <em>limited</em> dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.</p>
+<p>Researchers from both foreign and U.S.-based institutions are eligible to have access to the N3C Data Enclave. Everyone with an Enclave account has access to the tools and public <a href="https://covid.cd2h.org/external-datasets">datasets</a> that are available in the Enclave.</p>
+<p>There are two levels of Electronic Health Record (EHR) data that are available within the Enclave, termed “Level 2” and “Level 3” for historical reasons. For more information about the levels of data, see <a href="access.html#sec-access-background" class="quarto-xref"><span>Section 6.1</span></a>.</p>
+<p>Researchers from institutions outside the U.S. are eligible to access patient data that has been de-identified by removing protected health information (PHI) (Level 2). Protected health information includes 18 elements defined by the Health Insurance Portability and Accountability Act (HIPAA). <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Researchers from U.S.-based institutions are eligible to access de-identified patient data (Level 2), and patient data that includes dates of service and patient zip code (Level 3). (The Level 3 data set is referred to as a <em>limited</em> dataset because it contains only 2 of the 18 PHI elements.) Here are the data access levels, eligibility, and access requirements.</p>
 <section id="sec-onboarding-eligibility-l3" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="sec-onboarding-eligibility-l3"><span class="header-section-number">5.1.1</span> Data Level 3</h3>
 <ul>
@@ -586,27 +585,7 @@ background-size: cover;
 </section>
 <section id="sec-onboarding-eligibility-l1" class="level3" data-number="5.1.3">
 <h3 data-number="5.1.3" class="anchored" data-anchor-id="sec-onboarding-eligibility-l1"><span class="header-section-number">5.1.3</span> Data Level 1</h3>
-<ul>
-<li><p><em>Also known as</em>:</p>
-<ul>
-<li>Synthetic Data Set</li>
-</ul></li>
-<li><p><em>Data Description</em>: Data that are computationally derived from the LDS that resemble patient information statistically but are not actual patient data.</p></li>
-<li><p><em>Eligible Users</em>:</p>
-<ul>
-<li>Researchers from U.S.-based institutions</li>
-<li>Researchers from foreign institutions</li>
-<li>Citizen scientists</li>
-</ul></li>
-<li><p><em>Access Requirements</em>:</p>
-<ul>
-<li>N3C registration</li>
-<li>N3C Data Enclave account</li>
-<li>DUA executed with NCATS</li>
-<li>NIH IT training completion</li>
-<li>Approved DUR</li>
-</ul></li>
-</ul>
+<p>Level 1 data are no longer available. Previously, these data contained “synthetic” data generated via statistical processes to match specific aspects of the Level 3 data. We include this section here for historical context.</p>
 </section>
 </section>
 <section id="sec-onboarding-program" class="level2" data-number="5.2">
@@ -712,9 +691,21 @@ Figure&nbsp;5.6: Do NOT click “Leave group”.
 <section id="sec-onboarding-dua" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="sec-onboarding-dua"><span class="header-section-number">5.4</span> Data Use Agreements</h2>
 <p>Any research using N3C data first requires a data use agreement. A data use agreement (DUA) establishes the permitted uses of the data in the N3C Data Enclave. By signing the agreement, an institutional official is assuring that users from their institution will abide by the terms defined in the agreement.</p>
-<p>A DUA must be executed by the National Center for Advancing Translational Science (NCATS) and a research institution or private organization. The DUA must be signed by authorized officials who have the authority to bind all users at their organization to the terms of the DUA. (A citizen scientist who is not affiliated with an institution must execute a DUA with NCATS individually in order to gain access to the Enclave.) A DUA will be in effect for five years from the DUA Effective Date.</p>
+<p>A DUA must be executed by the National Center for Advancing Translational Science (NCATS) and a research institution or private organization. The DUA must be signed by authorized officials who have the authority to bind all users at their organization to the terms of the DUA. A DUA will be in effect for five years from the DUA Effective Date.</p>
 <p>Every individual who has access to the Enclave must be covered by a DUA. This DUA must be in place before an account for the Enclave is requested. If your institution has an active DUA, there is no additional action required with regard to the DUA. A list of institutions with DUAs can be found at <a href="https://covid.cd2h.org/duas" class="uri">https://covid.cd2h.org/duas</a>.</p>
-<p>The <a href="https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf">Institutional DUA form</a> is available on the web. If your institution is not on the list, your Institution can submit a DUA to NCATS by emailing the completed form to <a href="mailto:NCATSPartnerships@mail.nih.gov" class="email">NCATSPartnerships@mail.nih.gov</a>. See <a href="https://ncats.nih.gov/n3c/resources/data-access" class="uri">https://ncats.nih.gov/n3c/resources/data-access</a> for more information on access forms and resources.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original Data Use Agreement is set to expire in early 2025. Researchers wishing to continue access to N3C COVID data beyond 4/1/2025 <strong>must</strong> have their institution sign the new N3C COVID Data Use Agreement <em>Extension</em>. More information and instructions can be found <a href="https://covid.cd2h.org/covid-extension/">here</a>.</p>
+</div>
+</div>
 </section>
 <section id="sec-onboarding-team" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="sec-onboarding-team"><span class="header-section-number">5.5</span> Research Project Teams</h2>
@@ -1469,7 +1460,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

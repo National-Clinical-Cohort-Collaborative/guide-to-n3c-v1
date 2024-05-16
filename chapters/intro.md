@@ -69,7 +69,7 @@ Once harmonized and stored in the secure "N3C Data Enclave", the data are made a
 
 Mere access to the Enclave, however, doesn't automatically provide access to any of the protected data itself (although we do make other, publicly-available datasets available with minimal restriction for practice and learning purposes).
 Multiple "levels" of the data are available with different anonymization techniques applied, facilitating "just enough" access to research teams depending on their needs and ability to access protected health information.
-Accessing the most secure level, for example, requires obtaining approval from an Institutional Review Board (IRB) which validates the appropriateness of human subjects research, while the lowest level is heavily anonymized and accessible by private individuals (citizen scientists) with only certain legal and training requirements.
+Accessing data will full patient zip codes, for example, requires obtaining approval from an Institutional Review Board (IRB) which validates the appropriateness of human subjects research, while access to de-identified data with truncated zip codes requires only having completed Human Subject Research Protection training at your local institution.
 
 Because effective analysis of EHR data requires a diverse set of skills-especially clinical and data science/statistical expertise-N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well.
 As of February 2023, dozens of these "[Domain Teams](onboarding.md#sec-onboarding-dt)" have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations.

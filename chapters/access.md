@@ -40,7 +40,8 @@ and publicly-available data (e.g., US census data) are accessible by everyone wi
 These low-risk data are covered more in Chapters [-@sec-understanding] and [-@sec-publishing].
 
 The harmonized EHR data that _do_ require an approved DUR to access
-are made available in three different "levels", each with different amounts of data obfuscation,
+are made available in two different "levels" (known as Level 2 and Level 3 
+for historical reasons--see below), each with different amounts of data obfuscation,
 and correspondingly different access requirements.
 Deciding which level of data is appropriate for your study is important,
 because accessing Level 3 data is more work and restrictive than accessing Level 2 data.
@@ -48,7 +49,7 @@ On the other hand, some studies can be accomplished with only Level 3 data.
 Note that if you start with a lower level of data, it is possible to "upgrade" a project's access level,
 though all participants in the project will need to complete another DUR for the new level.
 
-In addition to the primary Level 1, 2, and 3 datasets are "PPRL" data.
+In addition to the primary Level 2 and 3 datasets are "PPRL" data.
 PPRL data includes extra non-EHR sources of information
 such as obituary-based mortality records and viral variant sequencing information.
 These are available alongside only Level 3 data as an optional add-on;
@@ -98,52 +99,13 @@ Such questions are best answered by the LDS data.
 The Level 2 data are also in OMOP format and versioned as releases.
 We'll forgo examples of notional data because the format is exactly the same as for Level 3, LDS data.
 
-### Level 1, Synthetic {#sec-access-background-l1}
+### Level 1, (Synthetic, Deprecated) {#sec-access-background-l1}
 
-Level 1, or Synthetic,^[The Synthetic data discussed here
-should not be confused with the notional (fake) datasets described in @sec-publishing.
-These happen to have similar sounding names: SynPuf and Synthea.]
-data provide the most anonymous view of the harmonized data,
-and are quite different from the Level 2 and 3 datasets in both format and content.
-Rather, Level 1 data were _generated_ from a statistical model of a _researcher-defined subset_ of the Level 3 data.
-This means Level 1 data contain no real patient records at all,
-but only a synthetic derivative designed to be statistically similar.
-The generation process is handled by a private company, MDClone,
-whose proprietary algorithms also look for resulting information
-that is too similar to real patient information,
-potentially resulting in a loss of patient privacy.
-Such records are masked with "censored" values in the resulting dataset.
+Level 1 data are no longer available. Previously, these data 
+contained "synthetic" data generated via statistical processes to match specific
+aspects of the Level 3 data. We include this section here for historical context.
 
-Because this statistical-modeling approach doesn't scale to the entirety of an EHR database,
-it is generated on subsets of data of interest to researchers,
-with the assistance of MDClone representatives.
-To take an example, consider a research team interested in outcomes of COVID-19 in diabetic vs. non-diabetic individuals.
-Inside the Enclave, the team initiates a request with an MDClone liaison,
-suggesting that they would like to collect a set of patient information
-(with one row per patient in the resulting table),
-with columns for `patient_age`
-(at the date of their first COVID-positive PCR test result),
-`has_diabetes`
-(indicating if their record contains a diabetes diagnosis),
-`days_until_ventilation`
-(number of days elapsed between their COVID-positive test and subsequent mechanical ventilation,
-or `null` if they were not ventilated within 30 days),
-and several other potential confounding variables.
-The MDClone liaison then collects this requested information from the Level 3 data,
-develops a representative statistical model,
-and delivers a table of synthesized rows from the model with the columns requested to the team.
-
-Level 1 datasets are generated from the most recent Level 3 release at the time of generation,
-and not automatically updated as new primary N3C data arrives.
-Notes for each Level 1 dataset describe the date of generation and information included for future reference.
-
-::: {.callout-note appearance="simple" icon=true}
-Update: As of mid-2022, N3C is no longer able to generate new synthetic datasets at researcher request.
-The previously-generated datasets are still available for use however,
-and gaining access to Level 1 data provides access to all generated synthetic datasets.
-:::
-
-#### Example N3C OMOP Data Format {#sec-access-background-l1-example}
+### Example N3C OMOP Data Format {#sec-access-background-l1-example}
 
 To give a sneak preview of the primary N3C data format,
 here's a snapshot of a few columns of notional (_fake_) data in OMOP format
@@ -187,7 +149,7 @@ and the Introduction section of the
 [PPRL training module](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23) {{< fa lock title="Link requires an Enclave account" >}}
 in the Training Portal (see @sec-support-training).
 
-## Level 1/2/3 (and PPRL) Availability {#sec-access-availability}
+## Level 2/3 (and PPRL) Availability {#sec-access-availability}
 
 Level 3, LDS data are available only to researchers affiliated with US-based organizations such as universities and medical schools.
 As we'll discuss below, the most significant access requirement for Level 3 data
@@ -198,18 +160,6 @@ or IRB (e.g., pharmaceutical companies).
 
 Level 2, De-Identified data are available to researchers at both US and approved foreign organizations
 (those that can sign an institutional Data Use Agreement (DUA), see @sec-cycle).
-
-Level 1 Synthetic data are available to researchers at US and approved foreign organizations
-(though note the update about Level 1 data generation above),
-as well as individuals without any affiliation with a research organization,
-i.e., "citizen scientists".
-This level of data thus provides opportunities for public outreach and engagement with topics in clinical science.
-Citizen scientists must nevertheless complete some training requirements and sign the legal Data Use Agreement document.
-Minors may apply for access, but only via their parents' or legal guardians' consent and with explicit N3C consent.
-
-Since the registration process is non-trivial for those not affiliated with a research institution,
-citizen scientists hoping to work with Level 1 Synthetic data
-should reach out to one of the N3C support venues to get started (see @sec-support).
 
 PPRL data can be accessed alongside only Level 3 (LDS) data,
 and as such has the same access availability.
@@ -406,9 +356,9 @@ with the Level 1 data and return to see the differences for Levels 2 and 3.
 
 ![DUR data level request.](images/access/fig-access-090-dur-data-level.png){#fig-access-090-dur-data-level fig-alt="DUR data level request"}
 
-### Level 1 DUR Requirements {#sec-access-request-l1}
+### Base DUR Requirements {#sec-access-request-l1}
 
-For Level 1 access, the first requirements are that you have read
+For both level 2 and Level 3 access, the first requirements are that you have read
 and attested to the [Data Use Agreement](onboarding.md#data-use-agreements),
 and that you have completed the required NIH IT Security training course within the past year.
 Both of these are also required as part of onboarding,
@@ -416,7 +366,7 @@ so we won't cover them here (see @sec-onboarding).
 
 ![DUR attestations.](images/access/fig-access-100-dur-attestations.png){#fig-access-100-dur-attestations fig-alt="DUR attestations"}
 
-Finally, you will need to attest to having read the N3C Code of Conduct (with the text provided above),
+Next, you will need to attest to having read the N3C Code of Conduct (with the text provided above),
 that you have read and understood the [N3C download policy](publishing.md)
 (a link is provided via the more information icon),
 and that if you choose to use any additional data sources in connection with N3C protected data

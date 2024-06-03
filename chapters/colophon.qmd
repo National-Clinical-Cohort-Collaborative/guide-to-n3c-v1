@@ -4,10 +4,8 @@ R Info
 ------------------
 
 ```{r}
-sessionInfo()
-```
-
-```{r}
+#| echo: false
+# sessioninfo
 sessioninfo::session_info()
 ```
 
@@ -15,6 +13,7 @@ Quarto Info
 ------------------
 
 ```{r}
-# quarto::quarto_inspect()
+#| echo: false
+quarto::quarto_inspect()
 # quarto::quarto_version()
 ```

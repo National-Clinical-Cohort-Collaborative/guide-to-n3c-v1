@@ -36,6 +36,7 @@ jobs:
           packages:
             any::knitr
             any::rmarkdown
+            any::sessioninfo
             # any::downlit
             # any::xml2
 

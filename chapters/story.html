@@ -515,7 +515,7 @@ background-size: cover;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/colophon.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colophon</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Colophon</span></span></a>
   </div>
 </li>
       </ul>
@@ -1811,7 +1811,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

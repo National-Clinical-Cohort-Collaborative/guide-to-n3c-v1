@@ -1,4 +1,4 @@
-# Colophon
+# Colophon {#sec-colophon}
 
 :::{.callout-note}
 This chapter is being drafted in Google Docs at
@@ -12,20 +12,24 @@ It is NOT the source of truth (yet).
 :::
 
 
-R Info
+Software Used to Render Book {#sec-colophon-software}
 ------------------
 
+::: {.callout-caution collapse="true"}
+## R Configuration
 ```{r}
 #| echo: false
 # sessioninfo
 sessioninfo::session_info()
 ```
+:::
 
-Quarto Info
-------------------
+::: {.callout-caution collapse="true"}
+## Quarto Configuration
 
 ```{r}
 #| echo: false
 quarto::quarto_inspect()
 # quarto::quarto_version()
 ```
+:::

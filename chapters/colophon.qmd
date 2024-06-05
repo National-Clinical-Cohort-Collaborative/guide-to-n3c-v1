@@ -1,20 +1,54 @@
-# Colophon {.unnumbered}
+---
+csl: ../assets/csl/apa-7e.csl
+---
 
-R Info
+# Colophon {#sec-colophon}
+
+:::{.callout-note}
+This chapter is being drafted in Google Docs at
+<https://drive.google.com/drive/u/0/folders/13KdNp29Af9nU3CW2Jr5FuWtHjJFGPxbP>
+:::
+
+:::{.callout-warning}
+At this point, any edits to this chapter should be made in Google Docs.
+The current Markdown is for testing only.
+It is NOT the source of truth (yet).
+:::
+
+
+How the Guide Came To Be {#sec-colophon-be}
 ------------------
 
-```{r}
-sessionInfo()
-```
+While N3C leverages a variety of existing technologies, many of the tools, processes, and organizational structures were developed for its unique needs,
+resulting in a complex landscape for researchers to navigate.
+The idea for a comprehensive guide was originally proposed in January 2022 by members of the Education and Training Domain Team,
+with the first public release presented at the [May 2023 N3C Community Forum](https://youtu.be/WI8TuiQKCWM?si=4X9F4YHF3IBhdNUI&t=1893).
+Drawing inspiration from [*The Book of OHDSI*](https://ohdsi.github.io/TheBookOfOhdsi/),
+the creation of this guide involved many volunteers and required coordination across a wide variety
+of stakeholders, contributors, and subject matter experts.
+This chapter outlines the processes involved, in the hope it may benefit others.
 
+...
+
+
+Software Used to Render Book {#sec-colophon-software}
+------------------
+
+::: {.callout-caution collapse="true"}
+## R Configuration
 ```{r}
+#| echo: false
+# sessioninfo
 sessioninfo::session_info()
 ```
+:::
 
-Quarto Info
-------------------
+::: {.callout-caution collapse="true"}
+## Quarto Configuration
 
 ```{r}
-# quarto::quarto_inspect()
+#| echo: false
+quarto::quarto_inspect()
 # quarto::quarto_version()
 ```
+:::

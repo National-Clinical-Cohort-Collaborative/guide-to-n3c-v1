@@ -183,7 +183,7 @@ You follow some advice and assemble the following team.
 1. a **statistician or data scientist** who understands the limitations of observational collection and can model retrospective data,
 1. a **logic liaison or informaticist** who understands the challenges of EHRs and can extract and transform information (also known as a data engineer),
 1. a **data liaison** who has expertise in medical terminology to help develop concept sets or identify previously validated concept sets, and
-1. a **principal investigator** who knows the literature and can testable hypotheses and write the manuscript.
+1. a **principal investigator** who knows the literature and can propose testable hypotheses and write the manuscript.
 
 @fig-story-030-team-formation depicts these roles.  Depending on the investigation and the personnel, sometimes one person can serve multiple roles.
 

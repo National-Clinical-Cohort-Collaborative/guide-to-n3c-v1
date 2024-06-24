@@ -71,7 +71,7 @@ For errors or requests, please submit an [Issue](https://docs.github.com/en/issu
 to the book's [issue tracker](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues).
 To make larger or direct contributions, please make a [pull request](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 
-If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: g2n3c_correspondence@ctsi-something-something.com> with comments and suggestions for changes.
+If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: g2n3c-team@ctsa.io> with comments and suggestions for changes.
 If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapters/support.md).
 
 This project uses  the [N3C Community Guidelines](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/blob/main/CODE_OF_CONDUCT.md) as a Contributor Code of Conduct;

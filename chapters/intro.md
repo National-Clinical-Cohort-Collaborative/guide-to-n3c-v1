@@ -37,6 +37,15 @@ Although healthcare providers are mandated by law to utilize electronic health r
 Commercial data-collection suites (e.g., Epic) are widely used in clinical settings, and controlled vocabularies (e.g., ICD10 and SNOMED) provide standards for representing medical information, but there are many such standards in use and software is highly configurable to the needs of individual organizations.
 As a result, databases of EHR information across the US are largely non-interoperable, presenting challenges to researchers hoping to use this vast national store of information in practice.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+There are several key challenges when attempting to use multi-center real-world data (RWD) in US healthcare for research.
+We have no centralized healthcare and the adoption of data standards varies by location and by time.
+Even if multiple organizations use the same EHR software product, implementation varies by site.
+:::
+
 ## Common Data Models and N3C  {#sec-intro-cdm}
 
 In recent years, the common solution to these issues has been the creation of _Common Data Models_ (CDMs).
@@ -61,6 +70,16 @@ A potential data partner with data in PCORNet format, for example, will locally 
 The process of coalescing multiple such data payloads into a unified whole is known as _harmonization_, and is a complex task even after everything has been mapped to OMOP initially.
 Two overlapping teams of EHR data experts participate in this process: one works closely with data partners to make it as easy as possible to contribute data to N3C, and another handles the post-ingestion harmonization and comprehensive quality checks of the incoming data.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+When EHR is mapped to a research-appropriate Common Data Model (CDM),
+analysts have the opportunity to write more concise code that can be rerun on other EHR data that is represented in this same CDM.
+While translating data between CDMs is possible and facilitates interoperability and reproducibility,
+RWD analysts must take into account the impact of each transformation step in terms of potential data loss or data restructuring.
+:::
+
 ## The N3C Data Enclave and Data Access {#sec-intro-enclave}
 
 Once harmonized and stored in the secure "N3C Data Enclave", the data are made available via a web-based interface to research teams using common tools such as SQL, Python, and R, as well as a number of code-light graphical user interfaces.
@@ -70,6 +89,13 @@ Once harmonized and stored in the secure "N3C Data Enclave", the data are made a
 Mere access to the Enclave, however, doesn't automatically provide access to any of the protected data itself (although we do make other, publicly-available datasets available with minimal restriction for practice and learning purposes).
 Multiple "levels" of the data are available with different anonymization techniques applied, facilitating "just enough" access to research teams depending on their needs and ability to access protected health information.
 Accessing data will full patient zip codes, for example, requires obtaining approval from an Institutional Review Board (IRB) which validates the appropriateness of human subjects research, while access to de-identified data with truncated zip codes requires only having completed Human Subject Research Protection training at your local institution.
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Regardless of data source or platform, when working with RWD that is derived from patient records, the researcher must have been legally granted access via binding contracts and user agreements, permission from Institutional Review Boards who oversee human subject rights, a workspace that meets the appropriate security requirements, and permission from data stewards who manage the specific dataset. Note that HIPAA laws stipulate that the minimum amount of identifiable data be shared to enable the particular research project.
+:::
 
 Because effective analysis of EHR data requires a diverse set of skills-especially clinical and data science/statistical expertise-N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well.
 As of February 2023, dozens of these "[Domain Teams](onboarding.md#sec-onboarding-dt)" have supported over 400 research projects, contributed to by over 3,300 researchers hailing from 350+ different institutions and organizations.
@@ -105,6 +131,13 @@ See @sec-support for more information on these topics.
 Of course, N3C brings significant value as one of the largest databases of de-identified patient records in the US, covering drug prescriptions, conditions, procedures, and more, each associated with a corresponding visit and other information.
 Data are extensively quality-checked and harmonized for consistency with the OMOP common data model (see @sec-cycle), which supports sophisticated filtering and querying (Chapters [-@sec-understanding] and [-@sec-tools]).
 Other data are available as well, including publicly-available datasets (e.g., from the US Census) and, for some patients, additional mortality, viral variant, or billing data from non-EHR sources (@sec-cycle).
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Collecting multi-center data centrally allow RWD researchers to identify novel associations by collaboratively building, testing, and refining algorithmic classifiers once the various sources of patient data have been harmonized and connected in a way that can create a comprehensive dataset for each individual’s life course. Having access to row-level data from a variety of sites supports detailed investigation of variances across sites.
+:::
 
 Big data is of little value without powerful analysis tools.
 Fortunately, N3C's Enclave supports analyses with SQL, Python, and R, including thousands of popular libraries for the latter two.

@@ -30,8 +30,8 @@ format:
       effect: zoom
   # pdf:
   #   documentclass: scrreprt
-  epub:
-    cover-image: images/logo.png
+  # epub:
+  #   cover-image: images/logo.png
 
 book:
   title: "The Researcher's Guide to N3C"
@@ -50,7 +50,7 @@ book:
   repo-branch: main
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]
-  downloads: [epub]
+  # downloads: [epub]
   # downloads: [pdf, epub]
   google-analytics: G-5F685V8M7X
 

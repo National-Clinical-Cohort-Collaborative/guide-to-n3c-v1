@@ -6,7 +6,7 @@ author:
     email: peter.robinson@bih-charite.de
     orcid: 0000-0002-0736-9199
     attributes:
-      corresponding: true    
+      corresponding: true
 
   - name: Justin Reese
     affiliation: Lawrence Berkeley National Laboratory
@@ -50,16 +50,6 @@ csl: ../assets/csl/apa-7e.csl
 # Machine Learning {#sec-ml}
 
 **Chapter Leads:** Peter Robinson, Justin Reese
-
-:::{.callout-note}
-This material for this chapter is mostly complete,
-and we're adding the final touches before officially publishing it.
-
-In the meantime, please enjoy this pre-release version.
-
-If you have comments, please file a [New Issue](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues)
-and tag [Chris Roeder](https://github.com/chrisroederucdenver) (GitHub username is `@chrisroederucdenver`).
-:::
 
 ## Introduction {#sec-ml-introduction}
 
@@ -203,7 +193,7 @@ For the basics of creating a code repository and using its debugger, see Chapter
 
         ![Create a python data transforms code repository for cardiovascular sequelae prediction that will use the library created in step 1.](images/ml/fig-ml-03-create-python-data-transforms-code-repo.png){#fig-ml-03-create-python-data-transforms-code-repo fig-alt="Create a python data transforms code repository"}
 
-    a.  **Define cohort and features using COVID patient facts table.** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create 
+    a.  **Define cohort and features using COVID patient facts table.** Create a new transform called "aff_create_cohort.py" Left sidebar → select folder where you want to create the file → right click → New File → Enter filename → Select 'Python Transformation (\*.py)' from the drop down → Create
 
         ![Create a new python transformation script file within a code repository.](images/ml/fig-ml-04-create-python-transformation-file.png){#fig-ml-04-create-python-transformation-file fig-alt="Create a new python transformation script file within a code repository."}
 

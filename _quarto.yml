@@ -50,7 +50,7 @@ book:
   repo-branch: main
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]
-  downloads: [epub]
+  # downloads: [epub]
   # downloads: [pdf, epub]
   google-analytics: G-5F685V8M7X
 

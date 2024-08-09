@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.557">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,7 +13,7 @@
 <meta name="author" content="Shawn O’Neil">
 <meta name="author" content="Steven G. Johnson">
 
-<title>The Researcher’s Guide to N3C - 8&nbsp; Introducing Enclave Analysis Tools</title>
+<title>8&nbsp; Introducing Enclave Analysis Tools – The Researcher's Guide to N3C</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -228,22 +228,22 @@ background-size: cover;
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/tools.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/tools.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/access.html">Investigating</a></li><li class="breadcrumb-item"><a href="../chapters/tools.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></a></li></ol></nav>
       <h1 class="title"><span id="sec-tools" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducing Enclave Analysis Tools</span></span></h1>
                       </div>
   </div>
@@ -330,19 +330,18 @@ background-size: cover;
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="../The-Researcher-s-Guide-to-N3C.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -367,9 +366,9 @@ background-size: cover;
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -408,9 +407,9 @@ background-size: cover;
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Investigating</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -449,9 +448,9 @@ background-size: cover;
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Special Topics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -478,9 +477,9 @@ background-size: cover;
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Back Matter</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -547,10 +546,10 @@ background-size: cover;
 <section id="sec-tools-intro" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="sec-tools-intro"><span class="header-section-number">8.1</span> Introduction</h2>
 <p>This chapter introduces tools in the N3C Data Enclave used to analyze data, view results, track project progress, and obtain shared data and code developed in the N3C community. The focus is on accessing and using each tool, the skill level needed, as well as what types of analyses each tool is geared toward. It is expected that you know how data are organized in the Enclave, including the OMOP data model, vocabulary, and concept sets (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> for details).</p>
-<div id="fig-tools-010-intro-to-tools" class="quarto-figure quarto-figure-center quarto-float anchored" alt="High-level overview of an N3C project">
+<div id="fig-tools-010-intro-to-tools" class="quarto-float quarto-figure quarto-figure-center anchored" alt="High-level overview of an N3C project">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-010-intro-to-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a>
+<a href="images/tools/fig-tools-010-intro-to-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;8.1: High-level overview of an N3C project."><img src="images/tools/fig-tools-010-intro-to-tools.png" class="img-fluid figure-img" alt="High-level overview of an N3C project"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-010-intro-to-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.1: High-level overview of an N3C project.
@@ -568,10 +567,10 @@ Figure&nbsp;8.1: High-level overview of an N3C project.
 <section id="sec-tools-concepts" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="sec-tools-concepts"><span class="header-section-number">8.2</span> Using Concept Sets</h2>
 <p>As discussed in the previous chapter Understanding the Data (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>), the electronic health information coded in the various vocabularies used across the country are mapped to the OMOP common data model. By leveraging the hierarchical structure, parent codes and descendants can be captured in one fell swoop to create intensional concept sets for use in analysis.</p>
-<div id="fig-tools-020-concept-home" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Concept Set Browser Homepage">
+<div id="fig-tools-020-concept-home" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Concept Set Browser Homepage">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-020-concept-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a>
+<a href="images/tools/fig-tools-020-concept-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;8.2: Concept Set Browser Homepage."><img src="images/tools/fig-tools-020-concept-home.png" class="img-fluid figure-img" alt="Concept Set Browser Homepage"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-020-concept-home-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.2: Concept Set Browser Homepage.
@@ -580,10 +579,10 @@ Figure&nbsp;8.2: Concept Set Browser Homepage.
 </div>
 <p>The Concept Set Browser shown in <a href="#fig-tools-020-concept-home" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> is an N3C-specific tool that allows you to explore and modify existing concept sets as well as create new concept sets to fit your exact study needs. For more details around the process of concept set creation, read the Concept Sets section in <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>. It is recommended that, if you are a new researcher, you start your search for a concept set with the list of N3C Recommended concept sets. These concept sets have been frozen in their validated state by the <a href="../chapters/support.html#sec-support-liaisons">Logic Liaisons and the Data Liaisons</a> after obtaining clinician and informatic reviews (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a>). They are also the ones used to identify common comorbidities and other facts on the Phenotype Explorer and in the Logic Liaison Fact Table templates. The recommended other method of finding commonly used concept sets is by exploring bundles within the Concept Set Browser. These are groups of concept sets that are often used together. Further exploration of all other concept sets in the Concept Set Browser is also an option, though only advised when proceeding with the understanding that many of the existing concept sets that are not part of the N3C Recommended or bundles are crafted to be specific to one particular study team’s requirements.</p>
 <p>Once concept sets have been identified for use in your analysis through the Concept Set Browser, the concept set members table becomes the link between concepts and the encompassing concept set as shown by <a href="#fig-tools-030-concept-table" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>. You then have to “point” the code to the concept set members table to access this linkage. Once this has been accomplished, the choice becomes using the most recent version of a concept set (<code>concept_set_members.concept_set_name where most_recent_version = TRUE</code>) or using a specific version of the concept set (<code>concept_set_members.codeset_id = {codeset id value}</code>). While there are alternative ways to utilize concept sets and concept ids, the method described above is highly recommended primarily for the ability to quickly update a concept set without having to find and change hard-coded concept ids in a data processing pipeline.</p>
-<div id="fig-tools-030-concept-table" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Concept_set_members">
+<div id="fig-tools-030-concept-table" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Concept_set_members">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-030-concept-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a>
+<a href="images/tools/fig-tools-030-concept-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;8.3: concept_set_members table."><img src="images/tools/fig-tools-030-concept-table.png" class="img-fluid figure-img" alt="Concept_set_members"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-030-concept-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.3: <code>concept_set_members</code> table.
@@ -604,10 +603,10 @@ Figure&nbsp;8.3: <code>concept_set_members</code> table.
 <section id="sec-tools-store-templates" class="level3" data-number="8.3.2">
 <h3 data-number="8.3.2" class="anchored" data-anchor-id="sec-tools-store-templates"><span class="header-section-number">8.3.2</span> Code Templates</h3>
 <p>Depending on the author’s intended use, some code templates can be applied to your custom input dataset while other code templates produce a dataset that can be joined to your study dataset. The code templates themselves can also be imported and customized to produce a dataset for defining a study cohort with key information to use during analysis or simply used as example logic if you are newer to coding. Code templates, in general, are often meant to help transform the massive amount of raw data to smaller, more digestible, and more readily applicable datasets and facts. A few helpful starter templates are those produced by the Logic Liaisons (see the <a href="../chapters/support.html#sec-support-liaisons-logic">Logic Liaison Services</a> section in <a href="support.html" class="quarto-xref"><span>Chapter 11</span></a>), some of which can be seen in <a href="#fig-tools-040-knowledge-store-homepage" class="quarto-xref">Figure&nbsp;<span>8.4</span></a>.</p>
-<div id="fig-tools-040-knowledge-store-homepage" class="quarto-figure quarto-figure-center quarto-float anchored" alt="N3C Knowledge Store Homepage">
+<div id="fig-tools-040-knowledge-store-homepage" class="quarto-float quarto-figure quarto-figure-center anchored" alt="N3C Knowledge Store Homepage">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-040-knowledge-store-homepage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a>
+<a href="images/tools/fig-tools-040-knowledge-store-homepage.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;8.4: N3C Knowledge Store Homepage."><img src="images/tools/fig-tools-040-knowledge-store-homepage.png" class="img-fluid figure-img" alt="N3C Knowledge Store Homepage"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-040-knowledge-store-homepage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.4: N3C Knowledge Store Homepage.
@@ -619,10 +618,10 @@ Figure&nbsp;8.4: N3C Knowledge Store Homepage.
 <h3 data-number="8.3.3" class="anchored" data-anchor-id="sec-tools-store-ll"><span class="header-section-number">8.3.3</span> Logic Liaison Fact Tables and Templates</h3>
 <p>The Logic Liaison Fact Tables and Templates are specifically designed to provide a validated and community agreed-upon method for calculating particular facts at the date level and/or the patient level. Through surveying the Domain Team Leads to establish a list of commonly derived variables and continuous feedback from the N3C Community to refine and update this list, the Logic Liaisons have developed, disseminated, and maintain two main fact table templates and an additional fact table template for SDoH variables. These two main fact table templates each produce day-level and person-level data frames of commonly used derived base variables for <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BA3B835&amp;view=focus">all N3C patients</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> as well as a subset who have an index date for their acute COVID-19 infection, the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&amp;view=focus">confirmed COVID-19 positive patients</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> (PCR/AG positive or U07.1 COVID-19 diagnosed). These day-level and person-level datasets are commonly referred to as the Logic Liaison Fact Tables and can be imported directly into a workbook for use without modifying the template. These fact tables are produced using a default set of concept sets from the N3C Recommended Concept Sets list and a set of default values for the template’s parameters.</p>
 <p>The main fact table template KOs include not only the shared logic for importing/customizing the template for both data access levels, but also a detailed README, example datasets (aka default Logic Liaison Fact Tables), and example code workbooks as exemplified by <a href="#fig-tools-050-knowledge-store-example" class="quarto-xref">Figure&nbsp;<span>8.5</span></a>. It is recommended you first open the README and example code workbooks to see how the default fact tables are generated and then decide whether you would like to use the fact tables as they are or import the template to customize concept sets and/or template parameter values to generate your project-specific version of the fact tables. The <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-1803D6D&amp;view=focus">SDoH Variables ALL PATIENTS</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> template provides you with a curated set of 70 geographically-based SDoH measures tied to each patient. Because joining this data requires a valid five-digit zip code, these fields are only available for patients with a five-digit zip code in Level 3 (LDS) data.</p>
-<div id="fig-tools-050-knowledge-store-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Logic Liaison Fact Table Template Knowledge Object">
+<div id="fig-tools-050-knowledge-store-example" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Logic Liaison Fact Table Template Knowledge Object">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-050-knowledge-store-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a>
+<a href="images/tools/fig-tools-050-knowledge-store-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object."><img src="images/tools/fig-tools-050-knowledge-store-example.png" class="img-fluid figure-img" alt="Example Logic Liaison Fact Table Template Knowledge Object"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-050-knowledge-store-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.
@@ -630,10 +629,10 @@ Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.
 </figure>
 </div>
 <p>The Logic Liaisons have also developed, disseminated, and maintained a handful of overall data quality templates, ancillary fact table, and ancillary data quality templates in the Knowledge Store. <a href="#fig-tools-060-ll-template-1" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> depicts how one could apply the set of Logic Liaison Templates to generate augmented fact tables with a goal of asking one or more research questions within that project.</p>
-<div id="fig-tools-060-ll-template-1" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates">
+<div id="fig-tools-060-ll-template-1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-060-ll-template-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6"><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a>
+<a href="images/tools/fig-tools-060-ll-template-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates."><img src="images/tools/fig-tools-060-ll-template-1.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-060-ll-template-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.
@@ -654,10 +653,10 @@ Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Tabl
 <li><a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-06D5DA0&amp;view=focus">CCI Score</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>: Provides an all-time score or a before-or-day-of-covid score (depending on your selection in the template) per patient based on the CCI weights <span class="citation" data-cites="charlson_1987">(<a href="../references.html#ref-charlson_1987" role="doc-biblioref">Charlson et al., 1987</a>)</span>.</li>
 </ul>
 <p><a href="#fig-tools-070-ll-template-2" class="quarto-xref">Figure&nbsp;<span>8.7</span></a> is a continuation of <a href="#fig-tools-030-concept-table" class="quarto-xref">Figure&nbsp;<span>8.3</span></a> to demonstrate how you could continue to apply the Logic Liaison Templates to the augmented fact table created in order to answer their specific research question within a project.</p>
-<div id="fig-tools-070-ll-template-2" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Application of Logic Liaison Ancillary Quality Templates">
+<div id="fig-tools-070-ll-template-2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Application of Logic Liaison Ancillary Quality Templates">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-070-ll-template-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7"><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a>
+<a href="images/tools/fig-tools-070-ll-template-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates."><img src="images/tools/fig-tools-070-ll-template-2.png" class="img-fluid figure-img" alt="Example Application of Logic Liaison Ancillary Quality Templates"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-070-ll-template-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates.
@@ -684,10 +683,10 @@ Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Template
 <li>Promote collaboration, organize work, and translation to final manuscript</li>
 <li>Methodology checklist</li>
 </ul>
-<div id="fig-tools-080-protocol-pad" class="quarto-figure quarto-figure-center quarto-float anchored" alt="N3C Protocol Pad Homepage">
+<div id="fig-tools-080-protocol-pad" class="quarto-float quarto-figure quarto-figure-center anchored" alt="N3C Protocol Pad Homepage">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-080-protocol-pad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a>
+<a href="images/tools/fig-tools-080-protocol-pad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;8.8: N3C Protocol Pad Homepage."><img src="images/tools/fig-tools-080-protocol-pad.png" class="img-fluid figure-img" alt="N3C Protocol Pad Homepage"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-080-protocol-pad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.8: N3C Protocol Pad Homepage.
@@ -707,10 +706,10 @@ Figure&nbsp;8.8: N3C Protocol Pad Homepage.
 <li>Allows customization with Contour’s expression language</li>
 <li>Dashboard development</li>
 </ul>
-<div id="fig-tools-090-contour" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Contour Analysis">
+<div id="fig-tools-090-contour" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Contour Analysis">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-090-contour-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-090-contour.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a>
+<a href="images/tools/fig-tools-090-contour.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;8.9: Example Contour Analysis."><img src="images/tools/fig-tools-090-contour.png" class="img-fluid figure-img" alt="Example Contour Analysis"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-090-contour-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.9: Example Contour Analysis.
@@ -736,20 +735,20 @@ Figure&nbsp;8.9: Example Contour Analysis.
 <li>Exporting code to GitHub</li>
 </ul>
 <p>Code Workbook is a GUI-based application for you to apply code-based transformations to datasets for the purpose of creating new datasets and visualizations. The explicit goals of the application are to facilitate a collaborative environment in which you can quickly iterate over logic to produce artifacts interoperable with the suite of Enclave applications. The default Code Workbook interface is structured as a directed graph in which nodes represent either datasets or transformations that output datasets. Edges represent the flow of data through the graph such that upstream datasets are inputs for logical operations performed by downstream code transforms. <a href="#fig-tools-100-transforms-abstract" class="quarto-xref">Figure&nbsp;<span>8.10</span></a> shows an abstract version of a Code Workbook, while <a href="#fig-tools-110-transforms-example" class="quarto-xref">Figure&nbsp;<span>8.11</span></a> is an actual screenshot in the Enclave where data flows from the left to the right. Any dataset which you have access to within the workspace where the Code Workbook is located can be imported as an input to the various types of transformations. For each transformation <em>one or more tables are specified as the input</em> and are transformed into a single output table (<a href="#fig-tools-100-transforms-abstract" class="quarto-xref">Figure&nbsp;<span>8.10</span></a>). Multiple transformations can also be strung together (<a href="#fig-tools-110-transforms-example" class="quarto-xref">Figure&nbsp;<span>8.11</span></a>) to create an analysis pipeline (see Foundry’s <a href="https://www.palantir.com/docs/foundry/building-pipelines/overview/">Anatomy of a Data Pipeline</a> module for more detailed information, as well as <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>). In Code Workbook, <em>the primary and required output of a transformation is always a single table</em>; however, visualizations such as graphs and charts can also be generated and saved along the way. Note that the code performing the transformation and the resulting output table are always represented as a single node in the Code Workbook interface.</p>
-<div id="fig-tools-100-transforms-abstract" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Abstracted view of data transforms">
+<div id="fig-tools-100-transforms-abstract" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Abstracted view of data transforms">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-100-transforms-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10"><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a>
+<a href="images/tools/fig-tools-100-transforms-abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;8.10: Abstracted view of data transforms."><img src="images/tools/fig-tools-100-transforms-abstract.png" title="image_tooltip" class="img-fluid figure-img" alt="Abstracted view of data transforms"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-100-transforms-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.10: Abstracted view of data transforms.
 </figcaption>
 </figure>
 </div>
-<div id="fig-tools-110-transforms-example" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Data Transformation Pipeline in Code Workbook">
+<div id="fig-tools-110-transforms-example" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Data Transformation Pipeline in Code Workbook">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-110-transforms-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11"><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a>
+<a href="images/tools/fig-tools-110-transforms-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook."><img src="images/tools/fig-tools-110-transforms-example.png" class="img-fluid figure-img" alt="Example Data Transformation Pipeline in Code Workbook"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-110-transforms-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.
@@ -772,10 +771,10 @@ Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.
 <p>Not all libraries and packages are included in the list of options, but you can submit a ticket within the Enclave by clicking on <em>Help &amp; Support &gt; Help Center &gt; Report an Issue</em> to request additional packages be made available. The Enclave maintains instances of the default configurations on warm standby, allowing them to be quickly initialized when you request a new environment. Custom configurations require more time for initialization as instances of these must be started from scratch rather than merely assigned. For this reason, it is recommended to use default configurations when possible.</p>
 <p>Following best practices for collaborative software development, Code Workbook allows for <a href="https://www.palantir.com/docs/foundry/code-workbook/branching-overview/">branching</a> of the logic within a workbook. As with other popular version control technologies (i.e., <a href="https://git-scm.com/">Git</a>), branching allows you to make copies of a workbook which your team members can develop independently of the source workbook. Once the development in a particular branch is deemed complete, it can be merged back into the originating branch. Prior to the merge, you can preview both line-level differences within each node, as well as node-level differences of nodes that have been added/removed. Good practice dictates that you perform all development on individual branches, which are then merged back into a common <em>master</em> branch.</p>
 <p>Because the <em>master</em> branch can change in the interval between you creating a branch and merging it back in, it is important to preview merge changes to ensure that the branch’s contributions are both correct and compatible with the current state of the <em>master</em> branch. However, note that your branch will be automatically deleted after it is merged, which is an important difference from the normal Git behavior. Another prime use case for code branching is to ensure the reproducibility of a given dataset used in a research project. Because the OMOP and N3C-curated datasets are also versioned, you can create a code branch in which all input datasets are set to the same version release (as shown in <a href="#fig-tools-120-release-pin" class="quarto-xref">Figure&nbsp;<span>8.12</span></a>) to effectively freeze a dataset used in a specific analysis for later reproducibility while still allowing the possibility of adding additional features. User-generated datasets are set to the same branch as the Code Workbook in which they were created. Finally, Code Workbooks allow you to collect and download all coded transformations within a single workbook into a Git repository that can be easily uploaded to GitHub for public dissemination.</p>
-<div id="fig-tools-120-release-pin" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Pinning to an input dataset's release version">
+<div id="fig-tools-120-release-pin" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Pinning to an input dataset's release version">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-120-release-pin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12"><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a>
+<a href="images/tools/fig-tools-120-release-pin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure&nbsp;8.12: Pinning to an input dataset’s release version."><img src="images/tools/fig-tools-120-release-pin.png" class="img-fluid figure-img" alt="Pinning to an input dataset's release version"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-120-release-pin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.12: Pinning to an input dataset’s release version.
@@ -793,10 +792,10 @@ Figure&nbsp;8.12: Pinning to an input dataset’s release version.
 <li>Code reuse across projects</li>
 <li>Built-in version control</li>
 </ul>
-<div id="fig-tools-130-code-repo" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Code Repository">
+<div id="fig-tools-130-code-repo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Code Repository">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-130-code-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13"><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a>
+<a href="images/tools/fig-tools-130-code-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figure&nbsp;8.13: Example Code Repository."><img src="images/tools/fig-tools-130-code-repo.png" class="img-fluid figure-img" alt="Example Code Repository"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-130-code-repo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.13: Example Code Repository.
@@ -823,10 +822,10 @@ Figure&nbsp;8.13: Example Code Repository.
 <li>Create charts</li>
 <li>Allow customization and flexibility</li>
 </ul>
-<div id="fig-tools-140-fusion" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Fusion Sheet">
+<div id="fig-tools-140-fusion" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Fusion Sheet">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-140-fusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-140-fusion.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14"><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a>
+<a href="images/tools/fig-tools-140-fusion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure&nbsp;8.14: Example Fusion Sheet."><img src="images/tools/fig-tools-140-fusion.png" class="img-fluid figure-img" alt="Example Fusion Sheet"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-140-fusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.14: Example Fusion Sheet.
@@ -846,10 +845,10 @@ Figure&nbsp;8.14: Example Fusion Sheet.
 <li>Monthly status reports using template function</li>
 <li>Unable to create dashboard or complex page-based text editing</li>
 </ul>
-<div id="fig-tools-150-notepad" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Notepad Document">
+<div id="fig-tools-150-notepad" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Notepad Document">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-150-notepad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-150-notepad.png" class="lightbox" data-glightbox="description: .lightbox-desc-15" data-gallery="quarto-lightbox-gallery-15"><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a>
+<a href="images/tools/fig-tools-150-notepad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure&nbsp;8.15: Example Notepad Document."><img src="images/tools/fig-tools-150-notepad.png" class="img-fluid figure-img" alt="Example Notepad Document"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-150-notepad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.15: Example Notepad Document.
@@ -868,10 +867,10 @@ Figure&nbsp;8.15: Example Notepad Document.
 <li>Visualize a data pipeline and its details</li>
 <li>Facilitate dataset build scheduling</li>
 </ul>
-<div id="fig-tools-160-data-lineage" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Example Data Lineage Visualization">
+<div id="fig-tools-160-data-lineage" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Example Data Lineage Visualization">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tools-160-data-lineage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" data-glightbox="description: .lightbox-desc-16" data-gallery="quarto-lightbox-gallery-16"><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a>
+<a href="images/tools/fig-tools-160-data-lineage.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure&nbsp;8.16: Example Data Lineage Visualization."><img src="images/tools/fig-tools-160-data-lineage.gif" class="img-fluid figure-img" alt="Example Data Lineage Visualization"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tools-160-data-lineage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8.16: Example Data Lineage Visualization.
@@ -894,24 +893,6 @@ Additional Chapter Details
 </div>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;8.1: High-level overview of an N3C project.</span>
-<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;8.2: Concept Set Browser Homepage.</span>
-<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;8.3: <code>concept_set_members</code> table.</span>
-<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;8.4: N3C Knowledge Store Homepage.</span>
-<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;8.5: Example Logic Liaison Fact Table Template Knowledge Object.</span>
-<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;8.6: Example Application of Logic Liaison Overall Quality, Fact Table, and Ancillary Fact Templates.</span>
-<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Templates.</span>
-<span class="glightbox-desc lightbox-desc-8">Figure&nbsp;8.8: N3C Protocol Pad Homepage.</span>
-<span class="glightbox-desc lightbox-desc-9">Figure&nbsp;8.9: Example Contour Analysis.</span>
-<span class="glightbox-desc lightbox-desc-10">Figure&nbsp;8.10: Abstracted view of data transforms.</span>
-<span class="glightbox-desc lightbox-desc-11">Figure&nbsp;8.11: Example Data Transformation Pipeline in Code Workbook.</span>
-<span class="glightbox-desc lightbox-desc-12">Figure&nbsp;8.12: Pinning to an input dataset’s release version.</span>
-<span class="glightbox-desc lightbox-desc-13">Figure&nbsp;8.13: Example Code Repository.</span>
-<span class="glightbox-desc lightbox-desc-14">Figure&nbsp;8.14: Example Fusion Sheet.</span>
-<span class="glightbox-desc lightbox-desc-15">Figure&nbsp;8.15: Example Notepad Document.</span>
-<span class="glightbox-desc lightbox-desc-16">Figure&nbsp;8.16: Example Data Lineage Visualization.</span>
-</div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-charlson_1987" class="csl-entry" role="listitem">
 Charlson, M. E., Pompei, P., Ales, K. L., &amp; MacKenzie, C. R. (1987). A new method of classifying prognostic comorbidity in longitudinal studies: Development and validation. <em>Journal of Chronic Diseases</em>, <em>40</em>(5), 373–383. <a href="https://doi.org/10.1016/0021-9681(87)90171-8">https://doi.org/10.1016/0021-9681(87)90171-8</a>
@@ -1106,18 +1087,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1149,7 +1119,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1157,7 +1149,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -1511,30 +1503,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 

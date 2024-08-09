@@ -30,8 +30,8 @@ format:
       effect: zoom
   # pdf:
   #   documentclass: scrreprt
-  epub:
-    cover-image: images/logo.png
+  # epub:
+  #   cover-image: images/logo.png
 
 book:
   title: "The Researcher's Guide to N3C"

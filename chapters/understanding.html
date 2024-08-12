@@ -859,7 +859,7 @@ Figure&nbsp;7.9: Workflow for finding, extending, and creating concept sets.<br>
 </section>
 <section id="sec-understanding-ehr-visit" class="level3" data-number="7.4.3">
 <h3 data-number="7.4.3" class="anchored" data-anchor-id="sec-understanding-ehr-visit"><span class="header-section-number">7.4.3</span> Microvisit to Macrovisit Map</h3>
-<p>While admissions to the hospital are recorded in the Visit_Occurrence table, the end date is not always so recorded. Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an “encounter”. So an admission may be represented in the visit_occurrence table as a string of such “encounters”. We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval. See the N3C Data <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed">Enclave</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
+<p>While admissions to the hospital are recorded in the <a href="https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence"><code>visit_occurrence</code></a> table, the end date is not always so recorded. Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an “encounter”. So an admission may be represented in the <code>visit_occurrence</code> table as a string of such “encounters”. We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval. See the N3C Data <a href="https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed">Enclave</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i>.</p>
 </section>
 <section id="sec-understanding-ehr-harmonized" class="level3" data-number="7.4.4">
 <h3 data-number="7.4.4" class="anchored" data-anchor-id="sec-understanding-ehr-harmonized"><span class="header-section-number">7.4.4</span> Harmonized values</h3>
@@ -1669,7 +1669,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

@@ -392,8 +392,10 @@ Other matching methods (e.g., propensity scores) are more trustworthy.
 
 ### Microvisit to Macrovisit Map {#sec-understanding-ehr-visit}
 
-While admissions to the hospital are recorded in the Visit_Occurrence table, the end date is not always so recorded.
-Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the visit_occurrence table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
+While admissions to the hospital are recorded in the 
+[`visit_occurrence`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) table, 
+the end date is not always so recorded.
+Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the `visit_occurrence` table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
 See the N3C Data [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed) {{< fa lock title="Link requires an Enclave account" >}}.
 
 ### Harmonized values {#sec-understanding-ehr-harmonized}

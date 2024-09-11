@@ -74,10 +74,8 @@ Two overlapping teams of EHR data experts participate in this process: one works
 
 ## Real-World-Data Tip
 
-When EHR is mapped to a research-appropriate Common Data Model (CDM),
-analysts have the opportunity to write more concise code that can be rerun on other EHR data that is represented in this same CDM.
-While translating data between CDMs is possible and facilitates interoperability and reproducibility,
-RWD analysts must take into account the impact of each transformation step in terms of potential data loss or data restructuring.
+When EHR is mapped to a research-appropriate Common Data Model (CDM), analysts have the opportunity to write more concise code that can be rerun on other EHR data that is represented in this same CDM. 
+While translating data between CDMs is possible and facilitates interoperability and reproducibility, RWD analysts must take into account the impact of each transformation step in terms of potential data loss or data restructuring.
 :::
 
 ## The N3C Data Enclave and Data Access {#sec-intro-enclave}
@@ -94,7 +92,8 @@ Accessing data will full patient zip codes, for example, requires obtaining appr
 
 ## Real-World-Data Tip
 
-Regardless of data source or platform, when working with RWD that is derived from patient records, the researcher must have been legally granted access via binding contracts and user agreements, permission from Institutional Review Boards who oversee human subject rights, a workspace that meets the appropriate security requirements, and permission from data stewards who manage the specific dataset. Note that HIPAA laws stipulate that the minimum amount of identifiable data be shared to enable the particular research project.
+Regardless of data source or platform, when working with RWD that is derived from patient records, the researcher must have been legally granted access via binding contracts and user agreements, permission from Institutional Review Boards who oversee human subject rights, a workspace that meets the appropriate security requirements, and permission from data stewards who manage the specific dataset. 
+Note that HIPAA laws stipulate that the minimum amount of identifiable data be shared to enable the particular research project.
 :::
 
 Because effective analysis of EHR data requires a diverse set of skills-especially clinical and data science/statistical expertise-N3C provides organizational structures and resources to rapidly create and support multidisciplinary research teams, many of which are geographically diverse as well.
@@ -136,7 +135,8 @@ Other data are available as well, including publicly-available datasets (e.g., f
 
 ## Real-World-Data Tip
 
-Collecting multi-center data centrally allow RWD researchers to identify novel associations by collaboratively building, testing, and refining algorithmic classifiers once the various sources of patient data have been harmonized and connected in a way that can create a comprehensive dataset for each individual’s life course. Having access to row-level data from a variety of sites supports detailed investigation of variances across sites.
+Collecting multi-center data centrally allow RWD researchers to identify novel associations by collaboratively building, testing, and refining algorithmic classifiers once the various sources of patient data have been harmonized and connected in a way that can create a comprehensive dataset for each individual’s life course. 
+Having access to row-level data from a variety of sites supports detailed investigation of variances across sites.
 :::
 
 Big data is of little value without powerful analysis tools.

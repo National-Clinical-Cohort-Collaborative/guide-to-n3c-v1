@@ -203,6 +203,14 @@ Some trends we have noticed are:
 If your team needs someone, consider asking a relevant [domain team](onboarding.md#sec-onboarding-dt) for help identifying and approaching potential collaborators.
 Note that community-wide data and logic liaisons are available for consultation during regular office hours.^[See @sec-support-liaisons.]
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+To properly address a research question with RWD, it is necessary to have an interdisciplinary team that can understand the various forms and sources of data, the context in which that data was collected, and the clinical relevance of any possible associations being noted.
+:::
+
+
 ## Initial Meeting {#sec-story-meeting}
 
 :::{.callout-note icon=false}
@@ -489,6 +497,14 @@ These tools inform decisions such as dropping specific sites or variables from t
 
 : Scurvy Analytic Dataset {#tbl-story-analytic}
 </div>
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+When preparing RWD for analysis, it is important to remember that multiple levels of data processing and filtration are an implicit part of any RWD study cohort, with each level being impacted by data collection and entry practices, data models, and medical vocabularies in use.
+:::
+
 
 ## Analyses {#sec-story-analyses}
 

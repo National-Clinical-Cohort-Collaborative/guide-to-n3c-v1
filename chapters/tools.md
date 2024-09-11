@@ -125,6 +125,15 @@ However, the codeset id being referenced in the code may need to be updated if t
 
 In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python [Code Workbook](tools.md#sec-tools-apps-workbook) transforms with the use of the [Logic Liaison's Combined Variable template](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&view=focus) {{< fa lock title="Link requires an Enclave account" >}} or in [Code Repositories](tools.md#sec-tools-apps-repo).
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Even with thorough [harmonization and quality checks](cycle.md) of RWD, unaddressed vocabulary updates or unmappable data elements may result in systematically missing data, which may vary by data provider or timeframe.
+For example, medical vocabularies updated prior to 2021 will not have any specific code related to Long COVID, meaning that source data representing this condition would be lost when mapping to a pre-2021 medical vocabulary.
+RWD researchers should thoroughly examine the potential for such heterogeneous systematic missingness, and account for it via sensitivity analyses, dropping patients or data sources with incomplete data, or other techniques.
+:::
+
 ## N3C Knowledge Store {#sec-tools-store}
 
 The N3C Knowledge Store is an application where you, as an N3C Data Enclave user, can discover shared code templates, external datasets, reports, cohorts, and Python libraries (collectively also known as Knowledge Objects or KOs) and share similarly re-usable Knowledge Objects of your own with other Enclave users, regardless of the specific project from which the resource originated.
@@ -218,6 +227,15 @@ While it is not necessary to utilize Knowledge Store resources when conducting y
 You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks.
 The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site.
 Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (@sec-practices).
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Structured methods for identifying or deriving cohorts and variables are very important when working with observational health data and RWD.
+Holes in the real data are only amplified when mapped to other formats.
+Even with a basic threshold of participation, the level of variability prompts the need for community agreed-upon methods for calculating particular variables to promote reproducibility of this kind of research.
+:::
 
 ## Enclave Applications {#sec-tools-apps}
 

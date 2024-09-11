@@ -273,6 +273,16 @@ It is true that a later analyst will look through the list of codes, but having 
 Limitations communicate edge cases and caveats to the analyst. "Issues" communicates performance with the Enclave data.
 This performance could include the number of codes contributing the majority of the data (e.g., from Term Usage) or the distribution of values across sites, in the case of lab tests.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Concept sets are helpful to identify clinical ideas in coded data.
+However, the key limitation is that they cannot be used with clinical notes.
+The user must apply natural language processing or other machine learning methods to understand the wealth of information stored in unstructured data.
+:::
+
+
 #### Provenance {#sec-understanding-sets-metadata-provenance}
 
 Provenance communicates how the concept set was assembled.
@@ -375,6 +385,16 @@ Please ensure that your concept sets are not missing these key components.
 
 Note, as well, that, if you publish a paper, using a concept set, that concept set should be published as well.
 The Properties and Reviews will be published, whether missing or not.
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Concept set definitions (or, in non-OMOP contexts, value set definitions) are a crucial component of EHR data analysis,  effectively delineating the list of codes specific to a clinical idea of interest.
+This requires careful design and review involving both informaticists and clinicians.
+While concept sets are reusable, they must be evaluated in the context of any given research question to ensure these building blocks appropriately define study cohorts, variables, and outcomes in RWD research.
+:::
+
 
 ## EHR-Based Data Beyond OMOP {#sec-understanding-ehr}
 
@@ -582,6 +602,14 @@ It is a good place to figure out what values represent.
 Look for dictionaries for the [CMS Standard Analytic Files (SAF) or Limited Data Sets (LDS)](https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/LimitedDataSets/StandardAnalyticalFiles).
 
 A detailed CMS training webinar is available on [YouTube](https://www.youtube.com/watch?v=fs0tM7RnL54).
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Privacy preserving record linkage (PPRL) allows researchers to promote the collection of disparate patient data from across geographical and time variations to one source and promotes piecing together an individual’s life-course for improved centralized RWD research.
+:::
+
 
 ## Public/External Datasets {#sec-understanding-public}
 

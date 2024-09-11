@@ -70,6 +70,13 @@ Also, data cannot be extracted or downloaded from the data N3C Data Enclave, wit
 The workstream split into a smaller subgroup to draft the supporting governance documents while continuing to meet with the whole Workstream for ideation, context, and feedback weekly.
 Onward, the workstream adjusted the frequency of the meetings to the work cadence.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+A governing body (with stakeholder community representation) helps to ensure ethical contribution to, and use of, sensitive patient data. Clear communication between the governing body and researcher community is instrumental to the success of any central database of RWD.
+:::
+
 ## N3C Governance Bridges Individual Oversight Responsibilities {#sec-governance-bridges}
 
 The N3C Governance is a set of behavioral norms, policies, and procedures supported by technology/security measures and oversight mechanisms.
@@ -113,6 +120,14 @@ Seven principles summarize the Community Guiding Principles:
 
 ![N3C shared Governance initiatives with sign-off responsibility represented.](images/governance/fig-governance-010-shared.png){#fig-governance-010-shared fig-alt="N3C shared Governance initiatives with sign-off responsibility represented"}
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Abiding by the Community Guiding Principles of partnership, inclusivity, transparency, reciprocity, accountability, security, and mutual respect are important for both the governance team and researchers accessing the data. 
+This facilitates clear communication and understanding of roles and responsibilities when handling data from across multiple sources.
+:::
+
 ## Ethical oversight {#sec-governance-ethics}
 
 The ethical oversight of N3C is two-fold.
@@ -142,6 +157,13 @@ Again, separating the DTA and LHBA provides the flexibility to contribute data w
 A separate [Data Use Agreement](https://ncats.nih.gov/files/NCATS_N3C_Data_Use_Agreement.pdf) (DUA) must be executed between NCATS and signing officials from an institution whose investigators wish to access N3C data.
 To improve efficiency, instead of executing a traditional pair-wise agreement each time a researcher needs access to N3C, a single DUA is executed between NCATS and an organization to render individual researchers eligible to request access to N3C content.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Creating separate institution-level agreements for Data Transfer and Data Use helps accelerate agreement execution and ensures that institutions can participate at the level they feel comfortable with.
+:::
+
 ## Data Access by Researchers {#sec-governance-access}
 
 First-time users wishing to access N3C must verify that their institution has executed a DUA with NCATS.
@@ -168,6 +190,13 @@ To lower the burden on participation, user authentication and eligibility are es
 during account registration.
 Eligible users can then submit their Data Use Request for evaluation by the Data Access Committee.
 A new request must be submitted for each specific project.](images//governance/fig-governance-030-process.png){#fig-governance-030-process fig-alt="Data Access Governance Process."}
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Well defined protocols for how users gain access or report data access incidents support the continued cooperation of data providers, enabling researchers to work with such a large collection of harmonized data and program sustainability.
+:::
 
 ## Incident Notification and Escalation procedure {#sec-governance-incident}
 

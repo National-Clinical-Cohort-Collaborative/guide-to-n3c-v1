@@ -190,6 +190,14 @@ In fact, because downstream results are only updated when they are explicitly ru
 Why is pinning to a release helpful? Because the default `master` branch is continuously being updated, analysis results based on it will change over time along with the underlying data (if they are re-run).
 This becomes cumbersome when writing about results!
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Since harmonization efforts and vocabulary updates come with downstream consequences and re-compute needs, pinning an analysis to a specific release of data for all inputs is often helpful to ensure you’re not mixing new and old data.
+This applies to all RWD analyses that have to consider the time window of data collection for each source of data and apply methods to filter joined datasets to appropriate time windows.
+:::
+
 ### Download Request Process {#sec-publishing-tech-process}
 
 All research results derived from N3C data-including summary tables, figures, and logs-must be reviewed to ensure they don't inadvertently leak any patient-level data.

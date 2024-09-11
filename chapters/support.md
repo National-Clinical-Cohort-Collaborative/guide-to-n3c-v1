@@ -342,6 +342,14 @@ The Logic Liaison team will send a representative to your domain team meetings o
 
     Each clue in the hunt asks that you find specific resources and provides a brief description of each once found. This resource--the Guide to N3C--is designed as a comprehensive reference for N3C, and provides information and links to many other resources in its chapters.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Knowledge of biomedical, translational, and clinical data standards is essential for appropriate use of the coded RWD when curating concept sets to apply to the data.
+Ultimately, that in combination with data availability and data limitations will determine project feasibility.
+:::
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details

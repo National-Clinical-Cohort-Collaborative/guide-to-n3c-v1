@@ -211,6 +211,14 @@ The original Data Use Agreement is set to expire in early 2025. Researchers wish
 information and instructions can be found [here](https://covid.cd2h.org/covid-extension/).
 :::
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Data Use Agreements are another common component of RWD research, ensuring that those accessing the data will take appropriate precautions to protect patient privacy.
+It is critical that anyone with data access understands and follows the requirements of the DUA, or risk outcomes ranging from loss of access to legal or civil penalties.
+:::
+
 ## Research Project Teams {#sec-onboarding-team}
 
 ### Project Lead vs Collaborators {#sec-onboarding-team-lead}
@@ -294,6 +302,16 @@ These include:
 * _Infrastructure that underpins team science_.
   In today's scientific landscape, it is not uncommon for researchers representing institutions from across the globe to collaborate on research studies.
   To do so effectively, these collaborative teams need reliable internet connectivity with equally reliable cybersecurity policies and support and space for local as well as distant meetings (e.g., Zoom, Teams) during all stages of the life of the study.
+  
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Diverse research teams are crucial when working with RWD.
+Informaticians can help understand various limitations that may depend on the context of data collection and processing.
+The inclusion of clinicians on the team ensures that assumptions match clinical care, that clinical concepts are captured with the appropriate level of sensitivity and specificity, and facilitate translational components of research to enhance patient care or policy.
+The inclusion of biostatisticians and data scientists on a team ensures that EHR data, inevitably incomplete and a non-representative sample of the population at large, is modeled appropriately.
+:::
 
 ## Domain Teams {#sec-onboarding-dts}
 

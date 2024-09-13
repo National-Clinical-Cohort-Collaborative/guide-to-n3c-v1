@@ -105,6 +105,14 @@ Tools are available to help assess feature importance (e.g., SHAP values [-@lund
 - **Adequate Documentation** -- Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research.
 In addition, The N3C Enclave provides a feature called Protocol Pad which can explain exactly how a study was conducted in N3C.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Machine learning may be particularly beneficial when considering the gaps and missingness in RWD.
+Machine learning models are able to differentiate high confidence negative cases from unlabeled positive cases.
+:::
+
 ## ML in N3C {#sec-ml-in-n3c}
 
 Developing ML pipelines in the N3C platform is similar to developing code to solve other tasks, e.g., statistical analyses.

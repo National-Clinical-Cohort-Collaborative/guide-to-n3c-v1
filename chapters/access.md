@@ -55,6 +55,15 @@ such as obituary-based mortality records and viral variant sequencing informatio
 These are available alongside only Level 3 data as an optional add-on;
 we'll discuss PPRL in more detail below.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+In order to preserve the ethical use of unconsented data for public health benefit, every attempt to obscure identities of institutions, communities, or individuals contributing data should be taken as shown here.
+Access to EHR-derived data should minimize privacy and never provide more access to identifiers than is required for the research question.
+:::
+
+
 ### Level 3, Limited Data Set (LDS) {#sec-access-background-l3}
 
 Level 3, or LDS data is the most complete and protected
@@ -202,6 +211,13 @@ A single researcher may be involved with multiple research projects of different
 but cannot share data or files across them,
 thus it is impossible for a researcher with access to Level 3 data to share it with their colleagues
 in another project with Level 2 data.
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Shared workspaces facilitating secure, collaborative data access are not unique to N3C amongst cloud-hosted, centralized RWD environments. These technologies, coupled with appropriate [governance](governance.md) and [team-science](onboarding.md) principles, can facilitate successful research projects in the face of data complexity.
+:::
 
 ## The DUR - Data Use Request {#sec-access-dur}
 

@@ -211,6 +211,13 @@ OMOP domain mapping typically involves the creation of mapping tables that trans
 The OMOP vocabulary dictates which source code should be placed in which target domain after it is translated into OMOP concepts.
 This vocabulary transformation using the OMOP concept relationships arranges the data into a well-organized and consistent format that can be easily analyzed and queried.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Given the diversity of systems and medical vocabularies used in healthcare, vocabulary mapping is a crucial, but challenging and time-consuming part of RWD preparation for analysis. While technologies like Common Data Models (CDMs) and versioned medical vocabularies help, they are not universal solutions. The NIH and NCATS are currently engaged in a [Code Map Services](https://aspe.hhs.gov/code-map-services-interoperability-common-data-models-0) project to address this need broadly.
+:::
+
 ### N3C Global ID generation for all primary key fields {#sec-cycle-overview-globalid}
 
 The incoming data sets submitted to N3C may or may not include their own primary keys.
@@ -357,6 +364,14 @@ Sites are also provided with contact information should they have further questi
 The scorecards allow sites to be directly involved in the data quality improvement process by highlighting areas for targeted improvement in their local source data, which would ultimately result in data quality improvements in their N3C payloads.
 Additionally, the scorecards allow the DI&H team to monitor and maintain data quality across subsequent N3C data submissions and prevent any regression on those metrics.
 If the scorecards reveal that a released site is no longer passing key data quality metrics, then the site is unreleased until they are able to remediate their data quality issues.
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Unit harmonization, data quality checks, and site scorecards are all crucial ways to ensure data quality when working with RWD from multiple institutions. 
+Having these elements in place provides quality insights, cross-site imputation of missing units of measurements, and the opportunity for local data administrators to observe, investigate, and communicate any anomalies that may otherwise go undetected without cross-site comparisons.
+:::
 
 ## N3C Data Releases {#sec-cycle-releases}
 

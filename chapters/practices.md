@@ -87,6 +87,24 @@ Early on, the resulting Applicable Data Methods and Standards
 group established a [number of principles](https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu),
 that have since been refined by cross-collaboration with other groups.
 
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+EHR data is generated through the course of clinical care at a single institution and thus always comes with caveats.
+When using this type of data, one should remember that it is not a representative sample.
+Key elements to consider include:
+
+- under-representation of healthy individuals
+- catchment area and demographics of the patients of a particular health system
+- level of access to care
+- hospital specialization area
+- coding and documentation practices at various stages in the healthcare system
+- missing data, including events captured by other institutions not contributing data
+- missing clinical history and events not reported or not recorded
+- variability of quality related to local data encoding and data mapping
+:::
+
 ### Goals {#sec-practices-overview-goals}
 
 Our goals were to:
@@ -400,6 +418,14 @@ We list that caveat, along with others, below:
   In some cases, however, additional ADT (Admission-Discharge-Transfer) data may be available.
 * Questions regarding COVID negative vs. COVID positives and co-morbidities (or other covariates)
   that are associated with the factors used to bring data into the Enclave, (i.e., age, sex, race, and ethnicity).
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+Though ICU status can be tough to identify outright in many EHR datasets, the use of formulas that combine adjacent inpatient codes (such as [macrovisits](understanding.md#sec-understanding-ehr-visit) in N3C) and ICU specific medications, labs, procedures, and other interventions may help to serve as a proxy for pinpointing these visits.
+RWD researchers often have to use a combination of features such as those mentioned here to impute the presence of an event.
+:::
 
 **Special considerations**.
 There are other questions that may _potentially_ be answerable in N3C, depending on whether the required considerations are compatible with the research question of interest.
@@ -1036,6 +1062,16 @@ Enabling such repeated analyses means automating a long chain of computing steps
 +--------------------------------------------------------------------+------------------------------------------------------------+
 
 : STaRT-RWE sensitivity analysis elements, based on Wang and colleagues [-@wang_2021]. {#tbl-practices-start-sensitivity tbl-colwidths="[60, 40]"}
+
+::: {.callout-tip}
+
+## Real-World-Data Tip
+
+While a positive value may be found, mapped, documented, and used in analysis, there is a much more ambiguous range of possibilities when it comes to a negative value.
+For example, a diagnosis of hypertension might be coded and present in the data.
+However the absence of that code could be the result of information that is recorded but at another institution, a question that was never asked, a condition that was noted but not documented, or a code that was lost in the data mapping pipelines at local institutions.
+Thus most features should be interpreted as “positive” or “unlabeled” findings, and RWD researchers might consider applying computable phenotypes, data density thresholds, or other approaches to identify high confidence “negative” patients within the set of “unlabeled” patients.
+:::
 
 ## Protocol Completion ❸ {#sec-practices-completion}
 

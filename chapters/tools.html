@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -592,6 +592,19 @@ Figure&nbsp;8.3: <code>concept_set_members</code> table.
 <p>Referring to a concept set by name and using the most recent version is often the preferred method for concept sets marked as N3C Recommended since these concept sets can only be updated by N3C core contributors after they have gone through a validation process which has been described in the previous chapter, <a href="../chapters/understanding.html">Understanding the Data</a>.</p>
 <p>For concept sets that have not undergone the validation process and have not been marked as N3C Recommended by the N3C core contributors, it is recommended that the research team performs their own validation on an existing concept set or creates a new concept set with the input of a clinician. The concept set should then be referenced using its codeset ID when you are performing your data analysis. This will allow your team to perform their analysis from start to finish without worrying about unvalidated modifications to the concept set. However, the codeset id being referenced in the code may need to be updated if the team chooses to modify the concept set once starting the analysis.</p>
 <p>In constructing phenotypes from concept sets, concept sets may also need to be joined together; these actions are best done in SQL/R/Python <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbook</a> transforms with the use of the <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-DE908D4&amp;view=focus">Logic Liaison’s Combined Variable template</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> or in <a href="../chapters/tools.html#sec-tools-apps-repo">Code Repositories</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Even with thorough <a href="../chapters/cycle.html">harmonization and quality checks</a> of RWD, unaddressed vocabulary updates or unmappable data elements may result in systematically missing data, which may vary by data provider or timeframe. For example, medical vocabularies updated prior to 2021 will not have any specific code related to Long COVID, meaning that source data representing this condition would be lost when mapping to a pre-2021 medical vocabulary. RWD researchers should thoroughly examine the potential for such heterogeneous systematic missingness, and account for it via sensitivity analyses, dropping patients or data sources with incomplete data, or other techniques.</p>
+</div>
+</div>
 </section>
 <section id="sec-tools-store" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="sec-tools-store"><span class="header-section-number">8.3</span> N3C Knowledge Store</h2>
@@ -670,6 +683,19 @@ Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Template
 </ul>
 <p>Once you obtain results you wish to share outside of the Enclave for a project, the results must undergo a Data Download Request before being available to export outside of the Enclave. Additional details around exporting results can be found in the Publishing and Sharing Your Work chapter (see <a href="publishing.html" class="quarto-xref"><span>Chapter 10</span></a>). Training materials for getting started with Logic Liaison Templates are available <a href="https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&amp;Id=26">here</a> <i class="fa-solid fa-lock" title="Link requires an Enclave account" aria-label="lock"></i> within the Enclave. Outside of the main confirmed COVID+ template and a subset of columns in All Patients, these templates could be generalized to apply to research projects outside of the Enclave where studies do not necessarily need to fall within the scope of COVID-19.</p>
 <p>While it is not necessary to utilize Knowledge Store resources when conducting your research project, it does allow you to get a jump-start on gathering and understanding the data by avoiding effort duplication and providing a general starting point. You can then build upon this fact table using the ancillary templates that allow self-definition of the index event, combining variables, generating a CCI score, and associating SDoH variables based on zip code crosswalks. The Logic Liaison ancillary data quality templates provide the same structure for analyzing data missingness, density, and contribution quality by site. Further explanation as to why these Knowledge Store objects are highly applicable can be found in Best Practices for the Research Life Cycle (<a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Structured methods for identifying or deriving cohorts and variables are very important when working with observational health data and RWD. Holes in the real data are only amplified when mapped to other formats. Even with a basic threshold of participation, the level of variability prompts the need for community agreed-upon methods for calculating particular variables to promote reproducibility of this kind of research.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-tools-apps" class="level2" data-number="8.4">
@@ -1503,7 +1529,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

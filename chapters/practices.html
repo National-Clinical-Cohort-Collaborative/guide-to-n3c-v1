@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -640,6 +640,29 @@ background-size: cover;
 <h2 data-number="9.1" class="anchored" data-anchor-id="sec-practices-overview"><span class="header-section-number">9.1</span> Overview</h2>
 <p>While analyses within N3C fall under the general category of “Real World Data Analysis” (RWD analysis), there is no single design or practice that applies to every study. All the same, important data considerations can guide one’s analytic plans and decisions, which effectively become the pivot points in any RWD investigation’s research lifecycle. In this chapter, we will provide suggestions and pointers to resources that we hope will help the analyst in the majority of studies, and guide the content of discussions with their domain expert collaborators. Recognizing that any analyst may come from one of a wide range of backgrounds, we have structured the chapter to be self-guiding. Data scientists with backgrounds in machine learning and computer science will benefit from studying principles entailed in RWD biomedical methods in and beyond the confines of N3C (and should look at the <a href="../chapters/ml.html">Machine Learning chapter</a>). Researchers trained in traditional data analysis from schools of epidemiology, biostatistics, or econometrics will be reminded of concerns such as over-reliance on overly-simplified parametric models and pitfalls of overfitting. All schools of thought could benefit from more careful consideration of how their analytic decisions may impact the findings - and the limits in the scope of such findings’ generalizability - and just what best practices may help them to navigate potential pitfalls to reach more reliable conclusions.</p>
 <p>The Collaborative Analytics workstream within N3C first recognized the need to form a group looking at data methods that were applicable to N3C data, and any standards that could be leveraged and refined to make optimal use of this unique resource - noting that the resource itself was being actively refined as more was learned from applying methods to its data. Early on, the resulting Applicable Data Methods and Standards (<a href="https://covid.cd2h.org/data-methods">ADMS</a>, sometimes written as ADM&amp;S) group established a <a href="https://docs.google.com/document/d/1FZkHOKCC89qr4TM2voLuXQZpT-riCxUeU0-la48r4HU/edit#heading=h.9ymy4s8eihpu">number of principles</a>, that have since been refined by cross-collaboration with other groups.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>EHR data is generated through the course of clinical care at a single institution and thus always comes with caveats. When using this type of data, one should remember that it is not a representative sample. Key elements to consider include:</p>
+<ul>
+<li>under-representation of healthy individuals</li>
+<li>catchment area and demographics of the patients of a particular health system</li>
+<li>level of access to care</li>
+<li>hospital specialization area</li>
+<li>coding and documentation practices at various stages in the healthcare system</li>
+<li>missing data, including events captured by other institutions not contributing data</li>
+<li>missing clinical history and events not reported or not recorded</li>
+<li>variability of quality related to local data encoding and data mapping</li>
+</ul>
+</div>
+</div>
 <section id="sec-practices-overview-goals" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="sec-practices-overview-goals"><span class="header-section-number">9.1.1</span> Goals</h3>
 <p>Our goals were to:</p>
@@ -895,6 +918,19 @@ Table&nbsp;9.1: STaRT-RWE Table 1: Administrative Information, based on Wang and
 <li>Eligibility criteria defined using patient ICU status, as ICU status cannot be resolved from the visit-level information available, notwithstanding the possibility that some sites repurposed non-ICUs to serve as ICUs during surges in COVID-19 patients. In some cases, however, additional ADT (Admission-Discharge-Transfer) data may be available.</li>
 <li>Questions regarding COVID negative vs.&nbsp;COVID positives and co-morbidities (or other covariates) that are associated with the factors used to bring data into the Enclave, (i.e., age, sex, race, and ethnicity).</li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Though ICU status can be tough to identify outright in many EHR datasets, the use of formulas that combine adjacent inpatient codes (such as <a href="../chapters/understanding.html#sec-understanding-ehr-visit">macrovisits</a> in N3C) and ICU specific medications, labs, procedures, and other interventions may help to serve as a proxy for pinpointing these visits. RWD researchers often have to use a combination of features such as those mentioned here to impute the presence of an event.</p>
+</div>
+</div>
 <p><strong>Special considerations</strong>. There are other questions that may <em>potentially</em> be answerable in N3C, depending on whether the required considerations are compatible with the research question of interest.</p>
 <ul>
 <li>Outcomes involving overall mortality cannot be assessed using EHR data alone. Linkage with an external data source containing more complete mortality data is necessary. N3C contains ancillary patient-preserving record linkage (<a href="../chapters/understanding.html#sec-understanding-pprl">PPRL</a>) mortality data which is fully linked for a subset of data partners, and requires a separate DUR to access. Claims data, such as CMS, can serve as an alternative source of mortality data within enrollment periods, but limits the study population to those with Medicare for whom CMS data are available. This may be undesirable as that population may not be representative of the study population of interest.</li>
@@ -1460,6 +1496,19 @@ Table&nbsp;9.7: STaRT-RWE sensitivity analysis elements, based on Wang and colle
 </table>
 </div>
 </figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While a positive value may be found, mapped, documented, and used in analysis, there is a much more ambiguous range of possibilities when it comes to a negative value. For example, a diagnosis of hypertension might be coded and present in the data. However the absence of that code could be the result of information that is recorded but at another institution, a question that was never asked, a condition that was noted but not documented, or a code that was lost in the data mapping pipelines at local institutions. Thus most features should be interpreted as “positive” or “unlabeled” findings, and RWD researchers might consider applying computable phenotypes, data density thresholds, or other approaches to identify high confidence “negative” patients within the set of “unlabeled” patients.</p>
+</div>
 </div>
 </section>
 </section>
@@ -2289,7 +2338,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

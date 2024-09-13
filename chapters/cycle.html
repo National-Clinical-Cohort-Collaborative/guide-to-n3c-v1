@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -654,6 +654,19 @@ Figure&nbsp;3.4: Dynamic N3C Mapping Table. A dynamic code and code system mappi
 <h3 data-number="3.2.6" class="anchored" data-anchor-id="sec-cycle-overview-domain"><span class="header-section-number">3.2.6</span> OMOP domain mapping</h3>
 <p>The OMOP CDM is person-centric. OMOP organizes the patient’s temporal EHR records in multiple domains; condition, procedure, drug, device, and measurement. OMOP domain mapping is the process of aligning data from different sources to the OMOP framework, using OMOP standard terminology and concepts, and ensuring that the data are populated in the correct OMOP domain table. This process is important because it helps to ensure that the data are consistent and can be easily understood and analyzed. By mapping data to the OMOP framework, researchers and analysts are able to compare and combine data from different sources, enabling more comprehensive and accurate insights into healthcare outcomes and trends.</p>
 <p>OMOP domain mapping typically involves the creation of mapping tables that translate the source code from different CDM data sources to the OMOP standard concept terminology and concept ids used in the OMOP vocabulary framework. The OMOP vocabulary dictates which source code should be placed in which target domain after it is translated into OMOP concepts. This vocabulary transformation using the OMOP concept relationships arranges the data into a well-organized and consistent format that can be easily analyzed and queried.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Given the diversity of systems and medical vocabularies used in healthcare, vocabulary mapping is a crucial, but challenging and time-consuming part of RWD preparation for analysis. While technologies like Common Data Models (CDMs) and versioned medical vocabularies help, they are not universal solutions. The NIH and NCATS are currently engaged in a <a href="https://aspe.hhs.gov/code-map-services-interoperability-common-data-models-0">Code Map Services</a> project to address this need broadly.</p>
+</div>
+</div>
 </section>
 <section id="sec-cycle-overview-globalid" class="level3" data-number="3.2.7">
 <h3 data-number="3.2.7" class="anchored" data-anchor-id="sec-cycle-overview-globalid"><span class="header-section-number">3.2.7</span> N3C Global ID generation for all primary key fields</h3>
@@ -799,6 +812,19 @@ Figure&nbsp;3.12: Inpatient Length of Stay Distribution Scorecard. This line gra
 </figure>
 </div>
 <p>The scorecards allow sites to be directly involved in the data quality improvement process by highlighting areas for targeted improvement in their local source data, which would ultimately result in data quality improvements in their N3C payloads. Additionally, the scorecards allow the DI&amp;H team to monitor and maintain data quality across subsequent N3C data submissions and prevent any regression on those metrics. If the scorecards reveal that a released site is no longer passing key data quality metrics, then the site is unreleased until they are able to remediate their data quality issues.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Unit harmonization, data quality checks, and site scorecards are all crucial ways to ensure data quality when working with RWD from multiple institutions. Having these elements in place provides quality insights, cross-site imputation of missing units of measurements, and the opportunity for local data administrators to observe, investigate, and communicate any anomalies that may otherwise go undetected without cross-site comparisons.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-cycle-releases" class="level2" data-number="3.4">
@@ -1508,7 +1534,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -714,6 +714,19 @@ Note
 </div>
 </div>
 <p>Why is pinning to a release helpful? Because the default <code>master</code> branch is continuously being updated, analysis results based on it will change over time along with the underlying data (if they are re-run). This becomes cumbersome when writing about results!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since harmonization efforts and vocabulary updates come with downstream consequences and re-compute needs, pinning an analysis to a specific release of data for all inputs is often helpful to ensure you’re not mixing new and old data. This applies to all RWD analyses that have to consider the time window of data collection for each source of data and apply methods to filter joined datasets to appropriate time windows.</p>
+</div>
+</div>
 </section>
 <section id="sec-publishing-tech-process" class="level3" data-number="10.3.2">
 <h3 data-number="10.3.2" class="anchored" data-anchor-id="sec-publishing-tech-process"><span class="header-section-number">10.3.2</span> Download Request Process</h3>
@@ -1479,7 +1492,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false,"closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

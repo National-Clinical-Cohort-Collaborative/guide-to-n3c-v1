@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -607,6 +607,19 @@ background-size: cover;
 <li><strong>Explainability</strong> – Of great interest to practitioners is the explainability of machine learning models, as deep learning tools that rely upon progressive abstractions of data in hidden layers may seem like “black boxes,” especially to those who are not versed in machine learning. Tools are available to help assess feature importance (e.g., SHAP values <span class="citation" data-cites="lundburg_2018">(<a href="../references.html#ref-lundburg_2018" role="doc-biblioref">2018</a>)</span> <span class="citation" data-cites="shapley_1953">(<a href="../references.html#ref-shapley_1953" role="doc-biblioref">1953</a>)</span></li>
 <li><strong>Adequate Documentation</strong> – Clearly annotated code, with explicit characterization of methodology and techniques that are employed, as well as descriptions of all key steps in a pipeline, including hyperparameter choice/search, appropriate train/test splits, etc., are critical to reproducibility of research. In addition, The N3C Enclave provides a feature called Protocol Pad which can explain exactly how a study was conducted in N3C.</li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Real-World-Data Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Machine learning may be particularly beneficial when considering the gaps and missingness in RWD. Machine learning models are able to differentiate high confidence negative cases from unlabeled positive cases.</p>
+</div>
+</div>
 </section>
 <section id="sec-ml-in-n3c" class="level2" data-number="12.3">
 <h2 data-number="12.3" class="anchored" data-anchor-id="sec-ml-in-n3c"><span class="header-section-number">12.3</span> ML in N3C</h2>
@@ -1550,7 +1563,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

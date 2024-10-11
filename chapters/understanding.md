@@ -184,7 +184,7 @@ _If you are publishing your results, concept sets are considered a publicly view
 * Open Science expects reproducibility, and reproducibility in EHR-based research requires knowing how variables (concept sets) were defined.
 * It enables other N3C researchers to use your concept sets, which is what makes research coherent across N3C projects.
 
-Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable GitHub [repository](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets).
+Concept sets that are "finalized" within N3C will have information about them posted to our publicly-viewable GitHub [repository](https://github.com/national-clinical-cohort-collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets).
 Such posting is part of the process known as making research [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) (findable, accessible, interoperable, reusable).
 This repository is functionally our _Shared Variable Library_. Other variable definitions beyond concept sets are posted there (formulas, harmonized values, cohort definitions).
 
@@ -349,7 +349,7 @@ The clinical experts and the N3C Data Liaisons and Logic Liaisons perform the fo
 
 These concept sets are in queue to be published as pdf (Properties) and json (concept ids) in Zenodo, to be available to researchers outside the Enclave.
 Once published, their Zenodo DOI will be posted to the Zenodo Property of the version that was published.
-The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/National-COVID-Cohort-Collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
+The N3C Recommended concept sets are currently published to the [N3C GitHub](https://github.com/national-clinical-cohort-collaborative/Data-Ingestion-and-Harmonization/tree/master/concept_sets/n3c-recommended-csets-json) and are available to researchers outside the Enclave.
 
 The N3C Recommended concept sets listed below are used as the default concept sets in the Logic Liaison templates
 [COVID-19 Diagnosed or Lab Confirmed Patients](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.3ab34203-d7f3-482e-adbd-f4113bfd1a2b?id=KO-BE5C652&view=focus) {{< fa lock title="Link requires an Enclave account" >}}
@@ -412,8 +412,8 @@ Other matching methods (e.g., propensity scores) are more trustworthy.
 
 ### Microvisit to Macrovisit Map {#sec-understanding-ehr-visit}
 
-While admissions to the hospital are recorded in the 
-[`visit_occurrence`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) table, 
+While admissions to the hospital are recorded in the
+[`visit_occurrence`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) table,
 the end date is not always so recorded.
 Now, in many hospitals, procedures performed during a hospitalization may be recorded in the EHR as an "encounter". So an admission may be represented in the `visit_occurrence` table as a string of such "encounters". We define a macrovisit as a merge of chronological, overlapping inpatient and other longitudinal facility visits, to which we add any other types of visits (outpatient, telehealth, etc) that occur during the merged interval.
 See the N3C Data [Enclave](https://unite.nih.gov/workspace/report/ri.report.main.report.c9e2ca50-860c-4988-93c6-f5b1d9d915ed) {{< fa lock title="Link requires an Enclave account" >}}.

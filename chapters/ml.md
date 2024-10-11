@@ -162,7 +162,7 @@ Two notable limitations of code repositories should be noted:
 1.  Plots/visualization must be done separately in a code workbook (as in step 3 below) and
 1.  The R language is not supported in code repositories as of July 2023, so performing statistical analyses with R packages also requires a code workbook.
 
-For our walkthrough, we will be creating and using a Python library repository [ml-classification-pipeline Python library](https://github.com/National-COVID-Cohort-Collaborative/ml-classification-pipeline) and a data transform code repository that Blessy Antony (Virginia Tech, blessyantony\@vt.edu) developed to do machine learning in N3C.
+For our walkthrough, we will be creating and using a Python library repository [ml-classification-pipeline Python library](https://github.com/national-clinical-cohort-collaborative/ml-classification-pipeline) and a data transform code repository that Blessy Antony (Virginia Tech, blessyantony\@vt.edu) developed to do machine learning in N3C.
 
 For the basics of creating a code repository and using its debugger, see Chapter [-@sec-tools].
 

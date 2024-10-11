@@ -161,7 +161,7 @@ The [Logic Liaison Templates](tools.md#sec-tools-store-ll), though, provide exce
 
 [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
-We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates)
+We are developing [Templates](tools.md#sec-tools-store-templates)
 that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
 Both Code Workbooks and Code Repositories can be exported as [Git repositories](publishing.md#sec-publishing-tech-code) for hosting on GitHub or similar.
 
@@ -359,8 +359,8 @@ even if individuals are filling multiple roles.
 [Methodology checklists](tools.md#sec-tools-apps-protocol) help organize this information.
 
 **Code organization/formatting**.
-[Code Workbooks](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-workbook) and
-[Code Repositories](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-repo)
+[Code Workbooks](tools.md#sec-tools-apps-workbook) and
+[Code Repositories](tools.md#sec-tools-apps-repo)
 are the heart of most N3C analyses
 and we recommend that researchers attentively format their code and documentation,
 like any modern software project.
@@ -402,7 +402,7 @@ While the data are rich and the applications are broad, there are still question
 We list that caveat, along with others, below:
 
 * Beware making estimates or predictions that rely on a random sample of "controls" (as those in N3C are
-  [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
+  [matched to confirmed COVID-19 cases within data partner by age, sex, & race/ethnicity](https://github.com/national-clinical-cohort-collaborative/Phenotype_Data_Acquisition/wiki/Phenotype-3.0---Additional-Information))
   * The COVID phenotype data partners use to generate N3C data match patients using 2 controls:1 case based on age, sex, race, and ethnicity
   * Therefore, age, sex, race, or ethnicity should never be features of a prediction model between COVID positive _and COVID negative patients_
 * Because each COVID-19 case is matched with two others, data come in with ostensible controls for each COVID-19 case,
@@ -534,7 +534,7 @@ The DUR identifier should be supplied by the system.
 | A. Meta-data about data source and software    | - Data Source(s)                                 | - [Release notes](https://unite.nih.gov/workspace/documentation/product/n3c-info/release-notes-overview)                                         |
 +------------------------------------------------+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | {For each data source:}                        | - Study Period                                   | - Entered manually in Lab Notebook of Protocol Pad:RWE, with links to data sets                                                                  |
-|                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/National-COVID-Cohort-Collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
+|                                                | - Eligible Cohort Entry Period                   | - Link to [N3C Phenotype Description](https://github.com/national-clinical-cohort-collaborative/Phenotype_Data_Acquisition/wiki/Latest-Phenotype)   |
 |                                                | - Data Extraction Date/Version                   | - Link to various                                                                                                                                |
 |                                                | - Data sampling/extraction criteria              |   [Guides](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.e7b83a8c-545e-49ac-8714-f34bfa7f7767?view=focus&Id=23)     |
 |                                                | - Type(s) of data                                |   to PPRL-based linked data                                                                                                                      |

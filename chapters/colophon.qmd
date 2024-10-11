@@ -13,7 +13,7 @@ author:
     affiliation-url: https://ouhsc.edu/bbmc/
     email: wibeasley@hotmail.com
     orcid: 0000-0002-5613-5006
-    
+
   - name: Johanna Loomba
     affiliation: University of Virginia, integrated Translational Health Research Institute of Virginia
     affiliation-url: https://www.ithriv.org/directory
@@ -37,7 +37,7 @@ author:
     affiliation-url: https://bcbi.brown.edu/
     email: karen_crowley@brown.edu
     orcid: 0000-0002-1995-6358
-    
+
   - name: A Jerrod Anzalone
     affiliation: University of Nebraska Medical Center
     affiliation-url: https://gpctr.unmc.edu/
@@ -51,21 +51,21 @@ csl: ../assets/csl/apa-7e.csl
 
 ## How the Guide Came To Be {#sec-colophon-be}
 
-While N3C leverages a variety of existing technologies, many of the tools, processes, 
-and organizational structures were developed for its unique needs, resulting in a 
-complex landscape for researchers to navigate. The idea for a comprehensive guide was 
-originally proposed in January 2022 by members of the Education and Training Domain Team, 
-with the first public release presented at the [May 2023 N3C Community Forum](https://youtu.be/WI8TuiQKCWM?si=4X9F4YHF3IBhdNUI&t=1893). Drawing inspiration 
-from the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/), its creation involved 
-many volunteers and required coordination across a wide variety of stakeholders, 
-contributors, and subject matterexperts. This chapter outlines the processes involved, 
+While N3C leverages a variety of existing technologies, many of the tools, processes,
+and organizational structures were developed for its unique needs, resulting in a
+complex landscape for researchers to navigate. The idea for a comprehensive guide was
+originally proposed in January 2022 by members of the Education and Training Domain Team,
+with the first public release presented at the [May 2023 N3C Community Forum](https://youtu.be/WI8TuiQKCWM?si=4X9F4YHF3IBhdNUI&t=1893). Drawing inspiration
+from the [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/), its creation involved
+many volunteers and required coordination across a wide variety of stakeholders,
+contributors, and subject matterexperts. This chapter outlines the processes involved,
 in the hope it may benefit others.
 
-The *Guide* exists within a larger landscape of educational and training materials, 
-both from within the N3C community and the larger health data sciences oeuvre. 
-The overarching goal was the creation of a living textbook that serves as a single 
-entry point to engaging with the Enclave. As such, the development focused on 
-leveraging existing content, providing a cohesive information structure, and 
+The *Guide* exists within a larger landscape of educational and training materials,
+both from within the N3C community and the larger health data sciences oeuvre.
+The overarching goal was the creation of a living textbook that serves as a single
+entry point to engaging with the Enclave. As such, the development focused on
+leveraging existing content, providing a cohesive information structure, and
 filling in crucial gaps based on a learning community of users and stakeholders.
 
 
@@ -81,43 +81,43 @@ Because N3C is a large consortium, project members first set out to establish an
 * The [Machine Learning](ml.md) Domain Team and [Applicable Data Methods and Standards](practices.md#sec-practices-overview) workstream
 * Other clinical [domain teams](onboarding.md#sec-onboarding-dts)
 
-Editorial Committee members were invited to maximize coverage of these groups 
+Editorial Committee members were invited to maximize coverage of these groups
 with an eye toward keeping the Committee small and efficient.
 
-The Committee’s initial focus was 1) identifying audiences: current or potential 
-researchers primarily, and organizers of other large community efforts secondarily, 
-and 2) identifying the set of topics to be covered. To do so in an inclusive and 
-impartial manner, each Committee member independently generated a list of topics 
-for inclusion. These were then organized into thematic areas to highlight topics 
-of widespread interest as well as important niche subjects. 
+The Committee’s initial focus was 1) identifying audiences: current or potential
+researchers primarily, and organizers of other large community efforts secondarily,
+and 2) identifying the set of topics to be covered. To do so in an inclusive and
+impartial manner, each Committee member independently generated a list of topics
+for inclusion. These were then organized into thematic areas to highlight topics
+of widespread interest as well as important niche subjects.
 
 ![A subset of organized topics proposed by editorial Committee members. Colors represent suggestions from different members. Each cluster was subsequently considered for inclusion and placement in a draft outline.](images/colophon/fig-colophon-010-topic-clouds.png){#fig-colophon-010-topic-clouds width=100% fig-alt="initial-topics-organized"}
-Having compiled a set of topics, the Committee then created a preliminary outline, 
-which included chapter and subsection titles along with brief notes on the proposed 
-content. This outline was shared with the broader N3C community through mailing lists, 
-the Domain Team leads, and other communication channels to solicit feedback. Although 
-no significant changes or additions were suggested, the inclusion of several smaller 
-topics and minor reorganization helped to enhance the overall structure of the outline, 
+Having compiled a set of topics, the Committee then created a preliminary outline,
+which included chapter and subsection titles along with brief notes on the proposed
+content. This outline was shared with the broader N3C community through mailing lists,
+the Domain Team leads, and other communication channels to solicit feedback. Although
+no significant changes or additions were suggested, the inclusion of several smaller
+topics and minor reorganization helped to enhance the overall structure of the outline,
 as well as generate community interest.
 
 ## Drafting Chapters {#sec-colophon-drafting-chapters}
 
 ### Roles and Responsibilities {#sec-colophon-roles-and-responsibilities}
 
-For each chapter, one or more subject matter experts were invited to act as chapter 
-leads. Chapter leads were encouraged to recruit additional contributors as authors, 
-while primarily overseeing the development of chapter content. The Editorial 
-Committee was responsible for facilitating communication, organization, and 
-publication processes. They also ensured the coherence, quality, and suitability 
-of the final product, collaborating closely with chapter leads as necessary. 
+For each chapter, one or more subject matter experts were invited to act as chapter
+leads. Chapter leads were encouraged to recruit additional contributors as authors,
+while primarily overseeing the development of chapter content. The Editorial
+Committee was responsible for facilitating communication, organization, and
+publication processes. They also ensured the coherence, quality, and suitability
+of the final product, collaborating closely with chapter leads as necessary.
 
-The Committee monitored chapter progress on a monthly basis, and organized writing 
-sessions, office hours, and communication channels to foster cross-chapter 
+The Committee monitored chapter progress on a monthly basis, and organized writing
+sessions, office hours, and communication channels to foster cross-chapter
 discussions and address contributor questions.
 
 ### Content Guidance {#sec-colophon-content-guidance}
 
-To ensure a consistent presentation and flow throughout the *Guide*, the Editorial 
+To ensure a consistent presentation and flow throughout the *Guide*, the Editorial
 Committee created a guidance document for contributors offering style and technical advice, encouraging:
 
 * Linking to external sources of truth when available
@@ -129,48 +129,48 @@ Committee created a guidance document for contributors offering style and techni
 * Appropriate attribution
 * Minimizing references to resources with restricted availability
 
-This guidance also detailed the roles and responsibilities described above, and 
+This guidance also detailed the roles and responsibilities described above, and
 provided links to the draft outline and other resources as a central information source for contributors.
 
 ### Technical Considerations {#sec-colophon-technical}
 
-The Committee decided early in the project to publish via a technical stack based on 
-GitHub pages and the markdown-based [Quarto](https://quarto.org/) package. However, as many authors were 
-unfamiliar with these technologies, all draft content was initially created in Google 
-Docs to facilitate collaborative editing and ease of contribution. Each chapter team 
-was provided with a “stub” document linking to the guidance document, all 
-within an organized folder structure. 
+The Committee decided early in the project to publish via a technical stack based on
+GitHub pages and the markdown-based [Quarto](https://quarto.org/) package. However, as many authors were
+unfamiliar with these technologies, all draft content was initially created in Google
+Docs to facilitate collaborative editing and ease of contribution. Each chapter team
+was provided with a “stub” document linking to the guidance document, all
+within an organized folder structure.
 
-Contributors were required to upload high-resolution images following a suggested 
-file naming convention for eventual publication. They were also encouraged to include 
-cross-references between chapters, which was complicated by the parallel development of 
-chapter content across teams. Instead of linking directly to other sections, 
-contributors included ‘pseudo-links’ to anticipated chapters and subsections 
+Contributors were required to upload high-resolution images following a suggested
+file naming convention for eventual publication. They were also encouraged to include
+cross-references between chapters, which was complicated by the parallel development of
+chapter content across teams. Instead of linking directly to other sections,
+contributors included ‘pseudo-links’ to anticipated chapters and subsections
 indicated by the draft outline, which needed to be finalized during the publication process.
 
 ## Review and Publication {#sec-colophon-review-and-pub}
 
-As each chapter was completed, the Committee designated three peer reviewers to 
-evaluate the content for accuracy and appropriateness. These reviews were openly 
-conducted within the Google Doc drafts using commenting and suggesting features. 
-Editorial Committee members frequently served as reviewers for many chapters 
+As each chapter was completed, the Committee designated three peer reviewers to
+evaluate the content for accuracy and appropriateness. These reviews were openly
+conducted within the Google Doc drafts using commenting and suggesting features.
+Editorial Committee members frequently served as reviewers for many chapters
 (excluding those they authored), but other subject matter experts were also engaged.
 
-After reviews were completed content was migrated to GitHub and published in proof 
-form. While part of this process was automated, considerable manual effort was 
-required to curate references to external sources, cross-references between sections, 
-and other metadata. GitHub issues and checklists were used to track each chapters’ 
-publication progress, in close collaboration with chapter leads.^[See this [checklist](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues/138) 
-as one example within the [collection](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues/58) of chapter checklists. Special thanks to Committee member Will Beasley for his 
+After reviews were completed content was migrated to GitHub and published in proof
+form. While part of this process was automated, considerable manual effort was
+required to curate references to external sources, cross-references between sections,
+and other metadata. GitHub issues and checklists were used to track each chapters’
+publication progress, in close collaboration with chapter leads.^[See this [checklist](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/138)
+as one example within the [collection](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/58) of chapter checklists. Special thanks to Committee member Will Beasley for his
 technical expertise and development of this publication workflow!]
 
-As a living document, changes and new content are managed via [GitHub](https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1), 
-with needs tracked via [issues](https://github.com/National-COVID-Cohort-Collaborative/guide-to-n3c-v1/issues?q=is%3Aissue). See the [How to Contribute](#sec-welcome-contribute) section for details.
+As a living document, changes and new content are managed via [GitHub](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1),
+with needs tracked via [issues](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues?q=is%3Aissue). See the [How to Contribute](#sec-welcome-contribute) section for details.
 
 
 ### Software and Rendering Configuration {#sec-colophon-software}
 
-This section is automatically generated and details the Quarto and R configuration 
+This section is automatically generated and details the Quarto and R configuration
 used in rendering.
 
 ::: {.callout-caution collapse="true"}

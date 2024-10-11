@@ -46,7 +46,7 @@ book:
   # cover-image: images/logo.png
   cover-image-alt: images/n3c-logo-circle-large-0.png
   favicon: images/n3c-logo-circle-large-0.png
-  repo-url: https://github.com/national-covid-cohort-collaborative/guide-to-n3c-v1
+  repo-url: https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1
   repo-branch: main
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]

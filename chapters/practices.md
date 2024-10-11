@@ -161,7 +161,7 @@ The [Logic Liaison Templates](tools.md#sec-tools-store-ll), though, provide exce
 
 [ProtocolPad](https://unite.nih.gov/workspace/module/view/latest/ri.workshop.main.module.d7099409-b81d-4d17-951c-399b1b2f7c6f) {{< fa lock title="Link requires an N3C Data Enclave account" >}}
 is an emerging tool to implement documentation in detail and, we hope, to encourage reuse beyond the Knowledge Store.
-We are developing [Templates](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-store-templates)
+We are developing [Templates](tools.md#sec-tools-store-templates)
 that are more general than Knowledge Store items and function more as a guide (analytic decision support) than as programming code that can be modified.
 Both Code Workbooks and Code Repositories can be exported as [Git repositories](publishing.md#sec-publishing-tech-code) for hosting on GitHub or similar.
 
@@ -359,8 +359,8 @@ even if individuals are filling multiple roles.
 [Methodology checklists](tools.md#sec-tools-apps-protocol) help organize this information.
 
 **Code organization/formatting**.
-[Code Workbooks](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-workbook) and
-[Code Repositories](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/tools.html#sec-tools-apps-repo)
+[Code Workbooks](tools.md#sec-tools-apps-workbook) and
+[Code Repositories](tools.md#sec-tools-apps-repo)
 are the heart of most N3C analyses
 and we recommend that researchers attentively format their code and documentation,
 like any modern software project.

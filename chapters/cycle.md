@@ -79,7 +79,7 @@ and the control cohort decision may be different for each research project
 and N3C control cohort may not be representative to meet the standards of each research group.
 
 Please see more advice in the "Articulate Research Question" section of the
-[Best Practices](https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/chapters/practices.md) chapter.
+[Best Practices](practices.md) chapter.
 
 ## Overview {#sec-cycle-overview}
 

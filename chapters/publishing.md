@@ -102,7 +102,7 @@ Tier 1 and 2 authors must satisfy [ICMJE criteria](https://www.icmje.org/recomme
 
 The publication committee has a role in helping authors identify Tier 2 and Tier 3 contributors:
 
-* Notify core contributors (named in [covid.cd2h.org/acknowledgements](covid.cd2h.org/acknowledgements)) and relevant domain teams of manuscripts that might be using their work
+* Notify core contributors (named in <https://covid.cd2h.org/acknowledgements>) and relevant domain teams of manuscripts that might be using their work
 * Enable core contributors and relevant domain teams to review the manuscript and either opt out of acknowledgment or opt into consortial contributorship.
   Opting into consortial contributorship requires meeting the four ICMJE criteria above
 * Any other invited individuals (e.g., domain team) would opt into acknowledgment OR opt into consortial contributorship;
